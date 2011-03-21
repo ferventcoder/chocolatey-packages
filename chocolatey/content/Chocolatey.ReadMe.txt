@@ -1,0 +1,14 @@
+WarmuP
+==========
+WarmuP has been installed to C:\NuGet\lib\warmup.  The path to C:\Nuget\bin has been added to your PATH environment variable.
+Uninstalling will only remove the local reference to this repository.
+
+Next Steps
+==========
+Please edit the configuration located at C:\NuGet\lib\warmup.
+
+Usage
+==========
+You should now be able to execute warmup nameOfSubDirectory replacementName.
+
+Please see http://devlicious.com/blogs/rob_reynolds/archive/2010/02/01/warmup-getting-started.aspx & http://codebetter.com/drusellers/2009/09/26/warmup for more information.

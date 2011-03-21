@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>chocolatey</id>
+    <title>Chocolatey</title>
+    <version>0.5.0.0</version>
+    <authors>Rob Reynolds</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Chocolatey is for machine level packages, like application nuggets.</summary>
+    <description>Chocolatey is for machine level packages, like application nuggets. 
+    You would create a package and install it to C:\NuGet\lib\yourpackagename and also a bat file in
+    C:\NuGet\bin to point to your executable. Once the batch file is there, your executable will run from the command line.</description>
+    <projectUrl>https://github.com/ferventcoder/nugetpackages</projectUrl>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>maven machine repository nuget</tags>
+  </metadata>
+</package>
