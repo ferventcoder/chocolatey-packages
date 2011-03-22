@@ -25,13 +25,14 @@ if (![System.IO.Directory]::Exists($nugetLibPath)) {[System.IO.Directory]::Creat
 $envPath = $env:PATH
 
 #if you do not find C:\NuGet\bin, add it 
-if ($envPath.ToLower().Contains($nugetExePath.ToLower()))
+if (!$envPath.ToLower().Contains($nugetExePath.ToLower()))
 {
   #does the path end in ';'?
   $hasStatementTerminator= $envPath.EndsWith($statementTerminator)
   # if the last digit is not ;, then we are adding it
   If (!$hasStatementTerminator) {$nugetExePath = $statementTerminator + $nugetExePath}
   #now we update the path
+  Write-Host Adding $nugetExePath to the PATH variable
   $envPath = $envPath + $nugetExePath + $statementTerminator
   [Environment]::SetEnvironmentVariable( "Path", $envPath, [System.EnvironmentVariableTarget]::Machine )
 }
@@ -39,4 +40,4 @@ if ($envPath.ToLower().Contains($nugetExePath.ToLower()))
 
 write-host Removing this package...
 #uninstall-package $package.Name -ProjectName $project.Name
-uninstall-package chocolatey -ProjectName $project.Name
+#uninstall-package chocolatey -ProjectName $project.Name
