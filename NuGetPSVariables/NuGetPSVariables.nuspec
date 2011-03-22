@@ -3,14 +3,14 @@
   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <id>NuGetPSVariables</id>
     <title>NuGetPSVariables</title>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <authors>Rob Reynolds</authors>
     <owners>Rob Reynolds</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Will tell you the values of the nuget powershell variables.</summary>
     <description>Just writes out all of the nuget powershell variables. 
-Also writes out to the c:\ directory three log files: 
+Also writes out to the %temp%\NuGetPSVariables directory three log files: 
 * nuget.variables.init.ps1.log
 * nuget.variables.install.ps1.log
 * nuget.variables.uninstall.ps1.log</description>

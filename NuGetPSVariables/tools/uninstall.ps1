@@ -1,6 +1,9 @@
 param($installPath, $toolsPath, $package, $project)
 
-$file = "C:\nuget.variables.uninstall.ps1.log"
+$tempDir = $env:TEMP
+$tempDir = [System.IO.Path]::Combine($tempDir,"NuGetPSVariables")
+if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+$file = [System.IO.Path]::Combine($tempDir, "nuget.variables.uninstall.ps1.log")
 write-host ===================================================
 write-host uninstall.ps1
 write-host ===================================================

@@ -1,6 +1,11 @@
 param($installPath, $toolsPath, $package, $project)
 
-$file = "C:\nuget.variables.init.ps1.log"
+#$tempDir = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::LocalApplicationData)
+$tempDir = $env:TEMP
+$tempDir = [System.IO.Path]::Combine($tempDir,"NuGetPSVariables")
+if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+explorer $tempDir
+$file = [System.IO.Path]::Combine($tempDir, "nuget.variables.init.ps1.log")
 write-host ===================================================
 write-host init.ps1
 write-host ===================================================

@@ -1,6 +1,9 @@
 param($installPath, $toolsPath, $package, $project)
 
-$file = "C:\nuget.variables.install.ps1.log"
+$tempDir = $env:TEMP
+$tempDir = [System.IO.Path]::Combine($tempDir,"NuGetPSVariables")
+if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+$file = [System.IO.Path]::Combine($tempDir, "nuget.variables.install.ps1.log")
 write-host ===================================================
 write-host install.ps1
 write-host ===================================================
