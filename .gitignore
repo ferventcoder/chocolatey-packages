@@ -10,11 +10,5 @@ _ReSharper*
 *.user
 *.bak
 *.orig
-*.nupkg
 
-build_output
-code_drop
-TestResult.xml
-submit.xml
-SolutionVersion.cs
-SolutionVersion.vb
+*.nupkg
