@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>PublishedApplications</id>
+    <title>_PublishedApplications</title>
+    <version>1.0.0.0</version>
+    <authors>David Keaveny, Rob Reynolds</authors>
+    <owners>Rob Reynolds</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This gives your non web project the ability to be put into a published folder, just like your web project does when being built outside of visual studio.</description>
+    <summary>Published Applications allows you to have a _PublishedApplications folder, similar to _PublishedWebsites</summary>
+    <language>en-US</language>
+  </metadata>
+</package>
