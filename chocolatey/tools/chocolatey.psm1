@@ -27,8 +27,9 @@ function Install-Chocolatey {
   if (![System.IO.Directory]::Exists($nugetExePath)) {[System.IO.Directory]::CreateDirectory($nugetExePath)}
   if (![System.IO.Directory]::Exists($nugetLibPath)) {[System.IO.Directory]::CreateDirectory($nugetLibPath)}
 
-  #get the PATH variable
-  $envPath = $env:PATH
+  #get the PATH variable from the machine
+  #$envPath = $env:PATH
+  $envPath = [Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine)
 
   #if you do not find C:\NuGet\bin, add it 
   if (!$envPath.ToLower().Contains($nugetExePath.ToLower()))
@@ -37,7 +38,9 @@ function Install-Chocolatey {
     $hasStatementTerminator= $envPath.EndsWith($statementTerminator)
     # if the last digit is not ;, then we are adding it
     If (!$hasStatementTerminator) {$nugetExePath = $statementTerminator + $nugetExePath}
-    #now we update the path
+	
+    Write-Host
+	#now we update the path
     Write-Host Adding $nugetExePath to the PATH variable
     $envPath = $envPath + $nugetExePath + $statementTerminator
 	
