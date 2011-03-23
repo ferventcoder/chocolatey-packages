@@ -35,14 +35,14 @@ function Install-Chocolatey {
   #if you do not find C:\NuGet\bin, add it 
   if (!$envPath.ToLower().Contains($nugetExePath.ToLower()))
   {
+  	Write-Host
+	#now we update the path
+    Write-Host PATH environment variable does not have $nugetExePath in it. Adding.
+  
     #does the path end in ';'?
     $hasStatementTerminator= $envPath.EndsWith($statementTerminator)
     # if the last digit is not ;, then we are adding it
     If (!$hasStatementTerminator) {$nugetExePath = $statementTerminator + $nugetExePath}
-	
-    Write-Host
-	#now we update the path
-    Write-Host Adding $nugetExePath to the PATH variable
     $envPath = $envPath + $nugetExePath + $statementTerminator
 	
 	#[Environment]::SetEnvironmentVariable( "Path", $envPath, [System.EnvironmentVariableTarget]::Machine )
@@ -56,6 +56,7 @@ function Install-Chocolatey {
 	sudo-chocolatey powershell "$psArgs"
 	
 	Write-Host 
+	Start-Sleep 4
 	Write-Host Chocolatey is now installed and ready.
   }
 }
