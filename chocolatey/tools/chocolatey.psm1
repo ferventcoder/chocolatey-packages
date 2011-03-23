@@ -18,10 +18,11 @@ function Install-Chocolatey {
   $nugetLibPath = [System.IO.Path]::Combine($nuGetPath, "lib")
 
   $nugetYourPkgPath = [System.IO.Path]::Combine($nugetLibPath,"yourPackageName")
-  Write-Host We are setting up the Chocolatey repository for NuGet packages that should be at the machine level
-  Write-Host The repository is set up at $nugetPath.
-  Write-Host The packages themselves go to $nugetLibPath '(i.e.' $nugetYourPkgPath ').'
-  Write-Host A batch file for the command line goes to $nugetExePath and points to an executable in $nugetYourPkgPath.
+  write-host We are setting up the Chocolatey repository for NuGet packages that should be at the machine level
+  write-host The repository is set up at $nugetPath.
+  write-host The packages themselves go to $nugetLibPath '(i.e.' $nugetYourPkgPath ').'
+  write-host A batch file for the command line goes to $nugetExePath and points to an executable in $nugetYourPkgPath.
+  write-host 
 
   #create the base structure if it doesn't exist
   if (![System.IO.Directory]::Exists($nugetExePath)) {[System.IO.Directory]::CreateDirectory($nugetExePath)}
@@ -50,7 +51,7 @@ function Install-Chocolatey {
 	Write-Host 
 	Write-Host You may be being asked for permission to add $nugetExePath to the PATH system environment variable. This gives you the ability to execute nuget applications from the command line.
 	Write-Host Please select [Yes] when asked for privileges...
-	#Write-Host powershell $psArgs
+	Start-Sleep 3
 	
 	sudo-chocolatey powershell "$psArgs"
 	
