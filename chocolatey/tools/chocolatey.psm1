@@ -10,12 +10,14 @@ function Request-ElevatedChocolateyPermissions
 
 Set-Alias sudo-chocolatey Request-ElevatedChocolateyPermissions;
 
-function Install-Chocolatey {
+function Initialze-Chocolatey {
   #set up variables to add
   $statementTerminator = ";"
   $nugetPath = "C:\NuGet"
   $nugetExePath = [System.IO.Path]::Combine($nuGetPath, "bin")
   $nugetLibPath = [System.IO.Path]::Combine($nuGetPath, "lib")
+  $nugetChocolateyPath = [System.IO.Path]::Combine($nuGetPath, "chocolateyInstall")
+  $nugetChocolateyBinFile = [System.IO.Path]::Combine($nugetExePath, "chocolatey.bat")
 
   $nugetYourPkgPath = [System.IO.Path]::Combine($nugetLibPath,"yourPackageName")
   write-host We are setting up the Chocolatey repository for NuGet packages that should be at the machine level
@@ -27,6 +29,12 @@ function Install-Chocolatey {
   #create the base structure if it doesn't exist
   if (![System.IO.Directory]::Exists($nugetExePath)) {[System.IO.Directory]::CreateDirectory($nugetExePath)}
   if (![System.IO.Directory]::Exists($nugetLibPath)) {[System.IO.Directory]::CreateDirectory($nugetLibPath)}
+  if (![System.IO.Directory]::Exists($nugetChocolateyPath)) {[System.IO.Directory]::CreateDirectory($nugetChocolateyPath)}
+
+    Copy-Item .\chocolateyInstall\ $nugetPath –recurse -force
+
+"@echo off
+""$nugetChocolateyPath\chocolatey.cmd"" %*" | Out-File $nugetChocolateyBinFile -encoding ASCII
 
   #get the PATH variable from the machine
   #$envPath = $env:PATH
@@ -58,19 +66,9 @@ function Install-Chocolatey {
 	Write-Host 
 	Start-Sleep 4
 	Write-Host Chocolatey is now installed and ready.
+  Write-Host You can call chocolatey from anywhere, command line or powershell by typing chocolatey.
+  Write-Host Run chocolatey /? for a list of functions.
   }
 }
 
-function Get-Chocolatey
-{
-param(
-    [string] $package,
-    [string] $executableName
-    )
-}
-
-Set-Alias Chocolatey-NuGet Get-Chocolatey;
-
-export-modulemember -function Request-ElevatedChocolateyPermissions
-export-modulemember -function Install-Chocolatey
-export-modulemember -function Get-Chocolatey
+export-modulemember -function Initialize-Chocolatey
