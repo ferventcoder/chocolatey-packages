@@ -1,16 +1,16 @@
 function Request-ElevatedChocolateyPermissions
 {
-	$file, [string]$arguments = $args;
-	$psi = new-object System.Diagnostics.ProcessStartInfo $file;
-	$psi.Arguments = $arguments;
-	$psi.Verb = "runas";
-	$psi.WorkingDirectory = get-location;
-	[System.Diagnostics.Process]::Start($psi);
+  $file, [string]$arguments = $args;
+  $psi = new-object System.Diagnostics.ProcessStartInfo $file;
+  $psi.Arguments = $arguments;
+  $psi.Verb = "runas";
+  $psi.WorkingDirectory = get-location;
+  [System.Diagnostics.Process]::Start($psi);
 }
 
 Set-Alias sudo-chocolatey Request-ElevatedChocolateyPermissions;
 
-function Initialze-Chocolatey {
+function Initialize-Chocolatey {
   #set up variables to add
   $statementTerminator = ";"
   $nugetPath = "C:\NuGet"
@@ -52,20 +52,20 @@ function Initialze-Chocolatey {
     # if the last digit is not ;, then we are adding it
     If (!$hasStatementTerminator) {$nugetExePath = $statementTerminator + $nugetExePath}
     $envPath = $envPath + $nugetExePath + $statementTerminator
-	
-	#[Environment]::SetEnvironmentVariable( "Path", $envPath, [System.EnvironmentVariableTarget]::Machine )
-	$psArgs = "[Environment]::SetEnvironmentVariable( 'Path', '" + $envPath + "', [System.EnvironmentVariableTarget]::Machine )"  #-executionPolicy Unrestricted"
-	
-	Write-Host 
-	Write-Host You may be being asked for permission to add $nugetExePath to the PATH system environment variable. This gives you the ability to execute nuget applications from the command line.
-	Write-Host Please select [Yes] when asked for privileges...
-	Start-Sleep 3
-	
-	sudo-chocolatey powershell "$psArgs"
-	
-	Write-Host 
-	Start-Sleep 4
-	Write-Host Chocolatey is now installed and ready.
+
+  #[Environment]::SetEnvironmentVariable( "Path", $envPath, [System.EnvironmentVariableTarget]::Machine )
+  $psArgs = "[Environment]::SetEnvironmentVariable( 'Path', '" + $envPath + "', [System.EnvironmentVariableTarget]::Machine )"  #-executionPolicy Unrestricted"
+
+  Write-Host 
+  Write-Host You may be being asked for permission to add $nugetExePath to the PATH system environment variable. This gives you the ability to execute nuget applications from the command line.
+  Write-Host Please select [Yes] when asked for privileges...
+  Start-Sleep 3
+
+  sudo-chocolatey powershell "$psArgs"
+
+  Write-Host 
+  Start-Sleep 4
+  Write-Host Chocolatey is now installed and ready.
   Write-Host You can call chocolatey from anywhere, command line or powershell by typing chocolatey.
   Write-Host Run chocolatey /? for a list of functions.
   }
