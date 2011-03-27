@@ -22,7 +22,7 @@ param([string] $packageName)
   if ($packageFolder) { 
 		Write-Host 'Looking for executables in folder: ' $packageFolder.FullName
 		Write-Host 'Once an executable has a batch file, it will be on the PATH.'
-		Write-Host ' In other words, you will be able to execute it from any command line/powershell prompt.'
+		Write-Host 'In other words, you will be able to execute it from any command line/powershell prompt.'
 		Write-Host '================================================'
 		Write-Host ' Executables'
 		Write-Host '================================================'
