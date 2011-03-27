@@ -9,15 +9,14 @@
     <summary>Chocolatey is your machine level NuGet repository. Think executables/application packages, not library packages.</summary>
     <description>Think executables/application packages, not library packages.  This is what the Chocolatey NuGet goodness is for.
 Chocolatey allows you to install application nuggets and run executables from anywhere.  
-If you have an executable in the tools folder of your package named bob.exe. Then you can type
-
-chocolatey install yourPackageName
-followed by
-bob
+For example, say you have an executable in the tools folder of your package named bob.exe. Then you can type
+'chocolatey install yourPackageName'
+and when it finished you can type
+'bob'
 and it will run your application executable.</description>
     <projectUrl>https://github.com/ferventcoder/nugetpackages</projectUrl>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>maven machine repository nuget</tags>
+    <tags>nuget machine repository chocolatey</tags>
   </metadata>
 </package>
