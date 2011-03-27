@@ -8,7 +8,7 @@ $nugetExe = Join-Path $nugetChocolateyPath 'nuget.exe'
 
 function Chocolatey-NuGet { 
 param([string] $packageName)
-  Write-Host Attempting to install $packageName to "$nugetLibPath"
+  Write-Host 'Attempting to install ' $packageName ' to ' "$nugetLibPath"
 	#something is not working right, so for now we spell out the whole path
   C:\NuGet\chocolateyInstall\NuGet.exe install $packageName /outputdirectory "$nugetLibPath"
   
@@ -20,16 +20,24 @@ param([string] $packageName)
   #search the lib directory for the highest number of the folder
   $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "$packageName*"} | sort name -Descending | select -First 1 
   if ($packageFolder) { 
+		Write-Host 'Looking for executables in folder: ' $packageFolder.FullName
+		Write-Host 'Once an executable has a batch file, it will be on the PATH.'
+		Write-Host ' In other words, you will be able to execute it from any command line/powershell prompt.'
+		Write-Host '================================================'
+		Write-Host ' Executables'
+		Write-Host '================================================'
     $files = get-childitem $packageFolder.FullName -include *.exe -recurse
     foreach ($file in $files) {
       Generate-BinFile $file.Name.Replace(".exe","") $file.FullName
     }
+		Write-Host '================================================'
   }
 }
 
 function Generate-BinFile {
 param([string] $name, [string] $path)
   $packageBatchFileName = Join-Path $nugetExePath "$name.bat"
+	Write-Host "Adding $packageBatchFileName and pointing to $path"
 "@echo off
 ""$path"" %*" | Out-File $packageBatchFileName -encoding ASCII 
 }
