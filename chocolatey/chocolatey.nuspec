@@ -7,11 +7,11 @@
     <authors>Rob Reynolds</authors>
     <owners>Rob Reynolds</owners>
     <summary>Chocolatey is your machine level NuGet repository. Think executables/application packages, not library packages.</summary>
-    <description>Think executables/application packages, not library packages.  This is what the Chocolatey NuGet goodness is for.
+    <description>Think executables/application packages, not library packages. This is what the Chocolatey NuGet goodness is for.
 Chocolatey allows you to install application nuggets and run executables from anywhere.  
 For example, say you have an executable in the tools folder of your package named bob.exe. Then you can type
 'chocolatey install yourPackageName'
-and when it finished you can type
+and when it finishes you can type
 'bob'
 and it will run your application executable.</description>
     <projectUrl>https://github.com/ferventcoder/nugetpackages</projectUrl>
