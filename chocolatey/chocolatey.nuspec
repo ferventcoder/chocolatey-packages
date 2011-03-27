@@ -6,10 +6,15 @@
     <version>0.7.0.0</version>
     <authors>Rob Reynolds</authors>
     <owners>Rob Reynolds</owners>
-    <summary>Chocolatey is for machine level packages, like application nuggets.</summary>
-    <description>Chocolatey is for machine level packages, like application nuggets. 
-    You would create a package and install it to C:\NuGet\lib\yourpackagename and also a bat file in
-    C:\NuGet\bin to point to your executable. Once the batch file is there, your executable will run from the command line.</description>
+    <summary>Chocolatey is your machine level NuGet repository. Think executables/application packages, not library packages.</summary>
+    <description>Think executables/application packages, not library packages.  This is what the Chocolatey NuGet goodness is for.
+Chocolatey allows you to install application nuggets and run executables from anywhere.  
+If you have an executable in the tools folder of your package named bob.exe. Then you can type
+
+chocolatey install yourPackageName
+followed by
+bob
+and it will run your application executable.</description>
     <projectUrl>https://github.com/ferventcoder/nugetpackages</projectUrl>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
