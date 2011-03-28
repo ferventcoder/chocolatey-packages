@@ -88,10 +88,10 @@ function Initialize-Chocolatey {
 		$env:Path = $envPSPath + $statementTerminator + $nugetExePath + $statementTerminator
 	}
 	
-	Write-Host 'Chocolatey is now installed and ready.'
+	Write-Host 'Chocolatey is now ready.'
 	Write-Host 'You can call chocolatey from anywhere, command line or powershell by typing chocolatey.'
 	Write-Host 'Run chocolatey /? for a list of functions.'
   
 }
 
-export-modulemember -function Initialize-Chocolatey
+export-modulemember -function Initialize-Chocolatey;

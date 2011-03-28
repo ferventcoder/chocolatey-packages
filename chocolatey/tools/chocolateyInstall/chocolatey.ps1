@@ -40,10 +40,15 @@ param([string] $packageName)
 		Write-Host '================================================'
 		Write-Host ' Executables'
 		Write-Host '================================================'
-    $files = get-childitem $packageFolder.FullName -include *.exe -recurse
-    foreach ($file in $files) {
-      Generate-BinFile $file.Name.Replace(".exe","") $file.FullName
-    }
+		try {
+    	$files = get-childitem $packageFolder.FullName -include *.exe -recurse
+    	foreach ($file in $files) {
+      	Generate-BinFile $file.Name.Replace(".exe","") $file.FullName
+    	}
+		}
+		catch {
+			Write-Host 'There are no executables in the package. You may not need this as a #chocolatey #nuget. A vanilla #nuget may suffice.'
+		}
 		Write-Host '================================================'
   }
 }
@@ -53,12 +58,12 @@ param([string] $packageName)
   $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "$packageName*"} | sort name -Descending | select -First 1 
   if ($packageFolder) { 
 		Write-Host '================================================'
-	Write-Host 'Additional installation - chocolateyinstall.ps1'
+		Write-Host 'Additional installation - chocolateyinstall.ps1'
 		Write-Host '================================================'
 		Write-Host 'Looking for chocolateyinstall.ps1 in folder: ' $packageFolder.FullName
 		Write-Host 'If chocolateyInstall.ps1 is found, it will be run.'
 		$ps1 = Get-ChildItem  $packageFolder.FullName -recurse | ?{$_.name -match "chocolateyinstall.ps1"} | sort name -Descending | select -First 1
-		write-host "`$ps1 : $ps1" + $ps1.FullName
+		
 		if ($ps1 -notlike '') {
 			$ps1FullPath = $ps1.FullName
 			Write-Host "Running against $ps1FullPath"
@@ -84,9 +89,10 @@ function Chocolatey-Help {
   Write-Host '====='
   Write-Host 'Usage'
   Write-Host '====='
-  Write-Host 'chocolatey [[install] packageName|list|help]'
+  Write-Host 'chocolatey [install packageName|update packageName|list|help]'
   Write-Host ''
   Write-Host 'example: chocolatey install nunit'
+	Write-Host 'example: chocolatey update nunit'
   Write-Host 'example: chocolatey help'
   Write-Host 'example: chocolatey list (might take awhile)'
   Write-Host '================================================'
@@ -98,6 +104,11 @@ function Chocolatey-List {
 }
 
 $argsHasInstall = $args -contains 'install'
+if ($argsHasInstall -and $args.Length -eq 2) {
+ Chocolatey-NuGet  $args[1];
+}
+
+$argsHasInstall = $args -contains 'update'
 if ($argsHasInstall -and $args.Length -eq 2) {
  Chocolatey-NuGet  $args[1];
 }

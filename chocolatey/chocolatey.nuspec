@@ -3,7 +3,7 @@
   <metadata>
     <id>chocolatey</id>
     <title>Chocolatey</title>
-    <version>0.7.0.0</version>
+    <version>0.8.0.0</version>
     <authors>Rob Reynolds</authors>
     <owners>Rob Reynolds</owners>
     <summary>Chocolatey is your machine level NuGet repository. Think executables/application packages, not library packages.</summary>
