@@ -15,16 +15,12 @@ Reads and parses:
 | Keys in PEM format must have headers/footers .
 | Encrypted Private Key in SSLEay format not supported in DER
 |  Removes header/footer lines.
-|  For traditional SSLEAY PEM private keys, checks for encrypted format and
-|  uses PBE to extract 3DES key.
+|  For traditional SSLEAY PEM private keys, checks for encrypted format and uses PBE to extract 3DES key.
 |  For SSLEAY format, only supports encryption format: DES-EDE3-CBC
 |  For PKCS #8, only supports PKCS#5 v2.0  3des.
 |  Parses private and public key components and returns .NET RSA object.
-|  Creates dummy unsigned certificate linked to private keypair and
-|  Optionally exports to pkcs #12</description>
-    <projectUrl>http://www.jensign.com/opensslkey/opensslkey.cs</projectUrl>
-    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+|  Creates dummy unsigned certificate linked to private keypair and optionally exports to pkcs #12</description>
+    <projectUrl>http://www.jensign.com/opensslkey</projectUrl>
     <tags>security rsa der pem chocolatey</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
   </metadata>
