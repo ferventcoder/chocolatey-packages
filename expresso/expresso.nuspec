@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>expresso</id>
+    <title>Expresso</title>
+    <version>3.0.0</version>
+    <authors>Ultrapico</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Expresso - The premier regular expression development tool</summary>
+    <description>Expresso - The premier regular expression development tool.
+    The award-winning Expresso editor is equally suitable as a teaching tool for the beginning user of regular expressions or as a full-featured development environment for the experienced programmer or web designer with an extensive knowledge of regular expressions.</description>
+    <projectUrl>http://www.ultrapico.com/Expresso.htm</projectUrl>
+    <licenseUrl>http://www.ultrapico.com/App/Register.aspx</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <tags>regex regularexpression expresso chocolatey</tags>
+    <!--<iconUrl>32x32.png</iconUrl>-->
+  </metadata>
+</package>

@@ -11,12 +11,27 @@ function Run-ChocolateyProcess
   $file, [string]$arguments = $args;
   $psi = new-object System.Diagnostics.ProcessStartInfo $file;
   $psi.Arguments = $arguments;
+
+  $psi.UseShellExecute = $false
+  $psi.CreateNoWindow = $true
+  $psi.RedirectStandardError = $true
+  $psi.RedirectStandardOutput = $true
+  
 	#if ($elevated) {
 		$psi.Verb = "runas";
 	#}
-  $psi.WorkingDirectory = get-location;
-  $s = [System.Diagnostics.Process]::Start($psi);
-	$s.WaitForExit(8000);
+  #$thisScript = (Get-Variable MyInvocation -Scope 1).Value 
+	#$thisScriptFolder = Split-Path $thisScript.MyCommand.Path
+  #$psi.WorkingDirectory = $thisScriptFolder;
+  
+  $s = New-Object System.Diagnostics.Process;
+  $s.StartInfo = $psi;
+  #Register-ObjectEvent $s OutputDataReceived -Action { write-host $args[1].Data}
+  $s.Start();
+  #$s.BeginOutputReadLine();
+  $s.StandardOutput.ReadToEnd();
+  $s.StandardError.ReadToEnd();
+	$s.WaitForExit(300000);
 }
 
 function Chocolatey-NuGet { 
@@ -33,7 +48,7 @@ function Get-ChocolateyBins {
 param([string] $packageName)
   #search the lib directory for the highest number of the folder
   $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "$packageName*"} | sort name -Descending | select -First 1 
-  if ($packageFolder) { 
+  if ($packageFolder -notlike '') { 
 		Write-Host 'Looking for executables in folder: ' $packageFolder.FullName
 		Write-Host 'Once an executable has a batch file, it will be on the PATH.'
 		Write-Host 'In other words, you will be able to execute it from any command line/powershell prompt.'

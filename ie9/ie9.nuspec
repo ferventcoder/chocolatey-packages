@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>ie9</id>
+    <title>IE9</title>
+    <version>0.0.1</version>
+    <authors>Microsoft</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>IE9 - Explore a more beautiful web</summary>
+    <description>IE9 - Explore a more beautiful web</description>
+    <projectUrl>http://ie.microsoft.com/testdrive/</projectUrl>
+    <tags>internet explorer ie9 chocolatey</tags>
+    <!--<iconUrl>32x32.png</iconUrl>-->
+  </metadata>
+</package>

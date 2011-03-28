@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>baretail</id>
+    <title>BareTail</title>
+    <version>3.50</version>
+    <authors>Bare Metal Software, Ltd.</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Baretail - A free real-time log file monitoring tool</summary>
+    <description>Baretail - A free real-time log file monitoring tool</description>
+    <projectUrl>http://www.baremetalsoft.com/baretail/index.php</projectUrl>
+    <licenseUrl>http://www.baremetalsoft.com/baretail/licence.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>tail baretail chocolatey</tags>
+    <!--<iconUrl>32x32.png</iconUrl>-->
+  </metadata>
+</package>
