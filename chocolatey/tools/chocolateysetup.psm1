@@ -15,6 +15,8 @@ function Create-ChocolateyBinFile {
 param([string] $nugetChocolateyBinFile)
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" %*" | Out-File $nugetChocolateyBinFile -encoding ASCII
+#"@echo off
+#""$nugetChocolateyPath\chocolatey.cmd"" install %*" | Out-File $nugetChocolateyBinFile -encoding ASCII
 }
 
 function Initialize-Chocolatey {
@@ -25,6 +27,7 @@ function Initialize-Chocolatey {
 	$nugetLibPath = Join-Path $nuGetPath 'lib'
 	$nugetChocolateyPath = Join-Path $nuGetPath 'chocolateyInstall'
   $nugetChocolateyBinFile = Join-Path $nugetExePath 'chocolatey.bat'
+  $nugetChocolateyInstallAlias = Join-Path $nugetExePath 'cinst.bat'
 
   $nugetYourPkgPath = [System.IO.Path]::Combine($nugetLibPath,"yourPackageName")
   write-host 'We are setting up the Chocolatey repository for NuGet packages that should be at the machine level. Think executables/application packages, not library packages.'
