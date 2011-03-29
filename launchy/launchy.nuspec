@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>launchy</id>
+    <title>Launchy</title>
+    <version>2.5.0</version>
+    <authors>Josh Karlin, Simon Capewell</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Launchy - Open Source Keystroke Launcher</summary>
+    <description>Launchy is a free cross-platform utility designed to help you forget about your start menu, the icons on your desktop, and even your file manager. 
+Launchy indexes the programs in your start menu and can launch your documents, project files, folders, and bookmarks with just a few keystrokes!</description>
+    <projectUrl>http://www.launchy.net</projectUrl>
+    <tags>launchy productivity launcher chocolatey</tags>
+    <!--<iconUrl>32x32.png</iconUrl>-->
+  </metadata>
+</package>
