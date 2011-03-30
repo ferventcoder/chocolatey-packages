@@ -11,7 +11,8 @@ $is64bit = $os.OSArchitecture -eq "64-bit"
 $urlToWin7_32bit = "http://view.atdmt.com/action/UMIRF_IE_IE9WW_InternationalDL?href=http://download.microsoft.com/download/C/3/B/C3BF2EF4-E764-430C-BDCE-479F2142FC81/IE9-Windows7-x86-enu.exe"
 $urlToWin7_64bit = "http://view.atdmt.com/action/UMIRF_IE_IE9WW_InternationalDL?href=http://download.microsoft.com/download/C/1/6/C167B427-722E-4665-9A40-A37BC5222B0A/IE9-Windows7-x64-enu.exe"
 
-$tempDir = Join-Path $env:TEMP "IE9"
+$chocTempDir = Join-Path $env:TEMP "chocolatey"
+$tempDir = Join-Path $chocTempDir "IE9"
 if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
 $file = Join-Path $tempDir "IE9.exe"
 

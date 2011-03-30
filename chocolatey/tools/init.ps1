@@ -23,6 +23,6 @@ Alternative NuGet -
 If you are not using NuGet in Visual Studio, please navigate to the directory with the chocolateysetup.psm1 and run that in Powershell, followed by Initialize-Chocolatey.
 Upgrade is the same, just run Initialize-Chocolatey again.
 ----------
-Once you've run initialize or upgrade, you can uninstall this package from the local project without affecting your chocolatey repository.s
+Once you've run initialize or upgrade, you can uninstall this package from the local project without affecting your chocolatey repository.
 ========================
 "@ | Write-Host

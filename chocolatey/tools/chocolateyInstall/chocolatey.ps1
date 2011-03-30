@@ -1,5 +1,5 @@
-#Chocolatey's main functions
-
+#Chocolatey
+$chocVer = '0.9.2.0'
 $nugetPath = 'C:\NuGet'
 $nugetExePath = Join-Path $nuGetPath 'bin'
 $nugetLibPath = Join-Path $nuGetPath 'lib'
@@ -12,7 +12,6 @@ $h2 = '-------------------------'
 function Coalesce-Args {
   (@($args | ?{$_}) + $null)[0]
 }
-
 Set-Alias ?? Coalesce-Args
 
 
@@ -26,28 +25,28 @@ function Run-ChocolateyProcess
 #"@
   $psi = new-object System.Diagnostics.ProcessStartInfo $file;
   $psi.Arguments = $arguments;
-  $psi.UseShellExecute = $false
-  $psi.CreateNoWindow = $true
-  $psi.RedirectStandardError = $true
-  $psi.RedirectStandardOutput = $true
-	if ($elevated.isPresent) {
-		Write-Host "Elevating Permissions"
+  #$psi.UseShellExecute = $false
+  #$psi.CreateNoWindow = $true
+  #$psi.RedirectStandardError = $true
+  #$psi.RedirectStandardOutput = $true
+	#if ($elevated.isPresent) {
+		Write-Host "Elevating Permissions";
 		$psi.Verb = "runas";
-	}
+	#}
+  $psi.WorkingDirectory = get-location;
  
-  $s = New-Object System.Diagnostics.Process;
-  $s.StartInfo = $psi;
+  $s = [System.Diagnostics.Process]::Start($psi);
 #  Register-ObjectEvent $s OutputDataReceived -Action { 
 #                                                        $global:stdout = $global:stdout + $args[1].Data; 
 #                                                        write-host $args[1].Data; 
 #                                                     }
-  $s.Start();
   #$s.BeginOutputReadLine();
-  $stdout = $s.StandardOutput.ReadToEnd();
-  $stderr = $s.StandardError.ReadToEnd();
-	$s.WaitForExit(300000);
+  #$stdout = $s.StandardOutput.ReadToEnd();
+  #$stderr = $s.StandardError.ReadToEnd();
+  $s.WaitForExit(300000);
   
-	return ?? $stdout $stderr
+  #?? $stdout $stderr | write-host
+  #return ?? $stdout $stderr
 }
 
 function Chocolatey-NuGet { 
@@ -56,7 +55,7 @@ param([string] $packageName)
 
 @"
 $h1
-Chocolatey is installing $packageName to "$nugetLibPath"
+Chocolatey ($chocVer) is installing $packageName to "$nugetLibPath"
 $h1
 "@ | Write-Host
 
@@ -67,8 +66,8 @@ $h2
 "@ | Write-Host
 
   $packageArgs = "install $packageName /outputdirectory ""$nugetLibPath"""
-  $nugetOutput = Run-ChocolateyProcess "$nugetExe" "$packageArgs"
-  #C:\NuGet\chocolateyInstall\NuGet.exe install $packageName /outputdirectory "$nugetLibPath"
+  #$nugetOutput = Run-ChocolateyProcess "$nugetExe" "$packageArgs"
+  C:\NuGet\chocolateyInstall\NuGet.exe install $packageName /outputdirectory "$nugetLibPath"
   
 @"
 $nugetOutput
@@ -127,14 +126,14 @@ If chocolateyInstall.ps1 is found, it will be run.
 $h2
 "@ | Write-Host
 
-		$ps1 = Get-ChildItem  $packageFolder.FullName -recurse | ?{$_.name -match "chocolateyinstall.ps1"} | sort name -Descending | select -First 1
-		
-		if ($ps1 -notlike '') {
-			$ps1FullPath = $ps1.FullName
-			Write-Host "Running against $ps1FullPath. This may take awhile, depending on the package."
-			Run-ChocolateyProcess powershell "$ps1FullPath" -elevated
-		}
-	}
+    $ps1 = Get-ChildItem  $packageFolder.FullName -recurse | ?{$_.name -match "chocolateyinstall.ps1"} | sort name -Descending | select -First 1
+    
+    if ($ps1 -notlike '') {
+      $ps1FullPath = $ps1.FullName
+      Write-Host "Running against $ps1FullPath. This may take awhile, depending on the package."
+      Run-ChocolateyProcess powershell "$ps1FullPath" -elevated
+    }
+  }
 }
 
 function Generate-BinFile {
@@ -149,6 +148,7 @@ function Chocolatey-Help {
 @"
 $h1
 Chocolatey - Your local machine NuGet Repository
+Version $chocVer
 $h1
 Chocolatey allows you to install application nuggets and run executables from anywhere.
  
