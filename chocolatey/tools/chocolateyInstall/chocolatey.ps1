@@ -18,59 +18,36 @@ Set-Alias ?? Coalesce-Args
 
 function Run-ChocolateyProcess
 {
-  $file, [string]$arguments = $args;
+  param([string]$file, [string]$arguments = $args, [switch] $elevated);
+#@"
+#`$file = $file
+#`$arguments =  $arguments
+#`$elevated = $($elevated.isPresent)
+#"@
   $psi = new-object System.Diagnostics.ProcessStartInfo $file;
   $psi.Arguments = $arguments;
   $psi.UseShellExecute = $false
   $psi.CreateNoWindow = $true
   $psi.RedirectStandardError = $true
   $psi.RedirectStandardOutput = $true
-	#if ($elevated) {
+	if ($elevated.isPresent) {
+		Write-Host "Elevating Permissions"
 		$psi.Verb = "runas";
-	#}
-  #$thisScript = (Get-Variable MyInvocation -Scope 1).Value 
-	#$thisScriptFolder = Split-Path $thisScript.MyCommand.Path
-  #$psi.WorkingDirectory = $thisScriptFolder;
-  
-  $global:stdout = ""
+	}
+ 
   $s = New-Object System.Diagnostics.Process;
   $s.StartInfo = $psi;
-  Register-ObjectEvent $s OutputDataReceived -Action { 
-                                                        $global:stdout = $global:stdout + $args[1].Data; 
-                                                        write-host $args[1].Data; 
-                                                     }
+#  Register-ObjectEvent $s OutputDataReceived -Action { 
+#                                                        $global:stdout = $global:stdout + $args[1].Data; 
+#                                                        write-host $args[1].Data; 
+#                                                     }
   $s.Start();
-  $s.BeginOutputReadLine();
-  #$s.StandardOutput.ReadToEnd();
-  $s.StandardError.ReadToEnd();
-	$s.WaitForExit(300000);
-  #return $global:stdout 
-}
-
-function Run-ChocolateyProcessNormal
-{
-  $file, [string]$arguments = $args;
-  $psi = new-object System.Diagnostics.ProcessStartInfo $file;
-  $psi.Arguments = $arguments;
-  $psi.UseShellExecute = $false
-  $psi.CreateNoWindow = $true
-  $psi.RedirectStandardError = $true
-  $psi.RedirectStandardOutput = $true
-  
-  $global:stdout = ""
-  $s = New-Object System.Diagnostics.Process;
-  $s.StartInfo = $psi;
-  Register-ObjectEvent $s OutputDataReceived -Action { 
-                                                        $global:stdout = $global:stdout + $args[1].Data; 
-                                                        write-host $args[1].Data; 
-                                                     }
-  $s.Start();
-  $s.BeginOutputReadLine();
-  #$s.StandardOutput.ReadToEnd();
-  $s.StandardError.ReadToEnd();
+  #$s.BeginOutputReadLine();
+  $stdout = $s.StandardOutput.ReadToEnd();
+  $stderr = $s.StandardError.ReadToEnd();
 	$s.WaitForExit(300000);
   
-  #return $global:stdout 
+	return ?? $stdout $stderr
 }
 
 function Chocolatey-NuGet { 
@@ -88,14 +65,13 @@ $h2
 NuGet
 $h2
 "@ | Write-Host
-  #something is not working right, so for now we spell out the whole path
+
   $packageArgs = "install $packageName /outputdirectory ""$nugetLibPath"""
-  #$out = Run-ChocolateyProcessNormal C:\NuGet\chocolateyInstall\NuGet.exe "$packageArgs"
-  #C:\NuGet\chocolateyInstall\NuGet.exe $packageArgs
-  
-  C:\NuGet\chocolateyInstall\NuGet.exe install $packageName /outputdirectory "$nugetLibPath"
+  $nugetOutput = Run-ChocolateyProcess "$nugetExe" "$packageArgs"
+  #C:\NuGet\chocolateyInstall\NuGet.exe install $packageName /outputdirectory "$nugetLibPath"
   
 @"
+$nugetOutput
 $h2
 "@ | Write-Host  
 
@@ -155,12 +131,9 @@ $h2
 		
 		if ($ps1 -notlike '') {
 			$ps1FullPath = $ps1.FullName
-			Write-Host "Running against $ps1FullPath"
-			Run-ChocolateyProcess powershell "$ps1FullPath"
-      
-      Write-Host "$h2"  
+			Write-Host "Running against $ps1FullPath. This may take awhile, depending on the package."
+			Run-ChocolateyProcess powershell "$ps1FullPath" -elevated
 		}
-    
 	}
 }
 

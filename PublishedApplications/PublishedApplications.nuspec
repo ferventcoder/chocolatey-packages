@@ -7,8 +7,9 @@
     <authors>David Keaveny, Rob Reynolds</authors>
     <owners>Rob Reynolds</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>This gives your non web project the ability to be put into a published folder, just like your web project does when being built outside of visual studio.</description>
     <summary>Published Applications allows you to have a _PublishedApplications folder, similar to _PublishedWebsites</summary>
+    <description>This gives your non web project the ability to be put into a published folder, just like your web project does when being built outside of visual studio.</description>
     <language>en-US</language>
+    <tags>_PublishedApplications _PublishedWebsites</tags>
   </metadata>
 </package>

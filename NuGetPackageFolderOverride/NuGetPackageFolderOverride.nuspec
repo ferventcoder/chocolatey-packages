@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>NuGetPackageFolderOverride</id>
+    <title>NuGetPackageFolderOverride</title>
+    <version>0.0.0.1</version>
+    <authors>Rob Reynolds</authors>
+    <owners>Rob Reynolds</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>NuGetPackageFolderOverride - a way to override your packages folder. NOTE: Unsupported functionality. There be dragons in there! You've been warned.</summary>
+    <description>NuGetPackageFolderOverride - a way to override your packages folder. NOTE: Unsupported functionality. There be dragons in there! You've been warned.</description>
+    <language>en-US</language>
+    <tags>nuget lib packages folder override</tags>
+  </metadata>
+</package>

@@ -12,11 +12,11 @@ function Request-ElevatedChocolateyPermissions
 Set-Alias sudo-chocolatey Request-ElevatedChocolateyPermissions;
 
 function Create-ChocolateyBinFile {
-param([string] $nugetChocolateyBinFile)
+param([string] $nugetChocolateyBinFile,[string] $nugetChocolateyInstallAlias)
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" %*" | Out-File $nugetChocolateyBinFile -encoding ASCII
-#"@echo off
-#""$nugetChocolateyPath\chocolatey.cmd"" install %*" | Out-File $nugetChocolateyBinFile -encoding ASCII
+"@echo off
+""$nugetChocolateyPath\chocolatey.cmd"" install %*" | Out-File $nugetChocolateyInstallAlias -encoding ASCII
 }
 
 function Initialize-Chocolatey {
@@ -30,23 +30,22 @@ function Initialize-Chocolatey {
   $nugetChocolateyInstallAlias = Join-Path $nugetExePath 'cinst.bat'
 
   $nugetYourPkgPath = [System.IO.Path]::Combine($nugetLibPath,"yourPackageName")
-  write-host 'We are setting up the Chocolatey repository for NuGet packages that should be at the machine level. Think executables/application packages, not library packages.'
-	Write-Host 'That is what Chocolatey NuGet goodness is for.'
-  write-host 'The repository is set up at ' $nugetPath.
-  write-host 'The packages themselves go to ' $nugetLibPath '(i.e. ' $nugetYourPkgPath ').'
-  write-host 'A batch file for the command line goes to ' $nugetExePath ' and points to an executable in ' $nugetYourPkgPath.
-  write-host ''
-	
-	Write-Host 'Creating Chocolatey NuGet folders if they do not already exist.'
+@"
+We are setting up the Chocolatey repository for NuGet packages that should be at the machine level. Think executables/application packages, not library packages.
+That is what Chocolatey NuGet goodness is for.
+The repository is set up at $nugetPath.
+The packages themselves go to $nugetLibPath (i.e. $nugetYourPkgPath).
+A batch file for the command line goes to $nugetExePath and points to an executable in $nugetYourPkgPath.
+
+Creating Chocolatey NuGet folders if they do not already exist.
+
+"@ | Write-Host
 
   #create the base structure if it doesn't exist
   if (![System.IO.Directory]::Exists($nugetExePath)) {[System.IO.Directory]::CreateDirectory($nugetExePath)}
   if (![System.IO.Directory]::Exists($nugetLibPath)) {[System.IO.Directory]::CreateDirectory($nugetLibPath)}
   if (![System.IO.Directory]::Exists($nugetChocolateyPath)) {[System.IO.Directory]::CreateDirectory($nugetChocolateyPath)}
 
-
-	Write-Host ''
-	
 	#$chocInstallFolder = Get-ChildItem .\ -Recurse | ?{$_.name -match  "chocolateyInstall*"} | sort name -Descending | select -First 1 
 	$thisScript = (Get-Variable MyInvocation -Scope 1).Value 
 	$thisScriptFolder = Split-Path $thisScript.MyCommand.Path
@@ -54,7 +53,7 @@ function Initialize-Chocolatey {
 	Write-Host 'Copying the contents of ' $chocInstallFolder ' to ' $nugetPath '.'
 	Copy-Item $chocInstallFolder $nugetPath –recurse -force
 	Write-Host 'Creating ' $nugetChocolateyBinFile ' so you can call chocolatey from anywhere.'
-	Create-ChocolateyBinFile $nugetChocolateyBinFile
+	Create-ChocolateyBinFile $nugetChocolateyBinFile $nugetChocolateyInstallAlias
 	Write-Host ''
 		
   #get the PATH variable from the machine
@@ -77,24 +76,26 @@ function Initialize-Chocolatey {
 	  #[Environment]::SetEnvironmentVariable( "Path", $envPath, [System.EnvironmentVariableTarget]::Machine )
 	  $psArgs = "[Environment]::SetEnvironmentVariable( 'Path', '" + $envPath + "', [System.EnvironmentVariableTarget]::Machine )"  #-executionPolicy Unrestricted"
 
-	  Write-Host '' 
-	  Write-Host 'You may be being asked for permission to add ' $nugetExePath ' to the PATH system environment variable. This gives you the ability to execute nuget applications from the command line.'
-	  Write-Host 'Please select [Yes] when asked for privileges...'
-		Write-Host '' 
+@"
+
+You may be being asked for permission to add $nugetExePath to the PATH system environment variable. This gives you the ability to execute applications from the command line.
+Please select [Yes] when asked for privileges...
+
+"@ | Write-Host
 	  Start-Sleep 3
 
 	  sudo-chocolatey powershell "$psArgs"
-		
 		
 		#add it to the local path as well so users will be off and running
 		$envPSPath = $env:PATH
 		$env:Path = $envPSPath + $statementTerminator + $nugetExePath + $statementTerminator
 	}
-	
-	Write-Host 'Chocolatey is now ready.'
-	Write-Host 'You can call chocolatey from anywhere, command line or powershell by typing chocolatey.'
-	Write-Host 'Run chocolatey /? for a list of functions.'
-  
+
+@"
+Chocolatey is now ready.
+You can call chocolatey from anywhere, command line or powershell by typing chocolatey.
+Run chocolatey /? for a list of functions.
+"@ | write-host
 }
 
 export-modulemember -function Initialize-Chocolatey;
