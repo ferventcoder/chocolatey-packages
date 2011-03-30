@@ -15,3 +15,4 @@ write-host "Installing Notepad++ silently."
 & "$file" "/S"
 
 write-host "Notepad++ has been installed."
+Start-Sleep 3

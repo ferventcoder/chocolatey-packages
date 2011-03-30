@@ -9,4 +9,6 @@ if ($packageFolder -notlike '') {
   msiexec /i "$installPath"  /quiet
   
   write-host 'Expresso installed successfully'
-}
+ 
+} 
+Start-Sleep 3

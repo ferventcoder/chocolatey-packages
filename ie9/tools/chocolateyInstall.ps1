@@ -26,3 +26,4 @@ $downloader = new-object System.Net.WebClient
 $downloader.DownloadFile($url, $file)
 
 Invoke-Item $file
+Start-Sleep 3

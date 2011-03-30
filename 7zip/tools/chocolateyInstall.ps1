@@ -23,3 +23,4 @@ $downloader.DownloadFile($url, $file)
 write-host "Installing $fileName $systemBit silently..."
 msiexec /i  "$file" /quiet
 write-host "$fileName $systemBit has been installed."
+Start-Sleep 3

@@ -15,3 +15,4 @@ write-host "Installing Launchy silently."
 & "$file" "/silent"
 
 write-host "Launchy has been installed. Start Launchy from the Start Menu. Then press Left Alt + Space for options and to use."
+Start-Sleep 3

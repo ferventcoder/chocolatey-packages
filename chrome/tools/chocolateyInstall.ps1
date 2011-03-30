@@ -14,3 +14,4 @@ $downloader.DownloadFile($url, $file)
 & "$file" "/silent"
 
 write-host "Google Chrome has been installed."
+Start-Sleep 3
