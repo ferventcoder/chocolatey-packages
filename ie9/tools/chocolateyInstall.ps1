@@ -2,7 +2,7 @@
 $winVersionName = $os.Caption
 $winVer = $os.Version
 $bitType = $os.OSArchitecture
-$is64bit = $os.OSArchitecture -eq "64-bit"
+$is64bit = $os.OSArchitecture -match "64"
 
 #auto installers
 #$urlToWin7_32bit = "http://view.atdmt.com/action/UMIRF_IE_IE9HP_Win7?href=http://download.microsoft.com/download/8/6/D/86DB5DC9-5706-4A5B-BD46-FFBA6FA67D44/IE9-Windows7-x86-enu.exe"
