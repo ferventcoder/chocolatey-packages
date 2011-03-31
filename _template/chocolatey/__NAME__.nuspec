@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>__NAME__</id>
+    <title>__NAME__</title>
+    <version>__REPLACE__</version>
+    <authors>__REPLACE__</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>__NAME__ </summary>
+    <description>__NAME__ Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>__REPLACE__</projectUrl>
+    <tags>__NAME__  chocolatey</tags>
+    <licenseUrl></licenseUrl>
+    <requireLicenseAcceptance></requireLicenseAcceptance>
+    <!--<iconUrl>32x32.png</iconUrl>-->
+  </metadata>
+</package>
