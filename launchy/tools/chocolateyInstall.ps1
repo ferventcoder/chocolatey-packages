@@ -20,7 +20,8 @@ $downloader.DownloadFile($url, $file)
 
 write-host "Installing $fileName silently..."
 
-& "$file" "/silent"
+Start-Process -FilePath $file -ArgumentList "/silent" -Wait #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
+#& "$file" "/silent"
 
 write-host "$fileName has been installed. Start $fileName from the Start Menu. Then press Left Alt + Space for options and to use."
 Start-Sleep 3

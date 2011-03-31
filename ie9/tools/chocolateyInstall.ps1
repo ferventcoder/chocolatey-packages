@@ -31,7 +31,8 @@ if ($fileType -like 'msi') {
   msiexec /i  "$file" /quiet
 }
 if ($fileType -like 'exe') {
-& "$file"
+Start-Process -FilePath $file -Wait #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
+#& "$file"
 }
 
 write-host "$fileName has been installed."

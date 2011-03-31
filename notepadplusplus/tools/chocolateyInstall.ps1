@@ -19,7 +19,9 @@ $downloader.DownloadFile($url, $file)
 
 write-host "Installing Notepad++ silently."
 
-& "$file" "/S"
+
+Start-Process -FilePath $file -ArgumentList "/S" -Wait #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
+#& "$file" "/S"
 
 write-host "Notepad++ has been installed."
 Start-Sleep 3

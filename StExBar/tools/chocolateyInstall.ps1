@@ -26,7 +26,8 @@ if ($fileType -like 'msi') {
   msiexec /i  "$file" /quiet
 }
 if ($fileType -like 'exe') {
-& "$file" "/S" #"/s /S /q /Q /quiet /silent" # try any of these to get the silent installer
+  #& "$file" "/S" #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
+  Start-Process -FilePath $file -ArgumentList "/S" -Wait #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
 }
 
 write-host "$fileName $systemBit has been installed."
