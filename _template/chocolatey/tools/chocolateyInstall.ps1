@@ -6,6 +6,11 @@ $tempDir = Join-Path $chocTempDir "$fileName"
 if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
 $file = Join-Path $tempDir "$fileName.$fileType"
 
+$processor = Get-WmiObject Win32_Processor
+$is64bit = $processor.AddressWidth -eq 64
+$systemBit = '32 bit'
+if ($is64bit) {$systemBit = '64 bit';}
+
 $url = '__REPLACE__'
 
 Write-Host "Downloading $fileName to $file from $url"

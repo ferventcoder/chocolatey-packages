@@ -13,6 +13,12 @@ $downloader = new-object System.Net.WebClient
 $downloader.DownloadFile($url, $file)
 
 write-host "Installing $fileName silently..."
-& "$file" "/S"
+if ($fileType -like 'msi') {
+  msiexec /i  "$file" /quiet
+}
+if ($fileType -like 'exe') {
+& "$file" "/S" #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
+}
+
 write-host "$fileName has been installed."
 Start-Sleep 3

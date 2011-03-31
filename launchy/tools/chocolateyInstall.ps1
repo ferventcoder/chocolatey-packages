@@ -1,18 +1,26 @@
-﻿$chocTempDir = Join-Path $env:TEMP "chocolatey"
-$tempDir = Join-Path $chocTempDir "launchy"
+﻿$fileName = 'launchy'
+$fileType = 'exe' #msi or exe
+
+$chocTempDir = Join-Path $env:TEMP "chocolatey"
+$tempDir = Join-Path $chocTempDir "$fileName"
 if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
-$file = Join-Path $tempDir "Launchy.exe"
+$file = Join-Path $tempDir "$fileName.$fileType"
+
+$processor = Get-WmiObject Win32_Processor
+$is64bit = $processor.AddressWidth -eq 64
+$systemBit = '32 bit'
+if ($is64bit) {$systemBit = '64 bit';}
 
 $url = 'http://www.launchy.net/downloads/win/Launchy2.5.exe';
-Write-Host "Downloading Launchy ( $url )."
 
-#http://bartdesmet.net/blogs/bart/archive/2006/11/25/PowerShell-_2D00_-How-to-download-a-file_3F00_.aspx
+Write-Host "Downloading $fileName to $file from $url"
+
 $downloader = new-object System.Net.WebClient
 $downloader.DownloadFile($url, $file)
 
-write-host "Installing Launchy silently."
+write-host "Installing $fileName silently..."
 
 & "$file" "/silent"
 
-write-host "Launchy has been installed. Start Launchy from the Start Menu. Then press Left Alt + Space for options and to use."
+write-host "$fileName has been installed. Start $fileName from the Start Menu. Then press Left Alt + Space for options and to use."
 Start-Sleep 3
