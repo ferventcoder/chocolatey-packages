@@ -4,8 +4,8 @@
     <id>Console2</id>
     <title>Console2</title>
     <version>2.0</version>
-    <authors>bozho</authors>
-    <owners>Chris Ortman</owners>
+    <authors>chrisortman</authors>
+    <owners>chrisortman</owners>
     <summary>Console2 </summary>
     <description>Console2 Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://sourceforge.net/projects/console/</projectUrl>
