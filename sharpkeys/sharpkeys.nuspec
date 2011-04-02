@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>sharpkeys</id>
+    <title>sharpkeys</title>
+    <version>3.0</version>
+    <authors>Randy</authors>
+    <owners>chrisortman</owners>
+    <summary>sharpkeys</summary>
+    <description>sharpkeys Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://www.randyrants.com/2008/12/sharpkeys_30.html</projectUrl>
+    <tags>sharpkeys  chocolatey</tags>
+    <licenseUrl>http://sharpkeys.codeplex.com/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>32x32.png</iconUrl>-->
+  </metadata>
+</package>
