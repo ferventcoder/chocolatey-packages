@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>msysgit</id>
+    <title>msysgit</title>
+    <version>1.7.3.1</version>
+    <authors>Johannes Schindelin, msysgit Committers</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>msysgit - Git for Windows</summary>
+    <description>msysgit - Git for Windows. Git is a powerful distributed Source Code Management tool. If you just want to use Git to do your version control in Windows, you will need to download Git for Windows, run the installer, and you are ready to start. Note: Git for Windows is a project run by volunteers, so if you want it to improve, volunteer!
+ Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://code.google.com/p/msysgit/</projectUrl>
+    <tags>msysgit git vcs dvcs version control chocolatey</tags>
+    <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>32x32.png</iconUrl>-->
+  </metadata>
+</package>

@@ -11,7 +11,7 @@ Write-Host "Downloading Google Chrome to $file from $url"
 $downloader = new-object System.Net.WebClient
 $downloader.DownloadFile($url, $file)
 
-& "$file" "/silent"
+Start-Process -FilePath $file -ArgumentList "/silent" -Wait #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
 
 write-host "Google Chrome has been installed."
 Start-Sleep 3

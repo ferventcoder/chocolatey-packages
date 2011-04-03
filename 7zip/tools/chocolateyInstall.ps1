@@ -1,8 +1,10 @@
 ﻿$fileName = '7Zip'
 $fileType = 'msi'
-$os = Get-WmiObject Win32_OperatingSystem
-$systemBit = $os.OSArchitecture
-$is64bit = $os.OSArchitecture -eq "64-bit"
+
+$processor = Get-WmiObject Win32_Processor
+$is64bit = $processor.AddressWidth -eq 64
+$systemBit = '32 bit'
+if ($is64bit) {$systemBit = '64 bit';}
 
 $chocTempDir = Join-Path $env:TEMP "chocolatey"
 $tempDir = Join-Path $chocTempDir "$fileName"
