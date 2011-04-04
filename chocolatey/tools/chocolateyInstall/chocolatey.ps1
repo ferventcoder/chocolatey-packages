@@ -1,3 +1,5 @@
+param([parameter(Position=0)][string]$command, [parameter(Position=1, ValueFromRemainingArguments=$true)]$arguments = $args, $source)
+
 #Chocolatey
 $chocVer = '0.9.2.0'
 $nugetPath = 'C:\NuGet'
@@ -51,7 +53,7 @@ function Run-ChocolateyProcess
 
 function Chocolatey-NuGet { 
 #[string]$install,[string]$packageName,[string]$arguments = $args;
-param([string] $packageName, [string] $source)
+param([parameter(Position=0, Mandatory=$true)][string] $packageName, $source)
 
 @"
 $h1
@@ -74,6 +76,11 @@ $h2
     & $nugetExe install $packageName /outputdirectory "$nugetLibPath" /Source $source
   }
   
+  # NuGet exited with error so exit
+  if (!$?) {
+    return;
+  }
+  
 @"
 $nugetOutput
 $h2
@@ -94,7 +101,7 @@ $h1
 function Get-ChocolateyBins {
 param([string] $packageName)
   #search the lib directory for the highest number of the folder
-  $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "$packageName*"} | sort name -Descending | select -First 1 
+  $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "^$packageName*"} | sort name -Descending | select -First 1 
   if ($packageFolder -notlike '') { 
 @"
 $h2
@@ -120,7 +127,7 @@ $h2
 
 function Run-ChocolateyPS1 {
 param([string] $packageName)
-  $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "$packageName*"} | sort name -Descending | select -First 1 
+  $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "^$packageName*"} | sort name -Descending | select -First 1 
   if ($packageFolder) { 
 @"
 $h2
@@ -160,34 +167,30 @@ Chocolatey allows you to install application nuggets and run executables from an
 $h2
 Usage
 $h2
-chocolatey [install packageName|update packageName|list [filters]|help]
+chocolatey [install packageName|update packageName|list [filter]|help] [-source source]
   
-example: chocolatey install nunit
-example: chocolatey update nunit
+example: chocolatey install nunit [-source source]
+example: chocolatey update nunit [-source source]
 example: chocolatey help
-example: chocolatey list [filters] (might take awhile)
+example: chocolatey list [filter] [-source source] (might take awhile)
 $h1
 "@ | Write-Host
 }
 
-function Chocolatey-List($selectors) {
-#$list, [string]$arguments = $args;
-  
-	#something is not working right, so for now we spell out the whole path
-  & $nugetExe list $selectors
+function Chocolatey-List([parameter(Position=0)][string]$selector, $source) {
+  if ($source -eq $nil) {
+    & $nugetExe list $selector
+  } else {
+    & $nugetExe list $selector /Source $source
+  }
 }
 
 #main entry point
-switch -wildcard ($args[0]) 
+switch -wildcard ($command) 
 {
-  "install" { Chocolatey-NuGet  $args[1]; }
-  "test_install" { Chocolatey-NuGet $args[1] $args[2] }
-  "update" { Chocolatey-NuGet  $args[1]; }
-  "list" {
-    # extract the filter list
-    $selectors = if ($args.Length -gt 1) { $args[1..($args.Length - 1)] };
-    
-    Chocolatey-List $selectors;
-  }
+  "install" { Chocolatey-NuGet $arguments[0] -source $source; }
+  "test_install" { Chocolatey-NuGet $arguments[0] -source $source }
+  "update" { Chocolatey-NuGet  $arguments[0] -source $source; }
+  "list" { Chocolatey-List $arguments[0] -source $source; }
   default { Chocolatey-Help; }
 }
