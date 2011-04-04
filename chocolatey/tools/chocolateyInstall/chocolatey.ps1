@@ -69,9 +69,9 @@ $h2
   #$nugetOutput = Run-ChocolateyProcess "$nugetExe" "$packageArgs"
 
   if($source -eq $nil) {
-    C:\NuGet\chocolateyInstall\NuGet.exe install $packageName /outputdirectory "$nugetLibPath"
+    & $nugetExe install $packageName /outputdirectory "$nugetLibPath"
   } else {
-    C:\NuGet\chocolateyInstall\NuGet.exe install $packageName /outputdirectory "$nugetLibPath" /Source $source
+    & $nugetExe install $packageName /outputdirectory "$nugetLibPath" /Source $source
   }
   
 @"
@@ -160,20 +160,21 @@ Chocolatey allows you to install application nuggets and run executables from an
 $h2
 Usage
 $h2
-chocolatey [install packageName|update packageName|list|help]
+chocolatey [install packageName|update packageName|list [filters]|help]
   
 example: chocolatey install nunit
 example: chocolatey update nunit
 example: chocolatey help
-example: chocolatey list (might take awhile)
+example: chocolatey list [filters] (might take awhile)
 $h1
 "@ | Write-Host
 }
 
-function Chocolatey-List {
-  $list, [string]$arguments = $args;
+function Chocolatey-List($selectors) {
+#$list, [string]$arguments = $args;
+  
 	#something is not working right, so for now we spell out the whole path
-  C:\NuGet\chocolateyInstall\NuGet.exe list
+  & $nugetExe list $selectors
 }
 
 #main entry point
@@ -182,6 +183,11 @@ switch -wildcard ($args[0])
   "install" { Chocolatey-NuGet  $args[1]; }
   "test_install" { Chocolatey-NuGet $args[1] $args[2] }
   "update" { Chocolatey-NuGet  $args[1]; }
-  "list" { Chocolatey-List; }
+  "list" {
+    # extract the filter list
+    $selectors = if ($args.Length -gt 1) { $args[1..($args.Length - 1)] };
+    
+    Chocolatey-List $selectors;
+  }
   default { Chocolatey-Help; }
 }
