@@ -53,7 +53,7 @@ function Run-ChocolateyProcess
 
 function Chocolatey-NuGet { 
 #[string]$install,[string]$packageName,[string]$arguments = $args;
-param([parameter(Position=0, Mandatory=$true)][string] $packageName, $source)
+param([parameter(Position=0, Mandatory=$true)][string] $packageName, $source = 'https://go.microsoft.com/fwlink/?LinkID=206669')
 
 @"
 $h1
