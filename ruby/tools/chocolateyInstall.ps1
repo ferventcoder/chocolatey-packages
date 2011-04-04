@@ -11,7 +11,7 @@ $is64bit = $processor.AddressWidth -eq 64
 $systemBit = '32 bit'
 if ($is64bit) {$systemBit = '64 bit';}
 
-$url = 'http://rubyforge.org/frs/download.php/74293/rubyinstaller-1.8.7-p334.exe'
+$url = 'http://rubyforge.org/frs/download.php/74298/rubyinstaller-1.9.2-p180.exe'
 
 Write-Host "Downloading $fileName to $file from $url"
 
