@@ -11,7 +11,7 @@ $url = 'http://www.microsoft.com/downloads/info.aspx?na=46&SrcFamilyId=D2928BC1-
 Write-Host "Downloading $fileName to $file from $url"
 
 $downloader = new-object System.Net.WebClient
-#$downloader.DownloadFile($url, $file)
+$downloader.DownloadFile($url, $file)
 
 write-host "Installing $fileName..."
 Start-Process -FilePath $file -Wait #-ArgumentList "/q"
