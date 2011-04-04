@@ -6,15 +6,15 @@ $tempDir = Join-Path $chocTempDir "$fileName"
 if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
 $file = Join-Path $tempDir "$fileName.$fileType"
 
-$url = 'http://www.microsoft.com/downloads/info.aspx?na=46&SrcFamilyId=C9BA1FE1-3BA8-439A-9E21-DEF90A8615A9&SrcDisplayLang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f7%2fB%2f1%2f7B11DE4E-0247-448E-8D39-7C9B12ABA1FF%2fAspNetMVC2_VS2008.exe'
+$url = 'http://www.microsoft.com/downloads/info.aspx?na=46&SrcFamilyId=D2928BC1-F48C-4E95-A064-2A455A22C8F6&SrcDisplayLang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f3%2f4%2fA%2f34A8A203-BD4B-44A2-AF8B-CA2CFCB311CC%2fAspNetMVC3Setup.exe'
 
 Write-Host "Downloading $fileName to $file from $url"
 
 $downloader = new-object System.Net.WebClient
-$downloader.DownloadFile($url, $file)
+#$downloader.DownloadFile($url, $file)
 
 write-host "Installing $fileName..."
-Start-Process -FilePath $file -Wait
+Start-Process -FilePath $file -Wait #-ArgumentList "/q"
 
 write-host "$fileName has been installed."
 Start-Sleep 3

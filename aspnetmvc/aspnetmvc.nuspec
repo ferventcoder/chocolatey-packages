@@ -3,7 +3,7 @@
   <metadata>
     <id>aspnetmvc</id>
     <title>aspnetmvc</title>
-    <version>2.0</version>
+    <version>3.0</version>
     <authors>Microsoft Asp.Net Team</authors>
     <owners>Rob Reynolds</owners>
     <summary>ASP.NET MVC is a free, fully supported Microsoft framework for developing great web applications using the Model-View-Controller pattern.</summary>
