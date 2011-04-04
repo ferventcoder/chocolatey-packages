@@ -51,7 +51,7 @@ function Run-ChocolateyProcess
 
 function Chocolatey-NuGet { 
 #[string]$install,[string]$packageName,[string]$arguments = $args;
-param([string] $packageName)
+param([string] $packageName, [string] $source)
 
 @"
 $h1
@@ -67,7 +67,12 @@ $h2
 
   $packageArgs = "install $packageName /outputdirectory ""$nugetLibPath"""
   #$nugetOutput = Run-ChocolateyProcess "$nugetExe" "$packageArgs"
-  C:\NuGet\chocolateyInstall\NuGet.exe install $packageName /outputdirectory "$nugetLibPath"
+
+  if($source -eq $nil) {
+    C:\NuGet\chocolateyInstall\NuGet.exe install $packageName /outputdirectory "$nugetLibPath"
+  } else {
+    C:\NuGet\chocolateyInstall\NuGet.exe install $packageName /outputdirectory "$nugetLibPath" /Source $source
+  }
   
 @"
 $nugetOutput
@@ -175,6 +180,7 @@ function Chocolatey-List {
 switch -wildcard ($args[0]) 
 {
   "install" { Chocolatey-NuGet  $args[1]; }
+  "test_install" { Chocolatey-NuGet $args[1] $args[2] }
   "update" { Chocolatey-NuGet  $args[1]; }
   "list" { Chocolatey-List; }
   default { Chocolatey-Help; }
