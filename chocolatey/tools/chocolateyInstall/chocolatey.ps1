@@ -159,12 +159,19 @@ Chocolatey allows you to install application nuggets and run executables from an
 $h2
 Usage
 $h2
-chocolatey [install packageName|update packageName|list|help]
-  
+chocolatey [install packageName  [[-source] source] [[-version] version]|update packageName [[-source] source] [[-version] version]|list [[-source] source]|help]
+
 example: chocolatey install nunit
-example: chocolatey update nunit
+example: chocolatey install nunit -version 2.5.7.10213
+example: chocolatey update nunit http://somelocalfeed.com/nuget/
 example: chocolatey help
 example: chocolatey list (might take awhile)
+
+A shortcut to install is cinst
+cinst packageName  [[-source] source] [[-version] version]
+example: cinst 7zip
+example: cinst ruby -version 1.8.7
+
 $h1
 "@ | Write-Host
 }
