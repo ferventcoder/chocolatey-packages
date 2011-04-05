@@ -13,6 +13,6 @@ Every project that is using a package is upgraded to the latest.
 Please run 'Update-Package' to upgrade all packages to current version. 
 Please run 'Update-Package packageName' to upgrade just one package.</description>
     <language>en-US</language>
-    <tags>nuget lib packages folder override</tags>
+    <tags>nuget lib packages folder override update-package</tags>
   </metadata>
 </package>
