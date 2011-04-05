@@ -7,8 +7,8 @@
     <authors>Rob Reynolds</authors>
     <owners>Rob Reynolds</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>NuGetPackageUpdater - global update of a package in a project or all packages that have updates.</summary>
-    <description>NuGetPackageUpdater - global update of a package in a project or all packages that have updates. This applies a global update of packages to your solution. 
+    <summary>NuGetPackageUpdater - global update of a package in a solution or all packages that have updates.</summary>
+    <description>NuGetPackageUpdater - global update of a package in a solution or all packages that have updates. This applies a global update of packages to your solution. 
 Every project that is using a package is upgraded to the latest. 
 Please run 'Update-Package' to upgrade all packages to current version. 
 Please run 'Update-Package packageName' to upgrade just one package.</description>
