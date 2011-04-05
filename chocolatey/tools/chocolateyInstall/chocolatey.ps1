@@ -52,7 +52,6 @@ function Run-ChocolateyProcess
 }
 
 function Chocolatey-NuGet { 
-#[string]$install,[string]$packageName,[string]$arguments = $args;
 param([string] $packageName, [string] $source = 'https://go.microsoft.com/fwlink/?LinkID=206669',[string] $version='')
 
 @"
@@ -71,7 +70,14 @@ $h2
   if ($version -notlike '') {
     $packageArgs =$packageArgs + " /version $version";
   }
-  Start-Process $nugetExe -ArgumentList $packageArgs -NoNewWindow -Wait 
+  
+	$chocTempDir = Join-Path $env:TEMP "chocolatey"
+	$logFile = Join-Path $chocTempDir "$($packageName).log"
+	Start-Process $nugetExe -ArgumentList $packageArgs -NoNewWindow -Wait -RedirectStandardOutput $logFile
+	foreach ($line in Get-Content $logFile -Encoding Ascii) {
+		Write-Host $line
+		#todo: get the name of the packages and their versions
+	}
   
 @"
 $nugetOutput
