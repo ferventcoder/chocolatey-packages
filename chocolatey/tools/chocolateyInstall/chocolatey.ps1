@@ -74,6 +74,7 @@ $h2
 	$chocTempDir = Join-Path $env:TEMP "chocolatey"
 	$logFile = Join-Path $chocTempDir "$($packageName).log"
 	Start-Process $nugetExe -ArgumentList $packageArgs -NoNewWindow -Wait -RedirectStandardOutput $logFile
+  #Start-Process $nugetExe -ArgumentList $packageArgs -NoNewWindow -Wait |Tee-Object $logFile | Write-Host
 	foreach ($line in Get-Content $logFile -Encoding Ascii) {
 		Write-Host $line
 		#todo: get the name of the packages and their versions
