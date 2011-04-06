@@ -1,7 +1,7 @@
-param([parameter(Position=0)][string]$command, [parameter(Position=1, ValueFromRemainingArguments=$true)]$arguments = $args, $source)
+param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=206669',$version='')
 
 #Chocolatey
-$chocVer = '0.9.2.0'
+$chocVer = '0.9.3.0'
 $nugetPath = 'C:\NuGet'
 $nugetExePath = Join-Path $nuGetPath 'bin'
 $nugetLibPath = Join-Path $nuGetPath 'lib'
@@ -52,8 +52,7 @@ function Run-ChocolateyProcess
 }
 
 function Chocolatey-NuGet { 
-#[string]$install,[string]$packageName,[string]$arguments = $args;
-param([parameter(Position=0, Mandatory=$true)][string] $packageName, $source)
+param([string] $packageName, [string] $source = 'https://go.microsoft.com/fwlink/?LinkID=206669',[string] $version='')
 
 @"
 $h1
@@ -67,19 +66,19 @@ NuGet
 $h2
 "@ | Write-Host
 
-  $packageArgs = "install $packageName /outputdirectory ""$nugetLibPath"""
-  #$nugetOutput = Run-ChocolateyProcess "$nugetExe" "$packageArgs"
-
-  if($source -eq $nil) {
-    & $nugetExe install $packageName /outputdirectory "$nugetLibPath"
-  } else {
-    & $nugetExe install $packageName /outputdirectory "$nugetLibPath" /Source $source
+  $packageArgs = "install $packageName /outputdirectory `"$nugetLibPath`" /source $source"
+  if ($version -notlike '') {
+    $packageArgs =$packageArgs + " /version $version";
   }
   
-  # NuGet exited with error so exit
-  if (!$?) {
-    return;
-  }
+	$chocTempDir = Join-Path $env:TEMP "chocolatey"
+	$logFile = Join-Path $chocTempDir "$($packageName).log"
+	Start-Process $nugetExe -ArgumentList $packageArgs -NoNewWindow -Wait -RedirectStandardOutput $logFile
+  #Start-Process $nugetExe -ArgumentList $packageArgs -NoNewWindow -Wait |Tee-Object $logFile | Write-Host
+	foreach ($line in Get-Content $logFile -Encoding Ascii) {
+		Write-Host $line
+		#todo: get the name of the packages and their versions
+	}
   
 @"
 $nugetOutput
@@ -167,30 +166,42 @@ Chocolatey allows you to install application nuggets and run executables from an
 $h2
 Usage
 $h2
-chocolatey [install packageName|update packageName|list [filter]|help] [-source source]
-  
-example: chocolatey install nunit [-source source]
-example: chocolatey update nunit [-source source]
+chocolatey [install packageName  [[-source] source] [[-version] version]|update packageName [[-source] source] [[-version] version]|list [packageName] [[-source] source]|help]
+
+example: chocolatey install nunit
+example: chocolatey install nunit -version 2.5.7.10213
+example: chocolatey update nunit http://somelocalfeed.com/nuget/
 example: chocolatey help
-example: chocolatey list [filter] [-source source] (might take awhile)
+example: chocolatey list (might take awhile)
+example: chocolatey list nunit
+
+A shortcut to install is cinst
+cinst packageName  [[-source] source] [[-version] version]
+example: cinst 7zip
+example: cinst ruby -version 1.8.7
+
 $h1
 "@ | Write-Host
 }
 
-function Chocolatey-List([parameter(Position=0)][string]$selector, $source) {
-  if ($source -eq $nil) {
-    & $nugetExe list $selector
-  } else {
-    & $nugetExe list $selector /Source $source
+function Chocolatey-List {
+  param([string]$selector='', [string]$source='https://go.microsoft.com/fwlink/?LinkID=206669');
+  
+  $parameters = "list /source $source"
+  
+  if ($selector -ne '') {
+	$parameters = "$parameters ""$selector"""
   }
+  
+  Start-Process $nugetExe -ArgumentList $parameters -NoNewWindow -Wait 
 }
 
 #main entry point
 switch -wildcard ($command) 
 {
-  "install" { Chocolatey-NuGet $arguments[0] -source $source; }
-  "test_install" { Chocolatey-NuGet $arguments[0] -source $source }
-  "update" { Chocolatey-NuGet  $arguments[0] -source $source; }
-  "list" { Chocolatey-List $arguments[0] -source $source; }
+  "install" { Chocolatey-NuGet  $packageName $source $version; }
+  "test_install" { Chocolatey-NuGet $packageName $source $version; }
+  "update" { Chocolatey-NuGet $packageName $source $version; }
+  "list" { Chocolatey-List $packageName $source; }
   default { Chocolatey-Help; }
 }

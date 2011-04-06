@@ -1,5 +1,5 @@
-﻿$fileName = '__NAME__'
-$fileType = '__REPLACE__' #msi or exe
+$fileName = 'ruby'
+$fileType = 'exe' #msi or exe
 
 $chocTempDir = Join-Path $env:TEMP "chocolatey"
 $tempDir = Join-Path $chocTempDir "$fileName"
@@ -11,7 +11,7 @@ $is64bit = $processor.AddressWidth -eq 64
 $systemBit = '32 bit'
 if ($is64bit) {$systemBit = '64 bit';}
 
-$url = '__REPLACE__'
+$url = 'http://rubyforge.org/frs/download.php/74298/rubyinstaller-1.9.2-p180.exe'
 
 Write-Host "Downloading $fileName to $file from $url"
 
@@ -23,7 +23,8 @@ if ($fileType -like 'msi') {
   msiexec /i  "$file" /quiet
 }
 if ($fileType -like 'exe') {
-  Start-Process -FilePath $file -ArgumentList "/S" -Wait #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
+  #& "$file" "/S" #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
+  Start-Process -FilePath $file -ArgumentList "/silent /tasks=`"assocfiles,modpath`"" -Wait #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
 }
 
 write-host "$fileName has been installed."

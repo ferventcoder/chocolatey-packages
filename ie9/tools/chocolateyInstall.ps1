@@ -1,4 +1,4 @@
-﻿$fileName = 'IE9'
+﻿﻿$fileName = 'IE9'
 $fileType = 'exe' #msi or exe
 
 $chocTempDir = Join-Path $env:TEMP "chocolatey"
@@ -10,7 +10,6 @@ $processor = Get-WmiObject Win32_Processor
 $is64bit = $processor.AddressWidth -eq 64
 $systemBit = '32 bit'
 if ($is64bit) {$systemBit = '64 bit';}
-
 #auto installers
 #$urlToWin7_32bit = "http://view.atdmt.com/action/UMIRF_IE_IE9HP_Win7?href=http://download.microsoft.com/download/8/6/D/86DB5DC9-5706-4A5B-BD46-FFBA6FA67D44/IE9-Windows7-x86-enu.exe"
 #$urlToWin7_64bit = "http://view.atdmt.com/action/UMIRF_IE_IE9HP_Win7?href=http://download.microsoft.com/download/8/6/D/86DB5DC9-5706-4A5B-BD46-FFBA6FA67D44/IE9-Windows7-x64-enu.exe"
