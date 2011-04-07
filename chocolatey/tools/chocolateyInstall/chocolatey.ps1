@@ -1,7 +1,7 @@
 param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=206669',$version='')
 
 #Chocolatey
-$chocVer = '0.9.3.0'
+$chocVer = '0.9.4.0'
 $nugetPath = 'C:\NuGet'
 $nugetExePath = Join-Path $nuGetPath 'bin'
 $nugetLibPath = Join-Path $nuGetPath 'lib'
@@ -57,7 +57,7 @@ param([parameter(Position=0, Mandatory=$true)][string] $packageName, $source = '
 
 @"
 $h1
-Chocolatey ($chocVer) is installing $packageName to "$nugetLibPath"
+Chocolatey ($chocVer) is installing $packageName (from $source) to "$nugetLibPath"
 $h1
 "@ | Write-Host
 
@@ -167,7 +167,7 @@ Chocolatey allows you to install application nuggets and run executables from an
 $h2
 Usage
 $h2
-chocolatey [install packageName  [[-source] source] [[-version] version]|update packageName [[-source] source] [[-version] version]|list [packageName] [[-source] source]|help]
+chocolatey [install packageName  [-source source] [-version version]|update packageName [-source source] [-version version]|list [packageName] [-source source]|help]
 
 example: chocolatey install nunit
 example: chocolatey install nunit -version 2.5.7.10213
@@ -177,7 +177,7 @@ example: chocolatey list (might take awhile)
 example: chocolatey list nunit
 
 A shortcut to install is cinst
-cinst packageName  [[-source] source] [[-version] version]
+cinst packageName  [-source source] [-version version]
 example: cinst 7zip
 example: cinst ruby -version 1.8.7
 
@@ -204,5 +204,6 @@ switch -wildcard ($command)
   "test_install" { Chocolatey-NuGet $packageName $source $version; }
   "update" { Chocolatey-NuGet $packageName $source $version; }
   "list" { Chocolatey-List $packageName $source; }
+  "version" { write-host "Chocolatey is on version $chocVer. Latest release is on ____"; }
   default { Chocolatey-Help; }
 }
