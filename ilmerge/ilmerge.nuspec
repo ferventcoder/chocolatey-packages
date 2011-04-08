@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>ilmerge</id>
+    <title>ilmerge</title>
+    <version>2.10.0526</version>
+    <authors>Mike Barnett</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>ILMerge is a utility for merging multiple .NET assemblies into a single .NET assembly. It works on executables and DLLs alike and comes with several options for controlling the processing and format of the output.</summary>
+    <description>ILMerge is a utility that can be used to merge multiple .NET assemblies into a single assembly. ILMerge takes a set of input assemblies and merges them into one target assembly. The first assembly in the list of input assemblies is the primary assembly. When the primary assembly is an executable, then the target assembly is created as an executable with the same entry point as the primary assembly. Also, if the primary assembly has a strong name, and a .snk file is provided, then the target assembly is re-signed with the specified key so that it also has a strong name. 
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey). | This package is only contains automation to get ILMerge from the official location and therefore should not violate the License Terms in any way. Installing this package is your acceptance of the license terms included with the application.</description>
+    <projectUrl>http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx</projectUrl>
+    <tags>ilmerge merge assemblies chocolatey</tags>
+  </metadata>
+</package>
