@@ -1,4 +1,4 @@
-param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=206669',$version='')
+param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=206669',$version='')#todo:,[switch] $silent)
 
 #Chocolatey
 $chocVer = '0.9.4.0'
@@ -9,13 +9,6 @@ $nugetChocolateyPath = Join-Path $nuGetPath 'chocolateyInstall'
 $nugetExe = Join-Path $nugetChocolateyPath 'nuget.exe'
 $h1 = '====================================================='
 $h2 = '-------------------------'
-
-#Thanks Keith! http://solutionizing.net/2008/12/20/powershell-coalesce-and-powershellasp-query-string-parameters/
-function Coalesce-Args {
-  (@($args | ?{$_}) + $null)[0]
-}
-Set-Alias ?? Coalesce-Args
-
 
 function Run-ChocolateyProcess
 {
@@ -59,6 +52,12 @@ param([parameter(Position=0, Mandatory=$true)][string] $packageName, $source = '
 $h1
 Chocolatey ($chocVer) is installing $packageName (from $source) to "$nugetLibPath"
 $h1
+Package License Acceptance
+$h2
+The act of running chocolatey to install a package constitutes acceptance of the license for the application, executable(s), or other artifacts that are brought to your machine as a result of a chocolatey install.
+This acceptance occurs whether you know the license terms or not. It is suggested that you read and understand the license terms of any package you plan to install prior to installation through chocolatey.
+If you do not accept the license of a package you are installing, please uninstall it and any artifacts that end up on your machine as a result of the install.
+$h2
 "@ | Write-Host
 
 @"
@@ -87,8 +86,8 @@ $h2
 "@ | Write-Host  
 
   if ($packageName -notlike '') {
+		Run-ChocolateyPS1 $packageName
     Get-ChocolateyBins $packageName
-	  Run-ChocolateyPS1 $packageName
   }
   
 @"
@@ -180,6 +179,13 @@ A shortcut to install is cinst
 cinst packageName  [-source source] [-version version]
 example: cinst 7zip
 example: cinst ruby -version 1.8.7
+
+Package License Acceptance
+$h2
+The act of running chocolatey to install a package constitutes acceptance of the license for the application, executable(s), or other artifacts that are brought to your machine as a result of a chocolatey install.
+This acceptance occurs whether you know the license terms or not. It is suggested that you read and understand the license terms of any package you plan to install prior to installation through chocolatey.
+If you do not accept the license of a package you are installing, please uninstall it and any artifacts that end up on your machine as a result of the install.
+$h2
 
 $h1
 "@ | Write-Host
