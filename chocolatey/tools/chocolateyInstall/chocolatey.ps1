@@ -10,9 +10,9 @@ $nugetExe = Join-Path $nugetChocolateyPath 'nuget.exe'
 $h1 = '====================================================='
 $h2 = '-------------------------'
 
-function Run-ChocolateyProcess
-{
-  param([string]$file, [string]$arguments = $args, [switch] $elevated);
+function Run-ChocolateyProcess {
+param([string]$file, [string]$arguments = $args, [switch] $elevated);
+
 #@"
 #`$file = $file
 #`$arguments =  $arguments
@@ -46,17 +46,15 @@ function Run-ChocolateyProcess
 
 function Chocolatey-NuGet { 
 #[string]$install,[string]$packageName,[string]$arguments = $args;
-param([parameter(Position=0, Mandatory=$true)][string] $packageName, $source = 'https://go.microsoft.com/fwlink/?LinkID=206669')
+param([string] $packageName, $source = 'https://go.microsoft.com/fwlink/?LinkID=206669')
 
 @"
 $h1
 Chocolatey ($chocVer) is installing $packageName (from $source) to "$nugetLibPath"
 $h1
-Package License Acceptance
+Package License Acceptance Terms
 $h2
-The act of running chocolatey to install a package constitutes acceptance of the license for the application, executable(s), or other artifacts that are brought to your machine as a result of a chocolatey install.
-This acceptance occurs whether you know the license terms or not. It is suggested that you read and understand the license terms of any package you plan to install prior to installation through chocolatey.
-If you do not accept the license of a package you are installing, please uninstall it and any artifacts that end up on your machine as a result of the install.
+Please run chocolatey /? for full license acceptance verbage. By installing you accept the license for the package you are installing...
 $h2
 "@ | Write-Host
 
@@ -66,19 +64,19 @@ NuGet
 $h2
 "@ | Write-Host
 
+	#todo: If package name is non-existant or is set to all, it means we are going to update all currently installed packages.
+
   $packageArgs = "install $packageName /outputdirectory `"$nugetLibPath`" /source $source"
   if ($version -notlike '') {
-    $packageArgs =$packageArgs + " /version $version";
+    $packageArgs = $packageArgs + " /version $version";
   }
-  
-	$chocTempDir = Join-Path $env:TEMP "chocolatey"
-	$logFile = Join-Path $chocTempDir "$($packageName).log"
-	Start-Process $nugetExe -ArgumentList $packageArgs -NoNewWindow -Wait -RedirectStandardOutput $logFile
+  $logFile = Join-Path $nugetChocolateyPath 'install.log'
+  Start-Process $nugetExe -ArgumentList $packageArgs -NoNewWindow -Wait -RedirectStandardOutput $logFile
   #Start-Process $nugetExe -ArgumentList $packageArgs -NoNewWindow -Wait |Tee-Object $logFile | Write-Host
-	foreach ($line in Get-Content $logFile -Encoding Ascii) {
-		Write-Host $line
-		#todo: get the name of the packages and their versions
-	}
+  foreach ($line in Get-Content $logFile -Encoding Ascii) {
+    Write-Host $line
+    #todo: get the name of the packages and their versions
+  }
   
 @"
 $nugetOutput
@@ -86,7 +84,7 @@ $h2
 "@ | Write-Host  
 
   if ($packageName -notlike '') {
-		Run-ChocolateyPS1 $packageName
+    Run-ChocolateyPS1 $packageName
     Get-ChocolateyBins $packageName
   }
   
@@ -95,33 +93,6 @@ $h1
 Chocolatey has finished installing $packageName
 $h1
 "@ | Write-Host
-}
-
-function Get-ChocolateyBins {
-param([string] $packageName)
-  #search the lib directory for the highest number of the folder
-  $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "^$packageName*"} | sort name -Descending | select -First 1 
-  if ($packageFolder -notlike '') { 
-@"
-$h2
-Executable Batch Links
-$h2
-Looking for executables in folder: $($packageFolder.FullName)
-Adding batch files for any executables found to a location on PATH.
-In other words, the executable will be available from ANY command line/powershell prompt.
-$h2
-"@ | Write-Host
-		try {
-    	$files = get-childitem $packageFolder.FullName -include *.exe -recurse
-    	foreach ($file in $files) {
-      	Generate-BinFile $file.Name.Replace(".exe","") $file.FullName
-    	}
-		}
-		catch {
-			Write-Host 'There are no executables in the package. You may not need this as a #chocolatey #nuget. A vanilla #nuget may suffice.'
-		}
-    Write-Host "$h2"
-  }
 }
 
 function Run-ChocolateyPS1 {
@@ -147,6 +118,33 @@ $h2
   }
 }
 
+function Get-ChocolateyBins {
+param([string] $packageName)
+  #search the lib directory for the highest number of the folder
+  $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "^$packageName*"} | sort name -Descending | select -First 1 
+  if ($packageFolder -notlike '') { 
+@"
+$h2
+Executable Batch Links
+$h2
+Looking for executables in folder: $($packageFolder.FullName)
+Adding batch files for any executables found to a location on PATH.
+In other words, the executable will be available from ANY command line/powershell prompt.
+$h2
+"@ | Write-Host
+    try {
+      $files = get-childitem $packageFolder.FullName -include *.exe -recurse
+      foreach ($file in $files) {
+        Generate-BinFile $file.Name.Replace(".exe","") $file.FullName
+      }
+    }
+    catch {
+      Write-Host 'There are no executables in the package. You may not need this as a #chocolatey #nuget. A vanilla #nuget may suffice.'
+    }
+    Write-Host "$h2"
+  }
+}
+
 function Generate-BinFile {
 param([string] $name, [string] $path)
   $packageBatchFileName = Join-Path $nugetExePath "$name.bat"
@@ -158,7 +156,7 @@ param([string] $name, [string] $path)
 function Chocolatey-Help {
 @"
 $h1
-Chocolatey - Your local machine NuGet Repository
+Chocolatey - Your local machine NuGet repository AKA your local tools repository  AKA apt-get for Windows
 Version $chocVer
 $h1
 Chocolatey allows you to install application nuggets and run executables from anywhere.
@@ -180,13 +178,12 @@ cinst packageName  [-source source] [-version version]
 example: cinst 7zip
 example: cinst ruby -version 1.8.7
 
-Package License Acceptance
+$h2
+Package License Acceptance Terms
 $h2
 The act of running chocolatey to install a package constitutes acceptance of the license for the application, executable(s), or other artifacts that are brought to your machine as a result of a chocolatey install.
 This acceptance occurs whether you know the license terms or not. It is suggested that you read and understand the license terms of any package you plan to install prior to installation through chocolatey.
 If you do not accept the license of a package you are installing, please uninstall it and any artifacts that end up on your machine as a result of the install.
-$h2
-
 $h1
 "@ | Write-Host
 }
@@ -203,13 +200,37 @@ function Chocolatey-List {
   Start-Process $nugetExe -ArgumentList $parameters -NoNewWindow -Wait 
 }
 
+function Chocolatey-Version {
+param([string]$packageName='',[string]$source='https://go.microsoft.com/fwlink/?LinkID=206669')
+	if ($packageName -eq '') {$packageName = 'chocolatey'}
+
+	$logFile = Join-Path $nugetChocolateyPath 'list.log'
+  Start-Process $nugetExe -ArgumentList "list /source $source ""$packageName""" -NoNewWindow -Wait -RedirectStandardOutput $logFile
+	Start-Sleep 1 #let it finish writing to the config file
+	
+	$versionLatest = Get-Content $logFile | ?{$_ -match "^$packageName\s+\d+"} | sort $_ -Descending | select -First 1 
+	$versionLatest = $versionLatest -replace "$packageName ", "";
+
+	$versionFound = $chocVer
+  if ($packageName -ne 'chocolatey') {
+    $versionFound = 'no version'
+		$packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "^$packageName*"} | sort name -Descending | select -First 1 
+		
+		if ($packageFolder -notlike '') { 
+			Write-Host $packageFolder
+			#todo get version from the folder name
+			#$versionFound = $packageFolder.
+		}
+  }
+  Write-host "The most recent version of $packageName available from ($source) is $versionLatest. On your machine you have $versionFound installed."
+}
+
 #main entry point
 switch -wildcard ($command) 
 {
   "install" { Chocolatey-NuGet  $packageName $source $version; }
-  "test_install" { Chocolatey-NuGet $packageName $source $version; }
-  "update" { Chocolatey-NuGet $packageName $source $version; }
+  "update" { Chocolatey-NuGet $packageName $source $version; } #todo: called with no parameters should update every package installed
   "list" { Chocolatey-List $packageName $source; }
-  "version" { write-host "Chocolatey is on version $chocVer. Latest release is on ____"; }
+  "version" { Chocolatey-Version $packageName $source; }
   default { Chocolatey-Help; }
 }
