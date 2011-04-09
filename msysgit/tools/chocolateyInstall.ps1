@@ -11,7 +11,7 @@ $is64bit = $processor.AddressWidth -eq 64
 $systemBit = '32 bit'
 if ($is64bit) {$systemBit = '64 bit';}
 
-$url = 'http://msysgit.googlecode.com/files/Git-1.7.3.1-preview20101002.exe'
+$url = 'http://msysgit.googlecode.com/files/Git-1.7.4-preview20110204.exe'
 
 Write-Host "Downloading $fileName to $file from $url"
 
