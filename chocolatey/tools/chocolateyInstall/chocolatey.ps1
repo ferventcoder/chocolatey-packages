@@ -52,7 +52,8 @@ function Run-ChocolateyProcess
 }
 
 function Chocolatey-NuGet { 
-param([string] $packageName, [string] $source = 'https://go.microsoft.com/fwlink/?LinkID=206669',[string] $version='')
+#[string]$install,[string]$packageName,[string]$arguments = $args;
+param([parameter(Position=0, Mandatory=$true)][string] $packageName, $source = 'https://go.microsoft.com/fwlink/?LinkID=206669')
 
 @"
 $h1
@@ -100,7 +101,7 @@ $h1
 function Get-ChocolateyBins {
 param([string] $packageName)
   #search the lib directory for the highest number of the folder
-  $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "$packageName*"} | sort name -Descending | select -First 1 
+  $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "^$packageName*"} | sort name -Descending | select -First 1 
   if ($packageFolder -notlike '') { 
 @"
 $h2
@@ -126,7 +127,7 @@ $h2
 
 function Run-ChocolateyPS1 {
 param([string] $packageName)
-  $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "$packageName*"} | sort name -Descending | select -First 1 
+  $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "^$packageName*"} | sort name -Descending | select -First 1 
   if ($packageFolder) { 
 @"
 $h2
@@ -166,13 +167,14 @@ Chocolatey allows you to install application nuggets and run executables from an
 $h2
 Usage
 $h2
-chocolatey [install packageName  [-source source] [-version version]|update packageName [-source source] [-version version]|list [-source source]|help]
+chocolatey [install packageName  [-source source] [-version version]|update packageName [-source source] [-version version]|list [packageName] [-source source]|help]
 
 example: chocolatey install nunit
 example: chocolatey install nunit -version 2.5.7.10213
 example: chocolatey update nunit http://somelocalfeed.com/nuget/
 example: chocolatey help
 example: chocolatey list (might take awhile)
+example: chocolatey list nunit
 
 A shortcut to install is cinst
 cinst packageName  [-source source] [-version version]
@@ -184,8 +186,15 @@ $h1
 }
 
 function Chocolatey-List {
-  param([string]$source='https://go.microsoft.com/fwlink/?LinkID=206669');
-  Start-Process $nugetExe -ArgumentList "list /source $source" -NoNewWindow -Wait 
+  param([string]$selector='', [string]$source='https://go.microsoft.com/fwlink/?LinkID=206669');
+  
+  $parameters = "list /source $source"
+  
+  if ($selector -ne '') {
+	$parameters = "$parameters ""$selector"""
+  }
+  
+  Start-Process $nugetExe -ArgumentList $parameters -NoNewWindow -Wait 
 }
 
 #main entry point
@@ -194,7 +203,7 @@ switch -wildcard ($command)
   "install" { Chocolatey-NuGet  $packageName $source $version; }
   "test_install" { Chocolatey-NuGet $packageName $source $version; }
   "update" { Chocolatey-NuGet $packageName $source $version; }
-  "list" { Chocolatey-List $source; }
+  "list" { Chocolatey-List $packageName $source; }
   "version" { write-host "Chocolatey is on version $chocVer. Latest release is on ____"; }
   default { Chocolatey-Help; }
 }
