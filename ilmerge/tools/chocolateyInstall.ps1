@@ -23,7 +23,7 @@ $downloader.DownloadFile($url, $file)
 #msiexec /i  "$file" /quiet
 
 write-host "Installing $fileName..."
-msiexec /i "$file"
+Start-Process -FilePath msiexec -ArgumentList "/i `"$file`"" -Wait
 
 write-host "$fileName has been installed."
 Start-Sleep 3
@@ -39,4 +39,6 @@ if (![System.IO.Directory]::Exists($ilmergeTargetFolder)) {[System.IO.Directory]
 Write-Host 'Copying the contents of ' $ilmergeFolder ' to ' $ilmergeTargetFolder '.'
 Copy-Item $ilmergeFolder $ilmergeTargetFolder –recurse -force
 
-Write-Host "Completing setup of $file."
+Write-Host "Completing setup of $fileName."
+
+Start-Sleep 3
