@@ -71,12 +71,12 @@ $h2
     $packageArgs = $packageArgs + " /version $version";
   }
   $logFile = Join-Path $nugetChocolateyPath 'install.log'
-  Start-Process $nugetExe -ArgumentList $packageArgs -NoNewWindow -Wait -RedirectStandardOutput $logFile
+  Start-Process $nugetExe -ArgumentList $packageArgs -NoNewWindow -Wait #-RedirectStandardOutput $logFile
   #Start-Process $nugetExe -ArgumentList $packageArgs -NoNewWindow -Wait |Tee-Object $logFile | Write-Host
-  foreach ($line in Get-Content $logFile -Encoding Ascii) {
-    Write-Host $line
+  #foreach ($line in Get-Content $logFile -Encoding Ascii) {
+  #  Write-Host $line
     #todo: get the name of the packages and their versions
-  }
+  #}
   
 @"
 $nugetOutput
@@ -168,12 +168,12 @@ chocolatey [install packageName  [-source source] [-version version]|update pack
 
 example: chocolatey install nunit
 example: chocolatey install nunit -version 2.5.7.10213
-example: chocolatey update nunit http://somelocalfeed.com/nuget/
+example: chocolatey update nunit -source http://somelocalfeed.com/nuget/
 example: chocolatey help
 example: chocolatey list (might take awhile)
 example: chocolatey list nunit
 
-A shortcut to install is cinst
+A shortcut to 'chocolatey install' is cinst
 cinst packageName  [-source source] [-version version]
 example: cinst 7zip
 example: cinst ruby -version 1.8.7
@@ -218,11 +218,15 @@ param([string]$packageName='',[string]$source='https://go.microsoft.com/fwlink/?
 		
 		if ($packageFolder -notlike '') { 
 			Write-Host $packageFolder
-			#todo get version from the folder name
-			#$versionFound = $packageFolder.
+			$versionFound = $packageFolder.Name -replace "$packageName\."
 		}
   }
-  Write-host "The most recent version of $packageName available from ($source) is $versionLatest. On your machine you have $versionFound installed."
+  
+	if ($versionLatest -eq $versionFound) { 
+		Write-Host "You have the latest version of $packageName ($versionLatest) based on ($source)."
+	} else {
+		Write-host "The most recent version of $packageName available from ($source) is $versionLatest. On your machine you have $versionFound installed."
+	}
 }
 
 #main entry point

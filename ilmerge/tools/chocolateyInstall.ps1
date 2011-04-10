@@ -32,4 +32,11 @@ Start-Sleep 3
 $progFiles = [System.Environment]::GetFolderPath('ProgramFiles')
 if ($is64bit) {$progFiles = "$progFiles (x86)"}
 
-$ilmergeFolder Join-Path $progFiles "Microsoft\ILMerge"
+$ilmergeFolder = Join-Path $progFiles "Microsoft\ILMerge"
+
+$ilmergeTargetFolder = (Split-Path $MyInvocation.MyCommand.Definition)
+if (![System.IO.Directory]::Exists($ilmergeTargetFolder)) {[System.IO.Directory]::CreateDirectory($ilmergeTargetFolder)}
+Write-Host 'Copying the contents of ' $ilmergeFolder ' to ' $ilmergeTargetFolder '.'
+Copy-Item $ilmergeFolder $ilmergeTargetFolder –recurse -force
+
+Write-Host "Completing setup of $file."
