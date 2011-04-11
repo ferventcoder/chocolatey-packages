@@ -1,4 +1,4 @@
-$fileName = 'msysgit'
+$fileName = 'kdiff3'
 $fileType = 'exe' #msi or exe
 
 $chocTempDir = Join-Path $env:TEMP "chocolatey"
@@ -11,7 +11,7 @@ $is64bit = $processor.AddressWidth -eq 64
 $systemBit = '32 bit'
 if ($is64bit) {$systemBit = '64 bit';}
 
-$url = 'http://msysgit.googlecode.com/files/Git-1.7.4-preview20110204.exe'
+$url = 'http://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.95/KDiff3Setup_0.9.95-2.exe?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fkdiff3%2Ffiles%2Fkdiff3%2F0.9.95%2F&ts=1302319944&use_mirror=superb-sea2'
 
 Write-Host "Downloading $fileName to $file from $url"
 
@@ -23,11 +23,8 @@ if ($fileType -like 'msi') {
   msiexec /i  "$file" /quiet
 }
 if ($fileType -like 'exe') {
-  #& "$file" "/SILENT" #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
-  Start-Process -FilePath $file -ArgumentList "/SILENT" -Wait
+  Start-Process -FilePath $file -ArgumentList "/S" -Wait #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
 }
-
-write-host "$fileName has been installed."
 
 #------additional setup ----------------
 #get the PATH variable from the machine
@@ -36,41 +33,33 @@ $envPath = [Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVari
 $progFiles = [System.Environment]::GetFolderPath('ProgramFiles')
 if ($is64bit) {$progFiles = "$progFiles (x86)"}
 
-$gitPath = Join-Path $progFiles 'Git\cmd'
-#if you do not find C:\Program Files (x86)\Git\cmd, add it 
-if (!$envPath.ToLower().Contains($gitPath.ToLower()))
+$programPath = Join-Path $progFiles 'kdiff3'
+#if you do not find C:\Program Files (x86)\kdiff3, add it 
+if (!$envPath.ToLower().Contains($programPath.ToLower()))
 {
   Write-Host ''
   #now we update the path
-  Write-Host 'PATH environment variable does not have ' $gitPath ' in it. Adding.'
+  Write-Host 'PATH environment variable does not have ' $programPath ' in it. Adding.'
 
   #does the path end in ';'?
   $statementTerminator = ';'
   $hasStatementTerminator= $envPath.EndsWith($statementTerminator)
   # if the last digit is not ;, then we are adding it
-  If (!$hasStatementTerminator) {$gitPath = $statementTerminator + $gitPath}
-  $envPath = $envPath + $gitPath + $statementTerminator
+  If (!$hasStatementTerminator) {$programPath = $statementTerminator + $programPath}
+  $envPath = $envPath + $programPath + $statementTerminator
 
   [Environment]::SetEnvironmentVariable( "Path", $envPath, [System.EnvironmentVariableTarget]::Machine )
 
 @"
 
-Adding git commands to the PATH
+Adding kdiff3 commands to the PATH
 "@ | Write-Host
 
 
   #add it to the local path as well so users will be off and running
   $envPSPath = $env:PATH
-  $env:Path = $envPSPath + $statementTerminator + $gitPath + $statementTerminator
+  $env:Path = $envPSPath + $statementTerminator + $programPath + $statementTerminator
 }
 
-@"
-
-Making GIT core.autocrlf false
-"@ | Write-Host
-
-#make GIT core.autocrlf false
-& 'cmd.exe' '/c git config --global core.autocrlf false'
-
-Write-Host "Finished all setup of $fileName"
-Start-Sleep 4
+write-host "$fileName has been installed."
+Start-Sleep 3

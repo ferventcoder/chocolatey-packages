@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>kdiff3</id>
+    <title>kdiff3</title>
+    <version>0.9.95</version>
+    <authors>Joachim Eibl</authors>
+    <owners>Chris Ortman</owners>
+    <summary>Diff / Merge tool</summary>
+    <description>kdiff3 Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://kdiff3.sourceforge.net/</projectUrl>
+    <tags>kdiff3  chocolatey</tags>
+    <licenseUrl>http://kdiff3.sourceforge.net/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>32x32.png</iconUrl>-->
+  </metadata>
+</package>
