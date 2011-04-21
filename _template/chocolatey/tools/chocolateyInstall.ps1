@@ -1,31 +1,11 @@
-﻿$fileName = '__NAME__'
-$fileType = '__REPLACE__' #msi or exe
+﻿try {
+  Get-ChildItem 'C:\NuGet\chocolateyInstall\helpers' -Filter *.psm1 | ForEach-Object { import-module -name  $_.FullName }
+  Install-ChocolateyPackage '__NAME__' 'EXE_OR_MSI' 'SILENT_ARGS' 'URL' '64BIT_URL_REPEAT_32BIT_IF_NO_64BIT' 
+  #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
+  #msi is always /quiet
 
-$chocTempDir = Join-Path $env:TEMP "chocolatey"
-$tempDir = Join-Path $chocTempDir "$fileName"
-if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
-$file = Join-Path $tempDir "$fileName.$fileType"
+#------- ADDITIONAL SETUP -------#
 
-$processor = Get-WmiObject Win32_Processor
-$is64bit = $processor.AddressWidth -eq 64
-$systemBit = '32 bit'
-if ($is64bit) {$systemBit = '64 bit';}
-
-$url = '__REPLACE__'
-
-Write-Host "Downloading $fileName to $file from $url"
-
-$downloader = new-object System.Net.WebClient
-$downloader.DownloadFile($url, $file)
-
-write-host "Installing $fileName silently..."
-if ($fileType -like 'msi') {
-	#msiexec /i  "$file" /quiet
-	Start-Process -FilePath msiexec -ArgumentList "/i `"$file`"  /quiet" -Wait
+} catch {
+  Start-Sleep 10
 }
-if ($fileType -like 'exe') {
-  Start-Process -FilePath $file -ArgumentList "/S" -Wait #"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
-}
-
-write-host "$fileName has been installed."
-Start-Sleep 3
