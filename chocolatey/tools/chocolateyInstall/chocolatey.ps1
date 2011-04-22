@@ -1,7 +1,7 @@
 param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=206669',$version='')#todo:,[switch] $silent)
 
 #Chocolatey
-$chocVer = '0.9.5.0'
+$chocVer = '0.9.6.0'
 $nugetPath = 'C:\NuGet'
 $nugetExePath = Join-Path $nuGetPath 'bin'
 $nugetLibPath = Join-Path $nuGetPath 'lib'
@@ -195,6 +195,8 @@ v0.9.5
  * Helper for native installer.	Reduces the amount of powershell necessary to download and install a native package to two lines from over 25.
  * Helper outputs progress during download.
  * Dependency runner is complete
+v0.9.6
+ * Can execute powershell and chocolatey without having to change execution rights to powershell system wide.
 $h2
 Package License Acceptance Terms
 $h2
