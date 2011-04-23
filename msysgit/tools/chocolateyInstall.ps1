@@ -50,5 +50,9 @@ Making GIT core.autocrlf false
   Write-Host "Finished all setup of msysgit"
   Start-Sleep 4
 } catch {
-  Start-Sleep 10
+@"
+Error Occurred: $($_.Exception.Message)
+"@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
+	Start-Sleep 5
+	throw 
 }

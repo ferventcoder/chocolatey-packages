@@ -1,6 +1,10 @@
 param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=206669',$version='')#todo:,[switch] $silent)
+# chocolatey
+# Copyright (c) 2011 Rob Reynolds
+# Apache License, Version 2.0 - http://www.apache.org/licenses/LICENSE-2.0
 
-#Chocolatey
+
+#Let's get Chocolatey!
 $chocVer = '0.9.6.0'
 $nugetPath = 'C:\NuGet'
 $nugetExePath = Join-Path $nuGetPath 'bin'
@@ -13,16 +17,14 @@ $h2 = '-------------------------'
 function Run-ChocolateyProcess {
 param([string]$file, [string]$arguments = $args, [switch] $elevated);
 	
-	Write-Host "Elevating Permissions and running $file $args. This may take awhile, depending on the package.";
+	Write-Host "Elevating Permissions and running $file $arguments. This may take awhile, depending on the package.";
   $psi = new-object System.Diagnostics.ProcessStartInfo $file;
   $psi.Arguments = $arguments;
- 	Write-Host "Elevating Permissions";
 	$psi.Verb = "runas";
   $psi.WorkingDirectory = get-location;
  
   $s = [System.Diagnostics.Process]::Start($psi);
   $s.WaitForExit(300000);
-
 }
 
 function Chocolatey-NuGet { 
@@ -192,11 +194,13 @@ v0.9.4
  * List command has a filter.
  * Package license acceptance terms notated
 v0.9.5 
- * Helper for native installer.	Reduces the amount of powershell necessary to download and install a native package to two lines from over 25.
+ * Helper for native installer added (Install-ChocolateyPackage).	Reduces the amount of powershell necessary to download and install a native package to two lines from over 25.
  * Helper outputs progress during download.
  * Dependency runner is complete
 v0.9.6
  * Can execute powershell and chocolatey without having to change execution rights to powershell system wide.
+ * New Helper added - Get-ChocolateyWebFile - downloads a file from a url and gives you back the location of the file once complete.
+ * New Helper added - Get-ChocolateyZipContents - unzips a file to a directory of your choosing.
 $h2
 Package License Acceptance Terms
 $h2

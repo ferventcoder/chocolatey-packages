@@ -41,5 +41,9 @@ Adding kdiff3 commands to the PATH
   Write-Host "Finished all setup of kdiff3"
   Start-Sleep 4
 } catch {
-  Start-Sleep 10
+@"
+Error Occurred: $($_.Exception.Message)
+"@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
+	Start-Sleep 5
+	throw 
 }

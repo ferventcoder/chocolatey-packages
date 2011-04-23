@@ -17,5 +17,9 @@ try {
   Copy-Item $ilmergeFolder $ilmergeTargetFolder –recurse -force
 
 } catch {
-  Start-Sleep 10
+@"
+Error Occurred: $($_.Exception.Message)
+"@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
+	Start-Sleep 5
+	throw 
 }

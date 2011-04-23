@@ -3,7 +3,7 @@
   <metadata>
     <id>notepadplusplus</id>
     <title>notepadplusplus</title>
-    <version>5.8.7</version>
+    <version>5.9</version>
     <authors>Don Ho</authors>
     <owners>Rob Reynolds</owners>
     <summary>Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages.</summary>
@@ -15,7 +15,8 @@ This project is mature. However, there may be still some bugs and missing featur
 
 You're encouraged to translate Notepad++ into your native tongue if there's not already a translation present in the Binary Translations page. And if you want, help translating Notepad++ official site into your native tongue would be greatly appreciated.  
 
-I hope you enjoy Notepad++ as much as I enjoy coding it.</description>
+I hope you enjoy Notepad++ as much as I enjoy coding it.
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://notepad-plus-plus.org/</projectUrl>
     <tags>notepad notepadplusplus notepad-plus-plus chocolatey</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->

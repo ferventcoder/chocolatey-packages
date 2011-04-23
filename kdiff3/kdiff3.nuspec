@@ -7,7 +7,8 @@
     <authors>Joachim Eibl</authors>
     <owners>Chris Ortman</owners>
     <summary>Diff / Merge tool</summary>
-    <description>kdiff3 Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description>kdiff3 
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://kdiff3.sourceforge.net/</projectUrl>
     <tags>kdiff3  chocolatey</tags>
     <licenseUrl>http://kdiff3.sourceforge.net/COPYING</licenseUrl>

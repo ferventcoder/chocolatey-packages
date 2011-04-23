@@ -1,26 +1,49 @@
 function Install-ChocolateyPackage {
-param([string] $packageName, [string] $fileType = 'exe',[string] $silentArgs = '',[string] $url,[string] $url64bit = $url,[switch] $silent)
-	
-	$chocTempDir = Join-Path $env:TEMP "chocolatey"
-	$tempDir = Join-Path $chocTempDir "$packageName"
-	if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
-	$file = Join-Path $tempDir "$packageName.$fileType"
-	
-	$processor = Get-WmiObject Win32_Processor
-	$is64bit = $processor.AddressWidth -eq 64
-	$systemBit = '32 bit'
-	if ($is64bit) {
-		$systemBit = '64 bit';
-		$url = $url64bit;
-	}
-	
-	Write-Host "Downloading $packageName $systemBit ($url) to $file"
+<#
+.SYNOPSIS
+Installs a package
 
-	#$downloader = new-object System.Net.WebClient
-	#$downloader.DownloadFile($url, $file)
-	Get-WebFile $url $file
+.DESCRIPTION
+This will download a file from a url and install it on your machine.
 
-	$installMessage = "Installing $packageName $systemBit"
+.PARAMETER PackageName
+The name of the package we want to download - this is arbitrary, call it whatever you want.
+It's recommended you call it the same as your nuget package id.
+
+.PARAMETER FileType
+This is the extension of the file. This should be either exe or msi.
+
+.PARAMETER SilentArgs
+OPTIONAL - These are the parameters to pass to the native installer.
+Try any of these to get the silent installer - /s /S /q /Q /quiet /silent /SILENT /VERYSILENT
+With msi it is always /quiet. Please pass it in still but it will be overridden by chocolatey to /quiet.
+If you don't pass anything it will invoke the installer with out any arguments. That means a nonsilent installer.
+
+Please include the notSilent tag in your chocolatey nuget package if you are not setting up a silent package.
+
+.PARAMETER Url
+This is the url to download the file from. 
+
+.PARAMETER Url64bit
+OPTIONAL - If there is an x64 installer to download, please include it here. If not, delete this parameter
+
+.EXAMPLE
+Install-ChocolateyPackage '__NAME__' 'EXE_OR_MSI' 'SILENT_ARGS' 'URL' '64BIT_URL_DELETE_IF_NO_64BIT'
+
+.OUTPUTS
+None
+
+.NOTES
+This helper reduces the number of lines one would have to write to download and install a file to 1 line.
+
+.LINK
+Get-ChocolateyWebFile
+#>
+param([string] $packageName, [string] $fileType = 'exe',[string] $silentArgs = '',[string] $url,[string] $url64bit = $url)
+	
+  $file = Get-ChocolateyWebFile $packageName $fileType $url $url64bit
+  
+	$installMessage = "Installing $packageName..."
 	if ($silentArgs -ne '') { $installMessage = "$installMessage silently...";}
 	write-host $installMessage
 	
@@ -38,7 +61,101 @@ param([string] $packageName, [string] $fileType = 'exe',[string] $silentArgs = '
 	Start-Sleep 5
 }
 
-Export-ModuleMember Install-ChocolateyPackage
+function Get-ChocolateyWebFile {
+<#
+.SYNOPSIS
+Downloads a file from the internets.
+
+.DESCRIPTION
+This will download a file from a url, tracking with a progress bar. 
+It returns the filepath to the downloaded file when it is complete.
+
+.PARAMETER PackageName
+The name of the package we want to download - this is arbitrary, call it whatever you want.
+It's recommended you call it the same as your nuget package id.
+
+.PARAMETER FileType
+This is the extension of the file. This should be either exe or msi.
+
+.PARAMETER Url
+This is the url to download the file from. 
+
+.PARAMETER Url64bit
+OPTIONAL - If there is an x64 installer to download, please include it here. If not, delete this parameter
+
+.EXAMPLE
+$fileFullPath = Get-ChocolateyWebFile '__NAME__' 'zip' 'URL' '64BIT_URL_DELETE_IF_NO_64BIT'
+
+.OUTPUTS
+Returns the file path to the downloaded file as a string.
+
+.NOTES
+This helper reduces the number of lines one would have to write to download a file to 1 line.
+
+.LINK
+Install-ChocolateyPackage
+#>
+param([string] $packageName, [string] $fileType = 'exe',[string] $url,[string] $url64bit = $url)
+  
+	$chocTempDir = Join-Path $env:TEMP "chocolatey"
+	$tempDir = Join-Path $chocTempDir "$packageName"
+	if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+	$file = Join-Path $tempDir "$($packageName)Install.$fileType"
+  
+	$url32bit = $url;
+	$processor = Get-WmiObject Win32_Processor
+	$is64bit = $processor.AddressWidth -eq 64
+	$systemBit = '32 bit'
+	if ($is64bit) {
+		$systemBit = '64 bit';
+		$url = $url64bit;
+	}
+  
+	$downloadMessage = "Downloading $packageName ($url) to $file"
+	if ($url32bit -ne $url64bit) {$downloadMessage = "Downloading $packageName $systemBit ($url) to $file.";}
+  Write-Host "$downloadMessage"
+	#$downloader = new-object System.Net.WebClient
+	#$downloader.DownloadFile($url, $file)
+  Get-WebFile $url $file
+	
+  Start-Sleep 2 #give it a sec
+  return $file
+}
+
+function Get-ChocolateyUnzip {
+<#
+.SYNOPSIS
+Unzips a .zip file and returns the location for further processing.
+
+.DESCRIPTION
+This unzips files using the native windows unzipper.
+
+.PARAMETER FileFullPath
+This is the full path to your zip file.
+
+.PARAMETER Destination
+This is a directory where you would like the unzipped files to end up.
+
+
+.EXAMPLE
+$scriptPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
+Get-ChocolateyZipContents "c:\someFile.zip" $scriptPath
+
+.OUTPUTS
+Returns the passed in $destination.
+#>
+param([string] $fileFullPath, [string] $destination)
+
+	Write-Host "Extracting $fileFullPath to $destination..."
+	$shellApplication = new-object -com shell.application 
+	$zipPackage = $shellApplication.NameSpace($fileFullPath) 
+	$destinationFolder = $shellApplication.NameSpace($destination) 
+	$destinationFolder.CopyHere($zipPackage.Items()) 
+  
+  return $destination
+}
+
+Export-ModuleMember -Function Install-ChocolateyPackage, Get-ChocolateyWebFile, Get-ChocolateyUnzip
 
 # http://poshcode.org/417
 ## Get-WebFile (aka wget for PowerShell)
@@ -111,9 +228,9 @@ function Get-WebFile {
          } elseif(!$quiet) {
             $total += $count
             if($goal -gt 0) {
-               Write-Progress "Downloading $url" "Saving $total of $goal" -id 0 -percentComplete (($total/$goal)*100) 
+               Write-Progress "Downloading $url to $fileName" "Saving $total of $goal" -id 0 -percentComplete (($total/$goal)*100) 
 						} else {
-               Write-Progress "Downloading $url" "Saving $total bytes..." -id 0 -Completed
+               Write-Progress "Downloading $url to $fileName" "Saving $total bytes..." -id 0 -Completed
             }
 						if ($total -eq $goal) {
 							Write-Progress "Completed download of $url." "Completed a total of $total bytes of $fileName" -id 0 -Completed 

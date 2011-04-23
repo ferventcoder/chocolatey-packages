@@ -11,5 +11,9 @@
   Install-ChocolateyPackage 'IE9' 'exe' '' "$urlToWin7_32bit" "$urlToWin7_64bit"
 
 } catch {
-  Start-Sleep 10
+@"
+Error Occurred: $($_.Exception.Message)
+"@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
+	Start-Sleep 5
+	throw 
 }
