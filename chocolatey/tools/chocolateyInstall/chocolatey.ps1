@@ -5,7 +5,7 @@ param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=
 
 
 #Let's get Chocolatey!
-$chocVer = '0.9.6.0'
+$chocVer = '0.9.6.5'
 $nugetPath = 'C:\NuGet'
 $nugetExePath = Join-Path $nuGetPath 'bin'
 $nugetLibPath = Join-Path $nuGetPath 'lib'
@@ -59,10 +59,18 @@ $h2
 				$installedPackageVersion = $pkgVersionMatches -replace '\)', '' -replace "'", "" -replace " ", ""
 			}
 			
-			if ($installedPackageName -ne '' -and $installedPackageVersion -ne '') {
-				#search the lib directory for the highest number of the folder
-				#$packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "^$packageName*"} | sort name -Descending | select -First 1 
-				$packageFolder = Join-Path $nugetLibPath "$($installedPackageName).$($installedPackageVersion)" 
+      
+			if ($installedPackageName -ne '') {
+        $packageFolder = ''
+        if ($installedPackageVersion -ne '') {
+          $packageFolder = Join-Path $nugetLibPath "$($installedPackageName).$($installedPackageVersion)" 
+        } else {
+          #search the lib directory for the highest number of the folder        
+          $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "^$installedPackageName*"} | sort name -Descending | select -First 1 
+          $packageFolder = $packageFolder.FullName
+        }
+				
+        if ($packageFolder -ne '') {
 @"
 $h2
 $h2
@@ -70,13 +78,14 @@ Chocolatey Runner ($($installedPackageName.ToUpper()))
 $h2
 "@ | Write-Host
 
-				if ([System.IO.Directory]::Exists($packageFolder)) {
-					Run-ChocolateyPS1 $packageFolder
-	    		Get-ChocolateyBins $packageFolder
-				}
-			}
-  	}	
-	}
+          if ([System.IO.Directory]::Exists($packageFolder)) {
+            Run-ChocolateyPS1 $packageFolder
+            Get-ChocolateyBins $packageFolder
+          }
+        }
+      }
+    }
+  }
   
 @"
 $h1
@@ -201,6 +210,7 @@ v0.9.6
  * Can execute powershell and chocolatey without having to change execution rights to powershell system wide.
  * New Helper added - Get-ChocolateyWebFile - downloads a file from a url and gives you back the location of the file once complete.
  * New Helper added - Get-ChocolateyZipContents - unzips a file to a directory of your choosing.
+ * vx.x.x.5 - Adding in ability to find a dependency when the version doesn't exist.
 $h2
 Package License Acceptance Terms
 $h2

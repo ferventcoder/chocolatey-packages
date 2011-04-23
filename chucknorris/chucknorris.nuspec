@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>chucknorris</id>
+    <title>The Chuck Norris Framework</title>
+    <version>0.5</version>
+    <authors>Rob Reynolds, Dru Sellers, other comitters</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>The ChuckNorrisFramework (CNF) is a collection of developer productivity tools to make you more productive.</summary>
+    <description>The ChuckNorrisFramework is a collection of developer productivity tools to make you more productive. This package will bring in the other pieces of the framework as they become available.</description>
+    <projectUrl>https://github.com/chucknorris</projectUrl>
+    <tags>chucknorrisframework uppercut roundhouse dropkick warmup chocolatey</tags>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="warmup" />
+      <!--dependency id="uppercut" /-->
+      <!--dependency id="dropkick" /-->
+      <dependency id="roundhouse" />
+    </dependencies>
+  </metadata>
+</package>
