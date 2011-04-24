@@ -42,6 +42,8 @@ Get-ChocolateyWebFile
 param([string] $packageName, [string] $fileType = 'exe',[string] $silentArgs = '',[string] $url,[string] $url64bit = $url)
 	
   $file = Get-ChocolateyWebFile $packageName $fileType $url $url64bit
+  #some bug causes `$file to come back as System.Object[] the first time.
+  $file = Join-Path $env:TEMP "chocolatey\$packageName\$($packageName)Install.$fileType"
   
 	$installMessage = "Installing $packageName..."
 	if ($silentArgs -ne '') { $installMessage = "$installMessage silently...";}
