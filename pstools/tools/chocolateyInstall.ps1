@@ -1,12 +1,6 @@
 try {
   Get-ChildItem 'C:\NuGet\chocolateyInstall\helpers' -Filter *.psm1 | ForEach-Object { import-module -name  $_.FullName }
-	
-  $scriptPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
-  $fileFullPath = Get-ChocolateyWebFile 'pstools' 'zip' 'http://download.sysinternals.com/Files/PsTools.zip'
-  Get-ChocolateyUnzip "$fileFullPath" $scriptPath
-
-  write-host "PsTools Suite have been installed."
-  Start-Sleep 6
+  Install-ChocolateyZipPackage 'pstools' 'http://download.sysinternals.com/Files/PsTools.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 } catch {
 @"
 Error Occurred: $($_.Exception.Message)

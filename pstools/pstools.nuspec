@@ -3,7 +3,7 @@
   <metadata>
     <id>pstools</id>
     <title>PsTools</title>
-    <version>1.0.0.1</version>
+    <version>1.0.0.2</version>
     <authors>Mark Russinovich</authors>
     <owners>Rob Reynolds</owners>
     <summary>PsTools - File and Disk Utilities to manage local and remote Windows systems.</summary>

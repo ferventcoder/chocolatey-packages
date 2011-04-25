@@ -5,7 +5,7 @@ param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=
 
 
 #Let's get Chocolatey!
-$chocVer = '0.9.6.02'
+$chocVer = '0.9.6.03'
 $nugetPath = 'C:\NuGet'
 $nugetExePath = Join-Path $nuGetPath 'bin'
 $nugetLibPath = Join-Path $nuGetPath 'lib'
@@ -210,7 +210,9 @@ v0.9.6
  * Can execute powershell and chocolatey without having to change execution rights to powershell system wide.
  * New Helper added - Get-ChocolateyWebFile - downloads a file from a url and gives you back the location of the file once complete.
  * New Helper added - Get-ChocolateyZipContents - unzips a file to a directory of your choosing.
- * vx.x.x.5 - Adding in ability to find a dependency when the version doesn't exist.
+ * .1 - Adding in ability to find a dependency when the version doesn't exist.
+ * .2 - Addressed a small bug in getting back the file name from the helper
+ * .3 - New Helper added Install-ChocolateyZipPackage - this wraps the two upper commands into one smaller command and addresses the file name bug
 $h2
 Package License Acceptance Terms
 $h2

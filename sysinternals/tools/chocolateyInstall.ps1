@@ -1,12 +1,7 @@
 try {
   Get-ChildItem 'C:\NuGet\chocolateyInstall\helpers' -Filter *.psm1 | ForEach-Object { import-module -name  $_.FullName }
-	
+	Install-ChocolateyZipPackage 'sysinternals' 'http://download.sysinternals.com/Files/SysinternalsSuite.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   $scriptPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
-  $fileFullPath = Get-ChocolateyWebFile 'sysinternals' 'zip' 'http://download.sysinternals.com/Files/SysinternalsSuite.zip'
-  Get-ChocolateyUnzip "$fileFullPath" $scriptPath
-  
-  write-host "Sysinternals Suite has been installed."
-  Start-Sleep 6
 } catch {
 @"
 Error Occurred: $($_.Exception.Message)

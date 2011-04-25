@@ -63,6 +63,50 @@ param([string] $packageName, [string] $fileType = 'exe',[string] $silentArgs = '
 	Start-Sleep 5
 }
 
+function Install-ChocolateyZipPackage {
+<#
+.SYNOPSIS
+Downloads and unzips a package
+
+.DESCRIPTION
+This will download a file from a url and unzip it on your machine.
+
+.PARAMETER PackageName
+The name of the package we want to download - this is arbitrary, call it whatever you want.
+It's recommended you call it the same as your nuget package id.
+
+.PARAMETER Url
+This is the url to download the file from. 
+
+.PARAMETER UnzipLocation
+This is a location to unzip the contents to, most likely your script folder.
+
+.EXAMPLE
+Install-ChocolateyZipPackage '__NAME__' 'URL' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+
+.OUTPUTS
+None
+
+.NOTES
+This helper reduces the number of lines one would have to write to download and unzip a file to 1 line.
+
+.LINK
+  Get-ChocolateyWebFile
+  Get-ChocolateyUnzip
+#>
+param([string] $packageName, [string] $url,[string] $unzipLocation)
+
+  $fileType = 'zip'
+  $file = Get-ChocolateyWebFile $packageName $fileType $url
+  #some bug causes `$file to come back as System.Object[] the first time.
+  $file = Join-Path $env:TEMP "chocolatey\$packageName\$($packageName)Install.$fileType"
+  
+  Get-ChocolateyUnzip "$file" $unzipLocation
+  
+	write-host "$packageName has been unzipped."
+	Start-Sleep 5
+}
+
 function Get-ChocolateyWebFile {
 <#
 .SYNOPSIS
@@ -157,7 +201,7 @@ param([string] $fileFullPath, [string] $destination)
   return $destination
 }
 
-Export-ModuleMember -Function Install-ChocolateyPackage, Get-ChocolateyWebFile, Get-ChocolateyUnzip
+Export-ModuleMember -Function Install-ChocolateyPackage, Install-ChocolateyZipPackage, Get-ChocolateyWebFile, Get-ChocolateyUnzip
 
 # http://poshcode.org/417
 ## Get-WebFile (aka wget for PowerShell)
