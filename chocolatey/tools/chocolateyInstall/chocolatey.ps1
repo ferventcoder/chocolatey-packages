@@ -5,7 +5,7 @@ param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=
 
 
 #Let's get Chocolatey!
-$chocVer = '0.9.6.03'
+$chocVer = '0.9.6.04'
 $nugetPath = 'C:\NuGet'
 $nugetExePath = Join-Path $nuGetPath 'bin'
 $nugetLibPath = Join-Path $nuGetPath 'lib'
@@ -24,7 +24,7 @@ param([string]$file, [string]$arguments = $args, [switch] $elevated);
   $psi.WorkingDirectory = get-location;
  
   $s = [System.Diagnostics.Process]::Start($psi);
-  $s.WaitForExit(300000);
+  $s.WaitForExit();
 }
 
 function Chocolatey-NuGet { 
@@ -213,6 +213,7 @@ v0.9.6
  * .1 - Adding in ability to find a dependency when the version doesn't exist.
  * .2 - Addressed a small bug in getting back the file name from the helper
  * .3 - New Helper added Install-ChocolateyZipPackage - this wraps the two upper commands into one smaller command and addresses the file name bug
+ * .4 - remove timeout
 $h2
 Package License Acceptance Terms
 $h2

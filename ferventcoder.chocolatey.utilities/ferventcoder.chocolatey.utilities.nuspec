@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>ferventcoder.chocolatey.utilities</id>
+    <title>Ferventcoder.Chocolatey.Utilities</title>
+    <version>1.0</version>
+    <authors>Rob Reynolds</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Ferventcoder.Chocolatey.Utilities - Suite of Utilities</summary>
+    <description>Ferventcoder.Chocolatey.Utilities includes a number of utilities including console2, fiddler, launchy, lessmsi, filezilla, expresso, 7zip, lockhunter, notepad++, stexbar, and sysinternals. || cinst ferventcoder.chocolatey.utilities will get all of these tools installed ||
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>https://github.com/ferventcoder/nugetpackages</projectUrl>
+    <tags>ferventcoder utilities tools chocolatey</tags>
+    <dependencies>
+      <dependency id='console2' />
+      <dependency id='fiddler' />
+      <dependency id='launchy' />
+      <dependency id='lessmsi' />
+      <dependency id='filezilla' />
+      <dependency id='expresso' />
+      <dependency id='7zip' />
+      <dependency id='lockhunter' />
+      <dependency id='notepadplusplus' />
+      <dependency id='stexbar' />
+      <dependency id='sysinternals' />
+    </dependencies>
+  </metadata>
+</package>
