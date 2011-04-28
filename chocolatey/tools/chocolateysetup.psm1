@@ -11,21 +11,81 @@ function Request-ElevatedChocolateyPermissions
 
 Set-Alias sudo-chocolatey Request-ElevatedChocolateyPermissions;
 
+function Set-Packages-Environment-Folder($folder){
+    if(test-path $folder){
+        [Environment]::SetEnvironmentVariable("NuGetPackagesInstallationFolder", $folder, "User")
+    }
+    else{
+        throw "Cannot set the packages install folder. Folder not found [$folder]"
+    }
+}
+
+function Get-Packages-Environment-Folder(){
+    [Environment]::GetEnvironmentVariable("NuGetPackagesInstallationFolder", "User")
+    # Should this throw if the folder's not found?
+}
+
+function Select-Folder($message='Select a folder', $path = "C:\") { 
+    $object = New-Object -comObject Shell.Application  
+     
+    $folder = $object.BrowseForFolder(0, $message, 0, $path) 
+    if ($folder -ne $null) { 
+        $folder.self.Path 
+    } 
+}
+
+function Create-Directory-IfNotExists($folderName){
+    if (![System.IO.Directory]::Exists($folderName)) {[System.IO.Directory]::CreateDirectory($folderName)}
+}
+
 function Create-ChocolateyBinFile {
 param([string] $nugetChocolateyBinFile,[string] $nugetChocolateyInstallAlias)
-"@echo off
-""$nugetChocolateyPath\chocolatey.cmd"" %*" | Out-File $nugetChocolateyBinFile -encoding ASCII
-"@echo off
-""$nugetChocolateyPath\chocolatey.cmd"" install %*" | Out-File $nugetChocolateyInstallAlias -encoding ASCII
+    "@echo off
+    ""$nugetChocolateyPath\chocolatey.cmd"" %*" | Out-File $nugetChocolateyBinFile -encoding ASCII
+    "@echo off
+    ""$nugetChocolateyPath\chocolatey.cmd"" install %*" | Out-File $nugetChocolateyInstallAlias -encoding ASCII
 }
 
 function Initialize-Chocolatey {
+    $nugetPath = 'C:\NuGet'
+
+    $promptMsg = "*** Default Packages Install Directory ***
+    NO: will prompt you to choose another location
+    Keep Defalut ($nugetPath) [Yes|No]:"
+    $nugetPackagesInstallFolderPromptValue = Read-Host $promptMsg
+
+    # If the user wants to override the default packages install folder.
+    if($nugetPackagesInstallFolderPromptValue -eq "n" -or $nugetPackagesInstallFolderPromptValue -eq "no"){
+
+        # prompt for the new folder
+        $folderChosen = Select-Folder -message 'Destination for Chocolatey NuGet installs'
+
+        if(test-path $folderChosen){
+            # TODO: validate the folder chose was empty? is this advisable?
+            $nugetPath = $folderChosen
+        }
+        else{
+            throw "invalid install folder - $folderChosen"
+        }
+    }
+    else{
+        if(!(test-path $nugetPath)){
+            mkdir $nugetPath | out-null
+        }
+    }
+
+    Set-Packages-Environment-Folder $nugetPath
+
+
+
+
+
   #set up variables to add
   $statementTerminator = ";"
-  $nugetPath = 'C:\NuGet'
-	$nugetExePath = Join-Path $nuGetPath 'bin'
-	$nugetLibPath = Join-Path $nuGetPath 'lib'
-	$nugetChocolateyPath = Join-Path $nuGetPath 'chocolateyInstall'
+  
+  $nugetExePath = Join-Path $nuGetPath 'bin'
+  $nugetLibPath = Join-Path $nuGetPath 'lib'
+  $nugetChocolateyPath = Join-Path $nuGetPath 'chocolateyInstall'
   $nugetChocolateyBinFile = Join-Path $nugetExePath 'chocolatey.bat'
   $nugetChocolateyInstallAlias = Join-Path $nugetExePath 'cinst.bat'
 
@@ -41,10 +101,10 @@ Creating Chocolatey NuGet folders if they do not already exist.
 
 "@ | Write-Host
 
-  #create the base structure if it doesn't exist
-  if (![System.IO.Directory]::Exists($nugetExePath)) {[System.IO.Directory]::CreateDirectory($nugetExePath)}
-  if (![System.IO.Directory]::Exists($nugetLibPath)) {[System.IO.Directory]::CreateDirectory($nugetLibPath)}
-  if (![System.IO.Directory]::Exists($nugetChocolateyPath)) {[System.IO.Directory]::CreateDirectory($nugetChocolateyPath)}
+	#create the base structure if it doesn't exist
+	Create-Directory-IfNotExists $nugetExePath
+	Create-Directory-IfNotExists $nugetLibPath
+	Create-Directory-IfNotExists $nugetChocolateyPath
 
 	#$chocInstallFolder = Get-ChildItem .\ -Recurse | ?{$_.name -match  "chocolateyInstall*"} | sort name -Descending | select -First 1 
 	$thisScript = (Get-Variable MyInvocation -Scope 1).Value 
@@ -60,7 +120,7 @@ Creating Chocolatey NuGet folders if they do not already exist.
   #$envPath = $env:PATH
   $envPath = [Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine)
 
-  #if you do not find C:\NuGet\bin, add it 
+  #if you do not find $nugetPath\bin, add it 
   if (!$envPath.ToLower().Contains($nugetExePath.ToLower()))
   {
   	Write-Host ''
