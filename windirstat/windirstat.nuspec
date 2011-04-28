@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>windirstat</id>
+    <title>WinDirStat</title>
+    <version>1.1.2</version>
+    <authors>Oliver Schneider</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>WinDirStat - Windows Directory Statistics</summary>
+    <description>WinDirStat is a disk usage statistics viewer and cleanup tool for Microsoft Windows. 
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://windirstat.info</projectUrl>
+    <tags>windirstat disk usage chocolatey</tags>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>

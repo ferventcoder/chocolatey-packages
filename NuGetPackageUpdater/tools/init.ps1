@@ -1,4 +1,4 @@
-﻿param($installPath, $toolsPath, $package, $project)
+﻿param($installPath, $toolsPath, $package)
 
 $modules = Get-ChildItem $ToolsPath -Filter *.psm1
 $modules | ForEach-Object { import-module -name  $_.FullName }
