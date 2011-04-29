@@ -1,15 +1,17 @@
 param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=206669',$version='')#todo:,[switch] $silent)
 # chocolatey
 # Copyright (c) 2011 Rob Reynolds
+# Crediting contributions by Chris Ortman, nekresh
 # Apache License, Version 2.0 - http://www.apache.org/licenses/LICENSE-2.0
 
 
 #Let's get Chocolatey!
-$chocVer = '0.9.6.04'
-$nugetPath = 'C:\NuGet'
+$chocVer = '0.9.7'
+$nugetChocolateyPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
+$nugetPath = (Split-Path -Parent $nugetChocolateyPath)
 $nugetExePath = Join-Path $nuGetPath 'bin'
 $nugetLibPath = Join-Path $nuGetPath 'lib'
-$nugetChocolateyPath = Join-Path $nuGetPath 'chocolateyInstall'
+
 $nugetExe = Join-Path $nugetChocolateyPath 'nuget.exe'
 $h1 = '====================================================='
 $h2 = '-------------------------'
@@ -140,7 +142,9 @@ $h2
     
     if ($ps1 -notlike '') {
       $ps1FullPath = $ps1.FullName
-      Run-ChocolateyProcess powershell "$ps1FullPath" -elevated
+			$importChocolateyHelpers = "";
+			Get-ChildItem "$nugetChocolateyPath\helpers" -Filter *.psm1 | ForEach-Object { $importChocolateyHelpers = "& import-module -name  $($_.FullName);$importChocolateyHelpers" };
+      Run-ChocolateyProcess powershell "-NoProfile -ExecutionPolicy unrestricted -Command `"$importChocolateyHelpers . `'$ps1FullPath`'`"" -elevated
 			#testing Start-Process -FilePath "powershell.exe" -ArgumentList " -noexit `"$ps1FullPath`"" -Verb "runas"  -Wait  #-PassThru -UseNewEnvironment #-RedirectStandardError $errorLog -WindowStyle Normal
     }
   }
@@ -183,7 +187,8 @@ function Chocolatey-Help {
 @"
 $h1
 Chocolatey - Your local machine NuGet repository AKA your local tools repository  AKA apt-get for Windows
-Version $chocVer
+Version: `'$chocVer'`
+Install Directory: `'$nugetPath`'
 $h1
 Chocolatey allows you to install application nuggets and run executables from anywhere.
 $h2
@@ -203,7 +208,7 @@ v0.9.4
  * List command has a filter.
  * Package license acceptance terms notated
 v0.9.5 
- * Helper for native installer added (Install-ChocolateyPackage).	Reduces the amount of powershell necessary to download and install a native package to two lines from over 25.
+ * Helper for native installer added (Install-ChocolateyPackage). Reduces the amount of powershell necessary to download and install a native package to two lines from over 25.
  * Helper outputs progress during download.
  * Dependency runner is complete
 v0.9.6
@@ -214,12 +219,29 @@ v0.9.6
  * .2 - Addressed a small bug in getting back the file name from the helper
  * .3 - New Helper added Install-ChocolateyZipPackage - this wraps the two upper commands into one smaller command and addresses the file name bug
  * .4 - remove timeout
+v0.9.7
+ * New helper added Install-ChocolateyInstallPackage - this was previously part of the download & install and has been broken out.
+ * The powershell module is automatically loaded, so packages no longer need to import the module. This means one line chocolateyInstall.ps1 files!
+ * Error handling is improved.
+ * Silent installer override for msi has been removed to allow for additional arguments that need to be passed.
+$h2
+$h2
+using (var legalese = new LawyerText()) {
 $h2
 Package License Acceptance Terms
 $h2
 The act of running chocolatey to install a package constitutes acceptance of the license for the application, executable(s), or other artifacts that are brought to your machine as a result of a chocolatey install.
 This acceptance occurs whether you know the license terms or not. It is suggested that you read and understand the license terms of any package you plan to install prior to installation through chocolatey.
 If you do not accept the license of a package you are installing, please uninstall it and any artifacts that end up on your machine as a result of the install.
+$h2
+Waiver of Responsibility
+$h2
+The use of chocolatey means that an individual using chocolatey assumes the responsibility for any changes (including any damages of any sort) that occur to the system as a result of using chocolatey. 
+This does not supercede the verbage or enforcement of the license for chocolatey (currently Apache 2.0), it is only noted here that you are waiving any rights to collect damages by your use of chocolatey. 
+It is recommended you read the license (http://www.apache.org/licenses/LICENSE-2.0) to gain a full understanding (especially section 8. Limitation of Liability) prior to using chocolatey.
+$h2
+}
+$h2
 $h2
 Usage
 $h2

@@ -35,32 +35,28 @@ None
 
 .NOTES
 This helper reduces the number of lines one would have to write to download and install a file to 1 line.
+This method has error handling built into it.
 
 .LINK
 Get-ChocolateyWebFile
+Install-ChocolateyInstallPackage
 #>
 param([string] $packageName, [string] $fileType = 'exe',[string] $silentArgs = '',[string] $url,[string] $url64bit = $url)
-	
-  $file = Get-ChocolateyWebFile $packageName $fileType $url $url64bit
-  #some bug causes `$file to come back as System.Object[] the first time.
-  $file = Join-Path $env:TEMP "chocolatey\$packageName\$($packageName)Install.$fileType"
+	try {
+    $chocTempDir = Join-Path $env:TEMP "chocolatey"
+    $tempDir = Join-Path $chocTempDir "$packageName"
+    if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+    $file = Join-Path $tempDir "$($packageName)Install.$fileType"
   
-	$installMessage = "Installing $packageName..."
-	if ($silentArgs -ne '') { $installMessage = "$installMessage silently...";}
-	write-host $installMessage
-	
-	if ($fileType -like 'msi') {
-		$msiArgs = "/i `"$file`"" 
-		if ($silentArgs -ne '') { $msiArgs = "$msiArgs /quiet";}
-		Start-Process -FilePath msiexec -ArgumentList $msiArgs -Wait
+    Get-ChocolateyWebFile $packageName $fileType $file $url $url64bit
+    Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file
+	} catch {
+@"
+Error Occurred: $($_.Exception.Message)
+"@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
+		Start-Sleep 7
+		throw 
 	}
-	if ($fileType -like 'exe') {
-  	Start-Process -FilePath $file -ArgumentList $silentArgs -Wait 
-		#"/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer
-	}
-	
-	write-host "$packageName has been installed."
-	Start-Sleep 5
 }
 
 function Install-ChocolateyZipPackage {
@@ -89,6 +85,7 @@ None
 
 .NOTES
 This helper reduces the number of lines one would have to write to download and unzip a file to 1 line.
+This method has error handling built into it.
 
 .LINK
   Get-ChocolateyWebFile
@@ -96,15 +93,26 @@ This helper reduces the number of lines one would have to write to download and 
 #>
 param([string] $packageName, [string] $url,[string] $unzipLocation)
 
+try {
   $fileType = 'zip'
-  $file = Get-ChocolateyWebFile $packageName $fileType $url
-  #some bug causes `$file to come back as System.Object[] the first time.
-  $file = Join-Path $env:TEMP "chocolatey\$packageName\$($packageName)Install.$fileType"
   
+  $chocTempDir = Join-Path $env:TEMP "chocolatey"
+	$tempDir = Join-Path $chocTempDir "$packageName"
+	if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+	$file = Join-Path $tempDir "$($packageName)Install.$fileType"
+  
+  Get-ChocolateyWebFile $packageName $fileType $file $url  
   Get-ChocolateyUnzip "$file" $unzipLocation
   
 	write-host "$packageName has been unzipped."
 	Start-Sleep 5
+	} catch {
+@"
+Error Occurred: $($_.Exception.Message)
+"@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
+		Start-Sleep 7
+		throw 
+	}
 }
 
 function Get-ChocolateyWebFile {
@@ -120,8 +128,8 @@ It returns the filepath to the downloaded file when it is complete.
 The name of the package we want to download - this is arbitrary, call it whatever you want.
 It's recommended you call it the same as your nuget package id.
 
-.PARAMETER FileType
-This is the extension of the file. This should be either exe or msi.
+.PARAMETER FileFullPath
+This is the full path of the resulting file name.
 
 .PARAMETER Url
 This is the url to download the file from. 
@@ -130,23 +138,16 @@ This is the url to download the file from.
 OPTIONAL - If there is an x64 installer to download, please include it here. If not, delete this parameter
 
 .EXAMPLE
-$fileFullPath = Get-ChocolateyWebFile '__NAME__' 'zip' 'URL' '64BIT_URL_DELETE_IF_NO_64BIT'
-
-.OUTPUTS
-Returns the file path to the downloaded file as a string.
+Get-ChocolateyWebFile '__NAME__' 'exe' 'C:\somepath\somename.exe' 'URL' '64BIT_URL_DELETE_IF_NO_64BIT'
 
 .NOTES
 This helper reduces the number of lines one would have to write to download a file to 1 line.
+There is no error handling built into this method.
 
 .LINK
 Install-ChocolateyPackage
 #>
-param([string] $packageName, [string] $fileType = 'exe',[string] $url,[string] $url64bit = $url)
-  
-	$chocTempDir = Join-Path $env:TEMP "chocolatey"
-	$tempDir = Join-Path $chocTempDir "$packageName"
-	if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
-	$file = Join-Path $tempDir "$($packageName)Install.$fileType"
+param([string] $packageName,[string] $fileFullPath,[string] $url,[string] $url64bit = $url)
   
 	$url32bit = $url;
 	$processor = Get-WmiObject Win32_Processor
@@ -157,15 +158,71 @@ param([string] $packageName, [string] $fileType = 'exe',[string] $url,[string] $
 		$url = $url64bit;
 	}
   
-	$downloadMessage = "Downloading $packageName ($url) to $file"
-	if ($url32bit -ne $url64bit) {$downloadMessage = "Downloading $packageName $systemBit ($url) to $file.";}
+	$downloadMessage = "Downloading $packageName ($url) to $fileFullPath"
+	if ($url32bit -ne $url64bit) {$downloadMessage = "Downloading $packageName $systemBit ($url) to $fileFullPath.";}
   Write-Host "$downloadMessage"
 	#$downloader = new-object System.Net.WebClient
-	#$downloader.DownloadFile($url, $file)
-  Get-WebFile $url $file
+	#$downloader.DownloadFile($url, $fileFullPath)
+  Get-WebFile $url $fileFullPath
 	
   Start-Sleep 2 #give it a sec
-  return $file
+}
+
+function Install-ChocolateyInstallPackage {
+<#
+.SYNOPSIS
+Installs a package
+
+.DESCRIPTION
+This will run an installer (local file) on your machine.
+
+.PARAMETER PackageName
+The name of the package - this is arbitrary, call it whatever you want.
+It's recommended you call it the same as your nuget package id.
+
+.PARAMETER FileType
+This is the extension of the file. This should be either exe or msi.
+
+.PARAMETER SilentArgs
+OPTIONAL - These are the parameters to pass to the native installer.
+Try any of these to get the silent installer - /s /S /q /Q /quiet /silent /SILENT /VERYSILENT
+With msi it is always /quiet.
+If you don't pass anything it will invoke the installer with out any arguments. That means a nonsilent installer.
+
+Please include the notSilent tag in your chocolatey nuget package if you are not setting up a silent package.
+
+.PARAMETER File
+The full path to the native installer to run
+
+.EXAMPLE
+Install-ChocolateyInstallPackage '__NAME__' 'EXE_OR_MSI' 'SILENT_ARGS' 'FilePath'
+
+.OUTPUTS
+None
+
+.NOTES
+This helper reduces the number of lines one would have to write to run an installer to 1 line.
+There is no error handling built into this method.
+
+.LINK
+Install-ChocolateyPackage
+#>
+param([string] $packageName, [string] $fileType = 'exe',[string] $silentArgs = '',[string] $file)
+$installMessage = "Installing $packageName..."
+	if ($silentArgs -ne '') { $installMessage = "$installMessage silently...";}
+	write-host $installMessage
+	
+	if ($fileType -like 'msi') {
+		$msiArgs = "/i `"$file`"" 
+		if ($silentArgs -ne '') { $msiArgs = "$msiArgs $silentArgs";}
+		Start-Process -FilePath msiexec -ArgumentList $msiArgs -Wait
+	}
+	if ($fileType -like 'exe') {
+  	Start-Process -FilePath $file -ArgumentList $silentArgs -Wait 
+	}
+	
+	write-host "$packageName has been installed."
+	Start-Sleep 5
 }
 
 function Get-ChocolateyUnzip {
@@ -182,13 +239,17 @@ This is the full path to your zip file.
 .PARAMETER Destination
 This is a directory where you would like the unzipped files to end up.
 
-
 .EXAMPLE
 $scriptPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 Get-ChocolateyZipContents "c:\someFile.zip" $scriptPath
 
 .OUTPUTS
 Returns the passed in $destination.
+
+.NOTES
+This helper reduces the number of lines one would have to write to unzip a file to 1 line.
+There is no error handling built into this method.
+
 #>
 param([string] $fileFullPath, [string] $destination)
 
@@ -201,7 +262,7 @@ param([string] $fileFullPath, [string] $destination)
   return $destination
 }
 
-Export-ModuleMember -Function Install-ChocolateyPackage, Install-ChocolateyZipPackage, Get-ChocolateyWebFile, Get-ChocolateyUnzip
+Export-ModuleMember -Function Install-ChocolateyPackage, Install-ChocolateyZipPackage, Get-ChocolateyWebFile, Install-ChocolateyInstallPackage, Get-ChocolateyUnzip
 
 # http://poshcode.org/417
 ## Get-WebFile (aka wget for PowerShell)
