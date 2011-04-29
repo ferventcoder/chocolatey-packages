@@ -1,5 +1,4 @@
 try {
-  Get-ChildItem 'C:\NuGet\chocolateyInstall\helpers' -Filter *.psm1 | ForEach-Object { import-module -name  $_.FullName }
   Install-ChocolateyPackage 'msysgit' 'exe' '/SILENT' 'http://msysgit.googlecode.com/files/Git-1.7.4-preview20110204.exe' 
 
 #------- ADDITIONAL SETUP -------#

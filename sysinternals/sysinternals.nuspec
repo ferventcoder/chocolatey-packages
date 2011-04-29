@@ -3,7 +3,7 @@
   <metadata>
     <id>sysinternals</id>
     <title>Sysinternals</title>
-    <version>1.0.0.1</version>
+    <version>1.0.0.02</version>
     <authors>Mark Russinovich, Bryce Cogswell</authors>
     <owners>Rob Reynolds</owners>
     <summary>Sysinternals - utilities to help you manage, troubleshoot and diagnose your Windows systems and applications.</summary>

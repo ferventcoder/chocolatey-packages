@@ -3,7 +3,7 @@
   <metadata>
     <id>expresso</id>
     <title>Expresso</title>
-    <version>3.0.0</version>
+    <version>3.0.0.01</version>
     <authors>Ultrapico</authors>
     <owners>Rob Reynolds</owners>
     <summary>Expresso - The premier regular expression development tool</summary>

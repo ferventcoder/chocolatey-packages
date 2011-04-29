@@ -1,5 +1,4 @@
 try {
-  Get-ChildItem 'C:\NuGet\chocolateyInstall\helpers' -Filter *.psm1 | ForEach-Object { import-module -name  $_.FullName }
   Install-ChocolateyPackage 'ilmerge' 'msi' '' 'http://www.microsoft.com/downloads/info.aspx?na=41&SrcFamilyId=22914587-B4AD-4EAE-87CF-B14AE6A939B0&SrcDisplayLang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f1%2f3%2f4%2f1347C99E-9DFB-4252-8F6D-A3129A069F79%2fILMerge.msi'
 
   #------additional setup ----------------

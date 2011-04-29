@@ -1,6 +1,4 @@
 try {
-  Get-ChildItem 'C:\NuGet\chocolateyInstall\helpers' -Filter *.psm1 | ForEach-Object { import-module -name  $_.FullName }
-
   Install-ChocolateyZipPackage 'ghostdoc' 'http://submain.com/download/GhostDoc_v3.0.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   
   #after download we need to run the installer against it

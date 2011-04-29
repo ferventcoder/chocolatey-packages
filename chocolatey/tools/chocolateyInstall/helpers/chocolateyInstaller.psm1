@@ -48,7 +48,7 @@ param([string] $packageName, [string] $fileType = 'exe',[string] $silentArgs = '
     if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
     $file = Join-Path $tempDir "$($packageName)Install.$fileType"
   
-    Get-ChocolateyWebFile $packageName $fileType $file $url $url64bit
+    Get-ChocolateyWebFile $packageName $file $url $url64bit
     Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file
 	} catch {
 @"
@@ -138,7 +138,7 @@ This is the url to download the file from.
 OPTIONAL - If there is an x64 installer to download, please include it here. If not, delete this parameter
 
 .EXAMPLE
-Get-ChocolateyWebFile '__NAME__' 'exe' 'C:\somepath\somename.exe' 'URL' '64BIT_URL_DELETE_IF_NO_64BIT'
+Get-ChocolateyWebFile '__NAME__' 'C:\somepath\somename.exe' 'URL' '64BIT_URL_DELETE_IF_NO_64BIT'
 
 .NOTES
 This helper reduces the number of lines one would have to write to download a file to 1 line.
@@ -241,7 +241,7 @@ This is a directory where you would like the unzipped files to end up.
 
 .EXAMPLE
 $scriptPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
-Get-ChocolateyZipContents "c:\someFile.zip" $scriptPath
+Get-ChocolateyUnzip "c:\someFile.zip" $scriptPath
 
 .OUTPUTS
 Returns the passed in $destination.
