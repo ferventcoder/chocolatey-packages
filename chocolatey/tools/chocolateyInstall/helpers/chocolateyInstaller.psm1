@@ -218,7 +218,11 @@ $installMessage = "Installing $packageName..."
 		Start-Process -FilePath msiexec -ArgumentList $msiArgs -Wait
 	}
 	if ($fileType -like 'exe') {
-  	Start-Process -FilePath $file -ArgumentList $silentArgs -Wait 
+		if ($silentArgs -ne '') {
+			Start-Process -FilePath $file -ArgumentList $silentArgs -Wait 
+		} else {
+			Start-Process -FilePath $file -Wait 
+		}
 	}
 	
 	write-host "$packageName has been installed."

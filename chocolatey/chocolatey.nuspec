@@ -3,7 +3,7 @@
   <metadata>
     <id>chocolatey</id>
     <title>Chocolatey</title>
-    <version>0.9.7.01</version>
+    <version>0.9.7.02</version>
     <authors>Rob Reynolds</authors>
     <owners>Rob Reynolds</owners>
     <summary>Chocolatey is your machine level NuGet repository. Think apt-get for Windows (executables/application packages), not library packages.</summary>
@@ -22,5 +22,6 @@ and it will run your application executable.
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>nuget apt-get machine repository chocolatey</tags>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/chocolatey/chocolateyicon.gif</iconUrl>
   </metadata>
 </package>

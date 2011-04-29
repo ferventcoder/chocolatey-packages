@@ -6,7 +6,7 @@ param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=
 
 
 #Let's get Chocolatey!
-$chocVer = '0.9.7.01'
+$chocVer = '0.9.7.02'
 $nugetChocolateyPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $nugetPath = (Split-Path -Parent $nugetChocolateyPath)
 $nugetExePath = Join-Path $nuGetPath 'bin'
@@ -219,12 +219,14 @@ v0.9.6
  * .2 - Addressed a small bug in getting back the file name from the helper
  * .3 - New Helper added Install-ChocolateyZipPackage - this wraps the two upper commands into one smaller command and addresses the file name bug
  * .4 - remove timeout
-v0.9.7.1
+v0.9.7
  * New helper added Install-ChocolateyInstallPackage - this was previously part of the download & install and has been broken out.
  * The powershell module is automatically loaded, so packages no longer need to import the module. This means one line chocolateyInstall.ps1 files!
  * Error handling is improved.
  * Silent installer override for msi has been removed to allow for additional arguments that need to be passed.
  * New chocolatey command! Version allows you to see if a package you have installed is the most up to date. Leave out package and it will check for chocolatey itself.
+ * .1 - Fixing an introduced bug where the downloader didn't get the file name passed to it.
+ * .2 - Fixing an underlying issue with not having silent arguments for exe files. 
 $h2
 $h2
 using (var legalese = new LawyerText()) {

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>windowsphonedevelopertools</id>
+    <title>WindowsPhoneDeveloperTools</title>
+    <version>1.0</version>
+    <authors>Microsoft</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Windows Phone Developer Tools</summary>
+    <description>Windows Phone Developer Tools - The same powerful and easy to use Visual Studio integrated developer environment (IDE) handles developing Windows Phone 7 phone applications.
+|Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://msdn.microsoft.com/en-us/library/ff402523(v=vs.92).aspx</projectUrl>
+    <tags>windows phone developer tools wp7 chocolatey notSilent</tags>
+  </metadata>
+</package>
