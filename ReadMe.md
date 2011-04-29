@@ -2,8 +2,8 @@ NuGet Packages - a collection of packages
 =============================================
   
 #Getting Started
-- Check out how easy it is... <br>http://www.youtube.com/watch?v=N-hWOUL8roU
-- Now that you want it. Find out how to create your own metta package. <br>http://www.youtube.com/watch?v=Wt_unjS_SUo
+- Video: [Easy to use.](http://www.youtube.com/watch?v=N-hWOUL8roU).
+- Video: Now that you want it. [Find out how to create your own metta package](http://www.youtube.com/watch?v=Wt_unjS_SUo)
 
 #LICENSE
 Apache 2.0  
