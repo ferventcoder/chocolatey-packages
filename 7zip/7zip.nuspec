@@ -13,6 +13,6 @@
     <tags>7zip zip archiver chocolatey</tags>
     <licenseUrl>http://www.7-zip.org/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>32x32.png</iconUrl>-->
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/7zip/7ziplogo.png</iconUrl>
   </metadata>
 </package>

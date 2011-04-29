@@ -6,12 +6,13 @@
     <version>__REPLACE__</version>
     <authors>__REPLACE__</authors>
     <owners>Rob Reynolds</owners>
-    <summary>__NAME__ </summary>
-    <description>__NAME__ Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <summary>__NAME__</summary>
+    <description>__NAME__ 
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>__REPLACE__</projectUrl>
-    <tags>__NAME__  chocolatey</tags>
+    <tags>__NAME__ chocolatey</tags>
     <licenseUrl></licenseUrl>
-    <requireLicenseAcceptance></requireLicenseAcceptance>
-    <!--<iconUrl>32x32.png</iconUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/__NAME__/__NAME__.gif</iconUrl>-->
   </metadata>
 </package>

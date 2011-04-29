@@ -13,6 +13,6 @@ VCD, and various streaming protocols.
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://www.videolan.org/vlc/</projectUrl>
     <tags>vlc multimedia media player chocolatey</tags>
-    <!--<iconUrl>32x32.png</iconUrl>-->
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/vlc/largeVLC.png</iconUrl>
   </metadata>
 </package>

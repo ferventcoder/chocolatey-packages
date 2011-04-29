@@ -13,5 +13,6 @@
     <tags>mono development framework chocolatey</tags>
     <licenseUrl>http://mono-project.com/FAQ:_Licensing</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/mono/mono-logo.png</iconUrl>
   </metadata>
 </package>

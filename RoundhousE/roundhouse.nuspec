@@ -12,6 +12,6 @@
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>roundhouse db migrations chocolatey chucknorris</tags>
-    <!--<iconUrl>32x32.png</iconUrl>-->
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/RoundhousE/RoundhousE_Logo.NuGet.jpg</iconUrl>
   </metadata>
 </package>
