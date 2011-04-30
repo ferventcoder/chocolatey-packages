@@ -101,7 +101,7 @@ try {
 	if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
 	$file = Join-Path $tempDir "$($packageName)Install.$fileType"
   
-  Get-ChocolateyWebFile $packageName $fileType $file $url  
+  Get-ChocolateyWebFile $packageName $file $url  
   Get-ChocolateyUnzip "$file" $unzipLocation
   
 	write-host "$packageName has been unzipped."

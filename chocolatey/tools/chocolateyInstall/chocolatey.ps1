@@ -6,7 +6,7 @@ param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=
 
 
 #Let's get Chocolatey!
-$chocVer = '0.9.7.02'
+$chocVer = '0.9.7.03'
 $nugetChocolateyPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $nugetPath = (Split-Path -Parent $nugetChocolateyPath)
 $nugetExePath = Join-Path $nuGetPath 'bin'
@@ -227,6 +227,7 @@ v0.9.7
  * New chocolatey command! Version allows you to see if a package you have installed is the most up to date. Leave out package and it will check for chocolatey itself.
  * .1 - Fixing an introduced bug where the downloader didn't get the file name passed to it.
  * .2 - Fixing an underlying issue with not having silent arguments for exe files. 
+ * .3 - Fixing Install-ChocolateyZipPackage so that it works again.
 $h2
 $h2
 using (var legalese = new LawyerText()) {
