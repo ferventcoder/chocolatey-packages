@@ -47,42 +47,41 @@ param([string] $nugetChocolateyBinFile,[string] $nugetChocolateyInstallAlias)
 }
 
 function Initialize-Chocolatey {
-    $nugetPath = 'C:\NuGet'
+<#
+	.DESCRIPTION
+		This will initialize the Chocolatey tool by
+			a) setting up the "nugetPath" (the location where all chocolatey nuget packages will be installed)
+			b) Installs chocolatey into the "nugetPath"
+			c) Adds chocolaty to the PATH environment variable so you have access to the chocolatey|cinst commands.
+	.PARAMETER  NuGetPath
+		Allows you to override the default path of (C:\NuGet\) by specifying a directory chocolaty will install nuget packages.
 
-    $promptMsg = "*** Default Packages Install Directory ***
-    NO: will prompt you to choose another location
-    Keep Defalut ($nugetPath) [Yes|No]:"
-    $nugetPackagesInstallFolderPromptValue = Read-Host $promptMsg
+	.EXAMPLE
+		C:\PS> Initialize-Chocolatey
 
-    # If the user wants to override the default packages install folder.
-    if($nugetPackagesInstallFolderPromptValue -eq "n" -or $nugetPackagesInstallFolderPromptValue -eq "no"){
+		Installs chocolatey into the default C:\NuGet\ directory.
 
-        # prompt for the new folder
-        $folderChosen = Select-Folder -message 'Destination for Chocolatey NuGet installs'
+	.EXAMPLE
+		C:\PS> Initialize-Chocolatey -nugetPath "D:\ChocolateyInstalledNuGets\"
 
-        if(test-path $folderChosen){
-            # TODO: validate the folder chose was empty? is this advisable?
-            $nugetPath = $folderChosen
-        }
-        else{
-            throw "invalid install folder - $folderChosen"
-        }
-    }
-    else{
-        if(!(test-path $nugetPath)){
-            mkdir $nugetPath | out-null
-        }
-    }
+		Installs chocolatey into the custom directory D:\ChocolateyInstalledNuGets\
 
-    Set-Packages-Environment-Folder $nugetPath
+#>
+param(
+  [Parameter(Mandatory=$false)]
+  [string]$nugetPath = 'C:\NuGet'
+)
 
+  if(!(test-path $nugetPath)){
+    mkdir $nugetPath | out-null
+  }
 
-
+  Set-Packages-Environment-Folder $nugetPath
 
 
   #set up variables to add
   $statementTerminator = ";"
-  
+
   $nugetExePath = Join-Path $nuGetPath 'bin'
   $nugetLibPath = Join-Path $nuGetPath 'lib'
   $nugetChocolateyPath = Join-Path $nuGetPath 'chocolateyInstall'
