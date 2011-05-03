@@ -75,8 +75,16 @@ param(
   if(!(test-path $nugetPath)){
     mkdir $nugetPath | out-null
   }
+  
+  # If we've aready initialized the NuGet packages folder then don't override that.
+  $alreadyInitializedNugetPath = Get-Packages-Environment-Folder
+  if($alreadyInitializedNugetPath -and $alreadyInitializedNugetPath -ne $nugetPath){
+	$nugetPath = $alreadyInitializedNugetPath
+  }
+  else {
+	Set-Packages-Environment-Folder $nugetPath
+  }
 
-  Set-Packages-Environment-Folder $nugetPath
 
 
   #set up variables to add
