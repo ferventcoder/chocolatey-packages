@@ -50,10 +50,13 @@ param([string] $packageName, [string] $fileType = 'exe',[string] $silentArgs = '
   
     Get-ChocolateyWebFile $packageName $file $url $url64bit
     Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file
+		Write-ChocolateySuccess $packageName
+		Start-Sleep 8
 	} catch {
 @"
 Error Occurred: $($_.Exception.Message)
 "@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
+		Write-ChocolateyFailure $packageName $($_.Exception.Message)
 		Start-Sleep 7
 		throw 
 	}
@@ -93,23 +96,25 @@ This method has error handling built into it.
 #>
 param([string] $packageName, [string] $url,[string] $unzipLocation)
 
-try {
-  $fileType = 'zip'
-  
-  $chocTempDir = Join-Path $env:TEMP "chocolatey"
-	$tempDir = Join-Path $chocTempDir "$packageName"
-	if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
-	$file = Join-Path $tempDir "$($packageName)Install.$fileType"
-  
-  Get-ChocolateyWebFile $packageName $file $url  
-  Get-ChocolateyUnzip "$file" $unzipLocation
-  
-	write-host "$packageName has been unzipped."
-	Start-Sleep 5
+	try {
+	  $fileType = 'zip'
+	  
+	  $chocTempDir = Join-Path $env:TEMP "chocolatey"
+		$tempDir = Join-Path $chocTempDir "$packageName"
+		if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+		$file = Join-Path $tempDir "$($packageName)Install.$fileType"
+	  
+	  Get-ChocolateyWebFile $packageName $file $url  
+	  Get-ChocolateyUnzip "$file" $unzipLocation
+	  Write-ChocolateySuccess $packageName
+				
+		write-host "$packageName has been unzipped."
+		Start-Sleep 5
 	} catch {
 @"
 Error Occurred: $($_.Exception.Message)
 "@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
+		Write-ChocolateyFailure $packageName $($_.Exception.Message)
 		Start-Sleep 7
 		throw 
 	}
@@ -226,7 +231,7 @@ $installMessage = "Installing $packageName..."
 	}
 	
 	write-host "$packageName has been installed."
-	Start-Sleep 5
+	Start-Sleep 3
 }
 
 function Get-ChocolateyUnzip {
@@ -266,7 +271,30 @@ param([string] $fileFullPath, [string] $destination)
   return $destination
 }
 
-Export-ModuleMember -Function Install-ChocolateyPackage, Install-ChocolateyZipPackage, Get-ChocolateyWebFile, Install-ChocolateyInstallPackage, Get-ChocolateyUnzip
+function Write-ChocolateySuccess {
+param([string] $packageName)
+	$logFile = Join-Path (Get-Location) 'success.log'
+	#Write-Host "Writing to $logFile"
+@"
+$packageName has been installed succesfully!
+The chocolatey gods have answered the request and your computer has cooperated!
+"@ #| Out-File $logFile
+}
+
+function Write-ChocolateyFailure {
+param([string] $packageName,[string] $failureMessage)
+	$logFile = Join-Path (Get-Location) 'failure.log'
+	#Write-Host "Writing to $logFile"
+@" 
+$packageName did not finish successfully.
+Boo the chocolatey gods!
+-----------------------
+$failureMessage
+-----------------------
+"@ #| Out-File $logFile
+}
+
+Export-ModuleMember -Function Install-ChocolateyPackage, Install-ChocolateyZipPackage, Get-ChocolateyWebFile, Install-ChocolateyInstallPackage, Get-ChocolateyUnzip, Write-ChocolateySuccess, Write-ChocolateyFailure
 
 # http://poshcode.org/417
 ## Get-WebFile (aka wget for PowerShell)

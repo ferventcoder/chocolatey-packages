@@ -6,7 +6,7 @@ param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=
 
 
 #Let's get Chocolatey!
-$chocVer = '0.9.7.03'
+$chocVer = '0.9.8'
 $nugetChocolateyPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $nugetPath = (Split-Path -Parent $nugetChocolateyPath)
 $nugetExePath = Join-Path $nuGetPath 'bin'
@@ -183,6 +183,23 @@ param([string] $name, [string] $path)
 ""$path"" %*" | Out-File $packageBatchFileName -encoding ASCII 
 }
 
+function Chocolatey-Update {
+param([string] $packageName ='', $source = 'https://go.microsoft.com/fwlink/?LinkID=206669')
+	
+	$packages = $packageName
+	if ($packageName -eq '') {
+		$packageFolders = Get-ChildItem $nugetLibPath | sort name
+		$packages = $packageFolders -replace "(\.\d{1,})+"|gu 
+	}
+
+	foreach ($package in $packages) {
+		$versions = Chocolatey-Version $package $source
+		if ($versions -ne $null -and $versions.'found' -lt $versions.'latest') {
+			Chocolatey-NuGet $package $source
+		}
+	}
+}
+
 function Chocolatey-Help {
 @"
 $h1
@@ -228,6 +245,10 @@ v0.9.7
  * .1 - Fixing an introduced bug where the downloader didn't get the file name passed to it.
  * .2 - Fixing an underlying issue with not having silent arguments for exe files. 
  * .3 - Fixing Install-ChocolateyZipPackage so that it works again.
+v0.9.8
+ * Shortcuts have been added: 'cupdate' for 'chocolatey update', 'cver' for 'chocolatey version', and 'clist' for 'chocolatey list'.
+ * Update only runs if newer version detected.
+ * Calling update with no arguments will update your entire chocolatey repository.
 $h2
 $h2
 using (var legalese = new LawyerText()) {
@@ -282,7 +303,7 @@ function Chocolatey-List {
 
 function Chocolatey-Version {
 param([string]$packageName='',[string]$source='https://go.microsoft.com/fwlink/?LinkID=206669')
-	if ($packageName -eq '') {$packageName = 'chocolatey'}
+	if ($packageName -eq '') {$packageName = 'chocolatey';}
 
 	$logFile = Join-Path $nugetChocolateyPath 'list.log'
   Start-Process $nugetExe -ArgumentList "list /source $source ""$packageName""" -NoNewWindow -Wait -RedirectStandardOutput $logFile
@@ -307,13 +328,15 @@ param([string]$packageName='',[string]$source='https://go.microsoft.com/fwlink/?
 	} else {
 		Write-host "The most recent version of $packageName available from ($source) is $versionLatest. On your machine you have $versionFound installed."
 	}
+	$versions = @{latest = $versionLatest; found = $versionFound }
+	return $versions
 }
 
 #main entry point
 switch -wildcard ($command) 
 {
   "install" { Chocolatey-NuGet  $packageName $source $version; }
-  "update" { Chocolatey-NuGet $packageName $source $version; } #todo: called with no parameters should update every package installed
+  "update" { Chocolatey-Update $packageName $source; }
   "list" { Chocolatey-List $packageName $source; }
   "version" { Chocolatey-Version $packageName $source; }
   default { Chocolatey-Help; }

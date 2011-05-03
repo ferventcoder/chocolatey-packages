@@ -11,12 +11,30 @@ function Request-ElevatedChocolateyPermissions
 
 Set-Alias sudo-chocolatey Request-ElevatedChocolateyPermissions;
 
-function Create-ChocolateyBinFile {
-param([string] $nugetChocolateyBinFile,[string] $nugetChocolateyInstallAlias)
+function Create-ChocolateyBinFiles {
+param([string] $nugetChocolateyPath,[string] $nugetExePath)
+
+$nugetChocolateyBinFile = Join-Path $nugetExePath 'chocolatey.bat'
+$nugetChocolateyInstallAlias = Join-Path $nugetExePath 'cinst.bat'
+$nugetChocolateyUpdateAlias = Join-Path $nugetExePath 'cupdate.bat'
+$nugetChocolateyListAlias = Join-Path $nugetExePath 'clist.bat'
+$nugetChocolateyVersionAlias = Join-Path $nugetExePath 'cver.bat'
+
+Write-Host "Creating $nugetChocolateyBinFile so you can call 'chocolatey' from anywhere."
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" %*" | Out-File $nugetChocolateyBinFile -encoding ASCII
+Write-Host "Creating $nugetChocolateyInstallAlias so you can call 'chocolatey install' from a shortcut of 'cinst'."
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" install %*" | Out-File $nugetChocolateyInstallAlias -encoding ASCII
+Write-Host "Creating $nugetChocolateyUpdateAlias so you can call 'chocolatey update' from a shortcut of 'cupdate'."
+"@echo off
+""$nugetChocolateyPath\chocolatey.cmd"" update %*" | Out-File $nugetChocolateyUpdateAlias -encoding ASCII
+Write-Host "Creating $nugetChocolateyListAlias so you can call 'chocolatey list' from a shortcut of 'clist'."
+"@echo off
+""$nugetChocolateyPath\chocolatey.cmd"" list %*" | Out-File $nugetChocolateyListAlias -encoding ASCII
+Write-Host "Creating $nugetChocolateyVersionAlias so you can call 'chocolatey version' from a shortcut of 'cver'."
+"@echo off
+""$nugetChocolateyPath\chocolatey.cmd"" version %*" | Out-File $nugetChocolateyVersionAlias -encoding ASCII
 }
 
 function Initialize-Chocolatey {
@@ -26,8 +44,6 @@ function Initialize-Chocolatey {
 	$nugetExePath = Join-Path $nuGetPath 'bin'
 	$nugetLibPath = Join-Path $nuGetPath 'lib'
 	$nugetChocolateyPath = Join-Path $nuGetPath 'chocolateyInstall'
-  $nugetChocolateyBinFile = Join-Path $nugetExePath 'chocolatey.bat'
-  $nugetChocolateyInstallAlias = Join-Path $nugetExePath 'cinst.bat'
 
   $nugetYourPkgPath = [System.IO.Path]::Combine($nugetLibPath,"yourPackageName")
 @"
@@ -52,8 +68,8 @@ Creating Chocolatey NuGet folders if they do not already exist.
 	$chocInstallFolder = Join-Path $thisScriptFolder "chocolateyInstall"
 	Write-Host 'Copying the contents of ' $chocInstallFolder ' to ' $nugetPath '.'
 	Copy-Item $chocInstallFolder $nugetPath –recurse -force
-	Write-Host 'Creating ' $nugetChocolateyBinFile ' so you can call chocolatey from anywhere.'
-	Create-ChocolateyBinFile $nugetChocolateyBinFile $nugetChocolateyInstallAlias
+	
+	Create-ChocolateyBinFiles $nugetChocolateyPath $nugetExePath
 	Write-Host ''
 		
   #get the PATH variable from the machine
