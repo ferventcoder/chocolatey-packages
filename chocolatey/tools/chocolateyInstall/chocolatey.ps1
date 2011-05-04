@@ -1,7 +1,8 @@
 param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=206669',$version='')#todo:,[switch] $silent)
 # chocolatey
 # Copyright (c) 2011 Rob Reynolds
-# Crediting contributions by Chris Ortman, nekresh
+# Crediting contributions by Chris Ortman, Nekresh
+# Big thanks to Keith Dahlby for all the powershell help! 
 # Apache License, Version 2.0 - http://www.apache.org/licenses/LICENSE-2.0
 
 
@@ -184,10 +185,10 @@ param([string] $name, [string] $path)
 }
 
 function Chocolatey-Update {
-param([string] $packageName ='', $source = 'https://go.microsoft.com/fwlink/?LinkID=206669')
+param([string] $packageName ='chocolatey', $source = 'https://go.microsoft.com/fwlink/?LinkID=206669')
 	
 	$packages = $packageName
-	if ($packageName -eq '') {
+	if ($packageName -eq 'all') {
 		$packageFolders = Get-ChildItem $nugetLibPath | sort name
 		$packages = $packageFolders -replace "(\.\d{1,})+"|gu 
 	}
@@ -246,9 +247,10 @@ v0.9.7
  * .2 - Fixing an underlying issue with not having silent arguments for exe files. 
  * .3 - Fixing Install-ChocolateyZipPackage so that it works again.
 v0.9.8
- * Shortcuts have been added: 'cupdate' for 'chocolatey update', 'cver' for 'chocolatey version', and 'clist' for 'chocolatey list'.
+ * Shortcuts have been added: 'cup' for 'chocolatey update', 'cver' for 'chocolatey version', and 'clist' for 'chocolatey list'.
  * Update only runs if newer version detected.
- * Calling update with no arguments will update your entire chocolatey repository.
+ * Calling update with no arguments will update chocolatey.
+ * Calling update with all will update your entire chocolatey repository.
 $h2
 $h2
 using (var legalese = new LawyerText()) {
@@ -323,11 +325,16 @@ param([string]$packageName='',[string]$source='https://go.microsoft.com/fwlink/?
 		}
   }
   
+  $verMessage = "The most recent version of $packageName available from ($source) is $versionLatest. On your machine you have $versionFound installed."
 	if ($versionLatest -eq $versionFound) { 
-		Write-Host "You have the latest version of $packageName ($versionLatest) based on ($source)."
-	} else {
-		Write-host "The most recent version of $packageName available from ($source) is $versionLatest. On your machine you have $versionFound installed."
+		$verMessage = "You have the latest version of $packageName ($versionLatest) based on ($source)."
 	}
+  if ($versionLatest -lt $versionFound) {
+    $verMessage = "$verMessage You must be in the know..."
+  }
+  
+  Write-Host $verMessage
+  
 	$versions = @{latest = $versionLatest; found = $versionFound }
 	return $versions
 }

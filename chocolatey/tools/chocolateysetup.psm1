@@ -16,7 +16,7 @@ param([string] $nugetChocolateyPath,[string] $nugetExePath)
 
 $nugetChocolateyBinFile = Join-Path $nugetExePath 'chocolatey.bat'
 $nugetChocolateyInstallAlias = Join-Path $nugetExePath 'cinst.bat'
-$nugetChocolateyUpdateAlias = Join-Path $nugetExePath 'cupdate.bat'
+$nugetChocolateyUpdateAlias = Join-Path $nugetExePath 'cup.bat'
 $nugetChocolateyListAlias = Join-Path $nugetExePath 'clist.bat'
 $nugetChocolateyVersionAlias = Join-Path $nugetExePath 'cver.bat'
 
@@ -26,7 +26,7 @@ Write-Host "Creating $nugetChocolateyBinFile so you can call 'chocolatey' from a
 Write-Host "Creating $nugetChocolateyInstallAlias so you can call 'chocolatey install' from a shortcut of 'cinst'."
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" install %*" | Out-File $nugetChocolateyInstallAlias -encoding ASCII
-Write-Host "Creating $nugetChocolateyUpdateAlias so you can call 'chocolatey update' from a shortcut of 'cupdate'."
+Write-Host "Creating $nugetChocolateyUpdateAlias so you can call 'chocolatey update' from a shortcut of 'cup'."
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" update %*" | Out-File $nugetChocolateyUpdateAlias -encoding ASCII
 Write-Host "Creating $nugetChocolateyListAlias so you can call 'chocolatey list' from a shortcut of 'clist'."
