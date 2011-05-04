@@ -276,8 +276,7 @@ param([string] $packageName)
 	$logFile = Join-Path (Get-Location) 'success.log'
 	#Write-Host "Writing to $logFile"
 @"
-$packageName has been installed succesfully!
-The chocolatey gods have answered the request and your computer has cooperated!
+$packageName has finished succesfully! The chocolatey gods have answered your request!
 "@ #| Out-File $logFile
 }
 
@@ -286,8 +285,7 @@ param([string] $packageName,[string] $failureMessage)
 	$logFile = Join-Path (Get-Location) 'failure.log'
 	#Write-Host "Writing to $logFile"
 @" 
-$packageName did not finish successfully.
-Boo the chocolatey gods!
+$packageName did not finish successfully. Boo to the chocolatey gods!
 -----------------------
 $failureMessage
 -----------------------

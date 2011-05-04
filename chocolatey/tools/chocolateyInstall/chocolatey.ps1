@@ -46,7 +46,7 @@ $h2
 	$nugetOutput = Run-NuGet $packageName $source $version
 	
 	foreach ($line in $nugetOutput) {
-		if ($line -notlike "*not installed*") {
+		if ($line -notlike "*not installed*" -and $line -notlike "Dependency*already installed.") {
 			$installedPackageName = ''
 			$installedPackageVersion = ''
 		
@@ -212,7 +212,7 @@ Chocolatey allows you to install application nuggets and run executables from an
 $h2
 Known Issues
 $h2
-None known right now.
+ * There is no automated installation.
 $h2
 Release Notes
 $h2
@@ -251,6 +251,7 @@ v0.9.8
  * Update only runs if newer version detected.
  * Calling update with no arguments will update chocolatey.
  * Calling update with all will update your entire chocolatey repository.
+ * A dependency will not reinstall once it has been installed. To have it reinstall, you can install it directly (or delete it from the repository and run the core package).
 $h2
 $h2
 using (var legalese = new LawyerText()) {
@@ -330,9 +331,8 @@ param([string]$packageName='',[string]$source='https://go.microsoft.com/fwlink/?
 		$verMessage = "You have the latest version of $packageName ($versionLatest) based on ($source)."
 	}
   if ($versionLatest -lt $versionFound) {
-    $verMessage = "$verMessage You must be in the know..."
+    $verMessage = "$verMessage You must be smarter than the average bear..."
   }
-  
   Write-Host $verMessage
   
 	$versions = @{latest = $versionLatest; found = $versionFound }
