@@ -7,7 +7,7 @@ param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=
 
 
 #Let's get Chocolatey!
-$chocVer = '0.9.8'
+$chocVer = '0.9.8.1'
 $nugetChocolateyPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $nugetPath = (Split-Path -Parent $nugetChocolateyPath)
 $nugetExePath = Join-Path $nuGetPath 'bin'
@@ -307,33 +307,44 @@ function Chocolatey-List {
 function Chocolatey-Version {
 param([string]$packageName='',[string]$source='https://go.microsoft.com/fwlink/?LinkID=206669')
 	if ($packageName -eq '') {$packageName = 'chocolatey';}
-
-	$logFile = Join-Path $nugetChocolateyPath 'list.log'
-  Start-Process $nugetExe -ArgumentList "list /source $source ""$packageName""" -NoNewWindow -Wait -RedirectStandardOutput $logFile
-	Start-Sleep 1 #let it finish writing to the config file
-	
-	$versionLatest = Get-Content $logFile | ?{$_ -match "^$packageName\s+\d+"} | sort $_ -Descending | select -First 1 
-	$versionLatest = $versionLatest -replace "$packageName ", "";
-
-	$versionFound = $chocVer
-  if ($packageName -ne 'chocolatey') {
-    $versionFound = 'no version'
-		$packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "^$packageName*"} | sort name -Descending | select -First 1 
-		
-		if ($packageFolder -notlike '') { 
-			Write-Host $packageFolder
-			$versionFound = $packageFolder.Name -replace "$packageName\."
-		}
-  }
   
-  $verMessage = "The most recent version of $packageName available from ($source) is $versionLatest. On your machine you have $versionFound installed."
-	if ($versionLatest -eq $versionFound) { 
-		$verMessage = "You have the latest version of $packageName ($versionLatest) based on ($source)."
+	$packages = $packageName
+	if ($packageName -eq 'all') {
+		$packageFolders = Get-ChildItem $nugetLibPath | sort name
+		$packages = $packageFolders -replace "(\.\d{1,})+"|gu 
 	}
-  if ($versionLatest -lt $versionFound) {
-    $verMessage = "$verMessage You must be smarter than the average bear..."
+  
+  foreach ($package in $packages) {
+    $logFile = Join-Path $nugetChocolateyPath 'list.log'
+    Start-Process $nugetExe -ArgumentList "list /source $source ""$package""" -NoNewWindow -Wait -RedirectStandardOutput $logFile
+    Start-Sleep 1 #let it finish writing to the config file
+	
+    $versionLatest = Get-Content $logFile | ?{$_ -match "^$package\s+\d+"} | sort $_ -Descending | select -First 1 
+    $versionLatest = $versionLatest -replace "$package ", "";
+
+    $versionFound = $chocVer
+    if ($packageName -ne 'chocolatey') {
+      $versionFound = 'no version'
+      $packageFolder = Get-ChildItem $nugetLibPath | ?{$_.name -match "^$package.*"} | sort name -Descending | select -First 1 
+		
+      if ($packageFolder -notlike '') { 
+        #Write-Host $packageFolder
+        $versionFound = $packageFolder.Name -replace "$package\."
+      }
+    }
+  
+    $verMessage = "The most recent version of $package available from ($source) is $versionLatest. On your machine you have $versionFound installed."
+    if ($versionLatest -eq $versionFound) { 
+      $verMessage = "You have the latest version of $package ($versionLatest) based on ($source)."
+    }
+    if ($versionLatest -lt $versionFound) {
+      $verMessage = "$verMessage You must be smarter than the average bear..."
+    }
+    if ($versionLatest -eq '') {
+      $verMessage = "$package does not appear to be on ($source). You have $versionFound installed. Interesting..."
+    }
+    Write-Host $verMessage
   }
-  Write-Host $verMessage
   
 	$versions = @{latest = $versionLatest; found = $versionFound }
 	return $versions
