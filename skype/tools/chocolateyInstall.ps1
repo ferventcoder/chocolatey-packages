@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'skype' 'exe' '/SILENT /nogoogle /noie /nodesktopicon"' 'http://download.skype.com/SkypeSetup.exe'
+Install-ChocolateyPackage 'skype' 'exe' '/SILENT /nogoogle /noie /nodesktopicon' 'http://download.skype.com/SkypeSetup.exe'
