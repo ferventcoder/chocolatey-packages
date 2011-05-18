@@ -67,7 +67,7 @@ Creating Chocolatey NuGet folders if they do not already exist.
 	$thisScriptFolder = Split-Path $thisScript.MyCommand.Path
 	$chocInstallFolder = Join-Path $thisScriptFolder "chocolateyInstall"
 	Write-Host 'Copying the contents of ' $chocInstallFolder ' to ' $nugetPath '.'
-	Copy-Item $chocInstallFolder $nugetPath –recurse -force
+	Copy-Item $chocInstallFolder $nugetPath -recurse -force
 	
 	Create-ChocolateyBinFiles $nugetChocolateyPath $nugetExePath
 	Write-Host ''

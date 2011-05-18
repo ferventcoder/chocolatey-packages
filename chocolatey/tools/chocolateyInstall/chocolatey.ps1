@@ -212,7 +212,7 @@ Chocolatey allows you to install application nuggets and run executables from an
 $h2
 Known Issues
 $h2
- * There is no automated installation.
+ * There is no automated uninstallation.
 $h2
 Release Notes
 $h2
