@@ -7,7 +7,7 @@ param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=
 
 
 #Let's get Chocolatey!
-$chocVer = '0.9.8.1'
+$chocVer = '0.9.8.2'
 $nugetChocolateyPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $nugetPath = (Split-Path -Parent $nugetChocolateyPath)
 $nugetExePath = Join-Path $nuGetPath 'bin'
@@ -252,6 +252,8 @@ v0.9.8
  * Calling update with no arguments will update chocolatey.
  * Calling update with all will update your entire chocolatey repository.
  * A dependency will not reinstall once it has been installed. To have it reinstall, you can install it directly (or delete it from the repository and run the core package).
+ * .1 - general fix to bad character in file. Fixed selection for update as well
+ * .2 - You now have the option of a custom installation folder. Thanks Jason Jarrett!
 $h2
 $h2
 using (var legalese = new LawyerText()) {

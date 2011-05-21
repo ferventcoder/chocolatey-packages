@@ -39,19 +39,19 @@ $nugetChocolateyUpdateAlias = Join-Path $nugetExePath 'cup.bat'
 $nugetChocolateyListAlias = Join-Path $nugetExePath 'clist.bat'
 $nugetChocolateyVersionAlias = Join-Path $nugetExePath 'cver.bat'
 
-Write-Host "Creating $nugetChocolateyBinFile so you can call 'chocolatey' from anywhere."
+Write-Host "Creating `'$nugetChocolateyBinFile`' so you can call 'chocolatey' from anywhere."
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" %*" | Out-File $nugetChocolateyBinFile -encoding ASCII
-Write-Host "Creating $nugetChocolateyInstallAlias so you can call 'chocolatey install' from a shortcut of 'cinst'."
+Write-Host "Creating `'$nugetChocolateyInstallAlias`' so you can call 'chocolatey install' from a shortcut of 'cinst'."
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" install %*" | Out-File $nugetChocolateyInstallAlias -encoding ASCII
-Write-Host "Creating $nugetChocolateyUpdateAlias so you can call 'chocolatey update' from a shortcut of 'cup'."
+Write-Host "Creating `'$nugetChocolateyUpdateAlias`' so you can call 'chocolatey update' from a shortcut of 'cup'."
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" update %*" | Out-File $nugetChocolateyUpdateAlias -encoding ASCII
-Write-Host "Creating $nugetChocolateyListAlias so you can call 'chocolatey list' from a shortcut of 'clist'."
+Write-Host "Creating `'$nugetChocolateyListAlias`' so you can call 'chocolatey list' from a shortcut of 'clist'."
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" list %*" | Out-File $nugetChocolateyListAlias -encoding ASCII
-Write-Host "Creating $nugetChocolateyVersionAlias so you can call 'chocolatey version' from a shortcut of 'cver'."
+Write-Host "Creating `'$nugetChocolateyVersionAlias`' so you can call 'chocolatey version' from a shortcut of 'cver'."
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" version %*" | Out-File $nugetChocolateyVersionAlias -encoding ASCII
 }
@@ -86,18 +86,20 @@ param(
     mkdir $nugetPath | out-null
   }
   
-  # If we've aready initialized the Chocolatey installation folder then don't override that.
-  $alreadyInitializedNugetPath = Get-ChocolateyInstallFolder
+	#if we have an already environment variable path, use it.
+	$alreadyInitializedNugetPath = Get-ChocolateyInstallFolder
   if($alreadyInitializedNugetPath -and $alreadyInitializedNugetPath -ne $nugetPath){
     $nugetPath = $alreadyInitializedNugetPath
   }
   else {
-    Set-ChocolateyInstallFolder $nugetPath
+		#if we are just using the default, don't create the environment variable
+		if ($nugetPath -ne 'C:\NuGet') {
+			Set-ChocolateyInstallFolder $nugetPath
+		}
   }
 
   #set up variables to add
   $statementTerminator = ";"
-
   $nugetExePath = Join-Path $nuGetPath 'bin'
   $nugetLibPath = Join-Path $nuGetPath 'lib'
   $nugetChocolateyPath = Join-Path $nuGetPath 'chocolateyInstall'
@@ -106,9 +108,9 @@ param(
 @"
 We are setting up the Chocolatey repository for NuGet packages that should be at the machine level. Think executables/application packages, not library packages.
 That is what Chocolatey NuGet goodness is for.
-The repository is set up at $nugetPath.
-The packages themselves go to $nugetLibPath (i.e. $nugetYourPkgPath).
-A batch file for the command line goes to $nugetExePath and points to an executable in $nugetYourPkgPath.
+The repository is set up at `'$nugetPath`'.
+The packages themselves go to `'$nugetLibPath`' (i.e. $nugetYourPkgPath).
+A batch file for the command line goes to `'$nugetExePath`' and points to an executable in `'$nugetYourPkgPath`'.
 
 Creating Chocolatey NuGet folders if they do not already exist.
 
@@ -123,7 +125,7 @@ Creating Chocolatey NuGet folders if they do not already exist.
   $thisScript = (Get-Variable MyInvocation -Scope 1).Value 
   $thisScriptFolder = Split-Path $thisScript.MyCommand.Path
   $chocInstallFolder = Join-Path $thisScriptFolder "chocolateyInstall"
-  Write-Host "Copying the contents of $chocInstallFolder to $nugetPath."
+  Write-Host "Copying the contents of `'$chocInstallFolder`' to `'$nugetPath`'."
   Copy-Item $chocInstallFolder $nugetPath -recurse -force
 
   Create-ChocolateyBinFiles $nugetChocolateyPath $nugetExePath
