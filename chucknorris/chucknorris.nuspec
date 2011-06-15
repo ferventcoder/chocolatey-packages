@@ -16,7 +16,7 @@
     <dependencies>
       <dependency id="warmup" />
       <!--dependency id="uppercut" /-->
-      <!--dependency id="dropkick" /-->
+      <dependency id="dropkick" />
       <dependency id="roundhouse" />
     </dependencies>
   </metadata>

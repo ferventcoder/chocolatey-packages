@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>dropkick.dev</id>
+    <title>dropkick.dev</title>
+    <version>1.0</version>
+    <authors>Rob Reynolds</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>dropkick.dev</summary>
+    <description>dropkick.dev - This gets the dropkick development environment up on your machine.
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>https://github.com/chucknorris/dropkick/wiki</projectUrl>
+    <tags>dropkick.dev chocolatey notSilent</tags>
+    <licenseUrl>https://github.com/chucknorris/dropkick/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="msysgit" />
+    </dependencies>
+  </metadata>
+</package>
