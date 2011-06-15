@@ -266,7 +266,7 @@ param([string] $fileFullPath, [string] $destination)
 	$shellApplication = new-object -com shell.application 
 	$zipPackage = $shellApplication.NameSpace($fileFullPath) 
 	$destinationFolder = $shellApplication.NameSpace($destination) 
-	$destinationFolder.CopyHere($zipPackage.Items()) 
+	$destinationFolder.CopyHere($zipPackage.Items(),0x10) 
   
   return $destination
 }
