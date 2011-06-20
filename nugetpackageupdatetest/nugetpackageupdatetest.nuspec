@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>nugetpackageupdatetest</id>
+    <title>NuGetPackageUpdateTest</title>
+    <version>2.0</version>
+    <authors>Rob Reynolds</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>nugetpackageupdatetest - test package updates</summary>
+    <description>nugetpackageupdatetest - This allows you to test package updates. You can install version 1.0 and then update to version 2.0.</description>
+    <tags>nugetpackageupdatetest test update-package</tags>
+  </metadata>
+</package>
