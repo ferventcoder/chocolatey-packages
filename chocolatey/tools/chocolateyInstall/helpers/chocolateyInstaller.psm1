@@ -51,13 +51,8 @@ param([string] $packageName, [string] $fileType = 'exe',[string] $silentArgs = '
     Get-ChocolateyWebFile $packageName $file $url $url64bit
     Install-ChocolateyInstallPackage $packageName $fileType $silentArgs $file
 		Write-ChocolateySuccess $packageName
-		Start-Sleep 8
 	} catch {
-@"
-Error Occurred: $($_.Exception.Message)
-"@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
 		Write-ChocolateyFailure $packageName $($_.Exception.Message)
-		Start-Sleep 7
 		throw 
 	}
 }
@@ -106,16 +101,10 @@ param([string] $packageName, [string] $url,[string] $unzipLocation)
 	  
 	  Get-ChocolateyWebFile $packageName $file $url  
 	  Get-ChocolateyUnzip "$file" $unzipLocation
+		
 	  Write-ChocolateySuccess $packageName
-				
-		write-host "$packageName has been unzipped."
-		Start-Sleep 5
 	} catch {
-@"
-Error Occurred: $($_.Exception.Message)
-"@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
 		Write-ChocolateyFailure $packageName $($_.Exception.Message)
-		Start-Sleep 7
 		throw 
 	}
 }
@@ -273,23 +262,45 @@ param([string] $fileFullPath, [string] $destination)
 
 function Write-ChocolateySuccess {
 param([string] $packageName)
-	$logFile = Join-Path (Get-Location) 'success.log'
-	#Write-Host "Writing to $logFile"
-@"
-$packageName has finished succesfully! The chocolatey gods have answered your request!
-"@ #| Out-File $logFile
+
+  $chocTempDir = Join-Path $env:TEMP "chocolatey"
+  $tempDir = Join-Path $chocTempDir "$packageName"
+  if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+  
+  $errorLog = Join-Path $tempDir 'failure.log'
+  if ([System.IO.File]::Exists($errorLog)) {[System.IO.File]::Move($errorLog,(Join-Path ($errorLog) '.old'))}
+
+  $logFile = Join-Path $tempDir 'success.log'
+  #Write-Host "Writing to $logFile"
+
+  $successMessage = "$packageName has finished succesfully! The chocolatey gods have answered your request!"
+  $successMessage | Out-File -FilePath $logFile -Force -Append
+  Write-Host $successMessage
+  
+  Start-Sleep 7
 }
 
 function Write-ChocolateyFailure {
 param([string] $packageName,[string] $failureMessage)
-	$logFile = Join-Path (Get-Location) 'failure.log'
-	#Write-Host "Writing to $logFile"
-@" 
-$packageName did not finish successfully. Boo to the chocolatey gods!
+
+  $chocTempDir = Join-Path $env:TEMP "chocolatey"
+  $tempDir = Join-Path $chocTempDir "$packageName"
+  if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+	$successLog = Join-Path $tempDir 'success.log'
+	if ([System.IO.File]::Exists($successLog)) {[System.IO.File]::Move($successLog,(Join-Path ($successLog) '.old'))}
+	
+  $logFile = Join-Path $tempDir 'failure.log'
+  #Write-Host "Writing to $logFile"
+	
+	
+	$errorMessage = "$packageName did not finish successfully. Boo to the chocolatey gods!
 -----------------------
-$failureMessage
------------------------
-"@ #| Out-File $logFile
+[ERROR] $failureMessage
+-----------------------" 
+	$errorMessage | Out-File -FilePath $logFile -Force -Append
+	Write-Host $errorMessage -ForegroundColor White -BackgroundColor DarkRed
+	
+	Start-Sleep 8
 }
 
 Export-ModuleMember -Function Install-ChocolateyPackage, Install-ChocolateyZipPackage, Get-ChocolateyWebFile, Install-ChocolateyInstallPackage, Get-ChocolateyUnzip, Write-ChocolateySuccess, Write-ChocolateyFailure

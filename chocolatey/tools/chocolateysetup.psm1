@@ -1,4 +1,6 @@
 $chocInstallVariableName = "ChocolateyInstall"
+$sysDrive = $env:SystemDrive
+$defaultNugetPath = "$sysDrive\NuGet"
 
 function Request-ElevatedChocolateyPermissions
 {
@@ -35,6 +37,7 @@ param([string] $nugetChocolateyPath,[string] $nugetExePath)
 
 $nugetChocolateyBinFile = Join-Path $nugetExePath 'chocolatey.bat'
 $nugetChocolateyInstallAlias = Join-Path $nugetExePath 'cinst.bat'
+$nugetChocolateyInstallIfMissingAlias = Join-Path $nugetExePath 'cinstm.bat'
 $nugetChocolateyUpdateAlias = Join-Path $nugetExePath 'cup.bat'
 $nugetChocolateyListAlias = Join-Path $nugetExePath 'clist.bat'
 $nugetChocolateyVersionAlias = Join-Path $nugetExePath 'cver.bat'
@@ -45,6 +48,9 @@ Write-Host "Creating `'$nugetChocolateyBinFile`' so you can call 'chocolatey' fr
 Write-Host "Creating `'$nugetChocolateyInstallAlias`' so you can call 'chocolatey install' from a shortcut of 'cinst'."
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" install %*" | Out-File $nugetChocolateyInstallAlias -encoding ASCII
+Write-Host "Creating `'$nugetChocolateyInstallIfMissingAlias`' so you can call 'chocolatey installmissing' from a shortcut of 'cinstm'."
+"@echo off
+""$nugetChocolateyPath\chocolatey.cmd"" installmissing %*" | Out-File $nugetChocolateyInstallIfMissingAlias -encoding ASCII
 Write-Host "Creating `'$nugetChocolateyUpdateAlias`' so you can call 'chocolatey update' from a shortcut of 'cup'."
 "@echo off
 ""$nugetChocolateyPath\chocolatey.cmd"" update %*" | Out-File $nugetChocolateyUpdateAlias -encoding ASCII
@@ -79,7 +85,7 @@ function Initialize-Chocolatey {
 #>
 param(
   [Parameter(Mandatory=$false)]
-  [string]$nugetPath = 'C:\NuGet'
+  [string]$nugetPath = "$sysDrive\NuGet"
 )
 
   if(!(test-path $nugetPath)){
@@ -93,7 +99,7 @@ param(
   }
   else {
 		#if we are just using the default, don't create the environment variable
-		if ($nugetPath -ne 'C:\NuGet') {
+		if ($nugetPath -ne $defaultNugetPath) {
 			Set-ChocolateyInstallFolder $nugetPath
 		}
   }

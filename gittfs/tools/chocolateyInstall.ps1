@@ -24,11 +24,8 @@ try {
   }
 
   write-host 'git-tfs has been installed. Call git tfs from the command line to see options. You may need to close and reopen the command shell.'
-  Start-Sleep 6
+  Write-ChocolateySuccess 'gittfs'
 } catch {
-@"
-Error Occurred: $($_.Exception.Message)
-"@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
-	Start-Sleep 8
-	throw 
+  Write-ChocolateyFailure 'gittfs' $($_.Exception.Message)
+  throw 
 }
