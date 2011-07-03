@@ -2,22 +2,9 @@ $chocInstallVariableName = "ChocolateyInstall"
 $sysDrive = $env:SystemDrive
 $defaultNugetPath = "$sysDrive\NuGet"
 
-function Request-ElevatedChocolateyPermissions
-{
-  $file, [string]$arguments = $args;
-  $psi = new-object System.Diagnostics.ProcessStartInfo $file;
-  $psi.Arguments = $arguments;
-  $psi.Verb = "runas";
-  $psi.WorkingDirectory = get-location;
-  $s = [System.Diagnostics.Process]::Start($psi);
-	$s.WaitForExit(8000);
-}
-
-Set-Alias sudo-chocolatey Request-ElevatedChocolateyPermissions;
-
 function Set-ChocolateyInstallFolder($folder){
   if(test-path $folder){
-    [Environment]::SetEnvironmentVariable($chocInstallVariableName, $folder, "User")
+    [Environment]::SetEnvironmentVariable($chocInstallVariableName, $folder, [System.EnvironmentVariableTarget]::User)
   }
   else{
     throw "Cannot set the chocolatey install folder. Folder not found [$folder]"
@@ -25,7 +12,7 @@ function Set-ChocolateyInstallFolder($folder){
 }
 
 function Get-ChocolateyInstallFolder(){
-  [Environment]::GetEnvironmentVariable($chocInstallVariableName, "User")
+  [Environment]::GetEnvironmentVariable($chocInstallVariableName, [System.EnvironmentVariableTarget]::User)
 }
 
 function Create-DirectoryIfNotExists($folderName){
@@ -137,36 +124,25 @@ Creating Chocolatey NuGet folders if they do not already exist.
   Create-ChocolateyBinFiles $nugetChocolateyPath $nugetExePath
   Write-Host ''
     
-  #get the PATH variable from the machine
-  #$envPath = $env:PATH
-  $envPath = [Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::Machine)
-
+  #get the PATH variable
+  $envPath = $env:PATH
+  
   #if you do not find $nugetPath\bin, add it 
   if (!$envPath.ToLower().Contains($nugetExePath.ToLower()))
   {
     Write-Host ''
     #now we update the path
     Write-Host 'PATH environment variable does not have ' $nugetExePath ' in it. Adding.'
+		$userPath = [Environment]::GetEnvironmentVariable('Path', [System.EnvironmentVariableTarget]::User)
   
     #does the path end in ';'?
-    $hasStatementTerminator= $envPath.EndsWith($statementTerminator)
+    $hasStatementTerminator= $userPath.EndsWith($statementTerminator)
     # if the last digit is not ;, then we are adding it
     If (!$hasStatementTerminator) {$nugetExePath = $statementTerminator + $nugetExePath}
-    $envPath = $envPath + $nugetExePath + $statementTerminator
+    $userPath = $userPath + $nugetExePath + $statementTerminator
 
-    #[Environment]::SetEnvironmentVariable( "Path", $envPath, [System.EnvironmentVariableTarget]::Machine )
-    $psArgs = "[Environment]::SetEnvironmentVariable( 'Path', '" + $envPath + "', [System.EnvironmentVariableTarget]::Machine )"  #-executionPolicy Unrestricted"
+    [Environment]::SetEnvironmentVariable('Path', $userPath, [System.EnvironmentVariableTarget]::User)
 
-@"
-
-You may be being asked for permission to add $nugetExePath to the PATH system environment variable. This gives you the ability to execute applications from the command line.
-Please select [Yes] when asked for privileges...
-
-"@ | Write-Host
-	  Start-Sleep 3
-
-	  sudo-chocolatey powershell "$psArgs"
-		
 		#add it to the local path as well so users will be off and running
 		$envPSPath = $env:PATH
 		$env:Path = $envPSPath + $statementTerminator + $nugetExePath + $statementTerminator

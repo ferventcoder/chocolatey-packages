@@ -1,3 +1,28 @@
+function Sudo-Chocolatey {
+param([string] $statements, [string] $exeToRun = 'powershell')
+
+	$statementsLog = "Running $statements"
+	if (!$statements.EndsWith(';')){$statements = $statements + ';'}
+	$wrappedStatements = "try{write-host $statementsLog;$statements start-sleep 6;}catch{write-error $($_.Exception.Message);start-sleep 8;}"
+@"
+Elevating Permissions and running $exeToRun $wrappedStatements. This may take awhile, depending on the statements.;
+"@ | Write-Host
+	
+  $psi = new-object System.Diagnostics.ProcessStartInfo;
+	$psi.FileName = $exeToRun;
+  $psi.Arguments = $wrappedStatements;
+	$psi.Verb = "runas";
+  $psi.WorkingDirectory = get-location;
+ 
+  $s = [System.Diagnostics.Process]::Start($psi);
+  $s.WaitForExit();
+  if ($s.ExitCode -ne 0) {
+		$errorMessage = "[ERROR] Running $exeToRun with $statements was not successful."
+    Write-Error $errorMessage
+		throw [System.Exception] ($errorMessage)
+  }
+}
+
 function Install-ChocolateyPackage {
 <#
 .SYNOPSIS
@@ -292,18 +317,49 @@ param([string] $packageName,[string] $failureMessage)
   $logFile = Join-Path $tempDir 'failure.log'
   #Write-Host "Writing to $logFile"
 	
-	
 	$errorMessage = "$packageName did not finish successfully. Boo to the chocolatey gods!
 -----------------------
 [ERROR] $failureMessage
 -----------------------" 
 	$errorMessage | Out-File -FilePath $logFile -Force -Append
-	Write-Host $errorMessage -ForegroundColor White -BackgroundColor DarkRed
+	Write-Error $errorMessage
 	
 	Start-Sleep 8
 }
 
-Export-ModuleMember -Function Install-ChocolateyPackage, Install-ChocolateyZipPackage, Get-ChocolateyWebFile, Install-ChocolateyInstallPackage, Get-ChocolateyUnzip, Write-ChocolateySuccess, Write-ChocolateyFailure
+function Install-ChocolateyPath {
+param([string] $pathToInstall,[System.EnvironmentVariableTarget] $pathType = [System.EnvironmentVariableTarget]::User)
+
+  #get the PATH variable
+  $envPath = $env:PATH
+  #$envPath = [Environment]::GetEnvironmentVariable('Path', $pathType)
+  if (!$envPath.ToLower().Contains($pathToInstall.ToLower()))
+  {
+    Write-Host "PATH environment variable does not have $pathToInstall in it. Adding..."
+		$actualPath = [Environment]::GetEnvironmentVariable('Path', $pathType)
+
+    $statementTerminator = ";"
+    #does the path end in ';'?
+    $hasStatementTerminator= $actualPath.EndsWith($statementTerminator)
+    # if the last digit is not ;, then we are adding it
+    If (!$hasStatementTerminator) {$pathToInstall = $statementTerminator + $pathToInstall}
+		if (!$pathToInstall.EndsWith($statementTerminator)) {$pathToInstall = $pathToInstall + $statementTerminator}
+    $actualPath = $actualPath + $pathToInstall
+
+		if ($pathType -eq [System.EnvironmentVariableTarget]::Machine) {
+			$psArgs = "[Environment]::SetEnvironmentVariable('Path',`'$actualPath`', `'$pathType`')"
+			Sudo-Chocolatey "$psArgs"
+		} else {
+			[Environment]::SetEnvironmentVariable('Path', $actualPath, $pathType)
+		}    
+		
+		#add it to the local path as well so users will be off and running
+		$envPSPath = $env:PATH
+		$env:Path = $envPSPath + $statementTerminator + $pathToInstall
+  }
+}
+
+Export-ModuleMember -Function Sudo-Chocolatey, Install-ChocolateyPackage, Install-ChocolateyZipPackage, Get-ChocolateyWebFile, Install-ChocolateyInstallPackage, Get-ChocolateyUnzip, Write-ChocolateySuccess, Write-ChocolateyFailure, Install-ChocolateyPath
 
 # http://poshcode.org/417
 ## Get-WebFile (aka wget for PowerShell)
