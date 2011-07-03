@@ -1,16 +1,21 @@
 function Sudo-Chocolatey {
 param([string] $statements, [string] $exeToRun = 'powershell')
 
-	$statementsLog = "Running $statements"
-	if (!$statements.EndsWith(';')){$statements = $statements + ';'}
-	$wrappedStatements = "try{write-host $statementsLog;$statements start-sleep 6;}catch{write-error $($_.Exception.Message);start-sleep 8;}"
+	$wrappedStatements = $statements;
+	if ($exeToRun -eq 'powershell') {
+		$statementsLog = "Running $statements"
+		if (!$statements.EndsWith(';')){$statements = $statements + ';'}
+		$wrappedStatements = "try{write-host $statementsLog;$statements start-sleep 6;}catch{write-error $($_.Exception.Message);start-sleep 8;}"
+	}
 @"
 Elevating Permissions and running $exeToRun $wrappedStatements. This may take awhile, depending on the statements.;
 "@ | Write-Host
 	
   $psi = new-object System.Diagnostics.ProcessStartInfo;
 	$psi.FileName = $exeToRun;
-  $psi.Arguments = $wrappedStatements;
+	if ($wrappedStatements -ne '') {
+		$psi.Arguments = $wrappedStatements;
+	}
 	$psi.Verb = "runas";
   $psi.WorkingDirectory = get-location;
  
@@ -234,13 +239,16 @@ $installMessage = "Installing $packageName..."
 	if ($fileType -like 'msi') {
 		$msiArgs = "/i `"$file`"" 
 		if ($silentArgs -ne '') { $msiArgs = "$msiArgs $silentArgs";}
-		Start-Process -FilePath msiexec -ArgumentList $msiArgs -Wait
+		Sudo-Chocolatey "$msiArgs" msiexec
+		#Start-Process -FilePath msiexec -ArgumentList $msiArgs -Wait
 	}
 	if ($fileType -like 'exe') {
 		if ($silentArgs -ne '') {
-			Start-Process -FilePath $file -ArgumentList $silentArgs -Wait 
+			Sudo-Chocolatey "$silentArgs" $file
+			#Start-Process -FilePath $file -ArgumentList $silentArgs -Wait 
 		} else {
-			Start-Process -FilePath $file -Wait 
+			Sudo-Chocolatey '' $file
+			#Start-Process -FilePath $file -Wait 
 		}
 	}
 	

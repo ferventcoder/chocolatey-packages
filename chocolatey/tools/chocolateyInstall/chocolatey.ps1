@@ -23,7 +23,11 @@ param([string]$file, [string]$arguments = $args, [switch] $elevated);
 	Write-Host "Elevating Permissions and running $file $arguments. This may take awhile, depending on the package.";
   $psi = new-object System.Diagnostics.ProcessStartInfo $file;
   $psi.Arguments = $arguments;
-	$psi.Verb = "runas";
+	#$psi.Verb = "runas";
+	#	$psi.CreateNoWindow = $true
+	#	$psi.RedirectStandardOutput = $true;
+	#	$psi.RedirectStandardError = $true;
+	#	$psi.UseShellExecute = $false;
   $psi.WorkingDirectory = get-location;
  
   $s = [System.Diagnostics.Process]::Start($psi);
@@ -162,7 +166,7 @@ $h2
           foreach ($errorLine in $errorContents) {
             Write-Host $errorLine -BackgroundColor Red -ForegroundColor White
           }
-          throw $errorContents
+          throw [System.Exception] ($errorContents)
         }
       }
     }
