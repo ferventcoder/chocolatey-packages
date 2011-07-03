@@ -282,7 +282,8 @@ v0.9.8
   - NuGet updated to v1.4
   - New chocolatey command! InstallMissing allows you to install a package only if it is not already installed. Shortcut is 'cinstm'.
   - Much of the error handling is improved. There are two new Helpers to call (ChocolateySuccess and Write-ChocolateyFailure).
-	- New Helper! Install-ChocolateyPath - give it a path for out of band items 
+	- New Helper! Install-ChocolateyPath - give it a path for out of band items that are not imported to path with chocolatey 
+	- New Helper! Run-ChocolateyProcessAsAdmin - this allows you to run processes as administrator
 $h2
 $h2
 using (var legalese = new LawyerText()) {

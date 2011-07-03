@@ -1,4 +1,4 @@
-function Sudo-Chocolatey {
+function Run-ChocolateyProcessAsAdmin {
 param([string] $statements, [string] $exeToRun = 'powershell')
 
 	$wrappedStatements = $statements;
@@ -27,6 +27,8 @@ Elevating Permissions and running $exeToRun $wrappedStatements. This may take aw
 		throw [System.Exception] ($errorMessage)
   }
 }
+
+Set-Alias Sudo-Chocolatey Run-ChocolateyProcessAsAdmin
 
 function Install-ChocolateyPackage {
 <#
@@ -367,7 +369,7 @@ param([string] $pathToInstall,[System.EnvironmentVariableTarget] $pathType = [Sy
   }
 }
 
-Export-ModuleMember -Function Sudo-Chocolatey, Install-ChocolateyPackage, Install-ChocolateyZipPackage, Get-ChocolateyWebFile, Install-ChocolateyInstallPackage, Get-ChocolateyUnzip, Write-ChocolateySuccess, Write-ChocolateyFailure, Install-ChocolateyPath
+Export-ModuleMember -Function Run-ChocolateyProcessAsAdmin, Install-ChocolateyPackage, Install-ChocolateyZipPackage, Get-ChocolateyWebFile, Install-ChocolateyInstallPackage, Get-ChocolateyUnzip, Write-ChocolateySuccess, Write-ChocolateyFailure, Install-ChocolateyPath
 
 # http://poshcode.org/417
 ## Get-WebFile (aka wget for PowerShell)
