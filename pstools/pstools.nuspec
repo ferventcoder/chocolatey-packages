@@ -13,5 +13,8 @@
     <tags>pstools psexec file disk utilities tools chocolatey</tags>
     <licenseUrl>http://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.8.2" />
+    </dependencies>
   </metadata>
 </package>

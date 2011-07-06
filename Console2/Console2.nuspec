@@ -9,9 +9,12 @@
     <summary>Console2 </summary>
     <description>Console2 Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://sourceforge.net/projects/console/</projectUrl>
-    <tags>Console2  chocolatey</tags>
+    <tags>Console2 chocolatey</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>32x32.png</iconUrl>-->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.8.2" />
+    </dependencies>
   </metadata>
 </package>

@@ -3,7 +3,7 @@
   <metadata>
     <id>resharper</id>
     <title>ReSharper</title>
-    <version>5.1.3.01</version>
+    <version>6.0.2202.688</version>
     <authors>JetBrains</authors>
     <owners>Rob Reynolds</owners>
     <summary>ReSharper - The Most Intelligent Extension for Visual Studio</summary>
@@ -12,9 +12,12 @@
 During evaluation, Full Edition is activated by default but you can switch to another edition in the License Information dialog box (ReSharper | Help | License Information.) 
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://www.jetbrains.com/resharper</projectUrl>
-    <tags>resharper developer productivity tool chocolatey</tags>
+    <tags>resharper developer productivity tool chocolatey admin</tags>
     <licenseUrl>http://www.jetbrains.com/resharper/buy/index.jsp</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/resharper/resharperlogo.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.8.2" />
+    </dependencies>
   </metadata>
 </package>
