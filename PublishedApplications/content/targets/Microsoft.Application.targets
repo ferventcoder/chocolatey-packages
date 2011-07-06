@@ -52,7 +52,9 @@ Copyright (C) 2005 Microsoft Corporation. All rights reserved.
     <Copy SourceFiles="@(AppConfigFileName)"
       DestinationFiles="@(AppConfigFileName->'$(ExeProjectOutputDir)\$(AssemblyName).exe%(Extension)')"
       Retries="$(CopyRetryCount)"
-      RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
+      RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" 
+      Condition="Exists('%(RootDir)%(Directory)%(Filename)%(Extension)')"
+      />
   </Target>
 
   <!--***************************************************************-->
