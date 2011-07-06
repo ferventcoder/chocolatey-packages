@@ -285,6 +285,8 @@ There is no error handling built into this method.
 param([string] $fileFullPath, [string] $destination)
 
 	Write-Host "Extracting $fileFullPath to $destination..."
+  if (![System.IO.Directory]::Exists($destination)) {[System.IO.Directory]::CreateDirectory($destination)}
+  
 	$shellApplication = new-object -com shell.application 
 	$zipPackage = $shellApplication.NameSpace($fileFullPath) 
 	$destinationFolder = $shellApplication.NameSpace($destination) 
