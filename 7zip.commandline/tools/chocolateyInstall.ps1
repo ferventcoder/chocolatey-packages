@@ -1,0 +1,1 @@
+Install-ChocolateyZipPackage '7zip.commandline' 'http://downloads.sourceforge.net/project/sevenzip/7-Zip/9.20/7za920.zip?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fsevenzip%2Ffiles%2F7-Zip%2F9.20%2F7za920.zip%2Fdownload&ts=1309786367&use_mirror=cdnetworks-us-2' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
