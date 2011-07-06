@@ -53,7 +53,7 @@ $h2
 	$nugetOutput = Run-NuGet $packageName $source $version
 	
 	foreach ($line in $nugetOutput) {
-		if ($line -notlike "*not installed*" -and $line -notlike "Dependency*already installed.") {
+		if ($line -notlike "*not installed*" -and $line -notlike "Dependency*already installed." -and $line -notlike "Attempting to resolve dependency*") {
 			$installedPackageName = ''
 			$installedPackageVersion = ''
 		
@@ -89,6 +89,7 @@ $h2
 "@ | Write-Host
 
           if ([System.IO.Directory]::Exists($packageFolder)) {
+            Delete-ExistingErrorLog $installedPackageName
             Run-ChocolateyPS1 $packageFolder $installedPackageName
             Get-ChocolateyBins $packageFolder
           }
@@ -102,6 +103,16 @@ $h1
 Chocolatey has finished installing $packageName
 $h1
 "@ | Write-Host
+}
+
+function Delete-ExistingErrorLog {
+param([string] $packageName)
+  $chocTempDir = Join-Path $env:TEMP "chocolatey"
+  $tempDir = Join-Path $chocTempDir "$packageName"
+  $failureLog = Join-Path $tempDir 'failure.log'
+  if ([System.IO.File]::Exists($failureLog)) {
+    [System.IO.File]::Delete($failureLog)
+  }
 }
 
 function Run-NuGet {
@@ -166,7 +177,7 @@ $h2
           foreach ($errorLine in $errorContents) {
             Write-Host $errorLine -BackgroundColor Red -ForegroundColor White
           }
-          throw [System.Exception] ($errorContents)
+          throw $errorContents
         }
       }
     }
@@ -283,7 +294,7 @@ v0.9.8
   - New chocolatey command! InstallMissing allows you to install a package only if it is not already installed. Shortcut is 'cinstm'.
   - Much of the error handling is improved. There are two new Helpers to call (ChocolateySuccess and Write-ChocolateyFailure).
 	- New Helper! Install-ChocolateyPath - give it a path for out of band items that are not imported to path with chocolatey 
-	- New Helper! Run-ChocolateyProcessAsAdmin - this allows you to run processes as administrator
+	- New Helper! Start-ChocolateyProcessAsAdmin - this allows you to run processes as administrator
 $h2
 $h2
 using (var legalese = new LawyerText()) {
