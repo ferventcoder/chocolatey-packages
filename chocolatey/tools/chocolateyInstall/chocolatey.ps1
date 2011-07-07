@@ -7,7 +7,7 @@ param($command,$packageName='',$source='https://go.microsoft.com/fwlink/?LinkID=
 
 
 #Let's get Chocolatey!
-$chocVer = '0.9.8.3'
+$chocVer = '0.9.8.4'
 $nugetChocolateyPath = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $nugetPath = (Split-Path -Parent $nugetChocolateyPath)
 $nugetExePath = Join-Path $nuGetPath 'bin'
@@ -296,6 +296,8 @@ v0.9.8
 	- New Helper! Install-ChocolateyPath - give it a path for out of band items that are not imported to path with chocolatey 
 	- New Helper! Start-ChocolateyProcessAsAdmin - this allows you to run processes as administrator
 	- New Helper! Install-ChocolateyDesktopLink - put shortcuts on the desktop
+ * .4
+  - Fixing a small issue with the Install-ChocolateyDesktopLink
 $h2
 $h2
 using (var legalese = new LawyerText()) {
