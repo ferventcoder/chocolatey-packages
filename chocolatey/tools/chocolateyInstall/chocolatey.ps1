@@ -295,6 +295,7 @@ v0.9.8
   - Much of the error handling is improved. There are two new Helpers to call (ChocolateySuccess and Write-ChocolateyFailure).
 	- New Helper! Install-ChocolateyPath - give it a path for out of band items that are not imported to path with chocolatey 
 	- New Helper! Start-ChocolateyProcessAsAdmin - this allows you to run processes as administrator
+	- New Helper! Install-ChocolateyDesktopLink - put shortcuts on the desktop
 $h2
 $h2
 using (var legalese = new LawyerText()) {
