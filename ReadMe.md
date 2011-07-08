@@ -17,7 +17,7 @@ Chocolatey
   
 ##Getting Started
 - Video: [Easy to use.](http://www.youtube.com/watch?v=N-hWOUL8roU).
-- Video: Now that you want it. [Find out how to create your own metta package](http://www.youtube.com/watch?v=Wt_unjS_SUo)
+- Video: Now that you want it. [Find out how to create your own meta package](http://www.youtube.com/watch?v=Wt_unjS_SUo)
 
 ##Mailing List
 [Chocolatey Google group](groups.google.com/group/chocolatey)  
