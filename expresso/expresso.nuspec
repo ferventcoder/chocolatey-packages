@@ -12,7 +12,10 @@
     <projectUrl>http://www.ultrapico.com/Expresso.htm</projectUrl>
     <licenseUrl>http://www.ultrapico.com/App/Register.aspx</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <tags>regex regularexpression expresso chocolatey</tags>
+    <tags>regex regularexpression expresso chocolatey admin</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.8.2" />
+    </dependencies>
   </metadata>
 </package>

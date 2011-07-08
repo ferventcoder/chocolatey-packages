@@ -18,7 +18,10 @@ You're encouraged to translate Notepad++ into your native tongue if there's not 
 I hope you enjoy Notepad++ as much as I enjoy coding it.
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://notepad-plus-plus.org/</projectUrl>
-    <tags>notepad notepadplusplus notepad-plus-plus chocolatey</tags>
+    <tags>notepad notepadplusplus notepad-plus-plus chocolatey admin</tags>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/notepadpluplus/nppLogo.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.8.2" />
+    </dependencies>
   </metadata>
 </package>

@@ -1,4 +1,4 @@
-function Run-ChocolateyProcessAsAdmin {
+function Start-ChocolateyProcessAsAdmin {
 param([string] $statements, [string] $exeToRun = 'powershell')
 
 	$wrappedStatements = $statements;
@@ -23,12 +23,10 @@ Elevating Permissions and running $exeToRun $wrappedStatements. This may take aw
   $s.WaitForExit();
   if ($s.ExitCode -ne 0) {
 		$errorMessage = "[ERROR] Running $exeToRun with $statements was not successful."
-    Write-Error $errorMessage
-		throw [System.Exception] ($errorMessage)
+		Write-Error $errorMessage
+		throw $errorMessage
   }
 }
-
-Set-Alias Sudo-Chocolatey Run-ChocolateyProcessAsAdmin
 
 function Install-ChocolateyPackage {
 <#
@@ -241,15 +239,15 @@ $installMessage = "Installing $packageName..."
 	if ($fileType -like 'msi') {
 		$msiArgs = "/i `"$file`"" 
 		if ($silentArgs -ne '') { $msiArgs = "$msiArgs $silentArgs";}
-		Sudo-Chocolatey "$msiArgs" msiexec
+		Start-ChocolateyProcessAsAdmin "$msiArgs" 'msiexec'
 		#Start-Process -FilePath msiexec -ArgumentList $msiArgs -Wait
 	}
 	if ($fileType -like 'exe') {
 		if ($silentArgs -ne '') {
-			Sudo-Chocolatey "$silentArgs" $file
+			Start-ChocolateyProcessAsAdmin "$silentArgs" $file
 			#Start-Process -FilePath $file -ArgumentList $silentArgs -Wait 
 		} else {
-			Sudo-Chocolatey '' $file
+			Start-ChocolateyProcessAsAdmin '' $file
 			#Start-Process -FilePath $file -Wait 
 		}
 	}
@@ -287,6 +285,8 @@ There is no error handling built into this method.
 param([string] $fileFullPath, [string] $destination)
 
 	Write-Host "Extracting $fileFullPath to $destination..."
+  if (![System.IO.Directory]::Exists($destination)) {[System.IO.Directory]::CreateDirectory($destination)}
+  
 	$shellApplication = new-object -com shell.application 
 	$zipPackage = $shellApplication.NameSpace($fileFullPath) 
 	$destinationFolder = $shellApplication.NameSpace($destination) 
@@ -303,8 +303,12 @@ param([string] $packageName)
   if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
   
   $errorLog = Join-Path $tempDir 'failure.log'
-  if ([System.IO.File]::Exists($errorLog)) {[System.IO.File]::Move($errorLog,(Join-Path ($errorLog) '.old'))}
-
+  try {
+    if ([System.IO.File]::Exists($errorLog)) {[System.IO.File]::Move($errorLog,(Join-Path ($errorLog) '.old'))}
+  } catch {
+    Write-Error "Could not rename `'$errorLog`' to `'$($errorLog).old`': $($_.Exception.Message)"
+  }
+  
   $logFile = Join-Path $tempDir 'success.log'
   #Write-Host "Writing to $logFile"
 
@@ -322,7 +326,11 @@ param([string] $packageName,[string] $failureMessage)
   $tempDir = Join-Path $chocTempDir "$packageName"
   if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
 	$successLog = Join-Path $tempDir 'success.log'
-	if ([System.IO.File]::Exists($successLog)) {[System.IO.File]::Move($successLog,(Join-Path ($successLog) '.old'))}
+  try {
+    if ([System.IO.File]::Exists($successLog)) {[System.IO.File]::Move($successLog,(Join-Path ($successLog) '.old'))}
+  } catch {
+    Write-Error "Could not rename `'$successLog`' to `'$($successLog).old`': $($_.Exception.Message)"
+  }
 	
   $logFile = Join-Path $tempDir 'failure.log'
   #Write-Host "Writing to $logFile"
@@ -358,7 +366,7 @@ param([string] $pathToInstall,[System.EnvironmentVariableTarget] $pathType = [Sy
 
 		if ($pathType -eq [System.EnvironmentVariableTarget]::Machine) {
 			$psArgs = "[Environment]::SetEnvironmentVariable('Path',`'$actualPath`', `'$pathType`')"
-			Sudo-Chocolatey "$psArgs"
+			Start-ChocolateyProcessAsAdmin "$psArgs"
 		} else {
 			[Environment]::SetEnvironmentVariable('Path', $actualPath, $pathType)
 		}    
@@ -369,7 +377,28 @@ param([string] $pathToInstall,[System.EnvironmentVariableTarget] $pathType = [Sy
   }
 }
 
-Export-ModuleMember -Function Run-ChocolateyProcessAsAdmin, Install-ChocolateyPackage, Install-ChocolateyZipPackage, Get-ChocolateyWebFile, Install-ChocolateyInstallPackage, Get-ChocolateyUnzip, Write-ChocolateySuccess, Write-ChocolateyFailure, Install-ChocolateyPath
+function Install-ChocolateyDesktopLink {
+param([string] $targetFilePath)
+
+  if (test-path($targetFilePath)) {
+    $desktop = $([System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::DesktopDirectory))
+    $link = Join-Path $desktop "$([System.IO.Path]::GetFileName($targetFilePath)).lnk"
+    $workingDirectory = $([System.IO.Path]::GetDirectoryName($targetFilePath))
+    
+    $wshshell = New-Object -ComObject WScript.Shell
+    $lnk = $wshshell.CreateShortcut($link )
+    $lnk.TargetPath = $targetFilePath
+    $lnk.WorkingDirectory = $workingDirectory
+    $lnk.Save()
+    Write-Host "`'$targetFilePath`' has been linked as a shortcut on your desktop"
+  } else {
+    $errorMessage = "`'$targetFilePath`' does not exist, not able to create a link"
+    Write-Error $errorMessage
+    throw $errorMessage
+  }
+}
+
+Export-ModuleMember -Function Start-ChocolateyProcessAsAdmin, Install-ChocolateyPackage, Install-ChocolateyZipPackage, Get-ChocolateyWebFile, Install-ChocolateyInstallPackage, Get-ChocolateyUnzip, Write-ChocolateySuccess, Write-ChocolateyFailure, Install-ChocolateyPath, Install-ChocolateyDesktopLink
 
 # http://poshcode.org/417
 ## Get-WebFile (aka wget for PowerShell)
@@ -396,6 +425,8 @@ function Get-WebFile {
    )
    
    $req = [System.Net.HttpWebRequest]::Create($url);
+   #http://stackoverflow.com/questions/518181/too-many-automatic-redirections-were-attempted-error-message-when-using-a-httpw
+   $req.CookieContainer = New-Object System.Net.CookieContainer
    $res = $req.GetResponse();
  
    if($fileName -and !(Split-Path $fileName)) {

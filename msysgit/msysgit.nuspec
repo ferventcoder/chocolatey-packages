@@ -10,9 +10,12 @@
     <description>msysgit - Git for Windows. Git is a powerful distributed Source Code Management tool. If you just want to use Git to do your version control in Windows, you will need to download Git for Windows, run the installer, and you are ready to start. Note: Git for Windows is a project run by volunteers, so if you want it to improve, volunteer! 
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://code.google.com/p/msysgit/</projectUrl>
-    <tags>msysgit git vcs dvcs version control chocolatey</tags>
+    <tags>msysgit git vcs dvcs version control chocolatey admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/msysgit/msysgit.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.8.2" />
+    </dependencies>
   </metadata>
 </package>

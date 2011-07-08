@@ -3,7 +3,7 @@
   <metadata>
     <id>fiddler</id>
     <title>Fiddler</title>
-    <version>2.3.3.4</version>
+    <version>2.3.4.4</version>
     <authors>Eric Lawrence</authors>
     <owners>Rob Reynolds</owners>
     <summary>Fiddler Web Debugging Proxy</summary>
@@ -12,9 +12,12 @@
 Fiddler is freeware and can debug traffic from virtually any application, including Internet Explorer, Mozilla Firefox, Opera, and thousands more. 
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://www.fiddler2.com/fiddler2/</projectUrl>
-    <tags>fiddler fiddler2 web debugging proxy chocolatey</tags>
+    <tags>fiddler fiddler2 web debugging proxy chocolatey admin</tags>
     <licenseUrl>http://www.fiddler2.com/Fiddler/help/license.asp</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/fiddler/FiddlerLogo.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.8.2" />
+    </dependencies>
   </metadata>
 </package>

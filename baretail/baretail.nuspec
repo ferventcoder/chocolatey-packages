@@ -13,5 +13,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>tail baretail chocolatey</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.8.2" />
+    </dependencies>
   </metadata>
 </package>

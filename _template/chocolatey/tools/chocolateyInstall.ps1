@@ -17,7 +17,9 @@
   #Run-ChocolateyProcessAsAdmin 'STATEMENTS_TO_RUN' 'Optional_Application_If_Not_PowerShell'
   # add specific folders to the path - any executables found in the chocolatey package folder will already be on the path. This is used in addition to that or for cases when a native installer doesn't add things to the path.
   #Install-ChocolateyPath 'LOCATION_TO_ADD_TO_PATH' 'User_OR_Machine' # Machine will assert administrative rights
-  
+  # add specific files as shortcuts to the desktop
+  #$target = Join-Path $MyInvocation.MyCommand.Definition '__NAME__.exe'
+  #Install-ChocolateyDesktopLink $target
   
   #------- ADDITIONAL SETUP -------#
   # make sure to uncomment the error handling if you have additional setup to do

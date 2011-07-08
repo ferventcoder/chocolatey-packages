@@ -14,6 +14,7 @@
     <licenseUrl>https://github.com/chucknorris/dropkick/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
+      <dependency id="chocolatey" version="0.9.8.2" />
       <dependency id="msysgit" />
     </dependencies>
   </metadata>

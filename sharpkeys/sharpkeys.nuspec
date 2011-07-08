@@ -9,9 +9,12 @@
     <summary>sharpkeys</summary>
     <description>sharpkeys Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://www.randyrants.com/2008/12/sharpkeys_30.html</projectUrl>
-    <tags>sharpkeys  chocolatey</tags>
+    <tags>sharpkeys chocolatey admin</tags>
     <licenseUrl>http://sharpkeys.codeplex.com/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>32x32.png</iconUrl>-->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.8.2" />
+    </dependencies>
   </metadata>
 </package>
