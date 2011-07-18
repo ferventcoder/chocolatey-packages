@@ -17,6 +17,7 @@
 // ==============================================================================
 namespace $rootnamespace$
 {
+    using System;
     using NUnit.Framework;
 
     [TestFixture]
@@ -43,4 +44,16 @@ namespace $rootnamespace$
     }
 
     public class ObservationAttribute : TestAttribute {}
+    public class FactAttribute : TestAttribute {}
+    
+    public class ConcernForAttribute : Attribute
+    {
+        public string Name { get; set; }
+        
+        public ConcernForAttribute(string name)
+        {
+            Name = name;
+        }
+    }
+    
 }
