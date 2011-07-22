@@ -8,7 +8,7 @@ param([string] $statements, [string] $exeToRun = 'powershell')
 		$wrappedStatements = "try{write-host $statementsLog;$statements start-sleep 6;}catch{write-error $($_.Exception.Message);start-sleep 8;}"
 	}
 @"
-Elevating Permissions and running $exeToRun $wrappedStatements. This may take awhile, depending on the statements.;
+Elevating Permissions and running $exeToRun $wrappedStatements. This may take awhile, depending on the statements.
 "@ | Write-Host
 	
   $psi = new-object System.Diagnostics.ProcessStartInfo;
