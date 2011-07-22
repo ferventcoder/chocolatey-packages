@@ -20,7 +20,7 @@ $h2 = '-------------------------'
 function Run-ChocolateyProcess {
 param([string]$file, [string]$arguments = $args, [switch] $elevated);
 	
-	Write-Host "Elevating Permissions and running $file $arguments. This may take awhile, depending on the package.";
+	Write-Host "Running $file $arguments. This may take awhile and permissions may need to be elevated, depending on the package.";
   $psi = new-object System.Diagnostics.ProcessStartInfo $file;
   $psi.Arguments = $arguments;
 	#$psi.Verb = "runas";
