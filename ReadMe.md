@@ -15,6 +15,8 @@ NuGet - awesome package management tool
 Chocolatey
 =================================
   
+Now located at [ferventcoder/chocolatey](https://github.com/ferventcoder/chocolatey)
+  
 ##Getting Started
 - Video: [Easy to use.](http://www.youtube.com/watch?v=N-hWOUL8roU).
 - Video: Now that you want it. [Find out how to create your own meta package](http://www.youtube.com/watch?v=Wt_unjS_SUo)
