@@ -1,11 +1,10 @@
 try {
-  Install-ChocolateyPackage 'mysql' 'msi' '/passive' 'http://dev.mysql.com/get/Downloads/MySQL-5.5/mysql-5.5.14-win32.msi/from/http://mysql.he.net/' 'http://dev.mysql.com/get/Downloads/MySQL-5.5/mysql-5.5.14-winx64.msi/from/http://mysql.mirrors.hoobly.com/' 
+  Install-ChocolateyPackage 'mysql' 'msi' '/passive' 'http://dev.mysql.com/get/Downloads/MySQL-5.5/mysql-5.5.14-win32.msi/from/http://mysql.he.net/' 'http://dev.mysql.com/get/Downloads/MySQL-5.5/mysql-5.5.14-winx64.msi/from/http://mysql.he.net/' 
   
   #------- ADDITIONAL SETUP -------#
   #add it to the path
-  $sysDrive = $env:SystemDrive
-  $mysqlPath = "$sysDrive\Program Files\MySQL\MySQL Server 5.5\bin"
-  if (![System.IO.Directory]::Exists($mysqlPath)) {$mysqlPath = "$sysDrive\Program Files (x86)\MySQL\MySQL Server 5.5\bin";}
+  $mysqlPath = "$env:SystemDrive\Program Files\MySQL\MySQL Server 5.5\bin"
+  if (![System.IO.Directory]::Exists($mysqlPath)) {$mysqlPath = "$env:SystemDrive\Program Files (x86)\MySQL\MySQL Server 5.5\bin";}
   Install-ChocolateyPath $mysqlPath 'Machine'
 
   #install the service itself
