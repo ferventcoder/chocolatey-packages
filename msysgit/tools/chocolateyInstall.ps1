@@ -1,5 +1,5 @@
 try {
-  Install-ChocolateyPackage 'msysgit' 'exe' '/SILENT' 'http://msysgit.googlecode.com/files/Git-1.7.4-preview20110204.exe' 
+  Install-ChocolateyPackage 'msysgit' 'exe' '/SILENT' 'http://msysgit.googlecode.com/files/Git-1.7.6-preview20110708.exe' 
 
   #------- ADDITIONAL SETUP -------#
   $processor = Get-WmiObject Win32_Processor
