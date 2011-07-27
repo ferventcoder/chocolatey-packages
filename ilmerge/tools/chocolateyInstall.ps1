@@ -15,10 +15,8 @@ try {
   Write-Host 'Copying the contents of ' $ilmergeFolder ' to ' $ilmergeTargetFolder '.'
   Copy-Item $ilmergeFolder $ilmergeTargetFolder –recurse -force
 
+  Write-ChocolateySuccess 'ilmerge'
 } catch {
-@"
-Error Occurred: $($_.Exception.Message)
-"@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
-	Start-Sleep 5
-	throw 
+  Write-ChocolateyFailure 'ilmerge' $($_.Exception.Message)
+  throw 
 }
