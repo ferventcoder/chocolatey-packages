@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>ruby.devkit</id>
+    <title>Ruby DevKit</title>
+    <version>4.5.2</version>
+    <authors>RubyInstaller Contributors</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Ruby Development Kit - https://github.com/oneclick/rubyinstaller/wiki/Development-Kit</summary>
+    <description>Ruby Development Kit (DevKit) is a toolkit that makes it easy to build and use native C/C++ extensions such as RDiscount and RedCloth for Ruby on Windows. 
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://rubyinstaller.org/add-ons/devkit/</projectUrl>
+    <tags>Ruby DevKit chocolatey admin</tags>
+    <licenseUrl>https://raw.github.com/oneclick/rubyinstaller/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/ruby.devkit/ruby.devkit.gif</iconUrl>-->
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.8.6" />
+      <dependency id="7zip.commandline" />
+      <dependency id="ruby" />
+    </dependencies>
+  </metadata>
+</package>
