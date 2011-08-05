@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>eazfuscator.net</id>
+    <title>Eazfuscator.NET</title>
+    <version>2.9.41.774</version>
+    <authors>Oleksiy Gapotchenko</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Eazfuscator.NET</summary>
+    <description>Eazfuscator.NET 
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://www.foss.kharkov.ua/g1/projects/eazfuscator/dotnet/Default.aspx</projectUrl>
+    <tags>obfuscator Eazfuscator.NET chocolatey</tags>
+    <!--<licenseUrl></licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/Eazfuscator.NET/Eazfuscator.NET.gif</iconUrl>-->
+  </metadata>
+</package>
