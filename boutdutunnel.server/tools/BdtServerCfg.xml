@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<bdtserver>
+
+  <!--
+    ***************************************************************************
+    "Service" section, server identity
+  
+    name     = server "name", used for identification purpose.
+               Must match with the client configuration
+    protocol = Communication protocol to use, must match with the client config
+               - Bdt.Shared.Protocol.HttpBinaryRemoting (binary stream/HTTP)
+               - Bdt.Shared.Protocol.HttpSoapRemoting (soap stream/HTTP)
+               - Bdt.Shared.Protocol.TcpRemoting (binary stream/TCP)
+               - Bdt.Shared.Protocol.IpcRemoting (local)            
+               When using a server hosted in IIs / mod_mono:
+               - Bdt.Shared.Protocol.HttpBinaryRemoting (binary stream/HTTP)
+               - Bdt.Shared.Protocol.HttpSoapRemoting (soap stream/HTTP)
+               - Bdt.Shared.Protocol.HttpSslBinaryRemoting (binary stream/HTTPS)
+               - Bdt.Shared.Protocol.HttpSslSoapRemoting (soap stream/HTTPS)
+    port     = server port 
+    ***************************************************************************
+  -->
+  <service
+    name     = "BdtServer"
+    protocol = "Bdt.Shared.Protocol.HttpBinaryRemoting"
+    port     = "80"
+  />
+
+  <!--
+    ***************************************************************************
+    "Users" section
+
+    <username 
+      enabled  = true|false enable/disable user account
+      password = "..."
+      admin    = true|false enable/disable administrative privileges
+      stimeout = hour(s) before killing idle session (<=0 to disable)
+      ctimeout = hour(s) before killing idle connection (<=0 to disable)
+    />
+    ***************************************************************************
+  -->
+  <users>
+    <corbier
+       enabled  = "false"
+       password = "sans.ma.barbe" 
+       admin    = "false"
+       stimeout = "12"
+       ctimeout = "1"
+    />
+    <jacky
+       enabled  = "false"
+       password = "touch" 
+       admin    = "false"
+       stimeout = "12"
+       ctimeout = "1"
+    />
+  </users>
+
+  <!-- 
+    ***************************************************************************
+    "Logs" section
+  
+    console and file
+      enabled      = "true|false" - enable/disable logging
+      filter       = "DEBUG|INFO|WARN|ERROR|FATAL" 
+      stringformat = "{TIMESTAMP} {SEVERITY} {TYPE} {MESSAGE}" 
+      dateformat   = "dd/MM/yyyy HH:mm:ss" see .NET date format -> {TIMESTAMP} 
+    file:
+      filename     = "..." - output file
+      append       = "true|false" - append/overwrite
+    ***************************************************************************
+  -->
+  <logs>
+    <console
+      enabled      = "true"
+      filter       = "INFO"
+      stringformat = "{SEVERITY,-5} {MESSAGE}"
+      dateformat   = "dd/MM/yyyy HH:mm:ss" 
+    />
+    <file  
+      enabled      = "true"
+      filter       = "INFO"
+      stringformat = "{TIMESTAMP} {SEVERITY,-5} {TYPE,-20} {MESSAGE}"
+      dateformat   = "dd/MM/yyyy HH:mm:ss"
+      filename     = "bdtserver.log"
+      append       = "false"
+    />
+  </logs>  
+  
+</bdtserver>

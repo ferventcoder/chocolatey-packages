@@ -1,0 +1,7 @@
+BoutDuTunnel nécessite:
+
+- le Framework .NET v2.0 ou supérieur (http://www.microsoft.com/downloads)
+  Le meilleur choix si vous êtes derrière un proxy NTLM (ISA Serveur) et/ou si vous utilisez windows
+ 
+- OU MONO v1.9.1 ou supérieur (http://www.mono-project.com)
+  Le meilleur choix si vous optez pour l'open source et/ou si vous utilisez UNIX/Linux/Mac OS X/Solaris
