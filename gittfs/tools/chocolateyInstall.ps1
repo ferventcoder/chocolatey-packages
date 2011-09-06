@@ -2,7 +2,7 @@ try {
   $sysDrive = $env:SystemDrive
   $gittfsPath = "$sysDrive\tools\gittfs"
   
-  Install-ChocolateyZipPackage 'gittfs' 'https://github.com/downloads/spraints/git-tfs/GitTfs-0.11.0.zip' $gittfsPath
+  Install-ChocolateyZipPackage 'gittfs' 'https://github.com/downloads/spraints/git-tfs/GitTfs-0.12.0.zip' $gittfsPath
   Install-ChocolateyPath $gittfsPath
 
   write-host 'git-tfs has been installed. Call git tfs from the command line to see options. You may need to close and reopen the command shell.'
