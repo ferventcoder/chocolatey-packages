@@ -15,8 +15,5 @@ Usage on the command line: lessmsi [/x msiFileName [outDir]]
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>msi extraction chocolatey</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>

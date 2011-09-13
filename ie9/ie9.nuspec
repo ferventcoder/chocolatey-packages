@@ -11,8 +11,5 @@
     <projectUrl>http://ie.microsoft.com/testdrive/</projectUrl>
     <tags>internet explorer ie9 chocolatey notSilent admin</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>

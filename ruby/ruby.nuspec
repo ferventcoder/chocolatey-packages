@@ -14,8 +14,5 @@
     <licenseUrl>http://www.ruby-lang.org/en/about/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/ruby/ruby_logo.jpg</iconUrl>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.6" />
-    </dependencies>
   </metadata>
 </package>

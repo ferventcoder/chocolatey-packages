@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/__NAME__/__NAME__.gif</iconUrl>-->
     <!--<dependencies>
-      <dependency id="chocolatey" version="0.9.8.6" />
+      <dependency id="" version="" />
     </dependencies>-->
   </metadata>
 </package>

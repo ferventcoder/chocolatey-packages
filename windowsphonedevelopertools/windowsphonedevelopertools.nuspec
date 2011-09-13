@@ -11,8 +11,5 @@
 |Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://msdn.microsoft.com/en-us/library/ff402523(v=vs.92).aspx</projectUrl>
     <tags>windows phone developer tools wp7 chocolatey notSilent admin</tags>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>

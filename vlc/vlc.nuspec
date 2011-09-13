@@ -14,8 +14,5 @@ VCD, and various streaming protocols.
     <projectUrl>http://www.videolan.org/vlc/</projectUrl>
     <tags>vlc multimedia media player chocolatey admin</tags>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/vlc/largeVLC.png</iconUrl>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>

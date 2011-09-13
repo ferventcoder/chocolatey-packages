@@ -16,8 +16,5 @@ Fiddler is freeware and can debug traffic from virtually any application, includ
     <licenseUrl>http://www.fiddler2.com/Fiddler/help/license.asp</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/fiddler/FiddlerLogo.png</iconUrl>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>

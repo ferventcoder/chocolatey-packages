@@ -11,8 +11,5 @@
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://lockhunter.com/</projectUrl>
     <tags>lockhunter unlocker file system locked files chocolatey admin</tags>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>

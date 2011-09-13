@@ -20,8 +20,5 @@ I hope you enjoy Notepad++ as much as I enjoy coding it.
     <projectUrl>http://notepad-plus-plus.org/</projectUrl>
     <tags>notepad notepadplusplus notepad-plus-plus chocolatey admin</tags>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/notepadpluplus/nppLogo.png</iconUrl>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>

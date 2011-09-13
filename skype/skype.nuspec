@@ -14,8 +14,5 @@
     <licenseUrl>http://www.skype.com/intl/en-us/legal/eula/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/skype/skype.png</iconUrl>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>

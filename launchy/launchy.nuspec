@@ -13,8 +13,5 @@ Launchy indexes the programs in your start menu and can launch your documents, p
     <projectUrl>http://www.launchy.net</projectUrl>
     <tags>launchy productivity launcher chocolatey admin</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>

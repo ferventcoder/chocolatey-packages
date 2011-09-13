@@ -12,8 +12,5 @@
 | This is not a silent installer.</description>
     <projectUrl>http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx</projectUrl>
     <tags>ilmerge merge assemblies chocolatey notSilent admin</tags>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>

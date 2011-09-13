@@ -13,8 +13,5 @@
     <tags>msbuild.communitytasks msbuild chocolatey admin</tags>
     <licenseUrl>http://opensource.org/licenses/bsd-license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.3" />
-    </dependencies>
   </metadata>
 </package>

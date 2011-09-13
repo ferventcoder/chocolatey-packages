@@ -14,8 +14,5 @@
     <licenseUrl>http://kdiff3.sourceforge.net/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>32x32.png</iconUrl>-->
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>

@@ -16,8 +16,5 @@ During evaluation, Full Edition is activated by default but you can switch to an
     <licenseUrl>http://www.jetbrains.com/resharper/buy/index.jsp</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/resharper/resharperlogo.png</iconUrl>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>

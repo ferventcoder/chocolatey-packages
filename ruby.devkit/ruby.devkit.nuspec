@@ -15,7 +15,6 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/ruby.devkit/ruby.devkit.gif</iconUrl>-->
     <dependencies>
-      <dependency id="chocolatey" version="0.9.8.6" />
       <dependency id="7zip.commandline" />
       <dependency id="ruby" />
     </dependencies>

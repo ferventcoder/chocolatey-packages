@@ -14,8 +14,5 @@
     <licenseUrl>http://www.foobar2000.org/?page=License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://www.foobar2000.org/button-large.png</iconUrl>
-    <dependencies>
-      <dependency id="chocolatey" version="0.9.8.2" />
-    </dependencies>
   </metadata>
 </package>
