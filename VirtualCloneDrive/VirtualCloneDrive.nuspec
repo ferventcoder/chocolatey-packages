@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>VirtualCloneDrive</id>
+    <title>VirtualCloneDrive</title>
+    <version>5.4.5.0</version>
+    <authors>SlySoft</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Virtual CloneDrive - Mount ISO Images</summary>
+    <description>Virtual CloneDrive - Virtual CloneDrive works and behaves just like a physical CD/DVD drive, however it exists only virtually. Image files generated with CloneDVD or CloneCD can be mounted onto a virtual drive from your hard-disk or from a network drive and used in the same manner as inserting them into a normal CD/DVD drive. Probably the best virtual drive software, Virtual CloneDrive allows you to enjoy the freedom of a virtual drive and is completely free.
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://www.slysoft.com/en/virtual-clonedrive.html</projectUrl>
+    <tags>Virtual CloneDrive ISO Virtual Drive chocolatey admin</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/VirtualCloneDrive/virtualclonedrive.gif</iconUrl>
+  </metadata>
+</package>
