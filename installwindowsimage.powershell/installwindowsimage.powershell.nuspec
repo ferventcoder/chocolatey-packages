@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>installwindowsimage.powershell</id>
+    <title>installwindowsimage.powershell</title>
+    <version>2009.05.11</version>
+    <authors>Mike Kolitz</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Install-WindowsImage PowerShell Script</summary>
+    <description>The Install-WindowsImage PowerShell script uses the wimgapi.dll in Windows 7 or Windows Server 2008 R2 to apply a Windows image in a .wim file to a specified location. The script can be used to apply a Windows 7 or Windows Server 2008 R2 .wim image to a Virtual Hard Disk (VHD) used for native VHD boot or to boot in a Hyper-V virtual machine.
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://code.msdn.microsoft.com/InstallWindowsImage</projectUrl>
+    <tags>installwindowsimage chocolatey powershell</tags>
+    <licenseUrl>http://code.msdn.microsoft.com/InstallWindowsImage/Project/License.aspx</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>
