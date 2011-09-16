@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>sharedview</id>
+    <title>SharedView</title>
+    <version>8.0.5725.0</version>
+    <authors>Microsoft</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Microsoft SharedView</summary>
+    <description>Microsoft SharedView is a fast, easy way to share documents and screen views with small groups of friends or coworkers; anytime, anywhere. Use SharedView to put your heads together and collaborate - create, convey, and communicate…across physical boundaries, through firewalls, and down to the smallest details.   
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://connect.microsoft.com/site94</projectUrl>
+    <tags>sharedview chocolatey admin</tags>
+    <licenseUrl>http://connect.microsoft.com/site94/content/content.aspx?ContentID=4886</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/sharedview/sharedview.gif</iconUrl>-->
+  </metadata>
+</package>
