@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>putty</id>
+    <title>PuTTY</title>
+    <version>0.61</version>
+    <authors>Simon Tatham</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>PuTTY is a free implementation of Telnet and SSH for Windows and Unix platforms, along with an xterm terminal emulator.</summary>
+    <description>PuTTY is a free implementation of Telnet and SSH for Windows and Unix platforms, along with an xterm terminal emulator. 
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://www.chiark.greenend.org.uk/~sgtatham/putty/</projectUrl>
+    <tags>PuTTY telnet ssh</tags>
+    <licenseUrl>http://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>
