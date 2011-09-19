@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'foxitreader' 'exe' '/silent' 'http://cdn01.foxitsoftware.com/pub/foxit/reader/desktop/win/5.x/5.0/enu/FoxitReader502.0718_enu_Setup.exe'
