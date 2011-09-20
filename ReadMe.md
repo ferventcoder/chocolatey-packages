@@ -15,7 +15,7 @@ NuGet - awesome package management tool
 Chocolatey
 =================================
   
-Now located at [ferventcoder/chocolatey](https://github.com/ferventcoder/chocolatey)
+Now located at [chocolatey/chocolatey](https://github.com/chocolatey/chocolatey)
   
 ##Getting Started
 - Video: [Easy to use.](http://www.youtube.com/watch?v=N-hWOUL8roU).
