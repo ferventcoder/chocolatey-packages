@@ -1,6 +1,6 @@
 try { 
   $nodePath = Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'node.exe'
-  Get-ChocolateyWebFile 'nodejs' "$nodePath" 'http://nodejs.org/dist/v0.5.7/node.exe'
+  Get-ChocolateyWebFile 'nodejs' "$nodePath" 'http://nodejs.org/dist/v0.5.8/node.exe'
   
   Write-ChocolateySuccess 'nodejs'
 } catch {
