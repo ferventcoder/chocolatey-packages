@@ -1,0 +1,1 @@
+Install-ChocolateyZipPackage 'sqlite.analyzer' 'http://www.sqlite.org/sqlite-analyzer-win32-x86-3070800.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
