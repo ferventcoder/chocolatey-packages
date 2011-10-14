@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'grepwin' 'msi' '/quiet' 'http://grepwin.googlecode.com/files/grepWin-1.5.2.msi' 'http://grepwin.googlecode.com/files/grepWin-1.5.2-64.msi' 
+Install-ChocolateyPackage 'grepwin' 'msi' '/quiet' 'http://grepwin.googlecode.com/files/grepWin-1.5.3.msi' 'http://grepwin.googlecode.com/files/grepWin-1.5.3-64.msi' 
