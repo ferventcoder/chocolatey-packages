@@ -1,1 +1,0 @@
-Install-ChocolateyZipPackage 'curl' 'http://www.paehl.com/open_source/?download=curl_721_7.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
