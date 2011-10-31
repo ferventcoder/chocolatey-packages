@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>sqliteadmin</id>
+    <title>SQLiteAdmin</title>
+    <version>0.8.3.2</version>
+    <authors>Orbmu2k</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>SQLite Admininistrator</summary>
+    <description>SQLite Administrator is a powerful tool if you easily want to create, design or administrate SQLite database files. The SQL code editor helps you to quickly write sql queries with features such as code completion and highlighting. Both major versions of SQLite database files are supported by SQLite Administrator.</description>
+    <projectUrl>http://sqliteadmin.orbmu2k.de/</projectUrl>
+    <tags>sqlite sqliteadmin chocolatey</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>
