@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>setaffinity2</id>
+    <title>setaffinity2</title>
+    <version>1.041</version>
+    <authors>Edgemeal Software</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Set Affinity II - Set CPU Affinity and priority of files manually or automatically.</summary>
+    <description>Set Affinity II - Set CPU Affinity and priority of files manually or automatically. Supports up to four (real physical) CPU cores, 1 favorite profile. Set CPU Affinity manually or automatically. Displays total CPU usage in tray icon, CPU usage and average CPU usage per core in program.</description>
+    <projectUrl>http://edgemeal.110mb.com/SetAffinity/index.htm</projectUrl>
+    <tags>setaffinity2 affinity</tags>
+    <licenseUrl>http://edgemeal.110mb.com/SetAffinity/index.htm</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>
