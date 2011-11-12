@@ -10,7 +10,7 @@ try {
   try {
     net user $postgreAccount /delete
   } catch {
-    Write-Host "User $postgreAccount doesn`'t exist"
+    Write-Host "Cannot delete user. User $postgreAccount doesn`'t exist. Which is perfectly fine, it will be created in the next step."
   }
   net user $postgreAccount $postgrePassword /add
   
@@ -30,7 +30,7 @@ try {
   Set-Acl $postgrePath $acl
   
   #perform silent install
-  Install-ChocolateyPackage 'postgresql' 'exe' "--mode unattended --prefix $postgrePath --superpassword $postgrePassword" 'http://get.enterprisedb.com/postgresql/postgresql-9.1.1-1-windows.exe' 
+  Install-ChocolateyPackage 'postgresql' 'exe' "--mode unattended --prefix $postgrePath --datadir $($postgrePath)\data --servicename PostgreSQL --superaccount $postgreAccount --superpassword $postgrePassword --serviceaccount $postgreAccount" 'http://get.enterprisedb.com/postgresql/postgresql-9.1.1-1-windows.exe' 
 #'http://get.enterprisedb.com/postgresql/postgresql-9.1.1-1-windows-x64.exe' 
 
   #Add path
