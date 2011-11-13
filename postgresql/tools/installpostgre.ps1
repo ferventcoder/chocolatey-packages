@@ -17,6 +17,24 @@ try {
   $localUser.SetInfo()
   #net user $postgreAccount $postgrePassword /add
   
+  #remove that user from the users group
+  try {
+    $localUserPath = "WinNT://$env:computername/$postgreAccount"
+    $computer = [ADSI]("WinNT://$env:computername,computer")
+    $localGroup = $computer.PSBase.Children.Find("Users")
+    $sysInfo = Get-WmiObject -Class Win32_ComputerSystem 
+    $workGroup = $sysInfo.Workgroup
+    if ($localGroup.PSBase.Path -like 'WinNT://' + $workGroup + '*') {
+      $localUserPath = "WinNT://$workGroup/$env:computername/$postgreAccount"
+    }
+    if ($localGroup.PSBase.Invoke("IsMember",$localUserPath)) {
+      $localGroup.PSBase.Invoke("Remove",$localUserPath)
+    }
+  } catch {
+    write-host "Removing $postgreAccount from Users failed. Please do that manually"
+    start-sleep 5
+  }
+  
   Write-Host "The account $postgreAccount has been created with the password set to $postgrePassword. Please change the password for the $postgreAccount account and update the services to that password"
   Start-Sleep 4
   
