@@ -12,7 +12,10 @@ try {
   } catch {
     Write-Host "Cannot delete user. User $postgreAccount doesn`'t exist. Which is perfectly fine, it will be created in the next step."
   }
-  net user $postgreAccount $postgrePassword /add
+  $localUser = ([ADSI]"WinNT://$env:computername").Create("User", $postgreAccount)
+  $localUser.SetPassword($postgrePassword)
+  $localUser.SetInfo()
+  #net user $postgreAccount $postgrePassword /add
   
   Write-Host "The account $postgreAccount has been created with the password set to $postgrePassword. Please change the password for the $postgreAccount account and update the services to that password"
   Start-Sleep 4
