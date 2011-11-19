@@ -3,7 +3,7 @@
   <metadata>
     <id>putty</id>
     <title>PuTTY</title>
-    <version>0.61</version>
+    <version>0.61.1</version>
     <authors>Simon Tatham</authors>
     <owners>Rob Reynolds</owners>
     <summary>PuTTY is a free implementation of Telnet and SSH for Windows and Unix platforms, along with an xterm terminal emulator.</summary>
