@@ -1,5 +1,5 @@
 try {
-  Install-ChocolateyPackage 'ilmerge' 'msi' '' 'http://www.microsoft.com/downloads/info.aspx?na=41&SrcFamilyId=22914587-B4AD-4EAE-87CF-B14AE6A939B0&SrcDisplayLang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f1%2f3%2f4%2f1347C99E-9DFB-4252-8F6D-A3129A069F79%2fILMerge.msi'
+  Install-ChocolateyPackage 'ilmerge' 'msi' '' 'http://www.microsoft.com/downloads/info.aspx?na=41&srcfamilyid=22914587-b4ad-4eae-87cf-b14ae6a939b0&srcdisplaylang=en&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2f1%2f3%2f4%2f1347C99E-9DFB-4252-8F6D-A3129A069F79%2fILMerge.msi'
 
   #------additional setup ----------------
   $processor = Get-WmiObject Win32_Processor
@@ -12,7 +12,7 @@ try {
 
   $ilmergeTargetFolder = (Split-Path $MyInvocation.MyCommand.Definition)
   if (![System.IO.Directory]::Exists($ilmergeTargetFolder)) {[System.IO.Directory]::CreateDirectory($ilmergeTargetFolder)}
-  Write-Host 'Copying the contents of ' $ilmergeFolder ' to ' $ilmergeTargetFolder '.'
+  Write-Host "Copying the contents of `'$($ilmergeFolder)`' to `'$($ilmergeTargetFolder)`'."
   Copy-Item $ilmergeFolder $ilmergeTargetFolder –recurse -force
 
   Write-ChocolateySuccess 'ilmerge'
