@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>webpicommandline</id>
+    <title>WebPICommandLine</title>
+    <version>7.1.1374.0</version>
+    <authors>Microsoft</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Web PI Command Line</summary>
+    <description>The Microsoft Web Platform Installer (Web PI) makes it easy for you to download, install, and keep up to date on the latest software components of the Microsoft Web Platform for development and application hosting on the Windows operating system. Web PI does the work of comparing the newest available components across the Microsoft Web Platform against what is already installed on your computer; you can see what is new and what you haven’t yet installed. You can use Web PI to learn more about different components and install one or more components in a chained installation, with Web PI handling reboots and logging failures where applicable. 
+</description>
+    <projectUrl>http://learn.iis.net/page.aspx/1072/web-platform-installer-v4-command-line-webpicmdexe-preview-release/</projectUrl>
+    <tags>webpicommandline</tags>
+    <licenseUrl>http://www.microsoft.com/web/webpi/eula/webpi_v4_beta.rtf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>
