@@ -1,0 +1,1 @@
+Install-ChocolateyZipPackage 'marker' 'https://github.com/downloads/chrisledet/Marker/Marker-Executable-Latest.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"

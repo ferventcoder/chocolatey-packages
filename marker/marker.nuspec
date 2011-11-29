@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>marker</id>
+    <title>Marker</title>
+    <version>0.0.5.0</version>
+    <authors>Chris Ledet</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Marker - Markdown Editor for Windows</summary>
+    <description>Marker is a markdown editor for Windows. It features dual panes to allow for quick editing and viewing, very fast execution, small memory usage, and it's open source!</description>
+    <projectUrl>https://github.com/chrisledet/Marker</projectUrl>
+    <tags>marker markdown editor</tags>
+    <licenseUrl>https://raw.github.com/chrisledet/Marker/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>
