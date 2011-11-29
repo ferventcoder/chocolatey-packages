@@ -8,7 +8,7 @@
     <owners>Rob Reynolds</owners>
     <summary>Marker - Markdown Editor for Windows</summary>
     <description>Marker is a markdown editor for Windows. It features dual panes to allow for quick editing and viewing, very fast execution, small memory usage, and it's open source!</description>
-    <projectUrl>https://github.com/chrisledet/Marker</projectUrl>
+    <projectUrl>http://ledet.io/Marker/</projectUrl>
     <tags>marker markdown editor</tags>
     <licenseUrl>https://raw.github.com/chrisledet/Marker/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
