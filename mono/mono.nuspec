@@ -3,14 +3,13 @@
   <metadata>
     <id>mono</id>
     <title>Mono</title>
-    <version>2.10.2</version>
+    <version>2.10.6</version>
     <authors>Miguel de Icaza, other Mono committers</authors>
     <owners>Rob Reynolds</owners>
     <summary>Mono - Cross platform, open source .NET development framework</summary>
-    <description>Mono is a software platform designed to allow developers to easily create cross platform applications. Sponsored by Novell, Mono is an open source implementation of Microsoft's .NET Framework based on the ECMA standards for C# and the Common Language Runtime. A growing family of solutions and an active and enthusiastic contributing community is helping position Mono to become the leading choice for development of Linux applications.
-|Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description>Mono is a software platform designed to allow developers to easily create cross platform applications. Sponsored by Novell, Mono is an open source implementation of Microsoft's .NET Framework based on the ECMA standards for C# and the Common Language Runtime. A growing family of solutions and an active and enthusiastic contributing community is helping position Mono to become the leading choice for development of Linux applications.</description>
     <projectUrl>http://mono-project.com</projectUrl>
-    <tags>mono development framework chocolatey admin</tags>
+    <tags>mono development framework admin</tags>
     <licenseUrl>http://mono-project.com/FAQ:_Licensing</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/mono/mono-logo.png</iconUrl>
