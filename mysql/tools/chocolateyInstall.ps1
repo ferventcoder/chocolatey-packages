@@ -1,5 +1,5 @@
 try {
-  Install-ChocolateyPackage 'mysql' 'msi' '/passive' 'http://dev.mysql.com/get/Downloads/MySQL-5.5/mysql-5.5.14-win32.msi/from/http://mysql.he.net/' 'http://dev.mysql.com/get/Downloads/MySQL-5.5/mysql-5.5.14-winx64.msi/from/http://mysql.he.net/' 
+  Install-ChocolateyPackage 'mysql' 'msi' '/passive' 'http://www.mysql.com/get/Downloads/MySQL-5.5/mysql-5.5.18-win32.msi/from/http://mysql.he.net/' 'http://www.mysql.com/get/Downloads/MySQL-5.5/mysql-5.5.18-winx64.msi/from/http://mysql.he.net/' 
   
   #------- ADDITIONAL SETUP -------#
   #add it to the path
