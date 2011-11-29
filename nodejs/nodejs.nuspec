@@ -3,7 +3,7 @@
   <metadata>
     <id>nodejs</id>
     <title>Node JS</title>
-    <version>0.6.2</version>
+    <version>0.6.3</version>
     <authors>Joyent</authors>
     <owners>Rob Reynolds</owners>
     <summary>Node JS - Evented I/O for v8 JavaScript.</summary>
