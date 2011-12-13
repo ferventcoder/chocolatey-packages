@@ -4,7 +4,7 @@ try {
   $is64bit = $processor.AddressWidth -eq 64
 
   $progFiles = [System.Environment]::GetFolderPath('ProgramFiles')
-  if ($is64bit) {$progFiles = "$progFiles (x86)"}
+  if ($is64bit -and $progFiles -notmatch 'x86') {$progFiles = "$progFiles (x86)"}
   $fileZillaInstallDir = Join-Path $progFiles "FileZilla Server"
   $tempDir = "C:\temp\ftproot"
   

@@ -3,7 +3,7 @@
   <metadata>
     <id>filezilla.server</id>
     <title>FileZilla.Server</title>
-    <version>0.9.39</version>
+    <version>0.9.39.1</version>
     <authors>Tim Kosse, other FileZilla committers</authors>
     <owners>Rob Reynolds</owners>
     <summary>FileZilla Server - The free FTP solution</summary>
