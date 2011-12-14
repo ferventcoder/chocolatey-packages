@@ -3,8 +3,8 @@
   <metadata>
     <id>curl</id>
     <title>cURL</title>
-    <version>7.22.0</version>
-    <authors>cURL Contributors</authors>
+    <version>7.23.1</version>
+    <authors>cURL Contributors, Dirk Paehl</authors>
     <owners>Rob Reynolds</owners>
     <summary>cURL groks those URLs</summary>
     <description>curl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks. 
