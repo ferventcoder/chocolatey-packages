@@ -12,6 +12,6 @@
     <tags>nodejs node javascript admin npm</tags>
     <licenseUrl>https://raw.github.com/joyent/node/v0.6.6/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/nodejs/nodejs.png</iconUrl>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/nodejs.install/nodejs.png</iconUrl>
   </metadata>
 </package>
