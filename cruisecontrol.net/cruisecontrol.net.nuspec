@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>cruisecontrol.net</id>
+    <title>CruiseControl.NET</title>
+    <version>1.4.4.83</version>
+    <authors>Thoughtworks</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>CruiseControl.NET - Continuous Integration Server</summary>
+    <description>cruisecontrol.net 
+| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <projectUrl>http://confluence.public.thoughtworks.org/display/CCNET</projectUrl>
+    <tags>cruisecontrol.net ci continuous integration admin</tags>
+    <licenseUrl>http://confluence.public.thoughtworks.org/display/CCNET/License</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/cruisecontrol.net/cruisecontrol.net.gif</iconUrl>
+  </metadata>
+</package>

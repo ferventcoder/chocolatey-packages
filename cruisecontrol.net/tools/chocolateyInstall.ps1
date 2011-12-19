@@ -1,0 +1,2 @@
+Install-ChocolateyPackage 'cruisecontrol.net' 'exe' '/S' 'http://downloads.sourceforge.net/project/ccnet/CruiseControl.NET%20Releases/CruiseControl.NET%201.4.4%20SP1/CruiseControl.NET-1.4.4-SP1-Setup.exe'
+#Install-ChocolateyPackage 'cruisecontrol.net' 'exe' '/S' 'http://downloads.sourceforge.net/project/ccnet/CruiseControl.NET%20Releases/CruiseControl.NET%201.4.4%20SP1/CruiseControl.NET-1.4.4-SP1-Setup.exe?r=&ts=1324329620&use_mirror=superb-sea2'
