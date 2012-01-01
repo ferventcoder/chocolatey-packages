@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>pester</id>
+    <title>Pester</title>
+    <version>1.0</version>
+    <authors>Scott Muc</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Pester - A BDD style testing tool for Powershell</summary>
+    <description>Pester - A BDD style testing tool for Powershell</description>
+    <projectUrl>https://github.com/scottmuc/Pester</projectUrl>
+    <tags>pester bdd powershell automatedtests testing test</tags>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>
