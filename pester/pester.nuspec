@@ -3,7 +3,7 @@
   <metadata>
     <id>pester</id>
     <title>Pester</title>
-    <version>1.1</version>
+    <version>1.1.1</version>
     <authors>Scott Muc</authors>
     <owners>Rob Reynolds</owners>
     <summary>Pester - A BDD style testing tool for Powershell</summary>
