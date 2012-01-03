@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>chocolatey.dev</id>
+    <title>chocolatey.dev</title>
+    <version>1.0</version>
+    <authors>Rob Reynolds</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>chocolatey.dev</summary>
+    <description>chocolatey.dev  - This gets the chocolatey development source to your machine.</description>
+    <projectUrl>https://github.com/chocolatey/chocolatey/wiki</projectUrl>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>git chocolatey.dev dev notSilent</tags>
+    <iconUrl>https://github.com/chocolatey/chocolatey/raw/master/docs/logo/chocolateyicon.gif</iconUrl>
+    <dependencies>
+      <dependency id="msysgit" />
+    </dependencies>
+  </metadata>
+</package>
