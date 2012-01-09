@@ -8,8 +8,12 @@ try {
   $tempDir = "$env:TEMP\chocolatey\ruby.devkit"
   if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
   $file = Join-Path $tempDir "ruby.devkitInstall.exe"
-  Get-ChocolateyWebFile 'ruby.devkit' "$file" 'http://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20110712-1620-sfx.exe'
+  Get-ChocolateyWebFile 'ruby.devkit' "$file" 'https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe'
 
+  if ($($env:Path).ToLower().Contains("ruby") -eq $false) {
+    $env:Path = [Environment]::GetEnvironmentVariable('Path',[System.EnvironmentVariableTarget]::Machine);
+  }
+  
   # Preparation
   #If you previously installed the legacy DevKit devkit-3.4.5r3-20091110.7z, its artifacts were extracted into each Ruby installation and need to be manually removed. Remove the gcc.bat, make.bat, and sh.bat stub batch files in <RUBY_INSTALL_DIR>\bin and the <RUBY_INSTALL_DIR>\devkit subdirectory for each Ruby installation using the legacy DevKit.
   $pathItems = $env:Path

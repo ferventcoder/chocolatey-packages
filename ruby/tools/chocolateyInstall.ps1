@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'ruby' 'exe' "/silent /tasks=`"assocfiles,modpath`"" 'http://rubyforge.org/frs/download.php/75127/rubyinstaller-1.9.2-p290.exe'
+Install-ChocolateyPackage 'ruby' 'exe' "/silent /tasks=`"assocfiles,modpath`"" 'http://rubyforge.org/frs/download.php/75679/rubyinstaller-1.8.7-p357.exe'
