@@ -1,1 +1,3 @@
-﻿Install-ChocolateyPackage '7Zip' 'msi' '/quiet' 'http://downloads.sourceforge.net/project/sevenzip/7-Zip/9.20/7z920.msi'
+﻿Install-ChocolateyPackage '7Zip' 'msi' '/quiet' 'http://sourceforge.net/projects/sevenzip/files/7-Zip/9.22/7z922.msi' 'http://sourceforge.net/projects/sevenzip/files/7-Zip/9.22/7z922-x64.msi'
+
+Install-ChocolateyPath  "$(join-path $env:systemdrive 'program files\7-Zip')"
