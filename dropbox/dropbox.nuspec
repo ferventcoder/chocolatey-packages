@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>dropbox</id>
+    <title>Dropbox</title>
+    <version>1.2.49</version>
+    <authors>Dropbox</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Dropbox</summary>
+    <description>Dropbox</description>
+    <projectUrl>https://www.dropbox.com/</projectUrl>
+    <tags>dropbox virtual files file admin</tags>
+    <licenseUrl>http://www.dropbox.com/terms</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/dropbox/dropbox.gif</iconUrl>
+    <dependencies>
+      <dependency id="autoit.commandline" />
+    </dependencies>
+  </metadata>
+</package>
