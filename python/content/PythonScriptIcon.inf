@@ -1,0 +1,48 @@
+
+[version]
+Signature="$Windows NT$"
+
+[PythonScriptIconInstall]
+CopyFiles = PythonScriptIcon.Files.Inf
+AddReg    = PythonScriptIcon.AddReg
+
+[DefaultInstall]
+CopyFiles = PythonScriptIcon.Files.Inf
+AddReg    = PythonScriptIcon.AddReg
+
+[DefaultUnInstall]
+DelFiles  = PythonScriptIcon.Files.Inf
+DelReg    = PythonScriptIcon.DelReg
+
+[SourceDisksNames]
+55="Python Script Icon","",1
+
+[SourceDisksFiles]
+PythonScriptIcon.INF=55
+
+[DestinationDirs]
+PythonScriptIcon.Files.Inf = 17
+
+[PythonScriptIcon.Files.Inf]
+PythonScriptIcon.INF
+
+[PythonScriptIcon.AddReg]
+HKLM,%UDHERE%,DisplayName,,"%DisplayName%"
+HKLM,%UDHERE%,DisplayVersion,,"%DisplayVersion%"
+HKCU,%UDHERE%,DisplayIcon,,"%ResourceDir%\python.ico"
+HKLM,%UDHERE%,UninstallString,,"rundll32.exe syssetup.dll,SetupInfObjectInstallAction DefaultUninstall 132 %17%\PythonScriptIcon.inf"
+HKCU,Software\Classes\.py,,,"pythonscript"
+HKCU,Software\Classes\.py,Content Type,,"application/pythonscript"
+HKCU,Software\Classes\pythonscript,,,"Python Script"
+HKCU,Software\Classes\pythonscript\DefaultIcon,,,"""%ResourceDir%\python.ico"""
+
+[PythonScriptIcon.DelReg]
+HKLM,%UDHERE%
+HKCU,Software\Classes\.py
+HKCU,Software\Classes\pythonscript
+
+[Strings]
+DisplayName="Python Script Icon (Uninstall only)"
+DisplayVersion="1"
+UDHERE="Software\Microsoft\Windows\CurrentVersion\Uninstall\PythonScriptIcon"
+ResourceDir="CONTENT_PATH"
