@@ -1,5 +1,7 @@
 try {
   $binRoot = "$env:systemdrive\"
+
+  ### Using an environment variable to to define the bin root until we implement YAML configuration ###
   if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
   $devKitInstallDir = join-path $binRoot 'DevKit'
   write-host "Chocolatey is installing DevKit to $devKitInstallDir"
