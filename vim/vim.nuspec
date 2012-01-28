@@ -9,9 +9,9 @@
     <summary>Vim is an advanced text editor that seeks to provide the power of the de-facto Unix editor 'Vi', with a more complete feature set. It's useful whether you're already using vi or using a different editor.</summary>
     <description>Vim is a highly configurable text editor built to enable efficient text editing. It is an improved version of the vi editor distributed with most UNIX systems.
     Vim is often called a programmer's editor, and so useful for programming that many consider it an entire IDE. It's not just for programmers, though. Vim is perfect for all kinds of text editing, from composing email to editing configuration files.
-    | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    </description>
     <projectUrl>http://vim.org</projectUrl>
-    <tags>vim editor vi admin chocolatey</tags>
+    <tags>vim editor vi admin</tags>
     <licenseUrl>http://vimdoc.sourceforge.net/htmldoc/uganda.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/vim/vim.gif</iconUrl>

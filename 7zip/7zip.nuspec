@@ -8,9 +8,9 @@
     <owners>Rob Reynolds</owners>
     <summary>7-Zip is a file archiver with a high compression ratio.</summary>
     <description>7-Zip is a file archiver with a high compression ratio.
-| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey). This will install 7-Zip on your system!</description>
+    </description>
     <projectUrl>http://www.7-zip.org/</projectUrl>
-    <tags>7zip zip archiver chocolatey admin</tags>
+    <tags>7zip zip archiver admin</tags>
     <licenseUrl>http://www.7-zip.org/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/7zip/7ziplogo.png</iconUrl>

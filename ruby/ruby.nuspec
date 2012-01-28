@@ -9,9 +9,9 @@
     <owners>Rob Reynolds</owners>
     <summary>Ruby - A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</summary>
     <description>Ruby - A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.
-    | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    </description>
     <projectUrl>http://www.ruby-lang.org</projectUrl>
-    <tags>ruby chocolatey admin</tags>
+    <tags>ruby admin</tags>
     <licenseUrl>http://www.ruby-lang.org/en/about/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/ruby/ruby_logo.jpg</iconUrl>
