@@ -22,7 +22,7 @@ Now located at [chocolatey/chocolatey](https://github.com/chocolatey/chocolatey)
 - Video: Now that you want it. [Find out how to create your own meta package](http://www.youtube.com/watch?v=Wt_unjS_SUo)
 
 ##Mailing List
-[Chocolatey Google group](groups.google.com/group/chocolatey)  
+[Chocolatey Google group](http://groups.google.com/group/chocolatey)  
 
 ##LICENSE
 Apache 2.0  
