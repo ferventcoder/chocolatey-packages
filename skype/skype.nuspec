@@ -3,14 +3,14 @@
   <metadata>
     <id>skype</id>
     <title>Skype</title>
-    <version>5.3.0.111</version>
+    <version>5.5.59.124</version>
     <authors>Skype</authors>
     <owners>Rob Reynolds</owners>
     <summary>Skype - VOIP</summary>
     <description>Skype - Install Skype, add your friends as contacts, then call, video call and instant message with them for free. Call people who aren't on Skype too, at really low rates.
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://www.skype.com</projectUrl>
-    <tags>Skype VOIP voice over ip chocolatey admin</tags>
+    <tags>Skype VOIP voice over ip video conferencing admin</tags>
     <licenseUrl>http://www.skype.com/intl/en-us/legal/eula/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/skype/skype.png</iconUrl>
