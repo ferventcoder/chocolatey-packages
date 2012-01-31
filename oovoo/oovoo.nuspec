@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>oovoo</id>
+    <title>ooVoo</title>
+    <version>3.0.11.38</version>
+    <authors>ooVoo</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>ooVoo is a free high quality video chat and video conferencing tool.</summary>
+    <description>You can get ooVoo for free on your PC or your Mac and start video chatting right away. ooVoo’s desktop application allows you to video chat with your friends and family on their own PCs or Macs, and also on their smartphones (iOS, Android) and tablets. What are you waiting for? Start making video calls today.</description>
+    <projectUrl>http://www.oovoo.com</projectUrl>
+    <tags>oovoo chat im video conferencing admin</tags>
+    <licenseUrl>http://www.oovoo.com/TermsAndPolicies.aspx?pname=EULA</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/oovoo/oovoo.gif</iconUrl>-->
+    <!--<releaseNotes></releaseNotes>-->
+  </metadata>
+</package>
