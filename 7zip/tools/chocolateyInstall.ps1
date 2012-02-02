@@ -16,7 +16,7 @@ try {
 
     $finalProcessCount = Get-ExplorerProcessCount
 
-    if($initialProcessCount -ne $finalProcessCount)
+    if($initialProcessCount -lt $finalProcessCount)
     {
         Start-Process explorer.exe
     }

@@ -3,11 +3,11 @@ try {
 
   #------- ADDITIONAL SETUP -------#
   $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
-  $progFiles = $env:programfiles
-  if ($is64bit) {$progFiles = (get-item "env:PROGRAMFILES(X86)").value}
-  $gitPath = Join-Path $progFiles 'Git\cmd'
+  $programFiles = $env:programfiles
+  if ($is64bit) {$programFiles = ${env:ProgramFiles(x86)}}
+  $gitPath = Join-Path $programFiles 'Git\cmd'
 
-  Install-ChocolateyPath $gitPath
+  Install-ChocolateyPath $gitPath 'user'
 
 @"
 
