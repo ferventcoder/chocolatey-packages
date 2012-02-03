@@ -3,12 +3,12 @@
   <metadata>
     <id>python</id>
     <title>Python</title>
-    <version>2.7.2</version>
+    <version>2.7.2.01</version>
     <authors>Python Software Foundation</authors>
     <owners>Rob Reynolds</owners>
     <summary>Python is a programming language that lets you work more quickly and integrate your systems more effectively. You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs.</summary>
-    <description>Python is a programming language that lets you work more quickly and integrate your systems more effectively. You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs. 
-| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description>Python is a programming language that lets you work more quickly and integrate your systems more effectively. You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs.
+    </description>
     <projectUrl>http://www.python.org/</projectUrl>
     <tags>python admin</tags>
     <licenseUrl>http://docs.python.org/license.html</licenseUrl>
