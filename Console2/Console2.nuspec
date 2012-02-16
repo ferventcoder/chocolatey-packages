@@ -3,13 +3,13 @@
   <metadata>
     <id>Console2</id>
     <title>Console2</title>
-    <version>2.0</version>
+    <version>2.0.0.1</version>
     <authors>chrisortman</authors>
     <owners>chrisortman</owners>
     <summary>Console2 </summary>
-    <description>Console2 Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description>Console2</description>
     <projectUrl>http://sourceforge.net/projects/console/</projectUrl>
-    <tags>Console2 chocolatey</tags>
+    <tags>Console2 console cmd command</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>32x32.png</iconUrl>-->
