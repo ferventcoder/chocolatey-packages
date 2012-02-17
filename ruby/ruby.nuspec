@@ -3,9 +3,9 @@
   <metadata>
     <id>ruby</id>
     <title>Ruby</title>
-    <version>1.8.7.35800</version>
-    <!--<version>1.9.2.29001</version>-->
-    <!--<version>1.9.3.12500</version>-->
+    <!--<version>1.8.7.35800</version>-->
+    <!--<version>1.9.2.29002</version>-->
+    <version>1.9.3.12500</version>
     <authors>Yukihiro Matsumoto</authors>
     <owners>Rob Reynolds</owners>
     <summary>Ruby - A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.</summary>
