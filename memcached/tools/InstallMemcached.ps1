@@ -33,23 +33,23 @@ try {
   
   if(test-path $memcached){
     Write-Host "memcached found at `'$memcached`'. Shutting down and uninstalling..."
-	try {
-	  & sc stop memcached
-	} catch {
+  try {
+    & sc stop memcached
+  } catch {
       Write-Host 'Reverting to the old shutdown method memcached -d shutdown for 1.2.* versions.'
-	  & $memcached -d shutdown
-	}
+    & $memcached -d shutdown
+  }
     
     Start-Sleep 2
-	try {
-	  & sc delete memcached
-	} catch {
-	  Write-Host 'Reverting to the old shutdown method memcached -d uninstall for 1.2.* versions.'
-	  & $memcached -d uninstall
-	}
+  try {
+    & sc delete memcached
+  } catch {
+    Write-Host 'Reverting to the old shutdown method memcached -d uninstall for 1.2.* versions.'
+    & $memcached -d uninstall
+  }
     
     Write-Host "Removing files at `'$memcachedInstallDir`'."
-	remove-item $memcachedInstallDir -recurse -force
+    remove-item $memcachedInstallDir -recurse -force
   }
 
   if (![System.IO.Directory]::Exists($memcachedInstallDir)) {[System.IO.Directory]::CreateDirectory($memcachedInstallDir)}
