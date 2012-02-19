@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>memcached</id>
+    <title>Memcached</title>
+    <version>1.2.4</version>
+    <authors>Danga Interactive, Brad Fitzpatrick, Dormando, Jellycan, Couchbase</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Memcached - Free &amp; open source, high-performance, distributed memory object caching system. You can think of it as a short-term memory for your applications.</summary>
+    <description>Memcached is a free &amp; open source, high-performance, distributed memory object caching system, generic in nature, but intended for use in speeding up dynamic web applications by alleviating database load.
+
+Memcached is an in-memory key-value store for small chunks of arbitrary data (strings, objects) from results of database calls, API calls, or page rendering.
+
+Memcached is simple yet powerful. Its simple design promotes quick deployment, ease of development, and solves many problems facing large data caches. Its API is available for most popular languages.    
+    </description>
+    <projectUrl>http://memcached.org/</projectUrl>
+    <tags>memcached keyvaluestore admin</tags>
+    <licenseUrl>http://www.opensource.org/licenses/bsd-license.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/memcached/memcached.png</iconUrl>
+    <releaseNotes></releaseNotes>
+  </metadata>
+</package>
