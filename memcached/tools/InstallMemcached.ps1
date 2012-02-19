@@ -42,7 +42,7 @@ try {
   Start-Sleep 3
 
   Write-Host 'Bumping the memory cache  to 512MB'
-  $registryKey = 'HKLM:\SYSTEM\CurrentControlSet\services\memcached Server'
+  $registryKey = 'HKLM:\SYSTEM\CurrentControlSet\services\memcached'
   $regKeyProperty = 'ImagePath'
   $regKeyValue = "`"$memcached`" -d runservice -m 512"
   Set-ItemProperty -Path "$registryKey" -Name "$regKeyProperty" -Value "$regKeyValue" #-Type string
