@@ -8,14 +8,21 @@ try {
   #http://blog.elijaa.org/index.php?post/2010/04/02/Installing-memcached-1.4.4-on-Windows
   #http://blog.smarx.com/posts/memcached-in-windows-azure
   
+  #build your own binaries
+  #http://trondn.blogspot.com/2010/03/building-memcached-windows.html
+  
+  #1.4.5 is broken...
+  
   $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   $memcachedPackageDir = Join-Path $toolsDir 'memcached'
   
-  #$processor = Get-WmiObject Win32_Processor
-  #$is64bit = $processor.AddressWidth -eq 64
-  #if ($is64bit) {
-  #  $memcachedPackageDir = Join-Path $memcachedPackageDir 'x64'
-  #}
+  $processor = Get-WmiObject Win32_Processor
+  $is64bit = $processor.AddressWidth -eq 64
+  if ($is64bit) {
+    $memcachedPackageDir = Join-Path $memcachedPackageDir 'x64'
+  } else {
+    $memcachedPackageDir = Join-Path $memcachedPackageDir 'x86'
+  }
   
   $binRoot = "$env:systemdrive\"
   ### Using an environment variable to to define the bin root until we implement YAML configuration ###
@@ -26,9 +33,21 @@ try {
   
   if(test-path $memcached){
     Write-Host "memcached found at `'$memcached`'. Shutting down and uninstalling..."
-    & $memcached -d shutdown
+	try {
+	  & sc stop memcached
+	} catch {
+      Write-Host 'Reverting to the old shutdown method memcached -d shutdown for 1.2.* versions.'
+	  & $memcached -d shutdown
+	}
+    
     Start-Sleep 2
-    & $memcached -d uninstall
+	try {
+	  & sc delete memcached
+	} catch {
+	  Write-Host 'Reverting to the old shutdown method memcached -d uninstall for 1.2.* versions.'
+	  & $memcached -d uninstall
+	}
+    
     Write-Host "Removing files at `'$memcachedInstallDir`'."
 	remove-item $memcachedInstallDir -recurse -force
   }
@@ -38,19 +57,11 @@ try {
   Install-ChocolateyPath "$memcachedPath"
   
   Write-Host "Installing memcached at `'$memcached`'"
-  & $memcached -d install
+  Start-Process "sc.exe" -ArgumentList "create memcached binPath= `"$($memcached) -m 512`" start= auto" -Wait
   Start-Sleep 3
 
-  Write-Host 'Bumping the memory cache  to 512MB'
-  $registryKey = 'HKLM:\SYSTEM\CurrentControlSet\services\memcached'
-  $regKeyProperty = 'ImagePath'
-  $regKeyValue = "`"$memcached`" -d runservice -m 512"
-  Set-ItemProperty -Path "$registryKey" -Name "$regKeyProperty" -Value "$regKeyValue" #-Type string
-  #memcached -m 512
-  Start-Sleep 2
-
   Write-Host "Starting memcached at `'$memcached`'"
-  & $memcached -d start
+  & SC start memcached
   
   Write-ChocolateySuccess 'memcached'
 } catch {
