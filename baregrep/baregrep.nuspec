@@ -3,7 +3,7 @@
   <metadata>
     <id>baregrep</id>
     <title>BareGrep</title>
-    <version>3.50</version>
+    <version>3.50.0.20120225</version>
     <authors>Bare Metal Software, Ltd.</authors>
     <owners>Rob Reynolds</owners>
     <summary>BareGrep is a free file finding and text searching tool.</summary>

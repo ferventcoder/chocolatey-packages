@@ -3,7 +3,7 @@
   <metadata>
     <id>baretail</id>
     <title>BareTail</title>
-    <version>3.50.0.20120225</version>
+    <version>3.50.0.20120226</version>
     <authors>Bare Metal Software, Ltd.</authors>
     <owners>Rob Reynolds</owners>
     <summary>Baretail - A free real-time log file monitoring tool</summary>

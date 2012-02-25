@@ -3,11 +3,11 @@
   <metadata>
     <id>Console2</id>
     <title>Console2</title>
-    <version>2.0.0.1</version>
-    <authors>chrisortman</authors>
+    <version>2.0.0.20120225</version>
+    <authors>bozho</authors>
     <owners>chrisortman</owners>
-    <summary>Console2 </summary>
-    <description>Console2</description>
+    <summary>Console2 is a Windows console window enhancement.</summary>
+    <description>Console2 is a Windows console window enhancement. Console features include: multiple tabs, text editor-like text selection, different background types, alpha and color-key transparency, configurable font, different window styles</description>
     <projectUrl>http://sourceforge.net/projects/console/</projectUrl>
     <tags>Console2 console cmd command</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html</licenseUrl>
