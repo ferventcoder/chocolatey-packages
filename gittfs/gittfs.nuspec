@@ -3,7 +3,7 @@
   <metadata>
     <id>gittfs</id>
     <title>GitTfs</title>
-    <version>0.13.0</version>
+    <version>0.13.0.20120225</version>
     <authors>Matt Burke</authors>
     <owners>Rob Reynolds</owners>
     <summary>Git Tfs - Work smarter</summary>
