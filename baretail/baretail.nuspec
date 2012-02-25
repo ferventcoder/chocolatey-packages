@@ -11,7 +11,7 @@
     <projectUrl>http://www.baremetalsoft.com/baretail/index.php</projectUrl>
     <licenseUrl>http://www.baremetalsoft.com/baretail/licence.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>tail baretail chocolatey</tags>
+    <tags>tail baretail</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
   </metadata>
 </package>
