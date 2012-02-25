@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>baregrep</id>
+    <title>BareGrep</title>
+    <version>3.50</version>
+    <authors>Bare Metal Software, Ltd.</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>BareGrep is a free file finding and text searching tool.</summary>
+    <description>BareGrep is a free file finding and text searching tool.
+Single small executable, no installer
+ - No installation needed, start using the tool immediately
+ - Small executable can be run from the network
+ - Easy to temporarily install and then completely remove
+    </description>
+    <projectUrl>http://www.baremetalsoft.com/baregrep/</projectUrl>
+    <tags>baregrep grep search</tags>
+    <licenseUrl>http://www.baremetalsoft.com/baregrep/licence.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/baregrep/baregrep.gif</iconUrl>
+    <releaseNotes></releaseNotes>
+  </metadata>
+</package>
