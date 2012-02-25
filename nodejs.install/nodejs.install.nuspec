@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>nodejs.install</id>
-    <title>Node JS Install</title>
-    <version>0.6.10</version>
+    <title>Node JS (Install)</title>
+    <version>0.6.11</version>
     <authors>Joyent</authors>
     <owners>Rob Reynolds</owners>
     <summary>Node JS - Evented I/O for v8 JavaScript.</summary>
