@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>notepadplusplus</id>
-    <title>Notepad++</title>
-    <version>5.9.8.20120225</version>
+    <id>notepadplusplus.install</id>
+    <title>Notepad++ (Install)</title>
+    <version>5.9.8</version>
     <authors>Don Ho</authors>
     <owners>Rob Reynolds</owners>
     <summary>Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages.</summary>
@@ -18,10 +18,7 @@ You're encouraged to translate Notepad++ into your native tongue if there's not 
 I hope you enjoy Notepad++ as much as I enjoy coding it.
 </description>
     <projectUrl>http://notepad-plus-plus.org/</projectUrl>
-    <tags>notepad notepadplusplus notepad-plus-plus admin</tags>
+    <tags>notepad notepadplusplus notepad-plus-plus chocolatey admin</tags>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/notepadplusplus/nppLogo.png</iconUrl>
-    <dependencies>
-      <dependency id="notepadplusplus.install" />
-    </dependencies> 
   </metadata>
 </package>

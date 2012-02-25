@@ -1,0 +1,79 @@
+/* $Id: feedback.css,v 1.4.2.1 2010/01/08 16:55:07 sun Exp $ */
+
+/* Reset commonly set styles */
+#block-feedback-form,
+#block-feedback-form .feedback-link,
+#block-feedback-form .feedback-link *,
+#block-feedback-form .content,
+#block-feedback-form form,
+#block-feedback-form form label {
+  float: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  color: inherit;
+}
+
+
+#block-feedback-form {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  overflow: hidden;
+  z-index: 10;
+}
+/* IE6 seems to be unable to handle fixed */
+* html #block-feedback-form {
+  position: absolute;
+}
+#block-feedback-form .feedback-link {
+  padding: 0.3em 0;
+  text-align: right;
+  font-size: 12px;
+}
+#block-feedback-form .feedback-link * {
+  display: inline;
+  font-size: 12px;
+}
+#block-feedback-form form {
+  border: 1px solid #ccc;
+  padding: 6px;
+  background-color: #fff;
+  opacity: 0.9;
+  width: 200px;
+}
+#block-feedback-form .feedback-help {
+  margin: 0 0 0.5em;
+  font-size: 10px;
+  line-height: normal;
+}
+#block-feedback-form .feedback-submitted {
+  margin-top: 0.2em;
+  font-size: 10px;
+}
+#block-feedback-form .form-textarea {
+  width: 97%;
+}
+#block-feedback-form .feedback-message {
+  height: 10ex;
+}
+#block-feedback-form .resizable-textarea .grippie {
+  width: 204px;
+}
+/* IE6 fails to render textarea with full width */
+* html #block-feedback-form .resizable-textarea textarea {
+  width: 200px;
+}
+#block-feedback-form #feedback-throbber {
+  height: 20px;
+}
+#block-feedback-form .throbbing {
+  background: url(images/throbber.gif) no-repeat left center;
+}
+#block-feedback-form #feedback-submit {
+  background-color: #fff;
+  margin: 0;
+}
