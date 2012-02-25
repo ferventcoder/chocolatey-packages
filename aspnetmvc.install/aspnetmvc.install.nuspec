@@ -1,20 +1,27 @@
 <?xml version="1.0"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
-    <id>aspnetmvc</id>
-    <title>ASP.NET MVC</title>
-    <version>3.0.0.1</version>
+    <id>aspnetmvc.install</id>
+    <title>ASP.NET MVC (Installation)</title>
+    <version>3.1.0.0</version>
     <authors>Microsoft Asp.Net Team</authors>
     <owners>Rob Reynolds</owners>
     <summary>ASP.NET MVC is a free, fully supported Microsoft framework for developing great web applications using the Model-View-Controller pattern.</summary>
     <description>ASP.NET MVC is a free, fully supported Microsoft framework for developing great web applications using the Model-View-Controller pattern. It provides total control over your HTML and URLs, enables rich Ajax integration, and facilitates test driven development. To find out more information about ASP.NET MVC, visit the following resources: 
 [ The ASP.NET MVC site  site provides tutorials, quickstarts, and videos. (http://www.asp.net/mvc/)
-| ASP.NET MVC Documentation on MSDN. (http://msdn.microsoft.com/en-us/library/dd394709.aspx) ]
- Please install with chocolatey (http://nuget.org/List/Packages/chocolatey). No silent installer available.</description>
+| ASP.NET MVC Documentation on MSDN. (http://msdn.microsoft.com/en-us/library/dd394709.aspx) ]</description>
     <projectUrl>http://www.asp.net/mvc</projectUrl>
-    <tags>aspnetmvc asp.net mvc chocolatey notSilent admin</tags>
+    <tags>aspnetmvc asp.net mvc admin</tags>
     <licenseUrl>http://aspnet.codeplex.com/license</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<iconUrl>32x32.png</iconUrl>-->
+    <releaseNotes>
+- "Add Controller" dialog box can now scaffold controllers with views and data access code
+- Improvements to the "ASP.NET MVC 3 New Project" Dialog Box
+- Project templates now include Modernizr 1.7
+- Project templates include updated versions of jQuery, jQuery UI, and jQuery Validation
+- Project templates now include ADO.NET Entity Framework 4.1 as a pre-installed NuGet package
+- Project templates include JavaScript libraries as pre-installed NuGet packages
+    </releaseNotes>
   </metadata>
 </package>
