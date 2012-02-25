@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Eazfuscator.NET.SDK</name>
+    </assembly>
+    <members>
+        <member name="T:Eazfuscator.NET.SDK.StackTraceDecoding.StackTraceDecoder">
+            <summary>
+            Allows to decode stack traces produced by an application which was previously obfuscated with Eazfuscator.NET.
+            </summary>
+        </member>
+        <member name="M:Eazfuscator.NET.SDK.StackTraceDecoding.StackTraceDecoder.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eazfuscator.NET.SDK.StackTraceDecoding.StackTraceDecoder"/> class.
+            </summary>
+        </member>
+        <member name="M:Eazfuscator.NET.SDK.StackTraceDecoding.StackTraceDecoder.#ctor(System.IO.TextReader,System.IO.TextWriter,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Eazfuscator.NET.SDK.StackTraceDecoding.StackTraceDecoder"/> class.
+            </summary>
+            <param name="reader">The reader.</param>
+            <param name="writer">The writer.</param>
+            <param name="password">The password.</param>
+        </member>
+        <member name="M:Eazfuscator.NET.SDK.StackTraceDecoding.StackTraceDecoder.Run">
+            <summary>
+            Runs the decoding of the stack trace.
+            Encoded text is read from the reader.
+            Decoded text is written to the writer.
+            </summary>
+        </member>
+        <member name="M:Eazfuscator.NET.SDK.StackTraceDecoding.StackTraceDecoder.Run(System.String,System.String)">
+            <summary>
+            Runs the decoding of the stack trace.
+            </summary>
+            <param name="text">Encoded text.</param>
+            <param name="password">The password.</param>
+            <returns>Decoded text.</returns>
+        </member>
+        <member name="P:Eazfuscator.NET.SDK.StackTraceDecoding.StackTraceDecoder.Reader">
+            <summary>
+            Gets or sets the reader.
+            </summary>
+            <value>The reader.</value>
+        </member>
+        <member name="P:Eazfuscator.NET.SDK.StackTraceDecoding.StackTraceDecoder.Writer">
+            <summary>
+            Gets or sets the writer.
+            </summary>
+            <value>The writer.</value>
+        </member>
+        <member name="P:Eazfuscator.NET.SDK.StackTraceDecoding.StackTraceDecoder.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+            <value>The password.</value>
+        </member>
+    </members>
+</doc>

@@ -3,16 +3,29 @@
   <metadata>
     <id>eazfuscator.net</id>
     <title>Eazfuscator.NET</title>
-    <version>2.9.41.774</version>
+    <version>3.2</version>
     <authors>Oleksiy Gapotchenko</authors>
     <owners>Rob Reynolds</owners>
-    <summary>Eazfuscator.NET</summary>
-    <description>Eazfuscator.NET 
-| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <summary>Eazfuscator.NET is a free obfuscator for .NET platform. The main purpose of obfuscator is to protect intellectual property of the software.</summary>
+    <description>Eazfuscator.NET is a free obfuscator for .NET platform. The main purpose of obfuscator is to protect intellectual property of the software.</description>
     <projectUrl>http://www.foss.kharkov.ua/g1/projects/eazfuscator/dotnet/Default.aspx</projectUrl>
-    <tags>obfuscator Eazfuscator.NET chocolatey</tags>
+    <tags>obfuscator Eazfuscator.NET</tags>
     <!--<licenseUrl></licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/Eazfuscator.NET/Eazfuscator.NET.gif</iconUrl>-->
+    <releaseNotes>
+Version 3.2 released on September 26, 2011
+
+- Debug renaming
+- Native modules embedding
+- Rule-based conditional obfuscation for type members
+- PE32+ executable file format support
+- Post-mortem expert analysis feature. The built-in knowledge base is used to give a relevant hint to user when a tricky obfuscation error occurs
+- Script variables in declarative obfuscation attributes
+- Improved string encryption
+- Improved obfuscation of enums
+- Improved LINQ to SQL analysis engine
+- Improved reflection analysis engine for toolbox item bitmaps
+    </releaseNotes>
   </metadata>
 </package>
