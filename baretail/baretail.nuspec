@@ -3,7 +3,7 @@
   <metadata>
     <id>baretail</id>
     <title>BareTail</title>
-    <version>3.50</version>
+    <version>3.50.0.20120225</version>
     <authors>Bare Metal Software, Ltd.</authors>
     <owners>Rob Reynolds</owners>
     <summary>Baretail - A free real-time log file monitoring tool</summary>
@@ -11,7 +11,7 @@
     <projectUrl>http://www.baremetalsoft.com/baretail/index.php</projectUrl>
     <licenseUrl>http://www.baremetalsoft.com/baretail/licence.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>tail baretail</tags>
-    <!--<iconUrl>32x32.png</iconUrl>-->
+    <tags>tail baretail log</tags>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/baretail/baretail.gif</iconUrl>
   </metadata>
 </package>
