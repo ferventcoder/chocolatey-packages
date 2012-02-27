@@ -7,8 +7,8 @@
     <authors>Microsoft</authors>
     <owners>Rob Reynolds</owners>
     <summary>Visual C++ 2008 Service Pack 1</summary>
-    <description>Visual C++ 2008 Service Pack 1</description>
-    <projectUrl>http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=11895</projectUrl>
+    <description>The Microsoft Visual C++ 2008 SP1 Redistributable Package (x86) installs runtime components of Visual C++ Libraries required to run applications developed with Visual C++ SP1 on a computer that does not have Visual C++ 2008 SP1 installed.</description>
+    <projectUrl>http://www.microsoft.com/download/en/details.aspx?id=5582</projectUrl>
     <tags>c++ 2008 service pack 1 admin</tags>
     <copyright>Microsoft</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
