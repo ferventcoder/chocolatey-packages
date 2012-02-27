@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>visualcplusplus2008sp1</id>
+    <title>Visual C++ 2008 Service Pack 1</title>
+    <version>1.0</version>
+    <authors>Microsoft</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Visual C++ 2008 Service Pack 1</summary>
+    <description>Visual C++ 2008 Service Pack 1</description>
+    <projectUrl>http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=11895</projectUrl>
+    <tags>c++ 2008 service pack 1 admin</tags>
+    <copyright>Microsoft</copyright>
+    <!--<licenseUrl>__REPLACE__</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/visualcplusplus2008sp1/visualcplusplus2008sp1.gif</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+</package>
