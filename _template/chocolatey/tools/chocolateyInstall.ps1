@@ -3,6 +3,7 @@
   # installer, will assert administrative rights
   Install-ChocolateyPackage '__NAME__' 'EXE_OR_MSI' 'SILENT_ARGS' 'URL' '64BIT_URL_DELETE_IF_NO_64BIT'  -validExitCodes @(0)
   # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
+  #Exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
   # download and unpack a zip file
   Install-ChocolateyZipPackage '__NAME__' 'URL' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" '64BIT_URL_DELETE_IF_NO_64BIT' 
   
