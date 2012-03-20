@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>2.0.2181</version>
+    <authors>Jon Skinner</authors>
+    <owners>Jon Galloway,Alan Stevens</owners>
+    <licenseUrl>http://www.sublimetext.com/eula</licenseUrl>
+    <projectUrl>http://www.sublimetext.com/2</projectUrl>
+    <iconUrl>http://www.sublimetext.com/favicon.ico</iconUrl>
+    <id>sublimetext2</id>
+    <title>Sublime Text 2</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Sublime Text 2 (beta) is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features. Sublime Text may be downloaded and evaluated for free, however a license must be purchased for continued use.| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey). This brings the Sublime Text portable version to your system</description>
+    <summary>Sublime Text 2 (beta) is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features.</summary>
+    <tags>sublime text editor chocolatey</tags>
+  </metadata>
+</package>
