@@ -1,6 +1,6 @@
 try {
   $packageName = 'sysinternals'
-  $url = 'http://download.sysinternals.com/Files/SysinternalsSuite.zip'
+  $url = 'http://download.sysinternals.com/files/SysinternalsSuite.zip'
 
   ### Using an environment variable to to define the bin root until we implement YAML configuration ###
   $binRoot = "$env:systemdrive\"
