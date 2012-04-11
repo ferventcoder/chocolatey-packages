@@ -3,7 +3,7 @@
   <metadata>
     <id>fiddler</id>
     <title>Fiddler</title>
-    <version>2.3.9.2</version>
+    <version>2.3.9.3</version>
     <authors>Eric Lawrence</authors>
     <owners>Rob Reynolds</owners>
     <summary>Fiddler Web Debugging Proxy</summary>
@@ -16,7 +16,13 @@ Fiddler is freeware and can debug traffic from virtually any application, includ
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/fiddler/FiddlerLogo.png</iconUrl>
     <releaseNotes>
-Version 2.3.9.2 - Released 2/20/2012
+Version 2.3.9.3- Released 2/27/2012
+
+- WebView supports all font types
+- Full TLS Extensions support
+- Improved Script Engine
+- Improved Performance
+- Various bugfixes
 
 Version 2.3.8.5 - Released 1/23/2012
 
