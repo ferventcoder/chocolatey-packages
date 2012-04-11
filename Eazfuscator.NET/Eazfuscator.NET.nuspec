@@ -3,7 +3,7 @@
   <metadata>
     <id>eazfuscator.net</id>
     <title>Eazfuscator.NET</title>
-    <version>3.2</version>
+    <version>3.3</version>
     <authors>Oleksiy Gapotchenko</authors>
     <owners>Rob Reynolds</owners>
     <summary>Eazfuscator.NET is a free obfuscator for .NET platform. The main purpose of obfuscator is to protect intellectual property of the software.</summary>
@@ -14,18 +14,21 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/Eazfuscator.NET/Eazfuscator.NET.gif</iconUrl>-->
     <releaseNotes>
-Version 3.2 released on September 26, 2011
+Version 3.3 released on March 5, 2012
 
-- Debug renaming
-- Native modules embedding
-- Rule-based conditional obfuscation for type members
-- PE32+ executable file format support
-- Post-mortem expert analysis feature. The built-in knowledge base is used to give a relevant hint to user when a tricky obfuscation error occurs
-- Script variables in declarative obfuscation attributes
-- Improved string encryption
-- Improved obfuscation of enums
-- Improved LINQ to SQL analysis engine
-- Improved reflection analysis engine for toolbox item bitmaps
+- Code optimizer. Delivers great speed to your apps
+- Control and data flow analysis. Delivers better reflection support
+- Greatly improved support of self-hosted WCF services
+- XNA 4 support
+- Silverlight 5 support
+- Windows SDK 8.0 support
+- Visual Studio 11 support
+- Neutral mode is the default one for assembly loader now. This solves architecture dependency issues, and now it is possible to obfuscate 64 bit assemblies on 32 bit machines
+- Fixed template method signature lookup issue
+- Fixed bug in template constraints rewriting
+- Fixed own satellite assemblies embedding issue introduced in 3.2
+- Fixed a reflection analysis issue for Windows Phone apps introduced in 3.2
+- Fixed issues with overloaded methods in XML Documentation Filter
     </releaseNotes>
   </metadata>
 </package>
