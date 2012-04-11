@@ -3,7 +3,7 @@
   <metadata>
     <id>sqlite.shell</id>
     <title>SQLite.shell</title>
-    <version>3.7.10.0</version>
+    <version>3.7.11.0</version>
     <authors>D. Richard Hipp, SQLite contributors</authors>
     <owners>Rob Reynolds</owners>
     <summary>SQLite Shell - command shell for accessing SQLite databases</summary>
