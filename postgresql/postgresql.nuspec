@@ -3,7 +3,8 @@
   <metadata>
     <id>postgresql</id>
     <title>PostgreSQL</title>
-    <version>9.1.2</version>
+    <version>8.3.18</version>
+    <!--version>9.1.3</version-->
     <authors>pgsql developers</authors>
     <owners>Rob Reynolds</owners>
     <summary>PostgreSQL - The world's most advanced open source database.</summary>

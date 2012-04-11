@@ -51,9 +51,10 @@ try {
   Set-Acl $postgrePath $acl
   
   #perform silent install
-  #$installArgs = "--mode unattended --prefix $postgrePath --datadir $($postgrePath)\data --superpassword $postgrePassword"
-  $installArgs = "--mode unattended --prefix $postgrePath --datadir $($postgrePath)\data --servicename PostgreSQL --superaccount $postgreAccount --superpassword $postgrePassword --serviceaccount $postgreAccount"
-  Install-ChocolateyPackage 'postgresql' 'exe' "$installArgs" 'http://get.enterprisedb.com/postgresql/postgresql-9.1.2-1-windows.exe' 
+  $installArgs = "--mode unattended --prefix $postgrePath --datadir $($postgrePath)\data --superpassword $postgrePassword"
+#  $installArgs = "--mode unattended --prefix $postgrePath --datadir $($postgrePath)\data --servicename PostgreSQL --superaccount $postgreAccount --superpassword $postgrePassword --serviceaccount $postgreAccount"
+  Install-ChocolateyPackage 'postgresql' 'exe' "$installArgs" 'http://get.enterprisedb.com/postgresql/postgresql-8.3.18-1-windows.exe' 
+#  Install-ChocolateyPackage 'postgresql' 'exe' "$installArgs" 'http://get.enterprisedb.com/postgresql/postgresql-9.1.3-1-windows.exe' 
 #'http://get.enterprisedb.com/postgresql/postgresql-9.1.1-1-windows-x64.exe' 
 
   #Add path
