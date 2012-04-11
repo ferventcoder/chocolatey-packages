@@ -4,12 +4,12 @@ http://curl.haxx.se/
 This package is build with MingW32 compiler,
 and the DLL lib can be used for your own projects.
 
-version  : 7.24.0 SSH2 SSL SSPI LIBZ
-requires : OpenSSL 0.9.8t DLLs (included)
+version  : 7.25.0 SSH2 SSL SSPI LIBZ
+requires : OpenSSL 0.9.8u DLLs (included)
 license  : http://curl.haxx.se/docs/copyright.html 
 built by : G. Knauf <info@gknw.de>
 
-curl 7.24.0 (i386-pc-win32) libcurl/7.24.0 OpenSSL/0.9.8t zlib/1.2.5 libssh2/1.3.0
+curl 7.25.0 (i386-pc-win32) libcurl/7.25.0 OpenSSL/0.9.8u zlib/1.2.6 libssh2/1.4.0
 Protocols: dict file ftp ftps gopher http https imap imaps ldap pop3 pop3s rtsp scp sftp smtp smtps telnet tftp 
 Features: AsynchDNS GSS-Negotiate Largefile NTLM SSL SSPI libz 
 
