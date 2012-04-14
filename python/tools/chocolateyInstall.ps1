@@ -6,8 +6,8 @@ try {
   $packageName = 'Python'
   $fileType = 'msi'
   $silentArgs = "/qn TARGETDIR=$(join-path $binRoot 'Python27')"
-  $url = 'http://www.python.org/ftp/python/2.7.2/python-2.7.2.msi'
-  $url64bit = 'http://www.python.org/ftp/python/2.7.2/python-2.7.2.amd64.msi'
+  $url = 'http://www.python.org/ftp/python/2.7.3/python-2.7.3.msi'
+  $url64bit = 'http://www.python.org/ftp/python/2.7.3/python-2.7.3.amd64.msi'
 
   Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64bit
 
