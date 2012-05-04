@@ -3,17 +3,15 @@
   <metadata>
     <id>ghostdoc</id>
     <title>GhostDoc</title>
-    <version>3.0.10340</version>
+    <version>3.0.11216</version>
     <authors>SubMain</authors>
     <owners>Rob Reynolds</owners>
     <summary>GhostDoc - Simplify your XML comments!</summary>
     <description>GhostDoc is a Visual Studio extension that automatically generates XML documentation comments for methods and properties based on their type, parameters, name, and other contextual information.
 
-When generating documentation for class derived from a base class or for interface implementation (e.g. .NET Framework or your custom framework), GhostDoc will use the documentation that Microsoft or the framework vendor has already written for the base class or interface.
-
-| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+When generating documentation for class derived from a base class or for interface implementation (e.g. .NET Framework or your custom framework), GhostDoc will use the documentation that Microsoft or the framework vendor has already written for the base class or interface.</description>
     <projectUrl>http://submain.com/products/ghostdoc.aspx</projectUrl>
-    <tags>ghostdoc xml documentation chocolatey</tags>
+    <tags>ghostdoc xml documentation visual studio admin</tags>
     <licenseUrl>http://submain.com/ghostdoc/EULA.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>

@@ -11,13 +11,8 @@ try {
 
   # stuff here?
 
-  write-host "ghostdoc has been installed."
-  Start-Sleep 6
-
+    Write-ChocolateySuccess 'ghostdoc'
 } catch {
-@"
-Error Occurred: $($_.Exception.Message)
-"@ | Write-Host -ForegroundColor White -BackgroundColor DarkRed
-	Start-Sleep 8
-	throw 
+    Write-ChocolateyFailure 'ghostdoc' $($_.Exception.Message)
+    throw 
 }
