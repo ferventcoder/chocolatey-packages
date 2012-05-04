@@ -1,0 +1,1 @@
+﻿Install-ChocolateyPackage 'appharborcli.install' 'exe' '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' 'https://github.com/downloads/appharbor/appharbor-cli/appharbor-cli-v1.0.exe'  -validExitCodes @(0)
