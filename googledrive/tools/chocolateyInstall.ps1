@@ -1,0 +1,1 @@
+﻿Install-ChocolateyPackage 'googledrive' 'msi' '/quiet' 'http://cache.pack.google.com/edgedl/drive/1.0.2975.8828/gsync.msi' -validExitCodes @(0)
