@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'nodejs.install' 'msi' '/quiet' 'http://nodejs.org/dist/v0.6.17/node-v0.6.17.msi'
+Install-ChocolateyPackage 'nodejs.install' 'msi' '/quiet' 'http://nodejs.org/dist/v0.6.18/node-v0.6.18.msi'
