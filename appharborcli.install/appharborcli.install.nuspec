@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>appharborcli.install</id>
+    <title>AppHarbor CLI (Install)</title>
+    <version>{{PackageVersion}}</version>
+    <authors>AppHarbor</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>AppHarbor CLI</summary>
+    <description>The AppHarbor CLI is used to manage AppHarbor applications from the command line.</description>
+    <projectUrl>https://github.com/appharbor/appharbor-cli</projectUrl>
+    <tags>appharborcli.install admin</tags>
+    <copyright>AppHarbor</copyright>
+    <licenseUrl>https://raw.github.com/appharbor/appharbor-cli/master/License.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/appharborcli.install/appharbor.png</iconUrl>
+  </metadata>
+</package>

@@ -1,0 +1,53 @@
+#currentVersion  {
+padding-top: 8px;
+float: left; 
+}
+
+#preface-wrapper {
+padding: 0 0 0 0;
+}
+
+
+#page {
+background:url("../images/Pier.png") scroll right top;
+}
+
+#header #search-box {
+width:23em;
+}
+
+#primary-menu {
+margin-top:0;
+}
+
+ul {
+margin-top:0;
+}
+
+#myLangSwitcher ul {
+float: left;
+margin-top: 7px;
+margin-left: 25px;
+}
+
+#myLangSwitcher ul li{ 
+display: inline;
+list-style-type: none;
+list-style-image: none;
+background: none;
+margin-left: 0;
+padding: 0;
+}
+
+body.layout-main-last #sidebar-last {
+background-color:#F4F7E7;
+margin-top:40px;
+padding:0 0 0 20px;
+width:25%;
+}
+
+body.layout-main-last #content-wrapper {
+width:70%;
+}
+
+

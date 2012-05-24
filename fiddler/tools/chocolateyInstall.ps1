@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'fiddler' 'exe' '/S' '{{DownloadUrl}}'

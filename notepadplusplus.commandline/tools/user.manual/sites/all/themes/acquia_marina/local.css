@@ -1,0 +1,47 @@
+/* $Id: local_sample.css,v 1.2.2.2 2009/12/22 06:47:47 jwolf Exp $ */
+
+/* Local CSS
+-------------------------------------------------------------- */
+
+/**
+ * Put your custom css and css overrides in this file and
+ * rename it local.css. By restricting your css changes 
+ * to local.css, your changes will not be overwritten when
+ * upgrading to a new version of this theme.
+ *
+ *  Steps to activate local.css:
+ *  1. Add your custom css to this file.
+ *  2. Rename this file to local.css  
+ */
+ h2.doc-team-title{
+ font-size:100%;
+ }
+ p.doc-team{
+ font-size:75%;
+ }
+.accordion-active, .accordion-item-last .accordion-header, .accordion-item-last .accordion-content {
+    -moz-border-radius-bottomleft:10px;
+    -moz-border-radius-bottomright:10px;
+}
+.accordion-active, .accordion-item-first .accordion-header {
+    -moz-border-radius-topleft:10px;
+    -moz-border-radius-topright:10px;
+}
+.accordion-active {
+    border:1px solid #DDDDDD;
+    margin-bottom:1em;
+    padding-left:10px;
+}
+.accordion-active {
+    background:none repeat scroll 0 0 white;
+    border:1px solid #F2E7D1;
+}
+.views-accordion-item .accordion-header-active, h3.accordion-header-active {
+    border-bottom:1px solid #DDDDDD;
+    font-weight:bold;
+}
+.views-accordion-item .accordion-header, h3.accordion-header {
+    background-color:#fff;
+    border-bottom:1px solid #fff;
+    border-top:1px solid #DDDDDD;
+}
