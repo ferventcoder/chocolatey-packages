@@ -3,7 +3,7 @@
   <metadata>
     <id>attributechanger</id>
     <title>AttributeChanger</title>
-    <version>7.0</version>
+    <version>7.0.0.20120501</version>
     <authors>Romain Petges</authors>
     <owners>Rob Reynolds</owners>
     <summary>Attribute Changer shell extension (freeware) is a power user tool to change all kind of file and folder attributes, date, time and even NTFS compression.</summary>
