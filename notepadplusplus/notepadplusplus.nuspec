@@ -3,7 +3,7 @@
   <metadata>
     <id>notepadplusplus</id>
     <title>Notepad++</title>
-    <version>{{version}}</version>
+    <version>{{PackageVersion}}</version>
     <authors>Don Ho</authors>
     <owners>Rob Reynolds</owners>
     <summary>Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages.</summary>
@@ -21,7 +21,7 @@ I hope you enjoy Notepad++ as much as I enjoy coding it.
     <tags>notepad notepadplusplus notepad-plus-plus admin</tags>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/notepadplusplus/nppLogo.png</iconUrl>
     <dependencies>
-      <dependency id="notepadplusplus.install" version="[{{version}}]" />
+      <dependency id="notepadplusplus.install" version="[{{PackageVersion}}]" />
     </dependencies> 
   </metadata>
 </package>
