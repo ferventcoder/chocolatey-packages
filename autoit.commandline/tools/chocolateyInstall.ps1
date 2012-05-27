@@ -7,7 +7,6 @@ try {
   Get-ChocolateyWebFile 'autoit.commandline' "$file" '{{DownloadUrl}}'
   
   write-host "Extracting the contents of `'$file`' to `'$scriptDir`'"
-  start-sleep 3
   Start-Process "7za" -ArgumentList "x -o`"$scriptDir`" -y `"$file`"" -Wait
 
   Write-ChocolateySuccess 'autoit.commandline'
