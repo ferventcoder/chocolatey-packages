@@ -19,6 +19,6 @@ I hope you enjoy Notepad++ as much as I enjoy coding it.
 </description>
     <projectUrl>http://notepad-plus-plus.org/</projectUrl>
     <tags>notepad notepadplusplus notepad-plus-plus</tags>
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/notepadplusplus/nppLogo.png</iconUrl>
+    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/notepadplusplus/nppLogo.png</iconUrl>
   </metadata>
 </package>
