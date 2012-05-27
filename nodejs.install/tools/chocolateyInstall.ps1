@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'nodejs.install' 'msi' '/quiet' '{{DownloadUrl}}'
