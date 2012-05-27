@@ -1,1 +1,0 @@
-﻿Install-ChocolateyPackage 'notepadplusplus' 'exe' '/S' 'http://download.tuxfamily.org/notepadplus/6.1/npp.6.1.Installer.exe'
