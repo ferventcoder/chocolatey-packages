@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ketarin</id>
+    <title>Ketarin</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Canneverbe Limited</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Ketarin - keep your setup packages up-to-date...</summary>
+    <description>Ketarin is a small application which automatically updates setup packages. As opposed to other tools, Ketarin is not meant to keep your system up-to-date, but rather to maintain a compilation of all important setup packages which can then be burned to disc or put on a USB stick.</description>
+    <projectUrl>https://ketarin.org/</projectUrl>
+    <tags>ketarin </tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>
