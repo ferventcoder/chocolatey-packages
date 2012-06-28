@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>pngoptimizer</id>
+    <title>PngOptimizer</title>
+    <version>2.1</version>
+    <authors>Hadrien Nilsson</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>PngOptimizer - Optimize those pngs</summary>
+    <description>PngOptimizer
+Clean your PNG files of useless or wrong information.
+Make your PNG files smaller.
+Convert into PNG other lossless image formats (BMP, GIF, TGA).
+Create PNG screenshots and make them easily available.
+Perform all those tasks in the simpliest and most productive way.</description>
+    <projectUrl>http://psydk.org/PngOptimizer.php</projectUrl>
+    <tags>pngoptimizer png optimize</tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes></releaseNotes>
+  </metadata>
+</package>
