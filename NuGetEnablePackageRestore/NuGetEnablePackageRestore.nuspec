@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NuGetEnablePackageRestore</id>
+    <title>NuGet Enable Package Restore (For Real)</title>
+    <version>2.0.0</version>
+    <authors>Rob Reynolds</authors>
+    <owners>Rob Reynolds</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>NuGet Enable Package Restore - Fix that broken enable package restore</summary>
+    <description>Enable Package Restore - If you're like me and you enabled package restore and found it was broken on any given build server, you need to install this to fix package restore to the way it should work.</description>    
+    <tags>nuget enable package restore fix enablepackagerestore</tags>
+  </metadata>
+</package>
