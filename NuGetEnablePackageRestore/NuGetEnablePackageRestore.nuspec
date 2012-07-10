@@ -8,7 +8,12 @@
     <owners>Rob Reynolds</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>NuGet Enable Package Restore - Fix that broken enable package restore</summary>
-    <description>Enable Package Restore - If you're like me and you enabled package restore and found it was broken on any given build server, you need to install this to fix package restore to the way it should work.</description>    
+    <description>Enable Package Restore - If you're like me and you enabled package restore and found it was broken on any given build server, you need to install this to fix package restore to the way it should work.
+    
+    What does this package do? It sets consent permanently locally to the solution it is installed in. That means this solution will build on any computer and/or server that has access to the nuget feeds it needs to access.
+    
+    It also replaces the nuget.exe bootstrapper file with a full nuget.exe file so you no longer have a shell that attempts to download a newer version every 10 days.
+    </description>    
     <tags>nuget enable package restore fix enablepackagerestore</tags>
   </metadata>
 </package>
