@@ -3,12 +3,12 @@
   <metadata>
     <id>resharper</id>
     <title>ReSharper</title>
-    <version>6.1.1000.82</version>
+    <version>7.0.97.60</version>
     <authors>JetBrains</authors>
     <owners>Rob Reynolds</owners>
     <summary>ReSharper - The Most Intelligent Extension for Visual Studio</summary>
     <description>ReSharper is a developer productivity tool for Microsoft Visual Studio. 
-| ReSharper 5 works with Visual Studio 2005 SP1, 2008, and 2010. It is available for download as a single package that includes all three editions. Depending on the license key used, the Full, C# or VB.NET Edition will be activated automatically.
+| ReSharper 5 works with Visual Studio 2005 SP1, 2008 SP1, 2010 or 2012 RC or later. It is available for download as a single package that includes all three editions. Depending on the license key used, the Full, C# or VB.NET Edition will be activated automatically.
 During evaluation, Full Edition is activated by default but you can switch to another edition in the License Information dialog box (ReSharper | Help | License Information.) 
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://www.jetbrains.com/resharper</projectUrl>
