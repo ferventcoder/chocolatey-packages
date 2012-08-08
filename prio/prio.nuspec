@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>prio</id>
+    <title>Prio</title>
+    <version>1.0</version>
+    <authors>O and K</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Prio - Process Priority Saver</summary>
+    <description>Prio - Process Priority Saver. This compact program allows you to save the priority you specify for any process.
+    </description>
+    <projectUrl>http://www.prnwatch.com/prio.html</projectUrl>
+    <tags>prio process priority saver taskmanager admin</tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.prnwatch.com/prio.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>
