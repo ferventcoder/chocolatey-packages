@@ -7,7 +7,10 @@
     <authors>Joyent</authors>
     <owners>Rob Reynolds</owners>
     <summary>Node JS - Evented I/O for v8 JavaScript.</summary>
-    <description>Node JS - Evented I/O for v8 JavaScript. Node's goal is to provide an easy way to build scalable network programs.</description>
+    <description>Node JS - Evented I/O for v8 JavaScript. Node's goal is to provide an easy way to build scalable network programs.
+
+This package is an alias for the nodejs.commandline package, which simply installs Node.exe to the Chocolatey folder. Does not include NPM.
+    </description>
     <projectUrl>http://nodejs.org</projectUrl>
     <tags>nodejs node javascript</tags>
     <licenseUrl>https://github.com/joyent/node/blob/master/LICENSE</licenseUrl>
@@ -15,6 +18,6 @@
     <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/nodejs/nodejs.png</iconUrl>
     <dependencies>
       <dependency id="nodejs.commandline" version="[{{PackageVersion}}]" />
-    </dependencies> 
-  </metadata>  
+    </dependencies>
+  </metadata>
 </package>
