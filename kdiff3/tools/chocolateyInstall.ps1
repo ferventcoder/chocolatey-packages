@@ -1,13 +1,12 @@
 try {
-    Install-ChocolateyPackage 'kdiff3' 'exe' '/S' 'http://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.95/KDiff3Setup_0.9.95-2.exe' 
+    Install-ChocolateyPackage 'kdiff3' 'exe' '/S' 'http://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.97/KDiff3-32bit-Setup_0.9.97.exe' 'http://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.97/KDiff3-64bit-Setup_0.9.97.exe'  -validExitCodes @(0)
     
   #------additional setup ----------------
-  $processor = Get-WmiObject Win32_Processor
-  $is64bit = $processor.AddressWidth -eq 64
-  $progFiles = [System.Environment]::GetFolderPath('ProgramFiles')
-  if ($is64bit -and $progFiles -notmatch 'x86') {$progFiles = "$progFiles (x86)"}
-  $programPath = Join-Path $progFiles 'kdiff3'
-  
+  #add it to the path
+  $programPath = "$env:SystemDrive\Program Files\kdiff3"
+  if (![System.IO.Directory]::Exists($programPath)) {
+    $programPath = "$env:SystemDrive\Program Files (x86)\kdiff3";
+  }
   Install-ChocolateyPath $programPath
   
   Write-ChocolateySuccess 'kdiff3'
