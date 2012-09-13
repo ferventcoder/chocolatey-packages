@@ -5,12 +5,12 @@
     <title>Yeoman</title>
     <version>0.9.0</version>
     <authors>Addy Osmani, Paul Irish, Sindre Sorhus, Mickael Daniel, Eric Bidelman, and the Yeoman Community.</authors>
-    <owners>Ethan Brown</owners>
+    <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>Yeoman is a robust and opinionated set of tools, libraries, and a workflow that can help developers quickly build beautiful, compelling web apps.</summary>
     <description>Yeoman is a robust and opinionated set of tools, libraries, and a workflow that can help developers quickly build beautiful, compelling web apps.
 
 * Lightning-fast scaffolding
-* Automatically compile CoffeeScript & Compass
+* Automatically compile CoffeeScript &amp; Compass
 * Automatically lint your scripts
 * Built-in preview server
 * Awesome Image Optimization
@@ -29,11 +29,15 @@
     <releaseNotes></releaseNotes>
     <dependencies>
         <dependency id="Compass" version="0.12.2" />
-        <dependency id="gitextensions" />
+        <dependency id="git" />
         <dependency id="nodejs.install" version="0.8.1" />
         <dependency id="libjpeg-turbo" version="1.2.1" />
         <dependency id="OptiPNG" version="0.7.1" />
         <dependency id="PhantomJS" version="1.6.1" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
 </package>

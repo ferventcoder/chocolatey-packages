@@ -5,7 +5,7 @@
     <title>Compass</title>
     <version>0.12.2</version>
     <authors>Scott Davis, Eric Meyer, Brandon Mathis, Anthony Short</authors>
-    <owners>Ethan Brown</owners>
+    <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>Compass is an open-source CSS Authoring Framework.</summary>
     <description>Compass is an open-source CSS Authoring Framework.
 
@@ -27,4 +27,8 @@
         <dependency id="ruby" version="1.8.7" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
 </package>

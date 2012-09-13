@@ -5,7 +5,7 @@
     <title>PhantomJS</title>
     <version>1.6.1</version>
     <authors>Ariya Hidayat, PhantomJS Committers</authors>
-    <owners>Ethan Brown</owners>
+    <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>PhantomJS - Headless WebKit</summary>
     <description>Full web stack
 No browser required
@@ -18,7 +18,7 @@ PhantomJS is created by Ariya Hidayat.
     <licenseUrl>https://github.com/ariya/phantomjs/blob/master/LICENSE.BSD</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/PhantomJS/PhantomJS.png</iconUrl>
-    <releasenotes>2012-07-22: Version 1.6.1
+    <releaseNotes>2012-07-22: Version 1.6.1
 
     Bug fixes
 
@@ -59,6 +59,10 @@ PhantomJS is created by Ariya Hidayat.
       * Fixed build failure with glib 2.31.0+ (issue 559)
       * Fixed error handler failures in some cases (issue 589)
       * Fixed Twitter-related examples to work with the new site (issue 609)
-    </releasenotes>
+    </releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
 </package>
