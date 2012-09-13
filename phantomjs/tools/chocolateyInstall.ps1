@@ -14,6 +14,8 @@ try {
 
   Install-ChocolateyZipPackage $package "$zipUrl" "$installDir"
   
+  Copy-Item "$($installDir)\phantomjs-1.6.1\*" "$installDir" -Force -Recurse
+  
   Write-ChocolateySuccess $package
 } catch {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"

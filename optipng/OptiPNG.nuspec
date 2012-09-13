@@ -3,7 +3,7 @@
   <metadata>
     <id>OptiPNG</id>
     <title>OptiPNG : Advanced PNG Optimizer</title>
-    <version>0.7.1</version>
+    <version>0.7.1.20120913</version>
     <authors>Cosmin Truta</authors>
     <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>OptiPNG is a PNG optimizer that recompresses image files to a smaller size, without losing any information.</summary>

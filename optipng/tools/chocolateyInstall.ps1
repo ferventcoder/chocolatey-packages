@@ -13,6 +13,8 @@ try {
 
   Install-ChocolateyZipPackage $package "$zipUrl" "$installDir"
 
+  Copy-Item "$($installDir)\optipng-0.7.1-win32\*" "$installDir" -Force -Recurse
+  
   Write-ChocolateySuccess $package
 } catch {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"

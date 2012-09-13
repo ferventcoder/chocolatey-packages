@@ -3,7 +3,7 @@
   <metadata>
     <id>PhantomJS</id>
     <title>PhantomJS</title>
-    <version>1.6.1</version>
+    <version>1.6.1.20120913</version>
     <authors>Ariya Hidayat, PhantomJS Committers</authors>
     <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>PhantomJS - Headless WebKit</summary>
@@ -17,7 +17,7 @@ PhantomJS is created by Ariya Hidayat.
     <tags>PhantomJS webkit web browser testing</tags>
     <licenseUrl>https://github.com/ariya/phantomjs/blob/master/LICENSE.BSD</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/PhantomJS/PhantomJS.png</iconUrl>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/phantomjs/PhantomJS.png</iconUrl>
     <releaseNotes>2012-07-22: Version 1.6.1
 
     Bug fixes
