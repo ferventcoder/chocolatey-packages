@@ -12,3 +12,5 @@ _ReSharper*
 *.orig
 
 *.nupkg
+Thumbs.db
+.DS_Store
