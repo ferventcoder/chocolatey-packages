@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>editorconfig.vs</id>
+    <title>EditorConfig Visual Studio Extension</title>
+    <version>0.2.5</version>
+    <authors>William Swanson and the EditorConfig team</authors>
+    <owners>Ethan Brown & Rob Reynolds</owners>
+    <summary>The EditorConfig project defines a simple file format for configuring common text-editor options such as indentation sizes.</summary>
+    <description>The EditorConfig project defines a simple file format for configuring common text-editor options such as indentation sizes. These configuration files are designed to sit alongside a project's source code, allowing text editors to use the right options on a file-by-file basis. The EditorConfig project provides plugins for many common text editors, making the format fully cross-platform.
+</description>
+    <projectUrl>http://visualstudiogallery.msdn.microsoft.com/c8bccfe2-650c-4b42-bc5c-845e21f96328</projectUrl>
+    <tags>editor code style format</tags>
+    <licenseUrl>http://visualstudiogallery.msdn.microsoft.com/site/c8bccfe2-650c-4b42-bc5c-845e21f96328/eula?licenseType=None</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/tree/master/EditorConfig/editorconfig.png</iconUrl>
+  </metadata>
+</package>
