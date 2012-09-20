@@ -5,7 +5,7 @@
     <title>JSCoverage</title>
     <version>0.5.1</version>
     <authors>Silicon Forks</authors>
-    <owners>Ethan Brown & Rob Reynolds</owners>
+    <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>JSCoverage is a tool that measures code coverage for JavaScript programs.</summary>
     <description>JSCoverage is a tool that measures code coverage for JavaScript programs.
 
@@ -17,9 +17,7 @@
 </description>
     <projectUrl>http://siliconforks.com/jscoverage/</projectUrl>
     <tags>javascript testing coverage</tags>
-    <licenseUr>
-
-    </licenseUr>l>http://siliconforks.com/jscoverage/license.html</licenseUrl>
+    <licenseUrl>http://siliconforks.com/jscoverage/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- <iconUrl></iconUrl> -->
   </metadata>
