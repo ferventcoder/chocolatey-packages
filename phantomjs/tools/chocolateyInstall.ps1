@@ -1,7 +1,7 @@
 try {
   $package = 'PhantomJS'
 
-  $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
+  $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   ### For BinRoot, use the following instead ###
   $binRoot = "$env:systemdrive\"
   ### Using an environment variable to to define the bin root until we implement configuration ###
@@ -10,12 +10,12 @@ try {
   Write-Host "Adding `'$installDir`' to the path and the current shell path"
   Install-ChocolateyPath "$installDir"
   $env:Path = "$($env:Path);$installDir"
-  $zipUrl = 'http://phantomjs.googlecode.com/files/phantomjs-1.6.1-win32-static.zip'
+  $zipUrl = 'http://phantomjs.googlecode.com/files/phantomjs-1.7.0-windows.zip'
 
   Install-ChocolateyZipPackage $package "$zipUrl" "$installDir"
-  
-  Copy-Item "$($installDir)\phantomjs-1.6.1\*" "$installDir" -Force -Recurse
-  
+
+  Copy-Item "$($installDir)\phantomjs-1.7.0-windows\*" "$installDir" -Force -Recurse
+
   Write-ChocolateySuccess $package
 } catch {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"
