@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>typescript</id>
+    <title>TypeScript</title>
+    <version>0.8.0</version>
+    <authors>Microsoft</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>TypeScript is a language for application-scale JavaScript development.</summary>
+    <description>TypeScript is a language for application-scale JavaScript development.
+TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+Any browser. Any host. Any OS. Open Source.</description>
+    <projectUrl>http://www.typescriptlang.org/</projectUrl>
+    <tags>typescript javascript</tags>
+    <copyright></copyright>
+    <licenseUrl>http://typescript.codeplex.com/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="nodejs.install" version="0.8.10" />
+    </dependencies>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>
