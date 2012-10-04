@@ -1,22 +1,34 @@
-try {
-  Install-ChocolateyPackage 'spotify' 'exe' '/S' 'http://download.spotify.com/Spotify%20Installer.exe'
+﻿function Reset-ChocoEnvironment 
+{
+  #rename-item function:Start-ChocolateyProcessAsAdmin Start-ChocolateyProcessAsAdmin-SpotifyOverride
+  #rename-item function:Start-ChocolateyProcessAsAdmin-Hold Start-ChocolateyProcessAsAdmin
+  if (Get-Module spotify-chocolatey) {Remove-Module spotify-chocolatey}
+}
+
+try{
+  $scriptDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+  $spotifyModule = Join-Path $scriptDir 'functions\spotify-chocolatey.psm1'
+  if (Get-Module spotify-chocolatey) {Remove-Module spotify-chocolatey}
+  Import-Module $spotifymodule
+  
+  #Write-Host "Renaming `'Start-ChocolateyProcessAsAdmin`' to `'Start-ChocolateyProcessAsAdmin-Hold`'"
+  #rename-item function:Start-ChocolateyProcessAsAdmin Start-ChocolateyProcessAsAdmin-Hold
+  #rename-item function:Start-ChocolateyProcessAsAdmin-Override Start-ChocolateyProcessAsAdmin
+  
+  Install-ChocolateyPackage-Spotify 'spotify' 'exe' '/SILENT' 'http://download.spotify.com/Spotify%20Installer.exe'
+
+  $installerFile = Join-Path $scriptDir 'install.au3'
+  write-host "Finishing spotify install with AutoIt3 using `'$installerFile`'"
+  $installArgs = "/c autoit3 `"$installerFile`""
+  #Start-ChocolateyProcessAsAdmin "$installArgs" 'cmd.exe'
+  Start-Process "cmd" -ArgumentList "$installArgs" -Wait
+  
+  Reset-ChocoEnvironment
+
+  Write-ChocolateySuccess 'spotify'
 } catch {
-  Write-Host 'Spotify installer is reporting error, even though it may have installed correctly. Checking for existence...'
-  #------this likes to claim issues even though it installs correctly ----------------
-  $processor = Get-WmiObject Win32_Processor
-  $is64bit = $processor.AddressWidth -eq 64
-
-  $progFiles = [System.Environment]::GetFolderPath('ProgramFiles')
-  if ($is64bit -and $progFiles -notmatch 'x86') {$progFiles = "$progFiles (x86)"}
-
-  $spotifyExe = Join-Path $progFiles "Spotify\spotify.exe"
-
-  If (test-path $spotifyExe) {
-    Write-ChocolateySuccess 'spotify'
-    $errorLog = "$($env:TEMP)\chocolatey\spotify\failure.log"
-    if ([System.IO.File]::Exists($errorLog)) {[System.IO.File]::Move($errorLog,(Join-Path ($errorLog) '.old'))}
-  } else {
-    Write-ChocolateyFailure 'spotify' "$($_.Exception.Message)"
-    throw 
-  }
+  Write-ChocolateyFailure 'spotify' "$($_.Exception.Message)"
+  Reset-ChocoEnvironment
+  
+  throw 
 }
