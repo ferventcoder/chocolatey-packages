@@ -89,6 +89,15 @@
 		</actions>
 	</mouse>
 	<tabs>
+		<tab title="Powershell">
+			<console shell="%SystemRoot%\sysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir=""/>
+			<cursor style="0" r="255" g="255" b="255"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+		</tab>
 		<tab title="Git" icon="C:\Program Files (x86)\Git\etc\git.ico">
 			<console shell="C:\windows\SysWOW64\cmd.exe /c &quot;&quot;C:\Program Files (x86)\Git\bin\sh.exe&quot; --login -i&quot;" init_dir="d:\Code"/>
 			<cursor style="0" r="255" g="255" b="255"/>
@@ -118,15 +127,6 @@
 		</tab>
 		<tab title="Cygwin" icon="C:\cygwin\cygwin.ico">
 			<console shell="cmd /k C:\cygwin\cygwin.bat  " init_dir=""/>
-			<cursor style="0" r="255" g="255" b="255"/>
-			<background type="0" r="0" g="0" b="0">
-				<image file="" relative="0" extend="0" position="0">
-					<tint opacity="0" r="0" g="0" b="0"/>
-				</image>
-			</background>
-		</tab>
-		<tab title="Powershell">
-			<console shell="%SystemRoot%\sysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir=""/>
 			<cursor style="0" r="255" g="255" b="255"/>
 			<background type="0" r="0" g="0" b="0">
 				<image file="" relative="0" extend="0" position="0">
