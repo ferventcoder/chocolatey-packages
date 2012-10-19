@@ -14,7 +14,7 @@ try {
   $url = 'http://rubyforge.org/frs/download.php/75848/rubyinstaller-1.9.3-p125.exe'
 
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
-  $silentArgs = "/silent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""
+  $silentArgs = "/verysilent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""
 
   Install-ChocolateyPackage 'ruby' 'exe' "$silentArgs" "$url"
 
