@@ -34,6 +34,7 @@
         <dependency id="libjpeg-turbo" version="1.2.1" />
         <dependency id="OptiPNG" version="0.7.1" />
         <dependency id="PhantomJS" version="1.6.1" />
+        <dependency id="python" />
     </dependencies>
   </metadata>
   <files>
