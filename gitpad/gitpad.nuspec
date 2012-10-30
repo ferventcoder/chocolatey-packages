@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>gitpad</id>
+    <title>GitPad</title>
+    <version>1.2</version>
+    <authors>Paul Betts</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>GitPad - Use Your Favorite Editor for Git</summary>
+    <description>GitPad - This single executable allows you to use Notepad as your editor any time Git requires one (commits, interactive rebase, etc).</description>
+    <projectUrl>https://github.com/github/gitpad</projectUrl>
+    <tags>gitpad git</tags>
+    <licenseUrl>https://github.com/github/gitpad</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="msysgit"/>
+    </dependencies>
+    <!--<releaseNotes></releaseNotes>-->
+  </metadata>
+</package>

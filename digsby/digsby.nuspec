@@ -2,17 +2,19 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>digsby</id>
-    <title>digsby</title>
-    <version>0.91.30088</version>
+    <title>Digsby</title>
+    <version>0.91.30192</version>
     <authors>Digsby</authors>
     <owners>Rob Reynolds</owners>
     <summary>Digsby - IM, Email, and Social Networks in one easy to use application!</summary>
-    <description>digsby is a multiprotocol IM client that lets you chat with all your friends on AIM, MSN, Yahoo, ICQ, Google Talk, and Jabber with one simple to manage buddy list. digsby is an email notification tool that alerts you of new email and lets you perform actions such as 'Delete' or 'Report Spam' with just one click. digsby is a social networking tool that alerts you of events like new messages and gives you a live Newsfeed of what your friends are up to.  
-| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description>digsby is a multiprotocol IM client that lets you chat with all your friends on AIM, MSN, Yahoo, ICQ, Google Talk, and Jabber with one simple to manage buddy list. digsby is an email notification tool that alerts you of new email and lets you perform actions such as 'Delete' or 'Report Spam' with just one click. digsby is a social networking tool that alerts you of events like new messages and gives you a live Newsfeed of what your friends are up to.</description>
     <projectUrl>http://www.digsby.com/</projectUrl>
-    <tags>digsby im chocolatey admin notSilent</tags>
+    <tags>digsby im admin</tags>
     <!--<licenseUrl></licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/digsby/digsby.gif</iconUrl>
+    <dependencies>
+      <dependency id="autoit.commandline" />
+    </dependencies>
   </metadata>
 </package>

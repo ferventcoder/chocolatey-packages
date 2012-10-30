@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>ussf</id>
+    <title>Universal Silent Switch Finder</title>
+    <version>1.5.0</version>
+    <authors>Kelsenellenelvian</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Universal Silent Switch Finder - A simple and handy application that can find the silent install command.</summary>
+    <description>Universal Silent Switch Finder is a small and easy to use application that will find and activate the silent installer command on various application.
+
+The application has a simple interface that will easily guide you through the whole process.</description>
+    <projectUrl>http://www.softpedia.com/get/System/Launchers-Shutdown-Tools/Universal-Silent-Switch-Finder.shtml</projectUrl>
+    <tags>ussf silent switch finder</tags>
+    <copyright>WPIW.net</copyright>
+    <!--<licenseUrl>__REPLACE__</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
+    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/ussf/ussf.gif</iconUrl>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+</package>

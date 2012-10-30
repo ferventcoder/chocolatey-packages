@@ -1,0 +1,1 @@
+﻿Install-ChocolateyPackage 'typescript.vs' 'msi' '/quiet' 'http://download.microsoft.com/download/2/F/F/2FFA1FBA-97CA-4FFB-8ED7-A4AE06398948/TypeScriptSetup.0.8.0.msi' -validExitCodes @(0)

@@ -3,14 +3,14 @@
   <metadata>
     <id>sysinternals</id>
     <title>Sysinternals</title>
-    <version>1.2011.12.15</version>
+    <version>1.2012.05.14</version>
     <authors>Mark Russinovich, Bryce Cogswell</authors>
     <owners>Rob Reynolds</owners>
     <summary>Sysinternals - utilities to help you manage, troubleshoot and diagnose your Windows systems and applications.</summary>
     <description>The Sysinternals Troubleshooting Utilities have been rolled up into a single suite of tools. This file contains the individual troubleshooting tools and help files. It does not contain non-troubleshooting tools like the BSOD Screen Saver or NotMyFault
-|Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    </description>
     <projectUrl>http://technet.microsoft.com/en-us/sysinternals/bb842062</projectUrl>
-    <tags>sysinternals troubleshooting pstools psexec file disk utilities tools chocolatey</tags>
+    <tags>sysinternals troubleshooting pstools psexec file disk utilities tools</tags>
     <licenseUrl>http://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>

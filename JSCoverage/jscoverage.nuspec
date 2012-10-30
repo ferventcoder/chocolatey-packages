@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>jscoverage</id>
+    <title>JSCoverage</title>
+    <version>0.5.1</version>
+    <authors>Silicon Forks</authors>
+    <owners>Ethan Brown, Rob Reynolds</owners>
+    <summary>JSCoverage is a tool that measures code coverage for JavaScript programs.</summary>
+    <description>JSCoverage is a tool that measures code coverage for JavaScript programs.
+
+    Code coverage statistics show which lines of a program have been executed (and which have been missed). This information is useful for constructing comprehensive test suites (hence, it is often called test coverage).
+
+    JSCoverage works by instrumenting the JavaScript code used in web pages. Code coverage statistics are collected while the instrumented JavaScript code is executed in a web browser.
+
+    JSCoverage supports the complete language syntax described in the ECMAScript Language Specification (ECMA-262, 3rd edition). JSCoverage works with any modern standards-compliant web browser - including Internet Explorer (IE 6, 7, and 8), Firefox, Opera, Safari, and Google Chrome - on Microsoft Windows and GNU/Linux.
+</description>
+    <projectUrl>http://siliconforks.com/jscoverage/</projectUrl>
+    <tags>javascript testing coverage</tags>
+    <licenseUrl>http://siliconforks.com/jscoverage/license.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!-- <iconUrl></iconUrl> -->
+  </metadata>
+</package>

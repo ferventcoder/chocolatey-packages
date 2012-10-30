@@ -3,17 +3,17 @@
   <metadata>
     <id>lessmsi</id>
     <title>LessMSI</title>
-    <version>1.0.8</version>
+    <version>1.0.8.20120225</version>
     <authors>Scott Willeke</authors>
     <owners>Rob Reynolds</owners>
     <summary>LessMSI - Easily extract the contents of an MSI</summary>
     <description>LessMSI is a utility with a graphical user interface and a command line interface that can be used to view and extract the contents of an MSI file. For Windows.
 Usage on the command line: lessmsi [/x msiFileName [outDir]] 
 </description>
+    <tags>msi extract extraction</tags>
     <projectUrl>http://code.google.com/p/lessmsi/</projectUrl>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>msi extraction chocolatey</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
   </metadata>
 </package>

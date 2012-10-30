@@ -1,1 +1,0 @@
-﻿Install-ChocolateyPackage 'vlc' 'exe' '/S' 'http://downloads.sourceforge.net/project/vlc/1.1.11/win32/vlc-1.1.11-win32.exe?r=http%3A%2F%2Fwww.videolan.org%2Fvlc%2F&ts=1323059614&use_mirror=superb-sea2'

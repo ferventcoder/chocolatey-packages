@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>crank</id>
+    <title>crank</title>
+    <version>0.5.0</version>
+    <authors>David Fowler, Damian Edwards</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Crank is a load testing tool for SignalR.</summary>
+    <description>Crank is a load testing tool for SignalR.</description>
+    <projectUrl>https://github.com/SignalR/crank</projectUrl>
+    <tags>crank load testing</tags>
+    <licenseUrl>https://github.com/SignalR/crank</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes></releaseNotes>
+  </metadata>
+</package>

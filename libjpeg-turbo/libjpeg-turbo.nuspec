@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>libjpeg-turbo</id>
+    <title>libjpeg-turbo</title>
+    <version>1.2.1</version>
+    <authors>Darrell Commander</authors>
+    <owners>Ethan Brown, Rob Reynolds</owners>
+    <summary>libjpeg-turbo is a derivative of libjpeg that uses SIMD instructions (MMX, SSE2, NEON) to accelerate baseline JPEG compression and decompression on x86, x86-64, and ARM systems. On such systems, libjpeg-turbo is generally 2-4x as fast as the unmodified version of libjpeg, all else being equal.  Adds to PATH</summary>
+    <description>libjpeg-turbo is a derivative of libjpeg that uses SIMD instructions (MMX, SSE2, NEON) to accelerate baseline JPEG compression and decompression on x86, x86-64, and ARM systems. On such systems, libjpeg-turbo is generally 2-4x as fast as the unmodified version of libjpeg, all else being equal.
+
+libjpeg-turbo was originally based on libjpeg/SIMD by Miyasaka Masaru, but the TigerVNC and VirtualGL projects made numerous enhancements to the codec in 2009, including improved support for Mac OS X, 64-bit support, support for 32-bit and big-endian pixel formats (RGBX, XBGR, etc.), accelerated Huffman encoding/decoding, and various bug fixes. The goal was to produce a fully open-source codec that could replace the partially closed-source TurboJPEG/IPP codec used by VirtualGL and TurboVNC. libjpeg-turbo generally achieves 80-120% of the performance of TurboJPEG/IPP. It is faster in some areas but slower in others.
+    </description>
+    <projectUrl>http://libjpeg-turbo.virtualgl.org/</projectUrl>
+    <tags>libjpeg-turbo JPEG compression</tags>
+    <copyright>Darrell Commander 2010-2012</copyright>
+    <licenseUrl>http://opensource.org/licenses/bsd-license.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl></iconUrl>-->
+    <releaseNotes>A build issue encountered when using YASM on Unix systems was fixed. An out-of-bounds read in the SSE2 SIMD code was fixed. New colorspace extension constants that allow applications to specify that the unused byte in a 4-byte RGB buffer should be treated as an alpha channel when decompressing were added. A regression issue encountered when building DevIL with libjpeg-turbo was fixed. iOS support was added to the libjpeg-turbo SDK for Mac</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>

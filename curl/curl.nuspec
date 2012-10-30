@@ -3,16 +3,58 @@
   <metadata>
     <id>curl</id>
     <title>cURL</title>
-    <version>7.23.1</version>
+    <version>7.25.0</version>
     <authors>cURL Contributors, Dirk Paehl</authors>
     <owners>Rob Reynolds</owners>
     <summary>cURL groks those URLs</summary>
-    <description>curl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks. 
-| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description>cUrl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks. </description>
     <projectUrl>http://curl.haxx.se/</projectUrl>
-    <tags>curl URL download</tags>
+    <tags>curl URL ssh ssl download</tags>
     <licenseUrl>http://curl.haxx.se/docs/copyright.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/curl/curl.png</iconUrl>
+    <releaseNotes>
+This release includes the following changes:
+
+ o configure: add option disable --libcurl output [1]
+ o --ssl-allow-beast and CURLOPT_SSL_OPTIONS added [2]
+ o Added CURLOPT_TCP_KEEPALIVE, CURLOPT_TCP_KEEPIDLE, CURLOPT_TCP_KEEPINTVL [4]
+ o curl: use new library-side TCP_KEEPALIVE options [5]
+ o Added a new CURLOPT_MAIL_AUTH option [13]
+ o Added support for --mail-auth [14]
+ o --libcurl now also works with -F and more! [15]
+
+This release includes the following bugfixes:
+
+ o --max-redirs: allow negative numbers as option value [3]
+ o parse_proxy: bail out on zero-length proxy names [6]
+ o configure: don't modify LD_LIBRARY_PATH for cross compiles [7]
+ o curl_easy_reset: reset the referer string [8]
+ o curl tool: don't abort glob-loop due to failures [9]
+ o CONNECT: send correct Host: with IPv6 numerical address [10]
+ o Explicitly link to the nettle/gcrypt libraries [11]
+ o more resilient connection times among IP addresses [12]
+ o winbuild: fix IPV6 and IDN options
+ o SMTP: Fixed error when using CURLOPT_CONNECT_ONLY
+ o cyassl: update to CyaSSL 2.0.x API
+ o smtp: Fixed an issue with the EOB checking
+ o pop3: Fixed drop of final CRLF in EOB checking [16]
+ o smtp: Fixed an issue with writing postdata
+ o smtp: Added support for returning SMTP response codes
+ o CONNECT: fix ipv6 address in the Request-Line [17]
+ o curl-config: only provide libraries with --libs
+ o LWIP: don't consider HAVE_ERRNO_H to be winsock [19]
+ o ssh: tunnel through HTTP proxy if requested
+ o cookies: strip off [brackets] from numerical ipv6 host names [20]
+ o libcurl docs: version corrections [18]
+ o cmake: list_spaces_append_once failure [22]
+ o resolve with c-ares: don't resolve IPv6 when not working [21]
+ o smtp: changed error code for EHLO and HELO responses
+ o parsedate: fix a numeric overflow
+
+This release includes the following known bugs:
+
+ o see docs/KNOWN_BUGS (http://curl.haxx.se/docs/knownbugs.html)
+    </releaseNotes>
   </metadata>
 </package>

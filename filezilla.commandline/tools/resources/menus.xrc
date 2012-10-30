@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwindows.org/wxxrc">
+  <object class="wxMenuBar" name="ID_MENUBAR" subclass="CMenuBar">
+    <object class="wxMenu">
+      <label>&amp;File</label>
+      <object class="wxMenuItem" name="ID_MENU_FILE_SITEMANAGER">
+        <label>&amp;Site Manager...</label>
+        <accel>CTRL+S</accel>
+        <help>Opens the Site Manager</help>
+      </object>
+      <object class="wxMenuItem" name="ID_MENU_FILE_COPYSITEMANAGER">
+        <label>&amp;Copy current connection to Site Manager...</label>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="ID_MENU_FILE_NEWTAB">
+        <label>New &amp;tab</label>
+        <accel>CTRL+T</accel>
+        <help>Opens a new tab</help>
+      </object>
+      <object class="wxMenuItem" name="ID_MENU_FILE_CLOSETAB">
+        <label>Cl&amp;ose tab</label>
+        <accel>CTRL+W</accel>
+        <help>Closes current tab</help>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="ID_EXPORT">
+        <label>&amp;Export...</label>
+      </object>
+      <object class="wxMenuItem" name="ID_IMPORT">
+        <label>&amp;Import...</label>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="ID_MENU_FILE_EDITED">
+        <label>S&amp;how files currently being edited...</label>
+        <accel>CTRL+E</accel>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="wxID_EXIT">
+        <label>E&amp;xit</label>
+        <help>Close FileZilla</help>
+        <accel>CTRL+Q</accel>
+      </object>
+    </object>
+    <object class="wxMenu">
+      <label>&amp;Edit</label>
+      <object class="wxMenuItem" name="ID_MENU_EDIT_NETCONFWIZARD">
+        <label>&amp;Network configuration wizard...</label>
+      </object>
+      <object class="wxMenuItem" name="ID_MENU_EDIT_CLEARPRIVATEDATA">
+        <label>&amp;Clear private data...</label>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="wxID_PREFERENCES">
+        <label>&amp;Settings...</label>
+        <help>Open the settings dialog of FileZilla</help>
+      </object>
+    </object>
+    <object class="wxMenu">
+      <label>&amp;View</label>
+      <object class="wxMenuItem" name="ID_REFRESH">
+        <label>&amp;Refresh</label>
+        <accel>F5</accel>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="ID_MENU_VIEW_FILTERS">
+        <label>Filename &amp;filters...</label>
+        <accel>CTRL+I</accel>
+      </object>
+      <object class="wxMenu" name="">
+        <label>&amp;Directory comparison</label>
+        <object class="wxMenuItem" name="ID_TOOLBAR_COMPARISON">
+          <label>&amp;Enable</label>
+          <checkable>1</checkable>
+          <accel>CTRL+O</accel>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="ID_COMPARE_SIZE">
+          <label>Compare file&amp;size</label>
+          <radio>1</radio>
+        </object>
+        <object class="wxMenuItem" name="ID_COMPARE_DATE">
+          <label>Compare &amp;modification time</label>
+          <radio>1</radio>
+        </object>
+        <object class="separator"/>
+        <object class="wxMenuItem" name="ID_COMPARE_HIDEIDENTICAL">
+          <label>&amp;Hide identical files</label>
+          <checkable>1</checkable>
+        </object>
+      </object>
+      <object class="wxMenuItem" name="ID_TOOLBAR_SYNCHRONIZED_BROWSING">
+        <label>S&amp;ynchronized browsing</label>
+        <checkable>1</checkable>
+        <accel>CTRL+Y</accel>
+      </object>
+      <object class="wxMenuItem" name="ID_MENU_VIEW_FILELISTSTATUSBAR">
+        <label>Filelist status &amp;bars</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="ID_VIEW_TOOLBAR">
+        <label>T&amp;oolbar</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_VIEW_QUICKCONNECT">
+        <label>&amp;Quickconnect bar</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_VIEW_MESSAGELOG">
+        <label>&amp;Message log</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_VIEW_LOCALTREE">
+        <label>&amp;Local directory tree</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_VIEW_REMOTETREE">
+        <label>R&amp;emote directory tree</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_VIEW_QUEUE">
+        <label>&amp;Transfer queue</label>
+        <checkable>1</checkable>
+      </object>
+    </object>
+    <object class="wxMenu" name="ID_MENU_TRANSFER">
+      <label>&amp;Transfer</label>
+      <object class="wxMenuItem" name="ID_MENU_TRANSFER_PROCESSQUEUE">
+        <label>Process &amp;Queue</label>
+        <checkable>1</checkable>
+        <accel>CTRL+P</accel>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="ID_MENU_TRANSFER_FILEEXISTS">
+        <label>&amp;Default file exists action...</label>
+      </object>
+      <object class="wxMenu" name="ID_MENU_TRANSFER_TYPE">
+        <label>Transfer &amp;type</label>
+        <object class="wxMenuItem" name="ID_MENU_TRANSFER_TYPE_AUTO">
+          <label>&amp;Auto</label>
+          <radio>1</radio>
+        </object>
+        <object class="wxMenuItem" name="ID_MENU_TRANSFER_TYPE_ASCII">
+          <label>A&amp;SCII</label>
+          <radio>1</radio>
+        </object>
+        <object class="wxMenuItem" name="ID_MENU_TRANSFER_TYPE_BINARY">
+          <label>&amp;Binary</label>
+          <radio>1</radio>
+        </object>
+      </object>
+      <object class="wxMenuItem" name="ID_MENU_TRANSFER_PRESERVETIMES">
+        <label>&amp;Preserve timestamps of transferred files</label>
+        <checkable>1</checkable>
+        <accel>CTRL+U</accel>
+      </object>
+      <object class="wxMenu">
+        <object class="wxMenuItem" name="ID_MENU_TRANSFER_SPEEDLIMITS_ENABLE">
+          <label>&amp;Enable</label>
+          <checkable>1</checkable>
+        </object>
+        <object class="wxMenuItem" name="ID_MENU_TRANSFER_SPEEDLIMITS_CONFIGURE">
+          <label>&amp;Configure...</label>
+        </object>
+        <label>&amp;Speed limits</label>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="ID_MENU_TRANSFER_MANUAL">
+        <label>&amp;Manual transfer...</label>
+        <accel>CTRL+M</accel>
+      </object>
+    </object>
+    <object class="wxMenu" name="ID_MENU_SERVER">
+      <label>&amp;Server</label>
+      <object class="wxMenuItem" name="ID_CANCEL">
+        <label>C&amp;ancel current operation</label>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="ID_MENU_SERVER_RECONNECT">
+        <label>&amp;Reconnect</label>
+        <accel>CTRL+R</accel>
+      </object>
+      <object class="wxMenuItem" name="ID_MENU_SERVER_DISCONNECT">
+        <label>&amp;Disconnect</label>
+        <accel>CTRL+D</accel>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="ID_MENU_SERVER_SEARCH">
+        <label>&amp;Search remote files...</label>
+        <help>Search server for files</help>
+        <accel>F3</accel>
+      </object>
+      <object class="wxMenuItem" name="ID_MENU_SERVER_CMD">
+        <label>Enter &amp;custom command...</label>
+        <help>Send custom command to the server otherwise not available</help>
+      </object>
+      <object class="wxMenuItem" name="ID_MENU_SERVER_VIEWHIDDEN">
+        <label>Force showing &amp;hidden files</label>
+        <checkable>1</checkable>
+      </object>
+    </object>
+    <object class="wxMenu" name="ID_MENU_BOOKMARKS">
+      <label>&amp;Bookmarks</label>
+      <object class="wxMenuItem" name="ID_BOOKMARK_ADD">
+        <label>&amp;Add bookmark...</label>
+        <accel>CTRL+B</accel>
+      </object>
+      <object class="wxMenuItem" name="ID_BOOKMARK_MANAGE">
+        <label>&amp;Manage bookmarks...</label>
+        <accel>CTRL+SHIFT+B</accel>
+      </object>
+    </object>
+    <object class="wxMenu">
+      <label platform="mac">?</label>
+      <label platform="win|unix">&amp;Help</label>
+      <object class="wxMenuItem" name="ID_CHECKFORUPDATES">
+        <label>Check for &amp;updates...</label>
+        <help>Check for newer versions of FileZilla</help>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="ID_MENU_HELP_WELCOME">
+        <label>Show &amp;welcome dialog...</label>
+      </object>
+      <object class="wxMenuItem" name="ID_MENU_HELP_GETTINGHELP">
+        <label>&amp;Getting help...</label>
+      </object>
+      <object class="wxMenuItem" name="ID_MENU_HELP_BUGREPORT">
+        <label>&amp;Report a bug...</label>
+      </object>
+      <object class="separator" platform="win|unix"/>
+      <object class="wxMenuItem" name="wxID_ABOUT">
+        <label>&amp;About...</label>
+        <help>Display about dialog</help>
+      </object>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_LOCALFILELIST">
+    <object class="wxMenuItem" name="ID_UPLOAD">
+      <label>&amp;Upload</label>
+      <bitmap stock_id="ART_UPLOAD"/>
+      <help>Upload selected files and directories</help>
+    </object>
+    <object class="wxMenuItem" name="ID_ADDTOQUEUE">
+      <label>&amp;Add files to queue</label>
+      <bitmap stock_id="ART_UPLOADADD"/>
+      <help>Add selected files and folders to the transfer queue</help>
+    </object>
+    <object class="wxMenuItem" name="ID_ENTER">
+      <label>E&amp;nter directory</label>
+      <help>Enter selected directory</help>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_OPEN">
+      <label>&amp;Open</label>
+      <help>Open the file.</help>
+    </object>
+    <object class="wxMenuItem" name="ID_EDIT">
+      <label>&amp;Edit</label>
+      <help>Edit the file with the configured editor and upload changes to the server.</help>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_MKDIR">
+      <label>&amp;Create directory</label>
+      <help>Create a new subdirectory in the current directory</help>
+    </object>
+    <object class="wxMenuItem" name="ID_CONTEXT_REFRESH">
+      <label>Re&amp;fresh</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_DELETE">
+      <label>&amp;Delete</label>
+      <help>Delete selected files and directories</help>
+    </object>
+    <object class="wxMenuItem" name="ID_RENAME">
+      <label>&amp;Rename</label>
+      <help>Rename selected files and directories</help>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_REMOTEFILELIST">
+    <object class="wxMenuItem" name="ID_DOWNLOAD">
+      <label>&amp;Download</label>
+      <bitmap stock_id="ART_DOWNLOAD"/>
+      <help>Download selected files and directories</help>
+    </object>
+    <object class="wxMenuItem" name="ID_ADDTOQUEUE">
+      <label>&amp;Add files to queue</label>
+      <bitmap stock_id="ART_DOWNLOADADD"/>
+      <help>Add selected files and folders to the transfer queue</help>
+    </object>
+    <object class="wxMenuItem" name="ID_ENTER">
+      <label>E&amp;nter directory</label>
+      <help>Enter selected directory</help>
+    </object>
+    <object class="wxMenuItem" name="ID_EDIT">
+      <label>&amp;View/Edit</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_MKDIR">
+      <label>&amp;Create directory</label>
+      <help>Create a new subdirectory in the current directory</help>
+    </object>
+    <object class="wxMenuItem" name="ID_CONTEXT_REFRESH">
+      <label>Re&amp;fresh</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_DELETE">
+      <label>D&amp;elete</label>
+      <help>Delete selected files and directories</help>
+    </object>
+    <object class="wxMenuItem" name="ID_RENAME">
+      <label>&amp;Rename</label>
+      <help>Rename selected files and directories</help>
+    </object>
+    <object class="wxMenuItem" name="ID_GETURL">
+      <label>C&amp;opy URL(s) to clipboard</label>
+      <help>Copy the URLs of the selected items to clipboard.</help>
+    </object>
+    <object class="wxMenuItem" name="ID_CHMOD">
+      <label>&amp;File permissions...</label>
+      <help>Change the file permissions.</help>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_QUEUE">
+    <object class="wxMenuItem" name="ID_PROCESSQUEUE">
+      <label>Process &amp;Queue</label>
+      <checkable>1</checkable>
+    </object>
+    <object class="wxMenuItem" name="ID_REMOVEALL">
+      <label>Stop and remove &amp;all</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_REMOVE">
+      <label>&amp;Remove selected</label>
+    </object>
+    <object class="wxMenuItem" name="ID_DEFAULT_FILEEXISTSACTION">
+      <label>&amp;Default file exists action...</label>
+    </object>
+    <object class="wxMenu" name="ID_PRIORITY">
+      <label>Set &amp;Priority</label>
+      <object class="wxMenuItem" name="ID_PRIORITY_HIGHEST">
+        <label>&amp;Highest</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_PRIORITY_HIGH">
+        <label>H&amp;igh</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_PRIORITY_NORMAL">
+        <label>&amp;Normal</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_PRIORITY_LOW">
+        <label>&amp;Low</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_PRIORITY_LOWEST">
+        <label>L&amp;owest</label>
+        <checkable>1</checkable>
+      </object>
+    </object>
+    <object class="wxMenu" name="ID_ACTIONAFTER">
+      <label>Action after queue &amp;completion</label>
+      <object class="wxMenuItem" name="ID_ACTIONAFTER_CLOSE">
+        <label>&amp;Close FileZilla</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_ACTIONAFTER_DISCONNECT">
+        <label>&amp;Disconnect from server</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_ACTIONAFTER_RUNCOMMAND">
+        <label>&amp;Run command...</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_ACTIONAFTER_SHOWMESSAGE">
+        <label>&amp;Show message</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_ACTIONAFTER_PLAYSOUND">
+        <label>&amp;Play sound</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_ACTIONAFTER_REBOOT" platform="win">
+        <label>R&amp;eboot system</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="wxMenuItem" name="ID_ACTIONAFTER_SHUTDOWN" platform="win">
+        <label>S&amp;hutdown system</label>
+        <checkable>1</checkable>
+      </object>
+      <object class="separator"/>
+      <object class="wxMenuItem" name="ID_ACTIONAFTER_DISABLE">
+        <label>Do &amp;nothing</label>
+        <checkable>1</checkable>
+      </object>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_LOG">
+    <object class="wxMenuItem" name="ID_MENU_SERVER_CMD">
+      <label>&amp;Enter custom command...</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_COPYTOCLIPBOARD">
+      <label>&amp;Copy to clipboard</label>
+    </object>
+    <object class="wxMenuItem" name="ID_CLEARALL">
+      <label>C&amp;lear all</label>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_DEBUG">
+    <object class="wxMenuItem" name="ID_CLEARCACHE_LAYOUT">
+      <label>Clear &amp;layout cache</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_COALESCER_CLEAR">
+      <label>Clear string coalescer</label>
+    </object>
+    <object class="wxMenuItem" name="ID_COALESCER_BENCHMARK">
+      <label>Benchmark string coalescer</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_CRASH">
+      <label>&amp;Crash</label>
+      <help>Crashes FileZilla instantly. Only used to debug the exception handler</help>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_QUEUE_FAILED">
+    <object class="wxMenuItem" name="ID_REMOVEALL">
+      <label>Remove &amp;all</label>
+    </object>
+    <object class="wxMenuItem" name="ID_REQUEUEALL">
+      <label>&amp;Reset and requeue all</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_REMOVE">
+      <label>Remove &amp;selected</label>
+    </object>
+    <object class="wxMenuItem" name="ID_REQUEUE">
+      <label>R&amp;eset and requeue selected files</label>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_QUEUE_SUCCESSFUL">
+    <object class="wxMenuItem" name="ID_REMOVEALL">
+      <label>Remove &amp;all</label>
+    </object>
+    <object class="wxMenuItem" name="ID_REQUEUEALL">
+      <label>Reset and requeue &amp;all</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_REMOVE">
+      <label>Remove &amp;selected</label>
+    </object>
+    <object class="wxMenuItem" name="ID_REQUEUE">
+      <label>R&amp;eset and requeue selected files</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_AUTOCLEAR">
+      <label>A&amp;utomatically remove successful transfers</label>
+      <checkable>1</checkable>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_REMOTETREE">
+    <object class="wxMenuItem" name="ID_DOWNLOAD">
+      <label>&amp;Download</label>
+      <bitmap stock_id="ART_DOWNLOAD"/>
+      <help>Download selected directory</help>
+    </object>
+    <object class="wxMenuItem" name="ID_ADDTOQUEUE">
+      <label>&amp;Add to queue</label>
+      <bitmap stock_id="ART_DOWNLOADADD"/>
+      <help>Add selected directory to the transfer queue</help>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_MKDIR">
+      <label>&amp;Create directory</label>
+      <help>Create a new subdirectory in the current directory</help>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_DELETE">
+      <label>D&amp;elete</label>
+      <help>Delete selected directory</help>
+    </object>
+    <object class="wxMenuItem" name="ID_RENAME">
+      <label>&amp;Rename</label>
+      <help>Rename selected directory</help>
+    </object>
+    <object class="wxMenuItem" name="ID_GETURL">
+      <label>C&amp;opy URL(s) to clipboard</label>
+      <help>Copy the URLs of the selected items to clipboard.</help>
+    </object>
+    <object class="wxMenuItem" name="ID_CHMOD">
+      <label>&amp;File Attributes...</label>
+      <help>Change the file permissions.</help>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_TOOLBAR_COMPARISON_DROPDOWN">
+    <label>Directory comparison</label>
+    <object class="wxMenuItem" name="ID_TOOLBAR_COMPARISON">
+      <label>&amp;Enable</label>
+      <checkable>1</checkable>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_COMPARE_SIZE">
+      <label>Compare file&amp;size</label>
+      <radio>1</radio>
+    </object>
+    <object class="wxMenuItem" name="ID_COMPARE_DATE">
+      <label>Compare &amp;modification time</label>
+      <radio>1</radio>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_COMPARE_HIDEIDENTICAL">
+      <label>&amp;Hide identical files</label>
+      <checkable>1</checkable>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_LOCALTREE">
+    <object class="wxMenuItem" name="ID_UPLOAD">
+      <label>&amp;Upload</label>
+      <bitmap stock_id="ART_UPLOAD"/>
+      <help>Upload selected directory</help>
+    </object>
+    <object class="wxMenuItem" name="ID_ADDTOQUEUE">
+      <label>&amp;Add to queue</label>
+      <bitmap stock_id="ART_UPLOADADD"/>
+      <help>Add selected directory to the transfer queue</help>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_OPEN">
+      <label>&amp;Open</label>
+      <help>Open directory in system's file manager</help>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_MKDIR">
+      <label>&amp;Create directory</label>
+      <help>Create a new subdirectory in the current directory</help>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_DELETE">
+      <label>&amp;Delete</label>
+      <help>Delete selected directory</help>
+    </object>
+    <object class="wxMenuItem" name="ID_RENAME">
+      <label>&amp;Rename</label>
+      <help>Rename selected directory</help>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_SITEMANAGER">
+    <object class="wxMenuItem" name="ID_EXPORT">
+      <label>&amp;Export...</label>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_TRANSFER_TYPE_CONTEXT">
+    <object class="wxMenuItem" name="ID_MENU_TRANSFER_TYPE_AUTO">
+      <label>&amp;Auto</label>
+      <radio>1</radio>
+    </object>
+    <object class="wxMenuItem" name="ID_MENU_TRANSFER_TYPE_ASCII">
+      <label>A&amp;SCII</label>
+      <radio>1</radio>
+    </object>
+    <object class="wxMenuItem" name="ID_MENU_TRANSFER_TYPE_BINARY">
+      <label>&amp;Binary</label>
+      <radio>1</radio>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_SEARCH">
+    <object class="wxMenuItem" name="ID_MENU_SEARCH_DOWNLOAD">
+      <label>&amp;Download...</label>
+    </object>
+    <object class="wxMenuItem" name="ID_MENU_SEARCH_DELETE">
+      <label>D&amp;elete</label>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_TABCONTEXT">
+    <object class="wxMenuItem" name="ID_TABCONTEXT_NEW">
+      <label>&amp;Create new tab</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_TABCONTEXT_CLOSE">
+      <label>Cl&amp;ose tab</label>
+    </object>
+    <object class="wxMenuItem" name="ID_TABCONTEXT_CLOSEOTHERS">
+      <label>Close &amp;all other tabs</label>
+    </object>
+    <object class="separator"/>
+    <object class="wxMenuItem" name="ID_TABCONTEXT_REFRESH">
+      <label>&amp;Refresh</label>
+    </object>
+  </object>
+  <object class="wxMenu" name="ID_MENU_SPEEDLIMITCONTEXT">
+    <object class="wxMenuItem" name="ID_SPEEDLIMITCONTEXT_ENABLE">
+      <label>&amp;Enable</label>
+      <checkable>1</checkable>
+    </object>
+    <object class="wxMenuItem" name="ID_SPEEDLIMITCONTEXT_CONFIGURE">
+      <label>&amp;Configure speed limits...</label>
+    </object>
+  </object>
+</resource>

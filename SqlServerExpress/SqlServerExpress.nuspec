@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>SqlServerExpress</id>
+    <title>SQL Server Express</title>
+    <version>10.0</version>
+    <authors>Microsoft</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Microsoft SQL Server Express is a free edition of SQL Server ideal for developing and powering desktop, web and small server applications.</summary>
+    <description>Microsoft SQL Server Express - Microsoft SQL Server is a complete set of enterprise-ready technologies and tools that help people derive the most value from information at the lowest total-cost-of-ownership. Enjoy high levels of performance, availability, and security; employ more productive management and application development tools; and deliver pervasive insight with self-service business intelligence (BI).  
+|  NOTE: This will fail if you don't have the correct version of Visual C++ 2008 SP1 installed.
+    </description>
+    <projectUrl>http://www.microsoft.com/sqlserver/en/us/editions/express.aspx</projectUrl>
+    <tags>Sql Server Express database sqlserver admin notsilent</tags>
+    <copyright>Microsoft</copyright>
+    <!--<licenseUrl>__REPLACE__</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/SqlServerExpress/sqlserverexpress.gif</iconUrl>
+    <!--<dependencies>
+      <dependency id="visualcplusplus2008sp1" />
+    </dependencies>-->
+  </metadata>
+</package>

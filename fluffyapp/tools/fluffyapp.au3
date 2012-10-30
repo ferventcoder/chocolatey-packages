@@ -2,7 +2,6 @@ Opt('WinDetectHiddenText', 1)
 ;Path and filename of the installer executable
 $APPTOINSTALL="""" & $CmdLine[1] & """"
 
-; Run Dropbox installer
 Run($APPTOINSTALL & " /SILENT", "", @SW_HIDE)
 If @error <> 0  Then 
 	MsgBox(0, "Run failed", "The ""Run"" command failed for " & $APPTOINSTALL & " /SILENT - exiting", 5)

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<resource version="2.3.0.1" xmlns="http://www.wxwindows.org/wxxrc">
+  <object class="wxToolBar" name="ID_TOOLBAR" subclass="CToolBar">
+    <style>wxTB_FLAT|wxTB_DOCKABLE|wxTB_HORIZONTAL</style>
+    <bitmapsize>16,16</bitmapsize>
+    <object class="separator" platform="win"/>
+    <object class="tool" name="ID_TOOLBAR_SITEMANAGER">
+      <bitmap stock_id="ART_SITEMANAGER"></bitmap>
+      <longhelp>Open the Site Manager</longhelp>
+      <tooltip>Open the Site Manager</tooltip>
+    </object>
+    <object class="separator"/>
+    <object class="tool" name="ID_TOOLBAR_LOGVIEW">
+      <bitmap stock_id="ART_LOGVIEW"></bitmap>
+      <longhelp>Toggles the display of the message log</longhelp>
+      <toggle>1</toggle>
+      <tooltip>Toggles the display of the message log</tooltip>
+    </object>
+    <object class="tool" name="ID_TOOLBAR_LOCALTREEVIEW">
+      <bitmap stock_id="ART_LOCALTREEVIEW"></bitmap>
+      <longhelp>Toggles the display of the local directory tree</longhelp>
+      <toggle>1</toggle>
+      <tooltip>Toggles the display of the local directory tree</tooltip>
+    </object>
+    <object class="tool" name="ID_TOOLBAR_REMOTETREEVIEW">
+      <bitmap stock_id="ART_REMOTETREEVIEW"></bitmap>
+      <longhelp>Toggles the display of the remote directory tree</longhelp>
+      <toggle>1</toggle>
+      <tooltip>Toggles the display of the remote directory tree</tooltip>
+    </object>
+    <object class="tool" name="ID_TOOLBAR_QUEUEVIEW">
+      <bitmap stock_id="ART_QUEUEVIEW"></bitmap>
+      <longhelp>Toggles the display of the transfer queue</longhelp>
+      <toggle>1</toggle>
+      <tooltip>Toggles the display of the transfer queue</tooltip>
+    </object>
+    <object class="separator"/>
+    <object class="tool" name="ID_TOOLBAR_REFRESH">
+      <bitmap stock_id="ART_REFRESH"></bitmap>
+      <longhelp>Refresh the file and folder lists</longhelp>
+      <tooltip>Refresh the file and folder lists</tooltip>
+    </object>
+    <object class="tool" name="ID_TOOLBAR_PROCESSQUEUE">
+      <bitmap stock_id="ART_PROCESSQUEUE"></bitmap>
+      <longhelp>Toggles processing of the transfer queue</longhelp>
+      <tooltip>Toggles processing of the transfer queue</tooltip>
+      <toggle>1</toggle>
+    </object>
+    <object class="tool" name="ID_TOOLBAR_CANCEL">
+      <bitmap stock_id="ART_CANCEL"></bitmap>
+      <longhelp>Cancel current operation</longhelp>
+      <tooltip>Cancels the current operation</tooltip>
+    </object>
+    <object class="tool" name="ID_TOOLBAR_DISCONNECT">
+      <bitmap stock_id="ART_DISCONNECT"></bitmap>
+      <longhelp>Disconnect from server</longhelp>
+      <tooltip>Disconnects from the currently visible server</tooltip>
+    </object>
+    <object class="tool" name="ID_TOOLBAR_RECONNECT">
+      <bitmap stock_id="ART_RECONNECT"></bitmap>
+      <longhelp>Reconnects to the last used server</longhelp>
+      <tooltip>Reconnects to the last used server</tooltip>
+    </object>
+    <object class="separator"/>
+    <object class="tool" name="ID_TOOLBAR_FILTER">
+      <bitmap stock_id="ART_FILTER"></bitmap>
+      <longhelp>Filter the directory listings</longhelp>
+      <toggle>1</toggle>
+      <tooltip>Opens the directory listing filter dialog. Right-click to toggle filters.</tooltip>
+    </object>
+    <object class="tool" name="ID_TOOLBAR_COMPARISON">
+      <bitmap stock_id="ART_COMPARE"></bitmap>
+      <toggle>1</toggle>
+      <tooltip>Toggle directory comparison. Right-click to change comparison mode.\n\nColors:\nYellow: File only exists on one side\nGreen: File is newer than the unmarked file on other side\nRed: File sizes different</tooltip>
+      <longhelp>Directory comparison</longhelp>
+    </object>
+    <object class="tool" name="ID_TOOLBAR_SYNCHRONIZED_BROWSING">
+      <bitmap stock_id="ART_SYNCHRONIZE"></bitmap>
+      <toggle>1</toggle>
+      <tooltip>Toggle synchronized browsing.\nIf enabled, navigating the local directory hierarchy will also change the directory on the server accordingly and vice versa.</tooltip>
+      <longhelp>Synchronized browsing</longhelp>
+    </object>
+    <object class="tool" name="ID_TOOLBAR_FIND">
+      <bitmap stock_id="ART_FIND"></bitmap>
+      <tooltip>Search for files recursively.</tooltip>
+      <longhelp>File search</longhelp>
+    </object>
+  </object>
+</resource>

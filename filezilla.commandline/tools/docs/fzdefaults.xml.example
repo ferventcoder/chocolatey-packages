@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!-- fzdefaults.xml documentation
+
+  The file fzdefaults.xml is used to provide system-wide default settings for
+  FileZilla.
+
+  Usage:
+
+    - Windows:
+
+      Put the file fzdefaults.xml into the same directory as filezilla.exe
+
+    - OS X:
+
+      Modify the app bundle, put fzdefaults.xml into the
+      Contents/SharedSupport/ subdirectory
+
+    - Other:
+
+      Put fzdefaults.xml into one of the following directories (in order of precedence):
+
+      - ~/.filezilla
+      - /etc/filezilla
+      - share/filezilla subdirectory of the install prefix.
+
+  Default site manager entries:
+
+    Create some new Site Manager entries and export the list of sites. Rename
+    the resulting XML file to fzdefaults.xml or copy the <Servers> block in it
+    to fzdefaults.xml. See example below.
+
+  Global configuration settings
+
+    Location of settings directory:
+
+      By default, FileZilla stores its settings in the user's home directory. If
+      you want to change this location, modify the "Config Location" setting (see
+      below).
+
+      "Config Location" either accepts absolute paths or paths relative to the
+      location of fzdefaults.xml
+      You can also use environment variables by preceding them with the dollar
+      sign, e.g. "$HOME/foo".
+      Use $$ to denote a path containing dollar signs, e.g. "c:\$$foobar\" if
+      settings should be located in "c:\$foobar".
+      A single dot denotes the directory containing fzdefaults.xml
+
+    Kiosk mode
+
+      If the "Kiosk mode" setting is set to 1, FileZilla will not write any
+      passwords to disk. If set to 2, FileZilla will not write to any
+      configuration file. The latter is useful if FileZilla gets executed from
+      read-only media.
+
+    Disable update check
+
+      If the "Disable update check" setting is set to 1, the capability to
+      check for new FileZilla versions will be completely disabled.
+
+-->
+
+<FileZilla3>
+    <Settings>
+      <Setting name="Config Location">$SOMEDIR/filezilla/</Setting>
+      <Setting name="Kiosk mode">0</Setting>
+      <Setting name="Disable update check">0</Setting>
+    </Settings>
+    <Servers>
+        <Server>
+            <Host>ftp.gnu.org</Host>
+            <Port>21</Port>
+            <Protocol>0</Protocol>
+            <Type>0</Type>
+            <Logontype>0</Logontype>
+            <User>anonymous</User>
+            <Pass>someone@example.com</Pass>
+            <TimezoneOffset>0</TimezoneOffset>
+            <PasvMode>MODE_DEFAULT</PasvMode>
+            <MaximumMultipleConnections>0</MaximumMultipleConnections>
+            <EncodingType>Auto</EncodingType>
+            <Comments></Comments>
+            <LocalDir></LocalDir>
+            <RemoteDir></RemoteDir>Primary GNU download server
+        </Server>
+    </Servers>
+</FileZilla3>

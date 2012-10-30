@@ -2,17 +2,16 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>kdiff3</id>
-    <title>kdiff3</title>
-    <version>0.9.95.1</version>
+    <title>KDiff3</title>
+    <version>0.9.97</version>
     <authors>Joachim Eibl</authors>
     <owners>Chris Ortman</owners>
-    <summary>Diff / Merge tool</summary>
-    <description>kdiff3 
-| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <summary>KDiff3 - graphical text difference analyzer (Diff / Merge tool)</summary>
+    <description>KDiff3 is a graphical text difference analyzer for up to 3 input files, provides character-by-character analysis and a text merge tool with integrated editor. It can also compare and merge directories. Platform-independant.</description>
     <projectUrl>http://kdiff3.sourceforge.net/</projectUrl>
-    <tags>kdiff3 chocolatey admin</tags>
+    <tags>kdiff3 diff diffing merge difference admin</tags>
     <licenseUrl>http://kdiff3.sourceforge.net/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>32x32.png</iconUrl>-->
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/kdiff3/kdiff3.png</iconUrl>
   </metadata>
 </package>

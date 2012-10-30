@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>jing</id>
+    <title>Jing</title>
+    <version>2.6.12032.1</version>
+    <authors>TechSmith</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Jing - Record your screen</summary>
+    <description>Simple and FREE, Jing is the perfect way to enhance your fast-paced online conversations. Create images and videos of what you see on your computer screen, then share them instantly!</description>
+    <projectUrl>http://www.techsmith.com/jing.html</projectUrl>
+    <tags>jing record screen admin</tags>
+    <copyright>TechSmith</copyright>
+    <licenseUrl>http://www.techsmith.com/jing.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes></releaseNotes>
+  </metadata>
+</package>

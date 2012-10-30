@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>wcat</id>
+    <title>Web Capacity Analysis Tool (WCAT)</title>
+    <version>6.4.0</version>
+    <authors>Microsoft</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Web Capacity Analysis Tool (WCAT) is a lightweight HTTP load generation tool.</summary>
+    <description>Web Capacity Analysis Tool (WCAT) is a lightweight HTTP load generation tool primarily designed to measure the performance of a web server within a controlled environment.  WCAT can simulate thousands of concurrent users making requests to a single web site or multiple web sites.  The WCAT engine uses a simple script to define the set of HTTP requests to be played back to the web server. Extensibility is provided through plug-in DLLs and a standard, simple API.</description>
+    <projectUrl>http://www.iis.net/community/default.aspx?tabid=34&amp;g=6&amp;i=1466</projectUrl>
+    <tags>wcat web capacity analysis tool load testing admin</tags>
+    <copyright></copyright>
+    <licenseUrl>http://www.iis.net/community/default.aspx?tabid=34&amp;g=6&amp;i=1466</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes></releaseNotes>
+  </metadata>
+</package>

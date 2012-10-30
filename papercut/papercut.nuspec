@@ -3,7 +3,7 @@
   <metadata>
     <id>papercut</id>
     <title>Papercut</title>
-    <version>2010.3.3.1</version>
+    <version>2010.3.3.20120225</version>
     <authors>krobertson</authors>
     <owners>Rob Reynolds</owners>
     <summary>Papercut - Simplified SMTP server to test email for .NET</summary>

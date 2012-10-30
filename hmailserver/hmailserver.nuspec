@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>hmailserver</id>
+    <title>hMailServer</title>
+    <version>5.3.3.1879</version>
+    <authors>hMailServer Contributors</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>hMailServer is a free e-mail server for Microsoft Windows</summary>
+    <description>hMailServer is a free e-mail server for Microsoft Windows. It's used by Internet service providers, companies, governments, schools and enthusiasts in all parts of the world. 
+
+It supports the common e-mail protocols (IMAP, SMTP and POP3) and can easily be integrated with many existing web mail systems. It has flexible score-based spam protection and can attach to your virus scanner to scan all incoming and outgoing email.</description>
+    <projectUrl>http://www.hmailserver.com</projectUrl>
+    <tags>hmail mail server smtp pop3 admin</tags>
+    <licenseUrl>http://www.hmailserver.com/documentation/v5.3/index.php?page=information_copyright</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+</package>
