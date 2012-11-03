@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>deskspace</id>
+    <title>DeskSpace</title>
+    <version>1.5.8.13</version>
+    <authors>Okatu Software</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>DeskSpace - Organize Your Desktop with DeskSpace</summary>
+    <description>DeskSpace is virtual desktop software that gives you more space for your windows and icons. You can eliminate desktop clutter by arranging your windows and icons across up to six desktops, all easily reachable by navigating a desktop cube.
+
+DeskSpace gives you separate desktops for each of your day-to-day tasks, and lets you quickly and easily switch between desktops and the applications on them.
+
+DeskSpace lets you have different desktop wallpapers and icons on each desktop. You can also choose a name and picture for each desktop, to make them easier to recognize.
+
+DeskSpace runs on low-end netbooks, high-end desktops, and everything in-between. You can run DeskSpace on up to nine monitors, and it works on both 32-bit and 64-bit versions of Windows XP, Windows Vista, Windows 7, and Windows 8.</description>
+    <projectUrl>http://www.otakusoftware.com/deskspace/</projectUrl>
+    <tags>deskspace cube desktop desktops admin</tags>
+    <licenseUrl>http://www.otakusoftware.com/deskspace/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/deskspace/deskspace.gif</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>
