@@ -4,14 +4,14 @@ try {
   ### Using an environment variable to to define the bin root until we implement YAML configuration ###
   if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
 
-  $rubyFolder = '187'
-  $url = 'http://rubyforge.org/frs/download.php/76277/rubyinstaller-1.8.7-p370.exe'
+  #$rubyFolder = '187'
+  #$url = 'http://rubyforge.org/frs/download.php/76524/rubyinstaller-1.8.7-p371.exe'
 
   #$rubyFolder = '192'
   #$url = 'http://rubyforge.org/frs/download.php/75127/rubyinstaller-1.9.2-p290.exe'
 
-  #$rubyFolder = '193'
-  #$url = 'http://rubyforge.org/frs/download.php/76054/rubyinstaller-1.9.3-p194.exe'
+  $rubyFolder = '193'
+  $url = 'http://cdn.rubyinstaller.org/archives/1.9.3-p327/rubyinstaller-1.9.3-p327.exe'
 
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
   $silentArgs = "/verysilent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""
