@@ -9,8 +9,9 @@ $installDir = Split-Path -Parent (Get-ItemProperty HKLM:\SOFTWARE\Wow6432Node\Mi
 # special batch files we want to create
 $diffExeIgnore = Join-Path $installDir "diff.exe.ignore"
 $uninstallExeIgnore = Join-Path $installDir "uninstall.exe.ignore"
+$xxdExeIgnore = Join-Path $installDir "xxd.exe.ignore"
 $gvimExeGui = Join-Path $installDir "gvim.exe.gui"
 
-New-Item $diffExeIgnore,$uninstallExeIgnore,$gvimExeGui -Type File -Force | Out-Null
+New-Item $diffExeIgnore,$uninstallExeIgnore,$xxdExeIgnore,$gvimExeGui -Type File -Force | Out-Null
 Get-ChocolateyBins $installDir
-Remove-Item $diffExeIgnore,$uninstallExeIgnore,$gvimExeGui
+Remove-Item $diffExeIgnore,$uninstallExeIgnore,$xxdExeIgnore,$gvimExeGui
