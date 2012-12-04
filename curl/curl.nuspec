@@ -3,8 +3,8 @@
   <metadata>
     <id>curl</id>
     <title>cURL</title>
-    <version>7.25.0</version>
-    <authors>cURL Contributors, Dirk Paehl</authors>
+    <version>7.28.1</version>
+    <authors>cURL Contributors, Guenter Knauf</authors>
     <owners>Rob Reynolds</owners>
     <summary>cURL groks those URLs</summary>
     <description>cUrl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks. </description>
@@ -16,45 +16,51 @@
     <releaseNotes>
 This release includes the following changes:
 
- o configure: add option disable --libcurl output [1]
- o --ssl-allow-beast and CURLOPT_SSL_OPTIONS added [2]
- o Added CURLOPT_TCP_KEEPALIVE, CURLOPT_TCP_KEEPIDLE, CURLOPT_TCP_KEEPINTVL [4]
- o curl: use new library-side TCP_KEEPALIVE options [5]
- o Added a new CURLOPT_MAIL_AUTH option [13]
- o Added support for --mail-auth [14]
- o --libcurl now also works with -F and more! [15]
+ * metalink/md5: Use CommonCrypto on Apple operating systems
+ * href_extractor: new example code extracting href elements
+ * NSS can be used for metalink hashing [13]
 
 This release includes the following bugfixes:
 
- o --max-redirs: allow negative numbers as option value [3]
- o parse_proxy: bail out on zero-length proxy names [6]
- o configure: don't modify LD_LIBRARY_PATH for cross compiles [7]
- o curl_easy_reset: reset the referer string [8]
- o curl tool: don't abort glob-loop due to failures [9]
- o CONNECT: send correct Host: with IPv6 numerical address [10]
- o Explicitly link to the nettle/gcrypt libraries [11]
- o more resilient connection times among IP addresses [12]
- o winbuild: fix IPV6 and IDN options
- o SMTP: Fixed error when using CURLOPT_CONNECT_ONLY
- o cyassl: update to CyaSSL 2.0.x API
- o smtp: Fixed an issue with the EOB checking
- o pop3: Fixed drop of final CRLF in EOB checking [16]
- o smtp: Fixed an issue with writing postdata
- o smtp: Added support for returning SMTP response codes
- o CONNECT: fix ipv6 address in the Request-Line [17]
- o curl-config: only provide libraries with --libs
- o LWIP: don't consider HAVE_ERRNO_H to be winsock [19]
- o ssh: tunnel through HTTP proxy if requested
- o cookies: strip off [brackets] from numerical ipv6 host names [20]
- o libcurl docs: version corrections [18]
- o cmake: list_spaces_append_once failure [22]
- o resolve with c-ares: don't resolve IPv6 when not working [21]
- o smtp: changed error code for EHLO and HELO responses
- o parsedate: fix a numeric overflow
+ * Fix broken libmetalink-aware OpenSSL build
+ * gnutls: fix the error is fatal logic [1]
+ * darwinssl: un-broke iOS build, fix error on server disconnect
+ * asyn-ares: restore functionality with c-ares less than 1.6.1 [2]
+ * tlsauthtype: deal with the string case insensitively [3]
+ * Fixed MSVC libssh2 static build
+ * evhiperfifo: fix the pointer passed to WRITEDATA [6]
+ * BUGS: fix the bug tracker URL [4]
+ * winbuild: Use machine type of development environment
+ * FTP: prevent the multi interface from blocking [5]
+ * uniformly use AM_CPPFLAGS, avoid deprecated INCLUDES
+ * httpcustomheader.c: free the headers after use
+ * fix >2000 bytes POST over NTLM-using proxy [7]
+ * redirects to URLs with fragments [8]
+ * don't send '#' fragments when using proxy [9]
+ * OpenSSL: show full issuer string [10]
+ * fix HTTP auth regression [11]
+ * CURLOPT_SSL_VERIFYHOST: stop supporting the 1 value [12]
+ * ftp: EPSV-disable fix over SOCKS [14]
+ * Digest: Add microseconds into nounce calculation [15]
+ * SCP/SFTP: improve error code used for send failures
+ * SSL: Several SSL-backend related fixes
+ * removed the notorious "additional stuff not fine" debug output
+ * OpenSSL: Disable SSL/TLS compression - avoid the "CRIME" attack
+ * FILE: Make upload-writes unbuffered
+ * custom memory callbacks failure with HTTP proxy (and more) [16]
+ * TFTP: handle resends
+ * autoconf: don't force-disable compiler debug option
+ * winbuild: Fix PDB file output [17]
+ * test2032: spurious failure caused by premature termination [18]
+ * memory leak: CURLOPT_RESOLVE with multi interface [19]
 
 This release includes the following known bugs:
 
- o see docs/KNOWN_BUGS (http://curl.haxx.se/docs/knownbugs.html)
+ * see docs/KNOWN_BUGS (http://curl.haxx.se/docs/knownbugs.html)
     </releaseNotes>
   </metadata>
+    <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
 </package>
