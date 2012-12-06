@@ -8,4 +8,3 @@ Install-ChocolateyPackage $packageName $fileType $args $url
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 
 Start-ChocolateyProcessAsAdmin (Join-Path $scriptDir 'chocolateyPostInstallUAC.ps1')
-

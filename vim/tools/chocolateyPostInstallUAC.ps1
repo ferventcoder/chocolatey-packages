@@ -10,9 +10,9 @@ if (-not(Test-Path $bindir -PathType Container)) { mkdir $bindir }
 Invoke-GenerateBinFile 'gvim' $installDir $binDir -UseStart 
 Invoke-GenerateBinFile 'vim' $installDir $binDir
 
-
-if(-not ($env:PATH.Split(';') -contains $binDir)) {
-  Write-Host "Adding $($binDir) to your path"
-  $env:PATH = "$($env:PATH);$binDir"
-  [Environment]::SetEnvironmentVariable('PATH', $env:PATH, [EnvironmentVariableTarget]::Machine)
+# Being safe in case your session path is not the same as the path in your registry
+$oldPath = [Environment]::GetEnvironmentVariable('PATH', [EnvironmentVariableTarget]::Machine)
+if(-not ($oldPath.Split(';') -contains $binDir)) {
+  Write-Host "Adding $($binDir) to your path in the registry"
+  [Environment]::SetEnvironmentVariable('PATH', "$($oldPath);$binDir", [EnvironmentVariableTarget]::Machine)
 }
