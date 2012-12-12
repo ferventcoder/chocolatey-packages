@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>PreCode.WLW</id>
+    <title>PreCode Code Snippet With Syntaxhighlighter Support (WindowsLiveWriter)</title>
+    <version>5.02</version>
+    <authors>FiftyEightBits</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>PreCode - 
+Code Snippet With Syntaxhighlighter Support for Windows Live Writer</summary>
+    <description>PreCode - A code snippet plugin for Windows Live Writer with support for Syntaxhighlighter as well as good support for snippet indentation.
+
+Updated Windows Live Writer plugin supports Syntaxhighlighter 2.0 and will add the required code class attributes when selected. This release supports SyntaxHighlighter 2.0. Note: Do NOT install this version unless you are ready to update your site to SyntaxHighlighter 2.0. Stay with the version 3.0.0 msi installer until you do. This release only supports SyntaxHighlighter 2.0 (although Alex has included scripts for legacy support for previous code postings).
+
+Now includes a standalone Windows desktop application so that you can paste formatted code snippets into other applications as well. Ideal for http://stackoverflow.com since the indentation options can be used to create a 4 space indent (CTRL-A to select all - and then >> to indent).</description>
+    <projectUrl>http://precode.codeplex.com</projectUrl>
+    <tags>PreCode code syntax highlighter SyntaxHighlighter WLW WindowsLiveWriter admin</tags>
+    <copyright></copyright>
+    <licenseUrl>http://precode.codeplex.com/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/PreCode.WLW/PreCode.WLW.gif</iconUrl>-->
+    <dependencies>
+      <dependency id="WindowsLiveWriter" version="2011.0.0" />
+    </dependencies>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>
