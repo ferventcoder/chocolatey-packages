@@ -3,7 +3,7 @@
   <metadata>
     <id>resharper</id>
     <title>ReSharper</title>
-    <version>7.1.25.234</version>
+    <version>7.1.1000.900</version>
     <authors>JetBrains</authors>
     <owners>Rob Reynolds</owners>
     <summary>ReSharper - The Most Intelligent Extension for Visual Studio</summary>
@@ -12,7 +12,7 @@
     
     During evaluation, Full Edition is activated by default but you can switch to another edition in the License Information dialog box (ReSharper | Help | License Information.)</description>
     <projectUrl>http://www.jetbrains.com/resharper</projectUrl>
-    <tags>resharper developer productivity tool vsix admin</tags>
+    <tags>resharper jetbrains developer productivity tool vsix admin</tags>
     <licenseUrl>http://www.jetbrains.com/resharper/buy/index.jsp</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/resharper/resharperlogo.png</iconUrl>
