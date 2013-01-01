@@ -2,8 +2,8 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>toggl</id>
-    <title>toggl</title>
-    <version>2.6.4.1</version>
+    <title>Toggl Desktop</title>
+    <version>4.75.0</version>
     <authors>Apprise LLC</authors>
     <owners>Rob Reynolds</owners>
     <summary>Toggl - Time Tracking that works</summary>
@@ -13,6 +13,6 @@
     <tags>toggl time tracking admin</tags>
     <licenseUrl>https://www.toggl.com/public/terms_of_service</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/toggl/toggl.gif</iconUrl>
+    <iconUrl>https://www.toggl.com/images/logo.png</iconUrl>
   </metadata>
 </package>
