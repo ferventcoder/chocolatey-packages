@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>aspnetmvc</id>
+    <version>3.0.0.2</version>
+    <title>ASP.NET MVC</title>
+    <authors>Microsoft Asp.Net Team</authors>
+    <owners>Rob Reynolds</owners>
+    <licenseUrl>http://aspnet.codeplex.com/license</licenseUrl>
+    <projectUrl>http://www.asp.net/mvc</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>ASP.NET MVC - This package has been deprecated in favor of aspnetmvc.install (and so there is not a naming conflict with the package on nuget.org).
+    
+    ASP.NET MVC is a free, fully supported Microsoft framework for developing great web applications using the Model-View-Controller pattern. It provides total control over your HTML and URLs, enables rich Ajax integration, and facilitates test driven development. To find out more information about ASP.NET MVC, visit the following resources: 
+
+The ASP.NET MVC site  site provides tutorials, quickstarts, and videos. (http://www.asp.net/mvc/)
+
+ASP.NET MVC Documentation on MSDN. (http://msdn.microsoft.com/en-us/library/dd394709.aspx) ]
+</description>
+    <summary>ASP.NET MVC is a free, fully supported Microsoft framework for developing great web applications using the Model-View-Controller pattern.</summary>
+    <tags>aspnetmvc asp.net mvc</tags>
+    <dependencies>
+      <dependency id="aspnetmvc.install" />
+    </dependencies>
+  </metadata>
+</package>
