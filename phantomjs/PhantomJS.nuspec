@@ -3,7 +3,7 @@
   <metadata>
     <id>PhantomJS</id>
     <title>PhantomJS</title>
-    <version>1.7.0</version>
+    <version>1.8.1</version>
     <authors>Ariya Hidayat, PhantomJS Committers</authors>
     <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>PhantomJS - Headless WebKit</summary>
@@ -13,39 +13,47 @@ No browser required
 PhantomJS is a headless WebKit with JavaScript API. It has fast and native support for various web standards: DOM handling, CSS selector, JSON, Canvas, and SVG.
 PhantomJS is created by Ariya Hidayat.
     </description>
-    <projectUrl>http://code.google.com/p/PhantomJS/</projectUrl>
-    <tags>PhantomJS webkit web browser testing</tags>
+    <projectUrl>http://phantomjs.org/</projectUrl>
+    <tags>PhantomJS javascript webkit web browser testing</tags>
     <licenseUrl>https://github.com/ariya/phantomjs/blob/master/LICENSE.BSD</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/phantomjs/PhantomJS.png</iconUrl>
-    <releaseNotes>2012-09-22: Version 1.7.0
+    <releaseNotes>2012-12-21: Version 1.8.1
 
-    New features
+New features
 
-      * Added a module system modelled after CommonJS/Node.js (issue 47)
-      * Added support for window pop-up (issue 151)
-      * Static build on Linux (issue 413)
-      * Added run-time detection of SSL support (issue 484)
-      * Added more events support (issue 492, 712)
-      * Added support for disabling automatic proxy detection (issue 580)
-      * Provided page closing callback (issue 678)
-      * Added methods to access URL, frames URL, frame Content (issue 758)
-      * Added more cookies-related API (issue 761)
+    * Integrated GhostDriver as the WebDriver implementation (issue 49)
+    * Added an option to specify the SSL protocol (issue 174)
+    * Added encoding support for WebServer's response (issue 505)
+    * Added process ID (PID) to the System module (issue 769)
+    * Added properties to obtain page and frame title (issue 799)
+    * Added page navigation methods (issue 808)
+    * Added a limit for authentication attempts (issue 826)
+    * Added support for modifier keys in keyboard events (issue 835)
+    * Added onFilePicker callback for more generic file upload API (issue 843)
+    * Added the ability to set the page content and location (issue 909)
 
-    Improvements
+Improvements
 
-      * Refactored command-line options handling (issue 55)
-      * Improved the workflow for producing release builds (issue 599)
-      * Improved cookies API and implementation (issue 603, 761)
-      * Improved frame switching API (issue 654)
-      * Fixed iframe handling regression (issue 683)
-      * Fixed OS version number with Windows 8 and Mountain Lion (issue 684, 688)
-      * Fixed HAR navigation info in the netsniff example (issue 733)
-      * Fixed compile warnings with Visual Studio (issue 744)
-      * Removed hacks for static linking on Windows (issue 753)
-      * Added ICO image handling on Windows (issue 779)
-      * Fixed font antialiasing on Windows (issue 785)
-      * Improved Jasmine test runner for Jasmine 1.2 (issue 792)
+    * Fixed date parsing in ISO8601 format (issue 187, 267)
+    * Fixed window.location (issue 530, 632)
+    * Deregistered multiple callback handler (issue 807)
+    * Fixed sending of double-click events (issue 848)
+    * Increases maximum number of redirects (issue 849)
+    * Fixed keycodes sent for lowercase characters (issue 852)
+    * Fixed a regression in table row page break (issue 880)
+    * Completed the CoffeeScript version of the examples (issue 907)
+    * Updated Qt to version 4.8.4 (issue 918)
+    * Fixed potential hang in some example scripts (issue 922)
+
+Fix in 1.8.1
+
+    * Mac OS X: Fix possible crash when using some TrueType fonts (issue 690)
+
+Known Issues on Microsoft Windows
+
+    * Very slow network performance. The workaround is to set proxy type to "none" (issue 580)
+    * Some graphics drivers may cause mysterious crash (issue 845)
     </releaseNotes>
   </metadata>
   <files>
