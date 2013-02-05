@@ -11,7 +11,7 @@ try {
   #$url = 'http://rubyforge.org/frs/download.php/75127/rubyinstaller-1.9.2-p290.exe'
 
   $rubyFolder = '193'
-  $url = 'http://cdn.rubyinstaller.org/archives/1.9.3-p327/rubyinstaller-1.9.3-p327.exe'
+  $url = 'http://cdn.rubyinstaller.org/archives/1.9.3-p374/rubyinstaller-1.9.3-p374.exe'
 
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
   $silentArgs = "/verysilent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""
