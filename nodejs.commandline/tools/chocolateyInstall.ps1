@@ -1,9 +1,23 @@
+$packageName = 'nodejs'
+$url = 'http://nodejs.org/dist/v{{PackageVersion}}/node.exe' # download url
+$url64 = 'http://nodejs.org/dist/v{{PackageVersion}}/x64/node.exe' # 64bit URL here or just use the same as $url
+
 try { 
-  $nodePath = Join-Path $(Split-Path -parent $MyInvocation.MyCommand.Definition) 'node.exe'
-  Get-ChocolateyWebFile 'nodejs' "$nodePath" '{{DownloadUrl}}'
-  
-  Write-ChocolateySuccess 'nodejs'
+  $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
+  ### For BinRoot, use the following instead ###
+  #$binRoot = "$env:systemdrive\tools"
+  ### Using an environment variable to to define the bin root until we implement configuration ###
+  #if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
+  #$installDir = Join-Path $binRoot "$packageName"
+  #Write-Host "Adding `'$installDir`' to the path and the current shell path"
+  #Install-ChocolateyPath "$installDir"
+  #$env:Path = "$($env:Path);$installDir"
+
+  $nodePath = Join-Path $installDir 'node.exe'
+  Get-ChocolateyWebFile "$packageName" "$nodePath" "$url" "$url64"
+
+  Write-ChocolateySuccess "$packageName"
 } catch {
-  Write-ChocolateyFailure 'nodejs' "$($_.Exception.Message)"
+  Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
   throw 
 }
