@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>php</id>
+    <title>PHP (Hypertext Preprocessor)</title>
+    <version>5.3.14</version>
+    <authors>PHP Authors</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>PHP - widely-used general-purpose scripting language that is especially suited for Web development and can be embedded into HTML.</summary>
+    <description>PHP is an HTML-embedded scripting language. Much of its syntax is borrowed from C, Java and Perl with a couple of unique PHP-specific features thrown in. The goal of the language is to allow web developers to write dynamically generated pages quickly.</description>
+    <projectUrl>http://www.php.net/</projectUrl>
+    <tags>php admin</tags>
+    <licenseUrl>http://us.php.net/license/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/php/php.gif</iconUrl>
+  </metadata>
+</package>

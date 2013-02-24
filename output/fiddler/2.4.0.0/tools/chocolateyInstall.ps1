@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'fiddler' 'exe' '/S' 'http://www.getfiddler.com/dl/Fiddler2Setup.exe'
