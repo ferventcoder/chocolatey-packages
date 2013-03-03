@@ -26,9 +26,9 @@ try {
   Install-ChocolateyPath $gitInstallDir 'user'
   Install-ChocolateyPath "$($gitInstallDir)\cmd" 'user'
   
-  Write-Host 'Making GIT core.autocrlf false'
-  #make GIT core.autocrlf false
-  & "$env:comspec" '/c git config --global core.autocrlf false'
+#  Write-Host 'Making GIT core.autocrlf false'
+#  #make GIT core.autocrlf false
+#  & "$env:comspec" '/c git config --global core.autocrlf false'
 
   Write-ChocolateySuccess 'git.commandline'
 } catch {

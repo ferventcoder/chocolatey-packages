@@ -9,13 +9,13 @@ try {
 
   Install-ChocolateyPath $gitPath 'user'
 
-@"
-
-Making GIT core.autocrlf false
-"@ | Write-Host
-
-  #make GIT core.autocrlf false
-  & "$env:comspec" '/c git config --global core.autocrlf false'
+#@"
+#
+#Making GIT core.autocrlf false
+#"@ | Write-Host
+#
+#  #make GIT core.autocrlf false
+#  & "$env:comspec" '/c git config --global core.autocrlf false'
 
   Write-ChocolateySuccess 'git.install'
 } catch {
