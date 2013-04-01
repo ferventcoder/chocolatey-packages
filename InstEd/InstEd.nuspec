@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>InstEd</id>
+    <title>InstEd (Install Edit)</title>
+    <version>1.5.15.26</version>
+    <authors>TNE Enterprises</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>InstEd is a free MSI editor built for professionals.</summary>
+    <description>InstEd is a free MSI editor built for professionals. InstEd makes working with files fast and easy. 
+  
+If you use Orca, you will love InstEd. If you use some of the more expensive tools, you may find that InstEd makes you more productive for the bread and butter packaging tasks.
+
+==Features==
+* Build cabs from the Media table. Right click a Media table entry to see the files belonging to that cab, or to rebuild the cab.
+* Multi-file editing using tabs. Built from the ground up to handle multiple files, everything from searching to validation can be applied to more than one file at a time.
+* Easy navigation. All relationships within the database are displayed and clickable for easy navigation.
+* Accurate editing. Changes to a field are optionally cascaded to all dependent fields. So, for example, renaming a component can have all references updated.
+* Change highlighting. All changes to an mst are highlighted. Msi files can be compared to highlight the differences. And by comparing an msi to itself while the msi is being edited, change tracking can be performed on an msi.
+* Easy validation. Validation profiles allow full flexibility to apply ICEs from more than one CUB to many files at once, allowing for easy Quality Assurance of many files at once.
+* Transform Chaining. See at a glance all the changes that a sequence of transforms make.</description>
+    <projectUrl>http://www.instedit.com/</projectUrl>
+    <tags>InstEd MSI editor edit install admin</tags>
+    <copyright>TNE Enterprises</copyright>
+    <!--<licenseUrl>__REPLACE__</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
+    <iconUrl>http://www.instedit.com/box-48x48.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes>
+==1.5.15.26==
+* Bug Fix: Changing tables when the focused field has an index larger than the new table's field count no longer crashes InstEd. Introduced with the only briefly available 1.5.14.25.
+==1.5.14.25==
+* Feature: Ships with validation files from the Windows SDK for Windows 8 Consumer Preview.
+* Feature: When pasting rows, there is now the option to specify which key field to modify to prevent duplicates.
+* Feature: Component table now has informational columns for target and source path.
+* Feature: Count of selected row is shown.
+* Feature: Context menu on a cell provides a Find function which initialises the Find dialog with that cell's value, Table and Column.
+* Usability: Doesn't fail when trying to change a string column's length in the schema editor to greater than 255.
+* Usability: Automatically adds the IniFile and Registry tables if they are missing when importing .reg and .ini files.
+* Usability: IniFile table rows added when importing a .ini file via the Components tab will now use the component's Directory_ entry rather than TARGETDIR.
+* Usability: Deleting a CustomAction entry will remove it from the sequence tables.
+* Usability: Information columns that contain file paths are sorted with files in a directory listed before subdirectories.
+* Usability: Sorting informational path columns on large msis takes about a quarter of the time.
+* Usability: Added an option to make external cabs available for external tool commands operating on an mst saved as an msi. In this way the external cabs accompany the temporary msi generated from the mst.
+* Usability: F1 in the Summary Info Stream dialog launches the msdn Sumary Information Property Description page in a browser window.
+* Usability: Empty tables are consistently hidden by default when a file is loaded.
+* Correctness: Files with no language will have a null Language value instead of 0 when updating the file details.
+* Bug Fix: File->Save As allows editing of the saved file without having to close and open it.
+* Bug Fix: Successfully opens msi's on Windows 8 Consumer Preview.</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>
