@@ -10,11 +10,11 @@ try {
   Write-Host "Adding `'$installDir`' to the path and the current shell path"
   Install-ChocolateyPath "$installDir"
   $env:Path = "$($env:Path);$installDir"
-  $zipUrl = 'http://phantomjs.googlecode.com/files/phantomjs-1.7.0-windows.zip'
+  $zipUrl = 'http://phantomjs.googlecode.com/files/phantomjs-1.8.1-windows.zip'
 
   Install-ChocolateyZipPackage $package "$zipUrl" "$installDir"
 
-  Copy-Item "$($installDir)\phantomjs-1.7.0-windows\*" "$installDir" -Force -Recurse
+  Copy-Item "$($installDir)\phantomjs-1.8.1-windows\*" "$installDir" -Force -Recurse
 
   Write-ChocolateySuccess $package
 } catch {

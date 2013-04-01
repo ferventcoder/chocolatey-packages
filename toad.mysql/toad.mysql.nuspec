@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>toad.mysql</id>
+    <title>Toad for MySQL</title>
+    <version>6.3.0.642</version>
+    <authors>Quest</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Toad for MySQL - Automate MySQL Development Tasks</summary>
+    <description>Toad for MySQL is a freeware development tool that enables you to rapidly create and execute queries, automate database object management, and develop SQL code more efficiently. It provides utilities to compare, extract, and search for objects; manage projects; import/export data; and administer the database. Toad for MySQL dramatically increases productivity and provides access to an active user community.</description>
+    <projectUrl>http://www.quest.com/toad-for-mysql/</projectUrl>
+    <tags>toad mysql database administration dba admin</tags>
+    <copyright>Quest and Oracle</copyright>
+    <!--<licenseUrl>__REPLACE__</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/toad.mysql/toad.mysql.gif</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

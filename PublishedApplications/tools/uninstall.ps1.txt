@@ -8,7 +8,7 @@
 
 #$targetImport = [System.IO.Path]::GetDirectoryName($project.Object.Project.FullName) + "\targets\Microsoft.Application.targets"
 $targetImport = ".\targets\Microsoft.Application.targets"
-Write-Host 'Adding msbuild import of '$targetImport ' to ' $project.Object.Project.Name
+Write-Host 'Removing msbuild import of '$targetImport ' to ' $project.Object.Project.Name
 
 [Reflection.Assembly]::LoadWithPartialName("Microsoft.Build")
 $vsProject = [Microsoft.Build.Construction.ProjectRootElement]::Open($project.Object.project.FullName)
