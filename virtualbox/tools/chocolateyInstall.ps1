@@ -9,4 +9,4 @@ if ($is64bit) {$programFiles = ${env:ProgramFiles(x86)}}
 $fsObject = New-Object -ComObject Scripting.FileSystemObject
 $programFiles = $fsObject.GetFolder("$programFiles").ShortPath
 
-Install-ChocolateyPath "$programfiles\Oracle\VirtualBox"
+Install-ChocolateyPath $(join-path $programFiles 'Oracle\VirtualBox')
