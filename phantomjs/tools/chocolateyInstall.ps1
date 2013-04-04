@@ -1,5 +1,6 @@
 try {
   $package = 'PhantomJS'
+  $version = '1.9.0'
 
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   ### For BinRoot, use the following instead ###
@@ -10,11 +11,11 @@ try {
   Write-Host "Adding `'$installDir`' to the path and the current shell path"
   Install-ChocolateyPath "$installDir"
   $env:Path = "$($env:Path);$installDir"
-  $zipUrl = 'http://phantomjs.googlecode.com/files/phantomjs-1.8.1-windows.zip'
+  $zipUrl = "https://phantomjs.googlecode.com/files/phantomjs-$version-windows.zip"
 
   Install-ChocolateyZipPackage $package "$zipUrl" "$installDir"
 
-  Copy-Item "$($installDir)\phantomjs-1.8.1-windows\*" "$installDir" -Force -Recurse
+  Copy-Item "$($installDir)\phantomjs-$version-windows\*" "$installDir" -Force -Recurse
 
   Write-ChocolateySuccess $package
 } catch {
