@@ -107,6 +107,15 @@
 				</image>
 			</background>
 		</tab>
+		<tab title="VS2012" use_default_icon="0">
+			<console shell="%comspec% /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\Tools\VsDevCmd.bat&quot;&quot;" init_dir="" run_as_user="0" user=""/>
+			<cursor style="0" r="255" g="255" b="255"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+		</tab>
 		<tab title="VS2010" icon="C:\Program Files (x86)\Microsoft Visual Studio 10.0\Setup\setup.ico">
 			<console shell="%comspec% /k &quot;&quot;C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat&quot;&quot; x86" init_dir="c:\code"/>
 			<cursor style="0" r="255" g="255" b="255"/>
