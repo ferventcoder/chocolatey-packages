@@ -10,7 +10,6 @@ try {
     % { Join-Path ([Environment]::GetFolderPath($_)) $dll} |
     # ensure we're trying to delete just a file (safety check)
     ? { (Test-Path $_) -and (!(Get-Item $_).PsIsContainer) } |
-    ? { Get-Item }
     % {
       Write-Host "Removing existing file $_"
       Remove-Item $_
