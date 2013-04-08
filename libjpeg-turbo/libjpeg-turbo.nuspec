@@ -3,7 +3,7 @@
   <metadata>
     <id>libjpeg-turbo</id>
     <title>libjpeg-turbo</title>
-    <version>1.2.1.20130404</version>
+    <version>1.2.1.20130408</version>
     <authors>D. R. Commander</authors>
     <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>libjpeg-turbo is a derivative of libjpeg that uses SIMD instructions (MMX, SSE2, NEON) to accelerate baseline JPEG compression and decompression on x86, x86-64, and ARM systems. On such systems, libjpeg-turbo is generally 2-4x as fast as the unmodified version of libjpeg, all else being equal.  Adds to PATH</summary>
@@ -18,10 +18,10 @@ libjpeg-turbo was originally based on libjpeg/SIMD by Miyasaka Masaru, but the T
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl></iconUrl>-->
     <releaseNotes>
-    A build issue encountered when using YASM on Unix systems was fixed. 
-    An out-of-bounds read in the SSE2 SIMD code was fixed. 
-    New colorspace extension constants that allow applications to specify that the unused byte in a 4-byte RGB buffer should be treated as an alpha channel when decompressing were added. 
-    A regression issue encountered when building DevIL with libjpeg-turbo was fixed. 
+    A build issue encountered when using YASM on Unix systems was fixed.
+    An out-of-bounds read in the SSE2 SIMD code was fixed.
+    New colorspace extension constants that allow applications to specify that the unused byte in a 4-byte RGB buffer should be treated as an alpha channel when decompressing were added.
+    A regression issue encountered when building DevIL with libjpeg-turbo was fixed.
     iOS support was added to the libjpeg-turbo SDK for Mac.
     </releaseNotes>
   </metadata>
