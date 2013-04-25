@@ -6,7 +6,7 @@
   $binRoot = "$env:systemdrive\"
 
   ### Using an environment variable to to define the bin root until we implement YAML configuration ###
-  if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
+  if($env:chocolatey_bin_root -ne $null -and $env:chocolatey_bin_root -notlike '*:\*'){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
   $pikPath = join-path $binRoot 'pik'
   
   $scriptDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
