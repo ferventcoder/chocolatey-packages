@@ -11,7 +11,6 @@
     <projectUrl>https://www.virtualbox.org/</projectUrl>
     <tags>virtualbox virtualization</tags>
     <licenseUrl>https://www.virtualbox.org/wiki/VirtualBox_PUEL</licenseUrl>
-    <iconUrl>http://upload.wikimedia.org/wikipedia/en/d/d5/Virtualbox_logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://upload.wikimedia.org/wikipedia/en/d/d5/Virtualbox_logo.png</iconUrl>
   </metadata>
