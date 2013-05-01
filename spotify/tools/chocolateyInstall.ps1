@@ -15,7 +15,7 @@ try{
   #rename-item function:Start-ChocolateyProcessAsAdmin Start-ChocolateyProcessAsAdmin-Hold
   #rename-item function:Start-ChocolateyProcessAsAdmin-Override Start-ChocolateyProcessAsAdmin
   
-  Install-ChocolateyPackage-Spotify 'spotify' 'exe' '/SILENT' 'http://download.spotify.com/Spotify%20Installer.exe'
+  Install-ChocolateyPackage-Spotify 'spotify' 'exe' '/SILENT' 'http://download.spotify.com/SpotifySetup.exe'
 
   $installerFile = Join-Path $scriptDir 'install.au3'
   write-host "Finishing spotify install with AutoIt3 using `'$installerFile`'"

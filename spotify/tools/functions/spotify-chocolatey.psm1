@@ -65,7 +65,6 @@ param(
   write-host "$packageName has been installed."
 }
 
-
 function Start-ChocolateyProcessAsAdmin-Spotify {
 param(
   [string] $statements, 
