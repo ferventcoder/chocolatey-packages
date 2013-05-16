@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>puppet-enterprise</id>
+    <title>Puppet Enterprise</title>
+    <version>2.8.1</version>
+    <authors>PuppetLabs</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Puppet Enterprise - IT automation software</summary>
+    <description>Puppet Enterprise is IT automation software that gives system administrators the power to easily automate repetitive tasks, quickly deploy critical applications, and proactively manage infrastructure, on-premise or in the cloud.</description>
+    <projectUrl>https://puppetlabs.com/puppet/puppet-enterprise/</projectUrl>
+    <tags>puppet enterprise discovery configuration config management automation provisioning cloud patch build release compliance admin</tags>
+    <copyright>PuppetLabs</copyright>
+    <licenseUrl>http://puppetlabs.com/licensing/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/puppet-enterprise/puppetlabs.png</iconUrl>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>
