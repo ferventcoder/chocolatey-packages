@@ -12,6 +12,6 @@
     <tags>php admin</tags>
     <licenseUrl>http://us.php.net/license/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/php/php.gif</iconUrl>
+    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/php/php.png</iconUrl>
   </metadata>
 </package>
