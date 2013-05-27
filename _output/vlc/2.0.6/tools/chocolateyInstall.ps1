@@ -1,4 +1,4 @@
-﻿Install-ChocolateyPackage 'vlc' 'exe' '/S' 'http://cdn.mirror.garr.it/mirror3/mirrors/videolan/vlc/{{PackageVersion}}/win32/vlc-{{PackageVersion}}-win32.exe' 
+﻿Install-ChocolateyPackage 'vlc' 'exe' '/S' 'http://cdn.mirror.garr.it/mirror3/mirrors/videolan/vlc/2.0.6/win32/vlc-2.0.6-win32.exe' 
 
 #http://cdn.mirror.garr.it/mirror3/mirrors/videolan/vlc/2.0.6/win32/vlc-2.0.6-win32.exe
 #'http://downloads.sourceforge.net/project/vlc/2.0.1/win32/vlc-2.0.1-win32.exe'
