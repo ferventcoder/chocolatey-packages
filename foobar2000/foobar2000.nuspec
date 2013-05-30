@@ -12,6 +12,6 @@
     <tags>foobar2000 media player admin</tags>
     <licenseUrl>http://www.foobar2000.org/?page=License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/TomOne/chocolateyautomaticpackages/master/foobar2000/foobarlogo.png</iconUrl>
+    <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/foobar2000/foobarlogo.png</iconUrl>
   </metadata>
 </package>
