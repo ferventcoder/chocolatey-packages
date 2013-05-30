@@ -1,6 +1,7 @@
 ﻿try { 
 
   npm install -g typescript
+  npm update -g typescript
   
   # the following is all part of error handling
   Write-ChocolateySuccess 'typescript'
