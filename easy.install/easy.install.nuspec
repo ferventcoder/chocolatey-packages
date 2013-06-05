@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>easy.install</id>
+    <title>Easy Install</title>
+    <version>0.6.11.3</version>
+    <authors>Phillip J. Eby</authors>
+    <owners>Elliando Dias</owners>
+    <summary>Easy Install is a python module (easy_install) bundled with setuptools that lets you automatically 
+	download, build, install, and manage Python packages</summary>
+    <description>Easy Install is a python module (easy_install) bundled with setuptools that lets you automatically 
+	download, build, install, and manage Python packages</description>
+    <projectUrl>http://pypi.python.org/pypi/setuptools</projectUrl>
+    <tags>easy_install python setuptools</tags>
+    <copyright>Copyright © 1990-2011, Python Software Foundation</copyright>
+    <licenseUrl>http://docs.python.org/license.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/adorepump/chocolatey-packages/raw/master/easy.install/python-logo.png</iconUrl>
+    <!-- <dependencies>
+      <dependency id=""/>
+    </dependencies> -->
+    <releaseNotes></releaseNotes>
+  </metadata>
+</package>
