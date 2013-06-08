@@ -1,5 +1,15 @@
+$packageName = 'mysql'
+$packageType = 'msi'
+$silentArgs = '/passive'
+$downloadUrl = "http://cdn.mysql.com/Downloads/MySQLInstaller/mysql-installer-community-{{PackageVersion}}.msi"
+
+#$downloadUrl64 = ""
+
+#http://www.mysql.com/get/Downloads/MySQL-5.5/mysql-{{PackageVersion}}-win32.msi/from/http://mysql.he.net/' 
+#'http://www.mysql.com/get/Downloads/MySQL-5.5/mysql-{{PackageVersion}}-winx64.msi/from/http://mysql.he.net/'
+
 try {
-  Install-ChocolateyPackage 'mysql' 'msi' '/passive' 'http://www.mysql.com/get/Downloads/MySQL-5.5/mysql-{{PackageVersion}}-win32.msi/from/http://mysql.he.net/' 'http://www.mysql.com/get/Downloads/MySQL-5.5/mysql-{{PackageVersion}}-winx64.msi/from/http://mysql.he.net/' 
+  Install-ChocolateyPackage "$packageName" "$packageType" "$silentArgs" "$downloadUrl" #"$downloadUrl64"
   
   #------- ADDITIONAL SETUP -------#
   #add it to the path
@@ -12,8 +22,8 @@ try {
   #turn on the service
   Start-Process -FilePath "NET" -ArgumentList 'START MySQL' -Wait -NoNewWindow
   
-  Write-ChocolateySuccess 'mysql'
+  Write-ChocolateySuccess "$packageName
 } catch {
-  Write-ChocolateyFailure 'mysql' $($_.Exception.Message)
+  Write-ChocolateyFailure "$packageName $($_.Exception.Message)
   throw 
 }
