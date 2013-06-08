@@ -1,21 +1,27 @@
-#Install-ChocolateyPackage 'dropbox' 'exe' '/S' 'https://www.dropbox.com/download?plat=win' # -validExitCodes @(0)
-try {
-  #based on http://wpkg.org/Dropbox
-  $scriptDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-  $installerFile = Join-Path $scriptDir 'dropbox.au3'
+﻿$packageName = "dropbox"
+$filePath = "$env:TEMP\chocolatey\$packageName"
+$fileFullPath = "$filePath\$packageName`Install.exe"
+$url = "https://www.dropbox.com/download?plat=win"
+$fileType = "exe"
+$silentArgs = "/S"
 
-  $tempDir = "$env:TEMP\chocolatey\dropbox"
-  if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
-  $file = Join-Path $tempDir "dropboxInstall.exe"
-  Get-ChocolateyWebFile 'dropbox' "$file" 'https://www.dropbox.com/download?plat=win'
-  
-  write-host "Installing `'$file`' with AutoIt3 using `'$installerFile`'"
-  $installArgs = "/c autoit3 `"$installerFile`" `"$file`""
-  Start-ChocolateyProcessAsAdmin "$installArgs" 'cmd.exe'
-  #Start-Process "autoit3" -ArgumentList "$installerFile `"$file`"" -Wait
+# Variables for the AutoHotkey-script
+$scriptPath="$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$ahkFile = "`"$scriptPath\dropbox.ahk`""
+$exeToRun = "$env:ProgramFiles\AutoHotkey\AutoHotkey.exe"
+ 
+try { 
+	if (-not (Test-Path $filePath)) {
+		New-Item $filePath -type directory
+	}
+	Get-ChocolateyWebFile $packageName $fileFullPath $url
+    Start-Process $exeToRun -Verb runas -ArgumentList $ahkFile
+	Start-Process $fileFullPath -ArgumentList $silentArgs
+	Wait-Process -Name "dropboxInstall"
+	Remove-Item $fileFullPath
 
-  Write-ChocolateySuccess 'dropbox'
+	Write-ChocolateySuccess $packageName
 } catch {
-  Write-ChocolateyFailure 'dropbox' "$($_.Exception.Message)"
-  throw 
-}
+	Write-ChocolateyFailure $packageName "$($_.Exception.Message)"
+	throw
+ }
