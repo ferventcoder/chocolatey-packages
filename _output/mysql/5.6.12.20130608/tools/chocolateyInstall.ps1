@@ -27,8 +27,18 @@ try {
   Install-ChocolateyPath "$installDirBin"
   $env:Path = "$($env:Path);$($installDirBin)"
   
-  Install-ChocolateyZipPackage "$packageName" "$url" "$installDir" "$url64"
+  #Install-ChocolateyZipPackage "$packageName" "$url" "$installDir" "$url64"
   
+  if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateDirectory($installDir)}
+  
+  $tempDir = "$env:TEMP\chocolatey\$($packageName)"
+  if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+
+  $file = Join-Path $tempDir "$($packageName).zip"
+  Get-ChocolateyWebFile "$packageName" "$file" "$url"
+
+  Start-Process "7za" -ArgumentList "x -o`"$installDir`" -y `"$file`" -xr!docs -xr!mysql-test -xr!sql-bench -xr!supportfiles" -Wait
+
   #find this directory
   $installedContentsDir = get-childitem $installDir -include 'mysql*' | Sort-Object -Property LastWriteTime -Desc | select -First 1
   #shut down service if running
