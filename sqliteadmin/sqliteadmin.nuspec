@@ -1,9 +1,9 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?> 
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>sqliteadmin</id>
     <title>SQLiteAdmin</title>
-    <version>0.8.3.2</version>
+    <version>0.8.3.3</version>
     <authors>Orbmu2k</authors>
     <owners>Rob Reynolds</owners>
     <summary>SQLite Admininistrator</summary>
@@ -11,5 +11,6 @@
     <projectUrl>http://sqliteadmin.orbmu2k.de/</projectUrl>
     <tags>sqlite sqliteadmin chocolatey</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<iconUrl>https://raw.github.com/ferventcoder/nugetpackages/master/sqlite.analyzer/sqlite.png</iconUrl>
   </metadata>
 </package>

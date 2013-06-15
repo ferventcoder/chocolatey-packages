@@ -1,18 +1,18 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?> 
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>toggl</id>
     <title>Toggl Desktop</title>
-    <version>4.75.0</version>
+    <version>4.75.0.20130615</version>
     <authors>Apprise LLC</authors>
     <owners>Rob Reynolds</owners>
-    <summary>Toggl - Time Tracking that works</summary>
-    <description>Toggl - Time Tracking that works
+    <summary>Toggl – Time Tracking that works</summary>
+    <description>Toggl – Time Tracking that works
 </description>
     <projectUrl>https://www.toggl.com/</projectUrl>
     <tags>toggl time tracking admin</tags>
     <licenseUrl>https://www.toggl.com/public/terms_of_service</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://www.toggl.com/images/logo.png</iconUrl>
+    <iconUrl>https://raw.github.com/ferventcoder/nugetpackages/master/toggl/toggl.png</iconUrl>
   </metadata>
 </package>
