@@ -6,7 +6,7 @@
   if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
 
   $file = Join-Path $tempDir "maxthon.commandline.7z"
-  Get-ChocolateyWebFile 'maxthon.commandline' "$file" 'http://dl.maxthon.com/mx3/maxthon_portable_3.3.9.2000.7z'
+  Get-ChocolateyWebFile 'maxthon.commandline' "$file" 'http://dl.maxthon.com/mx4/maxthon_portable_4.0.6.2000.7z'
 
   Start-Process "7za" -ArgumentList "x -o`"$installDir`" -y `"$file`"" -Wait
   
