@@ -3,7 +3,7 @@
   <metadata>
     <id>dropbox</id>
     <title>Dropbox</title>
-    <version>{{PackageVersion}}</version>
+    <version>2.0.26.20130618</version> 
     <authors>Dropbox</authors>
     <owners>Rob Reynolds</owners>
     <summary>Dropbox is a free service that lets you bring all your photos, docs, and videos anywhere.</summary>
