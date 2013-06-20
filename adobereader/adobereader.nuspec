@@ -11,6 +11,7 @@
     <projectUrl>http://www.adobe.com/products/reader.html</projectUrl>
     <tags>adobereader pdf reader admin</tags>
     <licenseUrl>http://www.adobe.com/products/eulas/pdfs/Reader10_combined-20100625_1419.pdf</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>	<iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/adobereader/adobereader.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/adobereader/adobereader.png</iconUrl>
   </metadata>
 </package>
