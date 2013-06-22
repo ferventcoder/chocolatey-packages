@@ -14,7 +14,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/gitextensions/gitextensions.png</iconUrl>
     <dependencies>
-      <dependency id="msysgit" />
+      <dependency id="git" />
     </dependencies>
   </metadata>
 </package>
