@@ -7,7 +7,7 @@
     <authors>Randy</authors>
     <owners>chrisortman</owners>
     <summary>sharpkeys</summary>
-    <description>sharpkeys Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description>sharpkeys</description>
     <projectUrl>http://www.randyrants.com/2008/12/sharpkeys_30.html</projectUrl>
     <tags>sharpkeys admin</tags>
     <licenseUrl>http://sharpkeys.codeplex.com/license</licenseUrl>

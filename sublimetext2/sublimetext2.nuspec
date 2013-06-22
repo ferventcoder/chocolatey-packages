@@ -10,7 +10,9 @@
     <id>sublimetext2</id>
     <title>Sublime Text 2</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Sublime Text 2 (beta) is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features. Sublime Text may be downloaded and evaluated for free, however a license must be purchased for continued use.| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey). This brings the Sublime Text portable version to your system</description>
+    <description>Sublime Text 2 (beta) is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features. Sublime Text may be downloaded and evaluated for free, however a license must be purchased for continued use.
+    
+    This brings the Sublime Text portable version to your system</description>
     <summary>Sublime Text 2 (beta) is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features.</summary>
     <tags>sublime text editor</tags>
   </metadata>

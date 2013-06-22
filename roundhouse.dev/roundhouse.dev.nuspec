@@ -7,8 +7,7 @@
     <authors>Rob Reynolds</authors>
     <owners>Rob Reynolds</owners>
     <summary>roundhouse.dev</summary>
-    <description>roundhouse.dev - This gets the roundhouse development environment up on your machine.
-| Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
+    <description>roundhouse.dev - This gets the roundhouse development environment up on your machine.</description>
     <projectUrl>https://github.com/chucknorris/roundhouse/wiki</projectUrl>
     <tags>roundhouse.dev notSilent</tags>
     <licenseUrl>https://github.com/chucknorris/roundhouse/blob/master/docs/legal/LICENSE</licenseUrl>
