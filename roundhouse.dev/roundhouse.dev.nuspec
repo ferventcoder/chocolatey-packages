@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/roundhouse.dev/roundhouse.dev.gif</iconUrl>-->
     <dependencies>
-      <dependency id="msysgit" />
+      <dependency id="git" />
     </dependencies>
   </metadata>
 </package>

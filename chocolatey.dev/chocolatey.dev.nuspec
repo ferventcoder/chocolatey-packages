@@ -14,7 +14,7 @@
     <tags>git chocolatey.dev dev notSilent</tags>
     <iconUrl>https://github.com/chocolatey/chocolatey/raw/master/docs/logo/chocolateyicon.gif</iconUrl>
     <dependencies>
-      <dependency id="msysgit" />
+      <dependency id="git" />
     </dependencies>
   </metadata>
 </package>
