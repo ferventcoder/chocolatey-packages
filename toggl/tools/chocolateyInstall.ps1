@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'toggl' 'msi' '/quiet' 'https://download.toggl.com/toggldesktop/edge/toggldesktop.msi' 
+Install-ChocolateyPackage 'toggl' 'msi' '/quiet' 'https://download.toggl.com/toggldesktop/latest/toggldesktop.msi' 

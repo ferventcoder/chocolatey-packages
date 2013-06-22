@@ -9,7 +9,7 @@
     <summary>roundhouse.dev</summary>
     <description>roundhouse.dev - This gets the roundhouse development environment up on your machine.</description>
     <projectUrl>https://github.com/chucknorris/roundhouse/wiki</projectUrl>
-    <tags>roundhouse.dev notSilent</tags>
+    <tags>roundhouse.dev roundhouse notSilent</tags>
     <licenseUrl>https://github.com/chucknorris/roundhouse/blob/master/docs/legal/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/roundhouse.dev/roundhouse.dev.gif</iconUrl>-->
