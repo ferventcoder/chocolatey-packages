@@ -13,7 +13,7 @@
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
         <summary>Virtual CloneDrive - Mount ISO Images</summary>
         <releaseNotes>Updated the signing certificate, it now expires in 2015.  Also include full certificate chain (Thus the need for the P7B certificate format)</releaseNotes>
-        <tags>Virtual CloneDrive ISO Drive chocolatey admin</tags>
+        <tags>Virtual CloneDrive ISO Drive admin</tags>
     </metadata>
     <files>
         <file src="tools\chocolateyInstall.ps1" target="tools\chocolateyInstall.ps1" />

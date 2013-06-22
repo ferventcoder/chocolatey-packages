@@ -13,7 +13,7 @@
     <projectUrl>http://papercut.codeplex.com/</projectUrl>
     <licenseUrl>http://papercut.codeplex.com/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <tags>dummy smtp papercut chocolatey</tags>
+    <tags>dummy smtp papercut</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
   </metadata>
 </package>

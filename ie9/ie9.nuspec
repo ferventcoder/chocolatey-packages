@@ -9,7 +9,7 @@
     <summary>IE9 - Explore a more beautiful web (Windows 7)</summary>
     <description>IE9 - Explore a more beautiful web (Windows 7 only)</description>
     <projectUrl>http://ie.microsoft.com/testdrive/</projectUrl>
-    <tags>internet explorer ie9 chocolatey notSilent admin</tags>
+    <tags>internet explorer ie9 notSilent admin</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
   </metadata>
 </package>

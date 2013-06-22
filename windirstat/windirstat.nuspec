@@ -10,7 +10,7 @@
     <description>WinDirStat is a disk usage statistics viewer and cleanup tool for Microsoft Windows. 
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://windirstat.info</projectUrl>
-    <tags>windirstat disk usage chocolatey admin</tags>
+    <tags>windirstat disk usage admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>

@@ -18,6 +18,6 @@ improvements, and much more!  It also includes the work of five Google
 Summer of Code interns who worked full time with Nmap mentors during
 the summer.</releaseNotes>
     <copyright>Copyright 1996-2013</copyright>
-    <tags>chocolatey nmap portscanner network infosec</tags>
+    <tags>nmap portscanner network infosec</tags>
   </metadata>
 </package>

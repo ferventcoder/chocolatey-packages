@@ -11,6 +11,6 @@
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey). | This package is only contains automation to get ILMerge from the official location and therefore should not violate the License Terms in any way. Installing this package is your acceptance of the license terms included with the application.
 | This is not a silent installer.</description>
     <projectUrl>http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx</projectUrl>
-    <tags>ilmerge merge assemblies chocolatey notSilent admin</tags>
+    <tags>ilmerge merge assemblies notSilent admin</tags>
   </metadata>
 </package>

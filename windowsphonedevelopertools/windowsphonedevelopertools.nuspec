@@ -10,6 +10,6 @@
     <description>Windows Phone Developer Tools - The same powerful and easy to use Visual Studio integrated developer environment (IDE) handles developing Windows Phone 7 phone applications.
 |Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>http://msdn.microsoft.com/en-us/library/ff402523(v=vs.92).aspx</projectUrl>
-    <tags>windows phone developer tools wp7 chocolatey notSilent admin</tags>
+    <tags>windows phone developer tools wp7 notSilent admin</tags>
   </metadata>
 </package>

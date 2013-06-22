@@ -10,7 +10,7 @@
     <description>Ferventcoder.Chocolatey.Utilities includes a number of utilities including console2, fiddler, launchy, lessmsi, filezilla, expresso, 7zip, lockhunter, notepad++, stexbar, and sysinternals. || cinst ferventcoder.chocolatey.utilities will get all of these tools installed ||
 | Please install with chocolatey (http://nuget.org/List/Packages/chocolatey).</description>
     <projectUrl>https://github.com/ferventcoder/nugetpackages</projectUrl>
-    <tags>ferventcoder utilities tools chocolatey</tags>
+    <tags>ferventcoder utilities tools</tags>
     <dependencies>
       <dependency id='console2' />
       <dependency id='fiddler' />

@@ -21,7 +21,7 @@ Reads and parses:
 |  Parses private and public key components and returns .NET RSA object.
 |  Creates dummy unsigned certificate linked to private keypair and optionally exports to pkcs #12</description>
     <projectUrl>http://www.jensign.com/opensslkey</projectUrl>
-    <tags>security rsa der pem chocolatey</tags>
+    <tags>security rsa der pem</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
   </metadata>
 </package>
