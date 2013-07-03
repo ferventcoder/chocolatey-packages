@@ -1,7 +1,7 @@
 ﻿$packageName = "dropbox"
 $filePath = "$env:TEMP\chocolatey\$packageName"
 $fileFullPath = "$filePath\$packageName`Install.exe"
-$url = "https://www.dropbox.com/download?plat=win"
+$url = 'https://dl-web.dropbox.com/u/17/Dropbox {{PackageVersion}}.exe'
 $fileType = "exe"
 $silentArgs = "/S"
 
