@@ -12,7 +12,7 @@
     <tags>virtualbox virtualization</tags>
     <licenseUrl>https://www.virtualbox.org/wiki/VirtualBox_PUEL</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://upload.wikimedia.org/wikipedia/en/d/d5/Virtualbox_logo.png</iconUrl>
+    <iconUrl>https://upload.wikimedia.org/wikipedia/commons/d/d5/Virtualbox_logo.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\chocolateyInstall.ps1" target="tools\chocolateyInstall.ps1" />

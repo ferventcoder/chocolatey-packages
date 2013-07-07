@@ -13,5 +13,6 @@
     <copyright></copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/ketarin/ketarin.png</iconUrl>
   </metadata>
 </package>
