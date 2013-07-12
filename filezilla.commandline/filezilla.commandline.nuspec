@@ -2,8 +2,8 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>filezilla.commandline</id>
-    <title>FileZilla (CommandLine)</title>
-    <version>3.7.1</version>
+    <title>FileZilla (Portable)</title>
+    <version>{{PackageVersion}}</version>
     <authors>Tim Kosse, other FileZilla committers</authors>
     <owners>Rob Reynolds</owners>
     <summary>FileZilla - The free FTP solution</summary>
@@ -14,4 +14,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/filezilla/64px-Filezilla_logo.png</iconUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
