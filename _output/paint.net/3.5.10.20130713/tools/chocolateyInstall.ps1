@@ -1,7 +1,7 @@
 try {
 
   $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-  Install-ChocolateyZipPackage 'paint.net' '{{DownloadUrl}}' $toolsDir
+  Install-ChocolateyZipPackage 'paint.net' 'http://www.dotpdn.com/files/Paint.NET.3.5.10.Install.zip' $toolsDir
 
   $paintFileFullPath = get-childitem $toolsDir -recurse -include *.exe | select -First 1
   Install-ChocolateyInstallPackage 'paint.net' 'exe' '/auto DESKTOPSHORTCUT=0' "$paintFileFullPath"
