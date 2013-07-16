@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>paint.net</id>
+    <title>Paint.NET</title>
+    <version>3.5.10.20130713</version>
+    <authors>Rick Brewster, dotPDN</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Paint.NET is image and photo manipulation software designed to be used on computers that run Windows.</summary>
+    <description>Paint.NET is free image and photo editing software for computers that run Windows. It features an intuitive and innovative user interface with support for layers, unlimited undo, special effects, and a wide variety of useful and powerful tools. An active and growing online community provides friendly help, tutorials, and plugins.</description>
+    <projectUrl>http://www.getpaint.net/</projectUrl>
+    <tags>paint.net photo editing paint admin</tags>
+    <licenseUrl>http://www.getpaint.net/license.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/paint.net/paint.net.png</iconUrl>
+  </metadata>
+</package>
