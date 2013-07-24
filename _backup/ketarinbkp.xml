@@ -240,8 +240,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>7186000</LastFileSize>
-    <LastFileDate>2012-08-18T05:40:09.9531397</LastFileDate>
+    <LastFileSize>6284400</LastFileSize>
+    <LastFileDate>2013-06-04T05:40:17.8173479</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -276,11 +276,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\1Password-1.0.9.BETA-298.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\1Password-1.0.9.332.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-08-18T05:40:09.9531397</LastUpdated>
+    <LastUpdated>2013-06-04T05:40:17.8173479</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://d13itkw33a7sus.cloudfront.net/dist/1P/win/1Password-{version}.exe</FixedDownloadUrl>
     <Name>1password</Name>
@@ -562,12 +562,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
+    <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
     <LastUpdated>2012-05-23T02:09:37.7748325</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://nowhere.com/nothing.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>http://nowhere.com/nothing{version}.zip</FixedDownloadUrl>
     <Name>_ChocolateyTEMPLATE</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="d949cb73-a098-4af4-8ea7-ac580eda16ab">
@@ -704,8 +705,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>4086963</LastFileSize>
-    <LastFileDate>2012-08-07T13:57:24.5417573</LastFileDate>
+    <LastFileSize>4242486</LastFileSize>
+    <LastFileDate>2012-12-07T05:40:38.984044</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -744,7 +745,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-08-07T13:57:24.5417573</LastUpdated>
+    <LastUpdated>2012-12-07T05:40:38.984044</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.petges.lu/download/ac.exe</FixedDownloadUrl>
     <Name>attributechanger</Name>
@@ -754,7 +755,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>7377952</LastFileSize>
-    <LastFileDate>2012-05-23T03:55:08.6389372</LastFileDate>
+    <LastFileDate>2012-11-16T22:04:57.4331306</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate>2009-01-02T15:15:53</DownloadDate>
@@ -807,7 +808,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-05-23T03:55:08.6389372</LastUpdated>
+    <LastUpdated>2012-11-16T22:04:57.4331306</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.autoitscript.com/cgi-bin/getfile.pl?autoit3/autoit-v3-setup.exe</FixedDownloadUrl>
     <Name>autoit</Name>
@@ -817,7 +818,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>7781378</LastFileSize>
-    <LastFileDate>2012-05-28T06:28:37.636632</LastFileDate>
+    <LastFileDate>2012-11-16T22:04:59.5795923</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate>2009-01-02T15:15:53</DownloadDate>
@@ -870,7 +871,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-05-28T06:28:37.636632</LastUpdated>
+    <LastUpdated>2012-11-16T22:04:59.5795923</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.autoitscript.com/cgi-bin/getfile.pl?autoit3/autoit-v3-sfx.exe</FixedDownloadUrl>
     <Name>autoit.commandline</Name>
@@ -879,8 +880,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>17755632</LastFileSize>
-    <LastFileDate>2012-07-11T08:53:59.6780454</LastFileDate>
+    <LastFileSize>34939000</LastFileSize>
+    <LastFileDate>2013-07-05T05:41:01.8844497</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -913,11 +914,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FileHippo</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Dropbox 1.4.11.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.2.9.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
-    <Enabled>false</Enabled>
+    <Enabled>true</Enabled>
     <FileHippoId>dropbox</FileHippoId>
-    <LastUpdated>2012-07-11T08:53:59.6780454</LastUpdated>
+    <LastUpdated>2013-07-05T05:41:01.8844497</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>dropbox</Name>
@@ -926,8 +927,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>746696</LastFileSize>
-    <LastFileDate>2012-08-29T05:40:11.5766978</LastFileDate>
+    <LastFileSize>748496</LastFileSize>
+    <LastFileDate>2013-05-27T08:00:03.901611</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -948,9 +949,10 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://www.fiddler2.com/Fiddler/changelog.asp#v2</Url>
-            <StartText>&lt;p class="Code"&gt;&lt;b&gt;Version </StartText>
-            <EndText> - Released </EndText>
+            <Url>http://fiddler2.com/get-fiddler</Url>
+            <StartText>Fiddler2&lt;/a&gt;
+    &lt;p id="Content_C015_ctl00_ctl00_BottomContentTag"&gt;Version </StartText>
+            <EndText> b&lt;/p&gt;</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -977,21 +979,21 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Fiddler2Setup.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\fiddler2setup.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-08-29T05:40:11.5766978</LastUpdated>
+    <LastUpdated>2013-05-27T08:00:03.901611</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.getfiddler.com/dl/Fiddler2Setup.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>http://fiddler2.com/docs/default-source/public-downloads/fiddler2setup.exe</FixedDownloadUrl>
     <Name>fiddler</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="dd36fcf2-b193-40e3-b0b0-c4eeb3041ae2">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>4518720</LastFileSize>
-    <LastFileDate>2012-05-23T03:25:35.2165033</LastFileDate>
+    <LastFileSize>4805933</LastFileSize>
+    <LastFileDate>2013-07-05T05:40:35.6401308</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1003,23 +1005,6 @@
     <HttpReferer />
     <SetupInstructions />
     <Variables>
-      <item>
-        <key>
-          <string>version</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
-            <Url>http://filezilla-project.org/download.php?type=client</Url>
-            <StartText>&lt;p&gt;The latest stable version of FileZilla Client is </StartText>
-            <EndText>&lt;/p&gt;</EndText>
-            <TextualContent />
-            <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
       <item>
         <key>
           <string>url64</string>
@@ -1040,14 +1025,14 @@
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
-    <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.5.3_win32-setup.exe</PreviousLocation>
+    <SourceType>FileHippo</SourceType>
+    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.7.1.1_win32-setup.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
-    <FileHippoId />
-    <LastUpdated>2012-05-23T03:25:35.2165033</LastUpdated>
+    <FileHippoId>filezilla</FileHippoId>
+    <LastUpdated>2013-07-05T05:40:35.6401308</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://hivelocity.dl.sourceforge.net/project/filezilla/FileZilla_Client/{version}/FileZilla_{version}_win32-setup.exe</FixedDownloadUrl>
+    <FixedDownloadUrl />
     <Name>filezilla</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b00f3c3a-ead4-4c57-8b9f-dc39142236ca">
@@ -1135,8 +1120,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>3360880</LastFileSize>
-    <LastFileDate>2012-08-26T08:42:12.0678322</LastFileDate>
+    <LastFileSize>3740128</LastFileSize>
+    <LastFileDate>2013-07-11T21:01:23.5326497</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1202,11 +1187,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\foobar2000_v1.1.14a.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\foobar2000_v1.2.9.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-08-26T08:42:12.0678322</LastUpdated>
+    <LastUpdated>2013-07-11T21:01:23.5326497</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.foobar2000.org/files/{fileHash}/foobar2000_v{version}.exe</FixedDownloadUrl>
     <Name>foobar2000</Name>
@@ -1215,8 +1200,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>20800244</LastFileSize>
-    <LastFileDate>2012-07-11T08:53:31.733447</LastFileDate>
+    <LastFileSize>21404480</LastFileSize>
+    <LastFileDate>2013-06-03T05:46:09.3417909</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1282,11 +1267,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\PortableGit-1.7.11-preview20120710.7z</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\PortableGit-1.8.3-preview20130601.7z</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-07-11T08:53:31.733447</LastUpdated>
+    <LastUpdated>2013-06-03T05:46:09.3417909</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://msysgit.googlecode.com/files/{urlpart}</FixedDownloadUrl>
     <Name>git.commandline</Name>
@@ -1295,8 +1280,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>15383103</LastFileSize>
-    <LastFileDate>2012-07-11T08:53:44.4591749</LastFileDate>
+    <LastFileSize>15474652</LastFileSize>
+    <LastFileDate>2013-06-03T05:40:46.6353204</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1362,11 +1347,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Git-1.7.11-preview20120710.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Git-1.8.3-preview20130601.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-07-11T08:53:44.4591749</LastUpdated>
+    <LastUpdated>2013-06-03T05:40:46.6353204</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://msysgit.googlecode.com/files/{urlpart}</FixedDownloadUrl>
     <Name>git.install</Name>
@@ -1375,8 +1360,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>10537342</LastFileSize>
-    <LastFileDate>2012-08-19T15:06:37.1025052</LastFileDate>
+    <LastFileSize>10912835</LastFileSize>
+    <LastFileDate>2013-06-27T05:40:36.2817262</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1446,11 +1431,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\GitExtensions240Setup.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\GitExtensions246Setup.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>foxit</FileHippoId>
-    <LastUpdated>2012-08-19T15:06:37.1025052</LastUpdated>
+    <LastUpdated>2013-06-27T05:40:36.2817262</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://gitextensions.googlecode.com/files/{urlpart}</FixedDownloadUrl>
     <Name>gitextensions</Name>
@@ -1459,8 +1444,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>1524222</LastFileSize>
-    <LastFileDate>2012-05-25T16:02:52.4196957</LastFileDate>
+    <LastFileSize>778060</LastFileSize>
+    <LastFileDate>2012-12-07T05:40:28.2588171</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1510,11 +1495,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\GitTfs-0.14.0.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\GitTfs-0.16.1.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-05-25T16:02:52.4196957</LastUpdated>
+    <LastUpdated>2012-12-07T05:40:28.2588171</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://github.com/downloads/git-tfs/git-tfs/GitTfs-{version}.zip</FixedDownloadUrl>
     <Name>gittfs</Name>
@@ -1570,8 +1555,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>520192</LastFileSize>
-    <LastFileDate>2012-08-11T05:40:40.4042968</LastFileDate>
+    <LastFileSize>598016</LastFileSize>
+    <LastFileDate>2013-05-04T08:45:40.3797091</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1637,11 +1622,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\grepWin-1.5.8.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\grepWin-1.6.1.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-08-11T05:40:40.4042968</LastUpdated>
+    <LastUpdated>2013-05-04T08:45:40.3797091</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://grepwin.googlecode.com/files/{urlpart}.msi</FixedDownloadUrl>
     <Name>grepwin</Name>
@@ -1794,8 +1779,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>32635904</LastFileSize>
-    <LastFileDate>2012-08-06T07:25:46.3138098</LastFileDate>
+    <LastFileSize>37258752</LastFileSize>
+    <LastFileDate>2013-06-04T05:40:58.4619381</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1816,7 +1801,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://www.mysql.com/downloads/</Url>
+            <Url>http://dev.mysql.com/downloads/</Url>
             <StartText>Current Generally Available Release: </StartText>
             <EndText>)&lt;/span&gt;</EndText>
             <TextualContent />
@@ -1845,21 +1830,21 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\mysql-5.5.27-win32.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\mysql-5.6.12-win32.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-08-06T07:25:46.3138098</LastUpdated>
+    <LastUpdated>2013-06-04T05:40:58.4619381</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.mysql.com/get/Downloads/MySQL-5.5/mysql-{version}-win32.msi/from/http://mysql.he.net/</FixedDownloadUrl>
+    <FixedDownloadUrl>http://www.mysql.com/get/Downloads/MySQL-5.6/mysql-{version}-win32.msi/from/http://mysql.he.net/</FixedDownloadUrl>
     <Name>mysql</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="6c97aaaf-2cc6-4b19-bc1a-293748038b3b">
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>5050728</LastFileSize>
-    <LastFileDate>2012-08-26T08:46:59.0229007</LastFileDate>
+    <LastFileSize>5469544</LastFileSize>
+    <LastFileDate>2013-07-11T21:01:36.8011616</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1913,7 +1898,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-08-26T08:46:59.0229007</LastUpdated>
+    <LastUpdated>2013-07-11T21:01:36.8011616</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://nodejs.org/dist/v{version}/node.exe</FixedDownloadUrl>
     <Name>nodejs.commandline</Name>
@@ -1922,8 +1907,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>4235264</LastFileSize>
-    <LastFileDate>2012-08-26T08:47:33.7400739</LastFileDate>
+    <LastFileSize>5324800</LastFileSize>
+    <LastFileDate>2013-07-11T21:01:36.8151624</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1973,21 +1958,70 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\node-v0.8.8-x86.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\node-v0.10.13-x86.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-08-26T08:47:33.7400739</LastUpdated>
+    <LastUpdated>2013-07-11T21:01:36.8151624</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://nodejs.org/dist/v{version}/node-v{version}-x86.msi</FixedDownloadUrl>
     <Name>nodejs.install</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="159c889c-0100-4625-96d5-a36d868c636b">
+    <WebsiteUrl />
+    <UserAgent />
+    <UserNotes />
+    <LastFileSize>6190888</LastFileSize>
+    <LastFileDate>2013-07-09T05:40:40.9559697</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>http://notepad-plus-plus.org/</Url>
+            <StartText>&lt;p id="download"&gt;&lt;a href="download/v</StartText>
+            <EndText>.html"&gt;Download&lt;/a&gt;</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Chocolatey\_work\npp.6.4.2.bin.zip</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId>notepad</FileHippoId>
+    <LastUpdated>2013-07-09T05:40:40.9559697</LastUpdated>
+    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <FixedDownloadUrl>http://download.tuxfamily.org/notepadplus/{version}/npp.{version}.bin.zip</FixedDownloadUrl>
+    <Name>notepadplusplus.commandline</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="e76c985a-3b15-4a33-9d85-c05a7d276231">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>5825691</LastFileSize>
-    <LastFileDate>2012-08-16T05:40:54.0600217</LastFileDate>
+    <LastFileSize>7401344</LastFileSize>
+    <LastFileDate>2013-07-09T05:40:40.9559697</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2022,11 +2056,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\npp.6.1.6.Installer.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\npp.6.4.2.Installer.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>notepad</FileHippoId>
-    <LastUpdated>2012-08-16T05:40:54.0600217</LastUpdated>
+    <LastUpdated>2013-07-09T05:40:40.9559697</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.tuxfamily.org/notepadplus/{version}/npp.{version}.Installer.exe</FixedDownloadUrl>
     <Name>notepadplusplus.install</Name>
@@ -2082,8 +2116,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>46653440</LastFileSize>
-    <LastFileDate>2012-08-16T05:43:03.1744066</LastFileDate>
+    <LastFileSize>47964160</LastFileSize>
+    <LastFileDate>2013-07-11T21:04:09.5708978</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2133,11 +2167,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\php-5.3.16-nts-Win32-VC9-x86.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\php-5.3.27-nts-Win32-VC9-x86.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-08-16T05:43:03.1744066</LastUpdated>
+    <LastUpdated>2013-07-11T21:04:09.5708978</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://windows.php.net/downloads/releases/php-{version}-nts-Win32-VC9-x86.msi</FixedDownloadUrl>
     <Name>php</Name>
@@ -2146,8 +2180,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>43447712</LastFileSize>
-    <LastFileDate>2012-08-19T15:10:44.9936838</LastFileDate>
+    <LastFileSize>43561712</LastFileSize>
+    <LastFileDate>2013-04-05T05:41:54.6106992</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2210,11 +2244,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\postgresql-8.4.13-1-windows.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\postgresql-8.4.17-1-windows.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-08-19T15:10:44.9936838</LastUpdated>
+    <LastUpdated>2013-04-05T05:41:54.6106992</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://get.enterprisedb.com/postgresql/postgresql-{version}-1-windows.exe</FixedDownloadUrl>
     <Name>postgresql.v8</Name>
@@ -2223,8 +2257,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>48509408</LastFileSize>
-    <LastFileDate>2012-08-19T15:12:20.7611614</LastFileDate>
+    <LastFileSize>52069120</LastFileSize>
+    <LastFileDate>2013-04-05T05:42:09.2745467</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2287,11 +2321,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\postgresql-9.1.5-1-windows.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\postgresql-9.2.4-1-windows.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-08-19T15:12:20.7611614</LastUpdated>
+    <LastUpdated>2013-04-05T05:42:09.2745467</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://get.enterprisedb.com/postgresql/postgresql-{version}-1-windows.exe</FixedDownloadUrl>
     <Name>postgresql.v9</Name>
@@ -2300,8 +2334,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>15867904</LastFileSize>
-    <LastFileDate>2012-06-27T08:32:15.4712287</LastFileDate>
+    <LastFileSize>16228352</LastFileSize>
+    <LastFileDate>2013-05-20T05:41:02.3351737</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2346,26 +2380,90 @@
       </item>
     </Variables>
     <ExecuteCommand />
+    <ExecutePreCommand>chocopkgup /p python.x86 /v {version} /u {preupdate-url} /u64 {url64}</ExecutePreCommand>
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Chocolatey\_work\python-2.7.5.msi</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2013-05-20T05:41:02.3351737</LastUpdated>
+    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <FixedDownloadUrl>http://www.python.org/ftp/python/{version}/python-{version}.msi</FixedDownloadUrl>
+    <Name>python</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="e8c76328-fe90-4afa-b1e1-226730f2beb4">
+    <WebsiteUrl />
+    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserNotes />
+    <LastFileSize>53866496</LastFileSize>
+    <LastFileDate>2013-07-19T05:41:29.2850747</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>http://www.jetbrains.com/resharper/download/download_thanks.jsp?os=rs</Url>
+            <StartText>"http://download.jetbrains.com/resharper/ReSharperSetup.</StartText>
+            <EndText>.msi"</EndText>
+            <TextualContent />
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>""</TextualContent>
+            <Name>url64</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
     <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\python-2.7.3.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\ReSharperSetup.8.0.14.856.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-06-27T08:32:15.4712287</LastUpdated>
+    <LastUpdated>2013-07-19T05:41:29.2850747</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.python.org/ftp/python/{version}/python-{version}.msi</FixedDownloadUrl>
-    <Name>python</Name>
+    <FixedDownloadUrl>http://download.jetbrains.com/resharper/ReSharperSetup.{version}.msi</FixedDownloadUrl>
+    <Name>resharper</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="7cba9e47-50c8-445c-a0b9-49ec4e2c7521">
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>946352</LastFileSize>
-    <LastFileDate>2012-07-06T05:40:37.425305</LastFileDate>
+    <LastFileSize>1492584</LastFileSize>
+    <LastFileDate>2013-07-05T05:41:16.9678822</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2385,9 +2483,9 @@
     <SourceType>FileHippo</SourceType>
     <PreviousLocation>C:\Chocolatey\_work\SkypeSetup.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
-    <Enabled>false</Enabled>
+    <Enabled>true</Enabled>
     <FileHippoId>skype</FileHippoId>
-    <LastUpdated>2012-07-06T05:40:37.425305</LastUpdated>
+    <LastUpdated>2013-07-05T05:41:16.9678822</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>skype</Name>
@@ -2396,8 +2494,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>376832</LastFileSize>
-    <LastFileDate>2012-06-08T17:47:37.1386147</LastFileDate>
+    <LastFileSize>348160</LastFileSize>
+    <LastFileDate>2013-04-16T05:40:29.049384</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2463,11 +2561,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\StExBar-1.8.3.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\StExBar-1.8.4.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-06-08T17:47:37.1386147</LastUpdated>
+    <LastUpdated>2013-04-16T05:40:29.049384</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://stexbar.googlecode.com/files/{urlpart}</FixedDownloadUrl>
     <Name>stexbar</Name>
@@ -2476,8 +2574,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>95187288</LastFileSize>
-    <LastFileDate>2012-08-21T05:41:35.596465</LastFileDate>
+    <LastFileSize>99776784</LastFileSize>
+    <LastFileDate>2013-07-05T06:10:01.4628832</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2543,11 +2641,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\VirtualBox-4.1.20-80170-Win.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\VirtualBox-4.2.16-86992-Win.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-08-21T05:41:35.596465</LastUpdated>
+    <LastUpdated>2013-07-05T06:10:01.4628832</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.virtualbox.org/virtualbox/{version}/VirtualBox-{urlpart}-Win.exe</FixedDownloadUrl>
     <Name>virtualbox</Name>
@@ -2556,8 +2654,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>22657136</LastFileSize>
-    <LastFileDate>2012-07-02T05:41:19.7584219</LastFileDate>
+    <LastFileSize>22937227</LastFileSize>
+    <LastFileDate>2013-06-12T05:41:20.6562313</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2583,20 +2681,91 @@
           </UrlVariable>
         </value>
       </item>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>http://filehippo.com/download_vlc_32/</Url>
+            <StartText>Latest Version&lt;br/&gt;&lt;b&gt;VLC Media Player </StartText>
+            <EndText> (32-bit)&lt;/b&gt;</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
     </Variables>
     <ExecuteCommand />
     <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
-    <SourceType>FileHippo</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\vlc-2.0.2-win32.exe</PreviousLocation>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Chocolatey\_work\vlc-2.0.7-win32.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
-    <Enabled>false</Enabled>
+    <Enabled>true</Enabled>
     <FileHippoId>vlc</FileHippoId>
-    <LastUpdated>2012-07-02T05:41:19.7584219</LastUpdated>
+    <LastUpdated>2013-06-12T05:41:20.6562313</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl />
+    <FixedDownloadUrl>http://cdn.mirror.garr.it/mirror3/mirrors/videolan/vlc/{version}/win32/vlc-{version}-win32.exe</FixedDownloadUrl>
     <Name>vlc</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="a49ab7f3-b907-429b-9167-1099daa3dc1d">
+    <WebsiteUrl />
+    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserNotes />
+    <LastFileSize>35379</LastFileSize>
+    <LastFileDate>2013-07-23T05:40:25.0261246</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>https://npmjs.org/package/yeoman</Url>
+            <StartText>&lt;th&gt;Version&lt;/th&gt;
+        &lt;td&gt;
+          &lt;b&gt;
+          </StartText>
+            <EndText>
+          &lt;/b&gt;
+</EndText>
+            <TextualContent />
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand />
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Chocolatey\_work\yeoman-008.png</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2013-07-23T05:40:25.0261246</LastUpdated>
+    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <FixedDownloadUrl>http://yeoman.io/assets/img/yeoman-008.png</FixedDownloadUrl>
+    <Name>yeoman</Name>
   </ApplicationJob>
 </Jobs>
