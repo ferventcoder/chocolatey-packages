@@ -1,6 +1,6 @@
 try {
   $package = 'PhantomJS'
-  $version = '1.9.0'
+  $version = '1.9.1'
 
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   ### For BinRoot, use the following instead ###
