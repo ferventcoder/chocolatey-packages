@@ -5,7 +5,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>34994736</LastFileSize>
-    <LastFileDate>2013-07-31T21:57:42.469264+02:00</LastFileDate>
+    <LastFileDate>2013-07-31T22:21:12.3779062</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -38,25 +38,11 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex>[\d\.]+&lt;/a&gt;\s+&lt;span class="release_date"&gt;</Regex>
-            <Url>https://www.dropbox.com/release_notes</Url>
-            <TextualContent>{version-with-tags:regexreplace:([\d\.]+).+\n.+:$1}</TextualContent>
-            <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>version-with-tags</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>[\d\.]+&lt;/a&gt;\s+&lt;span class="release_date"&gt;</Regex>
+            <Regex>[\d\.]+(?=&lt;/a&gt;)</Regex>
             <Url>https://www.dropbox.com/release_notes</Url>
-            <Name>version-with-tags</Name>
+            <TextualContent />
+            <Name>version</Name>
           </UrlVariable>
         </value>
       </item>
@@ -71,7 +57,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-07-31T21:57:42.5012659+02:00</LastUpdated>
+    <LastUpdated>2013-07-31T22:21:12.3779062</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://dl-web.dropbox.com/u/17/Dropbox {version}.exe</FixedDownloadUrl>
     <Name>dropbox</Name>
