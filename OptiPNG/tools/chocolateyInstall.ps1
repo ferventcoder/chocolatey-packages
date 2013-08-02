@@ -9,11 +9,11 @@ try {
   Write-Host "Adding `'$installDir`' to the path and the current shell path"
   Install-ChocolateyPath "$installDir"
   $env:Path = "$($env:Path);$installDir"
-  $zipUrl = 'http://prdownloads.sourceforge.net/optipng/optipng-0.7.1-win32.zip?download'
+  $zipUrl = 'http://sourceforge.net/projects/optipng/files/OptiPNG/optipng-{{PackageVersion}}/optipng-{{PackageVersion}}-win32.zip/download'
 
   Install-ChocolateyZipPackage $package "$zipUrl" "$installDir"
 
-  Copy-Item "$($installDir)\optipng-0.7.1-win32\*" "$installDir" -Force -Recurse
+  Copy-Item "$($installDir)\optipng-{{PackageVersion}}-win32\*" "$installDir" -Force -Recurse
   
   Write-ChocolateySuccess $package
 } catch {

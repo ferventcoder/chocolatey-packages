@@ -3,7 +3,7 @@
   <metadata>
     <id>OptiPNG</id>
     <title>OptiPNG : Advanced PNG Optimizer</title>
-    <version>0.7.1.20120913</version>
+    <version>{{PackageVersion}}</version>
     <authors>Cosmin Truta</authors>
     <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>OptiPNG is a PNG optimizer that recompresses image files to a smaller size, without losing any information.</summary>
@@ -15,39 +15,7 @@
     <licenseUrl>http://optipng.sourceforge.net/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl></iconUrl>-->
-    <releaseNotes>Version 0.7.1   19-mar-2012
-    -------------
-    !! Fixed a regression in the reduction of palette-encoded grayscale
-       images.  This regression was introduced in version 0.7.
-       (Thanks to Adam Ciarcinski for the fix.)
-
-    Version 0.7     29-feb-2012
-    -----------
-     * Upgraded libpng to version 1.4.9.
-     * Upgraded zlib to version 1.2.6-optipng.
-    !! Resolved a rarely-occurring out-of-bounds memory access error in
-       Z_RLE, by upgrading zlib.  (Thanks to Christopher Wichura for the
-       report, and thanks to Mark Adler for fixing zlib.)
-     + Added the popularly-requested option -strip.
-       The only suboption currently supported is "-strip all".
-     + Added the option -clobber.
-       (Thanks in part to Maciej Pilichowski for the contribution.)
-     + Added the option -backup, as an alias of -keep.
-     + Added the option -silent, as an alias of -quiet.
-     - Deprecated the option -log.
-     * Changed the activity display output from STDOUT to STDERR.
-     + Allowed the option -preserve to save high-resolution timestamps
-       on Unix, if the POSIX-1.2008 API is available.  This feature was
-       previously available on Windows only.
-     ! Fixed a minor precision error in the display of file size percents.
-     ! Fixed a memory leak that occurred when reading broken GIF images.
-     ! Fixed various build issues.
-       (Thanks to Sebastian Pipping and Ville Skytta for the fixes.)
-     * Resolved all remaining compatibility issues with libpng-1.5.
-       (Thanks in part to Adam Ciarcinski for the contribution.)
-     * Added build support for clang.
-     * Reorganized the source directory structure.
-    </releaseNotes>
+    <releaseNotes></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
