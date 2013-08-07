@@ -24,4 +24,7 @@
     </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -16,4 +16,7 @@ BoutDuTunnel is compatible with HTTP proxy servers, even if they use NTLM authen
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/boutdutunnel.server/boutdutunnel.png</iconUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

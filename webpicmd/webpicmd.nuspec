@@ -17,4 +17,7 @@
       <dependency id="lessmsi" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

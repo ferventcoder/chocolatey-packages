@@ -24,4 +24,7 @@
 - Project templates include JavaScript libraries as pre-installed NuGet packages
     </releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

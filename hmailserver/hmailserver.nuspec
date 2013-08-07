@@ -15,4 +15,7 @@ It supports the common e-mail protocols (IMAP, SMTP and POP3) and can easily be 
     <licenseUrl>http://www.hmailserver.com/documentation/v5.3/index.php?page=information_copyright</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

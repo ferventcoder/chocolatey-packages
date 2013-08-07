@@ -21,6 +21,9 @@
 - Fixed the silent installation support
 - Added a couple of command line args to setup
 - Done usability improvements
-	</releaseNotes>
+    </releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

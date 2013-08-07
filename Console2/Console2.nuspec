@@ -14,4 +14,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!--<iconUrl>32x32.png</iconUrl>-->
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="bin\**" target="bin" />
+    <file src="content\**" target="content" />
+  </files>
 </package>

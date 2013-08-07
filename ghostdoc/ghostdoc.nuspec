@@ -15,4 +15,7 @@ When generating documentation for class derived from a base class or for interfa
     <licenseUrl>http://submain.com/ghostdoc/EULA.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -16,4 +16,7 @@
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/maxthon/maxthon.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -10,4 +10,7 @@
     <description>nugetpackageupdatetest - This allows you to test package updates. You can install version 1.0 and then update to version 2.0.</description>
     <tags>nugetpackageupdatetest test update-package</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

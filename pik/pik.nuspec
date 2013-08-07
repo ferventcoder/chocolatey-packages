@@ -37,4 +37,7 @@ For help on a particular command, use 'pik help COMMAND'.</description>
     <licenseUrl>https://github.com/vertiginous/pik/blob/master/README.rdoc</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

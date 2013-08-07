@@ -20,4 +20,7 @@
       <dependency id="vcredist2008" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

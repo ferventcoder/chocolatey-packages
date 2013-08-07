@@ -20,4 +20,7 @@ the summer.</releaseNotes>
     <copyright>Copyright 1996-2013</copyright>
     <tags>nmap portscanner network infosec</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

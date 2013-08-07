@@ -12,4 +12,7 @@
     <language>en-US</language>
     <tags>nuget lib packages folder override</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

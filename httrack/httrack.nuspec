@@ -20,4 +20,7 @@ It allows you to download a World Wide Web site from the Internet to a local dir
     </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

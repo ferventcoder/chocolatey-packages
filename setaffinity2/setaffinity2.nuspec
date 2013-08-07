@@ -13,4 +13,7 @@
     <licenseUrl>http://www.bbses.info/mirrors/edgemeal.110mb.com/SetAffinity/index.htm</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

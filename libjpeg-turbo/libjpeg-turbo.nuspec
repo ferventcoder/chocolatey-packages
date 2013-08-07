@@ -27,6 +27,5 @@ libjpeg-turbo was originally based on libjpeg/SIMD by Miyasaka Masaru, but the T
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
   </files>
 </package>

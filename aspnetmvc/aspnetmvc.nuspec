@@ -23,4 +23,7 @@ ASP.NET MVC Documentation on MSDN. (http://msdn.microsoft.com/en-us/library/dd39
       <dependency id="aspnetmvc.install" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

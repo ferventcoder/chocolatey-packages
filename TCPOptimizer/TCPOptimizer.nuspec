@@ -22,6 +22,5 @@ The TCP Optimizer is targeted towards broadband internet connections, however it
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
   </files>
 </package>

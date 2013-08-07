@@ -15,4 +15,7 @@
     <tags>regex regularexpression expresso admin</tags>
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/expresso/expresso.jpg</iconUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -13,4 +13,7 @@
     <licenseUrl>https://raw.github.com/chrisledet/Marker/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

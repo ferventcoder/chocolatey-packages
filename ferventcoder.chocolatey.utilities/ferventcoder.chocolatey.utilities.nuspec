@@ -24,4 +24,7 @@
       <dependency id='sysinternals' />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

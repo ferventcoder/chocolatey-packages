@@ -15,4 +15,7 @@
     <projectUrl>http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx</projectUrl>
     <tags>ilmerge merge assemblies notSilent admin</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

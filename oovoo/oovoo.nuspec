@@ -15,4 +15,7 @@
     <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/oovoo/oovoo.gif</iconUrl>-->
     <!--<releaseNotes></releaseNotes>-->
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

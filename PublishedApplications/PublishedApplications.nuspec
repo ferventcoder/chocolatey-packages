@@ -21,4 +21,8 @@ Not entirely sure what this means? Check out the project url (on the left) and/o
     Added uninstaller
     </releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="content\**" target="content" />
+  </files>
 </package>

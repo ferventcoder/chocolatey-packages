@@ -28,6 +28,5 @@ want to use a good IDE for their compiler - PSPad catches and parses compiler ou
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
   </files>
 </package>

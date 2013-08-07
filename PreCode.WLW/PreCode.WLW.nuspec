@@ -26,6 +26,5 @@ Now includes a standalone Windows desktop application so that you can paste form
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
   </files>
 </package>

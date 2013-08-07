@@ -17,4 +17,7 @@ It allows you to download a World Wide Web site from the Internet to a local dir
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes></releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

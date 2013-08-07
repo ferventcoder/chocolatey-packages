@@ -13,4 +13,7 @@ Launchy indexes the programs in your start menu and can launch your documents, p
     <tags>launchy productivity launcher admin</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -21,4 +21,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <!-- <iconUrl></iconUrl> -->
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

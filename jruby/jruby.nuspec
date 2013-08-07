@@ -20,4 +20,7 @@
     <file src="tools\**" target="tools" />
     <!--<file src="content\**" target="content" />-->
   </files>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

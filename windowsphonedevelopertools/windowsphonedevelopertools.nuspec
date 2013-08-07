@@ -11,4 +11,7 @@
     <projectUrl>http://msdn.microsoft.com/en-us/library/ff402523(v=vs.92).aspx</projectUrl>
     <tags>windows phone developer tools wp7 notSilent admin</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

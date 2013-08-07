@@ -10,4 +10,7 @@
     <description>NuGetPackageUninstaller - removes a package from all projects with just Uninstall-PackageAll packageName</description>
     <tags>NuGetPackageUninstaller nuget uninstall package all</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -11,4 +11,7 @@
     <projectUrl>http://lockhunter.com/</projectUrl>
     <tags>lockhunter unlocker file system locked files admin</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -17,4 +17,7 @@ Also writes out to the %temp%\NuGetPSVariables directory three log files:
     <language>en-US</language>
     <tags>nuget powershell variables</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

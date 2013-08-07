@@ -17,4 +17,7 @@
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/EditorConfig/editorconfig.png
     </iconUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

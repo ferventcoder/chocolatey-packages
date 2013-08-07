@@ -21,4 +21,7 @@
 	By default, it will install the packages virtualenv, fabric, ipython and django
 	</releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

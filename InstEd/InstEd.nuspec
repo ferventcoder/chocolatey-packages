@@ -52,6 +52,5 @@ If you use Orca, you will love InstEd. If you use some of the more expensive too
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
   </files>
 </package>

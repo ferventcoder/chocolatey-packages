@@ -23,8 +23,8 @@
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/SqlServerLocalDb/SqlServerLocalDb.gif</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

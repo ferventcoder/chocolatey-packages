@@ -16,4 +16,7 @@
     <summary>Sublime Text 2 (beta) is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features.</summary>
     <tags>sublime text editor</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

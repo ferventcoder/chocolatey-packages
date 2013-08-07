@@ -16,4 +16,7 @@
     </description>    
     <tags>nuget enable package restore fix enablepackagerestore</tags>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

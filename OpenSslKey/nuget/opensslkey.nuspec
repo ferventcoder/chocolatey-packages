@@ -24,4 +24,9 @@ Reads and parses:
     <tags>security rsa der pem</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="bin\**" target="bin" />
+    <file src="content\**" target="content" />
+  </files>
 </package>

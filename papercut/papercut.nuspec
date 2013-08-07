@@ -16,4 +16,8 @@
     <tags>dummy smtp papercut</tags>
     <!--<iconUrl>32x32.png</iconUrl>-->
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="bin\**" target="bin" />
+  </files>
 </package>

@@ -19,6 +19,5 @@ TypeScript for Visual Studio 2012 provides a TypeScript editor and compiler for 
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
   </files>
 </package>

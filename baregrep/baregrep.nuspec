@@ -20,4 +20,7 @@ Single small executable, no installer
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/baregrep/baregrep.gif</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

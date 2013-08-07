@@ -14,4 +14,7 @@
     <licenseUrl>http://www.drk.com.ar/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

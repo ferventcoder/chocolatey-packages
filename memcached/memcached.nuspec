@@ -20,4 +20,7 @@ Memcached is simple yet powerful. Its simple design promotes quick deployment, e
     <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/memcached/memcached.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
