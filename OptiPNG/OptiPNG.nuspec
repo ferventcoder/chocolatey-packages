@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>OptiPNG</id>
+    <title>OptiPNG : Advanced PNG Optimizer</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Cosmin Truta</authors>
+    <owners>Ethan Brown, Rob Reynolds</owners>
+    <summary>OptiPNG is a PNG optimizer that recompresses image files to a smaller size, without losing any information.</summary>
+    <description>OptiPNG is a PNG optimizer that recompresses image files to a smaller size, without losing any information. This program also converts external formats (BMP, GIF, PNM and TIFF) to optimized PNG, and performs PNG integrity checks and corrections.
+    </description>
+    <projectUrl>http://optipng.sourceforge.net/</projectUrl>
+    <tags>OptiPNG PNG GIF TIFF compression</tags>
+    <copyright>Cosmin Truta 2001-2012</copyright>
+    <licenseUrl>http://optipng.sourceforge.net/license.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl></iconUrl>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>
