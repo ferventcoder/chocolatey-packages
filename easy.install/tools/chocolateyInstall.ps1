@@ -67,7 +67,7 @@ function Install-setuptools($version) {
   else {  
     # http://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11.win32-py2.7.exe
 	$url = "http://pypi.python.org/packages/$pyvrs/s/setuptools/setuptools-$version.win32-py$pyvrs.exe"
-	Install-ChocolateyPackage 'easy.install/setuptools' 'exe' '/S' $url	
+	Install-ChocolateyPackage 'easy.install.setuptools' 'exe' '/S' $url	
   }
 }
 
