@@ -1,1 +1,0 @@
-Install-ChocolateyZipPackage 'sqliteadmin' 'http://download.orbmu2k.de/download.php?id=19' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
