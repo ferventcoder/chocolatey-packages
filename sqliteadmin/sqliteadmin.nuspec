@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?> 
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>{{PackageName}}</id>
+    <title>SQLiteAdmin</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Orbmu2k</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>SQLite Admininistrator</summary>
+    <description>SQLite Administrator is a powerful tool if you easily want to create, design or administrate SQLite database files. The SQL code editor helps you to quickly write sql queries with features such as code completion and highlighting. Both major versions of SQLite database files are supported by SQLite Administrator.</description>
+    <projectUrl>http://sqliteadmin.orbmu2k.de/</projectUrl>
+    <tags>sqlite sqliteadmin database</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<iconUrl>http://tomone.github.io/icons/sqlite.svg</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
