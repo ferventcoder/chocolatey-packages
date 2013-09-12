@@ -17,11 +17,11 @@ Not entirely sure what this means? Check out the project url (on the left) and/o
     <language>en-US</language>
     <tags>_PublishedApplications _PublishedWebsites packaging publish</tags>
     <releaseNotes>
-    == v2.3 ==
-    Now allows copying extensionless files
-    
-    == v2.2 ==
-    Added uninstaller
+== v2.3 ==
+  Now allows copying extensionless files
+
+== v2.2 ==
+  Added uninstaller
     </releaseNotes>
   </metadata>
   <files>
