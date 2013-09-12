@@ -11,7 +11,7 @@ try {
 
   Install-ChocolateyPath $installDir 'User'
 
-  # Delete any existing batch files from an earlier install
+  # Delete any existing batch files from an earlier install
   if ($env:chocolateyinstall -ne $null) {
     $nugetBin = join-path $env:chocolateyinstall 'bin'
     $files = get-childitem $installDir -include *.exe -recurse
@@ -25,6 +25,7 @@ try {
     }
   }
 
+  
   Write-ChocolateySuccess 'sysinternals'
 } catch {
   Write-ChocolateyFailure 'sysinternals' $($_.Exception.Message)
