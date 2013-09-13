@@ -1145,7 +1145,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>35255624</LastFileSize>
-    <LastFileDate>2013-09-10T00:34:03.399206-05:00</LastFileDate>
+    <LastFileDate>2013-09-10T00:34:08.5508045</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1197,7 +1197,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-10T00:34:08.5508045-05:00</LastUpdated>
+    <LastUpdated>2013-09-10T00:34:08.5508045</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://dl-web.dropbox.com/u/17/Dropbox {version}.exe</FixedDownloadUrl>
     <Name>dropbox</Name>
@@ -1323,8 +1323,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>748496</LastFileSize>
-    <LastFileDate>2013-05-27T08:00:03.901611</LastFileDate>
+    <LastFileSize>757584</LastFileSize>
+    <LastFileDate>2013-09-10T00:43:52.810022</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1346,9 +1346,8 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>http://fiddler2.com/get-fiddler</Url>
-            <StartText>Fiddler2&lt;/a&gt;
-    &lt;p id="Content_C015_ctl00_ctl00_BottomContentTag"&gt;Version </StartText>
-            <EndText> b&lt;/p&gt;</EndText>
+            <StartText>Version </StartText>
+            <EndText>&lt;/p&gt;</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -1379,7 +1378,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-05-27T08:00:03.901611</LastUpdated>
+    <LastUpdated>2013-09-10T00:43:52.810022</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://fiddler2.com/docs/default-source/public-downloads/fiddler2setup.exe</FixedDownloadUrl>
     <Name>fiddler</Name>
@@ -5139,7 +5138,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>35379</LastFileSize>
-    <LastFileDate>2013-07-23T05:40:25.0261246</LastFileDate>
+    <LastFileDate>2013-09-11T05:40:40.8502072</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5184,7 +5183,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-07-23T05:40:25.0261246</LastUpdated>
+    <LastUpdated>2013-09-11T05:40:40.8502072</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://yeoman.io/assets/img/yeoman-008.png</FixedDownloadUrl>
     <Name>yeoman</Name>
