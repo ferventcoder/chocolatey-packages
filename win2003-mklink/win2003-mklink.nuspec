@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>win2003-mklink</id>
+    <title>Windows 2003 Symlinks (MkLink)</title>
+    <version>0.5.0</version>
+    <authors>Rob Reynolds, </authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Windows 2003 Symlinks - adding mklink behavior for folders in windows</summary>
+    <description>Windows 2003 Symlinks (MkLink)
+
+Currently this only supports symlinking folders from network shares to local paths, helping bring vagrant to Windows 2003.
+
+This implements the behavior specified in my stack overflow answer (go vote it up) http://stackoverflow.com/a/18593425/18475
+
+You call it the same way you do for folders on other versions of windows, mklink /d sometargetfolder \\some\shared\folder
+
+And before you ask, this should also work on Windows XP.
+
+Prerequisites:
+You need Visual C++ Redistributable for VS2005 SP1 installed (which is not yet a chocolatey package).
+
+ * VCRedist_x86 - http://www.microsoft.com/downloads/details.aspx?familyid=200B2FD9-AE1A-4A14-984D-389C36F85647&amp;displaylang=en
+ * VCRedist_x64 - http://www.microsoft.com/downloads/details.aspx?FamilyID=EB4EBE2D-33C0-4A47-9DD4-B9A6D7BD44DA&amp;displaylang=en
+
+</description>
+    <projectUrl>http://schinagl.priv.at/nt/ln/ln.html#symboliclinksforwindowsxp</projectUrl>
+    <tags>windows 2003 win2003 mklink symlink vagrant</tags>
+    <licenseUrl>http://schinagl.priv.at/nt/ln/ln.html#symboliclinksforwindowsxp</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
