@@ -1323,8 +1323,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>757584</LastFileSize>
-    <LastFileDate>2013-09-10T00:43:52.810022</LastFileDate>
+    <LastFileSize>760024</LastFileSize>
+    <LastFileDate>2013-09-16T21:00:53.3860474</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1378,7 +1378,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-10T00:43:52.810022</LastUpdated>
+    <LastUpdated>2013-09-16T21:00:53.3860474</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://fiddler2.com/docs/default-source/public-downloads/fiddler2setup.exe</FixedDownloadUrl>
     <Name>fiddler</Name>
@@ -1726,8 +1726,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>21404480</LastFileSize>
-    <LastFileDate>2013-06-03T05:46:09.3417909</LastFileDate>
+    <LastFileSize>21696888</LastFileSize>
+    <LastFileDate>2013-09-16T21:01:10.4877685</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1793,11 +1793,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\PortableGit-1.8.3-preview20130601.7z</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\PortableGit-1.8.4-preview20130916.7z</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-06-03T05:46:09.3417909</LastUpdated>
+    <LastUpdated>2013-09-16T21:01:10.4877685</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://msysgit.googlecode.com/files/{urlpart}</FixedDownloadUrl>
     <Name>git.commandline</Name>
@@ -1806,8 +1806,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>15474652</LastFileSize>
-    <LastFileDate>2013-06-03T05:40:46.6353204</LastFileDate>
+    <LastFileSize>15586182</LastFileSize>
+    <LastFileDate>2013-09-16T21:01:26.1857276</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1873,11 +1873,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Git-1.8.3-preview20130601.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Git-1.8.4-preview20130916.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-06-03T05:40:46.6353204</LastUpdated>
+    <LastUpdated>2013-09-16T21:01:26.1857276</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://msysgit.googlecode.com/files/{urlpart}</FixedDownloadUrl>
     <Name>git.install</Name>
@@ -2229,7 +2229,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>3963242</LastFileSize>
-    <LastFileDate>2013-09-15T05:40:38.2912088</LastFileDate>
+    <LastFileDate>2013-09-16T21:01:45.8333253</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2284,7 +2284,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-15T05:40:38.2912088</LastUpdated>
+    <LastUpdated>2013-09-16T21:01:45.8333253</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.httrack.com/httrack-{version}.exe</FixedDownloadUrl>
     <Name>httrack.app</Name>
@@ -2361,7 +2361,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>4376582</LastFileSize>
-    <LastFileDate>2013-09-15T05:40:36.1540002</LastFileDate>
+    <LastFileDate>2013-09-16T21:01:40.1024766</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2415,7 +2415,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-15T05:40:36.1540002</LastUpdated>
+    <LastUpdated>2013-09-16T21:01:40.1024766</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.httrack.com/httrack-noinst-{version}.zip</FixedDownloadUrl>
     <Name>httrack.tool</Name>
