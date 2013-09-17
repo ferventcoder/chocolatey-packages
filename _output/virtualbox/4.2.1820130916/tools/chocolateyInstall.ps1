@@ -1,8 +1,8 @@
 $packageName = 'virtualbox'
 $tools="$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 Start-ChocolateyProcessAsAdmin "certutil -addstore 'TrustedPublisher' '$tools\oracle.cer'"
-Install-ChocolateyPackage $packageName 'exe' '-s' '{{DownloadUrl}}'
-#TODO: make this not reboot
+Install-ChocolateyPackage $packageName 'exe' '-s' 'http://download.virtualbox.org/virtualbox/4.2.18/VirtualBox-4.2.18-88781-Win.exe'
+#TODO: make this not reboot
 
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
 $programFiles = $env:programfiles
