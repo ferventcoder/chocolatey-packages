@@ -708,7 +708,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>1588760</LastFileSize>
-    <LastFileDate>2013-09-09T23:34:23.5127331</LastFileDate>
+    <LastFileDate>2013-09-20T08:04:13.3311824</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -764,7 +764,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-09T23:34:23.5127331</LastUpdated>
+    <LastUpdated>2013-09-20T08:04:13.3311824</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://static.slysoft.com/SetupVirtualCloneDrive.exe</FixedDownloadUrl>
     <Name>VirtualCloneDrive</Name>
@@ -1144,8 +1144,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>36204584</LastFileSize>
-    <LastFileDate>2013-09-13T06:44:22.7000131</LastFileDate>
+    <LastFileSize>35284744</LastFileSize>
+    <LastFileDate>2013-09-19T05:41:13.4180368</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1193,11 +1193,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.3.29.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.3.30.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-13T06:44:22.7000131</LastUpdated>
+    <LastUpdated>2013-09-19T05:41:13.4180368</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://dl-web.dropbox.com/u/17/Dropbox {version}.exe</FixedDownloadUrl>
     <Name>dropbox</Name>
@@ -2859,8 +2859,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>37258752</LastFileSize>
-    <LastFileDate>2013-06-04T05:40:58.4619381</LastFileDate>
+    <LastFileSize>37315584</LastFileSize>
+    <LastFileDate>2013-09-20T08:04:05.3750982</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2910,11 +2910,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\mysql-5.6.13-win32.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\mysql-5.6.14-win32.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-06-04T05:40:58.4619381</LastUpdated>
+    <LastUpdated>2013-09-20T08:04:05.3750982</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.mysql.com/get/Downloads/MySQL-5.6/mysql-{version}-win32.msi/from/http://mysql.he.net/</FixedDownloadUrl>
     <Name>mysql</Name>
