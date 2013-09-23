@@ -14,7 +14,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/dropbox/dropbox.png</iconUrl>
     <dependencies>
-        <dependency id="autohotkey_l" />
+        <dependency id="autohotkey_l.portable" />
     </dependencies>
   </metadata>
   <files>

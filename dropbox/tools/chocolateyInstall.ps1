@@ -1,14 +1,14 @@
-﻿$packageName = "dropbox"
+﻿$packageName = 'dropbox'
 $filePath = "$env:TEMP\chocolatey\$packageName"
-$fileFullPath = "$filePath\$packageName`Install.exe"
+$fileFullPath = "$filePath\${packageName}Install.exe"
 $url = 'https://dl-web.dropbox.com/u/17/Dropbox {{PackageVersion}}.exe'
-$fileType = "exe"
-$silentArgs = "/S"
+$fileType = 'exe'
+$silentArgs = '/S'
 
 # Variables for the AutoHotkey-script
-$scriptPath="$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$scriptPath = Split-Path -parent $MyInvocation.MyCommand.Definition
 $ahkFile = "`"$scriptPath\dropbox.ahk`""
-$exeToRun = "$env:ProgramFiles\AutoHotkey\AutoHotkey.exe"
+$exeToRun = 'AutoHotkey.exe'
  
 try { 
 	if (-not (Test-Path $filePath)) {
@@ -22,6 +22,6 @@ try {
 
 	Write-ChocolateySuccess $packageName
 } catch {
-	Write-ChocolateyFailure $packageName "$($_.Exception.Message)"
+	Write-ChocolateyFailure $packageName $($_.Exception.Message)
 	throw
  }
