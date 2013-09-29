@@ -707,8 +707,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>1588760</LastFileSize>
-    <LastFileDate>2013-09-20T08:04:13.3311824</LastFileDate>
+    <LastFileSize>1640984</LastFileSize>
+    <LastFileDate>2013-09-28T05:40:28.7372667</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -760,11 +760,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\SetupVirtualCloneDrive5460.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\SetupVirtualCloneDrive5470.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-20T08:04:13.3311824</LastUpdated>
+    <LastUpdated>2013-09-28T05:40:28.7372667</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://static.slysoft.com/SetupVirtualCloneDrive.exe</FixedDownloadUrl>
     <Name>VirtualCloneDrive</Name>
@@ -1144,8 +1144,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>33641960</LastFileSize>
-    <LastFileDate>2013-09-19T13:49:31.4512695</LastFileDate>
+    <LastFileSize>35282952</LastFileSize>
+    <LastFileDate>2013-09-28T05:41:20.5454237</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1193,11 +1193,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.2.13.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.4.0.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-19T13:49:31.4512695</LastUpdated>
+    <LastUpdated>2013-09-28T05:41:20.5454237</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://dl-web.dropbox.com/u/17/Dropbox {version}.exe</FixedDownloadUrl>
     <Name>dropbox</Name>
@@ -4009,8 +4009,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>53866496</LastFileSize>
-    <LastFileDate>2013-07-19T05:41:29.2850747</LastFileDate>
+    <LastFileSize>53895168</LastFileSize>
+    <LastFileDate>2013-09-28T05:42:10.8715618</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4060,11 +4060,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\ReSharperSetup.8.0.1000.2286.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\ReSharperSetup.8.0.2000.2660.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-07-19T05:41:29.2850747</LastUpdated>
+    <LastUpdated>2013-09-28T05:42:10.8715618</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.jetbrains.com/resharper/ReSharperSetup.{version}.msi</FixedDownloadUrl>
     <Name>resharper</Name>
