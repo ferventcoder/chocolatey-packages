@@ -1,7 +1,7 @@
 $packageName = 'vim'
 $fileType = 'exe'
 $args = '/S'
-$url = 'http://downloads.sourceforge.net/project/cream/Vim/7.3.829/gvim-7-3-829.exe'
+$url = 'http://downloads.sourceforge.net/project/cream/Vim/7.4.27/gvim-7-4-27.exe'
 
 Install-ChocolateyPackage $packageName $fileType $args $url
 
