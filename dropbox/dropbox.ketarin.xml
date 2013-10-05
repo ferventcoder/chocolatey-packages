@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>33641960</LastFileSize>
-    <LastFileDate>2013-09-19T20:49:31.414833+02:00</LastFileDate>
+    <LastFileSize>35289352</LastFileSize>
+    <LastFileDate>2013-10-05T20:54:38.2929861+02:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -39,7 +39,7 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=release_type_stable release_version_[\d\.]+ release_build_)[\d\.]+(?="&gt;)</Regex>
+            <Regex>(?&lt;=release_build_)[\d\.]+(?= release_type_stable)</Regex>
             <Url>https://www.dropbox.com/release_notes</Url>
             <TextualContent />
             <Name>version</Name>
@@ -53,11 +53,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.2.13.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.4.1.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-19T20:49:31.4512695+02:00</LastUpdated>
+    <LastUpdated>2013-10-05T20:54:38.3327264+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://dl-web.dropbox.com/u/17/Dropbox {version}.exe</FixedDownloadUrl>
     <Name>dropbox</Name>
