@@ -240,8 +240,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>6284400</LastFileSize>
-    <LastFileDate>2013-06-04T05:40:17.8173479</LastFileDate>
+    <LastFileSize>6995888</LastFileSize>
+    <LastFileDate>2013-10-05T05:40:21.6202667</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -276,11 +276,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\1Password-1.0.9.333.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\1Password-1.0.9.335.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-06-04T05:40:17.8173479</LastUpdated>
+    <LastUpdated>2013-10-05T05:40:21.6202667</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://d13itkw33a7sus.cloudfront.net/dist/1P/win/1Password-{version}.exe</FixedDownloadUrl>
     <Name>1password</Name>
@@ -4073,8 +4073,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>1492584</LastFileSize>
-    <LastFileDate>2013-07-05T05:41:16.9678822</LastFileDate>
+    <LastFileSize>1551008</LastFileSize>
+    <LastFileDate>2013-10-05T05:40:51.2461736</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4096,7 +4096,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>skype</FileHippoId>
-    <LastUpdated>2013-07-05T05:41:16.9678822</LastUpdated>
+    <LastUpdated>2013-10-05T05:40:51.2461736</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>skype</Name>
