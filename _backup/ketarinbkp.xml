@@ -4173,7 +4173,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>687268</LastFileSize>
-    <LastFileDate>2013-10-07T05:40:37.7998093</LastFileDate>
+    <LastFileDate>2013-10-11T05:40:39.2354299</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4227,7 +4227,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-10-07T05:40:37.7998093</LastUpdated>
+    <LastUpdated>2013-10-11T05:40:39.2354299</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.analyzer</Name>
@@ -4304,7 +4304,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>283353</LastFileSize>
-    <LastFileDate>2013-10-07T05:40:37.6208324</LastFileDate>
+    <LastFileDate>2013-10-11T05:40:39.7034346</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4358,7 +4358,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-10-07T05:40:37.6208324</LastUpdated>
+    <LastUpdated>2013-10-11T05:40:39.7034346</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.shell</Name>
