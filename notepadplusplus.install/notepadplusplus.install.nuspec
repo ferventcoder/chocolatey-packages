@@ -21,4 +21,7 @@ I hope you enjoy Notepad++ as much as I enjoy coding it.
     <tags>notepad notepadplusplus notepad-plus-plus chocolatey admin</tags>
     <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/notepadplusplus/nppLogo.png</iconUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

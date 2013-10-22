@@ -14,4 +14,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/filezilla.server/64px-Filezilla_logo.png</iconUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

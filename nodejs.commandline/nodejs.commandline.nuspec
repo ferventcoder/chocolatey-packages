@@ -17,4 +17,7 @@ This package simply copies Node.exe to a subfolder within the Chocolatey folder.
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/nodejs/nodejs.png</iconUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

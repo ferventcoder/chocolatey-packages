@@ -18,4 +18,7 @@ Fiddler is freeware and can debug traffic from virtually any application, includ
     <releaseNotes>
     </releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -20,4 +20,7 @@ This package is an alias for the nodejs.commandline package, which simply instal
       <dependency id="nodejs.commandline" version="[{{PackageVersion}}]" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

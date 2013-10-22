@@ -14,4 +14,7 @@ VCD, and various streaming protocols.</description>
     <tags>vlc multimedia media player admin</tags>
     <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/vlc/largeVLC.png</iconUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

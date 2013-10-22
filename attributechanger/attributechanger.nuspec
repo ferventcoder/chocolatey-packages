@@ -13,4 +13,7 @@
     <licenseUrl>http://www.petges.lu/product/faq/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

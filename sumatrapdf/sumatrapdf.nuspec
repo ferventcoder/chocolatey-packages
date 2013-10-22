@@ -23,4 +23,7 @@ Simplicity of the user interface has a high priority</description>
     </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

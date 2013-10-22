@@ -17,4 +17,7 @@
       <dependency id="7zip.commandline" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

@@ -15,4 +15,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/ketarin/ketarin.png</iconUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

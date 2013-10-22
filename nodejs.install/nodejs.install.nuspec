@@ -17,4 +17,7 @@ This package runs the official Node JS installer, resulting in Node.exe and NPM 
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/nodejs/nodejs.png</iconUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

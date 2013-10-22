@@ -24,4 +24,7 @@ I hope you enjoy Notepad++ as much as I enjoy coding it.
       <dependency id="notepadplusplus.install" version="[{{PackageVersion}}]" />
     </dependencies> 
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>

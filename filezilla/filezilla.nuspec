@@ -14,4 +14,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/FileZilla_logo.svg/128px-FileZilla_logo.svg.png</iconUrl>
   </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
