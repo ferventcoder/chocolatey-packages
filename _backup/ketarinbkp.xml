@@ -240,8 +240,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>6967512</LastFileSize>
-    <LastFileDate>2013-10-09T05:40:22.7828084</LastFileDate>
+    <LastFileSize>6968392</LastFileSize>
+    <LastFileDate>2013-10-22T05:40:26.4695572</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Avoid</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -276,11 +276,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\1Password-1.0.9.337.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\1Password-1.0.9.338.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-10-09T05:40:22.7828084</LastUpdated>
+    <LastUpdated>2013-10-22T05:40:26.4695572</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://d13itkw33a7sus.cloudfront.net/dist/1P/win/1Password-{version}.exe</FixedDownloadUrl>
     <Name>1password</Name>
