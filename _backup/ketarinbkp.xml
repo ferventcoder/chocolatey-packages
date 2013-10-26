@@ -1144,8 +1144,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>34873800</LastFileSize>
-    <LastFileDate>2013-10-18T05:41:08.357072</LastFileDate>
+    <LastFileSize>35336112</LastFileSize>
+    <LastFileDate>2013-10-24T05:41:08.0066438</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1193,11 +1193,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.4.3.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.4.4.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-10-18T05:41:08.357072</LastUpdated>
+    <LastUpdated>2013-10-24T05:41:08.0066438</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://dl-web.dropbox.com/u/17/Dropbox {version}.exe</FixedDownloadUrl>
     <Name>dropbox</Name>
@@ -1323,8 +1323,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>760024</LastFileSize>
-    <LastFileDate>2013-09-16T21:00:53.3860474</LastFileDate>
+    <LastFileSize>761744</LastFileSize>
+    <LastFileDate>2013-10-24T05:40:20.2566635</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1378,7 +1378,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-16T21:00:53.3860474</LastUpdated>
+    <LastUpdated>2013-10-24T05:40:20.2566635</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://fiddler2.com/docs/default-source/public-downloads/fiddler2setup.exe</FixedDownloadUrl>
     <Name>fiddler</Name>
@@ -2555,8 +2555,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>28374093</LastFileSize>
-    <LastFileDate>2013-10-16T08:34:37.9840062</LastFileDate>
+    <LastFileSize>28136607</LastFileSize>
+    <LastFileDate>2013-10-24T05:41:36.5493702</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2621,11 +2621,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\maxthon_portable_4.1.2.4000.7z</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\maxthon_portable_4.1.3.2000.7z</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-10-16T08:34:37.9840062</LastUpdated>
+    <LastUpdated>2013-10-24T05:41:36.5493702</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>maxthon.commandline</Name>
@@ -2701,8 +2701,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>33532792</LastFileSize>
-    <LastFileDate>2013-10-16T08:34:29.8998827</LastFileDate>
+    <LastFileSize>33406936</LastFileSize>
+    <LastFileDate>2013-10-24T05:41:34.5794165</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2766,11 +2766,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\mx4.1.2.4000.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\mx4.1.3.2000.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-10-16T08:34:29.8998827</LastUpdated>
+    <LastUpdated>2013-10-24T05:41:34.5794165</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>maxthon.install</Name>
@@ -4897,8 +4897,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>13173415</LastFileSize>
-    <LastFileDate>2013-09-09T23:37:05.3105229</LastFileDate>
+    <LastFileSize>13205476</LastFileSize>
+    <LastFileDate>2013-10-24T05:42:08.3346792</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4985,7 +4985,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-09T23:37:05.3105229</LastUpdated>
+    <LastUpdated>2013-10-24T05:42:08.3346792</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.sysinternals.com/files/SysinternalsSuite.zip</FixedDownloadUrl>
     <Name>sysinternals</Name>
