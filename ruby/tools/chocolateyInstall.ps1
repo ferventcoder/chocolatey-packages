@@ -1,8 +1,16 @@
 try {
-  $binRoot = "$env:systemdrive\"
-
-  ### Using an environment variable to to define the bin root until we implement YAML configuration ###
-  if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
+	# Calculate $binRoot
+	if($env:chocolatey_bin_root -eq $null) {
+		$binRoot = "$env:ChocolateyInstall\bin"
+	}
+	# My chocolatey_bin_root is C:\Common\bin, but looking at other packages, not everyone assumes chocolatey_bin_root is prepended with a drive letter.
+	elseIf (-not($env:chocolatey_bin_root -imatch "^\w:")) {
+		# Add drive letter
+		$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root
+	}
+	else {
+		$binRoot = $env:chocolatey_bin_root
+	}
 
   # $rubyFolder = '187'
   # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.8.7-p374.exe?direct'
