@@ -1,20 +1,10 @@
 try {
 
-  # This should be the preferred method
-  #$binRoot = Get-BinRoot
-	
+  # Temporary include function until it is included with Chocolatey
+  Import-Module "$($pwd)\Get-BinRoot.ps1"
+		
   # Calculate $binRoot
-  if($env:chocolatey_bin_root -eq $null) {
-    $binRoot = "$env:ChocolateyInstall\bin"
-  }
-  # My chocolatey_bin_root is C:\Common\bin, but looking at other packages, not everyone assumes chocolatey_bin_root is prepended with a drive letter.
-  elseIf (-not($env:chocolatey_bin_root -imatch "^\w:")) {
-    # Add drive letter
-    $binRoot = join-path $env:systemdrive $env:chocolatey_bin_root
-  }
-  else {
-    $binRoot = $env:chocolatey_bin_root
-  }
+  $binRoot = Get-BinRoot
 
   # $rubyFolder = '187'
   # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.8.7-p374.exe?direct'
