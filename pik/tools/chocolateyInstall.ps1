@@ -3,10 +3,11 @@
   #$chocoBin = join-path $env:ChocolateyInstall 'bin'
   #& pik_install "$chocoBin"
   
-  $binRoot = "$env:systemdrive\"
-
-  ### Using an environment variable to to define the bin root until we implement YAML configuration ###
-  if($env:chocolatey_bin_root -ne $null -and $env:chocolatey_bin_root -notlike '*:\*'){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
+  # Temporary include function until it is included with Chocolatey
+  Import-Module "$($pwd)\Get-BinRoot.ps1"
+    
+  # Get $binRoot until we implement YAML configuration
+  $binRoot = Get-BinRoot
   $pikPath = join-path $binRoot 'pik'
   
   $scriptDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
