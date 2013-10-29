@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>grepwin</id>
+    <title>grepWin</title>
+    <version>1.6.3</version>
+    <authors>Stefans Tools</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>grepwin</summary>
+    <description>grepWin is a simple search and replace tool which can use regular expressions to do its job. This allows to do much more powerful searches and replaces.</description>
+    <projectUrl>http://tools.tortoisesvn.net/grepWin.html</projectUrl>
+    <tags>grepwin grep search admin</tags>
+    <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/grepwin/grepWinlogo.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
