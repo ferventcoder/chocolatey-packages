@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>aspnetmvc4.install</id>
+    <title>ASP.NET MVC (Installation)</title>
+    <version>4.0.20714.0</version>
+    <authors>Microsoft Asp.Net Team</authors>
+    <owners>Rob Reynolds, Justin Dearing</owners>
+    <summary>ASP.NET MVC is a free, fully supported Microsoft framework for developing great web applications using the Model-View-Controller pattern.</summary>
+    <description>ASP.NET MVC is a free, fully supported Microsoft framework for developing great web applications using the Model-View-Controller pattern. It provides total control over your HTML and URLs, enables rich Ajax integration, and facilitates test driven development. To find out more information about ASP.NET MVC, visit the following resources: 
+[ The ASP.NET MVC site  site provides tutorials, quickstarts, and videos. (http://www.asp.net/mvc/)
+| ASP.NET MVC Documentation on MSDN. (http://msdn.microsoft.com/en-us/library/dd394709.aspx) ]</description>
+    <projectUrl>http://www.asp.net/mvc</projectUrl>
+    <tags>aspnetmvc asp.net mvc admin</tags>
+    <licenseUrl>http://aspnet.codeplex.com/license</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <!--<iconUrl>32x32.png</iconUrl>-->
+    <releaseNotes>http://www.asp.net/whitepapers/mvc4-release-notes</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
