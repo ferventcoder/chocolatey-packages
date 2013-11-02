@@ -7,16 +7,15 @@ $silentArgs = '/S'
 
 # Variables for the AutoHotkey-script
 $scriptPath = Split-Path -parent $MyInvocation.MyCommand.Definition
-$ahkFile = "`"$scriptPath\dropbox.ahk`""
-$exeToRun = 'AutoHotkey.exe'
+$ahkFile = "$scriptPath\dropbox.ahk"
  
 try { 
 	if (-not (Test-Path $filePath)) {
 		New-Item $filePath -type directory
 	}
 	Get-ChocolateyWebFile $packageName $fileFullPath $url
-    Start-Process $exeToRun -Verb runas -ArgumentList $ahkFile
-	Start-Process $fileFullPath -ArgumentList $silentArgs
+    Start-Process 'AutoHotkey' $ahkFile
+	Start-Process $fileFullPath $silentArgs
 	Wait-Process -Name "dropboxInstall"
 	Remove-Item $fileFullPath
 
@@ -24,4 +23,4 @@ try {
 } catch {
 	Write-ChocolateyFailure $packageName $($_.Exception.Message)
 	throw
- }
+}
