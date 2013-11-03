@@ -1144,8 +1144,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>35327024</LastFileSize>
-    <LastFileDate>2013-10-30T05:41:27.754541</LastFileDate>
+    <LastFileSize>35333360</LastFileSize>
+    <LastFileDate>2013-11-02T05:41:26.4385589</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1193,11 +1193,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.4.5.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.4.6.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-10-30T05:41:27.754541</LastUpdated>
+    <LastUpdated>2013-11-02T05:41:26.4385589</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://dl-web.dropbox.com/u/17/Dropbox {version}.exe</FixedDownloadUrl>
     <Name>dropbox</Name>
@@ -4897,8 +4897,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>13205487</LastFileSize>
-    <LastFileDate>2013-10-29T05:41:12.4531952</LastFileDate>
+    <LastFileSize>13206169</LastFileSize>
+    <LastFileDate>2013-11-02T05:41:52.3972366</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4985,7 +4985,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-10-29T05:41:12.4531952</LastUpdated>
+    <LastUpdated>2013-11-02T05:41:52.3972366</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.sysinternals.com/files/SysinternalsSuite.zip</FixedDownloadUrl>
     <Name>sysinternals</Name>
@@ -4994,8 +4994,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>106625296</LastFileSize>
-    <LastFileDate>2013-10-16T08:36:13.1137865</LastFileDate>
+    <LastFileSize>106230544</LastFileSize>
+    <LastFileDate>2013-11-02T05:44:12.6937015</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5061,11 +5061,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\VirtualBox-4.3.0-89960-Win.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\VirtualBox-4.3.2-90405-Win.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-10-16T08:36:13.1137865</LastUpdated>
+    <LastUpdated>2013-11-02T05:44:12.6937015</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.virtualbox.org/virtualbox/{version}/VirtualBox-{urlpart}-Win.exe</FixedDownloadUrl>
     <Name>virtualbox</Name>
