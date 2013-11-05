@@ -3182,8 +3182,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>6289807</LastFileSize>
-    <LastFileDate>2013-09-29T09:50:34.9621671</LastFileDate>
+    <LastFileSize>6305464</LastFileSize>
+    <LastFileDate>2013-11-04T05:40:59.3945925</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3218,11 +3218,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\npp.6.5.bin.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\npp.6.5.1.bin.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>notepad</FileHippoId>
-    <LastUpdated>2013-09-29T09:50:34.9621671</LastUpdated>
+    <LastUpdated>2013-11-04T05:40:59.3945925</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.tuxfamily.org/notepadplus/{version}/npp.{version}.bin.zip</FixedDownloadUrl>
     <Name>notepadplusplus.commandline</Name>
@@ -3231,8 +3231,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>7504223</LastFileSize>
-    <LastFileDate>2013-09-29T09:50:42.377062</LastFileDate>
+    <LastFileSize>7520740</LastFileSize>
+    <LastFileDate>2013-11-04T05:41:02.2338384</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3267,11 +3267,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\npp.6.5.Installer.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\npp.6.5.1.Installer.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>notepad</FileHippoId>
-    <LastUpdated>2013-09-29T09:50:42.377062</LastUpdated>
+    <LastUpdated>2013-11-04T05:41:02.2338384</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.tuxfamily.org/notepadplus/{version}/npp.{version}.Installer.exe</FixedDownloadUrl>
     <Name>notepadplusplus.install</Name>
