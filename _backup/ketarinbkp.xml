@@ -839,8 +839,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>54476696</LastFileSize>
-    <LastFileDate>2012-05-23T02:29:03.7775241</LastFileDate>
+    <LastFileSize>50573696</LastFileSize>
+    <LastFileDate>2013-11-08T01:30:37.3157651</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -862,8 +862,8 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>http://get.adobe.com/reader/</Url>
-            <StartText>&lt;span id="clientversion"&gt;X (</StartText>
-            <EndText>)&lt;/span&gt;</EndText>
+            <StartText>mainInstallerName: "Reader </StartText>
+            <EndText> English for Windows</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -879,7 +879,7 @@
             <VariableType>Textual</VariableType>
             <Regex>[\d]+\.[\d]+\.[\d]+</Regex>
             <Url>http://get.adobe.com/reader/</Url>
-            <TextualContent>string.Replace({version},".","");</TextualContent>
+            <TextualContent>{version:replace:.:}</TextualContent>
             <Name>versionNoDots</Name>
           </UrlVariable>
         </value>
@@ -890,14 +890,14 @@
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
-    <SourceType>FileHippo</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\AdbeRdr1013_en_US.exe</PreviousLocation>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Chocolatey\_work\AdbeRdr11004_en_US.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
-    <Enabled>false</Enabled>
+    <Enabled>true</Enabled>
     <FileHippoId>adobe_reader</FileHippoId>
-    <LastUpdated>2012-05-23T02:29:03.7775241</LastUpdated>
+    <LastUpdated>2013-11-08T01:30:37.3157651</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl />
+    <FixedDownloadUrl>http://ardownload.adobe.com/pub/adobe/reader/win/11.x/{version}/en_US/AdbeRdr{versionNoDots}_en_US.exe</FixedDownloadUrl>
     <Name>adobereader</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="4d83dfc4-9a8a-475c-b20b-7b1571395f2a">
@@ -969,8 +969,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>4242486</LastFileSize>
-    <LastFileDate>2012-12-07T05:40:38.984044</LastFileDate>
+    <LastFileSize>3307203</LastFileSize>
+    <LastFileDate>2013-11-08T01:35:41.7032247</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -991,9 +991,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://www.petges.lu/download/</Url>
-            <StartText>&lt;span style="font-size:16px; "&gt;Attribute Changer </StartText>
-            <EndText>&lt;/span&gt; </EndText>
+            <Url>http://www.petges.lu/home/download/</Url>
+            <StartText>/uploads/ac.exe"&gt;Get Attribute Changer </StartText>
+            <EndText>&lt;/a&gt;</EndText>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -1009,9 +1009,9 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-12-07T05:40:38.984044</LastUpdated>
+    <LastUpdated>2013-11-08T01:35:41.7032247</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.petges.lu/download/ac.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>http://www.petges.lu/home/wp-content/uploads/ac.exe</FixedDownloadUrl>
     <Name>attributechanger</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b4399fc6-08d6-435a-88c1-ed2430eadf16">
@@ -1965,70 +1965,6 @@
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://gitextensions.googlecode.com/files/{urlpart}</FixedDownloadUrl>
     <Name>gitextensions</Name>
-  </ApplicationJob>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b16e0e83-8095-479e-af41-866f6daecc2b">
-    <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
-    <UserNotes />
-    <LastFileSize>778060</LastFileSize>
-    <LastFileDate>2012-12-07T05:40:28.2588171</LastFileDate>
-    <IgnoreFileInformation>false</IgnoreFileInformation>
-    <DownloadBeta>Default</DownloadBeta>
-    <DownloadDate xsi:nil="true" />
-    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator />
-    <CanBeShared>true</CanBeShared>
-    <ShareApplication>false</ShareApplication>
-    <ExclusiveDownload>false</ExclusiveDownload>
-    <HttpReferer />
-    <SetupInstructions />
-    <Variables>
-      <item>
-        <key>
-          <string>version</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
-            <Url>https://github.com/git-tfs/git-tfs/downloads</Url>
-            <StartText>&lt;a href="/downloads/git-tfs/git-tfs/GitTfs-</StartText>
-            <EndText>.zip"&gt;</EndText>
-            <TextualContent />
-            <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>url64</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>""</TextualContent>
-            <Name>url64</Name>
-          </UrlVariable>
-        </value>
-      </item>
-    </Variables>
-    <ExecuteCommand />
-    <ExecutePreCommand />
-    <ExecuteCommandType>Batch</ExecuteCommandType>
-    <ExecutePreCommandType>Batch</ExecutePreCommandType>
-    <Category />
-    <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\GitTfs-0.16.1.zip</PreviousLocation>
-    <DeletePreviousFile>true</DeletePreviousFile>
-    <Enabled>true</Enabled>
-    <FileHippoId />
-    <LastUpdated>2012-12-07T05:40:28.2588171</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>https://github.com/downloads/git-tfs/git-tfs/GitTfs-{version}.zip</FixedDownloadUrl>
-    <Name>gittfs</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="207f126f-8677-4637-98be-d5743eae5e08">
     <WebsiteUrl />
@@ -5138,7 +5074,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>35379</LastFileSize>
-    <LastFileDate>2013-11-05T05:41:49.1361359</LastFileDate>
+    <LastFileDate>2013-11-07T05:40:49.5967482</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5183,7 +5119,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-11-05T05:41:49.1361359</LastUpdated>
+    <LastUpdated>2013-11-07T05:40:49.5967482</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://yeoman.io/assets/img/yeoman-008.png</FixedDownloadUrl>
     <Name>yeoman</Name>
