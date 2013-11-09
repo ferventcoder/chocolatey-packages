@@ -4,7 +4,7 @@ SendMode Input  ; Recommended for new scripts due to its superior speed and reli
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 WinWait, Dropbox Setup,, 60
-Sleep, 250
+Sleep, 2000
 WinActivate
 IfWinActive
 	ControlClick, Button1
