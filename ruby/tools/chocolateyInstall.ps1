@@ -1,8 +1,10 @@
 try {
-  $binRoot = "$env:systemdrive\"
 
-  ### Using an environment variable to to define the bin root until we implement YAML configuration ###
-  if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
+  # Temporary include function until it is included with Chocolatey
+  Import-Module "$($pwd)\Get-BinRoot.ps1"
+		
+  # Calculate $binRoot
+  $binRoot = Get-BinRoot
 
   # $rubyFolder = '187'
   # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.8.7-p374.exe?direct'
