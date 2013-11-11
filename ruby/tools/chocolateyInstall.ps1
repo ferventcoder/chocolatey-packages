@@ -2,7 +2,7 @@ try {
 
   # Temporary include function until it is included with Chocolatey
   Import-Module "$($pwd)\Get-BinRoot.ps1"
-		
+
   # Calculate $binRoot
   $binRoot = Get-BinRoot
 
@@ -20,12 +20,12 @@ try {
 
   Install-ChocolateyPackage 'ruby' 'exe' "$silentArgs" "$url"
 
-  # # Install and configure pik
-  # Write-Host "Now we are going to install pik and set up the folder - so Ruby is pointed to the correct version"
   $rubyBin = join-path $rubyPath 'bin'
   Write-Host "Adding `'$rubyBin`' to the local path"
   $env:Path = "$($env:Path);$rubyBin"
-  
+
+  # # Install and configure pik
+  # Write-Host "Now we are going to install pik and set up the folder - so Ruby is pointed to the correct version"
   # $nugetBin = join-path $env:ChocolateyInstall 'bin'
   # #$gem = 'gem.bat'
   # $pikInstall = 'pik_install.bat'
