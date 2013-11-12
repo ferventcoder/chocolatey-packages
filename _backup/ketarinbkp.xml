@@ -3881,8 +3881,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>16228352</LastFileSize>
-    <LastFileDate>2013-05-20T05:41:02.3351737</LastFileDate>
+    <LastFileSize>16281600</LastFileSize>
+    <LastFileDate>2013-11-11T05:41:13.039623</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3932,11 +3932,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\python-2.7.5.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\python-2.7.6.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-05-20T05:41:02.3351737</LastUpdated>
+    <LastUpdated>2013-11-11T05:41:13.039623</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.python.org/ftp/python/{version}/python-{version}.msi</FixedDownloadUrl>
     <Name>python</Name>
