@@ -1,19 +1,24 @@
 try {
 
   # Temporary include function until it is included with Chocolatey
-  Import-Module "$($pwd)\Get-BinRoot.ps1"
+
+  $thisDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+  if (!(Get-Command Get-BinRoot -errorAction SilentlyContinue))
+  {
+    Import-Module "$($thisDir)\Get-BinRoot.ps1"
+  }
 
   # Calculate $binRoot
   $binRoot = Get-BinRoot
 
-  # $rubyFolder = '187'
-  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.8.7-p374.exe?direct'
+  $rubyFolder = '187'
+  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.8.7-p374.exe?direct'
 
   # $rubyFolder = '193'
   # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p448.exe?direct'
 
-  $rubyFolder = '200'
-  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p247.exe?direct'
+  # $rubyFolder = '200'
+  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p247.exe?direct'
 
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
   $silentArgs = "/verysilent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""

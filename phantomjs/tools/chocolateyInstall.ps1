@@ -3,10 +3,12 @@ try {
   $version = '1.9.2'
 
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+  if (!(Get-Command Get-BinRoot -errorAction SilentlyContinue))
+  {
+    Import-Module "$($installDir)\Get-BinRoot.ps1"
+  }
 
-  # Temporary include function until it is included with Chocolatey
-  Import-Module "$($pwd)\Get-BinRoot.ps1"
-    
+
   # Get $binRoot until we implement YAML configuration
   $binRoot = Get-BinRoot
 
