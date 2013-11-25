@@ -11,19 +11,21 @@ try {
   # Calculate $binRoot
   $binRoot = Get-BinRoot
 
-  $rubyFolder = '187'
-  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.8.7-p374.exe?direct'
+  # $rubyFolder = '187'
+  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.8.7-p374.exe?direct'
 
   # $rubyFolder = '193'
-  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p448.exe?direct'
+  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p484.exe?direct'
 
-  # $rubyFolder = '200'
-  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p247.exe?direct'
+  $rubyFolder = '200'
+  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p353.exe?direct'
+  $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p353-x64.exe?direct'
 
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
   $silentArgs = "/verysilent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""
 
-  Install-ChocolateyPackage 'ruby' 'exe' "$silentArgs" "$url"
+  #Install-ChocolateyPackage 'ruby' 'exe' "$silentArgs" "$url"
+  Install-ChocolateyPackage 'ruby' 'exe' "$silentArgs" "$url" "$url64"
 
   $rubyBin = join-path $rubyPath 'bin'
   Write-Host "Adding `'$rubyBin`' to the local path"
