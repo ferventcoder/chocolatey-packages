@@ -5074,7 +5074,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>35379</LastFileSize>
-    <LastFileDate>2013-11-28T05:41:54.9658133</LastFileDate>
+    <LastFileDate>2013-11-29T05:40:49.9992569</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5119,7 +5119,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-11-28T05:41:54.9658133</LastUpdated>
+    <LastUpdated>2013-11-29T05:40:49.9992569</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://yeoman.io/assets/img/yeoman-008.png</FixedDownloadUrl>
     <Name>yeoman</Name>
