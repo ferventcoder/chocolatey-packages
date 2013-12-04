@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>vagrant-winrm-config</id>
+    <title>Vagrant WinRM Configuration</title>
+    <version>0.0.1</version>
+    <authors>Rob Reynolds</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Vagrant WinRM Configuration</summary>
+    <description>Vagrant WinRM Configuration
+
+    This sets up the configuration as described at https://github.com/WinRb/vagrant-windows/#winrm-configuration
+
+    NOTE: Please run this from an adminstrative command line as this has been known to fail attempting to put it into Start-ProcessAsAdministrator.
+    </description>
+    <projectUrl>https://github.com/ferventcoder/nugetpackages</projectUrl>
+    <tags>vagrant winrm configuration admin</tags>
+    <releaseNotes></releaseNotes>
+    <dependencies>
+        <dependency id="disableuac" version="0.0.2" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
