@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>powershell4</id>
+    <title>Windows Management Framework and PowerShell 4.0</title>
+    <version>4.0.0.20131204</version>
+    <authors>Microsoft</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Windows Management Framework 4.0 includes updates to Windows PowerShell, Windows PowerShell ISE, Windows PowerShell Web Services (Management OData IIS Extension), Windows Remote Management (WinRM), Windows Management Instrumentation (WMI), the Server Manager WMI provider, and a new feature for 4.0, Windows PowerShell Desired State Configuration (DSC).</summary>
+    <description>Windows Management Framework 4.0 includes updates to Windows PowerShell, Windows PowerShell ISE, Windows PowerShell Web Services (Management OData IIS Extension), Windows Remote Management (WinRM), Windows Management Instrumentation (WMI), the Server Manager WMI provider, and a new feature for 4.0, Windows PowerShell Desired State Configuration (DSC).
+
+  This is available only for the following Operating Systems
+
+  * Windows 7 SP1
+  * Windows 2008 R2
+  * Windows 2012
+
+  For Windows 8, there is not a package available. To get WMF 4.0, you must install the update to 8.1. For more information, please see http://blogs.msdn.com/b/powershell/archive/2013/10/25/windows-management-framework-4-0-is-now-available.aspx
+    </description>
+    <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=40855</projectUrl>
+    <tags>powershell microsoft admin</tags>
+    <copyright>Microsoft</copyright>
+    <licenseUrl>http://www.microsoft.com/en-us/download/details.aspx?id=40855</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="DotNet4.5" version="4.5.20120822" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
