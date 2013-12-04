@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>disableuac</id>
+    <title>Disable UAC (User Account Control)</title>
+    <version>0.0.2</version>
+    <authors>Rob Reynolds</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Disable UAC (User Account Control)</summary>
+    <description>Disable UAC (User Account Control)
+
+This does exactly what it says it does, it disables UAC. Be careful on Windows 8, as the Metro apps will no longer work.
+    </description>
+    <projectUrl>https://github.com/ferventcoder/nugetpackages</projectUrl>
+    <tags>disable uac user account control configuration admin</tags>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
