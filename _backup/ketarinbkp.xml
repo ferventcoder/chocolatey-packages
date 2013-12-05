@@ -2795,8 +2795,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>37315584</LastFileSize>
-    <LastFileDate>2013-09-20T08:04:05.3750982</LastFileDate>
+    <LastFileSize>40407552</LastFileSize>
+    <LastFileDate>2013-12-03T05:41:29.4995629</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2846,11 +2846,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\mysql-5.6.14-win32.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\mysql-5.6.15-win32.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-20T08:04:05.3750982</LastUpdated>
+    <LastUpdated>2013-12-03T05:41:29.4995629</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.mysql.com/get/Downloads/MySQL-5.6/mysql-{version}-win32.msi/from/http://mysql.he.net/</FixedDownloadUrl>
     <Name>mysql</Name>
