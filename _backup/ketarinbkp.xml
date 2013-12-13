@@ -1323,8 +1323,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>761744</LastFileSize>
-    <LastFileDate>2013-10-24T05:40:20.2566635</LastFileDate>
+    <LastFileSize>774216</LastFileSize>
+    <LastFileDate>2013-12-12T05:40:20.7848098</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1378,7 +1378,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-10-24T05:40:20.2566635</LastUpdated>
+    <LastUpdated>2013-12-12T05:40:20.7848098</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://fiddler2.com/docs/default-source/public-downloads/fiddler2setup.exe</FixedDownloadUrl>
     <Name>fiddler</Name>
@@ -2990,8 +2990,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>5797224</LastFileSize>
-    <LastFileDate>2013-11-13T05:41:01.5679104</LastFileDate>
+    <LastFileSize>5798248</LastFileSize>
+    <LastFileDate>2013-12-12T05:40:45.6202557</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3045,7 +3045,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-11-13T05:41:01.5679104</LastUpdated>
+    <LastUpdated>2013-12-12T05:40:45.6202557</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://nodejs.org/dist/v{version}/node.exe</FixedDownloadUrl>
     <Name>nodejs.commandline</Name>
@@ -3054,8 +3054,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>5496832</LastFileSize>
-    <LastFileDate>2013-11-13T05:40:51.5914918</LastFileDate>
+    <LastFileSize>5545984</LastFileSize>
+    <LastFileDate>2013-12-12T05:40:36.9153614</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3105,11 +3105,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\node-v0.10.22-x86.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\node-v0.10.23-x86.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-11-13T05:40:51.5914918</LastUpdated>
+    <LastUpdated>2013-12-12T05:40:36.9153614</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://nodejs.org/dist/v{version}/node-v{version}-x86.msi</FixedDownloadUrl>
     <Name>nodejs.install</Name>
@@ -3264,7 +3264,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>47964160</LastFileSize>
-    <LastFileDate>2013-07-11T21:04:09.5708978</LastFileDate>
+    <LastFileDate>2013-12-12T05:42:47.2235577</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3314,11 +3314,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\php-5.3.27-nts-Win32-VC9-x86.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\php-5.3.28-nts-Win32-VC9-x86.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-07-11T21:04:09.5708978</LastUpdated>
+    <LastUpdated>2013-12-12T05:42:47.2235577</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://windows.php.net/downloads/releases/php-{version}-nts-Win32-VC9-x86.msi</FixedDownloadUrl>
     <Name>php</Name>
