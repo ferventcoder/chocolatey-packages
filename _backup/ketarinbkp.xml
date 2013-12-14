@@ -3945,8 +3945,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>53895168</LastFileSize>
-    <LastFileDate>2013-09-28T05:42:10.8715618</LastFileDate>
+    <LastFileSize>62415872</LastFileSize>
+    <LastFileDate>2013-12-13T15:49:08.8062883</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3996,11 +3996,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\ReSharperSetup.8.0.2000.2660.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\ReSharperSetup.8.1.23.546.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-28T05:42:10.8715618</LastUpdated>
+    <LastUpdated>2013-12-13T15:49:08.8062883</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.jetbrains.com/resharper/ReSharperSetup.{version}.msi</FixedDownloadUrl>
     <Name>resharper</Name>
@@ -5074,7 +5074,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>35379</LastFileSize>
-    <LastFileDate>2013-12-07T05:40:50.6431804</LastFileDate>
+    <LastFileDate>2013-12-13T15:48:10.0495968</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5119,7 +5119,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-12-07T05:40:50.6431804</LastUpdated>
+    <LastUpdated>2013-12-13T15:48:10.0495968</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://yeoman.io/assets/img/yeoman-008.png</FixedDownloadUrl>
     <Name>yeoman</Name>
