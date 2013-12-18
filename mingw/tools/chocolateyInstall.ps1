@@ -1,8 +1,13 @@
 ﻿$packageName = 'mingw'
-#$url = 'http://downloads.sourceforge.net/project/mingw/Installer/mingw-get-setup.exe?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fmingw%2Ffiles%2FInstaller%2F&ts=1384035674&use_mirror=superb-dca2' # download url
-$url = 'http://downloads.sourceforge.net/project/mingwbuilds/host-windows/releases/4.7.2/32-bit/threads-posix/sjlj/x32-4.7.2-release-posix-sjlj-rev2.7z'
+$packageVersion = '4.8.1'
+$rev = 'rev5'
+$threads = 'posix'
+$exceptionHandling = 'sjlj' #dwarf is 32bit only, sjlj works with 32 / 64.
+#$url = 'http://downloads.sourceforge.net/project/mingw/Installer/mingw-get-setup.exe?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fmingw%2Ffiles%2FInstaller%2F&ts=1384035674&use_mirror=superb-dca2' # download url
+
+$url = "http://downloads.sourceforge.net/project/mingwbuilds/host-windows/releases/$packageVersion/32-bit/threads-$threads/$exceptionHandling/x32-$packageVersion-release-$threads-$exceptionHandling-$rev.7z"
 #       http://downloads.sourceforge.net/project/mingwbuilds/host-windows/releases/4.7.2/32-bit/threads-posix/sjlj/x32-4.7.2-release-posix-sjlj-rev2.7z?r=&ts=1384174340&use_mirror=superb-dca2
-$url64 = 'http://downloads.sourceforge.net/project/mingwbuilds/host-windows/releases/4.7.2/64-bit/threads-posix/sjlj/x64-4.7.2-release-posix-sjlj-rev2.7z'
+$url64 = "http://downloads.sourceforge.net/project/mingwbuilds/host-windows/releases/$packageVersion/64-bit/threads-$threads/$exceptionHandling/x64-$packageVersion-release-$threads-$exceptionHandling-$rev.7z"
 #http://downloads.sourceforge.net/project/mingwbuilds/host-windows/releases/4.7.2/32-bit/threads-posix/sjlj/x32-4.7.2-release-posix-sjlj-rev2.7z
 try {
 
@@ -11,7 +16,8 @@ try {
   $installDir = Join-Path "$binRoot" 'MinGW'
   Write-Host "Adding `'$installDir`' to the path and the current shell path"
   Install-ChocolateyPath "$installDir\bin"
-  $env:Path = "$($env:Path);$installDir\bin"
+  $env:Path = "$($env:Path);$installDir\bin"
+
 
   if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateDirectory($installDir)}
 
