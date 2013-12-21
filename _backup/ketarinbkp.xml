@@ -2991,7 +2991,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>5798248</LastFileSize>
-    <LastFileDate>2013-12-12T05:40:45.6202557</LastFileDate>
+    <LastFileDate>2013-12-20T05:41:39.0480503</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3045,7 +3045,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-12-12T05:40:45.6202557</LastUpdated>
+    <LastUpdated>2013-12-20T05:41:39.0480503</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://nodejs.org/dist/v{version}/node.exe</FixedDownloadUrl>
     <Name>nodejs.commandline</Name>
@@ -3054,8 +3054,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>5545984</LastFileSize>
-    <LastFileDate>2013-12-12T05:40:36.9153614</LastFileDate>
+    <LastFileSize>5558272</LastFileSize>
+    <LastFileDate>2013-12-20T05:41:39.0480503</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3105,11 +3105,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\node-v0.10.23-x86.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\node-v0.10.24-x86.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-12-12T05:40:36.9153614</LastUpdated>
+    <LastUpdated>2013-12-20T05:41:39.0480503</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://nodejs.org/dist/v{version}/node-v{version}-x86.msi</FixedDownloadUrl>
     <Name>nodejs.install</Name>
@@ -3548,8 +3548,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>28549120</LastFileSize>
-    <LastFileDate>2013-11-13T05:41:29.921182</LastFileDate>
+    <LastFileSize>29122560</LastFileSize>
+    <LastFileDate>2013-12-20T05:41:46.1461267</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3601,11 +3601,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\puppet-3.3.2.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\puppet-3.4.0.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-11-13T05:41:29.921182</LastUpdated>
+    <LastUpdated>2013-12-20T05:41:46.1461267</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://downloads.puppetlabs.com/windows/puppet-{version}.msi</FixedDownloadUrl>
     <Name>puppet</Name>
@@ -4833,8 +4833,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>13206169</LastFileSize>
-    <LastFileDate>2013-11-02T05:41:52.3972366</LastFileDate>
+    <LastFileSize>13284310</LastFileSize>
+    <LastFileDate>2013-12-20T05:42:10.0143968</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4921,7 +4921,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-11-02T05:41:52.3972366</LastUpdated>
+    <LastUpdated>2013-12-20T05:42:10.0143968</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.sysinternals.com/files/SysinternalsSuite.zip</FixedDownloadUrl>
     <Name>sysinternals</Name>
@@ -4930,8 +4930,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>106404624</LastFileSize>
-    <LastFileDate>2013-11-30T05:42:31.6705735</LastFileDate>
+    <LastFileSize>106322704</LastFileSize>
+    <LastFileDate>2013-12-20T05:42:56.4716779</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4997,11 +4997,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\VirtualBox-4.3.4-91027-Win.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\VirtualBox-4.3.6-91406-Win.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-11-30T05:42:31.6705735</LastUpdated>
+    <LastUpdated>2013-12-20T05:42:56.4716779</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.virtualbox.org/virtualbox/{version}/VirtualBox-{urlpart}-Win.exe</FixedDownloadUrl>
     <Name>virtualbox</Name>
