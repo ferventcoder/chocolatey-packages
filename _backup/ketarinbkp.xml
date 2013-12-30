@@ -1018,8 +1018,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>11460800</LastFileSize>
-    <LastFileDate>2013-12-23T05:40:42.5099358</LastFileDate>
+    <LastFileSize>11468176</LastFileSize>
+    <LastFileDate>2013-12-29T08:45:53.8093098</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate>2009-01-02T15:15:53</DownloadDate>
@@ -1072,7 +1072,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-12-23T05:40:42.5099358</LastUpdated>
+    <LastUpdated>2013-12-29T08:45:53.8093098</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.autoitscript.com/cgi-bin/getfile.pl?autoit3/autoit-v3-setup.exe</FixedDownloadUrl>
     <Name>autoit</Name>
@@ -1646,8 +1646,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>3740128</LastFileSize>
-    <LastFileDate>2013-07-11T21:01:23.5326497</LastFileDate>
+    <LastFileSize>3746264</LastFileSize>
+    <LastFileDate>2013-12-28T05:40:34.1360636</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1713,11 +1713,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\foobar2000_v1.2.9.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\foobar2000_v1.3.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-07-11T21:01:23.5326497</LastUpdated>
+    <LastUpdated>2013-12-28T05:40:34.1360636</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.foobar2000.org/files/{fileHash}/foobar2000_v{version}.exe</FixedDownloadUrl>
     <Name>foobar2000</Name>
