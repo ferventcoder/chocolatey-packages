@@ -1,16 +1,10 @@
+$packageName = '{{PackageName}}'
+$url = '{{DownloadUrl}}'
+$unzipLocation = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+
 try {
-  $scriptDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-
-  $tempDir = "$env:TEMP\chocolatey\autoit.commandline"
-  if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
-  $file = Join-Path $tempDir "autoit.commandlineInstall.exe"
-  Get-ChocolateyWebFile 'autoit.commandline' "$file" '{{DownloadUrl}}'
-  
-  write-host "Extracting the contents of `'$file`' to `'$scriptDir`'"
-  Start-Process "7za" -ArgumentList "x -o`"$scriptDir`" -y `"$file`"" -Wait
-
-  Write-ChocolateySuccess 'autoit.commandline'
+    Install-ChocolateyZipPackage $packageName $url $unzipLocation
 } catch {
-  Write-ChocolateyFailure 'autoit.commandline' "$($_.Exception.Message)"
-  throw 
+    Write-ChocolateyFailure $packageName $($_.Exception.Message)
+    throw 
 }
