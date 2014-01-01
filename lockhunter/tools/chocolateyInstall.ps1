@@ -1,1 +1,1 @@
-Install-ChocolateyPackage '{{PackageName}}' 'exe' '/SILENT' '{{DownloadUrl}}'
+Install-ChocolateyPackage '{{PackageName}}' 'exe' '/VERYSILENT' '{{DownloadUrl}}' '{{DownloadUrl}}'
