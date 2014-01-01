@@ -1018,8 +1018,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>11468176</LastFileSize>
-    <LastFileDate>2013-12-29T08:45:53.8093098</LastFileDate>
+    <LastFileSize>11465520</LastFileSize>
+    <LastFileDate>2013-12-31T05:40:42.2124417</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate>2009-01-02T15:15:53</DownloadDate>
@@ -1072,7 +1072,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-12-29T08:45:53.8093098</LastUpdated>
+    <LastUpdated>2013-12-31T05:40:42.2124417</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.autoitscript.com/cgi-bin/getfile.pl?autoit3/autoit-v3-setup.exe</FixedDownloadUrl>
     <Name>autoit</Name>
@@ -1726,8 +1726,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>21696888</LastFileSize>
-    <LastFileDate>2013-09-16T21:01:10.4877685</LastFileDate>
+    <LastFileSize>21819142</LastFileSize>
+    <LastFileDate>2013-12-31T05:40:57.934345</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1793,11 +1793,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\PortableGit-1.8.4-preview20130916.7z</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\PortableGit-1.8.5.2-preview20131230.7z</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-16T21:01:10.4877685</LastUpdated>
+    <LastUpdated>2013-12-31T05:40:57.934345</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://msysgit.googlecode.com/files/{urlpart}</FixedDownloadUrl>
     <Name>git.commandline</Name>
@@ -1806,8 +1806,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>15586182</LastFileSize>
-    <LastFileDate>2013-09-16T21:01:26.1857276</LastFileDate>
+    <LastFileSize>15483869</LastFileSize>
+    <LastFileDate>2013-12-31T05:40:50.9528982</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1873,11 +1873,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Git-1.8.4-preview20130916.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Git-1.8.5.2-preview20131230.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-16T21:01:26.1857276</LastUpdated>
+    <LastUpdated>2013-12-31T05:40:50.9528982</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://msysgit.googlecode.com/files/{urlpart}</FixedDownloadUrl>
     <Name>git.install</Name>
