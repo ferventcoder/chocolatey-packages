@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>iscommandlineapp</id>
+    <title>IsCommandLineApp (Freeware)</title>
+    <version>1.0.0</version>
+    <authors>Helge Klein</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>IsCommandLineApp is a little command-line tool that can be used to determine whether a specific executable is a command-line program.</summary>
+    <description>IsCommandLineApp is a little command-line tool that can be used to determine whether a specific executable is a command-line program.</description>
+    <projectUrl>http://helgeklein.com/free-tools/iscommandlineapp/</projectUrl>
+    <tags>utility commandline information</tags>
+    <copyright>Helge Klein</copyright>
+    <licenseUrl>http://helgeklein.com/free-tools/iscommandlineapp/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
