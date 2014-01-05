@@ -5,7 +5,7 @@
 $packageName = "skype"
 $fileType = "msi"
 $silentArgs = "/qn /norestart"
-$url = "http://download.skype.com/msi/SkypeSetup_{{PackageVersion}}.msi"
+$url = '{{DownloadUrl}}'
 
 $processor = Get-WmiObject Win32_Processor
 $is64bit = $processor.AddressWidth -eq 64

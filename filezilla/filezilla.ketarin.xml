@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>4805933</LastFileSize>
-    <LastFileDate>2013-07-05T05:40:35.6401308</LastFileDate>
+    <LastFileSize>4812567</LastFileSize>
+    <LastFileDate>2013-08-07T22:12:23+02:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -31,20 +31,36 @@
           </UrlVariable>
         </value>
       </item>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>http://sourceforge.net/projects/filezilla/files/FileZilla_Client/</Url>
+            <StartText>&lt;tr title="</StartText>
+            <EndText>" class="folder "&gt;</EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
     </Variables>
     <ExecuteCommand />
     <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
-    <SourceType>FileHippo</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.7.1.1_win32-setup.exe</PreviousLocation>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.7.3_win32-setup.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
-    <FileHippoId>filezilla</FileHippoId>
-    <LastUpdated>2013-07-05T05:40:35.6401308</LastUpdated>
+    <FileHippoId />
+    <LastUpdated>2014-01-05T01:20:23.0250441+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl />
+    <FixedDownloadUrl>http://netcologne.dl.sourceforge.net/project/filezilla/FileZilla_Client/{version}/FileZilla_{version}_win32-setup.exe</FixedDownloadUrl>
     <Name>filezilla</Name>
   </ApplicationJob>
 </Jobs>

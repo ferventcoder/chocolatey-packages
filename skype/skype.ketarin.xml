@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>1492584</LastFileSize>
-    <LastFileDate>2013-07-05T05:41:16.9678822</LastFileDate>
+    <LastFileSize>24993792</LastFileSize>
+    <LastFileDate>2013-11-14T18:12:39+01:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -16,20 +16,35 @@
     <ExclusiveDownload>false</ExclusiveDownload>
     <HttpReferer />
     <SetupInstructions />
-    <Variables />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;="Skype )[\d\.]+(?=")</Regex>
+            <Url>http://filehippo.com/download_skype/</Url>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
     <ExecuteCommand />
     <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
-    <SourceType>FileHippo</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\SkypeSetup.exe</PreviousLocation>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Chocolatey\_work\SkypeSetup_6.11.0.102.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
-    <FileHippoId>skype</FileHippoId>
-    <LastUpdated>2013-07-05T05:41:16.9678822</LastUpdated>
+    <FileHippoId />
+    <LastUpdated>2014-01-05T01:42:47.7813959+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl />
+    <FixedDownloadUrl>http://download.skype.com/msi/SkypeSetup_{version}.msi</FixedDownloadUrl>
     <Name>skype</Name>
   </ApplicationJob>
 </Jobs>
