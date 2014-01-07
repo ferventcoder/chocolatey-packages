@@ -27,8 +27,14 @@ try {
   $file = Join-Path $tempDir "$($packageName).7z"
   Get-ChocolateyWebFile "$packageName" "$file" "$url" "$url64"
   Write-Host "Extracting `'$file`' to `'$installDir`'"
+  if (![System.IO.Directory]::Exists("$installDir\temp")) {[System.IO.Directory]::CreateDirectory("$installDir\temp")}
   Start-Process "7za" -ArgumentList "x -o`"$installDir\temp`" -y `"$file`"" -Wait
-  Copy-Item "$($installDir)\temp\mingw\*" "$($installDir)" -Force -Recurse
+
+  if (Get-ProcessorBits 64) {
+    Copy-Item "$($installDir)\temp\mingw64\*" "$($installDir)" -Force -Recurse
+  } else {
+    Copy-Item "$($installDir)\temp\mingw32\*" "$($installDir)" -Force -Recurse
+  }
 
   # if (Get-ProcessorBits 64) {
   #   # unzip 64 bit on top of 32 bit
@@ -39,7 +45,11 @@ try {
   #   Copy-Item "$($installDir)\temp\mingw\*" "$($installDir)" -Force -Recurse
   # }
 
-  Remove-Item "$($installDir)\temp\" -Force -Recurse
+  try {
+    Remove-Item "$($installDir)\temp\" -Force -Recurse
+  } catch {
+    Write-Warning "Could not remove `"$($installDir)\temp\`". Please remove manually."
+  }
 
   Write-ChocolateySuccess "$packageName"
 } catch {
