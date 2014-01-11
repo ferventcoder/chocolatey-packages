@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'attributechanger' 'exe' '/SILENT' 'http://www.petges.lu/home/wp-content/uploads/ac.exe' 'http://www.petges.lu/home/wp-content/uploads/ac.exe'
