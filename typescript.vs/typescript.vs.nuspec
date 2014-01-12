@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>typescript.vs</id>
-    <title>TypeScript.vs (Visual Studio 2012)</title>
-    <version>0.9.1.2</version>
+    <title>TypeScript.vs (Visual Studio 2012 and 2013)</title>
+    <version>0.9.5.0</version>
     <authors>Microsoft</authors>
     <owners>Rob Reynolds</owners>
-    <summary>TypeScript for Visual Studio 2012 - TypeScript editor and compiler for Visual Studio 2012</summary>
+    <summary>TypeScript for Visual Studio 2012 and 2013 - TypeScript editor and compiler for Visual Studio 2012 and 2013</summary>
     <description>TypeScript is a language for application-scale JavaScript. TypeScript adds optional types, classes, and modules to JavaScript. TypeScript supports tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to clean, readable, standards-based JavaScript. Try it out at http://www.typescriptlang.org/playground.
 
-TypeScript for Visual Studio 2012 provides a TypeScript editor and compiler for Visual Studio 2012.</description>
+TypeScript for Visual Studio 2012 and 2013 provides a TypeScript editor and compiler for Visual Studio 2012/2013.</description>
     <projectUrl>http://www.typescriptlang.org/</projectUrl>
     <tags>typescript visualstudio vs2012 javascript admin</tags>
     <copyright></copyright>
