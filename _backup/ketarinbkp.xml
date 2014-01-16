@@ -839,8 +839,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>50573696</LastFileSize>
-    <LastFileDate>2013-11-08T01:30:37.3157651</LastFileDate>
+    <LastFileSize>50837888</LastFileSize>
+    <LastFileDate>2014-01-14T05:41:12.8399397</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -891,11 +891,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\AdbeRdr11004_en_US.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\AdbeRdr11006_en_US.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>adobe_reader</FileHippoId>
-    <LastUpdated>2013-11-08T01:30:37.3157651</LastUpdated>
+    <LastUpdated>2014-01-14T05:41:12.8399397</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://ardownload.adobe.com/pub/adobe/reader/win/11.x/{version}/en_US/AdbeRdr{versionNoDots}_en_US.exe</FixedDownloadUrl>
     <Name>adobereader</Name>
@@ -1388,7 +1388,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>4812567</LastFileSize>
-    <LastFileDate>2014-01-13T07:38:46.9650726</LastFileDate>
+    <LastFileDate>2014-01-15T05:40:35.1592789</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1425,7 +1425,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>filezilla</FileHippoId>
-    <LastUpdated>2014-01-13T07:38:46.9650726</LastUpdated>
+    <LastUpdated>2014-01-15T05:40:35.1592789</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>filezilla</Name>
@@ -3364,7 +3364,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>3765592</LastFileSize>
-    <LastFileDate>2014-01-13T07:39:10.1058055</LastFileDate>
+    <LastFileDate>2014-01-15T05:40:57.2491287</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3401,7 +3401,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>paint.net</FileHippoId>
-    <LastUpdated>2014-01-13T07:39:10.1058055</LastUpdated>
+    <LastUpdated>2014-01-15T05:40:57.2491287</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>paint.net</Name>
@@ -4157,7 +4157,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>1551008</LastFileSize>
-    <LastFileDate>2014-01-13T07:39:17.6551019</LastFileDate>
+    <LastFileDate>2014-01-15T05:41:07.1084324</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4179,7 +4179,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>skype</FileHippoId>
-    <LastUpdated>2014-01-13T07:39:17.6551019</LastUpdated>
+    <LastUpdated>2014-01-15T05:41:07.1084324</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>skype</Name>
@@ -5221,7 +5221,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>35379</LastFileSize>
-    <LastFileDate>2014-01-10T05:41:37.5573888</LastFileDate>
+    <LastFileDate>2014-01-15T05:41:16.6713202</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5266,7 +5266,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-01-10T05:41:37.5573888</LastUpdated>
+    <LastUpdated>2014-01-15T05:41:16.6713202</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://yeoman.io/assets/img/yeoman-008.png</FixedDownloadUrl>
     <Name>yeoman</Name>
