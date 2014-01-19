@@ -1388,7 +1388,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>4812567</LastFileSize>
-    <LastFileDate>2014-01-17T05:40:28.4517784</LastFileDate>
+    <LastFileDate>2014-01-18T05:40:28.1393178</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1425,7 +1425,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>filezilla</FileHippoId>
-    <LastUpdated>2014-01-17T05:40:28.4517784</LastUpdated>
+    <LastUpdated>2014-01-18T05:40:28.1393178</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>filezilla</Name>
@@ -3364,7 +3364,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>3765592</LastFileSize>
-    <LastFileDate>2014-01-17T05:40:49.5743386</LastFileDate>
+    <LastFileDate>2014-01-18T05:40:50.7732553</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3401,7 +3401,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>paint.net</FileHippoId>
-    <LastUpdated>2014-01-17T05:40:49.5743386</LastUpdated>
+    <LastUpdated>2014-01-18T05:40:50.7732553</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>paint.net</Name>
@@ -4157,7 +4157,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>1551008</LastFileSize>
-    <LastFileDate>2014-01-17T05:40:56.8596354</LastFileDate>
+    <LastFileDate>2014-01-18T05:40:56.1917839</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4179,7 +4179,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>skype</FileHippoId>
-    <LastUpdated>2014-01-17T05:40:56.8596354</LastUpdated>
+    <LastUpdated>2014-01-18T05:40:56.1917839</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>skype</Name>
@@ -4256,7 +4256,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>693539</LastFileSize>
-    <LastFileDate>2014-01-08T05:41:07.7738766</LastFileDate>
+    <LastFileDate>2014-01-18T05:40:56.1927851</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4310,7 +4310,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-01-08T05:41:07.7738766</LastUpdated>
+    <LastUpdated>2014-01-18T05:40:56.1927851</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.analyzer</Name>
@@ -4387,7 +4387,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>292350</LastFileSize>
-    <LastFileDate>2014-01-08T05:41:08.0119331</LastFileDate>
+    <LastFileDate>2014-01-18T05:40:56.2008342</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4441,7 +4441,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-01-08T05:41:08.0119331</LastUpdated>
+    <LastUpdated>2014-01-18T05:40:56.2008342</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.shell</Name>
@@ -5221,7 +5221,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>35379</LastFileSize>
-    <LastFileDate>2014-01-15T05:41:16.6713202</LastFileDate>
+    <LastFileDate>2014-01-18T05:41:03.1464701</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5266,7 +5266,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-01-15T05:41:16.6713202</LastUpdated>
+    <LastUpdated>2014-01-18T05:41:03.1464701</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://yeoman.io/assets/img/yeoman-008.png</FixedDownloadUrl>
     <Name>yeoman</Name>
