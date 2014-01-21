@@ -1,17 +1,16 @@
 try {
   $packageName = 'sysinternals'
   $url = 'http://download.sysinternals.com/files/SysinternalsSuite.zip'
-
+  
   $binRoot = Get-BinRoot
   Write-Debug "Bin Root is $binRoot"
-  $installDir = Join-Path "$binRoot" "$packageName"
+  $installDir = Join-Path "$binRoot" "$packageName"
 
   Install-ChocolateyZipPackage $packageName $url $installDir
 
   Install-ChocolateyPath $installDir 'User'
 
-  # Delete any existing batch files from an earlier install
-
+  # Delete any existing batch files from an earlier install
   if ($env:chocolateyinstall -ne $null) {
     $nugetBin = join-path $env:chocolateyinstall 'bin'
     $files = get-childitem $installDir -include *.exe -recurse
