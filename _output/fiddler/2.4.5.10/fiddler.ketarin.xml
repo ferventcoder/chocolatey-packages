@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>775840</LastFileSize>
-    <LastFileDate>2014-01-25T12:42:07-06:00</LastFileDate>
+    <LastFileSize>757584</LastFileSize>
+    <LastFileDate>2013-08-15T16:18:56-05:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,9 +26,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://www.telerik.com/download/fiddler</Url>
-            <StartText>Download Fiddler2&lt;/a&gt; &lt;p class="Label u-mt1 u-tac"&gt;Version &lt;strong&gt;</StartText>
-            <EndText>&lt;/strong&gt;</EndText>
+            <Url>http://fiddler2.com/get-fiddler</Url>
+            <StartText>Version </StartText>
+            <EndText>&lt;/p&gt;</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -59,9 +59,9 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-01-26T19:49:00.7066147-06:00</LastUpdated>
+    <LastUpdated>2013-09-10T00:40:39.3638255-05:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.telerik.com/docs/default-source/fiddler/fiddler2setup.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>http://fiddler2.com/docs/default-source/public-downloads/fiddler2setup.exe</FixedDownloadUrl>
     <Name>fiddler</Name>
   </ApplicationJob>
 </Jobs>

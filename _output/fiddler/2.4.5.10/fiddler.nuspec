@@ -3,7 +3,7 @@
   <metadata>
     <id>fiddler</id>
     <title>Fiddler</title>
-    <version>{{PackageVersion}}</version>
+    <version>2.4.5.10</version>
     <authors>Eric Lawrence</authors>
     <owners>Rob Reynolds</owners>
     <summary>Fiddler Web Debugging Proxy</summary>
