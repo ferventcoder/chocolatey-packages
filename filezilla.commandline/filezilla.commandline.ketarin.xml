@@ -69,7 +69,7 @@
   </ApplicationJob>
 </Jobs>]]></SourceTemplate>
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserAgent />
     <UserNotes />
     <LastFileSize>7241860</LastFileSize>
     <LastFileDate>2013-08-07T22:12:26+02:00</LastFileDate>
@@ -93,9 +93,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>https://filezilla-project.org/download.php?show_all=1</Url>
-            <StartText>win32.zip/download"&gt;FileZilla_</StartText>
-            <EndText>_win32.zip</EndText>
+            <Url>http://sourceforge.net/projects/filezilla/files/FileZilla_Client/</Url>
+            <StartText>&lt;tr title="</StartText>
+            <EndText>" class="folder "&gt;</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -103,15 +103,15 @@
       </item>
       <item>
         <key>
-          <string>url64</string>
+          <string>url</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>""</TextualContent>
-            <Name>url64</Name>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;=ResponseUri: )[^\r\n]+</Regex>
+            <Url>http://sourceforge.net/projects/filezilla/files/FileZilla_Client/{version}/FileZilla_{version}_win32.zip/download</Url>
+            <Name>url</Name>
           </UrlVariable>
         </value>
       </item>
@@ -126,9 +126,9 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-01-05T01:20:46.3217924+01:00</LastUpdated>
+    <LastUpdated>2014-01-29T19:34:15.8152882+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://netcologne.dl.sourceforge.net/project/filezilla/FileZilla_Client/{version}/FileZilla_{version}_win32.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>filezilla.commandline</Name>
   </ApplicationJob>
 </Jobs>
