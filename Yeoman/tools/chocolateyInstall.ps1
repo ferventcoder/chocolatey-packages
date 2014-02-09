@@ -1,8 +1,8 @@
 $package = 'Yeoman'
 
 try {
-  npm install -g yeoman
-  npm update -g yeoman
+  npm install -g yo
+  npm update -g yo
 
   Write-ChocolateySuccess $package
 } catch {
