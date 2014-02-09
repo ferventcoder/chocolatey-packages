@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>22937227</LastFileSize>
-    <LastFileDate>2013-06-12T05:41:20.6562313</LastFileDate>
+    <LastFileSize>24097311</LastFileSize>
+    <LastFileDate>2013-12-09T01:38:32+01:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -40,9 +40,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://filehippo.com/download_vlc_32/</Url>
-            <StartText>Latest Version&lt;br/&gt;&lt;b&gt;VLC Media Player </StartText>
-            <EndText> (32-bit)&lt;/b&gt;</EndText>
+            <Url>https://www.videolan.org/vlc/</Url>
+            <StartText>/get.videolan.org/vlc/</StartText>
+            <EndText>/win32/vlc-</EndText>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -54,11 +54,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\vlc-2.0.7-win32.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\vlc-2.1.2-win32.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>vlc</FileHippoId>
-    <LastUpdated>2013-06-12T05:41:20.6562313</LastUpdated>
+    <LastUpdated>2014-01-05T01:24:25.6338666+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://cdn.mirror.garr.it/mirror3/mirrors/videolan/vlc/{version}/win32/vlc-{version}-win32.exe</FixedDownloadUrl>
     <Name>vlc</Name>

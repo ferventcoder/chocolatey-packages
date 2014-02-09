@@ -1,8 +1,7 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="c79851b8-8077-4d88-b549-015482ca4542">
-    <SourceTemplate><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Jobs>
+    <SourceTemplate><![CDATA[<Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0fb30714-8ed0-4611-8f1b-cb8fec9dae91">
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
@@ -70,10 +69,10 @@
   </ApplicationJob>
 </Jobs>]]></SourceTemplate>
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserAgent />
     <UserNotes />
-    <LastFileSize>7244002</LastFileSize>
-    <LastFileDate>2013-06-27T22:56:55+02:00</LastFileDate>
+    <LastFileSize>7241860</LastFileSize>
+    <LastFileDate>2013-08-07T22:12:26+02:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -94,9 +93,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>https://filezilla-project.org/download.php?show_all=1</Url>
-            <StartText>win32.zip/download"&gt;FileZilla_</StartText>
-            <EndText>_win32.zip</EndText>
+            <Url>http://sourceforge.net/projects/filezilla/files/FileZilla_Client/</Url>
+            <StartText>&lt;tr title="</StartText>
+            <EndText>" class="folder "&gt;</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -104,15 +103,15 @@
       </item>
       <item>
         <key>
-          <string>url64</string>
+          <string>url</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>""</TextualContent>
-            <Name>url64</Name>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;=ResponseUri: )[^\r\n]+</Regex>
+            <Url>http://sourceforge.net/projects/filezilla/files/FileZilla_Client/{version}/FileZilla_{version}_win32.zip/download</Url>
+            <Name>url</Name>
           </UrlVariable>
         </value>
       </item>
@@ -123,13 +122,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.7.1.1_win32.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.7.3_win32.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-07-12T20:16:13.677556+02:00</LastUpdated>
+    <LastUpdated>2014-01-29T19:34:15.8152882+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://surfnet.dl.sourceforge.net/project/filezilla/FileZilla_Client/{version}/FileZilla_{version}_win32.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>filezilla.commandline</Name>
   </ApplicationJob>
 </Jobs>
