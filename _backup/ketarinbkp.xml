@@ -1388,8 +1388,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>4816915</LastFileSize>
-    <LastFileDate>2014-02-09T14:54:24.1069041</LastFileDate>
+    <LastFileSize>4824667</LastFileSize>
+    <LastFileDate>2014-02-10T05:40:24.4172903</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1422,11 +1422,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FileHippo</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.7.4-rc1_win32-setup.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.7.4_win32-setup.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>filezilla</FileHippoId>
-    <LastUpdated>2014-02-09T14:54:24.1069041</LastUpdated>
+    <LastUpdated>2014-02-10T05:40:24.4172903</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>filezilla</Name>
