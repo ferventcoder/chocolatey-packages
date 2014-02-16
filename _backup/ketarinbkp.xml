@@ -1145,8 +1145,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>36751760</LastFileSize>
-    <LastFileDate>2014-02-12T05:41:11.4524044</LastFileDate>
+    <LastFileSize>36751616</LastFileSize>
+    <LastFileDate>2014-02-15T05:41:30.1370335</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1194,11 +1194,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.6.10.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.6.11.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-12T05:41:11.4524044</LastUpdated>
+    <LastUpdated>2014-02-15T05:41:30.1370335</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://dl-web.dropbox.com/u/17/Dropbox {version}.exe</FixedDownloadUrl>
     <Name>dropbox</Name>
@@ -1325,7 +1325,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>775840</LastFileSize>
-    <LastFileDate>2014-02-11T08:42:59.4640536</LastFileDate>
+    <LastFileDate>2014-02-15T05:40:22.2089073</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1379,7 +1379,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-11T08:42:59.4640536</LastUpdated>
+    <LastUpdated>2014-02-15T05:40:22.2089073</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.telerik.com/docs/default-source/fiddler/fiddler2setup.exe</FixedDownloadUrl>
     <Name>fiddler</Name>
@@ -1389,7 +1389,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>4822473</LastFileSize>
-    <LastFileDate>2014-02-14T05:40:27.9703511</LastFileDate>
+    <LastFileDate>2014-02-15T05:40:26.0128018</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1426,7 +1426,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>filezilla</FileHippoId>
-    <LastUpdated>2014-02-14T05:40:27.9703511</LastUpdated>
+    <LastUpdated>2014-02-15T05:40:26.0128018</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>filezilla</Name>
