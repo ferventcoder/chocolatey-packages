@@ -1389,7 +1389,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>4822473</LastFileSize>
-    <LastFileDate>2014-02-15T05:40:26.0128018</LastFileDate>
+    <LastFileDate>2014-02-17T05:53:43.1793619</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1426,7 +1426,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>filezilla</FileHippoId>
-    <LastUpdated>2014-02-15T05:40:26.0128018</LastUpdated>
+    <LastUpdated>2014-02-17T05:53:43.1793619</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>filezilla</Name>
