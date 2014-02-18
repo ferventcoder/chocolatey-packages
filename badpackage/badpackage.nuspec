@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>badpackage</id>
+    <title>badpackage</title>
+    <version>1.0</version>
+    <authors>Rob Reynolds</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>badpackage - This package errors during install</summary>
+    <description>badpackage - This package errors during install. That is its only purpose.
+
+You can find this over at -source https://www.myget.org/F/killerpackages/
+    </description>
+    <tags>badpackage</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
