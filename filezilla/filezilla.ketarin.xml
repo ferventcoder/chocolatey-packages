@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>4812567</LastFileSize>
-    <LastFileDate>2013-08-07T22:12:23+02:00</LastFileDate>
+    <LastFileSize>4822473</LastFileSize>
+    <LastFileDate>2014-02-11T13:49:15-06:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,24 +26,10 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://sourceforge.net/projects/filezilla/files/FileZilla_Client/</Url>
-            <StartText>&lt;tr title="</StartText>
-            <EndText>" class="folder "&gt;</EndText>
+            <Url>https://filezilla-project.org/download.php?show_all=1</Url>
+            <StartText>version of FileZilla Client is </StartText>
+            <EndText>&lt;/p&gt;</EndText>
             <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>url</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=ResponseUri: )[^\r\n]+</Regex>
-            <Url>http://sourceforge.net/projects/filezilla/files/FileZilla_Client/{version}/FileZilla_{version}_win32-setup.exe/download</Url>
-            <Name>url</Name>
           </UrlVariable>
         </value>
       </item>
@@ -54,13 +40,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.7.3_win32-setup.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.7.4.1_win32-setup.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-01-29T19:27:54.4483652+01:00</LastUpdated>
+    <LastUpdated>2014-02-19T06:22:59.3699738-06:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>{url}</FixedDownloadUrl>
+    <FixedDownloadUrl>http://download.filezilla-project.org/FileZilla_{version}_win32-setup.exe</FixedDownloadUrl>
     <Name>filezilla</Name>
   </ApplicationJob>
 </Jobs>
