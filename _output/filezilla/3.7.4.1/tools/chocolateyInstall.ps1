@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'filezilla' 'exe' '/S' 'http://softlayer-ams.dl.sourceforge.net/project/filezilla/FileZilla_Client/3.7.4.1/FileZilla_3.7.4.1_win32-setup.exe'
