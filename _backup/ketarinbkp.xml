@@ -1145,8 +1145,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>36751616</LastFileSize>
-    <LastFileDate>2014-02-15T05:41:30.1370335</LastFileDate>
+    <LastFileSize>36785272</LastFileSize>
+    <LastFileDate>2014-02-18T05:44:20.4069426</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1194,11 +1194,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.6.11.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.6.12.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-15T05:41:30.1370335</LastUpdated>
+    <LastUpdated>2014-02-18T05:44:20.4069426</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://dl-web.dropbox.com/u/17/Dropbox {version}.exe</FixedDownloadUrl>
     <Name>dropbox</Name>
@@ -1389,7 +1389,7 @@
     <UserAgent />
     <UserNotes />
     <LastFileSize>4822473</LastFileSize>
-    <LastFileDate>2014-02-17T05:53:43.1793619</LastFileDate>
+    <LastFileDate>2014-02-18T05:41:10.9095673</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1426,7 +1426,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>filezilla</FileHippoId>
-    <LastUpdated>2014-02-17T05:53:43.1793619</LastUpdated>
+    <LastUpdated>2014-02-18T05:41:10.9095673</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl />
     <Name>filezilla</Name>
@@ -1727,8 +1727,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>21819142</LastFileSize>
-    <LastFileDate>2013-12-31T05:40:57.934345</LastFileDate>
+    <LastFileSize>5968328</LastFileSize>
+    <LastFileDate>2014-02-18T05:43:34.2803902</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1794,11 +1794,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\PortableGit-1.8.5.2-preview20131230.7z</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\PortableGit-1.9.0-preview20140217.7z</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-12-31T05:40:57.934345</LastUpdated>
+    <LastUpdated>2014-02-18T05:43:34.2803902</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://msysgit.googlecode.com/files/{urlpart}</FixedDownloadUrl>
     <Name>git.commandline</Name>
@@ -1807,8 +1807,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>15483869</LastFileSize>
-    <LastFileDate>2013-12-31T05:40:50.9528982</LastFileDate>
+    <LastFileSize>15511958</LastFileSize>
+    <LastFileDate>2014-02-18T05:42:20.1421962</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1874,11 +1874,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Git-1.8.5.2-preview20131230.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Git-1.9.0-preview20140217.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-12-31T05:40:50.9528982</LastUpdated>
+    <LastUpdated>2014-02-18T05:42:20.1421962</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://msysgit.googlecode.com/files/{urlpart}</FixedDownloadUrl>
     <Name>git.install</Name>
@@ -2639,8 +2639,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>30086891</LastFileSize>
-    <LastFileDate>2013-12-05T05:41:22.1899709</LastFileDate>
+    <LastFileSize>31750858</LastFileSize>
+    <LastFileDate>2014-02-18T05:43:24.1123818</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2705,11 +2705,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\maxthon_portable_4.2.0.4000.7z</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\maxthon_portable_4.2.2.1000.7z</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-12-05T05:41:22.1899709</LastUpdated>
+    <LastUpdated>2014-02-18T05:43:24.1123818</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>maxthon.commandline</Name>
@@ -2785,8 +2785,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>35618248</LastFileSize>
-    <LastFileDate>2014-01-12T09:05:37.3568998</LastFileDate>
+    <LastFileSize>37131224</LastFileSize>
+    <LastFileDate>2014-02-18T05:44:40.2332754</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2850,11 +2850,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\mx4.2.1.1000.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\mx4.2.2.1000.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-01-12T09:05:37.3568998</LastUpdated>
+    <LastUpdated>2014-02-18T05:44:40.2332754</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>maxthon.install</Name>
