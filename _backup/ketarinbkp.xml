@@ -1959,8 +1959,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>12701696</LastFileSize>
-    <LastFileDate>2012-06-19T06:19:25.1242783</LastFileDate>
+    <LastFileSize>34143232</LastFileSize>
+    <LastFileDate>2014-02-22T07:50:22.5446206</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1986,20 +1986,36 @@
           </UrlVariable>
         </value>
       </item>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>http://www.filehippo.com/download_google_drive</Url>
+            <StartText>&lt;title&gt;Download Google Drive </StartText>
+            <EndText> - </EndText>
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
     </Variables>
     <ExecuteCommand />
     <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
-    <SourceType>FileHippo</SourceType>
+    <SourceType>FixedUrl</SourceType>
     <PreviousLocation>C:\Chocolatey\_work\gsync.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
-    <Enabled>false</Enabled>
-    <FileHippoId>google_drive</FileHippoId>
-    <LastUpdated>2012-06-19T06:19:25.1242783</LastUpdated>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2014-02-22T07:50:22.5446206</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl />
+    <FixedDownloadUrl>https://dl.google.com/drive/{version}/gsync.msi</FixedDownloadUrl>
     <Name>googledrive</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="707f661e-0c9f-4e30-9399-11c0b4d2256c">
@@ -4295,8 +4311,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>16228352</LastFileSize>
-    <LastFileDate>2014-02-20T06:15:55.2840573</LastFileDate>
+    <LastFileSize>16281600</LastFileSize>
+    <LastFileDate>2014-02-22T05:51:48.8039218</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4346,11 +4362,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\python-2.7.5.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\python-2.7.6.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-20T06:15:55.2840573</LastUpdated>
+    <LastUpdated>2014-02-22T05:51:48.8039218</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.python.org/ftp/python/{version}/python-{version}.msi</FixedDownloadUrl>
     <Name>python</Name>
