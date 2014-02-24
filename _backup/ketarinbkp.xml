@@ -4816,7 +4816,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>2210973</LastFileSize>
-    <LastFileDate>2013-09-09T23:36:44.6837367</LastFileDate>
+    <LastFileDate>2014-02-23T05:40:56.3361379</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4856,7 +4856,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-09T23:36:44.6837367</LastUpdated>
+    <LastUpdated>2014-02-23T05:40:56.3361379</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.orbmu2k.de/files/sqliteadmin.zip</FixedDownloadUrl>
     <Name>sqliteadmin</Name>
