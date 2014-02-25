@@ -4,9 +4,9 @@
     <id>pip</id>
     <title>Pip(Python) Installs Packages</title>
     <version>1.2.0</version>
-    <authors>The pip developers</authors>
-    <owners>Elliando Dias</owners>
-    <summary>pip is a tool for installing and managing Python packages, such as those found in the Python Package Index</summary>
+    <authors>The Pip developers</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Pip is a tool for installing and managing Python packages, such as those found in the Python Package Index</summary>
     <description>pip is a tool for installing and managing Python packages, such as those found in the Python Package Index</description>
     <projectUrl>http://www.pip-installer.org/en/latest/index.html</projectUrl>
     <tags>pip python easy_install </tags>
@@ -15,7 +15,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://github.com/adorepump/chocolatey-packages/raw/master/pip/python-logo.png</iconUrl>
     <dependencies>
-      <dependency id="easy.install" version="" />
+      <dependency id="easy.install" />
     </dependencies>
     <releaseNotes>
 	No longer installs the packages virtualenv, fabric, ipython and django
