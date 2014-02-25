@@ -1,1 +1,6 @@
-Install-ChocolateyPackage 'windirstat' 'exe' '/S' 'http://windirstat.info/wds_current_setup.exe'
+$packageName = 'windirstat'
+$fileType = 'exe'
+$url = 'http://prdownloads.sourceforge.net/windirstat/windirstat1_1_2_setup.exe'
+$silentArgs = '/S'
+
+Install-ChocolateyPackage $packageName $fileType "$silentArgs" "$url"
