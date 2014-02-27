@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>{{PackageName}}</id>
+    <version>{{PackageVersion}}</version>
+    <title>SlikSVN</title>
+    <authors>Slik Company</authors>
+    <projectUrl>http://www.sliksvn.com/</projectUrl>
+    <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/sliksvn/sliksvn.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>We provide a standalone command line Subversion package for Windows. The installer contains all command line tools (svn, svnadmin, svnsync, svnserve, svnmucc, etc.) but no application bindings nor Apache modules. The tools are fully side-by-side compatible with other packages. Ideal for automated build and deploy scripts</description>
+    <summary>Slik subversion reliable version control starts here</summary>
+    <copyright>Slik Company</copyright>
+    <tags>sliksvn svn subversion version control admin</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
