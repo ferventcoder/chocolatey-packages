@@ -1,5 +1,5 @@
 try {
-  Install-ChocolateyPackage 'git.install' 'exe' '/VERYSILENT /NORESTART /NOCANCEL /SP- /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS /NOICONS  /COMPONENTS="assoc,assoc_sh" /LOG' '{{DownloadUrl}}'
+  Install-ChocolateyPackage 'git.install' 'exe' '/VERYSILENT /NORESTART /NOCANCEL /SP- /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS /NOICONS  /COMPONENTS="assoc,assoc_sh" /LOG' 'http://msysgit.googlecode.com/files/Git-1.9.0-preview20140217.exe'
 
   #------- ADDITIONAL SETUP -------#
   $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
