@@ -3270,8 +3270,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>6349495</LastFileSize>
-    <LastFileDate>2014-02-19T05:41:41.0246706</LastFileDate>
+    <LastFileSize>6409886</LastFileSize>
+    <LastFileDate>2014-03-07T05:40:59.223495</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3306,11 +3306,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\npp.6.5.4.bin.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\npp.6.5.5.bin.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>notepad</FileHippoId>
-    <LastUpdated>2014-02-19T05:41:41.0246706</LastUpdated>
+    <LastUpdated>2014-03-07T05:40:59.223495</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.tuxfamily.org/notepadplus/{version}/npp.{version}.bin.zip</FixedDownloadUrl>
     <Name>notepadplusplus.commandline</Name>
@@ -3319,8 +3319,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>7564908</LastFileSize>
-    <LastFileDate>2014-02-19T05:41:47.6346972</LastFileDate>
+    <LastFileSize>7624808</LastFileSize>
+    <LastFileDate>2014-03-07T05:41:10.5557765</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3355,11 +3355,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\npp.6.5.4.Installer.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\npp.6.5.5.Installer.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>notepad</FileHippoId>
-    <LastUpdated>2014-02-19T05:41:47.6346972</LastUpdated>
+    <LastUpdated>2014-03-07T05:41:10.5557765</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.tuxfamily.org/notepadplus/{version}/npp.{version}.Installer.exe</FixedDownloadUrl>
     <Name>notepadplusplus.install</Name>
@@ -4554,7 +4554,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>695001</LastFileSize>
-    <LastFileDate>2014-03-06T05:40:42.2066156</LastFileDate>
+    <LastFileDate>2014-03-07T05:41:13.8704771</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4608,7 +4608,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-03-06T05:40:42.2066156</LastUpdated>
+    <LastUpdated>2014-03-07T05:41:13.8704771</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.analyzer</Name>
@@ -4685,7 +4685,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>294035</LastFileSize>
-    <LastFileDate>2014-03-06T05:40:41.9020714</LastFileDate>
+    <LastFileDate>2014-03-07T05:41:13.8311281</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4739,7 +4739,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-03-06T05:40:41.9020714</LastUpdated>
+    <LastUpdated>2014-03-07T05:41:13.8311281</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.shell</Name>
