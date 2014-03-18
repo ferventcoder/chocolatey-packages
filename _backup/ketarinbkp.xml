@@ -4311,8 +4311,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>16281600</LastFileSize>
-    <LastFileDate>2014-02-22T05:51:48.8039218</LastFileDate>
+    <LastFileSize>24498176</LastFileSize>
+    <LastFileDate>2014-03-17T05:43:40.1668205</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4362,11 +4362,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\python-2.7.6.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\python-3.4.0.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-22T05:51:48.8039218</LastUpdated>
+    <LastUpdated>2014-03-17T05:43:40.1668205</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.python.org/ftp/python/{version}/python-{version}.msi</FixedDownloadUrl>
     <Name>python</Name>
@@ -4554,7 +4554,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>696176</LastFileSize>
-    <LastFileDate>2014-03-15T05:40:38.9677675</LastFileDate>
+    <LastFileDate>2014-03-16T10:50:14.1798416</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4608,7 +4608,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-03-15T05:40:38.9677675</LastUpdated>
+    <LastUpdated>2014-03-16T10:50:14.1798416</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.analyzer</Name>
@@ -4685,7 +4685,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>296385</LastFileSize>
-    <LastFileDate>2014-03-15T05:40:38.3826068</LastFileDate>
+    <LastFileDate>2014-03-16T10:50:13.9537353</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4739,7 +4739,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-03-15T05:40:38.3826068</LastUpdated>
+    <LastUpdated>2014-03-16T10:50:13.9537353</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.shell</Name>
