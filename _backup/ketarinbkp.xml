@@ -1145,8 +1145,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>37759608</LastFileSize>
-    <LastFileDate>2014-03-05T06:03:49.1658598</LastFileDate>
+    <LastFileSize>36813664</LastFileSize>
+    <LastFileDate>2014-03-18T05:42:37.2338703</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1194,11 +1194,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.6.18.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.6.20.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-03-05T06:03:49.1658598</LastUpdated>
+    <LastUpdated>2014-03-18T05:42:37.2338703</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://dl-web.dropbox.com/u/17/Dropbox {version}.exe</FixedDownloadUrl>
     <Name>dropbox</Name>
@@ -4554,7 +4554,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>696176</LastFileSize>
-    <LastFileDate>2014-03-16T10:50:14.1798416</LastFileDate>
+    <LastFileDate>2014-03-18T05:42:51.1287307</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4608,7 +4608,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-03-16T10:50:14.1798416</LastUpdated>
+    <LastUpdated>2014-03-18T05:42:51.1287307</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.analyzer</Name>
@@ -4685,7 +4685,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>296385</LastFileSize>
-    <LastFileDate>2014-03-16T10:50:13.9537353</LastFileDate>
+    <LastFileDate>2014-03-18T05:42:51.2787725</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4739,7 +4739,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-03-16T10:50:13.9537353</LastUpdated>
+    <LastUpdated>2014-03-18T05:42:51.2787725</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.shell</Name>
