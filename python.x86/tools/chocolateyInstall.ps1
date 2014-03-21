@@ -1,19 +1,24 @@
+﻿$packageName = '{{PackageName}}'
+$url = '{{DownloadUrl}}'
+$version = '{{PackageVersion}}'
+$fileType = 'msi'
+$silentArgs = '/passive'
+
 try {
-  $binRoot = "$env:systemdrive\"
 
-  ### Using an environment variable to to define the bin root until we implement YAML configuration ###
-  if($env:chocolatey_bin_root -ne $null){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
-  $packageName = 'Python.x86'
-  $fileType = 'msi'
-  $silentArgs = "/qn TARGETDIR=$(join-path $binRoot 'Python27')"
-  $url = 'http://www.python.org/ftp/python/{{PackageVersion}}/python-{{PackageVersion}}.msi'
+    Install-ChocolateyPackage $packageName $fileType $silentArgs $url
 
-  Install-ChocolateyPackage $packageName $fileType $silentArgs $url
+    $pythonFolder = 'Python' + $version -replace '(\d)\.(\d)\.\d+', '$1$2'
 
-  Install-ChocolateyPath $(join-path $binRoot 'Python27') 'User'
+    $pythonPath = Join-Path $env:systemdrive "$pythonFolder\"
 
-  Write-ChocolateySuccess 'python.x86'
+    if (Test-Path $pythonPath) {
+        Install-ChocolateyPath $pythonPath 'Machine'
+    } else {
+        Write-Host "Folder for Python path couldn’t be determined. Please add it manually to your Path environment variable"
+    }
+
 } catch {
-  Write-ChocolateyFailure 'python.x86' "$($_.Exception.Message)"
-  throw
+    Write-ChocolateyFailure $packageName $($_.Exception.Message)
+    throw 
 }
