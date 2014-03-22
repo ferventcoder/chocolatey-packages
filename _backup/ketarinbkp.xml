@@ -3757,8 +3757,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>43735920</LastFileSize>
-    <LastFileDate>2014-02-21T05:45:38.0234292</LastFileDate>
+    <LastFileSize>43737688</LastFileSize>
+    <LastFileDate>2014-03-21T05:41:45.8418146</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3821,11 +3821,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\postgresql-8.4.20-1-windows.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\postgresql-8.4.21-1-windows.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-21T05:45:38.0234292</LastUpdated>
+    <LastUpdated>2014-03-21T05:41:45.8418146</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://get.enterprisedb.com/postgresql/postgresql-{version}-1-windows.exe</FixedDownloadUrl>
     <Name>postgresql.v8</Name>
@@ -3834,8 +3834,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>53074256</LastFileSize>
-    <LastFileDate>2014-02-21T05:45:34.1015466</LastFileDate>
+    <LastFileSize>52841280</LastFileSize>
+    <LastFileDate>2014-03-21T05:42:21.7876287</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3898,11 +3898,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\postgresql-9.3.3-1-windows.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\postgresql-9.3.4-1-windows.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-21T05:45:34.1015466</LastUpdated>
+    <LastUpdated>2014-03-21T05:42:21.7876287</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://get.enterprisedb.com/postgresql/postgresql-{version}-1-windows.exe</FixedDownloadUrl>
     <Name>postgresql.v9</Name>
