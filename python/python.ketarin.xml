@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>16228352</LastFileSize>
-    <LastFileDate>2013-05-20T05:41:02.3351737</LastFileDate>
+    <LastFileSize>24498176</LastFileSize>
+    <LastFileDate>2014-03-16T19:28:25+01:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -24,9 +24,9 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
-            <Url>http://www.python.org/download/</Url>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;=\.msi"&gt;Download Python )[\d\.]+?(?=&lt;\/a&gt;)</Regex>
+            <Url>http://www.python.org/downloads/</Url>
             <StartText>&lt;a class="reference external" href="releases/</StartText>
             <EndText>/"&gt;</EndText>
             <TextualContent />
@@ -43,7 +43,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>""</TextualContent>
+            <TextualContent>https://www.python.org/ftp/python/{version}/python-{version}.amd64.msi</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -55,13 +55,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\python-2.7.5.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\python-3.4.0.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-05-20T05:41:02.3351737</LastUpdated>
+    <LastUpdated>2014-03-21T22:50:41.294842+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.python.org/ftp/python/{version}/python-{version}.msi</FixedDownloadUrl>
+    <FixedDownloadUrl>https://www.python.org/ftp/python/{version}/python-{version}.msi</FixedDownloadUrl>
     <Name>python</Name>
   </ApplicationJob>
 </Jobs>
