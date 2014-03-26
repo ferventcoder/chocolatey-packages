@@ -576,8 +576,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>137421</LastFileSize>
-    <LastFileDate>2013-09-09T23:34:19.6342883</LastFileDate>
+    <LastFileSize>137247</LastFileSize>
+    <LastFileDate>2014-03-25T05:40:19.8693675</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -627,11 +627,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\optipng-0.7.4-win32.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\optipng-0.7.5-win32.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-09T23:34:19.6342883</LastUpdated>
+    <LastUpdated>2014-03-25T05:40:19.8693675</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://freefr.dl.sourceforge.net/project/optipng/OptiPNG/optipng-{version}/optipng-{version}-win32.zip</FixedDownloadUrl>
     <Name>OptiPNG</Name>
