@@ -1,0 +1,1 @@
+Install-ChocolateyPackage '{{PackageName}}' 'msi' '/quiet' '{{DownloadUrl}}' '{{DownloadUrlx64}}'
