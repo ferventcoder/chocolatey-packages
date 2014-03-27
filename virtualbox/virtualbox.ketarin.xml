@@ -24,33 +24,35 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
+            <VariableType>Textual</VariableType>
             <Regex />
-            <Url>https://www.virtualbox.org/wiki/Downloads</Url>
-            <StartText>http://download.virtualbox.org/virtualbox/</StartText>
-            <EndText>/VirtualBox</EndText>
-            <TextualContent />
+            <Url />
+            <StartText>/VirtualBox-</StartText>
+            <EndText>-Win.exe</EndText>
+            <TextualContent>{realVersion:replace:-:.}</TextualContent>
             <Name>version</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>url64</string>
+          <string>version3Levels</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
+            <VariableType>StartEnd</VariableType>
             <Regex />
-            <TextualContent>""</TextualContent>
-            <Name>url64</Name>
+            <Url>https://www.virtualbox.org/wiki/Downloads</Url>
+            <StartText>http://download.virtualbox.org/virtualbox/</StartText>
+            <EndText>/VirtualBox-</EndText>
+            <Name>version3Levels</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>urlpart</string>
+          <string>realVersion</string>
         </key>
         <value>
           <UrlVariable>
@@ -60,7 +62,7 @@
             <Url>https://www.virtualbox.org/wiki/Downloads</Url>
             <StartText>/VirtualBox-</StartText>
             <EndText>-Win.exe</EndText>
-            <Name>urlpart</Name>
+            <Name>realVersion</Name>
           </UrlVariable>
         </value>
       </item>
@@ -77,7 +79,7 @@
     <FileHippoId />
     <LastUpdated>2013-07-05T06:10:01.4628832</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://download.virtualbox.org/virtualbox/{version}/VirtualBox-{urlpart}-Win.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>http://download.virtualbox.org/virtualbox/{version3Levels}/VirtualBox-{realVersion}-Win.exe</FixedDownloadUrl>
     <Name>virtualbox</Name>
   </ApplicationJob>
 </Jobs>
