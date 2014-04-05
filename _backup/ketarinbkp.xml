@@ -3978,8 +3978,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>29171712</LastFileSize>
-    <LastFileDate>2014-02-20T06:15:48.6876559</LastFileDate>
+    <LastFileSize>29323264</LastFileSize>
+    <LastFileDate>2014-04-04T05:41:16.4140618</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4031,11 +4031,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\puppet-3.4.3.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\puppet-3.5.0.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-20T06:15:48.6876559</LastUpdated>
+    <LastUpdated>2014-04-04T05:41:16.4140618</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://downloads.puppetlabs.com/windows/puppet-{version}.msi</FixedDownloadUrl>
     <Name>puppet</Name>
@@ -4553,8 +4553,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>696174</LastFileSize>
-    <LastFileDate>2014-04-02T05:40:49.3149475</LastFileDate>
+    <LastFileSize>696173</LastFileSize>
+    <LastFileDate>2014-04-04T05:41:02.9609098</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4604,11 +4604,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\sqlite-analyzer-win32-x86-3080402.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\sqlite-analyzer-win32-x86-3080403.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-04-02T05:40:49.3149475</LastUpdated>
+    <LastUpdated>2014-04-04T05:41:02.9609098</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.analyzer</Name>
@@ -4684,8 +4684,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>296361</LastFileSize>
-    <LastFileDate>2014-04-02T05:40:48.8461196</LastFileDate>
+    <LastFileSize>296364</LastFileSize>
+    <LastFileDate>2014-04-04T05:41:12.710929</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4735,11 +4735,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\sqlite-shell-win32-x86-3080402.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\sqlite-shell-win32-x86-3080403.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-04-02T05:40:48.8461196</LastUpdated>
+    <LastUpdated>2014-04-04T05:41:12.710929</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.shell</Name>
