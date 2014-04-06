@@ -3978,8 +3978,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>29323264</LastFileSize>
-    <LastFileDate>2014-04-04T05:41:16.4140618</LastFileDate>
+    <LastFileSize>29171712</LastFileSize>
+    <LastFileDate>2014-04-05T05:41:20.184184</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4031,11 +4031,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\puppet-3.5.0.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\puppet-3.4.3.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-04-04T05:41:16.4140618</LastUpdated>
+    <LastUpdated>2014-04-05T05:41:20.184184</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://downloads.puppetlabs.com/windows/puppet-{version}.msi</FixedDownloadUrl>
     <Name>puppet</Name>
