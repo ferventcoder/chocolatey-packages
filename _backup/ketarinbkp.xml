@@ -1145,8 +1145,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>36817784</LastFileSize>
-    <LastFileDate>2014-04-11T05:41:18.061973</LastFileDate>
+    <LastFileSize>36818528</LastFileSize>
+    <LastFileDate>2014-04-15T05:41:28.8344295</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1194,11 +1194,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.6.27.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\Dropbox 2.6.29.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-04-11T05:41:18.061973</LastUpdated>
+    <LastUpdated>2014-04-15T05:41:28.8344295</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://dl-web.dropbox.com/u/17/Dropbox {version}.exe</FixedDownloadUrl>
     <Name>dropbox</Name>
