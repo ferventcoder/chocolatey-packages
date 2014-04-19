@@ -2789,8 +2789,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>281480</LastFileSize>
-    <LastFileDate>2014-04-17T12:57:06.354616</LastFileDate>
+    <LastFileSize>37093056</LastFileSize>
+    <LastFileDate>2014-04-18T05:41:41.8092503</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2858,7 +2858,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-04-17T12:57:06.354616</LastUpdated>
+    <LastUpdated>2014-04-18T05:41:41.8092503</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>maxthon.install</Name>
@@ -3078,8 +3078,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>26842603</LastFileSize>
-    <LastFileDate>2014-04-12T09:20:49.4966135</LastFileDate>
+    <LastFileSize>26843165</LastFileSize>
+    <LastFileDate>2014-04-18T05:42:03.7171783</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3129,11 +3129,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\nmap-6.45-setup.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\nmap-6.46-setup.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-04-12T09:20:49.4966135</LastUpdated>
+    <LastUpdated>2014-04-18T05:42:03.7171783</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://nmap.org/dist/nmap-{version}-setup.exe</FixedDownloadUrl>
     <Name>nmap</Name>
