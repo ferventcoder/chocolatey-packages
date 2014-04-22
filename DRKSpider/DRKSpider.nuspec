@@ -4,13 +4,13 @@
     <id>DRKSpider</id>
     <title>DRKSpider</title>
     <version>3.2</version>
-    <authors>Leandro H. Fern·ndez</authors>
+    <authors>Leandro H. Fern√°ndez</authors>
     <owners>Rob Reynolds</owners>
     <summary>DRKSpider - DRKSpider will navigate a web site from a given URL, checking internal (and external) links, style sheets, images and other files.</summary>
     <description>DRKSpider will navigate a web site from a given URL, checking internal (and external) links, style sheets, images and other files. Broken links will be reported and the sitemap displayed in a tree control. You will be able to export the sitemap to a plain text file for submitting to Google, Yahoo and other search engines.</description>
     <projectUrl>http://www.drk.com.ar/spider.php</projectUrl>
     <tags>DRKSpider link spider checker sitemap generator admin</tags>
-    <copyright>Leandro H. Fern·ndez</copyright>
+    <copyright>Leandro H. Fern√°ndez</copyright>
     <licenseUrl>http://www.drk.com.ar/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>

@@ -34,7 +34,7 @@ try {
   }
 
   # clean out the recommended directories
-  # 2. Delete all the <DEVKIT_INSTALL_DIR> subdirectories and files except for config.yml. If you’ve made any customizations to the MSYS shell you may also want to keep files in the etc and home subdirectories.
+  # 2. Delete all the <DEVKIT_INSTALL_DIR> subdirectories and files except for config.yml. If youâ€™ve made any customizations to the MSYS shell you may also want to keep files in the etc and home subdirectories.
   if ([System.IO.File]::Exists("$($devKitInstallDir)\config.yml")) {
     Write-Host "Moving config.yml to a holding location prior to extraction"
     Copy-Item "$($devKitInstallDir)\config.yml" "$tempDir" -Force
@@ -80,7 +80,7 @@ try {
   # 4. Review your config.yml file to ensure it contains the root directories of all the installed Rubies you want enhanced to use the DevKit.
   Write-Host "You may want to configure your config.yml after this installation and rerun 'cinst ruby.devkit' if the defaults do not meet your needs"
   Start-Sleep 5
-  # 5. From a Command Prompt, cd into the <DEVKIT_INSTALL_DIR> directory and run ruby dk.rb install --force. This will cause all your installed Rubies listed in config.yml to use the updated SFX DevKit when building native gems and update the DevKit’s helper scripts (devkit.rb and operating_system.rb) with any new functionality. For safety, the original helper scripts are timestamp archived beside the new helper scripts. It’s always a good idea to review the two versions (and potentially make modifications) to ensure configuration specific to your system still works as expected.
+  # 5. From a Command Prompt, cd into the <DEVKIT_INSTALL_DIR> directory and run ruby dk.rb install --force. This will cause all your installed Rubies listed in config.yml to use the updated SFX DevKit when building native gems and update the DevKitâ€™s helper scripts (devkit.rb and operating_system.rb) with any new functionality. For safety, the original helper scripts are timestamp archived beside the new helper scripts. Itâ€™s always a good idea to review the two versions (and potentially make modifications) to ensure configuration specific to your system still works as expected.
   Write-Host "Initializing and installing DevKit into Ruby."
   cd $devKitInstallDir
   & ruby dk.rb init
