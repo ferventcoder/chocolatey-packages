@@ -3,7 +3,7 @@
   <metadata>
     <id>PhantomJS</id>
     <title>PhantomJS</title>
-    <version>1.9.2.20131116</version>
+    <version>1.9.7</version>
     <authors>Ariya Hidayat, PhantomJS Committers</authors>
     <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>PhantomJS - Headless WebKit</summary>
