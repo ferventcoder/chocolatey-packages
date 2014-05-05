@@ -3142,8 +3142,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>145672</LastFileSize>
-    <LastFileDate>2014-05-03T05:42:48.777096</LastFileDate>
+    <LastFileSize>5786848</LastFileSize>
+    <LastFileDate>2014-05-04T05:41:32.9134597</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3197,7 +3197,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-03T05:42:48.777096</LastUpdated>
+    <LastUpdated>2014-05-04T05:41:32.9134597</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://nodejs.org/dist/v{version}/node.exe</FixedDownloadUrl>
     <Name>nodejs.commandline</Name>
@@ -3206,8 +3206,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>145672</LastFileSize>
-    <LastFileDate>2014-05-03T05:42:43.14711</LastFileDate>
+    <LastFileSize>5570560</LastFileSize>
+    <LastFileDate>2014-05-04T05:41:42.8215064</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3261,7 +3261,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-03T05:42:43.14711</LastUpdated>
+    <LastUpdated>2014-05-04T05:41:42.8215064</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://nodejs.org/dist/v{version}/node-v{version}-x86.msi</FixedDownloadUrl>
     <Name>nodejs.install</Name>
