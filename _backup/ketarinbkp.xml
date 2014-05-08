@@ -5012,8 +5012,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>2835374</LastFileSize>
-    <LastFileDate>2014-05-06T05:41:03.4923558</LastFileDate>
+    <LastFileSize>2835664</LastFileSize>
+    <LastFileDate>2014-05-07T07:40:53.8916956</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5065,11 +5065,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\SumatraPDF-2.5.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\SumatraPDF-2.5.1.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-06T05:41:03.4923558</LastUpdated>
+    <LastUpdated>2014-05-07T07:40:53.8916956</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://kjkpub.s3.amazonaws.com/sumatrapdf/rel/SumatraPDF-{version}.zip</FixedDownloadUrl>
     <Name>sumatrapdf.commandline</Name>
@@ -5145,8 +5145,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>4261360</LastFileSize>
-    <LastFileDate>2014-05-06T05:41:01.3325047</LastFileDate>
+    <LastFileSize>4262384</LastFileSize>
+    <LastFileDate>2014-05-07T07:41:04.5111348</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5198,11 +5198,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\SumatraPDF-2.5-install.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\SumatraPDF-2.5.1-install.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-06T05:41:01.3325047</LastUpdated>
+    <LastUpdated>2014-05-07T07:41:04.5111348</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://kjkpub.s3.amazonaws.com/sumatrapdf/rel/SumatraPDF-{version}-install.exe</FixedDownloadUrl>
     <Name>sumatrapdf.install</Name>
