@@ -839,8 +839,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>50837888</LastFileSize>
-    <LastFileDate>2014-01-14T05:41:12.8399397</LastFileDate>
+    <LastFileSize>74696576</LastFileSize>
+    <LastFileDate>2014-05-13T05:42:18.1824188</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -891,11 +891,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\AdbeRdr11006_en_US.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\AdbeRdr11007_en_US.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>adobe_reader</FileHippoId>
-    <LastUpdated>2014-01-14T05:41:12.8399397</LastUpdated>
+    <LastUpdated>2014-05-13T05:42:18.1824188</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://ardownload.adobe.com/pub/adobe/reader/win/11.x/{version}/en_US/AdbeRdr{versionNoDots}_en_US.exe</FixedDownloadUrl>
     <Name>adobereader</Name>
@@ -2789,8 +2789,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>36635656</LastFileSize>
-    <LastFileDate>2014-05-01T07:41:19.8785732</LastFileDate>
+    <LastFileSize>36636504</LastFileSize>
+    <LastFileDate>2014-05-13T05:41:45.9185725</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2858,7 +2858,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-01T07:41:19.8785732</LastUpdated>
+    <LastUpdated>2014-05-13T05:41:45.9185725</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>maxthon.install</Name>
