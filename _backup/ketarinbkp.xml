@@ -2169,8 +2169,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>4168824</LastFileSize>
-    <LastFileDate>2014-04-13T05:40:43.4771788</LastFileDate>
+    <LastFileSize>4126720</LastFileSize>
+    <LastFileDate>2014-05-14T14:28:28.3412279</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2221,11 +2221,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\httrack-3.48.3.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\httrack-3.48.7.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-04-13T05:40:43.4771788</LastUpdated>
+    <LastUpdated>2014-05-14T14:28:28.3412279</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.httrack.com/httrack-{version}.exe</FixedDownloadUrl>
     <Name>httrack.app</Name>
@@ -2301,8 +2301,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>4620377</LastFileSize>
-    <LastFileDate>2014-04-12T09:20:03.076561</LastFileDate>
+    <LastFileSize>4561996</LastFileSize>
+    <LastFileDate>2014-05-14T14:28:21.8468569</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2352,11 +2352,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\httrack-noinst-3.48.3.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\httrack-noinst-3.48.7.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-04-12T09:20:03.076561</LastUpdated>
+    <LastUpdated>2014-05-14T14:28:21.8468569</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.httrack.com/httrack-noinst-{version}.zip</FixedDownloadUrl>
     <Name>httrack.tool</Name>
@@ -4439,8 +4439,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>25624576</LastFileSize>
-    <LastFileDate>2014-02-20T06:15:43.2516498</LastFileDate>
+    <LastFileSize>26222592</LastFileSize>
+    <LastFileDate>2014-05-14T14:28:58.9959834</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4473,11 +4473,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\SkypeSetup_6.14.0.104.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\SkypeSetup_6.16.0.105.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-20T06:15:43.2516498</LastUpdated>
+    <LastUpdated>2014-05-14T14:28:58.9959834</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.skype.com/msi/SkypeSetup_{version}.msi</FixedDownloadUrl>
     <Name>skype</Name>
@@ -5012,8 +5012,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>2835664</LastFileSize>
-    <LastFileDate>2014-05-07T07:40:53.8916956</LastFileDate>
+    <LastFileSize>2835750</LastFileSize>
+    <LastFileDate>2014-05-14T14:28:58.7409684</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5065,11 +5065,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\SumatraPDF-2.5.1.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\SumatraPDF-2.5.2.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-07T07:40:53.8916956</LastUpdated>
+    <LastUpdated>2014-05-14T14:28:58.7409684</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://kjkpub.s3.amazonaws.com/sumatrapdf/rel/SumatraPDF-{version}.zip</FixedDownloadUrl>
     <Name>sumatrapdf.commandline</Name>
@@ -5145,8 +5145,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>4262384</LastFileSize>
-    <LastFileDate>2014-05-07T07:41:04.5111348</LastFileDate>
+    <LastFileSize>4262896</LastFileSize>
+    <LastFileDate>2014-05-14T14:28:58.7199681</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5198,11 +5198,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\SumatraPDF-2.5.1-install.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\SumatraPDF-2.5.2-install.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-07T07:41:04.5111348</LastUpdated>
+    <LastUpdated>2014-05-14T14:28:58.7199681</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://kjkpub.s3.amazonaws.com/sumatrapdf/rel/SumatraPDF-{version}-install.exe</FixedDownloadUrl>
     <Name>sumatrapdf.install</Name>
@@ -5278,8 +5278,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>13418331</LastFileSize>
-    <LastFileDate>2014-05-01T07:43:33.5657355</LastFileDate>
+    <LastFileSize>13395687</LastFileSize>
+    <LastFileDate>2014-05-14T14:29:12.7857725</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5366,7 +5366,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-01T07:43:33.5657355</LastUpdated>
+    <LastUpdated>2014-05-14T14:29:12.7857725</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.sysinternals.com/files/SysinternalsSuite.zip</FixedDownloadUrl>
     <Name>sysinternals</Name>
