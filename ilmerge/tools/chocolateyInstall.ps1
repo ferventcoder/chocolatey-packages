@@ -13,7 +13,7 @@ try {
   $ilmergeTargetFolder = (Split-Path $MyInvocation.MyCommand.Definition)
   if (![System.IO.Directory]::Exists($ilmergeTargetFolder)) {[System.IO.Directory]::CreateDirectory($ilmergeTargetFolder)}
   Write-Host "Copying the contents of `'$($ilmergeFolder)`' to `'$($ilmergeTargetFolder)`'."
-  Copy-Item $ilmergeFolder $ilmergeTargetFolder –recurse -force
+  Copy-Item $ilmergeFolder $ilmergeTargetFolder -recurse -force
 
   Write-ChocolateySuccess 'ilmerge'
 } catch {
