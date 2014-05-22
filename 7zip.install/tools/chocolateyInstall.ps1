@@ -1,11 +1,7 @@
 ﻿Function Get-ExplorerProcessCount
 {
     $process = Get-Process explorer -ErrorAction SilentlyContinue
-    $processCount = 0
-    if($process -ne $null)
-    {
-        $processCount = $process.count
-    }
+    $processCount = ($process | Measure-Object).Count
     return $processCount
 }
 
