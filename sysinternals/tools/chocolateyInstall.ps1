@@ -4,7 +4,8 @@ try {
 
   $binRoot = Get-BinRoot
   Write-Debug "Bin Root is $binRoot"
-  $installDir = Join-Path "$binRoot" "$packageName"
+  $installDir = Join-Path "$binRoot" "$packageName"
+
 
   Install-ChocolateyZipPackage $packageName $url $installDir
 
@@ -24,6 +25,21 @@ try {
       }catch {}
     }
   }
+  
+  # Add most widely used apps to start menu
+  # Pull request 228 not merged yet - https://github.com/chocolatey/chocolatey/pull/228/files - hopefully this is obsolete, because it cannot change the target name.
+  # Install-ChocolateyPinnedItem "$installDir\procexp.exe"
+
+  $appData = [environment]::GetFolderPath([environment+specialfolder]::ApplicationData)
+  $destPath = Join-Path "$appData" "Microsoft\Windows\Start Menu\Programs\"
+  $destLink = Join-Path "$destPath" "Process Explorer.lnk"
+
+  $shell = New-Object -comObject WScript.Shell
+  $shortcut = $shell.CreateShortcut($destLink)
+  $shortcut.TargetPath = Join-Path "$installDir" "procexp.exe"
+  $shortcut.Save()
+  
+  # You can add more here
 
   Write-ChocolateySuccess 'sysinternals'
 } catch {
