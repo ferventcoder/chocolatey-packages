@@ -2169,8 +2169,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>4170416</LastFileSize>
-    <LastFileDate>2014-05-16T12:31:19.9438697</LastFileDate>
+    <LastFileSize>294616</LastFileSize>
+    <LastFileDate>2014-05-22T10:24:00.9191107</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2221,11 +2221,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\httrack-3.48.8.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\httrack-3.48.9.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-16T12:31:19.9438697</LastUpdated>
+    <LastUpdated>2014-05-22T10:24:00.9191107</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.httrack.com/httrack-{version}.exe</FixedDownloadUrl>
     <Name>httrack.app</Name>
@@ -2301,8 +2301,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>4617796</LastFileSize>
-    <LastFileDate>2014-05-16T12:30:47.3032946</LastFileDate>
+    <LastFileSize>266888</LastFileSize>
+    <LastFileDate>2014-05-22T10:23:46.2191379</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2352,11 +2352,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\httrack-noinst-3.48.8.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\httrack-noinst-3.48.9.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-16T12:30:47.3032946</LastUpdated>
+    <LastUpdated>2014-05-22T10:23:46.2191379</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.httrack.com/httrack-noinst-{version}.zip</FixedDownloadUrl>
     <Name>httrack.tool</Name>
