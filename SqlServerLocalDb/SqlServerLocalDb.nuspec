@@ -13,7 +13,7 @@
     ===== Integrated =====
     LocalDB is designed to be bundled with and function as an integrated part of tools or desktop applications that need a lightweight local database runtime. This includes tools like SQL Server Data Tools, or custom developed desktop applications, or tools that need a lightweight single-user database runtime that supports full Transact-SQL functionality.
     ===== Simple =====
-    Apps that use LocalDB simply open a file. Once a file is opened, you get SQL Server functionality when working with that file, including things like ACID transaction support. The app that opens the file has exclusive use. It’s not intended for multi-user scenarios or to be used as a server. (If you need that, you should install SQL Server Express.)
+    Apps that use LocalDB simply open a file. Once a file is opened, you get SQL Server functionality when working with that file, including things like ACID transaction support. The app that opens the file has exclusive use. Itâ€™s not intended for multi-user scenarios or to be used as a server. (If you need that, you should install SQL Server Express.)
     ===== Easy Acquisition =====
     LocalDB is easy to download, install, and manage. It installs as a small shared component instead of a service.
     </description>
