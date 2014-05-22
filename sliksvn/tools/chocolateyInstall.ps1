@@ -1,1 +1,0 @@
-Install-ChocolateyPackage 'sliksvn' 'msi' '/quiet /norestart' 'http://www.sliksvn.com/pub/Slik-Subversion-1.8.5-1-win32.msi' 'http://www.sliksvn.com/pub/Slik-Subversion-1.8.5-1-x64.msi'
