@@ -1,16 +1,16 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b4da1d20-49a1-415a-a061-1f7141ed0dc1">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="e480bb59-a55b-4dcd-97ac-95bd53c74af7">
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserAgent />
     <UserNotes />
-    <LastFileSize>47964160</LastFileSize>
-    <LastFileDate>2013-07-11T21:04:09.5708978</LastFileDate>
+    <LastFileSize>19238898</LastFileSize>
+    <LastFileDate>2014-04-09T01:52:18+02:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator />
+    <VariableChangeIndicator>version</VariableChangeIndicator>
     <CanBeShared>true</CanBeShared>
     <ShareApplication>false</ShareApplication>
     <ExclusiveDownload>false</ExclusiveDownload>
@@ -24,13 +24,24 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
+            <VariableType>RegularExpression</VariableType>
+            <Regex>PHP \d\.\d \((\d+\.\d+\.\d+)\)</Regex>
             <Url>http://windows.php.net/download/</Url>
-            <StartText>PHP 5.3 (</StartText>
-            <EndText>)&lt;/h3&gt;</EndText>
-            <TextualContent />
             <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>vc</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(VC\d+) x86 Non Thread Safe</Regex>
+            <Url>http://windows.php.net/download/</Url>
+            <Name>vc</Name>
           </UrlVariable>
         </value>
       </item>
@@ -42,8 +53,9 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>""</TextualContent>
+            <Regex>(http://[^ ]*Win32)</Regex>
+            <Url>http://windows.php.net/download/</Url>
+            <TextualContent>http://windows.php.net/downloads/releases/php-{version}-nts-Win32-{vc}-x64.zip</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -55,13 +67,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\php-5.3.27-nts-Win32-VC9-x86.msi</PreviousLocation>
+    <PreviousLocation>c:\Chocolatey\_work\php-5.5.11-nts-Win32-VC11-x86.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-07-11T21:04:09.5708978</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://windows.php.net/downloads/releases/php-{version}-nts-Win32-VC9-x86.msi</FixedDownloadUrl>
+    <LastUpdated>2014-04-22T12:28:51.2806152+02:00</LastUpdated>
+    <TargetPath>c:\Chocolatey\_work\</TargetPath>
+    <FixedDownloadUrl>http://windows.php.net/downloads/releases/php-{version}-nts-Win32-{vc}-x86.zip</FixedDownloadUrl>
     <Name>php</Name>
   </ApplicationJob>
 </Jobs>
