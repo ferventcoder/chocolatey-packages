@@ -3562,8 +3562,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>143202</LastFileSize>
-    <LastFileDate>2014-02-09T14:54:56.7099471</LastFileDate>
+    <LastFileSize>147169</LastFileSize>
+    <LastFileDate>2014-05-25T05:41:15.4486791</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3613,11 +3613,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\PngOptimizer-2.3-x86.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\PngOptimizer-2.4-x86.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-09T14:54:56.7099471</LastUpdated>
+    <LastUpdated>2014-05-25T05:41:15.4486791</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://psydk.org/download/PngOptimizer-{version}-x86.zip</FixedDownloadUrl>
     <Name>pngoptimizer</Name>
@@ -3693,8 +3693,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>100820</LastFileSize>
-    <LastFileDate>2014-02-09T14:54:57.6152463</LastFileDate>
+    <LastFileSize>104813</LastFileSize>
+    <LastFileDate>2014-05-25T05:41:15.0268723</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3744,11 +3744,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\PngOptimizerCL-2.3-x86.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\PngOptimizerCL-2.4-x86.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-09T14:54:57.6152463</LastUpdated>
+    <LastUpdated>2014-05-25T05:41:15.0268723</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://psydk.org/download/PngOptimizerCL-{version}-x86.zip</FixedDownloadUrl>
     <Name>pngoptimizer.commandline</Name>
@@ -4554,7 +4554,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>696173</LastFileSize>
-    <LastFileDate>2014-05-20T05:42:04.3404992</LastFileDate>
+    <LastFileDate>2014-05-25T05:40:52.8861556</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4608,7 +4608,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-20T05:42:04.3404992</LastUpdated>
+    <LastUpdated>2014-05-25T05:40:52.8861556</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.analyzer</Name>
@@ -4685,7 +4685,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>296364</LastFileSize>
-    <LastFileDate>2014-05-20T05:42:05.2925429</LastFileDate>
+    <LastFileDate>2014-05-25T05:40:54.683082</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4739,7 +4739,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-20T05:42:05.2925429</LastUpdated>
+    <LastUpdated>2014-05-25T05:40:54.683082</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.shell</Name>
