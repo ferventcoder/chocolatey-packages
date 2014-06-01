@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="7a3e6911-0895-4f81-bf67-01b78910d56b">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="080a9269-c8df-4c15-906e-87c8b86bb0e1">
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>21404480</LastFileSize>
-    <LastFileDate>2013-06-03T05:46:09.3417909</LastFileDate>
+    <LastFileSize>22157424</LastFileSize>
+    <LastFileDate>2014-04-11T23:44:27+02:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,9 +26,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://code.google.com/feeds/p/msysgit/downloads/basic</Url>
-            <StartText>http://code.google.com/feeds/p/msysgit/downloads/basic/Git-</StartText>
-            <EndText>-preview</EndText>
+            <Url>http://git-scm.com/download/win</Url>
+            <StartText>&lt;p&gt;You are downloading version &lt;strong&gt;</StartText>
+            <EndText>&lt;/strong&gt;</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -51,33 +51,32 @@
       </item>
       <item>
         <key>
-          <string>urlpart</string>
+          <string>urlPart</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>PortableGit-{version}-preview\d+.7z</Regex>
-            <Url>http://code.google.com/feeds/p/msysgit/downloads/basic</Url>
-            <TextualContent>grepWin-{version}</TextualContent>
-            <Name>urlpart</Name>
+            <Regex>(?&lt;=msysgit/releases/download/)Git-{version}-[^"]+\.7z</Regex>
+            <Url>https://github.com/msysgit/msysgit/releases/</Url>
+            <Name>urlPart</Name>
           </UrlVariable>
         </value>
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand />
+    <ExecutePreCommand>chocopkgup /p git /v {version} /u {preupdate-url} /u64 {url64}</ExecutePreCommand>
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\PortableGit-1.8.3-preview20130601.7z</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\PortableGit-1.9.2-preview20140411.7z</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-06-03T05:46:09.3417909</LastUpdated>
+    <LastUpdated>2014-06-02T00:54:03.4512009+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://msysgit.googlecode.com/files/{urlpart}</FixedDownloadUrl>
+    <FixedDownloadUrl>https://github.com/msysgit/msysgit/releases/download/{urlPart}</FixedDownloadUrl>
     <Name>git.commandline</Name>
   </ApplicationJob>
 </Jobs>
