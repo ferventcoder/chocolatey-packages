@@ -1388,8 +1388,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>4968079</LastFileSize>
-    <LastFileDate>2014-03-29T05:40:41.4815392</LastFileDate>
+    <LastFileSize>4996210</LastFileSize>
+    <LastFileDate>2014-06-01T05:40:41.2777446</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1424,11 +1424,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.8.0_win32-setup.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.8.1_win32-setup.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-03-29T05:40:41.4815392</LastUpdated>
+    <LastUpdated>2014-06-01T05:40:41.2777446</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.filezilla-project.org/FileZilla_{version}_win32-setup.exe</FixedDownloadUrl>
     <Name>filezilla</Name>
@@ -1504,8 +1504,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>7386124</LastFileSize>
-    <LastFileDate>2014-03-29T05:40:41.6928177</LastFileDate>
+    <LastFileSize>7436899</LastFileSize>
+    <LastFileDate>2014-06-01T05:40:40.9236263</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1541,11 +1541,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.8.0_win32.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.8.1_win32.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-03-29T05:40:41.6928177</LastUpdated>
+    <LastUpdated>2014-06-01T05:40:40.9236263</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.filezilla-project.org/FileZilla_{version}_win32.zip</FixedDownloadUrl>
     <Name>filezilla.commandline</Name>
