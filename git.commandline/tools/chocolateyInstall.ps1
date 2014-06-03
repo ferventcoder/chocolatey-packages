@@ -23,8 +23,8 @@ try {
   #& 7za x -o"$gitInstallDir" -y "$file"
   Start-Process "7za" -ArgumentList "x -o`"$gitInstallDir`" -y `"$file`"" -Wait
 
-  Install-ChocolateyPath $gitInstallDir 'Machine'
-  Install-ChocolateyPath "$($gitInstallDir)\cmd" 'Machine'
+  Install-ChocolateyPath $gitInstallDir 'user'
+  Install-ChocolateyPath "$($gitInstallDir)\cmd" 'user'
   
 #  Write-Host 'Making GIT core.autocrlf false'
 #  #make GIT core.autocrlf false
