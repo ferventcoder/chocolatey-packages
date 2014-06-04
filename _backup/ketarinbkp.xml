@@ -1019,8 +1019,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>325319</LastFileSize>
-    <LastFileDate>2014-06-02T08:37:45.7193378</LastFileDate>
+    <LastFileSize>11878040</LastFileSize>
+    <LastFileDate>2014-06-03T06:08:28.0610451</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate>2009-01-02T15:15:53</DownloadDate>
@@ -1073,7 +1073,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-06-02T08:37:45.7193378</LastUpdated>
+    <LastUpdated>2014-06-03T06:08:28.0610451</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.autoitscript.com/cgi-bin/getfile.pl?autoit3/autoit-v3-setup.exe</FixedDownloadUrl>
     <Name>autoit</Name>
@@ -1082,8 +1082,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>325272</LastFileSize>
-    <LastFileDate>2014-06-02T08:37:42.7287995</LastFileDate>
+    <LastFileSize>16400881</LastFileSize>
+    <LastFileDate>2014-06-03T06:08:44.3713438</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate>2009-01-02T15:15:53</DownloadDate>
@@ -1136,7 +1136,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-06-02T08:37:42.7287995</LastUpdated>
+    <LastUpdated>2014-06-03T06:08:44.3713438</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.autoitscript.com/files/autoit3/autoit-v3.zip</FixedDownloadUrl>
     <Name>autoit.commandline</Name>
@@ -1711,12 +1711,12 @@
     <FixedDownloadUrl>http://www.foobar2000.org/files/{fileHash}/foobar2000_v{version}.exe</FixedDownloadUrl>
     <Name>foobar2000</Name>
   </ApplicationJob>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="7a3e6911-0895-4f81-bf67-01b78910d56b">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="080a9269-c8df-4c15-906e-87c8b86bb0e1">
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>21790316</LastFileSize>
-    <LastFileDate>2014-02-19T05:40:52.1646716</LastFileDate>
+    <LastFileSize>22157424</LastFileSize>
+    <LastFileDate>2014-06-04T00:34:15.2411589</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1737,9 +1737,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://code.google.com/feeds/p/msysgit/downloads/basic</Url>
-            <StartText>http://code.google.com/feeds/p/msysgit/downloads/basic/Git-</StartText>
-            <EndText>-preview</EndText>
+            <Url>http://git-scm.com/download/win</Url>
+            <StartText>&lt;p&gt;You are downloading version &lt;strong&gt;</StartText>
+            <EndText>&lt;/strong&gt;</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -1762,96 +1762,15 @@
       </item>
       <item>
         <key>
-          <string>urlpart</string>
+          <string>urlPart</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>PortableGit-{version}-preview\d+.7z</Regex>
-            <Url>http://code.google.com/feeds/p/msysgit/downloads/basic</Url>
-            <TextualContent>grepWin-{version}</TextualContent>
-            <Name>urlpart</Name>
-          </UrlVariable>
-        </value>
-      </item>
-    </Variables>
-    <ExecuteCommand />
-    <ExecutePreCommand />
-    <ExecuteCommandType>Batch</ExecuteCommandType>
-    <ExecutePreCommandType>Batch</ExecutePreCommandType>
-    <Category />
-    <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\PortableGit-1.9.0-preview20140217.7z</PreviousLocation>
-    <DeletePreviousFile>true</DeletePreviousFile>
-    <Enabled>true</Enabled>
-    <FileHippoId />
-    <LastUpdated>2014-02-19T05:40:52.1646716</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://msysgit.googlecode.com/files/{urlpart}</FixedDownloadUrl>
-    <Name>git.commandline</Name>
-  </ApplicationJob>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="c1189272-91b4-40fd-8207-3bfac401bac0">
-    <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
-    <UserNotes />
-    <LastFileSize>15511958</LastFileSize>
-    <LastFileDate>2014-02-18T05:42:20.1421962</LastFileDate>
-    <IgnoreFileInformation>false</IgnoreFileInformation>
-    <DownloadBeta>Default</DownloadBeta>
-    <DownloadDate xsi:nil="true" />
-    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator />
-    <CanBeShared>true</CanBeShared>
-    <ShareApplication>false</ShareApplication>
-    <ExclusiveDownload>false</ExclusiveDownload>
-    <HttpReferer />
-    <SetupInstructions />
-    <Variables>
-      <item>
-        <key>
-          <string>version</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
-            <Url>http://code.google.com/feeds/p/msysgit/downloads/basic</Url>
-            <StartText>http://code.google.com/feeds/p/msysgit/downloads/basic/Git-</StartText>
-            <EndText>-preview</EndText>
-            <TextualContent />
-            <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>url64</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex>http://code.google.com/feeds/p/grepwin/downloads/basic/grepWin-\d+\.\d+.\d+\-64.msi</Regex>
-            <Url>http://code.google.com/feeds/p/grepwin/downloads/basic</Url>
-            <TextualContent>""</TextualContent>
-            <Name>url64</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>urlpart</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>Git-{version}-preview\d+.exe</Regex>
-            <Url>http://code.google.com/feeds/p/msysgit/downloads/basic</Url>
-            <TextualContent>grepWin-{version}</TextualContent>
-            <Name>urlpart</Name>
+            <Regex>(?&lt;=msysgit/releases/download/)Git-{version}-[^"]+\.7z</Regex>
+            <Url>https://github.com/msysgit/msysgit/releases/</Url>
+            <Name>urlPart</Name>
           </UrlVariable>
         </value>
       </item>
@@ -1862,13 +1781,92 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Git-1.9.0-preview20140217.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\PortableGit-1.9.2-preview20140411.7z</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-18T05:42:20.1421962</LastUpdated>
+    <LastUpdated>2014-06-04T00:34:15.2411589</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://msysgit.googlecode.com/files/{urlpart}</FixedDownloadUrl>
+    <FixedDownloadUrl>https://github.com/msysgit/msysgit/releases/download/{urlPart}</FixedDownloadUrl>
+    <Name>git.commandline</Name>
+  </ApplicationJob>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="c1189272-91b4-40fd-8207-3bfac401bac0">
+    <WebsiteUrl />
+    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserNotes />
+    <LastFileSize>15783122</LastFileSize>
+    <LastFileDate>2014-06-04T00:35:11.2707344</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>http://git-scm.com/download/win</Url>
+            <StartText>&lt;p&gt;You are downloading version &lt;strong&gt;</StartText>
+            <EndText>&lt;/strong&gt;</EndText>
+            <TextualContent />
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex>http://code.google.com/feeds/p/grepwin/downloads/basic/grepWin-\d+\.\d+.\d+\-64.msi</Regex>
+            <Url>http://code.google.com/feeds/p/grepwin/downloads/basic</Url>
+            <TextualContent>""</TextualContent>
+            <Name>url64</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>urlPart</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;=msysgit/releases/download/)Git-{version}-[^"]+\.exe</Regex>
+            <Url>https://github.com/msysgit/msysgit/releases/</Url>
+            <Name>urlPart</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand>chocopkgup /p git /v {version} /u {preupdate-url} /u64 {url64}</ExecutePreCommand>
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Chocolatey\_work\Git-1.9.2-preview20140411.exe</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2014-06-04T00:35:11.2707344</LastUpdated>
+    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <FixedDownloadUrl>https://github.com/msysgit/msysgit/releases/download/{urlPart}</FixedDownloadUrl>
     <Name>git.install</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="ecfb3577-e5c0-470a-a5bd-e484fcc8929c">
