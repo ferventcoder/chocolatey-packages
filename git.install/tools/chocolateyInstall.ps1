@@ -7,7 +7,7 @@ try {
   if ($is64bit) {$programFiles = ${env:ProgramFiles(x86)}}
   $gitPath = Join-Path $programFiles 'Git\cmd'
 
-  Install-ChocolateyPath $gitPath 'user'
+  Install-ChocolateyPath $gitPath 'Machine'
 
 #@"
 #
