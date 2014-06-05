@@ -1,9 +1,10 @@
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $packageName = 'webpicmd'
 $installerType = 'msi'
-$url   = 'http://download.microsoft.com/download/7/0/4/704CEB4C-9F42-4962-A2B0-5C84B0682C7A/WebPlatformInstaller_x86_en-US.msi'
-$url64 = 'http://download.microsoft.com/download/7/0/4/704CEB4C-9F42-4962-A2B0-5C84B0682C7A/WebPlatformInstaller_amd64_en-US.msi'
-$silentArgs = "/passive /norestart"
+# http://forums.iis.net/t/1178551.aspx?PLEASE+READ+WebPI+direct+download+links
+$url   = 'http://download.microsoft.com/download/C/F/F/CFF3A0B8-99D4-41A2-AE1A-496C08BEB904/WebPlatformInstaller_x86_en-US.msi'
+$url64 = 'http://download.microsoft.com/download/C/F/F/CFF3A0B8-99D4-41A2-AE1A-496C08BEB904/WebPlatformInstaller_amd64_en-US.msi'
+$silentArgs = "/qn /norestart"
 
 $installDir = Join-Path "$toolsDir" 'webpi'
 $fileName = "$($packageName).msi"
