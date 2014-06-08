@@ -2167,8 +2167,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>4177560</LastFileSize>
-    <LastFileDate>2014-06-05T05:40:49.8217907</LastFileDate>
+    <LastFileSize>4177736</LastFileSize>
+    <LastFileDate>2014-06-07T05:41:14.8741465</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2219,11 +2219,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\httrack-3.48.10.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\httrack-3.48.11.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-06-05T05:40:49.8217907</LastUpdated>
+    <LastUpdated>2014-06-07T05:41:14.8741465</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.httrack.com/httrack-{version}.exe</FixedDownloadUrl>
     <Name>httrack.app</Name>
@@ -2299,8 +2299,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>4623503</LastFileSize>
-    <LastFileDate>2014-06-05T05:40:44.567883</LastFileDate>
+    <LastFileSize>4623605</LastFileSize>
+    <LastFileDate>2014-06-07T05:41:19.4227161</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2350,11 +2350,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\httrack-noinst-3.48.10.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\httrack-noinst-3.48.11.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-06-05T05:40:44.567883</LastUpdated>
+    <LastUpdated>2014-06-07T05:41:19.4227161</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.httrack.com/httrack-noinst-{version}.zip</FixedDownloadUrl>
     <Name>httrack.tool</Name>
@@ -2642,7 +2642,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>33469122</LastFileSize>
-    <LastFileDate>2014-06-06T05:42:53.9494173</LastFileDate>
+    <LastFileDate>2014-06-07T05:41:20.1557366</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2711,7 +2711,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-06-06T05:42:53.9494173</LastUpdated>
+    <LastUpdated>2014-06-07T05:41:20.1557366</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>maxthon.commandline</Name>
@@ -2788,7 +2788,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>38858608</LastFileSize>
-    <LastFileDate>2014-06-06T05:42:06.4001591</LastFileDate>
+    <LastFileDate>2014-06-07T05:42:25.5315529</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2856,7 +2856,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-06-06T05:42:06.4001591</LastUpdated>
+    <LastUpdated>2014-06-07T05:42:25.5315529</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>maxthon.install</Name>
