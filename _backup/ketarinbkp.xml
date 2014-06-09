@@ -1554,8 +1554,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>1983995</LastFileSize>
-    <LastFileDate>2014-04-09T05:40:39.2534845</LastFileDate>
+    <LastFileSize>1987723</LastFileSize>
+    <LastFileDate>2014-06-08T05:40:40.6953747</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1622,11 +1622,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\FileZilla_Server-0_9_44.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\FileZilla_Server-0_9_45.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-04-09T05:40:39.2534845</LastUpdated>
+    <LastUpdated>2014-06-08T05:40:40.6953747</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://hivelocity.dl.sourceforge.net/project/filezilla/FileZilla%20Server/{version}/FileZilla_Server-{versionUnderscore}.exe</FixedDownloadUrl>
     <Name>filezilla.server</Name>
