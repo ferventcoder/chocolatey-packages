@@ -3268,8 +3268,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>6448164</LastFileSize>
-    <LastFileDate>2014-06-13T05:42:32.0144366</LastFileDate>
+    <LastFileSize>6448215</LastFileSize>
+    <LastFileDate>2014-06-14T05:40:59.6704809</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3308,7 +3308,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>notepad</FileHippoId>
-    <LastUpdated>2014-06-13T05:42:32.0144366</LastUpdated>
+    <LastUpdated>2014-06-14T05:40:59.6704809</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.tuxfamily.org/notepadplus/{version}/npp.{version}.bin.zip</FixedDownloadUrl>
     <Name>notepadplusplus.commandline</Name>
@@ -3317,8 +3317,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>7676889</LastFileSize>
-    <LastFileDate>2014-06-13T05:44:18.2177699</LastFileDate>
+    <LastFileSize>7676930</LastFileSize>
+    <LastFileDate>2014-06-14T05:41:02.1754551</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3357,7 +3357,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>notepad</FileHippoId>
-    <LastUpdated>2014-06-13T05:44:18.2177699</LastUpdated>
+    <LastUpdated>2014-06-14T05:41:02.1754551</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.tuxfamily.org/notepadplus/{version}/npp.{version}.Installer.exe</FixedDownloadUrl>
     <Name>notepadplusplus.install</Name>
