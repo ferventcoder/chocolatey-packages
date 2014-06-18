@@ -2641,8 +2641,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>33497531</LastFileSize>
-    <LastFileDate>2014-06-13T05:44:18.2177699</LastFileDate>
+    <LastFileSize>33489120</LastFileSize>
+    <LastFileDate>2014-06-17T10:17:12.3143786</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2711,7 +2711,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-06-13T05:44:18.2177699</LastUpdated>
+    <LastUpdated>2014-06-17T10:17:12.3143786</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>maxthon.commandline</Name>
@@ -3140,8 +3140,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>5786848</LastFileSize>
-    <LastFileDate>2014-05-04T05:41:32.9134597</LastFileDate>
+    <LastFileSize>5790432</LastFileSize>
+    <LastFileDate>2014-06-17T10:16:55.0999593</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3195,7 +3195,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-04T05:41:32.9134597</LastUpdated>
+    <LastUpdated>2014-06-17T10:16:55.0999593</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://nodejs.org/dist/v{version}/node.exe</FixedDownloadUrl>
     <Name>nodejs.commandline</Name>
@@ -3204,8 +3204,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>5570560</LastFileSize>
-    <LastFileDate>2014-05-04T05:41:42.8215064</LastFileDate>
+    <LastFileSize>5586944</LastFileSize>
+    <LastFileDate>2014-06-17T10:18:14.6106154</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3255,11 +3255,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\node-v0.10.28-x86.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\node-v0.10.29-x86.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-04T05:41:42.8215064</LastUpdated>
+    <LastUpdated>2014-06-17T10:18:14.6106154</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://nodejs.org/dist/v{version}/node-v{version}-x86.msi</FixedDownloadUrl>
     <Name>nodejs.install</Name>
