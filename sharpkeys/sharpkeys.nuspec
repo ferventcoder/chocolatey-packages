@@ -2,17 +2,16 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>sharpkeys</id>
-    <title>sharpkeys</title>
-    <version>3.0</version>
+    <title>SharpKeys</title>
+    <version>3.5.0</version>
     <authors>Randy</authors>
-    <owners>chrisortman</owners>
-    <summary>sharpkeys</summary>
-    <description>sharpkeys</description>
-    <projectUrl>http://www.randyrants.com/2008/12/sharpkeys_30.html</projectUrl>
-    <tags>sharpkeys admin</tags>
+    <owners>chrisortman, ferventcoder</owners>
+    <summary>SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key.</summary>
+    <description>SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key. Included in the application is a list of common keyboard keys and a Type Key feature to automatically recognize most keyboard keys. It was originally developed in C# using .NET v2 but has been updated to support .NET 4.0 Client Profile</description>
+    <projectUrl>http://sharpkeys.codeplex.com/</projectUrl>
+    <tags>sharpkeys keyboard admin</tags>
     <licenseUrl>http://sharpkeys.codeplex.com/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>32x32.png</iconUrl>-->
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
