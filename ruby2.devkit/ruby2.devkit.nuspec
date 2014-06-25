@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>ruby2.devkit</id>
+    <title>Ruby DevKit (2.0+)</title>
+    <version>4.7.2.2013022401</version>
+    <authors>RubyInstaller Contributors</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Ruby Development Kit - https://github.com/oneclick/rubyinstaller/wiki/Development-Kit</summary>
+    <description>Ruby Development Kit (DevKit) is a toolkit that makes it easy to build and use native C/C++ extensions such as RDiscount and RedCloth for Ruby on Windows.
+
+    This does not take a dependency on Ruby. Please install that first.
+    </description>
+    <projectUrl>http://rubyinstaller.org/add-ons/devkit/</projectUrl>
+    <tags>Ruby ruby2 DevKit</tags>
+    <licenseUrl>https://raw.github.com/oneclick/rubyinstaller/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="7zip.commandline" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
