@@ -1,1 +1,1 @@
-Install-ChocolateyPackage '{{PackageName}}' 'msi' '/quiet' '{{DownloadUrl}}' '{{DownloadUrlx64}}'
+Install-ChocolateyPackage '{{PackageName}}' 'msi' '/quiet /norestart' '{{DownloadUrl}}' '{{DownloadUrlx64}}'
