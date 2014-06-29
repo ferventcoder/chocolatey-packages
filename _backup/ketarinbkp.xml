@@ -3366,8 +3366,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>3739157</LastFileSize>
-    <LastFileDate>2014-02-09T14:54:49.8276856</LastFileDate>
+    <LastFileSize>6252036</LastFileSize>
+    <LastFileDate>2014-06-28T09:11:28.0812919</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3403,8 +3403,9 @@ REM /disablepush</ExecutePreCommand>
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>http://www.dotpdn.com/downloads/pdn.html</Url>
-            <StartText>/files/Paint.NET.</StartText>
-            <EndText>.Install.zip</EndText>
+            <StartText>.zip"&gt;paint.net 
+							</StartText>
+            <EndText>&lt;/a&gt;</EndText>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -3416,13 +3417,13 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\Paint.NET.3.5.11.Install.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\paint.net.4.0.install.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-09T14:54:49.8276856</LastUpdated>
+    <LastUpdated>2014-06-28T09:11:28.0812919</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.dotpdn.com/files/Paint.NET.{version}.Install.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>http://www.dotpdn.com/files/paint.net.{version}.install.zip</FixedDownloadUrl>
     <Name>paint.net</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b4da1d20-49a1-415a-a061-1f7141ed0dc1">
@@ -4552,7 +4553,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>698103</LastFileSize>
-    <LastFileDate>2014-06-05T05:43:07.4080699</LastFileDate>
+    <LastFileDate>2014-06-28T08:42:04.2803214</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4606,7 +4607,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-06-05T05:43:07.4080699</LastUpdated>
+    <LastUpdated>2014-06-28T08:42:04.2803214</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.analyzer</Name>
@@ -4683,7 +4684,7 @@ REM /disablepush</ExecutePreCommand>
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>301951</LastFileSize>
-    <LastFileDate>2014-06-05T05:43:07.2638696</LastFileDate>
+    <LastFileDate>2014-06-28T08:42:03.8271966</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4737,7 +4738,7 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-06-05T05:43:07.2638696</LastUpdated>
+    <LastUpdated>2014-06-28T08:42:03.8271966</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://www.sqlite.org/{urlPart2}</FixedDownloadUrl>
     <Name>sqlite.shell</Name>
