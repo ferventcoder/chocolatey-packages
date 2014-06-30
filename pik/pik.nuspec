@@ -3,7 +3,7 @@
   <metadata>
     <id>pik</id>
     <title>Pik (Ruby)</title>
-    <version>0.2.8.20131116</version>
+    <version>0.3.0</version>
     <authors>Gordon Thiesfeld</authors>
     <owners>Rob Reynolds</owners>
     <summary>Pik is a tool to manage multiple versions of ruby on Windows.</summary>
