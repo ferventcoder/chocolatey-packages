@@ -1,5 +1,4 @@
 try {
-
   $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
   Install-ChocolateyZipPackage 'paint.net' '{{DownloadUrl}}' $toolsDir
 
@@ -11,5 +10,5 @@ try {
   Write-ChocolateySuccess 'paint.net'
 } catch {
   Write-ChocolateyFailure 'paint.net' "$($_.Exception.Message)"
-  throw 
+  throw
 }
