@@ -1957,8 +1957,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>36774912</LastFileSize>
-    <LastFileDate>2014-06-13T05:41:44.4825327</LastFileDate>
+    <LastFileSize>36776960</LastFileSize>
+    <LastFileDate>2014-07-08T07:02:19.2551192</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2011,7 +2011,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-06-13T05:41:44.4825327</LastUpdated>
+    <LastUpdated>2014-07-08T07:02:19.2551192</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://dl.google.com/drive/{version}/gsync.msi</FixedDownloadUrl>
     <Name>googledrive</Name>
