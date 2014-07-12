@@ -4438,8 +4438,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>26222592</LastFileSize>
-    <LastFileDate>2014-05-14T14:28:58.9959834</LastFileDate>
+    <LastFileSize>26509312</LastFileSize>
+    <LastFileDate>2014-07-10T05:41:09.671577</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -4472,11 +4472,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\SkypeSetup_6.16.0.105.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\SkypeSetup_6.18.0.105.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-14T14:28:58.9959834</LastUpdated>
+    <LastUpdated>2014-07-10T05:41:09.671577</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.skype.com/msi/SkypeSetup_{version}.msi</FixedDownloadUrl>
     <Name>skype</Name>
