@@ -1324,8 +1324,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>1099304</LastFileSize>
-    <LastFileDate>2014-07-09T05:40:37.1748212</LastFileDate>
+    <LastFileSize>1099008</LastFileSize>
+    <LastFileDate>2014-07-16T05:40:40.2934355</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1379,7 +1379,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-07-09T05:40:37.1748212</LastUpdated>
+    <LastUpdated>2014-07-16T05:40:40.2934355</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.telerik.com/docs/default-source/fiddler/fiddler2setup.exe</FixedDownloadUrl>
     <Name>fiddler</Name>
@@ -3366,8 +3366,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>6271945</LastFileSize>
-    <LastFileDate>2014-07-13T06:18:31.323601</LastFileDate>
+    <LastFileSize>6272623</LastFileSize>
+    <LastFileDate>2014-07-16T05:40:54.8559503</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -3417,11 +3417,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\paint.net.4.0.1.install.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\paint.net.4.0.2.install.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-07-13T06:18:31.323601</LastUpdated>
+    <LastUpdated>2014-07-16T05:40:54.8559503</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.dotpdn.com/files/paint.net.{version}.install.zip</FixedDownloadUrl>
     <Name>paint.net</Name>
@@ -5374,8 +5374,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>109574432</LastFileSize>
-    <LastFileDate>2014-05-16T12:33:13.703071</LastFileDate>
+    <LastFileSize>116695840</LastFileSize>
+    <LastFileDate>2014-07-16T05:41:55.1217067</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -5441,11 +5441,11 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\VirtualBox-4.3.12-93733-Win.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\VirtualBox-4.3.14-95030-Win.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-05-16T12:33:13.703071</LastUpdated>
+    <LastUpdated>2014-07-16T05:41:55.1217067</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.virtualbox.org/virtualbox/{version}/VirtualBox-{urlpart}-Win.exe</FixedDownloadUrl>
     <Name>virtualbox</Name>
