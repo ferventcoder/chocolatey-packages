@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>virtualserver2005r2</id>
+    <title>Microsoft Virtual Server 2005 R2 Enterprise Edition SP1</title>
+    <version>1.0.1</version>
+    <authors>Microsoft</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Microsoft Virtual Server 2005 R2 Enterprise Edition</summary>
+    <description>Microsoft Virtual Server 2005 R2 Enterprise Edition
+In conjunction with Windows Server 2003, Virtual Server 2005 R2 SP1 provides a virtualization platform that runs most major x86 operating systems in a guest environment, and is supported by Microsoft as a host for Windows Server operating systems and Windows Server System applications. Virtual Server 2005 R2's comprehensive COM API, in combination with the Virtual Hard Drive (VHD) format and support for virtual networking, provide administrators complete scripted control of portable, connected virtual machines and enable easy automation of deployment, and ongoing change and configuration.
+
+Additionally, its integration with a wide variety of existing Microsoft and third-party management tools allows administrators to seamlessly manage a Virtual Server 2005 R2 SP1 environment with their existing physical server management tools. A wide array of complementary product and service offerings are available from Microsoft and its partners to help businesses plan for, deploy, and manage Virtual Server 2005 R2 SP1 in their environment.
+
+NOTE: This only installs on Windows Server 2003.
+    </description>
+    <projectUrl>http://www.microsoft.com/windowsserversystem/virtualserver/</projectUrl>
+    <tags>microsoft virtualserver virtual server admin</tags>
+    <copyright>Microsoft</copyright>
+    <licenseUrl>__REPLACE__</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
