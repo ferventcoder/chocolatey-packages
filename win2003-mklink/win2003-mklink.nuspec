@@ -3,8 +3,8 @@
   <metadata>
     <id>win2003-mklink</id>
     <title>Windows 2003 Symlinks (MkLink)</title>
-    <version>0.5.0</version>
-    <authors>Rob Reynolds, </authors>
+    <version>1.6.0.20140724</version>
+    <authors>Gerhild Schinagl, Hermann Schinagl, Masatoshi Kimura, Rob Reynolds</authors>
     <owners>Rob Reynolds</owners>
     <summary>Windows 2003 Symlinks - adding mklink behavior for folders in windows</summary>
     <description>Windows 2003 Symlinks (MkLink)
