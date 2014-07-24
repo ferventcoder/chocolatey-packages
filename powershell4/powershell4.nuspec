@@ -3,7 +3,7 @@
   <metadata>
     <id>powershell4</id>
     <title>Windows Management Framework and PowerShell 4.0</title>
-    <version>4.0.0.20131204</version>
+    <version>4.0.0.20140724</version>
     <authors>Microsoft</authors>
     <owners>Rob Reynolds</owners>
     <summary>Windows Management Framework 4.0 includes updates to Windows PowerShell, Windows PowerShell ISE, Windows PowerShell Web Services (Management OData IIS Extension), Windows Remote Management (WinRM), Windows Management Instrumentation (WMI), the Server Manager WMI provider, and a new feature for 4.0, Windows PowerShell Desired State Configuration (DSC).</summary>

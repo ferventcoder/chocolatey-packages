@@ -21,7 +21,7 @@ try
   {
     Write-ChocolateyFailure $packageName "$packageName not supported on your OS."
     return
-  } elseif ($osVersion -eq [Version]'6.2') {
+  } elseif ($osVersion -ge [Version]'6.2') {
     $url64 = $urlWin2012
 
     $installType = [Microsoft.Win32.Registry]::GetValue("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion","InstallationType","")
