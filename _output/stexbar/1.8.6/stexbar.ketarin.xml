@@ -2,7 +2,7 @@
 <Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="4283adf1-6d2d-4d85-87bc-7e0d60ca1036">
     <WebsiteUrl />
-    <UserAgent />
+    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>348160</LastFileSize>
     <LastFileDate>2013-04-16T05:40:29.049384</LastFileDate>
@@ -26,9 +26,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://sourceforge.net/projects/stefanstools/files/StExBar/</Url>
-            <StartText>tr title="StExBar-</StartText>
-            <EndText>.msi</EndText>
+            <Url>http://code.google.com/feeds/p/stexbar/downloads/basic</Url>
+            <StartText>downloads/basic/StExBar-</StartText>
+            <EndText>.msi&lt;/id&gt;</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -44,36 +44,23 @@
             <VariableType>Textual</VariableType>
             <Regex>http://code.google.com/feeds/p/grepwin/downloads/basic/grepWin-\d+\.\d+.\d+\-64.msi</Regex>
             <Url>http://code.google.com/feeds/p/grepwin/downloads/basic</Url>
-            <TextualContent />
+            <TextualContent>http://stexbar.googlecode.com/files/StExBar64-{version}.msi</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>urlUsingMirror</string>
+          <string>urlpart</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=ResponseUri: )[^\r\n]+</Regex>
-            <Url>{properUrl}</Url>
-            <Name>urlUsingMirror</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>properUrl</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>http://sourceforge.net/projects/stefanstools/files/StExBar/StExBar-{version}.msi/download</TextualContent>
-            <Name>properUrl</Name>
+            <Regex>Stexbar-{version}.msi</Regex>
+            <Url>http://code.google.com/feeds/p/stexbar/downloads/basic</Url>
+            <TextualContent>grepWin-{version}</TextualContent>
+            <Name>urlpart</Name>
           </UrlVariable>
         </value>
       </item>
@@ -90,7 +77,7 @@
     <FileHippoId />
     <LastUpdated>2013-04-16T05:40:29.049384</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>{urlUsingMirror}</FixedDownloadUrl>
+    <FixedDownloadUrl>http://stexbar.googlecode.com/files/{urlpart}</FixedDownloadUrl>
     <Name>stexbar</Name>
   </ApplicationJob>
 </Jobs>
