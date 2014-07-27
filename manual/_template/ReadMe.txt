@@ -1,1 +1,0 @@
-Deprecated - moved to https://github.com/chocolatey/chocolateytemplates
