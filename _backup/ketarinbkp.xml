@@ -1388,8 +1388,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>4996210</LastFileSize>
-    <LastFileDate>2014-06-01T05:40:41.2777446</LastFileDate>
+    <LastFileSize>5981830</LastFileSize>
+    <LastFileDate>2014-07-26T09:42:21.4367847</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -1417,6 +1417,48 @@
           </UrlVariable>
         </value>
       </item>
+      <item>
+        <key>
+          <string>urlUsingMirror</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;=ResponseUri: )[^\r\n]+</Regex>
+            <Url>{properUrl}</Url>
+            <Name>urlUsingMirror</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>properUrl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>http://sourceforge.net/projects/filezilla/files/FileZilla_Client/{version}/FileZilla_{version}_win32-setup.exe/download</TextualContent>
+            <Name>properUrl</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{properUrl}</TextualContent>
+            <Name>url64</Name>
+          </UrlVariable>
+        </value>
+      </item>
     </Variables>
     <ExecuteCommand />
     <ExecutePreCommand />
@@ -1424,13 +1466,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.8.1_win32-setup.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.9.0.1_win32-setup.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-06-01T05:40:41.2777446</LastUpdated>
+    <LastUpdated>2014-07-26T09:42:21.4367847</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://download.filezilla-project.org/FileZilla_{version}_win32-setup.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>{urlUsingMirror}</FixedDownloadUrl>
     <Name>filezilla</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="c79851b8-8077-4d88-b549-015482ca4542">
@@ -2945,8 +2987,8 @@ REM /disablepush</ExecutePreCommand>
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>40407552</LastFileSize>
-    <LastFileDate>2013-12-03T05:41:29.4995629</LastFileDate>
+    <LastFileSize>222611153</LastFileSize>
+    <LastFileDate>2014-07-26T09:38:19.0320168</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -2996,13 +3038,13 @@ REM /disablepush</ExecutePreCommand>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\mysql-5.6.15-win32.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\mysql-5.6.19-win32.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-12-03T05:41:29.4995629</LastUpdated>
+    <LastUpdated>2014-07-26T09:38:19.0320168</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.mysql.com/get/Downloads/MySQL-5.6/mysql-{version}-win32.msi/from/http://mysql.he.net/</FixedDownloadUrl>
+    <FixedDownloadUrl>http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-{version}-win32.zip</FixedDownloadUrl>
     <Name>mysql</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="e2e415c9-7463-49ae-9c57-62e659ca8ccb">
@@ -4862,7 +4904,7 @@ REM /disablepush</ExecutePreCommand>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="4283adf1-6d2d-4d85-87bc-7e0d60ca1036">
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserAgent />
     <UserNotes />
     <LastFileSize>348160</LastFileSize>
     <LastFileDate>2013-04-16T05:40:29.049384</LastFileDate>
@@ -4886,9 +4928,9 @@ REM /disablepush</ExecutePreCommand>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://code.google.com/feeds/p/stexbar/downloads/basic</Url>
-            <StartText>downloads/basic/StExBar-</StartText>
-            <EndText>.msi&lt;/id&gt;</EndText>
+            <Url>http://sourceforge.net/projects/stefanstools/files/StExBar/</Url>
+            <StartText>tr title="StExBar-</StartText>
+            <EndText>.msi</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -4904,23 +4946,36 @@ REM /disablepush</ExecutePreCommand>
             <VariableType>Textual</VariableType>
             <Regex>http://code.google.com/feeds/p/grepwin/downloads/basic/grepWin-\d+\.\d+.\d+\-64.msi</Regex>
             <Url>http://code.google.com/feeds/p/grepwin/downloads/basic</Url>
-            <TextualContent>http://stexbar.googlecode.com/files/StExBar64-{version}.msi</TextualContent>
+            <TextualContent />
             <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>urlpart</string>
+          <string>urlUsingMirror</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>Stexbar-{version}.msi</Regex>
-            <Url>http://code.google.com/feeds/p/stexbar/downloads/basic</Url>
-            <TextualContent>grepWin-{version}</TextualContent>
-            <Name>urlpart</Name>
+            <Regex>(?&lt;=ResponseUri: )[^\r\n]+</Regex>
+            <Url>{properUrl}</Url>
+            <Name>urlUsingMirror</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>properUrl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>http://sourceforge.net/projects/stefanstools/files/StExBar/StExBar-{version}.msi/download</TextualContent>
+            <Name>properUrl</Name>
           </UrlVariable>
         </value>
       </item>
@@ -4937,7 +4992,7 @@ REM /disablepush</ExecutePreCommand>
     <FileHippoId />
     <LastUpdated>2013-04-16T05:40:29.049384</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://stexbar.googlecode.com/files/{urlpart}</FixedDownloadUrl>
+    <FixedDownloadUrl>{urlUsingMirror}</FixedDownloadUrl>
     <Name>stexbar</Name>
   </ApplicationJob>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="58c9e6bb-c8c8-4fea-91bb-4b8d9fd5c790">
