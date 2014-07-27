@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>notepadplusplus</id>
+    <title>Notepad++</title>
+    <version>6.1.6</version>
+    <authors>Don Ho</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages.</summary>
+    <description>Notepad++ is a free (as in "free speech" and also as in "free beer") source code editor and Notepad replacement that supports several languages. Running in the MS Windows environment, its use is governed by GPL License.  
+
+Based on the powerful editing component Scintilla, Notepad++ is written in C++ and uses pure Win32 API and STL which ensures a higher execution speed and smaller program size. By optimizing as many routines as possible without losing user friendliness, Notepad++ is trying to reduce the world carbon dioxide emissions. When using less CPU power, the PC can throttle down and reduce power consumption, resulting in a greener environment.  
+
+This project is mature. However, there may be still some bugs and missing features that are being worked on. If you have any questions or suggestions about this project, please post them in the forums. Also, if you wish to make a feature request, you can post it there as well. But there's no guarantee that I'll implement your request.  
+
+You're encouraged to translate Notepad++ into your native tongue if there's not already a translation present in the Binary Translations page. And if you want, help translating Notepad++ official site into your native tongue would be greatly appreciated.  
+
+I hope you enjoy Notepad++ as much as I enjoy coding it.
+</description>
+    <projectUrl>http://notepad-plus-plus.org/</projectUrl>
+    <tags>notepad notepadplusplus notepad-plus-plus admin</tags>
+    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/notepadplusplus/nppLogo.png</iconUrl>
+    <dependencies>
+      <dependency id="notepadplusplus.install" version="[6.1.6]" />
+    </dependencies> 
+  </metadata>
+</package>

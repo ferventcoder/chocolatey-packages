@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'attributechanger' 'exe' '/SILENT' 'http://www.petges.lu/download/ac.exe'

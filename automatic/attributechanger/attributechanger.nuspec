@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>attributechanger</id>
+    <title>AttributeChanger</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Romain Petges</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Attribute Changer shell extension (freeware) is a power user tool to change all kind of file and folder attributes, date, time and even NTFS compression.</summary>
+    <description>Attribute Changer is a power user tool to change all kind of file and folder attributes, date, time and even NTFS compression. Edit date and time information stored in digital images are easily altered with Attribute Changer. It perfectly integrates into the Windows Shell and is available with a right-click on files, folders and drives. It features an easy to use graphical user interface with lots of exciting features.</description>
+    <projectUrl>http://www.petges.lu/</projectUrl>
+    <tags>attribute changer admin</tags>
+    <licenseUrl>http://www.petges.lu/product/faq/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

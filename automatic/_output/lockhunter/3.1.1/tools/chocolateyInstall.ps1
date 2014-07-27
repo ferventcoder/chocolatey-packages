@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'lockhunter' 'exe' '/SILENT' 'http://lockhunter.com/exe/lockhuntersetup_3-1-1.exe'

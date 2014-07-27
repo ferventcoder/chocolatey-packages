@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'attributechanger' 'exe' '/SILENT' 'http://fs40.filehippo.com/4788/cb64ee1d2e5b43aeb011356da2b71e32/ac.exe' 'http://fs40.filehippo.com/4788/cb64ee1d2e5b43aeb011356da2b71e32/ac.exe'

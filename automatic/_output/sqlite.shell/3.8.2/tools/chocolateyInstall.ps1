@@ -1,0 +1,1 @@
+﻿Install-ChocolateyZipPackage 'sqlite.shell' 'https://www.sqlite.org/2013/sqlite-shell-win32-x86-3080200.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>mysql</id>
+    <title>MySQL (Community Server)</title>
+    <version>5.6.12.20130608</version>
+    <authors>Oracle</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>MySQL Community Server - The world's most popular open source database</summary>
+    <description>MySQL Community Edition is the freely downloadable version of the world's most popular open source database. It is available under the GPL license and is supported by a huge and active community of open source developers.</description>
+    <projectUrl>http://mysql.com/</projectUrl>
+    <tags>mysql database admin</tags>
+    <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/mysql/mysqllogo.png</iconUrl>
+    <dependencies>
+      <dependency id="7zip.commandline" />
+    </dependencies>
+  </metadata>
+</package>

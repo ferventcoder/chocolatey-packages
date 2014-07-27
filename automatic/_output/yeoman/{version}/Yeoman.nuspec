@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Yeoman</id>
+    <title>Yeoman</title>
+    <version>{}.0.0.20130415</version>
+    <authors>Addy Osmani, Paul Irish, Sindre Sorhus, Mickael Daniel, Eric Bidelman, and the Yeoman Community.</authors>
+    <owners>Ethan Brown, Rob Reynolds</owners>
+    <summary>Yeoman is a robust and opinionated set of tools, libraries, and a workflow that can help developers quickly build beautiful, compelling web apps.</summary>
+    <description>Yeoman is a robust and opinionated set of tools, libraries, and a workflow that can help developers quickly build beautiful, compelling web apps.
+
+* Lightning-fast scaffolding
+* Automatically compile CoffeeScript &amp; Compass
+* Automatically lint your scripts
+* Built-in preview server
+* Awesome Image Optimization
+* AppCache manifest generation
+* Killer build process
+* Integrated Package Management
+* Support for ES6 Module Syntax
+* PhantomJS Unit Testing
+    </description>
+    <projectUrl>http://yeoman.io/</projectUrl>
+    <tags>nodejs node javascript web compass build coffeescript</tags>
+    <copyright>Addy Osmani, Paul Irish, Sindre Sorhus, Mickael Daniel, Eric Bidelman, and the Yeoman Community 2012</copyright>
+    <licenseUrl>http://opensource.org/licenses/bsd-license.php</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/Yeoman/Yeoman.png</iconUrl>
+    <releaseNotes></releaseNotes>
+    <dependencies>
+        <dependency id="Compass" version="0.12.2" />
+        <dependency id="git" />
+        <dependency id="nodejs.install" version="0.8.1" />
+        <dependency id="libjpeg-turbo" version="1.2.1" />
+        <dependency id="OptiPNG" version="0.7.1" />
+        <dependency id="PhantomJS" version="1.6.1" />
+        <dependency id="python" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--<file src="content\**" target="content" />-->
+  </files>
+</package>

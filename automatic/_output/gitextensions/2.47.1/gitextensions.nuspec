@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>gitextensions</id>
+    <title>GitExtensions</title>
+    <version>2.47.1</version>
+    <authors>Henk Westhuis</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Git Extensions is the only graphical user interface for Git that allows you control Git without using the commandline. It comes with a manual and video tutorials to get you started quickly.</summary>
+    <description>Git Extensions is the only graphical user interface for Git that allows you control Git without using the commandline. It comes with a manual and video tutorials to get you started quickly.</description>
+    <projectUrl>http://code.google.com/p/gitextensions/</projectUrl>
+    <tags>gitextensions git gui admin</tags>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/gitextensions/gitextensions.png</iconUrl>
+    <dependencies>
+      <dependency id="git" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

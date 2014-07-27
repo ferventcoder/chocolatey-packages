@@ -1,0 +1,2 @@
+#Install-ChocolateyPackage 'skype' 'exe' '/SILENT /nogoogle /noie /nodesktopicon' 'http://download.skype.com/3694814915aaa38100bfa0933f948e65/partner/59/SkypeSetup.exe'
+Install-ChocolateyPackage 'skype' 'exe' '/SILENT /nogoogle /noie /nodesktopicon' 'http://www.filehippo.com/download/file/75623b3f656cddda651f7f0d9b043527941ec17521d0a47c9cbb3fffc26b43e3'
