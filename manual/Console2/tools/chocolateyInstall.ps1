@@ -1,7 +1,7 @@
 try{
-  $mydir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
-  $contentSettingsFile = ($mydir | Split-Path | Join-Path -ChildPath "content" | Join-Path -ChildPath "console.xml")
-  $binSettingsFile = ($mydir | Split-Path | Join-Path -ChildPath "bin" | Join-Path -ChildPath "console.xml")
+  $toolsdir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
+  $contentSettingsFile =  Join-Path   $toolsdir 'console.xml'
+  $binSettingsFile = ($toolsdir | Join-Path -ChildPath 'console2' | Join-Path -ChildPath 'console.xml')
 
   if(!(test-path $binSettingsFile)) {
       Write-Host "Creating default settings file from $contentSettingsFile"
