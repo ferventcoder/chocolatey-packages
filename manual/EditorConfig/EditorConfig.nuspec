@@ -14,8 +14,7 @@
     <tags>editorconfig editor code style format</tags>
     <licenseUrl>http://visualstudiogallery.msdn.microsoft.com/site/c8bccfe2-650c-4b42-bc5c-845e21f96328/eula?licenseType=None</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/EditorConfig/editorconfig.png
-    </iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/editorconfig.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

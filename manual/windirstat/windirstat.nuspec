@@ -9,7 +9,7 @@
     <summary>WinDirStat - Windows Directory Statistics</summary>
     <description>WinDirStat is a disk usage statistics viewer and cleanup tool for Microsoft Windows.</description>
     <projectUrl>http://windirstat.info</projectUrl>
-    <iconUrl>https://raw.github.com/ferventcoder/nugetpackages/master/windirstat/windirstat.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/windirstat.png</iconUrl>
     <tags>windirstat disk usage admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

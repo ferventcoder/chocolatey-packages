@@ -15,7 +15,7 @@ This package is an alias for the nodejs.commandline package, which simply instal
     <tags>nodejs node javascript</tags>
     <licenseUrl>https://github.com/joyent/node/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/nodejs/nodejs.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/nodejs.png</iconUrl>
     <dependencies>
       <dependency id="nodejs.commandline" version="[{{PackageVersion}}]" />
     </dependencies>

@@ -28,7 +28,7 @@ This free YouTube Downloader lets you download videos from YouTube and save them
     <copyright>AnvSoft Co, Ltd. - All rights reserved</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/anyvideoconverter/anyvideoconverter.gif</iconUrl>-->
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/anyvideoconverter.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

@@ -12,7 +12,7 @@
     <tags>mysql database admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/mysql/mysqllogo.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/mysql.png</iconUrl>
     <dependencies>
       <dependency id="7zip.commandline" />
     </dependencies>

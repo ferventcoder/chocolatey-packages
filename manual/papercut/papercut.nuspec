@@ -14,7 +14,7 @@
     <licenseUrl>http://papercut.codeplex.com/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>dummy smtp papercut</tags>
-    <!--<iconUrl>32x32.png</iconUrl>-->
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/papercut.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

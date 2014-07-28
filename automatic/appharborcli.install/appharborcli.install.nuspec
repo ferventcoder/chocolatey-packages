@@ -13,7 +13,7 @@
     <copyright>AppHarbor</copyright>
     <licenseUrl>https://raw.github.com/appharbor/appharbor-cli/master/License.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/appharborcli.install/appharbor.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/appharbor.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

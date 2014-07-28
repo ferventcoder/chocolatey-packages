@@ -12,7 +12,7 @@
     <tags>kdiff3 diff diffing merge difference admin</tags>
     <licenseUrl>http://kdiff3.sourceforge.net/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/kdiff3/kdiff3.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/kdiff3.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -12,7 +12,7 @@
     <tags>filezilla ftp chocolatey admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/filezilla.server/64px-Filezilla_logo.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/filezilla.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

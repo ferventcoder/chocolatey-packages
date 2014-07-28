@@ -13,10 +13,10 @@
     <tags>git vcs dvcs version control msysgit admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/git/git.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/git.png</iconUrl>
     <dependencies>
       <dependency id="git.install" version="[{{PackageVersion}}]" />
-    </dependencies>   
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

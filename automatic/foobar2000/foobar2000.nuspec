@@ -12,7 +12,7 @@
     <tags>foobar2000 media player admin</tags>
     <licenseUrl>http://www.foobar2000.org/?page=License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/foobar2000/foobarlogo.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/foobar2000.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -12,7 +12,7 @@
     <tags>spotify music player radio</tags>
     <licenseUrl>https://www.spotify.com/us/legal/end-user-agreement/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/spotify/spotify.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/spotify.png</iconUrl>
     <dependencies>
       <dependency id="autoit.commandline" />
     </dependencies>

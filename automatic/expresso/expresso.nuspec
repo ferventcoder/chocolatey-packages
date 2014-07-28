@@ -13,7 +13,7 @@
     <licenseUrl>http://www.ultrapico.com/App/Register.aspx</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>regex regularexpression expresso admin</tags>
-    <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/expresso/expresso.jpg</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/expresso.jpg</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

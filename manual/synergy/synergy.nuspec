@@ -13,7 +13,7 @@
     <tags>synergy virtual kvm admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/ferventcoder/nugetpackages/master/synergy/synergy.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/synergy.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

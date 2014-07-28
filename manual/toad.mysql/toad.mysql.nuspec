@@ -13,7 +13,7 @@
     <copyright>Quest and Oracle</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/toad.mysql/toad.mysql.gif</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/toad.mysql.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
