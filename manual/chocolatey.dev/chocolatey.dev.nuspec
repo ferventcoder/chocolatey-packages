@@ -12,7 +12,7 @@
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>git chocolatey.dev dev notSilent</tags>
-    <iconUrl>https://github.com/chocolatey/chocolatey/raw/master/docs/logo/chocolateyicon.gif</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/chocolatey.png</iconUrl>
     <dependencies>
       <dependency id="git" />
     </dependencies>

@@ -13,7 +13,7 @@
     <copyright>Copyright 2007-2012 SeriousBit</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/netbalancer/netbalancer.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/netbalancer.png</iconUrl>
     <releaseNotes>
 5.1.2
 - Updated the French, German, Spanish, Italian and Russian translations

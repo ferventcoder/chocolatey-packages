@@ -15,7 +15,7 @@
     <copyright>Copyright © 1990-2011, Python Software Foundation</copyright>
     <licenseUrl>http://docs.python.org/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/adorepump/chocolatey-packages/raw/master/easy.install/python-logo.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/python.png</iconUrl>
     <!-- <dependencies>
       <dependency id=""/>
     </dependencies> -->

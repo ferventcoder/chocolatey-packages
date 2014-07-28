@@ -13,7 +13,7 @@
     <copyright>PuppetLabs</copyright>
     <licenseUrl>http://puppetlabs.com/licensing/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/puppet-enterprise/puppetlabs.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/puppet.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>

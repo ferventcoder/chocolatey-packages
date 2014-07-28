@@ -15,7 +15,7 @@
     <copyright></copyright>
     <licenseUrl>http://www.mingw.org/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://sourceforge.net/images/potm-2005-09_logo_mingw.gif</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/mingw.png</iconUrl>
     <dependencies>
       <dependency id="7zip.commandline" />
     </dependencies>

@@ -24,7 +24,7 @@ If you use Orca, you will love InstEd. If you use some of the more expensive too
     <copyright>TNE Enterprises</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <iconUrl>http://www.instedit.com/box-48x48.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/InstEd.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

@@ -11,7 +11,7 @@
 Launchy indexes the programs in your start menu and can launch your documents, project files, folders, and bookmarks with just a few keystrokes!</description>
     <projectUrl>http://www.launchy.net</projectUrl>
     <tags>launchy productivity launcher admin</tags>
-    <!--<iconUrl>32x32.png</iconUrl>-->
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/launchy.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

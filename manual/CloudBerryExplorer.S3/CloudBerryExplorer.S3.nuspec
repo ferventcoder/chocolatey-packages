@@ -17,7 +17,7 @@ Freeware Amazon S3 client by CloudBerry Lab comes with a full support for CloudF
     <copyright>CloudBerry Lab</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/CloudBerryExplorer.S3/cloudberryexplorer.s3.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/cloudberryexplorer.s3.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

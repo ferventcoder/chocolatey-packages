@@ -21,7 +21,7 @@
     <copyright>Scott Davis, Eric Meyer, Brandon Mathis, Anthony Short</copyright>
     <licenseUrl>https://github.com/chriseppstein/compass/blob/stable/LICENSE.markdown</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/Compass/Compass.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/Compass.png</iconUrl>
     <releaseNotes></releaseNotes>
     <dependencies>
         <dependency id="ruby" version="1.8.7" />

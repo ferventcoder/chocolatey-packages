@@ -15,7 +15,7 @@
     <copyright>Microsoft</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/SqlServerExpress/sqlserverexpress.gif</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/microsoft-sql-server.png</iconUrl>
     <dependencies>
       <dependency id="vcredist2008" />
     </dependencies>

@@ -12,7 +12,7 @@
     <tags>autoit install automation chocolatey</tags>
     <licenseUrl>http://www.autoitscript.com/autoit3/docs/license.htm</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/autoit/autoit.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/autoit.png</iconUrl>
     <dependencies>
     </dependencies>
   </metadata>

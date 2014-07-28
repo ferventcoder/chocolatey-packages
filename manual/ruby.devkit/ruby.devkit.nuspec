@@ -15,7 +15,7 @@
     <tags>Ruby DevKit admin</tags>
     <licenseUrl>https://raw.github.com/oneclick/rubyinstaller/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/ruby/ruby_logo.png</iconUrl>-->
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/ruby.png</iconUrl>
     <dependencies>
       <dependency id="7zip.commandline" />
       <!--<dependency id="ruby" />-->

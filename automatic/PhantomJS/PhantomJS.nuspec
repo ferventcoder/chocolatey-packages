@@ -17,7 +17,7 @@ PhantomJS is created by Ariya Hidayat.
     <tags>PhantomJS javascript webkit web browser testing</tags>
     <licenseUrl>https://github.com/ariya/phantomjs/blob/master/LICENSE.BSD</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/PhantomJS/PhantomJS.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/PhantomJS.png</iconUrl>
     <releaseNotes>https://github.com/ariya/phantomjs/blob/master/ChangeLog</releaseNotes>
   </metadata>
   <files>

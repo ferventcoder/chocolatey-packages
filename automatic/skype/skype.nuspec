@@ -12,7 +12,7 @@
     <tags>Skype VOIP voice over ip video conferencing admin</tags>
     <licenseUrl>http://www.skype.com/intl/en-us/legal/eula/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/chocolateyautomaticpackages/raw/master/skype/skype.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/skype.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

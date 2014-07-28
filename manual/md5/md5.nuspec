@@ -37,7 +37,7 @@ If no infile or -d option is specified or infile is a single "-", md5 reads from
     <copyright></copyright>
     <licenseUrl>http://www.fourmilab.ch/md5/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/ferventcoder/nugetpackages/master/md5/md5.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/md5.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

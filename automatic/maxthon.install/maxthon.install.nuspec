@@ -13,7 +13,7 @@
     <copyright>1999–2012 Maxthon International Limited. All Rights Reserved.</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.github.com/ferventcoder/chocolateyautomaticpackages/master/maxthon/maxthon.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/maxthon.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>

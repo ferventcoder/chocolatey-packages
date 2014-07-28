@@ -12,7 +12,7 @@
     <tags>chucknorrisframework uppercut roundhouse dropkick warmup</tags>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>    
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/chucknorris/chucknorris.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/chucknorris.png</iconUrl>
     <dependencies>
       <dependency id="warmup" />
       <!--dependency id="uppercut" /-->

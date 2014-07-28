@@ -17,7 +17,7 @@ Memcached is simple yet powerful. Its simple design promotes quick deployment, e
     <tags>memcached keyvaluestore admin</tags>
     <licenseUrl>http://www.opensource.org/licenses/bsd-license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/memcached/memcached.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/memcached.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>

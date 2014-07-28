@@ -12,7 +12,7 @@
     <tags>Console2 console cmd command</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>32x32.png</iconUrl>-->
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/Console2.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

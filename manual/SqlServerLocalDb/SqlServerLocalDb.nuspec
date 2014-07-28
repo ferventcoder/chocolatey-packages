@@ -22,7 +22,7 @@
     <copyright>Microsoft</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/SqlServerLocalDb/SqlServerLocalDb.gif</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/microsoft-sql-server.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -17,7 +17,7 @@ Single small executable, no installer
     <tags>baregrep grep search</tags>
     <licenseUrl>http://www.baremetalsoft.com/baregrep/licence.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/baregrep/baregrep.gif</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/baregrep.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>
