@@ -14,7 +14,7 @@ echo ("Folder name: " + $fileName)
 #Install
 Install-ChocolateyZipPackage "$packageName" "$downloadUrl" "$installDir"
 
-# Move from subdir (jetty-v43253.543.45) in zip file to install root (jetty)
+# Move from subdir (e.g. jetty-v43253.543.45) in zip file to install root (jetty)
 mv (Join-Path $installSubDir "*") $installDir
 rd $installSubDir
 
