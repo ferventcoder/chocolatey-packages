@@ -3,7 +3,10 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-WinWait, Dropbox Setup,, 60
+; A window's title can contain WinTitle anywhere inside it to be a match.
+SetTitleMatchMode, 2
+
+WinWait, Dropbox ahk_class #32770, , 60
 Sleep, 2000
 WinActivate
 IfWinActive
