@@ -1,35 +1,47 @@
-#Install-ChocolateyPackage 'skype' 'exe' '/SILENT /nogoogle /noie /nodesktopicon' 'http://download.skype.com/3694814915aaa38100bfa0933f948e65/partner/59/SkypeSetup.exe'
+﻿#Install-ChocolateyPackage 'skype' 'exe' '/SILENT /nogoogle /noie /nodesktopicon' 'http://download.skype.com/3694814915aaa38100bfa0933f948e65/partner/59/SkypeSetup.exe'
 #Install-ChocolateyPackage 'skype' 'exe' '/SILENT /nogoogle /noie /nodesktopicon' '{{DownloadUrl}}'
 #Install-ChocolateyPackage 'skype' 'exe' '/SILENT /nogoogle /noie /nodesktopicon' 'http://download.skype.com/SkypeSetupFull.exe'
 
-$packageName = "skype"
-$fileType = "msi"
-$silentArgs = "/qn /norestart"
-$url = '{{DownloadUrl}}'
 
-$processor = Get-WmiObject Win32_Processor
-$is64bit = $processor.AddressWidth -eq 64
-
-if ($is64bit) {
-    $programUninstallEntryName = "Skype"
-    $uninstallString = (Get-ItemProperty HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select DisplayName, UninstallString | Where-Object {$_.DisplayName -like "$programUninstallEntryName*"}).UninstallString
-} else {
-    $programUninstallEntryName = "Skype"
-    $uninstallString = (Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\* | Select DisplayName, UninstallString | Where-Object {$_.DisplayName -like "$programUninstallEntryName*"}).UninstallString
-} # get the uninstall string of the installed Skype version from the registry
-
-$uninstallString = "$uninstallString" -replace '[{]', '`{' # adding escape character to the braces
-$uninstallString = "$uninstallString" -replace '[}]', '`} /passive /norestart' # to work properly with the Invoke-Expression command, add silent arguments
-
-if ($uninstallString -ne "") {
-    Invoke-Expression "$uninstallString" # start uninstaller of old version
-
-    do {
-    $uninstalled = -not ((Test-Path "$env:ProgramFiles\Skype") -or (Test-Path "${env:ProgramFiles(x86)}\Skype"))
-    Start-Sleep -Seconds 5
-    $i += 1
-    if ($i -gt 12) {break} # exit loop if too much time passed
-    } until ($uninstalled) # this loop waits until Skype is uninstalled
+function isInstalled() {
+  return Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match 'Skype\u2122 [\d\.]+$'}
 }
 
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url
+$packageName = 'skype'
+$fileType = 'msi'
+$silentArgs = '/qn /norestart'
+$url = '{{DownloadUrl}}'
+
+try {
+
+  $appInstalled = isInstalled
+
+  if ($appInstalled) {
+      # If Skype (in any version) is already installed on the computer, remove it first, otherwise the
+      # installation of Skype will fail with an error.
+      $msiArgs = $('/x' + $appInstalled.IdentifyingNumber + ' ' + $silentArgs)
+      Write-Host "Uninstalling previous version of Skype, otherwise installing the new version won’t work."
+      Start-ChocolateyProcessAsAdmin $msiArgs 'msiexec'
+
+      # This loop checks every 5 seconds if Skype is already uninstalled.
+      # Then it proceeds with the download and installation of the Skype
+      # version specified in the package.
+      do {
+        Start-Sleep -Seconds 5
+        $i += 1
+
+        # Break if too much time passed
+        if ($i -gt 12) {
+          Write-Error 'Could not uninstall the previous version of Skype.'
+          break
+        }
+
+      } until (-not (isInstalled))
+  }
+
+  Install-ChocolateyPackage $packageName $fileType $silentArgs $url
+
+} catch {
+  Write-ChocolateyFailure $packageName $($_.Exception.Message)
+  throw
+}
