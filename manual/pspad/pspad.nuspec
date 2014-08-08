@@ -20,7 +20,7 @@ want to use a good IDE for their compiler - PSPad catches and parses compiler ou
     <copyright></copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/pspad/pspad.gif</iconUrl>-->
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/pspad.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
