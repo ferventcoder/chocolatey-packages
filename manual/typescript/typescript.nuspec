@@ -14,6 +14,7 @@ Any browser. Any host. Any OS. Open Source.</description>
     <tags>typescript javascript</tags>
     <copyright></copyright>
     <licenseUrl>http://typescript.codeplex.com/license</licenseUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/typescript.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
       <dependency id="nodejs.install" version="0.8.10" />
