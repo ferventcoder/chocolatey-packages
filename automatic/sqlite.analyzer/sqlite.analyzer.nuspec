@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>{{PackageName}}</id>
-    <title>SQLite.analyzer</title>
+    <title>SQLite Analyzer</title>
     <version>{{PackageVersion}}</version>
     <authors>D. Richard Hipp, SQLite contributors</authors>
     <owners>Rob Reynolds</owners>

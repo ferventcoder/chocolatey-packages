@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>{{PackageName}}</id>
-    <title>Pip(Python) Installs Packages</title>
+    <title>Pip (Python) Installs Packages</title>
     <version>{{PackageVersion}}</version>
     <authors>The Pip developers</authors>
     <owners>Rob Reynolds</owners>

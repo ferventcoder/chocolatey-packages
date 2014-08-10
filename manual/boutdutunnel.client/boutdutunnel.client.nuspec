@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>boutdutunnel.client</id>
-    <title>BoutDuTunnel.Client</title>
+    <title>BoutDuTunnel Client</title>
     <version>1.5.3369.20120226</version>
     <authors>Sebastien LEBRETON</authors>
     <owners>Rob Reynolds</owners>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>OptiPNG</id>
-    <title>OptiPNG : Advanced PNG Optimizer</title>
+    <title>OptiPNG: Advanced PNG Optimizer</title>
     <version>{{PackageVersion}}</version>
     <authors>Cosmin Truta</authors>
     <owners>Ethan Brown, Rob Reynolds</owners>

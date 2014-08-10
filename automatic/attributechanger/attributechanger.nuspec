@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>attributechanger</id>
-    <title>AttributeChanger</title>
+    <title>Attribute Changer</title>
     <version>{{PackageVersion}}</version>
     <authors>Romain Petges</authors>
     <owners>Rob Reynolds</owners>

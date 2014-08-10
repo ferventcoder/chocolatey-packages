@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>filezilla.server</id>
-    <title>FileZilla.Server</title>
+    <title>FileZilla Server</title>
     <version>{{PackageVersion}}</version>
     <authors>Tim Kosse, other FileZilla committers</authors>
     <owners>Rob Reynolds</owners>

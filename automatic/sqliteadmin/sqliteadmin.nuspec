@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>{{PackageName}}</id>
-    <title>SQLiteAdmin</title>
+    <title>SQLite Administrator</title>
     <version>{{PackageVersion}}</version>
     <authors>Orbmu2k</authors>
     <owners>Rob Reynolds</owners>

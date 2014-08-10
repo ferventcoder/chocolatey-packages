@@ -3,7 +3,7 @@
   <metadata>
     <id>{{PackageName}}</id>
     <version>{{PackageVersion}}</version>
-    <title>SlikSVN</title>
+    <title>Slik SVN</title>
     <authors>Slik Company</authors>
     <projectUrl>http://www.sliksvn.com/</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/sliksvn.png</iconUrl>
