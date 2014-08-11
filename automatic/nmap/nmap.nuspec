@@ -3,6 +3,7 @@
   <metadata>
     <id>nmap</id>
     <version>{{PackageVersion}}</version>
+    <title>Nmap</title>
     <authors>Fyodor</authors>
     <owners>zippy1981 ferventcoder</owners>
     <licenseUrl>http://nmap.org/svn/COPYING</licenseUrl>

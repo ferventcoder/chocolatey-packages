@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>windowsphonedevelopertools</id>
-    <title>WindowsPhoneDeveloperTools</title>
+    <title>Windows Phone Developer Tools</title>
     <version>1.0</version>
     <authors>Microsoft</authors>
     <owners>Rob Reynolds</owners>

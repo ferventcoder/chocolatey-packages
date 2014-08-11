@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>webpicommandline</id>
-    <title>WebPICommandLine</title>
+    <title>Web PI CommandLine</title>
     <version>7.1.40719.0</version>
     <authors>Microsoft</authors>
     <owners>Rob Reynolds</owners>

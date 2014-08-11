@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>7zip.install</id>
-    <title>7Zip (Install)</title>
+    <title>7-Zip (Install)</title>
     <version>{{PackageVersion}}</version>
     <authors>Igor Pavlov</authors>
     <owners>Rob Reynolds</owners>
