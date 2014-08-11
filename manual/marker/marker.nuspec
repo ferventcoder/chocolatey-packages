@@ -11,6 +11,7 @@
     <projectUrl>https://github.com/chrisledet/Marker</projectUrl>
     <tags>marker markdown editor</tags>
     <licenseUrl>https://raw.github.com/chrisledet/Marker/master/LICENSE</licenseUrl>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/marker.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
   <files>
