@@ -1,8 +1,8 @@
 $packageName = 'synergy'
-$packageVersion = '1.4.15'
+$packageVersion = '1.5.0'
 $installerType = 'exe'
-$url   = "http://synergy.googlecode.com/files/synergy-$packageVersion-Windows-x86.exe"
-$url64 = "http://synergy.googlecode.com/files/synergy-$packageVersion-Windows-x64.exe"
+$url   = "http://synergy-project.org/files/packages/synergy-1.5.0-r2278-Windows-x86.msi"
+$url64 = "http://synergy-project.org/files/packages/synergy-1.5.0-r2278-Windows-x64.msi"
 $silentArgs = '/S'
 $validExitCodes = @(0)
 
