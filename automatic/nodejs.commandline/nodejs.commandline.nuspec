@@ -9,13 +9,16 @@
     <summary>Node JS - Evented I/O for v8 JavaScript.</summary>
     <description>Node JS - Evented I/O for v8 JavaScript. Node's goal is to provide an easy way to build scalable network programs.
 
-This package simply copies Node.exe to a subfolder within the Chocolatey folder. Does not include NPM.
+This package simply copies Node.exe to a subfolder within the Chocolatey folder. This now takes a dependency on the npm package, so NPM will be installed as well.
 </description>
     <projectUrl>http://nodejs.org</projectUrl>
     <tags>nodejs node javascript</tags>
     <licenseUrl>https://github.com/joyent/node/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/nodejs.png</iconUrl>
+    <dependencies>
+      <dependency id="npm" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
