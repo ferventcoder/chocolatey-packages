@@ -1,4 +1,6 @@
 try {
+  $version = '{{PackageVersion}}'
+  $version = $version.replace('.','_')
   $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
   $processor = Get-WmiObject Win32_Processor
   $is64bit = $processor.AddressWidth -eq 64
@@ -25,7 +27,7 @@ try {
     Copy-Item "$($toolsDir)\FileZilla Server.xml" "$fileZillaInstallDir" -Force
   }
 
-  Install-ChocolateyPackage 'filezilla.server' 'exe' '/S' 'http://downloads.sourceforge.net/filezilla/FileZilla_Server-{{PackageVersion}}.exe'
+  Install-ChocolateyPackage 'filezilla.server' 'exe' '/S' "http://downloads.sourceforge.net/project/filezilla/FileZilla%20Server/{{PackageVersion}}/FileZilla_Server-$version.exe"
   
   Write-ChocolateySuccess 'filezilla.server'
 } catch {
