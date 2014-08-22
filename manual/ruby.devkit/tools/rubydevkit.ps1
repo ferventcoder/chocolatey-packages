@@ -45,11 +45,6 @@ function Restore-RubyDevkitCustomizations($devkit, $temp) {
     | %{ Copy-Item $_ $devkit -Recurse -Force }
 }
 
-function Extract-RubyDevkit($installer, $devkit) {
-  #& 7za x -o"$devkit" -y "$installer"
-  Start-Process "7za" -ArgumentList "x -o`"$devkit`" -y `"$installer`"" -Wait
-}
-
 function Install-RubyDevkit($devkit) {      
   Push-Location $devkit
   & ruby dk.rb init

@@ -2,26 +2,21 @@ $id = "ruby.devkit"
 $url = "https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe"
 
 $tools = Split-Path $MyInvocation.MyCommand.Definition
-
 $devkit = Join-Path (Get-BinRoot) "DevKit"
 $temp = Join-Path $ENV:TEMP (Join-Path "chocolatey" $id)
-$installer = Join-Path $temp "${id}Install.exe"
 
 . (Join-Path $tools "rubydevkit.ps1")
 
-try {  
-  New-Item $devkit -Type "Directory" -Force | Out-Null
+try {
   New-Item $temp -Type "Directory" -Force | Out-Null
-  
-  Get-ChocolateyWebFile $id $installer $url
-  
+
   # If you previously installed the legacy DevKit devkit-3.4.5r3-20091110.7z, 
   # its artifacts were extracted into each Ruby installation and need to be 
   # manually removed. Remove the gcc.bat, make.bat, and sh.bat stub batch files 
   # in <RUBY_INSTALL_DIR>\bin and the <RUBY_INSTALL_DIR>\devkit subdirectory 
   # for each Ruby installation using the legacy DevKit.
   Get-Rubies | %{ 
-    Write-Host "[RUBYDEVKIT] Removing devkit at: $_"
+    Write-Host "[$id] Removing legacy devkit at: $_"
     Remove-RubyDevkitLegacy $_ 
   }  
 
@@ -31,16 +26,13 @@ try {
   Backup-RubyDevkitCustomizations $devkit $temp
   Remove-RubyDevkit $devkit
   
-  # Extract the new SFX DevKit into the same <DEVKIT_INSTALL_DIR> that you just
-  # cleaned up.
-  Write-Host "[RUBYDEVKIT] Extracting to: $devkit"
-  Extract-RubyDevkit $installer $devkit
+  Install-ChocolateyZipPackage $id $url $devkit
   
   Restore-RubyDevkitCustomizations $devkit $temp
   
   # Review your config.yml file to ensure it contains the root directories of 
   # all the installed Rubies you want enhanced to use the DevKit.
-  Write-Host "[RUBYDEVKIT] You may change config.yml and reinstall this package"
+  Write-Host "[$id] You may change config.yml and reinstall this package using the -force switch"
   
   # From a Command Prompt, cd into the <DEVKIT_INSTALL_DIR> directory and run 
   # ruby dk.rb install --force. This will cause all your installed Rubies 
@@ -51,7 +43,7 @@ try {
   # always a good idea to review the two versions (and potentially make 
   # modifications) to ensure configuration specific to your system still works 
   # as expected.
-  Write-Host "[RUBYDEVKIT] Initializing and installing: $devkit"
+  Write-Host "[$id] Initializing and installing: $devkit"
   Install-RubyDevkit $devkit
 
   Write-ChocolateySuccess $id
