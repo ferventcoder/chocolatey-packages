@@ -1,5 +1,5 @@
 try {
-  Install-ChocolateyPackage 'git.install' 'exe' '/VERYSILENT /NORESTART /NOCANCEL /SP- /CLOSEAPPLICATIONS /RESTARTAPPLICATIONS /NOICONS  /COMPONENTS="assoc,assoc_sh" /LOG' '{{DownloadUrl}}'
+  Install-ChocolateyPackage 'git.install' 'exe' '/VERYSILENT /NORESTART /NOCANCEL /SP- /NOICONS  /COMPONENTS="assoc,assoc_sh" /LOG' '{{DownloadUrl}}'
 
   #------- ADDITIONAL SETUP -------#
   $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
