@@ -1,78 +1,11 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="c79851b8-8077-4d88-b549-015482ca4542">
-    <SourceTemplate><![CDATA[<Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0fb30714-8ed0-4611-8f1b-cb8fec9dae91">
-    <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
-    <UserNotes />
-    <LastFileSize>384846</LastFileSize>
-    <LastFileDate>2012-05-23T02:09:37.7748325</LastFileDate>
-    <IgnoreFileInformation>false</IgnoreFileInformation>
-    <DownloadBeta>Default</DownloadBeta>
-    <DownloadDate xsi:nil="true" />
-    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
-    <VariableChangeIndicator />
-    <CanBeShared>true</CanBeShared>
-    <ShareApplication>false</ShareApplication>
-    <ExclusiveDownload>false</ExclusiveDownload>
-    <HttpReferer />
-    <SetupInstructions />
-    <Variables>
-      <item>
-        <key>
-          <string>version</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
-            <Url><placeholder name="Url with version information" value="https://filezilla-project.org/download.php?show_all=1" /></Url>
-            <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
-  &lt;TR&gt;
-    &lt;TH class="Title" align="center" width=90&gt;7-Zip </StartText>
-            <EndText>&lt;BR&gt;</EndText>
-            <TextualContent />
-            <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>url64</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>""</TextualContent>
-            <Name>url64</Name>
-          </UrlVariable>
-        </value>
-      </item>
-    </Variables>
-    <ExecuteCommand />
-    <ExecutePreCommand />
-    <ExecuteCommandType>Batch</ExecuteCommandType>
-    <ExecutePreCommandType>Batch</ExecutePreCommandType>
-    <Category />
-    <SourceType>FixedUrl</SourceType>
-    <DeletePreviousFile>true</DeletePreviousFile>
-    <Enabled>true</Enabled>
-    <FileHippoId />
-    <LastUpdated>2012-05-23T02:09:37.7748325</LastUpdated>
-    <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl><placeholder name="Download Url - Optional" value="https://filezilla-project.org/images/logo.png" /></FixedDownloadUrl>
-    <Name><placeholder name="Name" value="filezilla.commandline" /></Name>
-  </ApplicationJob>
-</Jobs>]]></SourceTemplate>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="dd36fcf2-b193-40e3-b0b0-c4eeb3041ae3">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>7319616</LastFileSize>
-    <LastFileDate>2014-02-12T05:40:36.4820398</LastFileDate>
+    <LastFileSize>8859128</LastFileSize>
+    <LastFileDate>2014-07-22T11:59:40+02:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -96,8 +29,49 @@
             <Url>https://filezilla-project.org/download.php?show_all=1</Url>
             <StartText>version of FileZilla Client is </StartText>
             <EndText>&lt;/p&gt;</EndText>
-            <TextualContent />
             <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>urlUsingMirror</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;=ResponseUri: )[^\r\n]+</Regex>
+            <Url>{properUrl}</Url>
+            <Name>urlUsingMirror</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>properUrl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>http://sourceforge.net/projects/filezilla/files/FileZilla_Client/{version}/FileZilla_{version}_win32.zip/download</TextualContent>
+            <Name>properUrl</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent />
+            <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -108,13 +82,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.7.4.1_win32.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\FileZilla_3.9.0.1_win32.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-02-12T05:40:36.4820398</LastUpdated>
+    <LastUpdated>2014-07-29T19:49:54.6608007+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://download.filezilla-project.org/FileZilla_{version}_win32.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>{urlUsingMirror}</FixedDownloadUrl>
     <Name>filezilla.commandline</Name>
   </ApplicationJob>
 </Jobs>

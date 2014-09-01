@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b00f3c3a-ead4-4c57-8b9f-dc39142236ca">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="dd36fcf2-b193-40e3-b0b0-c4eeb3041ae6">
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>1620836</LastFileSize>
-    <LastFileDate>2012-05-23T03:39:28.3341549</LastFileDate>
+    <LastFileSize>1987723</LastFileSize>
+    <LastFileDate>2014-06-07T16:19:26+02:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,12 +26,38 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://filezilla-project.org/download.php?type=server</Url>
-            <StartText>&lt;p&gt;The latest stable version of FileZilla Server is </StartText>
-            <EndText>&lt;/p&gt;
-</EndText>
-            <TextualContent />
+            <Url>https://filezilla-project.org/download.php?type=server</Url>
+            <StartText>http://sourceforge.net/projects/filezilla/files/FileZilla%20Server/</StartText>
+            <EndText>/FileZilla_Server-</EndText>
             <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>urlUsingMirror</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;=ResponseUri: )[^\r\n]+</Regex>
+            <Url>{properUrl}</Url>
+            <Name>urlUsingMirror</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>properUrl</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>http://sourceforge.net/projects/filezilla/files/FileZilla%20Server/{version}/FileZilla_Server-{versionUnderscore}.exe/download</TextualContent>
+            <Name>properUrl</Name>
           </UrlVariable>
         </value>
       </item>
@@ -44,7 +70,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>""</TextualContent>
+            <TextualContent />
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -58,9 +84,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://filezilla-project.org/download.php?type=server</Url>
-            <StartText>FileZilla_Server-</StartText>
-            <EndText>.exe</EndText>
+            <Url>https://filezilla-project.org/download.php?type=server</Url>
+            <StartText>/FileZilla_Server-</StartText>
+            <EndText>.exe/download</EndText>
             <Name>versionUnderscore</Name>
           </UrlVariable>
         </value>
@@ -72,13 +98,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\FileZilla_Server-0_9_41.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\FileZilla_Server-0_9_45.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-05-23T03:39:28.3341549</LastUpdated>
+    <LastUpdated>2014-07-29T20:12:03.9865206+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://hivelocity.dl.sourceforge.net/project/filezilla/FileZilla%20Server/{version}/FileZilla_Server-{versionUnderscore}.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>{urlUsingMirror}</FixedDownloadUrl>
     <Name>filezilla.server</Name>
   </ApplicationJob>
 </Jobs>
