@@ -1,7 +1,7 @@
-# Just a place until this gets included in a chocolatey release.
+﻿# Just a place until this gets included in a chocolatey release.
 function Invoke-GenerateBinFile {
 param(
-  [string] $name, 
+  [string] $name,
   [string] $path,
   [string] $outPath,
   [switch] $useStart
@@ -15,10 +15,11 @@ param(
     Write-Host "Setting up $name as a non-command line application."
 "@echo off
 SET DIR=%~dp0%
-start """" ""$path"" %*" | Out-File $packageBatchFileName -encoding ASCII     
+start """" ""$path"" %*" | Out-File $packageBatchFileName -encoding ASCII
   } else {
 "@echo off
 SET DIR=%~dp0%
-""$path"" %*" | Out-File $packageBatchFileName -encoding ASCII     
+""$path"" %*" | Out-File $packageBatchFileName -encoding ASCII
   }
 }
+

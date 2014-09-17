@@ -1,4 +1,4 @@
-try {
+﻿try {
   $binRoot = "$env:systemdrive\"
 
   ### Using an environment variable to to define the bin root until we implement YAML configuration ###
@@ -25,7 +25,7 @@ try {
 
   Install-ChocolateyPath $gitInstallDir 'user'
   Install-ChocolateyPath "$($gitInstallDir)\cmd" 'user'
-  
+
 #  Write-Host 'Making GIT core.autocrlf false'
 #  #make GIT core.autocrlf false
 #  & "$env:comspec" '/c git config --global core.autocrlf false'
@@ -35,3 +35,4 @@ try {
   Write-ChocolateyFailure 'git.commandline' $($_.Exception.Message)
   throw
 }
+

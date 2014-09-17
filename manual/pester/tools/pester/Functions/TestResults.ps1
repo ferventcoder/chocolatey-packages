@@ -1,4 +1,4 @@
-function Get-GlobalTestResults {
+﻿function Get-GlobalTestResults {
     if ($Global:TestResults -ne $null) {
         return $Global:TestResults
     }
@@ -30,4 +30,5 @@ function Exit-WithCode {
     #$host.SetShouldExit($failedTestCount)
     exit $failedTestCount
 }
+
 

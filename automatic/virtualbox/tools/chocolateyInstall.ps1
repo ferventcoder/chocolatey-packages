@@ -1,4 +1,4 @@
-$packageName = 'virtualbox'
+﻿$packageName = 'virtualbox'
 $tools="$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 Start-ChocolateyProcessAsAdmin "certutil -addstore 'TrustedPublisher' '$tools\oracle.cer'"
 Install-ChocolateyPackage $packageName 'exe' '-s -l -msiparams REBOOT=ReallySuppress' '{{DownloadUrl}}'
@@ -11,3 +11,4 @@ $fsObject = New-Object -ComObject Scripting.FileSystemObject
 $programFiles = $fsObject.GetFolder("$programFiles").ShortPath
 
 Install-ChocolateyPath $(join-path $programFiles 'Oracle\VirtualBox')
+

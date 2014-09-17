@@ -6,10 +6,10 @@ try{
   $thisDir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
   $unzipLocation = Join-Path $thisDir "symlinks"
   Install-ChocolateyZipPackage $packageName $url $unzipLocation -url64bit $url64
-  
+
   $chocoPath = $env:ChocolateyInstall
   $chocoPath = Join-Path $chocoPath 'bin'
-  $packageBatchFileName = Join-Path $chocoPath "mklink.bat"  
+  $packageBatchFileName = Join-Path $chocoPath "mklink.bat"
   $path = Join-Path $thisDir 'symlinks\mklink.cmd'
   Write-Host "Adding $packageBatchFileName and pointing to $path"
 "@echo off
@@ -26,3 +26,4 @@ exit `$?" | Out-File $packageBatchFileName.Replace(".bat","") -encoding ASCII
   Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
   throw
 }
+

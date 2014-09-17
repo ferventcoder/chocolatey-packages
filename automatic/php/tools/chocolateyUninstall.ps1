@@ -1,5 +1,5 @@
-write-host 'Please make sure you have CGI installed in IIS'
-$packageName = '{{PackageName}}' 
+﻿write-host 'Please make sure you have CGI installed in IIS'
+$packageName = '{{PackageName}}'
 $validExitCodes = @(0)
 $targetFolder = Join-Path $(Get-BinRoot) $packageName
 Echo ("Deleting" + $targetFolder)

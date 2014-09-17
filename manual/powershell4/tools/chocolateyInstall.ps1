@@ -43,3 +43,4 @@ catch
 {
   Write-ChocolateyFailure $packageName $($_.Exception.Message)
 }
+

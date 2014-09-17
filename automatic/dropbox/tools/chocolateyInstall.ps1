@@ -11,34 +11,35 @@ $silentArgs = '/S'
 # Variables for the AutoHotkey-script
 $scriptPath = Split-Path -parent $MyInvocation.MyCommand.Definition
 $ahkFile = "$scriptPath\dropbox.ahk"
- 
+
 try {
 
-	if (Test-Path $uninstallRegistryPath) {
-		$installedVersion = (Get-ItemProperty $uninstallRegistryPath).DisplayVersion
-	}
+    if (Test-Path $uninstallRegistryPath) {
+        $installedVersion = (Get-ItemProperty $uninstallRegistryPath).DisplayVersion
+    }
 
-	if ($installedVersion -eq $version) {
-		Write-Host "Dropbox $version is already installed."
-	} else {
+    if ($installedVersion -eq $version) {
+        Write-Host "Dropbox $version is already installed."
+    } else {
 
         # Download and install Dropbox
 
-		if (-not (Test-Path $filePath)) {
-			New-Item $filePath -type directory
-		}
+        if (-not (Test-Path $filePath)) {
+            New-Item $filePath -type directory
+        }
 
-		Get-ChocolateyWebFile $packageName $fileFullPath $url
-		Start-Process 'AutoHotkey' $ahkFile
-		Start-Process $fileFullPath $silentArgs
-		Wait-Process -Name "dropboxInstall"
-		Remove-Item $fileFullPath
-	}
+        Get-ChocolateyWebFile $packageName $fileFullPath $url
+        Start-Process 'AutoHotkey' $ahkFile
+        Start-Process $fileFullPath $silentArgs
+        Wait-Process -Name "dropboxInstall"
+        Remove-Item $fileFullPath
+    }
 
-	Write-ChocolateySuccess $packageName
+    Write-ChocolateySuccess $packageName
 
 } catch {
 
-	Write-ChocolateyFailure $packageName $($_.Exception.Message)
-	throw
+    Write-ChocolateyFailure $packageName $($_.Exception.Message)
+    throw
 }
+

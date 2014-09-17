@@ -1,36 +1,36 @@
-<#
+﻿<#
     .SYNOPSIS
     Lists or applies Windows Images in .WIM containers.
-    
+
     .PARAMETER WIM
     Specifies the .WIM file to examine and/or apply images from.
-    
+
     .PARAMETER Apply
     Specifies that the specified image index should be applied to the specified Destination.
-    
+
     .PARAMETER Index
     Specifies the image index of the Windows Image to apply to the specified Destination.
-    
+
     .PARAMETER Destination
     The drive or folder to apply the specified Windows Image to.
-    
+
     .EXAMPLE
     This example will list the available images in the D:\Sources\Install.wim container.
-    
+
     .\Install-WindowsImage.ps1 -WIM D:\Sources\Install.wim
-    
+
     .EXAMPLE
     This example will apply image number 8 from D:\Sources\Install.wim to X:\.
-    
-    .\Install-WindowsImage.ps1 -WIM D:\Sources\Install.wim -Apply -Index 8 -Destination X:\    
 
-    .Notes 
+    .\Install-WindowsImage.ps1 -WIM D:\Sources\Install.wim -Apply -Index 8 -Destination X:\
+
+    .Notes
         NAME:      Install-WindowsImage.ps1
-        AUTHOR:    NTDEV\mikekol 
-        LASTEDIT:  04/17/2009 11:18:00 AM 
+        AUTHOR:    NTDEV\mikekol
+        LASTEDIT:  04/17/2009 11:18:00 AM
 #>
 
-#Requires -Version 2.0 
+#Requires -Version 2.0
 
 [CmdletBinding(DefaultParameterSetName = "list")]
 param(
@@ -39,15 +39,15 @@ param(
         ValueFromPipeline = $true)]
     [string]
     [ValidateNotNullOrEmpty()]
-    [ValidateScript({ Test-Path $_ })]     
+    [ValidateScript({ Test-Path $_ })]
     $WIM,
-    
+
     [Parameter(
         ParameterSetName = "apply",
         Mandatory        = $true)]
     [Switch]
     $Apply,
-    
+
     [Parameter(
         ParameterSetName = "apply",
         Mandatory        = $true)]
@@ -55,7 +55,7 @@ param(
     [ValidateNotNullOrEmpty()]
     [ValidateRange(1,16)]
     $Index,
-    
+
     [Parameter(
         ParameterSetName  = "apply",
         Mandatory         = $true)]
@@ -260,7 +260,7 @@ namespace Microsoft.WimgApi
         public IImage
         this[int imageIndex]
         {
-            //TODO: ArrayList doesn't seem to perform terribly well. 
+            //TODO: ArrayList doesn't seem to perform terribly well.
             //      Investigate using a more efficient data structure
 
             get
@@ -353,7 +353,7 @@ namespace Microsoft.WimgApi
                     imageIndex);
 
                 m_ImageInformation = new XmlDocument();
-                
+
                 // Remove the unicode marker at the beginning of the file.
                 m_ImageInformation.LoadXml(NativeMethods.GetImageInformation(m_ImageHandle).Remove(0, 1));
                 GC.KeepAlive(this);
@@ -807,7 +807,7 @@ $wimContainer = new-object Microsoft.WimgApi.WindowsImageContainer $WIM
 if ($PsCmdlet.ParameterSetName -eq "list")
 {
     Write-Host "`nIndex`tImage Name"
-    
+
     # Loop through the images in the WIM.
     for ($image = 0; $image -lt $wimContainer.ImageCount; $image++)
     {
@@ -815,7 +815,7 @@ if ($PsCmdlet.ParameterSetName -eq "list")
     }
 }
 elseif (($PsCmdlet.ParameterSetName -eq "apply") -and ($Apply))
-{   
+{
     $userIdent = new-object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
 
     if (!$userIdent.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))
@@ -823,9 +823,9 @@ elseif (($PsCmdlet.ParameterSetName -eq "apply") -and ($Apply))
         Write-Error "Images can only be applied by an administrator.  Please run PowerShell elevated and run this script again."
         break
     }
-    
+
     Write-Host "Applying `"$($wimContainer[$Index - 1].ImageDisplayName)`" to $Destination..."
-    Write-Warning "This may take up to 15 minutes..."   
+    Write-Warning "This may take up to 15 minutes..."
     $timer = new-object System.Diagnostics.Stopwatch
     $timer.Start()
     $wimContainer[$($Index - 1)].Apply($Destination)
@@ -842,20 +842,20 @@ else
 Get-Variable -exclude Runspace -Scope "Script" | Where-Object {
     $_.Value -is [Microsoft.WimgApi.WindowsImageContainer]
 } | Foreach-Object {
-        
+
     # This is an error-prone process, so get the current ErrorActionPreference.
-    $eValue = $ErrorActionPreference    
-    
+    $eValue = $ErrorActionPreference
+
     # Set our own EAP to continue without displaying errors.
     $ErrorActionPreference = "SilentlyContinue"
-    
+
     # Ignore any errors that do crop up.
     trap { continue }
-    
+
     # Clear the variables.
     $_.Value.Dispose() | out-null
     Remove-Variable $_.Name | out-null
-    
+
     # Put the old EAP back.
     $ErrorActionPreference = $eValue
 }

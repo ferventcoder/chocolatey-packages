@@ -1,4 +1,4 @@
-function Context($name, [ScriptBlock] $fixture) {
+﻿function Context($name, [ScriptBlock] $fixture) {
 
     Setup
 
@@ -13,4 +13,5 @@ function Context($name, [ScriptBlock] $fixture) {
 
 	$results.TestDepth -= 1
 }
+
 

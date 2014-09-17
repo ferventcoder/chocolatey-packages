@@ -1,4 +1,4 @@
-try {
+﻿try {
 
   # Temporary include function until it is included with Chocolatey
 
@@ -47,3 +47,4 @@ try {
   Write-ChocolateyFailure 'ruby' $($_.Exception.Message)
   throw
 }
+

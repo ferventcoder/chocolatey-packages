@@ -1,6 +1,6 @@
-﻿try { 
+﻿try {
 
-  $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
+  $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   ### For BinRoot, use the following instead ###
   #$binRoot = "$env:systemdrive\"
   ### Using an environment variable to to define the bin root until we implement configuration ###
@@ -16,7 +16,7 @@
   ### OR for 7z ###
 
   # if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateDirectory($installDir)}
-  
+
   # $tempDir = "$env:TEMP\chocolatey\instanteyedropper.tool"
   # if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
 
@@ -28,5 +28,5 @@
   Write-ChocolateySuccess 'instanteyedropper.tool'
 } catch {
   Write-ChocolateyFailure 'instanteyedropper.tool' "$($_.Exception.Message)"
-  throw 
+  throw
 }

@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'nmap' 'exe' '/S' '{{DownloadUrl}}'
+﻿Install-ChocolateyPackage 'nmap' 'exe' '/S' '{{DownloadUrl}}'

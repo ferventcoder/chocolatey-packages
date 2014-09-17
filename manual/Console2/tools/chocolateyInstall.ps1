@@ -1,4 +1,4 @@
-try{
+﻿try{
   $toolsdir = (Split-Path -parent $MyInvocation.MyCommand.Definition)
   $contentSettingsFile =  Join-Path   $toolsdir 'console.xml'
   $binSettingsFile = ($toolsdir | Join-Path -ChildPath 'console2' | Join-Path -ChildPath 'console.xml')
@@ -11,5 +11,6 @@ try{
   Write-ChocolateySuccess 'console2'
 } catch {
   Write-ChocolateyFailure 'console2' "$($_.Exception.Message)"
-  throw 
+  throw
 }
+

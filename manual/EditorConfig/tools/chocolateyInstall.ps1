@@ -1,4 +1,4 @@
-#some code "borrowed" from
+﻿#some code "borrowed" from
 #https://raw.github.com/alanstevens/ChocoPackages/master/alanstevens.vsextensions/tools/ChocolateyInstall.ps1
 $packageName = 'EditorConfig'
 
@@ -37,3 +37,4 @@ try
   Write-ChocolateyFailure $packageName "$($_.Exception.Message)"
   throw
 }
+

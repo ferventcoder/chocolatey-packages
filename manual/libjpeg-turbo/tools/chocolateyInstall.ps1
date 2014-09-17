@@ -1,4 +1,4 @@
-try {
+﻿try {
   $package = 'libjpeg-turbo'
 
   #http://sourceforge.net/mailarchive/forum.php?thread_name=AANLkTimNeXmdjqowHzq2tF01%2BaDS2GXW9fTUwdG-cW%2B1%40mail.gmail.com&forum_name=libjpeg-turbo-users
@@ -33,3 +33,4 @@ try {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"
   throw
 }
+

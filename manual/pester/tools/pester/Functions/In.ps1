@@ -1,4 +1,4 @@
-function In($path, [ScriptBlock] $execute) {
+﻿function In($path, [ScriptBlock] $execute) {
     $old_pwd = $pwd
     pushd $path
     $pwd = $path
@@ -9,3 +9,4 @@ function In($path, [ScriptBlock] $execute) {
         $pwd = $old_pwd
     }
 }
+

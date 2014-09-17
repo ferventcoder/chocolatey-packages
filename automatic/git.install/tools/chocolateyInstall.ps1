@@ -1,4 +1,4 @@
-try {
+﻿try {
   Install-ChocolateyPackage 'git.install' 'exe' '/VERYSILENT /NORESTART /NOCANCEL /SP- /NOICONS  /COMPONENTS="assoc,assoc_sh" /LOG' '{{DownloadUrl}}'
 
   #------- ADDITIONAL SETUP -------#
@@ -30,3 +30,4 @@ try {
   Write-ChocolateyFailure 'git.install' $($_.Exception.Message)
   throw
 }
+

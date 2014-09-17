@@ -13,3 +13,4 @@
   Write-ChocolateyFailure $package "$($_.Exception.Message)"
   throw
 }
+

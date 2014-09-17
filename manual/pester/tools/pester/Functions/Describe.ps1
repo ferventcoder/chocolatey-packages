@@ -1,4 +1,4 @@
-function Describe($name, [ScriptBlock] $fixture) {
+﻿function Describe($name, [ScriptBlock] $fixture) {
     Setup
 
     $results = Get-GlobalTestResults
@@ -10,6 +10,7 @@ function Describe($name, [ScriptBlock] $fixture) {
     Write-Host -fore yellow $output
     & $fixture
     Cleanup
-	
+
     $results.TestDepth -= 1
 }
+

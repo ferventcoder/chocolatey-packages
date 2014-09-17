@@ -1,4 +1,4 @@
-try {
+﻿try {
   $package = '{{PackageName}}'
   $version = '{{PackageVersion}}'
 
@@ -27,3 +27,4 @@ try {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"
   throw
 }
+

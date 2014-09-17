@@ -1,4 +1,4 @@
-#try {
+﻿#try {
   #& gem install pik
   #$chocoBin = join-path $env:ChocolateyInstall 'bin'
   #& pik_install "$chocoBin"
@@ -30,3 +30,4 @@
 #  Write-ChocolateyFailure 'pik' "$($_.Exception.Message)"
 #  throw
 #}
+

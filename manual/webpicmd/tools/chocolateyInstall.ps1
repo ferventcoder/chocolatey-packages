@@ -1,4 +1,4 @@
-$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+﻿$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $packageName = 'webpicmd'
 $installerType = 'msi'
 # http://forums.iis.net/t/1178551.aspx?PLEASE+READ+WebPI+direct+download+links
@@ -24,3 +24,4 @@ catch
 {
   Write-ChocolateyFailure $packageName $($_.Exception.Message)
 }
+

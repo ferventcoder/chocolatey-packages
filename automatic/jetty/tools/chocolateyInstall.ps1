@@ -1,5 +1,5 @@
-$packageName = '{{PackageName}}' 
-$downloadUrl = '{{DownloadUrl}}' 
+﻿$packageName = '{{PackageName}}'
+$downloadUrl = '{{DownloadUrl}}'
 $downloadUrl -match "dist/(.*)\.zip"
 $fileName = $matches[1]
 $validExitCodes = @(0)
@@ -21,3 +21,4 @@ rd $installSubDir
 # Report completed
 write-host ($packageName + " installed to ") -NoNewLine
 write-host -foregroundcolor Yellow  $installDir
+

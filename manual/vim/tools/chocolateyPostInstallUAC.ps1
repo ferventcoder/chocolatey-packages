@@ -1,4 +1,4 @@
-$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+﻿$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 
 # Attention people from the future. This function will be built into chocolatey 0.9.8.21 or possibly 0.9.8.20
 . (Join-Path $scriptDir '.\Invoke-GenerateBinFile.ps1')
@@ -23,3 +23,4 @@ if(-not ($oldPath.Split(';') -contains $binDir)) {
   Write-Host "Adding $($binDir) to your path in the registry"
   [Environment]::SetEnvironmentVariable('PATH', "$($oldPath);$binDir", [EnvironmentVariableTarget]::Machine)
 }
+

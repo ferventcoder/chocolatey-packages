@@ -1,10 +1,10 @@
-#try { #error handling is only necessary if you need to do anything in addition to/instead of the main helpers
+﻿#try { #error handling is only necessary if you need to do anything in addition to/instead of the main helpers
   # main helpers - these have error handling tucked into them so they become the only line of your script if that is all you need.
   # installer, will assert administrative rights
   Install-ChocolateyPackage 'oovoo' 'exe' '/S' 'http://www.oovoo.com/Next.aspx?os=downloadwin&gwoid=0' # -validExitCodes @(0)
   # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
   # download and unpack a zip file
-  
+
   # other helpers - using any of these means you want to uncomment the error handling up top and at bottom.
   # downloader that the main helpers use to download items
   #Get-ChocolateyWebFile 'oovoo' 'DOWNLOAD_TO_FILE_FULL_PATH' 'URL' '64BIT_URL_DELETE_IF_NO_64BIT'
@@ -19,17 +19,17 @@
   # add specific files as shortcuts to the desktop
   #$target = Join-Path $MyInvocation.MyCommand.Definition 'oovoo.exe'
   #Install-ChocolateyDesktopLink $target
-  
+
   #------- ADDITIONAL SETUP -------#
   # make sure to uncomment the error handling if you have additional setup to do
 
   #$processor = Get-WmiObject Win32_Processor
   #$is64bit = $processor.AddressWidth -eq 64
 
-  
+
   # the following is all part of error handling
   #Write-ChocolateySuccess 'oovoo'
 #} catch {
   #Write-ChocolateyFailure 'oovoo' "$($_.Exception.Message)"
-  #throw 
+  #throw
 #}

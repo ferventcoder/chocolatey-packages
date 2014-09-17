@@ -1,11 +1,11 @@
-# try { 
+﻿# try {
   # $toolsDir ="$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   # Start-ChocolateyProcessAsAdmin "& $($toolsDir)\installmysql.ps1"
 
   # Write-ChocolateySuccess 'mysql'
 # } catch {
   # Write-ChocolateyFailure 'mysql' "$($_.Exception.Message)"
-  # throw 
+  # throw
 # }
 
 
@@ -26,11 +26,11 @@ try {
   Write-Host "Adding `'$installDirBin`' to the path and the current shell path"
   Install-ChocolateyPath "$installDirBin"
   $env:Path = "$($env:Path);$($installDirBin)"
-  
+
   #Install-ChocolateyZipPackage "$packageName" "$url" "$installDir" "$url64"
-  
+
   if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateDirectory($installDir)}
-  
+
   $tempDir = "$env:TEMP\chocolatey\$($packageName)"
   if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
 
@@ -65,9 +65,9 @@ try {
   Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --install"
   #turn on the service
   Start-ChocolateyProcessAsAdmin "cmd /c NET START MySQL"
-  
+
   Write-ChocolateySuccess "$packageName"
 } catch {
   Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
-  throw 
+  throw
 }

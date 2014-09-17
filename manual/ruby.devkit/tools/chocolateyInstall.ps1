@@ -1,4 +1,4 @@
-try {
+﻿try {
   $binRoot = "$env:systemdrive\"
 
   ### Using an environment variable to to define the bin root until we implement YAML configuration ###
@@ -93,3 +93,4 @@ try {
   Write-ChocolateyFailure 'ruby.devkit' "$($_.Exception.Message)"
   throw
 }
+

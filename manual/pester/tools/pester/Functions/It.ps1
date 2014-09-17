@@ -1,4 +1,4 @@
-function It($name, [ScriptBlock] $test) 
+﻿function It($name, [ScriptBlock] $test)
 {
     $results = Get-GlobalTestResults
     $margin = " " * $results.TestDepth
@@ -54,3 +54,4 @@ $test
 }
 "@ | out-file $TestDrive\temp.ps1
 }
+

@@ -1,6 +1,6 @@
-try { 
-  Install-ChocolateyPackage 'gitextensions' 'msi' '/quiet' '{{DownloadUrl}}' 
-  
+﻿try {
+  Install-ChocolateyPackage 'gitextensions' 'msi' '/quiet' '{{DownloadUrl}}'
+
   #------- ADDITIONAL SETUP -------#
   $processor = Get-WmiObject Win32_Processor
   $is64bit = $processor.AddressWidth -eq 64
@@ -11,9 +11,9 @@ try {
   $gitexPath = Join-Path $progFiles "GitExtensions"
   Write-Host "Adding `'$gitexPath`' to the PATH so you can call gitex from the command line."
   Install-ChocolateyPath $gitexPath
-  
+
   Write-ChocolateySuccess 'gitextensions'
 } catch {
   Write-ChocolateyFailure 'gitextensions' "$($_.Exception.Message)"
-  throw 
+  throw
 }

@@ -1,4 +1,4 @@
-$here = Split-Path -Parent $MyInvocation.MyCommand.Path
+﻿$here = Split-Path -Parent $MyInvocation.MyCommand.Path
 $sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path).Replace(".Tests.", ".")
 . "$here\$sut"
 
@@ -7,7 +7,7 @@ Describe "the In statement" {
 
     It "executes a command in that directory" {
         In "$TestDrive" -Execute { "" | Out-File "test_file" }
-        "$TestDrive\test_file".should.exist() 
+        "$TestDrive\test_file".should.exist()
     }
 
     It "updates the `$pwd variable when executed" {
@@ -20,3 +20,4 @@ Describe "the In statement" {
         $(Get-ConsoleText).should.match("The bird is the word")
     }
 }
+
