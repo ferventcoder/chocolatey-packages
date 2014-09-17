@@ -22,3 +22,4 @@ TypeScript for Visual Studio 2012 and 2013 provides a TypeScript editor and comp
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

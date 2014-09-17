@@ -27,3 +27,4 @@ Puppet 3.7.0 is the first version that includes an 64-bit version of Puppet. Som
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

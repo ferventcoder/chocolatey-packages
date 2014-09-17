@@ -19,3 +19,4 @@ Usage on the command line: lessmsi [/x msiFileName [outDir]]
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

@@ -22,3 +22,4 @@ LEGAL WARNING: Use of PuTTY, PSCP, PSFTP and Plink is illegal in countries where
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

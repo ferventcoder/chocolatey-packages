@@ -24,3 +24,4 @@ This package simply copies Node.exe to a subfolder within the Chocolatey folder.
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

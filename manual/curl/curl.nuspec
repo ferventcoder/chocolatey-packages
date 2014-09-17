@@ -64,3 +64,4 @@ This release includes the following known bugs:
     <!--<file src="content\**" target="content" />-->
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

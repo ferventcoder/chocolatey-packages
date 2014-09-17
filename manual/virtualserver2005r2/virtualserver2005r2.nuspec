@@ -24,3 +24,4 @@ NOTE: This only installs on Windows Server 2003.
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

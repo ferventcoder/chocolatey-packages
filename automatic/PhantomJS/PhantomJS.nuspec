@@ -24,3 +24,4 @@ PhantomJS is created by Ariya Hidayat.
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

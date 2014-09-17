@@ -19,3 +19,4 @@
     <file src="tools\oracle.cer" target="tools\oracle.cer" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

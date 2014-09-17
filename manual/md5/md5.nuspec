@@ -43,3 +43,4 @@ If no infile or -d option is specified or infile is a single "-", md5 reads from
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

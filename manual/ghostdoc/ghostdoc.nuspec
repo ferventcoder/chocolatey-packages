@@ -19,3 +19,4 @@ When generating documentation for class derived from a base class or for interfa
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

@@ -33,3 +33,4 @@ You need Visual C++ Redistributable for VS2005 SP1 installed (which is not yet a
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

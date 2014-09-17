@@ -21,3 +21,4 @@
     <file src="bin\**" target="bin" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

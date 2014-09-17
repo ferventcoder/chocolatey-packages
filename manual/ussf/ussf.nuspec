@@ -22,3 +22,4 @@ The application has a simple interface that will easily guide you through the wh
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

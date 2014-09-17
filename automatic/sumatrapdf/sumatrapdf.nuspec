@@ -27,3 +27,4 @@ Simplicity of the user interface has a high priority</description>
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

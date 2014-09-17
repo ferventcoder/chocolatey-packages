@@ -19,3 +19,4 @@ It supports the common e-mail protocols (IMAP, SMTP and POP3) and can easily be 
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

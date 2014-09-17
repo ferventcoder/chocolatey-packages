@@ -24,3 +24,4 @@ The TCP Optimizer is targeted towards broadband internet connections, however it
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

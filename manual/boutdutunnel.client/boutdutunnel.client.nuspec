@@ -20,3 +20,4 @@ BoutDuTunnel is compatible with HTTP proxy servers, even if they use NTLM authen
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

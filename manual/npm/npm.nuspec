@@ -35,3 +35,4 @@ After running those commands, you will see a node_modules folder containing all 
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

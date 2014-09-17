@@ -25,3 +25,4 @@ Perform all those tasks in the simpliest and most productive way.</description>
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

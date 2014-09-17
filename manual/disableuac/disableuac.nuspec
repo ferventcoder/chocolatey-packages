@@ -19,3 +19,4 @@ This does exactly what it says it does, it disables UAC. Be careful on Windows 8
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

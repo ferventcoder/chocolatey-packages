@@ -30,3 +30,4 @@ want to use a good IDE for their compiler - PSPad catches and parses compiler ou
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

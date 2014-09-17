@@ -29,3 +29,4 @@ DeskSpace runs on low-end netbooks, high-end desktops, and everything in-between
     <!--<file src="content\**" target="content" />-->
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

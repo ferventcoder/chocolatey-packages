@@ -25,3 +25,4 @@ Any browser. Any host. Any OS. Open Source.</description>
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

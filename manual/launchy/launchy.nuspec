@@ -17,3 +17,4 @@ Launchy indexes the programs in your start menu and can launch your documents, p
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

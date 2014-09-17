@@ -28,3 +28,4 @@ Now includes a standalone Windows desktop application so that you can paste form
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

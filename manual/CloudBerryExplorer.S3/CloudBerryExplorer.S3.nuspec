@@ -28,3 +28,4 @@ Freeware Amazon S3 client by CloudBerry Lab comes with a full support for CloudF
     <!--<file src="content\**" target="content" />-->
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

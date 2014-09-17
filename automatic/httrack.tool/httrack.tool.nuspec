@@ -21,3 +21,4 @@ It allows you to download a World Wide Web site from the Internet to a local dir
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

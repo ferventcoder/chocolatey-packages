@@ -24,3 +24,4 @@ Single small executable, no installer
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

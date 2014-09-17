@@ -41,3 +41,4 @@ For help on a particular command, use 'pik help COMMAND'.</description>
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

@@ -24,3 +24,4 @@ Memcached is simple yet powerful. Its simple design promotes quick deployment, e
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

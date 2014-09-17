@@ -29,3 +29,4 @@ libjpeg-turbo was originally based on libjpeg/SIMD by Miyasaka Masaru, but the T
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

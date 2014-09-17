@@ -28,3 +28,4 @@ I hope you enjoy Notepad++ as much as I enjoy coding it.
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

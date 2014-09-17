@@ -30,3 +30,4 @@ Reads and parses:
     <file src="content\**" target="content" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

@@ -54,3 +54,4 @@ If you use Orca, you will love InstEd. If you use some of the more expensive too
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

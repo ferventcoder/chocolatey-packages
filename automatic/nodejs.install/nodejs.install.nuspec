@@ -21,3 +21,4 @@ This package runs the official Node JS installer, resulting in Node.exe and NPM 
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

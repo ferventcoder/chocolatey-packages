@@ -39,3 +39,4 @@ This free YouTube Downloader lets you download videos from YouTube and save them
     <!--<file src="content\**" target="content" />-->
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->
