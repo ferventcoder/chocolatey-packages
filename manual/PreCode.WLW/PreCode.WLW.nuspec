@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>PreCode.WLW</id>
@@ -6,7 +6,7 @@
     <version>5.02</version>
     <authors>FiftyEightBits</authors>
     <owners>Rob Reynolds</owners>
-    <summary>PreCode - 
+    <summary>PreCode -
 Code Snippet With Syntaxhighlighter Support for Windows Live Writer</summary>
     <description>PreCode - A code snippet plugin for Windows Live Writer with support for Syntaxhighlighter as well as good support for snippet indentation.
 

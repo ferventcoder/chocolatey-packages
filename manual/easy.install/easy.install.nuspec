@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>easy.install</id>
@@ -6,9 +6,9 @@
     <version>0.6.11.3</version>
     <authors>Phillip J. Eby</authors>
     <owners>Elliando Dias</owners>
-    <summary>Easy Install is a python module (easy_install) bundled with setuptools that lets you automatically 
+    <summary>Easy Install is a python module (easy_install) bundled with setuptools that lets you automatically
 	download, build, install, and manage Python packages</summary>
-    <description>Easy Install is a python module (easy_install) bundled with setuptools that lets you automatically 
+    <description>Easy Install is a python module (easy_install) bundled with setuptools that lets you automatically
 	download, build, install, and manage Python packages</description>
     <projectUrl>http://pypi.python.org/pypi/setuptools</projectUrl>
     <tags>easy_install python setuptools</tags>

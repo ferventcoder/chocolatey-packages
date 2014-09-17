@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>anyvideoconverter</id>
@@ -8,7 +8,7 @@
     <owners>Rob Reynolds</owners>
     <summary>Any Video Converter - Best free video converter for converting videos between any formats freely!</summary>
     <description>Any Video Converter - Best free video converter for converting videos between any formats freely!
-    
+
 __All-in-One Free Video Converter__
 There is open source software to perform almost every task for video conversion. But if you are one of these windows users who are looking for an All-in-One video converting tool with easy-to-use graphical interface, Any Video Converter Freeware provides just that, allowing you to effortlessly convert video files for FREE!
 

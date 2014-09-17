@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>opensslkey</id>
@@ -7,7 +7,7 @@
     <authors>Michel I. Gallant</authors>
     <owners>Rob Reynolds</owners>
     <summary>Open SSL Key - Utility to generate XML keys from PEM or DER keys</summary>
-    <description>Open SSL Key - Utility to generate XML keys from PEM or DER keys.  
+    <description>Open SSL Key - Utility to generate XML keys from PEM or DER keys.
 Reads and parses:
 (1) OpenSSL PEM or DER public keys
 (2) OpenSSL PEM or DER traditional SSLeay private keys (encrypted and unencrypted)

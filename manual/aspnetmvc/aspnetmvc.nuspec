@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>aspnetmvc</id>
@@ -10,8 +10,8 @@
     <projectUrl>http://www.asp.net/mvc</projectUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>ASP.NET MVC - This package has been deprecated in favor of aspnetmvc.install (and so there is not a naming conflict with the package on nuget.org).
-    
-    ASP.NET MVC is a free, fully supported Microsoft framework for developing great web applications using the Model-View-Controller pattern. It provides total control over your HTML and URLs, enables rich Ajax integration, and facilitates test driven development. To find out more information about ASP.NET MVC, visit the following resources: 
+
+    ASP.NET MVC is a free, fully supported Microsoft framework for developing great web applications using the Model-View-Controller pattern. It provides total control over your HTML and URLs, enables rich Ajax integration, and facilitates test driven development. To find out more information about ASP.NET MVC, visit the following resources:
 
 The ASP.NET MVC site  site provides tutorials, quickstarts, and videos. (http://www.asp.net/mvc/)
 

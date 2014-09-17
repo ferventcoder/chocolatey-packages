@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>chucknorris</id>
@@ -11,7 +11,7 @@
     <projectUrl>https://github.com/chucknorris</projectUrl>
     <tags>chucknorrisframework uppercut roundhouse dropkick warmup</tags>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>    
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/chucknorris.png</iconUrl>
     <dependencies>
       <dependency id="warmup" />

@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>lessmsi</id>
@@ -8,7 +8,7 @@
     <owners>Rob Reynolds, zippy1981</owners>
     <summary>LessMSI - Easily extract the contents of an MSI</summary>
     <description>LessMSI is a utility with a graphical user interface and a command line interface that can be used to view and extract the contents of an MSI file. For Windows.
-Usage on the command line: lessmsi [/x msiFileName [outDir]] 
+Usage on the command line: lessmsi [/x msiFileName [outDir]]
 </description>
     <tags>msi extract extraction</tags>
     <projectUrl>http://code.google.com/p/lessmsi/</projectUrl>

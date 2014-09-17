@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>InstEd</id>
@@ -7,8 +7,8 @@
     <authors>TNE Enterprises</authors>
     <owners>Rob Reynolds</owners>
     <summary>InstEd is a free MSI editor built for professionals.</summary>
-    <description>InstEd is a free MSI editor built for professionals. InstEd makes working with files fast and easy. 
-  
+    <description>InstEd is a free MSI editor built for professionals. InstEd makes working with files fast and easy.
+
 If you use Orca, you will love InstEd. If you use some of the more expensive tools, you may find that InstEd makes you more productive for the bread and butter packaging tasks.
 
 ==Features==
