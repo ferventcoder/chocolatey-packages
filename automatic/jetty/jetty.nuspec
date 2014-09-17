@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-	<metadata>
-		<id>jetty</id>
-		<title>Jetty</title>
-		<authors>The Eclipse Foundation</authors>
-		<version>{{PackageVersion}}</version>
-		<summary>Jetty servlet engine and HTTP server</summary>
-		<description>Jetty servlet engine and HTTP server. Jetty provides an Web server and javax.servlet container, plus support for SPDY, Web Sockets, OSGi, JMX, JNDI, JASPI, AJP and many other integrations.</description>
-		<owners>The Eclipse Foundation</owners>
-		<licenseUrl>http://www.eclipse.org/jetty/licenses.php</licenseUrl>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<iconUrl>https://raw.githubusercontent.com/Nilzor/chocolatey-packages/5325b65a474e62639fe326cfac6fcbcc7e8e04d7/icons/jetty.png</iconUrl>
-	</metadata>
+    <metadata>
+        <id>jetty</id>
+        <title>Jetty</title>
+        <authors>The Eclipse Foundation</authors>
+        <version>{{PackageVersion}}</version>
+        <summary>Jetty servlet engine and HTTP server</summary>
+        <description>Jetty servlet engine and HTTP server. Jetty provides an Web server and javax.servlet container, plus support for SPDY, Web Sockets, OSGi, JMX, JNDI, JASPI, AJP and many other integrations.</description>
+        <owners>The Eclipse Foundation</owners>
+        <licenseUrl>http://www.eclipse.org/jetty/licenses.php</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <iconUrl>https://raw.githubusercontent.com/Nilzor/chocolatey-packages/5325b65a474e62639fe326cfac6fcbcc7e8e04d7/icons/jetty.png</iconUrl>
+    </metadata>
 </package>

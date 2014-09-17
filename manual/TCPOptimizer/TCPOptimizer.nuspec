@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>TCPOptimizer</id>
@@ -7,9 +7,9 @@
     <authors>Speed Guide, Inc.</authors>
     <owners>Rob Reynolds</owners>
     <summary>The TCP Optimizer is a free, easy Windows program that provides an intuitive interface for tuning and optimizing your Internet connection.</summary>
-    <description>The TCP Optimizer is a free, easy Windows program that provides an intuitive interface for tuning and optimizing your Internet connection. There is no installation required, just download and run. 
+    <description>The TCP Optimizer is a free, easy Windows program that provides an intuitive interface for tuning and optimizing your Internet connection. There is no installation required, just download and run.
 
-The program can aid both the novice and the advanced user in tweaking related TCP/IP parameters in Windows, making it easy to tune your system to the type of Internet connection used. The tool uses advanced algorithms, and the bandwidth*delay product to find the best TCP Window for your specific connection speed. It provides for easy tuning of all related TCP/IP parameters, such as MTU, RWIN, and even advanced ones like QoS and ToS/Diffserv prioritization. The program works with all current versions of Windows, and includes additional tools, such as testing average latency over multiple hosts, and finding the largest possible packet size (MTU). 
+The program can aid both the novice and the advanced user in tweaking related TCP/IP parameters in Windows, making it easy to tune your system to the type of Internet connection used. The tool uses advanced algorithms, and the bandwidth*delay product to find the best TCP Window for your specific connection speed. It provides for easy tuning of all related TCP/IP parameters, such as MTU, RWIN, and even advanced ones like QoS and ToS/Diffserv prioritization. The program works with all current versions of Windows, and includes additional tools, such as testing average latency over multiple hosts, and finding the largest possible packet size (MTU).
 
 The TCP Optimizer is targeted towards broadband internet connections, however it can be helpful with tuning any internet connection type, from dialup to Gigabit+ :) It is completely free, requires no installation, and has been downloaded over 3 Million times. </description>
     <projectUrl>http://www.speedguide.net/tcpoptimizer.php</projectUrl>
