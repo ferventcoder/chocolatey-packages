@@ -13,7 +13,7 @@
     <tags>toggl time tracking admin</tags>
     <licenseUrl>https://www.toggl.com/public/terms_of_service</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/toggl.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/toggl.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

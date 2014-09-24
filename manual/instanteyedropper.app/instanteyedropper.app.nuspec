@@ -18,7 +18,7 @@
     <copyright>SpiceBrains.com 2005-2012</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/instanteyedropper.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/instanteyedropper.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>

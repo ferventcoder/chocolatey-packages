@@ -12,7 +12,7 @@
     <tags>gitextensions git gui admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/gitextensions.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/gitextensions.png</iconUrl>
     <dependencies>
       <dependency id="git" />
     </dependencies>

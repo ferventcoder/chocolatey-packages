@@ -12,7 +12,7 @@
     <tags>cruisecontrol.net ci continuous integration admin</tags>
     <licenseUrl>http://confluence.public.thoughtworks.org/display/CCNET/License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/cruisecontrol.net.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/cruisecontrol.net.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

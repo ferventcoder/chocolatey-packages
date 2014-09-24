@@ -8,7 +8,7 @@
     <owners>anatooly</owners>
     <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
     <projectUrl>http://www.miranda-im.org/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/miranda.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/miranda.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Miranda IM is a multi-protocol instant messaging client for Windows. Very light on system resources and extremely fast, Miranda IM requires no installation and can be made to fit on a single floppy disk or USB drive. Featuring a powerful plugin-based framework and boasting over 350 plugins, Miranda IM is one of the most flexible and customisable messaging clients on the planet.</description>
     <summary>Miranda IM is a multi-protocol instant messaging client for Windows.</summary>

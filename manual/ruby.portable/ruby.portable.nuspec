@@ -15,7 +15,7 @@
     <tags>ruby language programming dynamic</tags>
     <licenseUrl>http://www.ruby-lang.org/en/about/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/ruby.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/ruby.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

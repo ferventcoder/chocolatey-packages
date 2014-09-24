@@ -15,7 +15,7 @@ This package simply copies Node.exe to a subfolder within the Chocolatey folder.
     <tags>nodejs node javascript</tags>
     <licenseUrl>https://github.com/joyent/node/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/nodejs.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/nodejs.png</iconUrl>
     <dependencies>
       <dependency id="npm" />
     </dependencies>

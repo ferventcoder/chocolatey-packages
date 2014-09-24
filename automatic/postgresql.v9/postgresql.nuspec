@@ -14,7 +14,7 @@
     <tags>postgresql database sql chocolatey admin</tags>
     <licenseUrl>http://www.postgresql.org/about/licence</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/postgresql.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/postgresql.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
