@@ -2,7 +2,7 @@
 $installerType = 'EXE'
 $silentArgs = '/sAll /msi /norestart /quiet ALLUSERS=1 EULA_ACCEPT=YES'
 #$url = 'http://ardownload.adobe.com/pub/adobe/reader/win/{mainversion}.x/{version}/en_US/AdbeRdr{version:replace:.:}_en_US.exe'
-$url = '{{DownloadUrl}}'
+$url = 'http://ardownload.adobe.com/pub/adobe/reader/win/11.x/11.0.09/en_US/AdbeRdr11009_en_US.exe'
 #http://forums.adobe.com/thread/754256
 #http://www.appdeploy.com/messageboards/tm.asp?m=37416
 # '/sPB /msi /norestart ALLUSERS=1 EULA_ACCEPT=YES'

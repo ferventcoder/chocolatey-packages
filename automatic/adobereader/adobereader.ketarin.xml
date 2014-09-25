@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>54476696</LastFileSize>
-    <LastFileDate>2012-05-23T02:29:03.7775241</LastFileDate>
+    <LastFileSize>75904920</LastFileSize>
+    <LastFileDate>2014-09-25T21:00:31.8335857</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -24,28 +24,24 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
-            <Url>http://get.adobe.com/reader/</Url>
-            <StartText>&lt;span id="clientversion"&gt;X (</StartText>
-            <EndText>)&lt;/span&gt;</EndText>
-            <TextualContent />
+            <VariableType>RegularExpression</VariableType>
+            <Regex>(?&lt;=Reader_)[\d\.]+(?=_English_for_Windows)</Regex>
+            <Url>https://get.adobe.com/reader/</Url>
             <Name>version</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>versionNoDots</string>
+          <string>url</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex>[\d]+\.[\d]+\.[\d]+</Regex>
-            <Url>http://get.adobe.com/reader/</Url>
-            <TextualContent>string.Replace({version},".","");</TextualContent>
-            <Name>versionNoDots</Name>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>http://ardownload\.adobe\.com/pub/adobe/reader/win/.+?_en_US\.exe</Regex>
+            <Url>https://get.adobe.com/reader/completion/?installer=Reader_{version}_English_for_Windows&amp;direct=true&amp;standalone=1</Url>
+            <Name>url</Name>
           </UrlVariable>
         </value>
       </item>
@@ -55,14 +51,14 @@
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
-    <SourceType>FileHippo</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\AdbeRdr1013_en_US.exe</PreviousLocation>
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Chocolatey\_work\AdbeRdr11009_en_US.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
-    <Enabled>false</Enabled>
-    <FileHippoId>adobe_reader</FileHippoId>
-    <LastUpdated>2012-05-23T02:29:03.7775241</LastUpdated>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2014-09-25T21:00:31.8335857</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl />
+    <FixedDownloadUrl>{url}</FixedDownloadUrl>
     <Name>adobereader</Name>
   </ApplicationJob>
 </Jobs>
