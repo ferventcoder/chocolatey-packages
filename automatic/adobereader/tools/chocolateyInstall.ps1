@@ -10,16 +10,22 @@ $url = '{{DownloadUrl}}'
 #'/msi /norestart /quiet'
 
 # the url changes based on the language - not entirely happy with the way this works
+Write-Debug "Detecting Locale..."
 $LCID = (Get-Culture).LCID
 if(($LCID -eq "3082") -or ($LCID -eq "1034")){ ## Spanish
+  Write-Host "Switching to Spanish version"
   $url = $url -replace 'en_US', 'es_ES'
 } elseif($LCID -eq "1036"){ ## French
+  Write-Host "Switching to French version"
   $url = $url -replace 'en_US', 'fr_FR'
 } elseif($LCID -eq "1031"){ ## German
+  Write-Host "Switching to German version"
   $url = $url -replace 'en_US', 'de_DE'
 } elseif($LCID -eq "1041"){ ## Japanese
+  Write-Host "Switching to Japanese version"
   $url = $url -replace 'en_US', 'ja_JP'
-} else{ ## English
+} else { ## English
+  Write-Debug "Leaving the url to the default English version."
   $url = $url
 }
 
