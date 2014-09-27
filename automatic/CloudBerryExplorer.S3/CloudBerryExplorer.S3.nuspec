@@ -3,15 +3,17 @@
   <metadata>
     <id>CloudBerryExplorer.S3</id>
     <title>CloudBerry Explorer for Amazon S3 Freeware</title>
-    <version>3.7</version>
+    <version>{{PackageVersion}}</version>
     <authors>CloudBerry Lab</authors>
     <owners>Rob Reynolds</owners>
     <summary>CloudBerry Explorer for Amazon S3 is a freeware Amazon S3 and Amazon Glacier client designed to run in Windows environment.</summary>
-    <description>CloudBerry Explorer for Amazon S3 is a freeware Amazon S3 and Amazon Glacier client designed to run in Windows environment.
+    <description>
+CloudBerry Explorer for Amazon S3 is a freeware Amazon S3 and Amazon Glacier client designed to run in Windows environment.
 
 S3 Explorer provides a user interface to Amazon S3 accounts, files and buckets allowing browsing, creating, and deleting files and buckets.
 
-Freeware Amazon S3 client by CloudBerry Lab comes with a full support for CloudFront (Amazon Content Delivery Network (CDN)). It includes a set of tools to manage CloudFront HTTP and Streaming Distributions, Public and Private content and more.</description>
+Freeware Amazon S3 client by CloudBerry Lab comes with a full support for CloudFront (Amazon Content Delivery Network (CDN)). It includes a set of tools to manage CloudFront HTTP and Streaming Distributions, Public and Private content and more.
+    </description>
     <projectUrl>http://www.cloudberrylab.com/free-amazon-s3-explorer-cloudfront-IAM.aspx</projectUrl>
     <tags>Amazon S3 AWS Cloud CloudBerry admin</tags>
     <copyright>CloudBerry Lab</copyright>
