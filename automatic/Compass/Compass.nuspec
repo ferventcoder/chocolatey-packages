@@ -3,11 +3,12 @@
   <metadata>
     <id>Compass</id>
     <title>Compass</title>
-    <version>0.12.2</version>
+    <version>{{PackageVersion}}</version>
     <authors>Scott Davis, Eric Meyer, Brandon Mathis, Anthony Short</authors>
     <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>Compass is an open-source CSS Authoring Framework.</summary>
-    <description>Compass is an open-source CSS Authoring Framework.
+    <description>
+Compass is an open-source CSS Authoring Framework.
 
 * Experience cleaner markup without presentational classes.
 * It’s chock full of the web’s best reusable patterns.

@@ -1,11 +1,10 @@
 ﻿$package = 'Compass'
 
 try {
-  gem install compass -v 0.12.2
+  gem install compass -v {{PackageVersion}}
 
   Write-ChocolateySuccess $package
 } catch {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"
   throw
 }
-
