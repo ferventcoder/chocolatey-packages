@@ -2,23 +2,25 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>webpicommandline</id>
-    <title>Web PI CommandLine</title>
-    <version>7.1.40719.0</version>
+    <title>Web PI CommandLine (Deprecated)</title>
+    <version>7.1.50430.0</version>
     <authors>Microsoft</authors>
     <owners>Rob Reynolds</owners>
     <summary>Web PI Command Line</summary>
     <description>The Microsoft Web Platform Installer (Web PI) makes it easy for you to download, install, and keep up to date on the latest software components of the Microsoft Web Platform for development and application hosting on the Windows operating system. Web PI does the work of comparing the newest available components across the Microsoft Web Platform against what is already installed on your computer; you can see what is new and what you haven't yet installed. You can use Web PI to learn more about different components and install one or more components in a chained installation, with Web PI handling reboots and logging failures where applicable.
+
+Note: This package has been deprecated for simply webpicmd, which this package depends on.
 </description>
     <projectUrl>http://www.iis.net/learn/install/web-platform-installer/web-platform-installer-v4-command-line-webpicmdexe-rtw-release</projectUrl>
     <tags>webpi web pi platform installer microsoft tool</tags>
     <licenseUrl>http://www.microsoft.com/web/webpi/eula/webpi_45_en.htm</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-      <dependency id="webpicmd" version="7.1.40719.0" />
+      <dependency id="webpicmd" version="7.1.50430.20141001" />
     </dependencies>
   </metadata>
   <!-- <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools/**" target="tools" />
   </files> -->
 </package>
 <!-- character encoding: “UTF-8” -->

@@ -3,7 +3,7 @@
   <metadata>
     <id>webpicmd</id>
     <title>WebPI (Platform Installer) Command Line</title>
-    <version>7.1.50430.0</version>
+    <version>7.1.50430.20141001</version>
     <authors>Microsoft</authors>
     <owners>Rob Reynolds</owners>
     <summary>Web PI (Platform Installer) Command Line v5</summary>
@@ -14,11 +14,11 @@
     <licenseUrl>http://www.microsoft.com/web/webpi/eula/webpi_45_en.htm</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-      <dependency id="lessmsi" version="1.1.5" />
+      <dependency id="lessmsi" version="1.1.5.20140118" />
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools/**" target="tools" />
   </files>
 </package>
 <!-- character encoding: “UTF-8” -->
