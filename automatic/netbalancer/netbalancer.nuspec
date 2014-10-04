@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>netbalancer</id>
+    <id>{{PackageName}}</id>
     <title>NetBalancer</title>
-    <version>5.1.2</version>
+    <version>{{PackageVersion}}</version>
     <authors>SeriousBit</authors>
     <owners>Rob Reynolds</owners>
     <summary>NetBalancer is an internet traffic control and monitoring tool designed for Windows XP/2003/Vista/Win7, both x86 and native x64.</summary>
-    <description>NetBalancer is an internet traffic control and monitoring tool designed for Windows XP/2003/Vista/Win7, both x86 and native x64.</description>
+    <description>
+NetBalancer is an internet traffic control and monitoring tool designed for Windows XP/2003/Vista/Win7, both x86 and native x64.
+    </description>
     <projectUrl>http://www.seriousbit.com/netbalancer/</projectUrl>
     <tags>netbalancer bandwidth shaper limiter admin</tags>
-    <copyright>Copyright 2007-2012 SeriousBit</copyright>
+    <copyright>SeriousBit</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/netbalancer.png</iconUrl>
-    <releaseNotes>
-5.1.2
-- Updated the French, German, Spanish, Italian and Russian translations
-- Added the first version of the FAQ
-- Fixed the silent installation support
-- Added a couple of command line args to setup
-- Done usability improvements
-    </releaseNotes>
+    <releaseNotes></releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
