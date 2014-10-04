@@ -3,7 +3,7 @@
   $AU3File = Join-Path $scriptDir 'fluffyapp.au3'
   $installerDir = Join-Path $scriptDir 'installer'
 
-  Install-ChocolateyZipPackage 'fluffyapp' 'http://api.cld.me/3G3R1h3m2V2o201E2e46/download/FluffyApp2.0b3.zip' "$installerDir"
+  Install-ChocolateyZipPackage 'fluffyapp' '{{DownloadUrl}}' "$installerDir"
 
   $installerExe = Join-Path $installerDir 'FluffyAppInstaller.exe'
 
