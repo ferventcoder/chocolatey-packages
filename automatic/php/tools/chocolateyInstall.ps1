@@ -1,25 +1,36 @@
 Function DoesWebPageExist($uri) {
     try {
-        $webClient =[System.Net.HttpWebRequest] [System.Net.WebRequest]::Create($uri) ;
+        $webClient =[System.Net.HttpWebRequest] [System.Net.WebRequest]::Create($uri)
         $webClient.Method = "HEAD"
         $webClient.Timeout = 3000
         $webClient.GetResponse()
     } 
     catch [System.Net.WebException] {
-        #$wRespStatusCode = ([System.Net.HttpWebResponse]$error[0].Exception.InnerException.Response).StatusCode.value__;
-        return $false;
+        return $FALSE;
     }
-    return $true;
+    return $TRUE;
 }
 
-#Todo: Check if file exists, if not , add "archive" to path and try that instead. Eg:
-#http://windows.php.net/downloads/releases/archive/php-5.5.14-nts-Win32-VC11-x86.zip
-#http://windows.php.net/downloads/releases/php-5.5.15-nts-Win32-VC11-x86.zip
+Function AddArchivePathToUrl($url) {
+    $newUrl = $url
+	$lix = $url.LastIndexOf("/")
+	if ($lix -ne -1)  {
+		$newUrl = $url.SubString(0, $lix) + "/archives" + $url.SubString($lix)
+	}
+	return $newUrl
+}
 
-write-host 'Please make sure you have CGI installed in IIS'
+write-host 'Please make sure you have CGI installed in IIS for local hosting'
 $packageName = '{{PackageName}}' 
 $url = '{{DownloadUrl}}' 
 $url64 = '{{DownloadUrlx64}}' 
+
+write-host 'Locating package...'
+if (-Not (DoesWebPageExist($url))) {
+	Echo ("Checking archive...")
+	$url = AddArchivePathToUrl($url)
+	$url64 = AddArchivePathToUrl($url64) # Assuming the 64 bit version is archived simultaneously as the 32 bit one
+}
 $validExitCodes = @(0)
 $targetFolder = Join-Path $(Get-BinRoot) $packageName
 Install-ChocolateyZipPackage "$packageName" "$url" "$targetFolder" "$url64"
