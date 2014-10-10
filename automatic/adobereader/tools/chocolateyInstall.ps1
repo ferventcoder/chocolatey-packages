@@ -18,6 +18,9 @@ if(($LCID -eq "3082") -or ($LCID -eq "1034")){ ## Spanish
 } elseif($LCID -eq "1036"){ ## French
   Write-Host "Switching to French version"
   $url = $url -replace 'en_US', 'fr_FR'
+} elseif($LCID -eq "2060"){ ## French Belgium
+  Write-Host "Switching to French version"
+  $url = $url -replace 'en_US', 'fr_FR'
 } elseif($LCID -eq "1031"){ ## German
   Write-Host "Switching to German version"
   $url = $url -replace 'en_US', 'de_DE'
