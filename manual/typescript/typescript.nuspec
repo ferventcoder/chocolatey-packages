@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>typescript</id>
@@ -14,6 +14,7 @@ Any browser. Any host. Any OS. Open Source.</description>
     <tags>typescript javascript</tags>
     <copyright></copyright>
     <licenseUrl>http://typescript.codeplex.com/license</licenseUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/typescript.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
       <dependency id="nodejs.install" version="0.8.10" />
@@ -24,3 +25,4 @@ Any browser. Any host. Any OS. Open Source.</description>
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

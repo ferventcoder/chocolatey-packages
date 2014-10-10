@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>InstEd</id>
@@ -7,8 +7,8 @@
     <authors>TNE Enterprises</authors>
     <owners>Rob Reynolds</owners>
     <summary>InstEd is a free MSI editor built for professionals.</summary>
-    <description>InstEd is a free MSI editor built for professionals. InstEd makes working with files fast and easy. 
-  
+    <description>InstEd is a free MSI editor built for professionals. InstEd makes working with files fast and easy.
+
 If you use Orca, you will love InstEd. If you use some of the more expensive tools, you may find that InstEd makes you more productive for the bread and butter packaging tasks.
 
 ==Features==
@@ -24,7 +24,7 @@ If you use Orca, you will love InstEd. If you use some of the more expensive too
     <copyright>TNE Enterprises</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/InstEd.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/InstEd.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
@@ -54,3 +54,4 @@ If you use Orca, you will love InstEd. If you use some of the more expensive too
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

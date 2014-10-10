@@ -22,3 +22,4 @@ try {
     Write-ChocolateyFailure '7Zip' $($_.Exception.Message)
     throw
 }
+

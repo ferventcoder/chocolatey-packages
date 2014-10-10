@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>sumatrapdf.install</id>
@@ -6,7 +6,7 @@
     <version>{{PackageVersion}}</version>
     <authors>Krzysztof Kowalczyk</authors>
     <owners>Rob Reynolds</owners>
-	<iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/sumatrapdf.png</iconUrl>
+	<iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/sumatrapdf.png</iconUrl>
     <summary>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.</summary>
     <description>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.
 
@@ -24,3 +24,4 @@ Simplicity of the user interface has a high priority</description>
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

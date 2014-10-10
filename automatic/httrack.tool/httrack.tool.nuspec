@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>httrack.tool</id>
@@ -21,3 +21,4 @@ It allows you to download a World Wide Web site from the Internet to a local dir
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

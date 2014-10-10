@@ -1,4 +1,4 @@
-param (
+﻿param (
  [string]$symlinktype,
  [string]$link,
  [string]$target

@@ -1,4 +1,4 @@
-try {
+﻿try {
   $packageName = 'sysinternals'
   $url = 'http://download.sysinternals.com/files/SysinternalsSuite.zip'
 
@@ -25,7 +25,7 @@ try {
       }catch {}
     }
   }
-  
+
   # Add most widely used apps to start menu
   # Pull request 228 not merged yet - https://github.com/chocolatey/chocolatey/pull/228/files - hopefully this is obsolete, because it cannot change the target name.
   # Install-ChocolateyPinnedItem "$installDir\procexp.exe"
@@ -38,7 +38,7 @@ try {
   $shortcut = $shell.CreateShortcut($destLink)
   $shortcut.TargetPath = Join-Path "$installDir" "procexp.exe"
   $shortcut.Save()
-  
+
   # You can add more here
 
   Write-ChocolateySuccess 'sysinternals'
@@ -46,3 +46,4 @@ try {
   Write-ChocolateyFailure 'sysinternals' $($_.Exception.Message)
   throw
 }
+

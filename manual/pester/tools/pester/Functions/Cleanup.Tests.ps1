@@ -1,4 +1,4 @@
-$here = Split-Path -Parent $MyInvocation.MyCommand.Path
+﻿$here = Split-Path -Parent $MyInvocation.MyCommand.Path
 . "$here\Cleanup.ps1"
 
 Describe "Cleanup" {
@@ -7,7 +7,7 @@ Describe "Cleanup" {
 
 Describe "Cleanup" {
 
-    It "should have removed the temp folder from the previous fixture" { 
+    It "should have removed the temp folder from the previous fixture" {
         $test_drive_existence = Test-Path "$TestDrive\foo"
         $test_drive_existence.should.be($false)
     }
@@ -17,3 +17,4 @@ Describe "Cleanup" {
         $test_drive_existence.should.be($false)
     }
 }
+

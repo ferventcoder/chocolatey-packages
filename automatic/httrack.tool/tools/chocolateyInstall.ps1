@@ -1,6 +1,6 @@
-﻿try { 
+﻿try {
 
-  $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
+  $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   ### For BinRoot, use the following instead ###
   #$binRoot = "$env:systemdrive\"
   ### Using an environment variable to to define the bin root until we implement configuration ###
@@ -17,5 +17,5 @@
   Write-ChocolateySuccess 'httrack.tool'
 } catch {
   Write-ChocolateyFailure 'httrack.tool' "$($_.Exception.Message)"
-  throw 
+  throw
 }

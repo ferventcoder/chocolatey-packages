@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>deskspace</id>
@@ -18,7 +18,7 @@ DeskSpace runs on low-end netbooks, high-end desktops, and everything in-between
     <tags>deskspace cube desktop desktops admin</tags>
     <licenseUrl>http://www.otakusoftware.com/deskspace/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/deskspace/deskspace.gif</iconUrl>-->
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/deskspace.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
@@ -29,3 +29,4 @@ DeskSpace runs on low-end netbooks, high-end desktops, and everything in-between
     <!--<file src="content\**" target="content" />-->
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

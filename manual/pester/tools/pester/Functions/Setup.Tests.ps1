@@ -1,4 +1,4 @@
-$here = Split-Path -Parent $MyInvocation.MyCommand.Path
+﻿$here = Split-Path -Parent $MyInvocation.MyCommand.Path
 . "$here\Setup.ps1"
 
 Describe "Setup" {
@@ -14,7 +14,7 @@ Describe "Setup" {
 }
 
 Describe "Create filesystem with directories" {
-    
+
     Setup -Dir "dir1"
     Setup -Dir "dir2"
 
@@ -30,7 +30,7 @@ Describe "Create filesystem with directories" {
 }
 
 Describe "Create nested directory structure" {
-   
+
     Setup -Dir "parent/child"
 
     It "creates parent directory" {
@@ -70,3 +70,4 @@ Describe "Create a file with content" {
         $result.should.be("file contents")
     }
 }
+

@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'attributechanger' 'exe' '/SILENT' '{{DownloadUrl}}' '{{DownloadUrl}}'
+﻿Install-ChocolateyPackage 'attributechanger' 'exe' '/SILENT' '{{DownloadUrl}}' '{{DownloadUrl}}'

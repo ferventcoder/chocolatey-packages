@@ -1,4 +1,4 @@
-Function DoesWebPageExist($uri) {
+﻿Function DoesWebPageExist($uri) {
     try {
         $webClient =[System.Net.HttpWebRequest] [System.Net.WebRequest]::Create($uri)
         $webClient.Method = "HEAD"

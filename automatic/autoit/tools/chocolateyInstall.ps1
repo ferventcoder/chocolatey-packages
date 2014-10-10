@@ -1,1 +1,1 @@
-Install-ChocolateyPackage 'autoit' 'exe' '/S' '{{DownloadUrl}}'
+﻿Install-ChocolateyPackage 'autoit' 'exe' '/S' '{{DownloadUrl}}'

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>{{PackageName}}</id>
+    <title>FluffyApp</title>
+    <version>{{PackageVersion}}</version>
+    <authors>Richard Z.H. Wang</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>FluffyApp – Share screenshorts and other files to the cloud.</summary>
+    <description>
+FluffyApp is a simple and lightweight utility that was designed to help you instantly upload your pictures or other files to CloudApp. You only have to sign into your account and drag the files onto the application’s icon. CloudApp is a simple app which sits on the menu bar and allow drag-and-drop file uploading complete with an auto-shortened URL for easy sharing. CloudApp can even be set to auto-upload screenshots.
+    </description>
+    <projectUrl>http://fluffyapp.com/</projectUrl>
+    <tags>fluffyapp screen share cloud admin</tags>
+    <copyright></copyright>
+    <!--<licenseUrl></licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/fluffyapp.png</iconUrl>
+    <dependencies>
+      <dependency id="autoit.commandline" />
+    </dependencies>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: “UTF-8” -->

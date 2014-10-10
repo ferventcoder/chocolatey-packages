@@ -1,1 +1,2 @@
-Install-ChocolateyPackage 'resharper' 'msi' '/quiet' '{{DownloadUrl}}'
+﻿Install-ChocolateyPackage 'resharper' 'msi' '/quiet' '{{DownloadUrl}}'
+

@@ -1,4 +1,4 @@
-try {
+﻿try {
   $package = 'jscoverage'
 
   ### Env var to define bin root until we implement configuration ###
@@ -24,3 +24,4 @@ try {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"
   throw
 }
+

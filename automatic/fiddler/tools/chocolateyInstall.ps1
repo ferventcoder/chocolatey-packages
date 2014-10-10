@@ -1,4 +1,4 @@
-$tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿$tools = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 function Is64Bit {  [IntPtr]::Size -eq 8  }
 

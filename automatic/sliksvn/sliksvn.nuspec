@@ -3,10 +3,10 @@
   <metadata>
     <id>{{PackageName}}</id>
     <version>{{PackageVersion}}</version>
-    <title>SlikSVN</title>
+    <title>Slik SVN</title>
     <authors>Slik Company</authors>
     <projectUrl>http://www.sliksvn.com/</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/sliksvn.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/sliksvn.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>We provide a standalone command line Subversion package for Windows. The installer contains all command line tools (svn, svnadmin, svnsync, svnserve, svnmucc, etc.) but no application bindings nor Apache modules. The tools are fully side-by-side compatible with other packages. Ideal for automated build and deploy scripts</description>
     <summary>Slik subversion reliable version control starts here</summary>
@@ -17,3 +17,4 @@
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

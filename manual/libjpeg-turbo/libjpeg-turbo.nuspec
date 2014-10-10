@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>libjpeg-turbo</id>
@@ -29,3 +29,4 @@ libjpeg-turbo was originally based on libjpeg/SIMD by Miyasaka Masaru, but the T
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

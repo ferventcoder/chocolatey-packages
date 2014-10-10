@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>adobereader</id>
+    <title>Adobe Reader</title>
+    <version>11.0.08</version>
+    <authors>Adobe</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Adobe Reader - View and interact with PDF files</summary>
+    <description>Adobe Reader is the global standard for reliably viewing, printing, and commenting on PDF documents. It's the only PDF file viewer that can open and interact with all types of PDF content, including forms and multimedia.</description>
+    <projectUrl>http://www.adobe.com/products/reader.html</projectUrl>
+    <tags>adobereader pdf reader admin</tags>
+    <licenseUrl>http://www.adobe.com/products/eulas/pdfs/Reader10_combined-20100625_1419.pdf</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/adobereader.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,1 @@
+Install-ChocolateyPackage 'grepwin' 'msi' '/quiet' 'http://sourceforge.net/projects/stefanstools/files/grepWin/1.6.6/grepWin-1.6.6.msi/download' 'http://sourceforge.net/projects/stefanstools/files/grepWin/1.6.6/grepWin-1.6.6-64.msi/download'

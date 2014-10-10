@@ -10,11 +10,11 @@
   write-host "Finishing spotify install with AutoIt3 using `'$installerFile`'"
   $installArgs = "/c autoit3 `"$installerFile`""
   Start-Process "cmd" -ArgumentList "$installArgs" -Wait
-  
+
   Write-ChocolateySuccess 'spotify'
 } catch {
   Write-ChocolateyFailure 'spotify' "$($_.Exception.Message)"
-  throw 
+  throw
 }
 finally {
   $env:__COMPAT_LAYER=$null

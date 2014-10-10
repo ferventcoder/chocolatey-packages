@@ -1,9 +1,9 @@
-$packageName = 'nodejs'
+﻿$packageName = 'nodejs'
 $url = 'http://nodejs.org/dist/v{{PackageVersion}}/node.exe' # download url
 $url64 = 'http://nodejs.org/dist/v{{PackageVersion}}/x64/node.exe' # 64bit URL here or just use the same as $url
 
-try { 
-  $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)" 
+try {
+  $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   ### For BinRoot, use the following instead ###
   #$binRoot = "$env:systemdrive\tools"
   ### Using an environment variable to to define the bin root until we implement configuration ###
@@ -19,5 +19,5 @@ try {
   Write-ChocolateySuccess "$packageName"
 } catch {
   Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
-  throw 
+  throw
 }

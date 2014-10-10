@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <version>2.0.2181</version>
@@ -6,12 +6,12 @@
     <owners>Jon Galloway,Alan Stevens</owners>
     <licenseUrl>http://www.sublimetext.com/eula</licenseUrl>
     <projectUrl>http://www.sublimetext.com/2</projectUrl>
-    <iconUrl>http://www.sublimetext.com/favicon.ico</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/sublimetext.png</iconUrl>
     <id>sublimetext2</id>
     <title>Sublime Text 2</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Sublime Text 2 (beta) is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features. Sublime Text may be downloaded and evaluated for free, however a license must be purchased for continued use.
-    
+
     This brings the Sublime Text portable version to your system</description>
     <summary>Sublime Text 2 (beta) is a sophisticated text editor for code, html and prose. You'll love the slick user interface and extraordinary features.</summary>
     <tags>sublime text editor</tags>
@@ -20,3 +20,4 @@
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

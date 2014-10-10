@@ -1,4 +1,4 @@
-$package = 'Yeoman'
+﻿$package = 'Yeoman'
 
 try {
   npm install -g yo
@@ -9,3 +9,4 @@ try {
   Write-ChocolateyFailure $package "$($_.Exception.Message)"
   throw
 }
+

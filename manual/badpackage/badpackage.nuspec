@@ -17,3 +17,4 @@ You can find this over at -source https://www.myget.org/F/killerpackages/
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->

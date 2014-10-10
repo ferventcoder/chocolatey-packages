@@ -1,4 +1,4 @@
-$global:TestDrive = "$env:Temp\pester"
+﻿$global:TestDrive = "$env:Temp\pester"
 
 function Initialize-Setup() {
     if (Test-Path TestDrive:) { return }
@@ -16,3 +16,4 @@ function Setup([switch] $Dir, [switch] $File, $Path, $Content = "") {
         $Content | New-Item -Name $Path -Path TestDrive: -Type File -Force | Out-Null
     }
 }
+

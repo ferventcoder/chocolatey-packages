@@ -1,8 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>{{PackageName}}</id>
-    <title>Pip(Python) Installs Packages</title>
+    <title>Pip (Python) Installs Packages</title>
     <version>{{PackageVersion}}</version>
     <authors>The Pip developers</authors>
     <owners>Rob Reynolds</owners>
@@ -13,7 +13,7 @@
     <copyright>The pip developers</copyright>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://raw.githubusercontent.com/ferventcoder/chocolatey-packages/master/icons/python.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/python.png</iconUrl>
     <dependencies>
       <dependency id="easy.install" />
     </dependencies>
@@ -25,3 +25,4 @@
     <file src="tools\**" target="tools" />
   </files>
 </package>
+<!-- character encoding: “UTF-8” -->
