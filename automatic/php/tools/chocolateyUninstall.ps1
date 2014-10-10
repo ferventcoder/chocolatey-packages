@@ -2,5 +2,5 @@
 $packageName = '{{PackageName}}'
 $validExitCodes = @(0)
 $targetFolder = Join-Path $(Get-BinRoot) $packageName
-Echo ("Deleting" + $targetFolder)
+Echo ("Deleting " + $targetFolder)
 Remove-Item -Force -Recurse $targetFolder
