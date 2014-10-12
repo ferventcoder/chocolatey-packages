@@ -1,5 +1,6 @@
 ﻿try {
-  Install-ChocolateyPackage 'gitextensions' 'msi' '/quiet' '{{DownloadUrl}}'
+  # \{\{DownloadUrlx64\}\} is the required variable
+  Install-ChocolateyPackage 'gitextensions' 'msi' '/quiet' '{{DownloadUrlx64}}'
 
   #------- ADDITIONAL SETUP -------#
   $processor = Get-WmiObject Win32_Processor

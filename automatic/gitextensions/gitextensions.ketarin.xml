@@ -2,10 +2,10 @@
 <Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="ecfb3577-e5c0-470a-a5bd-e484fcc8929c">
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserAgent>Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.101 Safari/537.36</UserAgent>
     <UserNotes />
-    <LastFileSize>10912835</LastFileSize>
-    <LastFileDate>2013-06-27T05:40:36.2817262</LastFileDate>
+    <LastFileSize>9290079</LastFileSize>
+    <LastFileDate>2014-08-19T23:27:45+02:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -24,15 +24,46 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
-            <Url>http://code.google.com/p/gitextensions/downloads/list</Url>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>&lt;tr title="Version ([\d\.]+)" class="folder</Regex>
+            <Url>http://sourceforge.net/projects/gitextensions/files/Git%20Extensions/</Url>
             <StartText>&gt;
  
  Git Extensions </StartText>
             <EndText> Windows installer</EndText>
             <TextualContent>asfd</TextualContent>
             <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>urlPart</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>http://sourceforge.net/projects/gitextensions/files/Git%20Extensions/(Version%20[^\r\n]+Setup\.msi)/download</Regex>
+            <Url>http://sourceforge.net/projects/gitextensions/files/Git%20Extensions/Version {version}/</Url>
+            <Name>urlPart</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>mirror</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>StartEnd</VariableType>
+            <Regex />
+            <Url>{generalUrl}</Url>
+            <StartText>;use_mirror=</StartText>
+            <EndText>"&gt;</EndText>
+            <TextualContent />
+            <Name>mirror</Name>
           </UrlVariable>
         </value>
       </item>
@@ -45,26 +76,22 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>""</TextualContent>
+            <TextualContent>{generalUrl}</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
       <item>
         <key>
-          <string>urlpart</string>
+          <string>generalUrl</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
+            <VariableType>Textual</VariableType>
             <Regex />
-            <Url>http://code.google.com/feeds/p/gitextensions/downloads/basic</Url>
-            <StartText>Setup.msi&lt;/id&gt;
- &lt;link rel="alternate" type="text/html" href="http://code.google.com/p/gitextensions/downloads/detail?name=</StartText>
-            <EndText>" /&gt;
-</EndText>
-            <Name>urlpart</Name>
+            <TextualContent>http://sourceforge.net/projects/gitextensions/files/Git%20Extensions/{urlPart}/download</TextualContent>
+            <Name>generalUrl</Name>
           </UrlVariable>
         </value>
       </item>
@@ -75,13 +102,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\GitExtensions246Setup.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\GitExtensions-2.48-Setup.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
-    <FileHippoId>foxit</FileHippoId>
-    <LastUpdated>2013-06-27T05:40:36.2817262</LastUpdated>
+    <FileHippoId />
+    <LastUpdated>2014-10-12T23:40:30.0877504+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://gitextensions.googlecode.com/files/{urlpart}</FixedDownloadUrl>
+    <FixedDownloadUrl>http://{mirror}.dl.sourceforge.net/project/gitextensions/Git%20Extensions/{urlPart}</FixedDownloadUrl>
     <Name>gitextensions</Name>
   </ApplicationJob>
 </Jobs>
