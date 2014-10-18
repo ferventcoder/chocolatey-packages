@@ -1,21 +1,23 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-    <metadata>
-        <id>jing</id>
-        <version>2.8.13007</version>
-        <title>Jing</title>
-        <authors>TechSmith</authors>
-        <owners>Rob Reynolds</owners>
-        <licenseUrl>http://www.techsmith.com/jing.html</licenseUrl>
-        <projectUrl>http://www.techsmith.com/jing.html</projectUrl>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Simple and FREE, Jing is the perfect way to enhance your fast-paced online conversations. Create images and videos of what you see on your computer screen, then share them instantly!</description>
-        <summary>Jing - Record your screen</summary>
-        <releaseNotes />
-        <copyright>TechSmith</copyright>
-        <tags>jing record screen admin</tags>
-    </metadata>
-    <files>
-        <file src="tools\chocolateyInstall.ps1" target="tools\chocolateyInstall.ps1" />
-    </files>
+  <metadata>
+    <id>jing</id>
+    <version>2.8.13007</version>
+    <title>Jing</title>
+    <authors>TechSmith</authors>
+    <owners>Rob Reynolds</owners>
+    <licenseUrl>http://www.techsmith.com/jing.html</licenseUrl>
+    <projectUrl>http://www.techsmith.com/jing.html</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/fd1a5932edc26194500554d026ca35e6c0274b6c/icons/jing.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Simple and FREE, Jing is the perfect way to enhance your fast-paced online conversations. Create images and videos of what you see on your computer screen, then share them instantly!</description>
+    <summary>Jing – Record your screen</summary>
+    <releaseNotes />
+    <copyright>TechSmith</copyright>
+    <tags>jing record screen admin</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
 </package>
+<!-- character encoding: “UTF-8” -->
