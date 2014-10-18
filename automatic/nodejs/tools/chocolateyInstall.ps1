@@ -1,1 +1,1 @@
-﻿#Install-VirtualPackage 'nodejs.commandline' 'nodejs.install'
+﻿#Install-VirtualPackage 'nodejs.portable' 'nodejs.install'

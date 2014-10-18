@@ -10,7 +10,7 @@
   Start-sleep 3
 
   if (![System.IO.Directory]::Exists($gitInstallDir)) {[System.IO.Directory]::CreateDirectory($gitInstallDir)}
-  $tempDir = "$env:TEMP\chocolatey\git.commandline"
+  $tempDir = "$env:TEMP\chocolatey\git.portable"
   if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
   $file = Join-Path $tempDir "git.7z"
   #Get-ChocolateyWebFile 'git' "$file" 'http://msysgit.googlecode.com/files/PortableGit-1.7.10-preview20120409.7z'
@@ -30,9 +30,9 @@
 #  #make GIT core.autocrlf false
 #  & "$env:comspec" '/c git config --global core.autocrlf false'
 
-  Write-ChocolateySuccess 'git.commandline'
+  Write-ChocolateySuccess 'git.portable'
 } catch {
-  Write-ChocolateyFailure 'git.commandline' $($_.Exception.Message)
+  Write-ChocolateyFailure 'git.portable' $($_.Exception.Message)
   throw
 }
 

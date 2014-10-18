@@ -1,1 +1,1 @@
-﻿#Install-VirtualPackage 'notepadplusplus.commandline' 'notepadplusplus.install'
+﻿#Install-VirtualPackage 'notepadplusplus.portable' 'notepadplusplus.install'

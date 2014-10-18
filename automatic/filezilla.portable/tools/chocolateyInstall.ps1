@@ -1,4 +1,4 @@
-﻿$packageName = 'filezilla.commandline'
+﻿$packageName = 'filezilla.portable'
 $url = 'http://sourceforge.net/projects/filezilla/files/FileZilla_Client/{{PackageVersion}}/FileZilla_{{PackageVersion}}_win32.zip/download'
 $unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 

@@ -12,10 +12,10 @@
   $zipUrl = '{{DownloadUrl}}'
   $zipUrl64 = '{{DownloadUrlx64}}'
 
-  Install-ChocolateyZipPackage 'httrack.tool' "$zipUrl" "$installDir" "$zipUrl64"
+  Install-ChocolateyZipPackage 'httrack.portable' "$zipUrl" "$installDir" "$zipUrl64"
 
-  Write-ChocolateySuccess 'httrack.tool'
+  Write-ChocolateySuccess 'httrack.portable'
 } catch {
-  Write-ChocolateyFailure 'httrack.tool' "$($_.Exception.Message)"
+  Write-ChocolateyFailure 'httrack.portable' "$($_.Exception.Message)"
   throw
 }

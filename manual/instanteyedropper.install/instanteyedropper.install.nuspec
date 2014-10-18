@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>instanteyedropper.app</id>
+    <id>instanteyedropper.install</id>
     <title>Instant Eyedropper (Application Install)</title>
     <version>1.75</version>
     <authors>SpiceBrains.com</authors>

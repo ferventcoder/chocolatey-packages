@@ -131,7 +131,7 @@
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup /p maxthon /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}" 
+    <ExecutePreCommand>chocopkgup /p maxthon /v {version} /u "{preupdate-url}" /u64 "{url64}" /pp "{file}"
 REM /disablepush</ExecutePreCommand>
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
@@ -144,6 +144,6 @@ REM /disablepush</ExecutePreCommand>
     <LastUpdated>2013-07-12T17:45:37.9207229</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{url}</FixedDownloadUrl>
-    <Name>maxthon.commandline</Name>
+    <Name>maxthon.portable</Name>
   </ApplicationJob>
 </Jobs>

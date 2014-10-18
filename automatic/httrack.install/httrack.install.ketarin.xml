@@ -130,6 +130,6 @@ REM /disablepush</ExecutePreCommand>
     <LastUpdated>2013-07-14T12:37:26.711047</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.httrack.com/httrack-{version}.exe</FixedDownloadUrl>
-    <Name>httrack.app</Name>
+    <Name>httrack.install</Name>
   </ApplicationJob>
 </Jobs>

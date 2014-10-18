@@ -89,6 +89,6 @@
     <LastUpdated>2014-07-29T19:49:54.6608007+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{urlUsingMirror}</FixedDownloadUrl>
-    <Name>filezilla.commandline</Name>
+    <Name>filezilla.portable</Name>
   </ApplicationJob>
 </Jobs>

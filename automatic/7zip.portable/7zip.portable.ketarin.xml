@@ -69,6 +69,6 @@
     <LastUpdated>2012-05-23T02:24:43.72565</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>httpx://downloads.sourceforge.net/project/sevenzip/7-Zip/{version}/7za{VersionNoDots}.zip</FixedDownloadUrl>
-    <Name>7zip.commandline</Name>
+    <Name>7zip.portable</Name>
   </ApplicationJob>
 </Jobs>

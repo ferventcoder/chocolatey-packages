@@ -1,1 +1,1 @@
-﻿Install-ChocolateyZipPackage '7zip.commandline' '{{DownloadUrl}}' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿Install-ChocolateyZipPackage '7zip.portable' '{{DownloadUrl}}' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"

@@ -77,6 +77,6 @@
     <LastUpdated>2014-06-02T00:54:03.4512009+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://github.com/msysgit/msysgit/releases/download/{urlPart}</FixedDownloadUrl>
-    <Name>git.commandline</Name>
+    <Name>git.portable</Name>
   </ApplicationJob>
 </Jobs>

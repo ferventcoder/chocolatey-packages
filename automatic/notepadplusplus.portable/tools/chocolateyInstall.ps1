@@ -1,1 +1,1 @@
-﻿Install-ChocolateyZipPackage 'notepadplusplus.commandline' '{{DownloadUrl}}' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿Install-ChocolateyZipPackage 'notepadplusplus.portable' '{{DownloadUrl}}' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"

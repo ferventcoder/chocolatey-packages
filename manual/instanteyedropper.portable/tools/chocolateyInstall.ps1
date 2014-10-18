@@ -11,22 +11,22 @@
   #$env:Path = "$($env:Path);$installDir"
   $zipUrl = 'http://instant-eyedropper.com/download/InstantEyedropper.zip'
 
-  Install-ChocolateyZipPackage 'instanteyedropper.tool' "$zipUrl" "$installDir"
+  Install-ChocolateyZipPackage 'instanteyedropper.portable' "$zipUrl" "$installDir"
 
   ### OR for 7z ###
 
   # if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateDirectory($installDir)}
 
-  # $tempDir = "$env:TEMP\chocolatey\instanteyedropper.tool"
+  # $tempDir = "$env:TEMP\chocolatey\instanteyedropper.portable"
   # if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
 
-  # $file = Join-Path $tempDir "instanteyedropper.tool.7z"
-  # Get-ChocolateyWebFile 'instanteyedropper.tool' "$file" "$zipUrl"
+  # $file = Join-Path $tempDir "instanteyedropper.portable.7z"
+  # Get-ChocolateyWebFile 'instanteyedropper.portable' "$file" "$zipUrl"
 
   # Start-Process "7za" -ArgumentList "x -o`"$installDir`" -y `"$file`"" -Wait
 
-  Write-ChocolateySuccess 'instanteyedropper.tool'
+  Write-ChocolateySuccess 'instanteyedropper.portable'
 } catch {
-  Write-ChocolateyFailure 'instanteyedropper.tool' "$($_.Exception.Message)"
+  Write-ChocolateyFailure 'instanteyedropper.portable' "$($_.Exception.Message)"
   throw
 }

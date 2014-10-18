@@ -129,6 +129,6 @@
     <LastUpdated>2013-07-14T12:37:26.5322167+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.httrack.com/httrack-noinst-{version}.zip</FixedDownloadUrl>
-    <Name>httrack.tool</Name>
+    <Name>httrack.portable</Name>
   </ApplicationJob>
 </Jobs>

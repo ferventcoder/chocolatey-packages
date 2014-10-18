@@ -1,1 +1,1 @@
-﻿#Install-VirtualPackage('git.commandline','git.install')
+﻿#Install-VirtualPackage('git.portable','git.install')

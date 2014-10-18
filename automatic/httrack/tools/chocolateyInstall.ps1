@@ -1,1 +1,1 @@
-﻿#Install-VirtualPackage 'httrack.tool' 'httrack.app'
+﻿#Install-VirtualPackage 'httrack.portable' 'httrack.install'

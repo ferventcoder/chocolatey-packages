@@ -19,7 +19,7 @@ Simplicity of the user interface has a high priority</description>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-      <dependency id="sumatrapdf.commandline" version="[{{PackageVersion}}]" />
+      <dependency id="sumatrapdf.portable" version="[{{PackageVersion}}]" />
     </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>

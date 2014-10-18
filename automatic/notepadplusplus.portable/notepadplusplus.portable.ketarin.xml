@@ -47,6 +47,6 @@
     <LastUpdated>2013-07-09T05:40:40.9559697</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.tuxfamily.org/notepadplus/{version}/npp.{version}.bin.zip</FixedDownloadUrl>
-    <Name>notepadplusplus.commandline</Name>
+    <Name>notepadplusplus.portable</Name>
   </ApplicationJob>
 </Jobs>

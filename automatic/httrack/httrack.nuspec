@@ -16,7 +16,7 @@ It allows you to download a World Wide Web site from the Internet to a local dir
     <licenseUrl>http://www.gnu.org/licenses/gpl.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-      <dependency id="httrack.app" version="{{PackageVersion}}" />
+      <dependency id="httrack.install" version="{{PackageVersion}}" />
     </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>

@@ -1,1 +1,1 @@
-﻿#Install-VirtualPackage 'instanteyedropper.tool' 'instanteyedropper.app'
+﻿#Install-VirtualPackage 'instanteyedropper.portable' 'instanteyedropper.install'

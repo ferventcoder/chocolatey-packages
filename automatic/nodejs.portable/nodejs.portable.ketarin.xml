@@ -62,6 +62,6 @@
     <LastUpdated>2013-07-11T21:01:36.8011616</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://nodejs.org/dist/v{version}/node.exe</FixedDownloadUrl>
-    <Name>nodejs.commandline</Name>
+    <Name>nodejs.portable</Name>
   </ApplicationJob>
 </Jobs>

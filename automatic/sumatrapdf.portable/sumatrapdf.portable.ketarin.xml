@@ -131,6 +131,6 @@
     <LastUpdated>2013-08-02T13:05:42.7850013+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://kjkpub.s3.amazonaws.com/sumatrapdf/rel/SumatraPDF-{version}.zip</FixedDownloadUrl>
-    <Name>sumatrapdf.commandline</Name>
+    <Name>sumatrapdf.portable</Name>
   </ApplicationJob>
 </Jobs>

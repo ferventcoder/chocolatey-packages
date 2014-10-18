@@ -61,6 +61,6 @@
     <LastUpdated>2013-12-27T16:47:35.8819275+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.autoitscript.com/files/autoit3/autoit-v3.zip</FixedDownloadUrl>
-    <Name>autoit.commandline</Name>
+    <Name>autoit.portable</Name>
   </ApplicationJob>
 </Jobs>

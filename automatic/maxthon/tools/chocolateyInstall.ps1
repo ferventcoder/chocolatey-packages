@@ -1,1 +1,1 @@
-﻿#Install-VirtualPackage 'maxthon.commandline' 'maxthon.install'
+﻿#Install-VirtualPackage 'maxthon.portable' 'maxthon.install'
