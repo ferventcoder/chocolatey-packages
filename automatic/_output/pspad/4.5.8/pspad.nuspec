@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>pspad</id>
+    <title>PSPad</title>
+    <version>4.5.8</version>
+    <authors>DownloadBestSoft</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>PSPad is a well-known freeware editor among Microsoft Windows users.</summary>
+    <description>
+PSPad – editor for developers for Microsoft Windows systems
+
+The universal freeware editor, useful for people who:
+
+work with plain text – the editor has a wealth of formatting functions, including a spell checker
+
+create web pages – as a web authoring editor, PSPad contains many unique tools that save your time
+
+want to use a good IDE for their compiler – PSPad catches and parses compiler output, integrates external help files, compares versions and much more …
+    </description>
+    <projectUrl>http://www.pspad.com/</projectUrl>
+    <tags>pspad editor text notepad admin</tags>
+    <copyright></copyright>
+    <!--<licenseUrl>__REPLACE__</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/pspad.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: “UTF-8” -->
