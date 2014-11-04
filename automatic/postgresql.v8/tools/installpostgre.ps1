@@ -5,7 +5,7 @@
   #create postgres user
   #Could do this - http://blogs.technet.com/b/heyscriptingguy/archive/2010/11/23/use-powershell-to-create-local-user-accounts.aspx | http://www.yusufozturk.info/windows-server/how-to-create-windows-user-with-powershell-2.html | http://stackoverflow.com/questions/383390/create-local-user-with-powershell-windows-vista
   $postgreAccount = 'postgres'
-  $postgrePassword = 'Postgres1234'
+  $postgrePassword = 'ChangeThis!2'
   Write-Host "Deleting and recreating $postgreAccount windows account..."
   try {
     net user $postgreAccount /delete
