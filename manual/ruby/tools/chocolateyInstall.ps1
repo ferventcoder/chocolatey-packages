@@ -1,7 +1,6 @@
 ﻿try {
 
   # Temporary include function until it is included with Chocolatey
-
   $thisDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
   if (!(Get-Command Get-BinRoot -errorAction SilentlyContinue))
   {

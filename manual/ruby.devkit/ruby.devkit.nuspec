@@ -3,7 +3,7 @@
   <metadata>
     <id>ruby.devkit</id>
     <title>Ruby DevKit (1.8 &amp; 1.9)</title>
-    <version>4.5.2.20111231</version>
+    <version>4.5.2.20120101</version>
     <authors>RubyInstaller Contributors</authors>
     <owners>Rob Reynolds</owners>
     <summary>Ruby Development Kit - https://github.com/oneclick/rubyinstaller/wiki/Development-Kit</summary>
