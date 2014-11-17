@@ -3,7 +3,7 @@
   <metadata>
     <id>kdiff3</id>
     <title>KDiff3</title>
-    <version>0.9.97</version>
+    <version>0.9.98</version>
     <authors>Joachim Eibl</authors>
     <owners>Chris Ortman</owners>
     <summary>KDiff3 - graphical text difference analyzer (Diff / Merge tool)</summary>

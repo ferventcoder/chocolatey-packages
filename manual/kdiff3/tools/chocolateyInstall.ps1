@@ -1,5 +1,5 @@
 ﻿try {
-    Install-ChocolateyPackage 'kdiff3' 'exe' '/S' 'http://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.97/KDiff3-32bit-Setup_0.9.97.exe' 'http://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.97/KDiff3-64bit-Setup_0.9.97.exe'  -validExitCodes @(0)
+    Install-ChocolateyPackage 'kdiff3' 'exe' '/S' 'http://sourceforge.net/projects/kdiff3/files/kdiff3/0.9.98/KDiff3-32bit-Setup_0.9.98-3.exe' 'http://sourceforge.net/projects/kdiff3/files/kdiff3/0.9.98/KDiff3-64bit-Setup_0.9.98-2.exe'  -validExitCodes @(0)
 
   #------additional setup ----------------
   #add it to the path
