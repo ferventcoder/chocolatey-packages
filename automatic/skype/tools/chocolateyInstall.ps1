@@ -9,7 +9,9 @@ function isInstalled() {
 
 $packageName = 'skype'
 $fileType = 'msi'
-$silentArgs = '/qn /norestart'
+# http://community.skype.com/t5/Windows-archive/Unattended-install/td-p/184628s
+$silentArgs = '/qn /norestart STARTSKYPE=FALSE TRANSFORMS=:RemoveDesktopShortcut.mst TRANSFORMS=:RemoveStartup.mst'
+
 $url = '{{DownloadUrl}}'
 
 try {
