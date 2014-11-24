@@ -1,50 +1,66 @@
-﻿$packageName = 'mingw'
+﻿# Default values
+$packageName = 'mingw'
 $packageVersion = '4.8.3'
 $rev = 'rev0'
 $threads = 'posix'
-$exceptionHandling = 'sjlj' #dwarf is 32bit only, seh is 64bit only, sjlj works with 32 / 64
+$exception = 'default' #dwarf is 32bit only, seh is 64bit only, sjlj works with 32 / 64
+
+$arguments = @{}
+$packageParameters = $env:chocolateyPackageParameters
+
+if($packageParameters) {
+  $MATCH_PATTERN = "/([a-zA-Z]+):([a-zA-Z0-9]+)"
+  $PARAMATER_NAME_INDEX = 1
+  $VALUE_INDEX = 2
+
+  if($packageParameters -match $MATCH_PATTERN ){
+    $results = $packageParameters | Select-String $MATCH_PATTERN -AllMatches
+    $results.matches | % {
+      $arguments.Add(
+        $_.Groups[$PARAMATER_NAME_INDEX].Value.Trim(),
+        $_.Groups[$VALUE_INDEX].Value.Trim())
+    }
+  }
+
+  if($arguments.ContainsKey("exception")) {
+    Write-Host "Exception Argument Found"
+    $exception = $arguments["exception"]
+  }
+
+  if($arguments.ContainsKey("threads")) {
+    Write-Host "Threads Argument Found"
+    $threads = $arguments["threads"]
+  }
+}
+
+if (Get-ProcessorBits 64) {
+  $mingwDir = 'mingw64'
+} else {
+  $mingwDir = 'mingw32'
+}
+
+if ($exception -eq 'sjlj') {
+  $exceptionHandling = 'sjlj'
+  $exceptionHandling64 = 'sjlj'
+} else {
+  if ($exception -ne 'default') {
+    Write-Host "Unknown value $exception for exception parameter, using defaults"
+  }
+  $exceptionHandling = 'dwarf'
+  $exceptionHandling64 = 'seh'
+}
 
 $url = "http://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/$packageVersion/threads-$threads/$exceptionHandling/i686-$packageVersion-release-$threads-$exceptionHandling-rt_v3-$rev.7z"
 #http://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.8.3/threads-posix/sjlj/i686-4.8.3-release-posix-sjlj-rt_v3-rev0.7z
-$url64 = "http://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/$packageVersion/threads-$threads/$exceptionHandling/x86_64-$packageVersion-release-$threads-$exceptionHandling-rt_v3-$rev.7z"
+$url64 = "http://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/$packageVersion/threads-$threads/$exceptionHandling64/x86_64-$packageVersion-release-$threads-$exceptionHandling64-rt_v3-$rev.7z"
 #http://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/4.8.3/threads-posix/sjlj/x86_64-4.8.3-release-posix-sjlj-rev0.7z
 
-try {
+$binRoot = Get-BinRoot
+Write-Debug "Bin Root is $binRoot"
 
-  $binRoot = Get-BinRoot
-  Write-Debug "Bin Root is $binRoot"
-  $installDir = Join-Path "$binRoot" 'MinGW'
-  Write-Host "Adding `'$installDir`' to the path and the current shell path"
-  Install-ChocolateyPath "$installDir\bin"
-  $env:Path = "$($env:Path);$installDir\bin"
+Install-ChocolateyZipPackage "$packageName" "$url" "$binRoot" "$url64"
 
-
-  if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateDirectory($installDir)}
-
-  $tempDir = "$env:TEMP\chocolatey\$($packageName)"
-  if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
-
-  $file = Join-Path $tempDir "$($packageName).7z"
-  Get-ChocolateyWebFile "$packageName" "$file" "$url" "$url64"
-  Write-Host "Extracting `'$file`' to `'$installDir`'"
-  if (![System.IO.Directory]::Exists("$installDir\temp")) {[System.IO.Directory]::CreateDirectory("$installDir\temp")}
-  Start-Process "7za" -ArgumentList "x -o`"$installDir\temp`" -y `"$file`"" -Wait
-
-  if (Get-ProcessorBits 64) {
-    Copy-Item "$($installDir)\temp\mingw64\*" "$($installDir)" -Force -Recurse
-  } else {
-    Copy-Item "$($installDir)\temp\mingw32\*" "$($installDir)" -Force -Recurse
-  }
-
-  try {
-    Remove-Item "$($installDir)\temp\" -Force -Recurse
-  } catch {
-    Write-Warning "Could not remove `"$($installDir)\temp\`". Please remove manually."
-  }
-
-  Write-ChocolateySuccess "$packageName"
-} catch {
-  Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
-  throw
-}
-
+$installDir = Join-Path "$binRoot" "$mingwDir"
+Write-Host "Adding `'$installDir`' to the path and the current shell path"
+Install-ChocolateyPath "$installDir\bin"
+$env:Path = "$($env:Path);$installDir\bin"
