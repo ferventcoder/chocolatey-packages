@@ -1,5 +1,5 @@
 ﻿try {
-  Install-ChocolateyPackage 'git.install' 'exe' '/VERYSILENT /NORESTART /NOCANCEL /SP- /NOICONS  /COMPONENTS="assoc,assoc_sh" /LOG' '{{DownloadUrl}}'
+  Install-ChocolateyPackage 'git.install' 'exe' '/VERYSILENT /NORESTART /NOCANCEL /SP- /NOICONS  /COMPONENTS="assoc,assoc_sh,ext\reg\shellhere,ext\reg\guihere" /LOG' '{{DownloadUrl}}'
 
   #------- ADDITIONAL SETUP -------#
   #$uninstallKey = 'Git_is1'
