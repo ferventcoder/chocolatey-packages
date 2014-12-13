@@ -1,6 +1,7 @@
 ﻿$packageName = 'adobereader'
 $installerType = 'EXE'
 $silentArgs = '/sAll /msi /norestart /quiet ALLUSERS=1 EULA_ACCEPT=YES'
+$validExitCodes = @(0,3010) #3010: reboot required
 #$url = 'http://ardownload.adobe.com/pub/adobe/reader/win/{mainversion}.x/{version}/en_US/AdbeRdr{version:replace:.:}_en_US.exe'
 $url = '{{DownloadUrl}}'
 #http://forums.adobe.com/thread/754256
@@ -32,7 +33,7 @@ if(($LCID -eq "3082") -or ($LCID -eq "1034")){ ## Spanish
   $url = $url
 }
 
-Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url"
+Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes
 
 #LCID table
 #http://msdn.microsoft.com/es-es/goglobal/bb964664.aspx
