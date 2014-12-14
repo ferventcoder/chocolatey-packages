@@ -1,17 +1,13 @@
 ﻿$packageName = 'adobereader'
 $installerType = 'EXE'
+#Command Line Switches for the Bootstrap Web Installer: https://forums.adobe.com/message/3291894#3291894
 $silentArgs = '/sAll /msi /norestart /quiet ALLUSERS=1 EULA_ACCEPT=YES'
 $validExitCodes = @(0,3010) #3010: reboot required
 #$url = 'http://ardownload.adobe.com/pub/adobe/reader/win/{mainversion}.x/{version}/en_US/AdbeRdr{version:replace:.:}_en_US.exe'
 $url = '{{DownloadUrl}}'
-#http://forums.adobe.com/thread/754256
-#http://www.appdeploy.com/messageboards/tm.asp?m=37416
-# '/sPB /msi /norestart ALLUSERS=1 EULA_ACCEPT=YES'
-#'/sAll /rs /msi "/qb-! /norestart ALLUSERS=1 EULA_ACCEPT=YES SUPPRESS_APP_LAUNCH=YES"'
-#'/msi /norestart /quiet'
 
-# the url changes based on the language - not entirely happy with the way this works
 Write-Debug "Detecting Locale..."
+# LCID table: #http://msdn.microsoft.com/goglobal/bb964664.aspx
 $mapping = @{
   1033="en_US"; # 1033 = English - United States
   2057="en_US"; # 2057 = English - United Kingdom
@@ -92,6 +88,3 @@ if ($mapping.ContainsKey($LCID)) {
 }
 
 Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" -validExitCodes $validExitCodes
-
-#LCID table
-#http://msdn.microsoft.com/goglobal/bb964664.aspx
