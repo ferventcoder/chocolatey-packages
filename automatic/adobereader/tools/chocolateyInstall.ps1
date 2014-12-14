@@ -82,7 +82,7 @@ if ($mapping.ContainsKey($LCID)) {
   $locale = $mapping.Get_Item($LCID);
   Write-Host "Switching to $locale"
   $url = $url -replace 'en_US', "$locale"
-} else { ## English
+} else {
   Write-Debug "Leaving the url to the default English version."
   $url = $url
 }
