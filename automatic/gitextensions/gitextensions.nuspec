@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>gitextensions</id>
+    <id>{{PackageName}}</id>
     <title>Git Extensions</title>
     <version>{{PackageVersion}}</version>
     <authors>Henk Westhuis</authors>
@@ -12,7 +12,7 @@
     <tags>gitextensions git gui admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/gitextensions.png</iconUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/557204b069c6899aef225a90914163079b1b4daa/icons/gitextensions.svg</iconUrl>
     <dependencies>
       <dependency id="git" />
     </dependencies>
