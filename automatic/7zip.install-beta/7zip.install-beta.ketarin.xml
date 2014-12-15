@@ -1,0 +1,88 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<Jobs>
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b0a7de5a-7165-45d4-91df-e0d49a5da79b">
+    <WebsiteUrl />
+    <UserAgent>chocolatey</UserAgent>
+    <UserNotes />
+    <LastFileSize>1180834</LastFileSize>
+    <LastFileDate>2014-12-07T16:59:17+01:00</LastFileDate>
+    <IgnoreFileInformation>false</IgnoreFileInformation>
+    <DownloadBeta>Default</DownloadBeta>
+    <DownloadDate xsi:nil="true" />
+    <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
+    <VariableChangeIndicator />
+    <CanBeShared>true</CanBeShared>
+    <ShareApplication>false</ShareApplication>
+    <ExclusiveDownload>false</ExclusiveDownload>
+    <HttpReferer />
+    <SetupInstructions />
+    <Variables>
+      <item>
+        <key>
+          <string>version</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>&lt;P&gt;&lt;B&gt;Download 7-Zip ([0-9\.]+) beta</Regex>
+            <Url>http://www.7-zip.org/download.html</Url>
+            <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
+  &lt;TR&gt;
+    &lt;TH class="Title" align="center" width=90&gt;7-Zip </StartText>
+            <EndText>&lt;BR&gt;</EndText>
+            <TextualContent />
+            <Name>version</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>VersionNoDots</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>/7z(\d+).exe/download</Regex>
+            <Url>http://www.7-zip.org/download.html</Url>
+            <StartText> &lt;TH class="Title" align="center"&gt;Description&lt;/TH&gt;
+  &lt;/TR&gt;
+  &lt;TR&gt;
+    &lt;TD class="Item" align="center"&gt;&lt;A href="http://downloads.sourceforge.net/sevenzip/7z</StartText>
+            <EndText>.exe"&gt;Download</EndText>
+            <Name>VersionNoDots</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>http://sourceforge.net/projects/sevenzip/files/7-Zip/[0-9\.]+/7z\d+-x64.msi/download</Regex>
+            <Url>http://www.7-zip.org/download.html</Url>
+            <Name>url64</Name>
+          </UrlVariable>
+        </value>
+      </item>
+    </Variables>
+    <ExecuteCommand />
+    <ExecutePreCommand>chocopkgup /p 7zip /v {version} /u {preupdate-url} /u64 {url64}</ExecutePreCommand>
+    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecutePreCommandType>Batch</ExecutePreCommandType>
+    <Category />
+    <SourceType>FixedUrl</SourceType>
+    <PreviousLocation>C:\Chocolatey\_work\7z935.exe</PreviousLocation>
+    <DeletePreviousFile>true</DeletePreviousFile>
+    <Enabled>true</Enabled>
+    <FileHippoId />
+    <LastUpdated>2014-12-15T06:42:10.185206+01:00</LastUpdated>
+    <TargetPath>C:\Chocolatey\_work\</TargetPath>
+    <FixedDownloadUrl>httpx://downloads.sourceforge.net/project/sevenzip/7-Zip/{version}/7z{VersionNoDots}.exe</FixedDownloadUrl>
+    <Name>7zip.install-beta</Name>
+  </ApplicationJob>
+</Jobs>

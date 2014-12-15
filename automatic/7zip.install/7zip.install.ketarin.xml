@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>chocolatey</UserAgent>
     <UserNotes />
-    <LastFileSize>1110476</LastFileSize>
-    <LastFileDate>2012-05-28T06:27:28.5806822</LastFileDate>
+    <LastFileSize>1180834</LastFileSize>
+    <LastFileDate>2014-12-07T16:59:17+01:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -24,8 +24,8 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
+            <VariableType>RegularExpression</VariableType>
+            <Regex>&lt;P&gt;&lt;B&gt;Download 7-Zip ([0-9.]+) </Regex>
             <Url>http://www.7-zip.org/download.html</Url>
             <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
   &lt;TR&gt;
@@ -43,8 +43,8 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
+            <VariableType>RegularExpression</VariableType>
+            <Regex>/7z(\d+).exe/download</Regex>
             <Url>http://www.7-zip.org/download.html</Url>
             <StartText> &lt;TH class="Title" align="center"&gt;Description&lt;/TH&gt;
   &lt;/TR&gt;
@@ -63,7 +63,7 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>http://downloads.sourceforge.net/sevenzip/7z\d+-x64.msi</Regex>
+            <Regex>/7z\d+-x64.msi/download</Regex>
             <Url>http://www.7-zip.org/download.html</Url>
             <Name>url64</Name>
           </UrlVariable>
@@ -76,11 +76,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\7z920.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\7z935.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-05-28T06:27:28.5806822</LastUpdated>
+    <LastUpdated>2014-12-15T06:29:09.9761419+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>httpx://downloads.sourceforge.net/project/sevenzip/7-Zip/{version}/7z{VersionNoDots}.exe</FixedDownloadUrl>
     <Name>7zip.install</Name>
