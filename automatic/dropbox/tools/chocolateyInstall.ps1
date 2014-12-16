@@ -1,6 +1,9 @@
-﻿$packageName = 'dropbox'
+﻿$PSScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Definition
+Import-Module (Join-Path $PSScriptRoot 'functions.ps1')
+
+$packageName = 'dropbox'
 $version = '{{PackageVersion}}'
-$uninstallRegistryPath = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Dropbox'
+
 $filePath = "$env:TEMP\chocolatey\$packageName"
 $fileFullPath = "$filePath\${packageName}Install.exe"
 $url = 'https://dl-web.dropbox.com/u/17/Dropbox {{PackageVersion}}.exe'
@@ -14,32 +17,30 @@ $ahkFile = "$scriptPath\dropbox.ahk"
 
 try {
 
-    if (Test-Path $uninstallRegistryPath) {
-        $installedVersion = (Get-ItemProperty $uninstallRegistryPath).DisplayVersion
+  $installedVersion = (getDropboxRegProps).DisplayVersion
+
+  if ($installedVersion -eq $version) {
+    Write-Host "Dropbox $version is already installed."
+  } else {
+
+    # Download and install Dropbox
+
+    if (-not (Test-Path $filePath)) {
+      New-Item $filePath -type directory
     }
 
-    if ($installedVersion -eq $version) {
-        Write-Host "Dropbox $version is already installed."
-    } else {
+    Get-ChocolateyWebFile $packageName $fileFullPath $url
+    Start-Process 'AutoHotkey' $ahkFile
+    Start-Process $fileFullPath $silentArgs
+    Wait-Process -Name "dropboxInstall"
+    Remove-Item $fileFullPath
+  }
 
-        # Download and install Dropbox
-
-        if (-not (Test-Path $filePath)) {
-            New-Item $filePath -type directory
-        }
-
-        Get-ChocolateyWebFile $packageName $fileFullPath $url
-        Start-Process 'AutoHotkey' $ahkFile
-        Start-Process $fileFullPath $silentArgs
-        Wait-Process -Name "dropboxInstall"
-        Remove-Item $fileFullPath
-    }
-
-    Write-ChocolateySuccess $packageName
+  Write-ChocolateySuccess $packageName
 
 } catch {
 
-    Write-ChocolateyFailure $packageName $($_.Exception.Message)
-    throw
+  Write-ChocolateyFailure $packageName $($_.Exception.Message)
+  throw
 }
 

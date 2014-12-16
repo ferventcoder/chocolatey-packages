@@ -1,18 +1,19 @@
-﻿try {
+﻿$PSScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Definition
+Import-Module (Join-Path $PSScriptRoot 'functions.ps1')
 
-    $packageName = 'dropbox'
-    $fileType = 'exe'
-    $silentArgs = '/S'
-    $uninstallerPath = Join-Path $env:APPDATA 'Dropbox\bin\DropboxUninstaller.exe'
+try {
 
-    if (Test-Path $uninstallerPath) {
-        Uninstall-ChocolateyPackage $packageName $fileType $silentArgs $uninstallerPath
-    }
+  $packageName = 'dropbox'
+  $fileType = 'exe'
+  $silentArgs = '/S'
+  $uninstallerPath = (getDropboxRegProps).UninstallString
 
-    Write-ChocolateySuccess $packageName
+  if ($uninstallerPath) {
+    Uninstall-ChocolateyPackage $packageName $fileType $silentArgs $uninstallerPath
+  }
 
 } catch {
-    Write-ChocolateyFailure $packageName $($_.Exception.Message)
-    throw
+  Write-ChocolateyFailure $packageName $($_.Exception.Message)
+  throw
 }
 
