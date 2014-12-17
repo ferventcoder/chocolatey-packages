@@ -1,1 +1,1 @@
-﻿#Install-VirtualPackage('7zip.commandline','7zip.install')
+﻿#Install-VirtualPackage('7zip.portable','7zip.install')

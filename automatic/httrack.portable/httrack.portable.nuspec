@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>httrack</id>
-    <title>HTTrack</title>
+    <id>httrack.portable</id>
+    <title>HTTrack (Non-installed Tool)</title>
     <version>{{PackageVersion}}</version>
     <authors>Xavier Roche</authors>
     <owners>Rob Reynolds</owners>
@@ -15,9 +15,6 @@ It allows you to download a World Wide Web site from the Internet to a local dir
     <copyright></copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <dependencies>
-      <dependency id="httrack.install" version="{{PackageVersion}}" />
-    </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>

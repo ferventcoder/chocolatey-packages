@@ -1,1 +1,1 @@
-﻿#Install-VirtualPackage 'sumatrapdf.commandline' 'sumatrapdf.install'
+﻿#Install-VirtualPackage 'sumatrapdf.portable' 'sumatrapdf.install'

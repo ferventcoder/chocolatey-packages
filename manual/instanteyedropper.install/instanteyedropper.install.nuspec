@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>instanteyedropper</id>
-    <title>Instant Eyedropper</title>
+    <id>instanteyedropper.install</id>
+    <title>Instant Eyedropper (Application Install)</title>
     <version>1.75</version>
     <authors>SpiceBrains.com</authors>
     <owners>Rob Reynolds</owners>
@@ -14,14 +14,11 @@
     Webmasters may repeat this operation many times a day. Just imagine how much time can be saved by using Instant Eyedropper to do the same thing with a Single Click!
     </description>
     <projectUrl>http://instant-eyedropper.com/</projectUrl>
-    <tags>instanteyedropper html color match</tags>
+    <tags>instanteyedropper html color match admin</tags>
     <copyright>SpiceBrains.com 2005-2012</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/instanteyedropper.png</iconUrl>
-    <dependencies>
-      <dependency id="instanteyedropper.install" version="[1.75]" />
-    </dependencies>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>

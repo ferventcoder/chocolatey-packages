@@ -16,7 +16,7 @@
     <licenseUrl>https://raw.github.com/oneclick/rubyinstaller/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
-      <dependency id="7zip.commandline" />
+      <dependency id="7zip.portable" />
     </dependencies>
   </metadata>
   <files>
