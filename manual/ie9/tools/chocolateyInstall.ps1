@@ -19,7 +19,7 @@ if ([Environment]::OSVersion.Version -lt (new-object 'Version' 6,1)) {
 		'ja'='http://download.microsoft.com/download/5/1/F/51F0DA3B-831A-46D6-9132-6329FAEB0379/IE9-WindowsVista-x64-jpn.exe';
 	}
 } else {
-	Write-Debug 'Using URLs for URLs for Windows 7 and Server 2008 R2'
+	Write-Debug 'Using URLs for Windows 7 and Server 2008 R2'
 	$32BitUrls = @{
 		'en'='http://download.microsoft.com/download/C/3/B/C3BF2EF4-E764-430C-BDCE-479F2142FC81/IE9-Windows7-x86-enu.exe';
 		'de'='http://download.microsoft.com/download/F/6/4/F6414410-F454-43BA-834E-1B4A7C1E774C/IE9-Windows7-x86-deu.exe';
