@@ -3,13 +3,18 @@
   <metadata>
     <id>mingw</id>
     <title>MinGW</title>
-    <version>4.8.3</version>
+    <version>4.8.3.20141208</version>
     <authors>cstrauss, cwilso11, earnie, keithmarshall</authors>
     <owners>Rob Reynolds, matthewphillips</owners>
     <summary>MinGW ("Minimalistic GNU for Windows") is a collection of freely available and freely distributable Windows specific header files and import libraries combined with GNU toolsets that allow one to produce native Windows programs that do not rely on any 3rd-party C runtime DLLs.</summary>
     <description>MinGW ("Minimalistic GNU for Windows") is a collection of freely available and freely distributable Windows specific header files and import libraries combined with GNU toolsets that allow one to produce native Windows programs that do not rely on any 3rd-party C runtime DLLs.
 
-    Gambit Scheme system, compiler and interpreter.</description>
+    Gambit Scheme system, compiler and interpreter.
+
+    The default package now uses DWARF (32-bit) and SEH (64-bit) exception handling and posix threads. Other configurations can be selected using the params:
+    * exception: default (seh for 64-bit, dwarf for 32-bit), sjlj
+    * threads: posix, win32
+    For example: -params "/exception:sjlj /threads:win32"</description>
     <projectUrl>http://www.mingw.org/wiki/MinGW</projectUrl>
     <tags>mingw gnu unix gcc</tags>
     <copyright></copyright>
