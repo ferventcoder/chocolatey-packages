@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>nodejs.commandline</id>
-    <title>Node JS (CommandLine)</title>
+    <title>Node JS (Portable, CommandLine)</title>
     <version>{{PackageVersion}}</version>
     <authors>Joyent</authors>
     <owners>Rob Reynolds</owners>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>{{PackageName}}</id>
-    <title>PngOptimizer (CommandLine)</title>
+    <title>PngOptimizer (Portable, CommandLine)</title>
     <version>{{PackageVersion}}</version>
     <authors>Hadrien Nilsson</authors>
     <owners>Rob Reynolds</owners>

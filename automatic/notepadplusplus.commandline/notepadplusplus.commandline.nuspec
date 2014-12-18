@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>notepadplusplus.commandline</id>
-    <title>Notepad++ (CommandLine)</title>
+    <title>Notepad++ (Portable, CommandLine)</title>
     <version>{{PackageVersion}}</version>
     <authors>Don Ho</authors>
     <owners>Rob Reynolds</owners>

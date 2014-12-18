@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>git.commandline</id>
-    <title>Git (CommandLine)</title>
+    <title>Git (Portable, CommandLine)</title>
     <version>{{PackageVersion}}</version>
     <authors>Johannes Schindelin, msysgit Committers</authors>
     <owners>Rob Reynolds</owners>
