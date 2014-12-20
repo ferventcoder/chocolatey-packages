@@ -12,7 +12,7 @@
     <licenseUrl>http://windows.microsoft.com/en-US/internet-explorer/products/ie-9/end-user-license-agreement</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>microsoft internet explorer ie 9 web browser</tags>
-    <iconUrl>https://c.s-microsoft.com/en-us/CMSImages/ie_symbol_clr_70x70.png?version=fdc2d692-7877-38f0-c246-be75d6e1724b</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/TomOne/various/bc1bbabef98fa5036195d6e2de5e0fc2400caef4/ie.svg</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
