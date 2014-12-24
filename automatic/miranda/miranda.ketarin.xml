@@ -2,10 +2,10 @@
 <Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="1f53e431-2bda-419e-bb8d-f01b17daeaf5">
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserAgent />
     <UserNotes />
-    <LastFileSize>3956896</LastFileSize>
-    <LastFileDate>2014-05-16T16:44:17+02:00</LastFileDate>
+    <LastFileSize>7973951</LastFileSize>
+    <LastFileDate>2014-12-14T02:46:33+01:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -19,15 +19,15 @@
     <Variables>
       <item>
         <key>
-          <string>url64</string>
+          <string>url</string>
         </key>
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>""</TextualContent>
-            <Name>url64</Name>
+            <TextualContent>https://sourceforge.net/projects/miranda/files/miranda-im/{urlPart}</TextualContent>
+            <Name>url</Name>
           </UrlVariable>
         </value>
       </item>
@@ -39,8 +39,10 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=/miranda-im-v)[\d\.]+(?=-unicode\.exe)</Regex>
+            <Regex>https://sourceforge\.net/projects/miranda/files/miranda-im/[\d\.]+/miranda-im-v([\d\.]+)-unicode\.exe</Regex>
             <Url>http://www.miranda-im.org/download/</Url>
+            <StartText>&lt;tr title="</StartText>
+            <EndText>" class="folder "&gt;</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -54,9 +56,37 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>http://files.miranda-im.org/stable/[\d\.]+/miranda-im-v</Regex>
+            <Regex>https://sourceforge\.net/projects/miranda/files/miranda-im/([\d\.]+/miranda-im-v{version}-unicode\.exe)</Regex>
             <Url>http://www.miranda-im.org/download/</Url>
             <Name>urlPart</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>urlMirror</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>ResponseUri: ([^\r\n]+)</Regex>
+            <Url>{url}</Url>
+            <Name>urlMirror</Name>
+          </UrlVariable>
+        </value>
+      </item>
+      <item>
+        <key>
+          <string>url64</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>{url}</TextualContent>
+            <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
@@ -67,13 +97,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\miranda-im-v0.10.23-unicode.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\miranda-im-v0.10.27-unicode.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-08-10T21:28:14.8902918+02:00</LastUpdated>
+    <LastUpdated>2014-12-24T15:05:08.3329779+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>{urlPart}{version}-unicode.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>{urlMirror}</FixedDownloadUrl>
     <Name>miranda</Name>
   </ApplicationJob>
 </Jobs>
