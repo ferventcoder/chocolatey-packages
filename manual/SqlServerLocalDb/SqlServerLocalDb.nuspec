@@ -2,27 +2,34 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>SqlServerLocalDb</id>
-    <title>Sql Server Express LocalDb</title>
+    <title>SQL Server Express LocalDB</title>
     <version>11.0.2318.0</version>
     <authors>Microsoft</authors>
     <owners>Rob Reynolds</owners>
     <summary>LocalDB is a lightweight deployment option for SQL Server Express Edition.</summary>
     <description>
-    ===== SQL Server Express LocalDB =====
-    LocalDB is a lightweight deployment option for SQL Server Express Edition with fewer prerequisites that installs very quickly. This makes it ideal for developers who need an embedded SQL Server database for desktop applications or tools. LocalDB has all of the same programmability features as SQL Server Express, but runs in-process with applications and not as a service.
-    ===== Integrated =====
-    LocalDB is designed to be bundled with and function as an integrated part of tools or desktop applications that need a lightweight local database runtime. This includes tools like SQL Server Data Tools, or custom developed desktop applications, or tools that need a lightweight single-user database runtime that supports full Transact-SQL functionality.
-    ===== Simple =====
-    Apps that use LocalDB simply open a file. Once a file is opened, you get SQL Server functionality when working with that file, including things like ACID transaction support. The app that opens the file has exclusive use. It’s not intended for multi-user scenarios or to be used as a server. (If you need that, you should install SQL Server Express.)
-    ===== Easy Acquisition =====
-    LocalDB is easy to download, install, and manage. It installs as a small shared component instead of a service.
+**SQL Server Express LocalDB**
+
+LocalDB is a lightweight deployment option for SQL Server Express Edition with fewer prerequisites that installs very quickly. This makes it ideal for developers who need an embedded SQL Server database for desktop applications or tools. LocalDB has all of the same programmability features as SQL Server Express, but runs in-process with applications and not as a service.
+
+**Integrated**
+
+LocalDB is designed to be bundled with and function as an integrated part of tools or desktop applications that need a lightweight local database runtime. This includes tools like SQL Server Data Tools, or custom developed desktop applications, or tools that need a lightweight single-user database runtime that supports full Transact-SQL functionality.
+
+**Simple**
+
+Apps that use LocalDB simply open a file. Once a file is opened, you get SQL Server functionality when working with that file, including things like ACID transaction support. The app that opens the file has exclusive use. It’s not intended for multi-user scenarios or to be used as a server. (If you need that, you should install SQL Server Express.)
+
+**Easy Acquisition**
+
+LocalDB is easy to download, install, and manage. It installs as a small shared component instead of a service.
     </description>
     <projectUrl>http://www.microsoft.com/sqlserver/en/us/editions/2012-editions/express.aspx</projectUrl>
     <tags>SqlServer Sql Express LocalDb admin</tags>
     <copyright>Microsoft</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/microsoft-sql-server.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/fd1a5932edc26194500554d026ca35e6c0274b6c/icons/microsoft-sql-server.svg</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -7,15 +7,17 @@
     <authors>Microsoft</authors>
     <owners>Rob Reynolds</owners>
     <summary>Microsoft SQL Server Express is a free edition of SQL Server ideal for developing and powering desktop, web and small server applications.</summary>
-    <description>Microsoft SQL Server Express - Microsoft SQL Server is a complete set of enterprise-ready technologies and tools that help people derive the most value from information at the lowest total-cost-of-ownership. Enjoy high levels of performance, availability, and security; employ more productive management and application development tools; and deliver pervasive insight with self-service business intelligence (BI).
-|  NOTE: This will fail if you don't have the correct version of Visual C++ 2008 SP1 installed.
+    <description>
+Microsoft SQL Server Express – Microsoft SQL Server is a complete set of enterprise-ready technologies and tools that help people derive the most value from information at the lowest total-cost-of-ownership. Enjoy high levels of performance, availability, and security; employ more productive management and application development tools; and deliver pervasive insight with self-service business intelligence (BI).
+
+Note: This will fail if you don’t have the correct version of Visual C++ 2008 SP1 installed.
     </description>
     <projectUrl>http://www.microsoft.com/sqlserver/en/us/editions/express.aspx</projectUrl>
     <tags>Sql Server Express database sqlserver admin notsilent</tags>
     <copyright>Microsoft</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/microsoft-sql-server.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/fd1a5932edc26194500554d026ca35e6c0274b6c/icons/microsoft-sql-server.svg</iconUrl>
     <dependencies>
       <dependency id="vcredist2008" />
     </dependencies>
