@@ -1,5 +1,14 @@
 ﻿try {
-  Install-ChocolateyPackage 'git.install' 'exe' '/VERYSILENT /NORESTART /NOCANCEL /SP- /NOICONS  /COMPONENTS="assoc,assoc_sh" /LOG' '{{DownloadUrl}}'
+
+  $packageId = '{{PackageName}}'
+  $fileType = 'exe'
+  $fileArgs = $(
+    '/VERYSILENT /NORESTART /NOCANCEL /SP- ' +
+    '/NOICONS /COMPONENTS="assoc,assoc_sh" /LOG'
+  )
+  $url = '{{DownloadUrl}}'
+
+  Install-ChocolateyPackage $packageId $fileType $fileArgs $url
 
   #------- ADDITIONAL SETUP -------#
   #$uninstallKey = 'Git_is1'
@@ -10,7 +19,7 @@
   #$key = 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1'
   #Test-Path $key
   #(Get-ItemProperty -Path $key -Name ProgramFilesDir).ProgramFilesDir
-  $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
+  $is64bit = (Get-ProcessorBits) -eq 64
   $programFiles = $env:programfiles
   if ($is64bit) {$programFiles = ${env:ProgramFiles(x86)}}
   $gitPath = Join-Path $programFiles 'Git\cmd'
@@ -25,9 +34,9 @@
 #  #make GIT core.autocrlf false
 #  & "$env:comspec" '/c git config --global core.autocrlf false'
 
-  Write-ChocolateySuccess 'git.install'
+  Write-ChocolateySuccess $packageId
 } catch {
-  Write-ChocolateyFailure 'git.install' $($_.Exception.Message)
+  Write-ChocolateyFailure $packageId $($_.Exception.Message)
   throw
 }
 
