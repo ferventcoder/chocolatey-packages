@@ -6,14 +6,14 @@
     <version>1.7.10.20120526</version>
     <authors>Johannes Schindelin, msysgit Committers</authors>
     <owners>Rob Reynolds</owners>
-    <summary>msysgit - Git for Windows [Deprecated as package Git]</summary>
-    <description>[Deprecated - please use Git package now] msysgit - Git for Windows. Git is a powerful distributed Source Code Management tool. If you just want to use Git to do your version control in Windows, you will need to download Git for Windows, run the installer, and you are ready to start. Note: Git for Windows is a project run by volunteers, so if you want it to improve, volunteer!
+    <summary>msysgit – Git for Windows [Deprecated as package Git]</summary>
+    <description>[Deprecated – please use Git package now] msysgit – Git for Windows. Git is a powerful distributed Source Code Management tool. If you just want to use Git to do your version control in Windows, you will need to download Git for Windows, run the installer, and you are ready to start. Note: Git for Windows is a project run by volunteers, so if you want it to improve, volunteer!
     </description>
     <projectUrl>http://code.google.com/p/msysgit/</projectUrl>
     <tags>msysgit git vcs dvcs version control admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/git.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/4d1bf51acf50ea21f23e628b26ef2e859e93cff6/icons/git.svg</iconUrl>
     <dependencies>
       <dependency id="git" />
     </dependencies>
