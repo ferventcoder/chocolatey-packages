@@ -27,7 +27,7 @@
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
   $silentArgs = "/verysilent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""
 
-  Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" "$url64" #-checksum $checksum -checksum64 $checksum64
+  Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" "$url64" -checksum $checksum -checksum64 $checksum64
 
   $rubyBin = join-path $rubyPath 'bin'
   Write-Host "Adding `'$rubyBin`' to the local path"
