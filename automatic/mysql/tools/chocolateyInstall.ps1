@@ -17,10 +17,7 @@ $url64 = 'http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-{{PackageVersion}}-winx
 
 try {
 
-  ### For BinRoot, use the following instead ###
-  $binRoot = "$env:systemdrive\tools"
-  ### Using an environment variable to to define the bin root until we implement configuration ###
-  if($env:chocolatey_bin_root -ne $null -and $env:chocolatey_bin_root -notlike '*:\*'){$binRoot = join-path $env:systemdrive $env:chocolatey_bin_root}
+  $binRoot = Get-BinRoot
   $installDir = Join-Path $binRoot "$packageName"
   $installDirBin = "$($installDir)\current\bin"
   Write-Host "Adding `'$installDirBin`' to the path and the current shell path"
