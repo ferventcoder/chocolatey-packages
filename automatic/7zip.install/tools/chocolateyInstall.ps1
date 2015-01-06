@@ -1,25 +1,28 @@
 ﻿Function Get-ExplorerProcessCount
 {
-    $process = Get-Process explorer -ErrorAction SilentlyContinue
-    $processCount = ($process | Measure-Object).Count
-    return $processCount
+  $process = Get-Process explorer -ErrorAction SilentlyContinue
+  $processCount = ($process | Measure-Object).Count
+  return $processCount
 }
 
 try {
-    $initialProcessCount = Get-ExplorerProcessCount
+  $initialProcessCount = Get-ExplorerProcessCount
 
-    Install-ChocolateyPackage '7Zip' 'msi' '/quiet' '{{DownloadUrl}}' '{{DownloadUrlx64}}'
+  $packageId = '7zip.install'
+  $url = '{{DownloadUrl}}'
+  $url64 = '{{DownloadUrlx64}}'
 
-    $finalProcessCount = Get-ExplorerProcessCount
+  Install-ChocolateyPackage $packageId 'msi' '/quiet' $url $url64
 
-    if($initialProcessCount -lt $finalProcessCount)
-    {
-        Start-Process explorer.exe
-    }
+  $finalProcessCount = Get-ExplorerProcessCount
 
-    Write-ChocolateySuccess '7Zip'
+  if($initialProcessCount -lt $finalProcessCount)
+  {
+    Start-Process explorer.exe
+  }
+
+  Write-ChocolateySuccess $packageId
 } catch {
-    Write-ChocolateyFailure '7Zip' $($_.Exception.Message)
-    throw
+  Write-ChocolateyFailure $packageId $($_.Exception.Message)
+  throw
 }
-
