@@ -50,10 +50,10 @@ if ($exception -eq 'sjlj') {
   $exceptionHandling64 = 'seh'
 }
 
-$url = "http://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/$packageVersion/threads-$threads/$exceptionHandling/i686-$packageVersion-release-$threads-$exceptionHandling-rt_v3-$rev.7z"
-#http://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/4.8.3/threads-posix/sjlj/i686-4.8.3-release-posix-sjlj-rt_v3-rev0.7z
-$url64 = "http://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/$packageVersion/threads-$threads/$exceptionHandling64/x86_64-$packageVersion-release-$threads-$exceptionHandling64-rt_v3-$rev.7z"
-#http://downloads.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/4.8.3/threads-posix/sjlj/x86_64-4.8.3-release-posix-sjlj-rev0.7z
+$url = "http://downloads.sourceforge.net/mingw-w64/i686-$packageVersion-release-$threads-$exceptionHandling-rt_v3-$rev.7z"
+#http://downloads.sourceforge.net/mingw-w64/i686-4.8.3-release-posix-sjlj-rt_v3-rev0.7z
+$url64 = "http://downloads.sourceforge.net/mingw-w64/x86_64-$packageVersion-release-$threads-$exceptionHandling64-rt_v3-$rev.7z"
+#http://downloads.sourceforge.net/mingw-w64/x86_64-4.8.3-release-posix-sjlj-rev0.7z
 
 $binRoot = Get-BinRoot
 Write-Debug "Bin Root is $binRoot"
