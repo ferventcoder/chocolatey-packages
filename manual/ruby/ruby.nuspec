@@ -2,7 +2,7 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>ruby</id>
-    <version>2.1.5</version>
+    <version>2.0.0.59800</version>
     <title>Ruby</title>
     <authors>Yukihiro Matsumoto</authors>
     <owners>Rob Reynolds</owners>
