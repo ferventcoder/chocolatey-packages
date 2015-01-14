@@ -1,12 +1,12 @@
 ﻿try {
   $registryKeyName = 'Git_is1'
-  $packageId = '{{PackageName}}'
+  $packageId = 'git.install'
   $fileType = 'exe'
   $fileArgs = $(
     '/VERYSILENT /NORESTART /NOCANCEL /SP- ' +
     '/NOICONS /COMPONENTS="icons,icons\quicklaunch,ext,ext\reg,ext\reg\shellhere,ext\reg\guihere,assoc,assoc_sh" /LOG'
   )
-  $url = '{{DownloadUrl}}'
+  $url = 'https://github.com/msysgit/msysgit/releases/download/Git-1.9.5-preview20141217/Git-1.9.5-preview20141217.exe'
 
   $arguments = @{};
   # /GitOnlyOnPath /GitAndUnixToolsOnPath /NoAutoCrlf
