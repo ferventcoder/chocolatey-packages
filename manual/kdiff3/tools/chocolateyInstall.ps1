@@ -1,5 +1,12 @@
 ﻿try {
-    Install-ChocolateyPackage 'kdiff3' 'exe' '/S' 'http://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.98/KDiff3-32bit-Setup_0.9.98-3.exe' 'http://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.98/KDiff3-64bit-Setup_0.9.98-2.exe'  -validExitCodes @(0)
+
+  $packageName = 'kdiff3'
+  $fileType = 'exe'
+  $silentArgs = '/S'
+  $url = 'http://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.98/KDiff3-32bit-Setup_0.9.98-3.exe'
+  $url64 = 'http://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.98/KDiff3-64bit-Setup_0.9.98-2.exe'
+
+  Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64 -validExitCodes @(0)
 
   #------additional setup ----------------
   #add it to the path
@@ -9,8 +16,8 @@
   }
   Install-ChocolateyPath $programPath
 
-  Write-ChocolateySuccess 'kdiff3'
+  Write-ChocolateySuccess $packageName
 } catch {
-  Write-ChocolateyFailure 'kdiff3' $($_.Exception.Message)
+  Write-ChocolateyFailure $packageName $($_.Exception.Message)
   throw
 }
