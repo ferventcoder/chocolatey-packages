@@ -7,10 +7,9 @@
     <authors>Ariya Hidayat, PhantomJS Committers</authors>
     <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>PhantomJS – Headless WebKit</summary>
-    <description>Full web stack
-No browser required
-
+    <description>
 PhantomJS is a headless WebKit with JavaScript API. It has fast and native support for various web standards: DOM handling, CSS selector, JSON, Canvas, and SVG.
+
 PhantomJS is created by Ariya Hidayat.
     </description>
     <projectUrl>http://phantomjs.org/</projectUrl>
