@@ -13,7 +13,7 @@
     <licenseUrl>http://www.ruby-lang.org/en/about/license.txt</licenseUrl>
     <projectUrl>http://www.ruby-lang.org</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/ruby.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/e91de9a129247439a41b8ceab34640790f9112c8/icons/ruby.svg</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
