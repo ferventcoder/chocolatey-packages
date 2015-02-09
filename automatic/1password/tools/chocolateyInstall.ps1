@@ -1,2 +1,6 @@
-﻿Install-ChocolateyPackage '1password' 'exe' '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' '{{DownloadUrl}}' -validExitCodes @(0)
+﻿$packageId = '1password'
+$fileType = 'exe'
+$installArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
+$url = '{{DownloadUrl}}'
 
+Install-ChocolateyPackage $packageId $fileType $installArgs $url -validExitCodes @(0)
