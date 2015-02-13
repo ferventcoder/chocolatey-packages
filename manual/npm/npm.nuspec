@@ -2,12 +2,19 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>npm</id>
-    <title>npm Package Manager</title>
-    <version>1.4.9</version>
+    <title>[DEPRECATED] npm Package Manager</title>
+    <version>1.4.9.20150213</version>
     <authors>npm Inc</authors>
     <owners>Rob Reynolds</owners>
     <summary>npm is the official package manager for Node.js.</summary>
-    <description>npm is the official package manager for Node.js.
+    <description>
+### DEPRECATION NOTICE
+This package uses an older NPM which is no longer offered as a standalone package separately from NodeJS. It is recommended that you uninstall this package and the package nodejs.commandline in favor of nodejs.install (which nodejs package now points to).
+
+This version of npm is known to have issues on Windows.
+
+### Description
+npm is the official package manager for Node.js.
 npm, is two things: first and foremost, it is an online repository for the publishing of open-source Node.js projects; second, it is a command-line utility for interacting with said repository that aids in package installation, version management, and dependency management. A plethora of node.js libraries and applications are published on npm, and many more are added every day. These applications can be searched for on http://search.npmjs.org/. Once you have a package you want to install, it can be installed with a single commmand-line command.
 
 Let's say you're hard at work one day, developing the Next Great Application. You come across a problem, and you decide that it's time to use that cool library you keep hearing about - let's use Caolan McMahon's async as an example. Thankfully, npm is very simple to use: you only have to run npm install async, and the specified module will be installed in the current directory under ./node_modules/. Once installed to your node_modules folder, you'll be able to use require() on them just like they were built-ins.
