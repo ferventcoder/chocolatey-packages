@@ -1,1 +1,0 @@
-Install-ChocolateyPackage 'filezilla' 'exe' '/S' 'http://downloads.sourceforge.net/filezilla/FileZilla_3.7.1.1_win32-setup.exe'
