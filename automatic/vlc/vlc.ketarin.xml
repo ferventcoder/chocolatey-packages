@@ -2,10 +2,10 @@
 <Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="b701a46c-d159-456b-b743-1b442f55bfe9">
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserAgent />
     <UserNotes />
     <LastFileSize>24097311</LastFileSize>
-    <LastFileDate>2013-12-09T01:38:32+01:00</LastFileDate>
+    <LastFileDate>2014-01-05T01:24:25.6338666</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,7 +26,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>""</TextualContent>
+            <TextualContent>http://download.videolan.org/pub/videolan/vlc/{version}/win64/vlc-{version}-win64.exe</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -57,10 +57,10 @@
     <PreviousLocation>C:\Chocolatey\_work\vlc-2.1.2-win32.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
-    <FileHippoId>vlc</FileHippoId>
-    <LastUpdated>2014-01-05T01:24:25.6338666+01:00</LastUpdated>
+    <FileHippoId />
+    <LastUpdated>2014-01-05T01:24:25.6338666</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://cdn.mirror.garr.it/mirror3/mirrors/videolan/vlc/{version}/win32/vlc-{version}-win32.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>http://download.videolan.org/pub/videolan/vlc/{version}/win32/vlc-{version}-win32.exe</FixedDownloadUrl>
     <Name>vlc</Name>
   </ApplicationJob>
 </Jobs>
