@@ -47,7 +47,7 @@
     <FileHippoId />
     <LastUpdated>2014-01-05T16:31:13.4163256+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.petges.lu/home/wp-content/uploads/ac.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>http://www.petges.lu/pubfiles/ac.exe</FixedDownloadUrl>
     <Name>attributechanger</Name>
   </ApplicationJob>
 </Jobs>
