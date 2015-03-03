@@ -5,7 +5,7 @@
     <UserAgent>chocolatey</UserAgent>
     <UserNotes />
     <LastFileSize>384846</LastFileSize>
-    <LastFileDate>2012-05-23T02:24:43.72565</LastFileDate>
+    <LastFileDate>2010-11-18T20:01:29+01:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -24,8 +24,8 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
+            <VariableType>RegularExpression</VariableType>
+            <Regex>&lt;P&gt;&lt;B&gt;Download 7-Zip ([0-9\.]+) \(</Regex>
             <Url>http://www.7-zip.org/download.html</Url>
             <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
   &lt;TR&gt;
@@ -43,8 +43,8 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
+            <VariableType>RegularExpression</VariableType>
+            <Regex>/sevenzip/7za(\d+).zip</Regex>
             <Url>http://www.7-zip.org/download.html</Url>
             <StartText> &lt;TH class="Title" align="center"&gt;Description&lt;/TH&gt;
   &lt;/TR&gt;
@@ -66,7 +66,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2012-05-23T02:24:43.72565</LastUpdated>
+    <LastUpdated>2014-12-15T06:37:11.2550887+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>httpx://downloads.sourceforge.net/project/sevenzip/7-Zip/{version}/7za{VersionNoDots}.zip</FixedDownloadUrl>
     <Name>7zip.commandline</Name>
