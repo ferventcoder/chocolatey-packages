@@ -148,7 +148,7 @@ var sumBuiltOn = "</EndText>
         </value>
       </item>
     </Variables>
-    <ExecuteCommand>PowerShell.exe -ExecutionPolicy Bypass -File E:\git\choco-auto\installstuff.ps1</ExecuteCommand>
+    <ExecuteCommand></ExecuteCommand>
     <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
