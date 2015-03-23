@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>git.commandline</id>
+    <title>Git (Portable, CommandLine)</title>
+    <version>1.9.5.20150319</version>
+    <authors>Johannes Schindelin, msysgit Committers</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Git (for Windows) – Fast Version Control</summary>
+    <description>
+Git (for Windows) – Git is a powerful distributed Source Code Management tool. If you just want to use Git to do your version control in Windows, you will need to download Git for Windows, run the installer, and you are ready to start.
+
+Note: Git for Windows is a project run by volunteers, so if you want it to improve, volunteer!
+    </description>
+    <projectUrl>https://msysgit.github.io/</projectUrl>
+    <tags>git vcs dvcs version control msysgit</tags>
+    <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/4d1bf51acf50ea21f23e628b26ef2e859e93cff6/icons/git.svg</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: “UTF-8” -->

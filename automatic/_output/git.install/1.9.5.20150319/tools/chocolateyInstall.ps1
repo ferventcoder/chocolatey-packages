@@ -1,11 +1,11 @@
 ﻿$registryKeyName = 'Git_is1'
-$packageId = '{{PackageName}}'
+$packageId = 'git.install'
 $fileType = 'exe'
 $fileArgs = $(
   '/VERYSILENT /NORESTART /NOCANCEL /SP- ' +
   '/NOICONS /COMPONENTS="icons,icons\quicklaunch,ext,ext\reg,ext\reg\shellhere,ext\reg\guihere,assoc,assoc_sh" /LOG'
 )
-$url = '{{DownloadUrl}}'
+$url = 'https://github.com/msysgit/msysgit/releases/download/Git-1.9.5-preview20150319/Git-1.9.5-preview20150319.exe'
 
 $arguments = @{};
 # /GitOnlyOnPath /GitAndUnixToolsOnPath /NoAutoCrlf
@@ -91,12 +91,11 @@ Install-ChocolateyPackage $packageId $fileType $fileArgs $url
 $keyNames = Get-ItemProperty -Path $installKey
 
 # if ($gitCmdOnly -eq $false -and $unixTools -eq $false) {
-# $installLocation = $keyNames.InstallLocation
-# if ($installLocation -ne '') {
-  # $gitPath = Join-Path $installLocation 'cmd'
-  # Install-ChocolateyPath $gitPath 'Machine'
-# }
+  # $installLocation = $keyNames.InstallLocation
+  # if ($installLocation -ne '') {
+    # $gitPath = Join-Path $installLocation 'cmd'
+    # Install-ChocolateyPath $gitPath 'Machine'
+  # }
 # }
 
 Write-Warning "Git installed - You may need to close and reopen your shell for PATH changes to take effect."
-

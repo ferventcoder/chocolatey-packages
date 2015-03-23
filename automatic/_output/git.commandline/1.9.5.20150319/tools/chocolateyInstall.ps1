@@ -1,6 +1,6 @@
 ﻿$packageName = 'git.commandline'
 $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = '{{DownloadUrl}}'
+$url = 'https://github.com/msysgit/msysgit/releases/download/Git-1.9.5-preview20150319/PortableGit-1.9.5-preview20150319.7z'
 
 Install-ChocolateyZipPackage "$packageName" "$url" "$installDir"
 
