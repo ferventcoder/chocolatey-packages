@@ -6,7 +6,7 @@
     <version>{{PackageVersion}}</version>
     <authors>Tim Kosse, other FileZilla committers</authors>
     <owners>Rob Reynolds</owners>
-    <summary>FileZilla - The free FTP solution</summary>
+    <summary>FileZilla – The free FTP solution</summary>
     <description>FileZilla Client is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.</description>
     <projectUrl>http://filezilla-project.org</projectUrl>
     <tags>filezilla ftp admin</tags>
