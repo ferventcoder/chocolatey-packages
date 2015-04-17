@@ -25,8 +25,8 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=Reader_)[\d\.]+(?=_English_for_Windows)</Regex>
-            <Url>https://get.adobe.com/reader/</Url>
+            <Regex>(?&lt;=Reader_DC_)[\d\.]+(?=_English_for_Windows)</Regex>
+            <Url>https://get2.adobe.com/reader/</Url>
             <Name>version</Name>
           </UrlVariable>
         </value>
@@ -39,8 +39,8 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>http://ardownload\.adobe\.com/pub/adobe/reader/win/.+?_en_US\.exe</Regex>
-            <Url>https://get.adobe.com/reader/completion/?installer=Reader_{version}_English_for_Windows&amp;direct=true&amp;standalone=1</Url>
+            <Regex>https://ardownload2\.adobe\.com/pub/adobe/reader/win/.+?_en_US\.exe</Regex>
+            <Url>https://get2.adobe.com/reader/download/?installer=Reader_DC_{version}_English_for_Windows&amp;standalone=1</Url>
             <Name>url</Name>
           </UrlVariable>
         </value>
