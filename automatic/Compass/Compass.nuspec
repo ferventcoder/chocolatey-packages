@@ -22,7 +22,7 @@ Compass is an open-source CSS Authoring Framework.
     <copyright>Scott Davis, Eric Meyer, Brandon Mathis, Anthony Short</copyright>
     <licenseUrl>https://github.com/chriseppstein/compass/blob/stable/LICENSE.markdown</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/Compass.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/Compass.png</iconUrl>
     <releaseNotes></releaseNotes>
     <dependencies>
         <dependency id="ruby" version="1.8.7" />

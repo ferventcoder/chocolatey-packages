@@ -14,7 +14,7 @@ Now includes support for installing English, Spanish, German, French or Japanese
     <tags>adobereader pdf reader admin</tags>
     <licenseUrl>http://www.adobe.com/products/eulas/pdfs/Reader10_combined-20100625_1419.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/adobereader.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/adobereader.png</iconUrl>
     <releaseNotes>11.0.09.20140925: Fix typo in variable and url</releaseNotes>
   </metadata>
   <files>

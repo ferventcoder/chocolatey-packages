@@ -14,7 +14,7 @@
     <tags>editorconfig editor code style format</tags>
     <licenseUrl>http://visualstudiogallery.msdn.microsoft.com/site/c8bccfe2-650c-4b42-bc5c-845e21f96328/eula?licenseType=None</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/editorconfig.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/editorconfig.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

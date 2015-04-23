@@ -12,7 +12,7 @@
     <licenseUrl>http://www.baremetalsoft.com/baretail/licence.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>tail baretail log</tags>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/baretail.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/baretail.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
