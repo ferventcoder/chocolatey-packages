@@ -8,7 +8,7 @@
     <owners>Rob Reynolds</owners>
     <licenseUrl>http://www.techsmith.com/jing.html</licenseUrl>
     <projectUrl>http://www.techsmith.com/jing.html</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/fd1a5932edc26194500554d026ca35e6c0274b6c/icons/jing.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/fd1a5932edc26194500554d026ca35e6c0274b6c/icons/jing.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Simple and FREE, Jing is the perfect way to enhance your fast-paced online conversations. Create images and videos of what you see on your computer screen, then share them instantly!</description>
     <summary>Jing – Record your screen</summary>

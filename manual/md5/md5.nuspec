@@ -37,7 +37,7 @@ If no infile or -d option is specified or infile is a single "-", md5 reads from
     <copyright></copyright>
     <licenseUrl>http://www.fourmilab.ch/md5/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/md5.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/md5.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

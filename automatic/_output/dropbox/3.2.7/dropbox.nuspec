@@ -24,7 +24,7 @@ The confusing dialog box with the content *“Dropbox will not work correctly if
     <tags>dropbox virtual files file admin</tags>
     <licenseUrl>http://www.dropbox.com/terms</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/e5df5ac0628bea3d9a2a56485d8c57dda727d92d/icons/dropbox.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/e5df5ac0628bea3d9a2a56485d8c57dda727d92d/icons/dropbox.svg</iconUrl>
     <dependencies>
         <dependency id="autohotkey.portable" />
     </dependencies>

@@ -12,7 +12,7 @@ VLC is a free and open source cross-platform multimedia player and framework tha
     </description>
     <projectUrl>http://www.videolan.org/vlc/</projectUrl>
     <tags>vlc multimedia media player admin</tags>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/vlc.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/vlc.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
