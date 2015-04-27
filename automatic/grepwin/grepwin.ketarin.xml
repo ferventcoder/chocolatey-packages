@@ -2,10 +2,10 @@
 <Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="707f661e-0c9f-4e30-9399-11c0b4d2256c">
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
+    <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
-    <LastFileSize>626688</LastFileSize>
-    <LastFileDate>2014-06-17T20:13:59+02:00</LastFileDate>
+    <LastFileSize>643072</LastFileSize>
+    <LastFileDate>2015-03-31T12:16:03-05:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,7 +26,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://sourceforge.net/projects/stefanstools/files/grepWin/</Url>
+            <Url>http://sourceforge.net/projects/grepwin/files/</Url>
             <StartText>&lt;tr title="</StartText>
             <EndText>" class="folder "&gt;</EndText>
             <TextualContent />
@@ -44,7 +44,7 @@
             <VariableType>Textual</VariableType>
             <Regex>http://code.google.com/feeds/p/grepwin/downloads/basic/grepWin-\d+\.\d+.\d+\-64.msi</Regex>
             <Url>http://code.google.com/feeds/p/grepwin/downloads/basic</Url>
-            <TextualContent>http://sourceforge.net/projects/stefanstools/files/grepWin/{version}/grepWin-{version}-64.msi/download</TextualContent>
+            <TextualContent>http://sourceforge.net/projects/grepWin/files/{version}/grepWin-{version}-64.msi/download</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -58,7 +58,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://sourceforge.net/projects/stefanstools/files/grepWin/1.6.5/grepWin-1.6.5.msi/download</Url>
+            <Url>http://sourceforge.net/projects/grepwin/files/{version}/grepWin-{version}.msi/download</Url>
             <StartText>;use_mirror=</StartText>
             <EndText>"&gt;</EndText>
             <Name>mirror</Name>
@@ -72,13 +72,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\grepWin-1.6.5.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\grepWin-1.6.7.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-08-06T19:43:11.1609116+02:00</LastUpdated>
+    <LastUpdated>2015-04-27T09:33:34.5139743-05:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://{mirror}.dl.sourceforge.net/project/stefanstools/grepWin/{version}/grepWin-{version}.msi</FixedDownloadUrl>
+    <FixedDownloadUrl>http://sourceforge.net/projects/grepwin/files/{version}/grepWin-{version}.msi/download</FixedDownloadUrl>
     <Name>grepwin</Name>
   </ApplicationJob>
 </Jobs>
