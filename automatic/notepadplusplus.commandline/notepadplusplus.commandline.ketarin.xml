@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>6190888</LastFileSize>
-    <LastFileDate>2013-07-09T05:40:40.9559697</LastFileDate>
+    <LastFileSize>7020530</LastFileSize>
+    <LastFileDate>2015-04-16T01:43:56+02:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -33,6 +33,20 @@
           </UrlVariable>
         </value>
       </item>
+      <item>
+        <key>
+          <string>folder</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>http://notepad-plus-plus\.org/repository/([^\n\r]+?)/{version}/npp\.{version}\.bin\.zip</Regex>
+            <Url>http://notepad-plus-plus.org/download/v{version}.html</Url>
+            <Name>folder</Name>
+          </UrlVariable>
+        </value>
+      </item>
     </Variables>
     <ExecuteCommand />
     <ExecutePreCommand />
@@ -40,13 +54,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\npp.6.4.2.bin.zip</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\npp.6.7.7.bin.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>notepad</FileHippoId>
-    <LastUpdated>2013-07-09T05:40:40.9559697</LastUpdated>
+    <LastUpdated>2015-05-01T03:04:58.097644+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://download.tuxfamily.org/notepadplus/{version}/npp.{version}.bin.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>http://notepad-plus-plus.org/repository/{folder}/{version}/npp.{version}.bin.zip</FixedDownloadUrl>
     <Name>notepadplusplus.commandline</Name>
   </ApplicationJob>
 </Jobs>

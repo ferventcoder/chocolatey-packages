@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>7401344</LastFileSize>
-    <LastFileDate>2013-07-09T05:40:40.9559697</LastFileDate>
+    <LastFileSize>8254766</LastFileSize>
+    <LastFileDate>2015-04-16T01:44:38+02:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -33,6 +33,20 @@
           </UrlVariable>
         </value>
       </item>
+      <item>
+        <key>
+          <string>folder</string>
+        </key>
+        <value>
+          <UrlVariable>
+            <RegexRightToLeft>false</RegexRightToLeft>
+            <VariableType>RegularExpression</VariableType>
+            <Regex>http://notepad-plus-plus\.org/repository/([^\n\r]+?)/{version}/npp\.{version}\.Installer.exe</Regex>
+            <Url>http://notepad-plus-plus.org/download/v{version}.html</Url>
+            <Name>folder</Name>
+          </UrlVariable>
+        </value>
+      </item>
     </Variables>
     <ExecuteCommand />
     <ExecutePreCommand>chocopkgup /p notepadplusplus /v {version} /u {preupdate-url} /u64 {url64}</ExecutePreCommand>
@@ -40,13 +54,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\npp.6.4.2.Installer.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\npp.6.7.7.Installer.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId>notepad</FileHippoId>
-    <LastUpdated>2013-07-09T05:40:40.9559697</LastUpdated>
+    <LastUpdated>2015-05-01T03:05:36.9121386+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://download.tuxfamily.org/notepadplus/{version}/npp.{version}.Installer.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>http://notepad-plus-plus.org/repository/{folder}/{version}/npp.{version}.Installer.exe</FixedDownloadUrl>
     <Name>notepadplusplus.install</Name>
   </ApplicationJob>
 </Jobs>
