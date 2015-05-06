@@ -35,4 +35,5 @@ if (-Not (DoesWebPageExist($url))) {
 $validExitCodes = @(0)
 $targetFolder = Join-Path $(Get-BinRoot) $packageName
 Install-ChocolateyZipPackage "$packageName" "$url" "$targetFolder" "$url64"
+Install-ChocolateyPath $targetFolder
 echo ("PHP installed in " + $targetFolder)
