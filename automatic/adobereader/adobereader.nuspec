@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>adobereader</id>
-    <version>15.007.20033.0</version>
+    <version>15.007.20033</version>
     <title>Adobe Reader</title>
     <authors>Adobe</authors>
     <licenseUrl>http://www.adobe.com/products/eulas/pdfs/Reader10_combined-20100625_1419.pdf</licenseUrl>

@@ -7,7 +7,7 @@ $arguments = @{}
 
   # Default value
   $lcid = $null
-
+  $RegValue = $null
 
   # Now parse the packageParameters using good old regular expression
   if ($packageParameters) {
@@ -40,19 +40,13 @@ $arguments = @{}
   }
 
   $scriptDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-  Import-Module (Join-Path $scriptDir 'checkinstall.ps1')
+  Import-Module (Join-Path $scriptDir 'common.ps1')
   #If no Language ID passed through, use the one from Windows
   #LCID table can be found at http://msdn.microsoft.com/es-es/goglobal/bb964664.aspx to manually pass through the desired language. 
    if (!$lcid){ 
     $lcid = (Get-Culture).LCID
     echo "LCID set to $lcid"  
    }
-
-  
-  # Find download URLs at http://www.adobe.com/support/downloads/product.jsp?platform=windows&product=10
-  
-  $url = 'http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/1500720033/AcroRdrDC1500720033_MUI.exe'
-  $version = "15.007.20033"
 
 
   $packageName = 'adobereader'
@@ -65,22 +59,12 @@ $arguments = @{}
 
   #Check for current version installed
 
-  #Check for OS bitness
-if ((Get-WmiObject Win32_OperatingSystem).OSArchitecture -match "64-bit"){
-$SoftwareKey = "HKLM:\Software\WOW6432Node" 
-} else {
-$SoftwareKey = "HKLM:\Software" 
-}
-#This is the current Adobe Reader key. Would like to find a way to automate this part.
-$RegKey = "$SoftwareKey\Microsoft\Windows\CurrentVersion\Uninstall\{AC76BA86-7AD7-FFFF-7B44-AC0F074E4100}"
-if (Test-Path "$RegKey") { 
-echo "Key Detected. Checking version..."
-     $RegValue = Get-ItemPropertyValue -Path $RegKey -Name DisplayVersion
-    echo "Version $RegValue detected, installer is $version"
-}
 
-
-
+    if ($currentinstall.DisplayVersion){
+    $RegValue = $currentinstall.DisplayVersion 
+    echo "Installed product detected. Version detected is $RegValue "
+    
+    }
 
   if ($RegValue -eq $version){
    echo "$version detected already installed. Skipping download and install."
@@ -89,6 +73,5 @@ echo "Key Detected. Checking version..."
   }
 
 } catch {
-  #Write-ChocolateyFailure $packageName $($_.Exception.Message)
-  throw
+    throw $_.Exception
 }
