@@ -9,10 +9,10 @@
 # $checksum = '73ba6e292d3afec5cecc68ec64fd85bf'
 
 # 2.0.0
-$url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.0.0-p598-i386-mingw32.7z?direct'
-$checksum = 'a4b7f5c3d3286b51ea35d34fde8aa174'
-$url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.0.0-p598-x64-mingw32.7z?direct'
-$checksum64 = '011b3832b6e557e7b25fd98821e28e69'
+$url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.0.0-p645-i386-mingw32.7z?direct'
+$checksum = '57422903090e7001698c5b94ca47e1a6ee492c54'
+$url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.0.0-p645-x64-mingw32.7z?direct'
+$checksum64 = 'af37b28c15449d7adf05acd0717a9804460d8738'
 
 # 2.1.5
 #$url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.5-i386-mingw32.7z?direct'
@@ -27,7 +27,9 @@ try {
 
   $file = Join-Path $toolsDir "$($packageName).7z"
   #Get-ChocolateyWebFile "$packageName" "$file" "$url" -checksum "$checksum"
-  Get-ChocolateyWebFile "$packageName" "$file" "$url" "$url64" -checksum "$checksum" -checksum64 "$checksum64"
+  Get-ChocolateyWebFile "$packageName" "$file" "$url" "$url64"
+  #Checksum type sha1 has a bug fixed in 0.9.9.6 - https://github.com/chocolatey/choco/issues/253
+  #-checksum $checksum -checksumType 'sha1' -checksum64 $checksum64 -checksumType64 'sha1'
 
   Get-ChocolateyUnzip "$file" "$installDir" -packageName "$packageName"
 

@@ -5,30 +5,31 @@
 
   # $rubyFolder = '187'
   # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.8.7-p374.exe?direct'
-
   # $checksum = '2e33a098f126275f7cb29ddcd0eb9845'
 
-  $rubyFolder = '193'
-  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p551.exe?direct'
-  $checksum = '25de5ff94b76d7d308cb75ba8179a6c0'
+  # $rubyFolder = '193'
+  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p551.exe?direct'
+  # $checksum = '25de5ff94b76d7d308cb75ba8179a6c0'
 
-  # $rubyFolder = '200'
-  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p598.exe?direct'
-  # $checksum = '62c3873345b0f5f4ca8300ff705e2f38'
-  # $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p598-x64.exe?direct'
-  # $checksum64 = '649e86af63afc48308110e838cbdfa6f'
+  $rubyFolder = '200'
+  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p645.exe?direct'
+  $checksum = 'cb25a38508e22a869b48df7974840eb78c77635c'
+  $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p645-x64.exe?direct'
+  $checksum64 = '8f8f39d69a222b5472254969755ff5d36dc42585'
 
-  # $rubyFolder = '215'
+  # $rubyFolder = '21'
   # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.5.exe?direct'
-  # $checksum = 'eacd2526ef61fb73c0e642828675e94d'
+  # $checksum = 'cb25a38508e22a869b48df7974840eb78c77635c'
   # $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.5-x64.exe?direct'
-  # $checksum64 = '3aad5fbfe6bfcf9cf3237ed9f048b81f'
+  # $checksum64 = '8f8f39d69a222b5472254969755ff5d36dc42585'
 
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
   $silentArgs = "/verysilent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""
 
-  Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" -checksum $checksum
-  # Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" "$url64" -checksum $checksum -checksum64 $checksum64
+  # Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" -checksum $checksum
+  Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" "$url64"
+  #Checksum type sha1 has a bug fixed in 0.9.9.6 - https://github.com/chocolatey/choco/issues/253
+  #-checksum $checksum -checksumType 'sha1' -checksum64 $checksum64 -checksumType64 'sha1'
 
   $rubyBin = join-path $rubyPath 'bin'
   Write-Host "Adding `'$rubyBin`' to the local path"
