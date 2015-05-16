@@ -12,7 +12,7 @@
     <tags>spotify music player radio</tags>
     <licenseUrl>https://www.spotify.com/us/legal/end-user-agreement/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/e91de9a129247439a41b8ceab34640790f9112c8/icons/spotify.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/spotify.svg</iconUrl>
     <dependencies>
       <dependency id="autoit.commandline" />
     </dependencies>

@@ -13,7 +13,7 @@
     <copyright>The pip developers</copyright>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/e91de9a129247439a41b8ceab34640790f9112c8/icons/python.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/python.svg</iconUrl>
     <dependencies>
       <dependency id="easy.install" />
     </dependencies>

@@ -12,7 +12,7 @@
     <tags>DeleGate http ftp proxy network utility</tags>
     <licenseUrl>http://delegate.org/delegate/Manual.htm</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/DeleGate.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/DeleGate.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

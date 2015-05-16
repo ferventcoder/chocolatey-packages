@@ -13,7 +13,7 @@
     <tags>7zip zip archiver admin</tags>
     <licenseUrl>http://www.7-zip.org/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/79b5a85de131e570a6218bc98aaa3fca51a2dc18/icons/7zip.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/7zip.svg</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

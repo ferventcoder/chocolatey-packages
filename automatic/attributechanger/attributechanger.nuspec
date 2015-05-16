@@ -8,7 +8,7 @@
     <owners>Rob Reynolds</owners>
     <summary>Attribute Changer shell extension (freeware) is a power user tool to change all kind of file and folder attributes, date, time and even NTFS compression.</summary>
     <description>Attribute Changer is a power user tool to change all kind of file and folder attributes, date, time and even NTFS compression. Edit date and time information stored in digital images are easily altered with Attribute Changer. It perfectly integrates into the Windows Shell and is available with a right-click on files, folders and drives. It features an easy to use graphical user interface with lots of exciting features.</description>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/attributechanger.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/attributechanger.png</iconUrl>
     <projectUrl>http://www.petges.lu/</projectUrl>
     <tags>attribute changer admin</tags>
     <licenseUrl>http://www.petges.lu/product/faq/</licenseUrl>

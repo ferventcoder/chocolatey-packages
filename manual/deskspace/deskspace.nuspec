@@ -18,7 +18,7 @@ DeskSpace runs on low-end netbooks, high-end desktops, and everything in-between
     <tags>deskspace cube desktop desktops admin</tags>
     <licenseUrl>http://www.otakusoftware.com/deskspace/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/deskspace.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/deskspace.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->

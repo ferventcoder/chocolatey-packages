@@ -15,7 +15,7 @@ This package runs the official Node JS installer, resulting in Node.exe and NPM 
     <tags>nodejs node javascript admin npm</tags>
     <licenseUrl>https://raw.github.com/joyent/node/v0.6.18/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/nodejs.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/nodejs.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

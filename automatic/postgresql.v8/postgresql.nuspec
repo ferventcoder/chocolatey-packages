@@ -16,7 +16,7 @@ It includes most SQL:2008 data types, including INTEGER, NUMERIC, BOOLEAN, CHAR,
     <tags>postgresql database sql chocolatey admin</tags>
     <licenseUrl>http://www.postgresql.org/about/licence</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/postgresql.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/postgresql.svg</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

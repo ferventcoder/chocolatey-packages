@@ -7,7 +7,7 @@
     <authors>SlySoft</authors>
     <owners>Rob Reynolds</owners>
     <projectUrl>http://www.slysoft.com/en/virtual-clonedrive.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/9e84f36298f3b05f5a7880528b0d1af3327b63b8/icons/virtualclonedrive.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/virtualclonedrive.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Virtual CloneDrive – Virtual CloneDrive works and behaves just like a physical CD/DVD drive, however it exists only virtually. Image files generated with CloneDVD or CloneCD can be mounted onto a virtual drive from your hard-disk or from a network drive and used in the same manner as inserting them into a normal CD/DVD drive. Probably the best virtual drive software, Virtual CloneDrive allows you to enjoy the freedom of a virtual drive and is completely free.</description>
     <summary>Virtual CloneDrive – Mount ISO Images</summary>

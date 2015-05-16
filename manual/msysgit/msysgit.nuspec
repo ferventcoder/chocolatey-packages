@@ -13,7 +13,7 @@
     <tags>msysgit git vcs dvcs version control admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/4d1bf51acf50ea21f23e628b26ef2e859e93cff6/icons/git.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/git.svg</iconUrl>
     <dependencies>
       <dependency id="git" />
     </dependencies>

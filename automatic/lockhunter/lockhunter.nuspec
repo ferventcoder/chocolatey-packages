@@ -9,7 +9,7 @@
     <summary>LockHunter is a foolproof file unlocker.</summary>
     <description>LockHunter is a foolproof file unlocker. It is a free tool to delete files blocked by something you do not know. LockHunter is useful for fighting against malware, and other programs that are blocking files without a reason. Unlike other similar tools it deletes files into the recycle bin so you may restore them if deleted by mistake.</description>
     <projectUrl>http://lockhunter.com/</projectUrl>
-	<iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/lockhunter.png</iconUrl>
+	<iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/lockhunter.png</iconUrl>
     <tags>lockhunter unlocker file system locked files admin</tags>
   </metadata>
   <files>

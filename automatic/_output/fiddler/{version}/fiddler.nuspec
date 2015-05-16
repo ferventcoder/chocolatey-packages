@@ -14,7 +14,7 @@ Fiddler is freeware and can debug traffic from virtually any application, includ
     <tags>fiddler fiddler2 web debugging proxy admin</tags>
     <licenseUrl>http://www.fiddler2.com/Fiddler/help/license.asp</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/1d4ac8eeb3a3b353c3b5aaae0a5b97ad546678a2/icons/fiddler.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/fiddler.svg</iconUrl>
     <releaseNotes>
     </releaseNotes>
   </metadata>

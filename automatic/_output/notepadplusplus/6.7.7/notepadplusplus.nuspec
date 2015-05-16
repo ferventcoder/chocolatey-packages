@@ -19,7 +19,7 @@ I hope you enjoy Notepad++ as much as I enjoy coding it.
 </description>
     <projectUrl>http://notepad-plus-plus.org/</projectUrl>
     <tags>notepad notepadplusplus notepad-plus-plus admin</tags>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/notepadplusplus.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/notepadplusplus.png</iconUrl>
     <dependencies>
       <dependency id="notepadplusplus.install" version="[6.7.7]" />
     </dependencies>
