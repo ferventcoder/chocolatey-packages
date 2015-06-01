@@ -11,8 +11,8 @@ Write-Warning "This installer is known to close the explorer process. This means
 
 
 $packageId = '7zip.install'
-$url = '{{DownloadUrl}}'
-$url64 = '{{DownloadUrlx64}}'
+$url = 'http://www.7-zip.org/a/7z938.msi'
+$url64 = 'http://www.7-zip.org/a/7z938-x64.msi'
 
 Install-ChocolateyPackage $packageId 'msi' '/quiet' $url $url64
 
