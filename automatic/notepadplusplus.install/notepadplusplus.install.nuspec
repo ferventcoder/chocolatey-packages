@@ -17,7 +17,7 @@ You're encouraged to translate Notepad++ into your native tongue if there's not 
 
 I hope you enjoy Notepad++ as much as I enjoy coding it.
 </description>
-    <projectUrl>http://notepad-plus-plus.org/</projectUrl>
+    <projectUrl>https://notepad-plus-plus.org/</projectUrl>
     <tags>notepad notepadplusplus notepad-plus-plus chocolatey admin</tags>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/notepadplusplus.png</iconUrl>
   </metadata>
