@@ -26,7 +26,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://notepad-plus-plus.org/</Url>
+            <Url>https://notepad-plus-plus.org/</Url>
             <StartText>&lt;p id="download"&gt;&lt;a href="download/v</StartText>
             <EndText>.html"&gt;Download&lt;/a&gt;</EndText>
             <Name>version</Name>
@@ -41,8 +41,8 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>http://notepad-plus-plus\.org/repository/([^\n\r]+?)/{version}/npp\.{version}\.bin\.zip</Regex>
-            <Url>http://notepad-plus-plus.org/download/v{version}.html</Url>
+            <Regex>https://notepad-plus-plus\.org/repository/([^\n\r]+?)/{version}/npp\.{version}\.bin\.zip</Regex>
+            <Url>https://notepad-plus-plus.org/download/v{version}.html</Url>
             <Name>folder</Name>
           </UrlVariable>
         </value>
@@ -60,7 +60,7 @@
     <FileHippoId>notepad</FileHippoId>
     <LastUpdated>2015-05-01T03:04:58.097644+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://notepad-plus-plus.org/repository/{folder}/{version}/npp.{version}.bin.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>https://notepad-plus-plus.org/repository/{folder}/{version}/npp.{version}.bin.zip</FixedDownloadUrl>
     <Name>notepadplusplus.commandline</Name>
   </ApplicationJob>
 </Jobs>
