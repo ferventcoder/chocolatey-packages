@@ -41,7 +41,7 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>https://notepad-plus-plus\.org/repository/([^\n\r]+?)/{version}/npp\.{version}\.bin\.zip</Regex>
+            <Regex>/repository/([^\n\r]+?)/{version}/npp\.{version}\.bin\.zip</Regex>
             <Url>https://notepad-plus-plus.org/download/v{version}.html</Url>
             <Name>folder</Name>
           </UrlVariable>
