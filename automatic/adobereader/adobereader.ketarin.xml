@@ -183,12 +183,12 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>E:\git\choco-auto\AcroRdrDC1500720033_MUI.exe</PreviousLocation>
+    <PreviousLocation></PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
     <LastUpdated>2015-05-25T00:47:34.2537016+02:00</LastUpdated>
-    <TargetPath>E:\git\choco-auto\</TargetPath>
+    <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>{dllink}</FixedDownloadUrl>
     <Name>adobereader</Name>
   </ApplicationJob>
