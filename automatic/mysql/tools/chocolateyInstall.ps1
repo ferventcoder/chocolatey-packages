@@ -51,4 +51,3 @@ Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --install"
 #turn on the service
 Start-ChocolateyProcessAsAdmin "cmd /c NET START MySQL"
 
-Write-ChocolateySuccess "$packageName"
