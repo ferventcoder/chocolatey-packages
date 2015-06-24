@@ -17,7 +17,7 @@ pushd "$toolsDir"
 popd
 
 $extrasUrl = "http://www.7-zip.org/a/7z$($versionMinusDots)-extra.7z"
-Install-ChocolateyZipPackage $packageId $extrasUrl $installDir
+Install-ChocolateyZipPackage $packageName $extrasUrl $installDir
 
 if (Get-ProcessorBits 32) {
   # generate ignore for x64\7za.exe
