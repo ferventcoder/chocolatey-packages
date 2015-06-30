@@ -1,6 +1,6 @@
 ﻿
 $packageName = 'sysinternals'
-$url = 'http://download.sysinternals.com/files/SysinternalsSuite.zip'
+$url = 'https://download.sysinternals.com/files/SysinternalsSuite.zip'
 $installDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 Install-ChocolateyZipPackage $packageName $url $installDir
