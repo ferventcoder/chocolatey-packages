@@ -127,7 +127,7 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=http://download.mono-project.com/archive/)[\d\.]+/windows-installer/.+?\.exe</Regex>
+            <Regex>(?&lt;=http://download.mono-project.com/archive/)[\d\.]+/windows-installer/.+?\.msi</Regex>
             <Url>http://www.mono-project.com/download/#download-win</Url>
             <Name>urlPart</Name>
           </UrlVariable>

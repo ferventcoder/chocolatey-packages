@@ -1,1 +1,1 @@
-﻿Install-ChocolateyPackage 'mono' 'exe' '/SILENT' '{{DownloadUrl}}'
+﻿Install-ChocolateyPackage 'mono' 'msi' '/SILENT' '{{DownloadUrl}}'
