@@ -8,7 +8,7 @@
 $initialProcessCount = Get-ExplorerProcessCount
 Write-Warning "This installer is known to close the explorer process. This means `nyou may lose current work. `nIf it doesn't automatically restart explorer, type 'explorer' on the `ncommand shell to restart it."
 
-$versionMinusDots = "{{PackageVersion}}".Replace(".","")
+$versionMinusDots = "15.05".Replace(".","")
 $packageId = '7zip.install'
 $url = "http://www.7-zip.org/a/7z$($versionMinusDots).exe"
 $url64 = "http://www.7-zip.org/a/7z$($versionMinusDots)-x64.exe"

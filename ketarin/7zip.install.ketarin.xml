@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>chocolatey</UserAgent>
     <UserNotes />
-    <LastFileSize>1180834</LastFileSize>
-    <LastFileDate>2014-12-07T16:59:17+01:00</LastFileDate>
+    <LastFileSize>1062749</LastFileSize>
+    <LastFileDate>2015-06-14T06:02:01-07:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -44,7 +44,7 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>/7z(\d+).exe/download</Regex>
+            <Regex>/7z(\d+).exe</Regex>
             <Url>http://www.7-zip.org/download.html</Url>
             <StartText> &lt;TH class="Title" align="center"&gt;Description&lt;/TH&gt;
   &lt;/TR&gt;
@@ -62,27 +62,28 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
-            <Regex>/7z\d+-x64.msi/download</Regex>
-            <Url>http://www.7-zip.org/download.html</Url>
+            <VariableType>Textual</VariableType>
+            <Regex />
+            <TextualContent>""</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup /p 7zip /v {version} /u {preupdate-url} /u64 {url64}</ExecutePreCommand>
+    <ExecutePreCommand>chocopkgup /p 7zip /v {version} /u {preupdate-url} /u64 {url64}
+chocopkgup /p 7zip.commandline /v {version} /u {preupdate-url} /u64 {url64}</ExecutePreCommand>
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\7z935.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\7z1505.exe</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-12-15T06:29:09.9761419+01:00</LastUpdated>
+    <LastUpdated>2015-07-12T00:05:08.5170668-07:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>httpx://downloads.sourceforge.net/project/sevenzip/7-Zip/{version}/7z{VersionNoDots}.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>http://www.7-zip.org/a/7z{VersionNoDots}.exe</FixedDownloadUrl>
     <Name>7zip.install</Name>
   </ApplicationJob>
 </Jobs>

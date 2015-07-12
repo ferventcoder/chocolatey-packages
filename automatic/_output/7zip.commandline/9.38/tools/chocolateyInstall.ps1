@@ -9,6 +9,8 @@ $url64 = 'http://www.7-zip.org/a/7z938-x64.msi'
 
 Get-ChocolateyWebFile "$packageName" "$file" "$url" "$url64"
 
+Update-SessionEnvironment
+
 pushd "$toolsDir"
 # the trailing backslash is required!
 &lessmsi x "$fileName" "$installDir\"

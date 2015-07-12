@@ -1,4 +1,4 @@
-﻿$versionMinusDots = "{{PackageVersion}}".Replace(".","")
+﻿$versionMinusDots = "15.05".Replace(".","")
 
 $packageName = '7zip.commandline'
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
