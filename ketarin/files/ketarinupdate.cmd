@@ -10,7 +10,8 @@ FOR /f "tokens=*" %%F IN ('dir %DIR%..\ /b *.ketarin.xml') DO (
 	call ketarin.exe /database="%DIR%\jobs.db" /import="%DIR%..\%%F"
 )
 
-TIMEOUT /T 10
+Echo Wait for all of those to finish importing...
+TIMEOUT /T 30
 
 echo Updating the github repo first
 pushd %DIR%
