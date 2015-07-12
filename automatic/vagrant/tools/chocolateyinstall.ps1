@@ -5,7 +5,7 @@ $packageArgs = @{
   packageName   = $packageName
   fileType      = 'msi'
   url           = $url
-  silentArgs    = "/qn /norestart /l*v '$env:TEMP\chocolatey\$packageName.install.log'"
+  silentArgs    = "/qn /norestart"
   validExitCodes= @(0, 3010, 1641)
 }
 
