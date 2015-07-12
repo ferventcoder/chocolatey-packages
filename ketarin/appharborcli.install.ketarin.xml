@@ -27,8 +27,7 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>https://github.com/appharbor/appharbor-cli/downloads</Url>
-            <StartText>&lt;h4&gt;
-          &lt;a href="/downloads/appharbor/appharbor-cli/appharbor-cli-v</StartText>
+            <StartText>&lt;a href="/downloads/appharbor/appharbor-cli/appharbor-cli-v</StartText>
             <EndText>.exe"&gt;appharbor-cli</EndText>
             <TextualContent />
             <Name>version</Name>

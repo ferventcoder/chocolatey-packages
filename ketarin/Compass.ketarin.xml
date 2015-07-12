@@ -1,8 +1,7 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="e36a346c-1e2a-4450-bd0f-0239169c46ed">
-    <SourceTemplate><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Jobs>
+    <SourceTemplate><![CDATA[<Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0fb30714-8ed0-4611-8f1b-cb8fec9dae91">
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
@@ -73,8 +72,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>379392</LastFileSize>
-    <LastFileDate>2014-08-19T20:40:07+02:00</LastFileDate>
+    <LastFileSize>378368</LastFileSize>
+    <LastFileDate>2015-01-15T15:50:43-08:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -96,7 +95,7 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>https://rubygems.org/gems/compass/</Url>
-            <StartText>/downloads/compass-</StartText>
+            <StartText>&lt;a id="download" class="gem__link t-list__item" href="/downloads/compass-</StartText>
             <EndText>.gem</EndText>
             <TextualContent />
             <Name>version</Name>
@@ -124,11 +123,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\compass-1.0.1.gem</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\compass-1.0.3.gem</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-09-27T18:23:15.8855964+02:00</LastUpdated>
+    <LastUpdated>2015-07-11T22:51:36.1959248-07:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://rubygems.org/downloads/compass-{version}.gem</FixedDownloadUrl>
     <Name>Compass</Name>

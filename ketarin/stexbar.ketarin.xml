@@ -2,10 +2,10 @@
 <Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="4283adf1-6d2d-4d85-87bc-7e0d60ca1036">
     <WebsiteUrl />
-    <UserAgent>Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36</UserAgent>
+    <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
     <LastFileSize>364544</LastFileSize>
-    <LastFileDate>2014-07-06T19:50:19+02:00</LastFileDate>
+    <LastFileDate>2015-07-11T22:33:41.4594333</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -49,36 +49,6 @@
           </UrlVariable>
         </value>
       </item>
-      <item>
-        <key>
-          <string>properUrl</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>http://sourceforge.net/projects/stefanstools/files/StExBar/StExBar-{version}.msi/download</TextualContent>
-            <Name>properUrl</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>mirror</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
-            <Url>{properUrl}</Url>
-            <StartText>;use_mirror=</StartText>
-            <EndText>"&gt;</EndText>
-            <Name>mirror</Name>
-          </UrlVariable>
-        </value>
-      </item>
     </Variables>
     <ExecuteCommand />
     <ExecutePreCommand />
@@ -90,9 +60,9 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-07-26T20:46:12.3551069+02:00</LastUpdated>
+    <LastUpdated>2015-07-11T22:33:41.4594333</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://{mirror}.dl.sourceforge.net/project/stefanstools/StExBar/StExBar-{version}.msi</FixedDownloadUrl>
+    <FixedDownloadUrl>http://sourceforge.net/projects/stefanstools/files/StExBar/StExBar-{version}.msi/download</FixedDownloadUrl>
     <Name>stexbar</Name>
   </ApplicationJob>
 </Jobs>

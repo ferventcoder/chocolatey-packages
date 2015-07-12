@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>3307203</LastFileSize>
-    <LastFileDate>2013-07-21T00:14:57+02:00</LastFileDate>
+    <LastFileSize>2748193</LastFileSize>
+    <LastFileDate>2015-07-08T12:55:34-07:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,9 +26,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://www.petges.lu/home/download/</Url>
-            <StartText>/uploads/ac.exe"&gt;Get Attribute Changer </StartText>
-            <EndText>&lt;/a&gt;</EndText>
+            <Url>http://www.petges.lu/home/changelog/</Url>
+            <StartText>&lt;strong&gt;Release </StartText>
+            <EndText> / </EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -45,7 +45,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-01-05T16:31:13.4163256+01:00</LastUpdated>
+    <LastUpdated>2015-07-11T23:14:16.6829478-07:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://www.petges.lu/pubfiles/ac.exe</FixedDownloadUrl>
     <Name>attributechanger</Name>

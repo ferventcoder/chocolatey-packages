@@ -1,8 +1,7 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0f896a4d-f637-44f5-b7aa-014ce52000e2">
-    <SourceTemplate><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Jobs>
+    <SourceTemplate><![CDATA[<Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0fb30714-8ed0-4611-8f1b-cb8fec9dae91">
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
@@ -73,8 +72,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>103273707</LastFileSize>
-    <LastFileDate>2013-09-18T01:06:49+02:00</LastFileDate>
+    <LastFileSize>121671680</LastFileSize>
+    <LastFileDate>2015-07-01T04:40:39-07:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -127,7 +126,7 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=http://download.mono-project.com/archive/)[\d\.]+/windows-installer/.+?\.exe</Regex>
+            <Regex>(?&lt;=http://download.mono-project.com/archive/)[\d\.]+/windows-installer/.+?\.msi</Regex>
             <Url>http://www.mono-project.com/download/#download-win</Url>
             <Name>urlPart</Name>
           </UrlVariable>
@@ -140,11 +139,11 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\mono-3.2.3-gtksharp-2.12.11-win32-0.exe</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\mono-4.0.2-gtksharp-2.12.26-win32-0.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-09-28T21:30:29.8561218+02:00</LastUpdated>
+    <LastUpdated>2015-07-11T23:00:17.6969309-07:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://download.mono-project.com/archive/{urlPart}</FixedDownloadUrl>
     <Name>mono</Name>
