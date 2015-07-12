@@ -14,7 +14,7 @@ echo Updating the github repo first
 pushd %DIR%
 call git add .
 call git commit -m "updates prior to automatic run for %mydate%_%mytime%"
-call git reset --hard HEAD
+::call git reset --hard HEAD
 call git fetch && git rebase origin/master
 call git push origin master
 popd
