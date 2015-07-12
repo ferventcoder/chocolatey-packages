@@ -23,12 +23,4 @@ call git push origin master
 popd
 
 echo Calling ketarin now the the repo has been updated
-start /w "ketarin" "Ketarin.exe" /silent /notify /database="%DIR%\jobs.db" /log=C:\ProgramData\chocolateypackageupdater\ketarin.%mydate%_%mytime%.log
-
-echo Updating the github repo first
-pushd %DIR%
-call git add .
-call git commit -m "updates after ketarin changes for %mydate%_%mytime%"
-call git fetch && git rebase origin/master
-call git push origin master
-popd
+call "Ketarin.exe" /silent /notify /database="%DIR%\jobs.db" /log=C:\ProgramData\chocolateypackageupdater\ketarin.%mydate%_%mytime%.log
