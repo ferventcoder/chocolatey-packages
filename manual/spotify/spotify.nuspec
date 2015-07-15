@@ -7,12 +7,12 @@
     <authors>Spotify, Ltd</authors>
     <owners>Rob Reynolds</owners>
     <summary>Spotify is a new way to listen to music</summary>
-    <description>Spotify - Millions of tracks, any time you like. Just search for it in Spotify, then play it. Just help yourself to whatever you want, whenever you want it.</description>
+    <description>Spotify – Millions of tracks, any time you like. Just search for it in Spotify, then play it. Just help yourself to whatever you want, whenever you want it.</description>
     <projectUrl>http://www.spotify.com</projectUrl>
     <tags>spotify music player radio</tags>
     <licenseUrl>https://www.spotify.com/us/legal/end-user-agreement/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/spotify.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/922a763c73805cd98d2c0bb76215720bd77728e6/icons/spotify.png</iconUrl>
     <dependencies>
       <dependency id="autoit.commandline" />
     </dependencies>
