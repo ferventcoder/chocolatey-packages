@@ -23,10 +23,12 @@ if ([Environment]::OSVersion.Version -lt (new-object 'Version' 6,1)) {
 	$32BitUrls = @{
 		'en'='http://download.microsoft.com/download/C/3/B/C3BF2EF4-E764-430C-BDCE-479F2142FC81/IE9-Windows7-x86-enu.exe';
 		'de'='http://download.microsoft.com/download/F/6/4/F6414410-F454-43BA-834E-1B4A7C1E774C/IE9-Windows7-x86-deu.exe';
+		'fr'='http://download.microsoft.com/download/B/4/3/B434518B-81E0-4110-AB1E-FFF3AFA3F761/IE9-Windows7-x86-fra.exe';
 	}
 	$64BitUrls = @{
 		'en'='http://download.microsoft.com/download/C/1/6/C167B427-722E-4665-9A40-A37BC5222B0A/IE9-Windows7-x64-enu.exe';
 		'de'='http://download.microsoft.com/download/B/B/B/BBBB0466-AE6E-46B9-AFE8-523A6C9E4232/IE9-Windows7-x64-deu.exe';
+		'fr'='http://download.microsoft.com/download/3/A/1/3A1B3560-36F2-449B-8A35-20B6F897BEFA/IE9-Windows7-x64-fra.exe';
 	}
 }
 $silentArgs = '/Passive /NoRestart'
