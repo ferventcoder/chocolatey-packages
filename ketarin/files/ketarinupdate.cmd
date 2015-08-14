@@ -14,9 +14,11 @@ call git fetch && git rebase origin/master
 call git push origin master
 popd
 
+:: /database="%DIR%\jobs.db"
+
 ::import all the files
 FOR /f "tokens=*" %%F IN ('dir %DIR%..\ /b *.ketarin.xml') DO (
-	call ketarin.exe /database="%DIR%\jobs.db" /import="%DIR%..\%%F"
+	call ketarin.exe  /import="%DIR%..\%%F"
 	TIMEOUT /T 2
 )
 
@@ -24,4 +26,4 @@ Echo Wait for all of those to finish importing...
 TIMEOUT /T 15
 
 echo Calling ketarin now the the repo has been updated
-call "Ketarin.exe" /silent /notify /database="%DIR%\jobs.db" /log=C:\ProgramData\chocolateypackageupdater\ketarin.%mydate%_%mytime%.log
+call "Ketarin.exe" /silent /notify /log=C:\ProgramData\chocolateypackageupdater\ketarin.%mydate%_%mytime%.log
