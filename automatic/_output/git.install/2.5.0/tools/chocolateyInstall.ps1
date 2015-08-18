@@ -1,12 +1,12 @@
 ﻿$registryKeyName = 'Git_is1'
-$packageId = '{{PackageName}}'
+$packageId = 'git.install'
 $fileType = 'exe'
 $fileArgs = $(
   '/VERYSILENT /NORESTART /NOCANCEL /SP- ' +
   '/NOICONS /COMPONENTS="icons,icons\quicklaunch,ext,ext\reg,ext\reg\shellhere,ext\reg\guihere,assoc,assoc_sh" /LOG'
 )
-$url = '{{DownloadUrl}}'
-$url64 = '{{DownloadUrlx64}}'
+$url = 'https://github.com/git-for-windows/git/releases/download/v2.5.0.windows.1/Git-2.5.0-32-bit.exe'
+$url64 = 'https://github.com/git-for-windows/git/releases/download/v2.5.0.windows.1/Git-2.5.0-64-bit.exe'
 
 $arguments = @{};
 # /GitOnlyOnPath /GitAndUnixToolsOnPath /NoAutoCrlf

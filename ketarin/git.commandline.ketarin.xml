@@ -5,7 +5,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>22157424</LastFileSize>
-    <LastFileDate>2014-04-11T23:44:27+02:00</LastFileDate>
+    <LastFileDate>2014-06-01T15:54:03.4512009</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -27,8 +27,8 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>http://git-scm.com/download/win</Url>
-            <StartText>&lt;p&gt;You are downloading version &lt;strong&gt;</StartText>
-            <EndText>&lt;/strong&gt;</EndText>
+            <StartText>releases/download/v</StartText>
+            <EndText>.windows</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -44,7 +44,7 @@
             <VariableType>Textual</VariableType>
             <Regex>http://code.google.com/feeds/p/grepwin/downloads/basic/grepWin-\d+\.\d+.\d+\-64.msi</Regex>
             <Url>http://code.google.com/feeds/p/grepwin/downloads/basic</Url>
-            <TextualContent>""</TextualContent>
+            <TextualContent>https://github.com/git-for-windows/git/releases/download/v{version}.windows.1/PortableGit-{version}-64-bit.7z.exe</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -57,8 +57,8 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=msysgit/releases/download/)Git-{version}-[^"]+\.7z</Regex>
-            <Url>https://github.com/msysgit/msysgit/releases/</Url>
+            <Regex>(?&lt;=/releases/download/)v{version}.windows.1/PortableGit-{version}-[^"]+\.7z.exe</Regex>
+            <Url>https://github.com/git-for-windows/git/releases/</Url>
             <Name>urlPart</Name>
           </UrlVariable>
         </value>
@@ -74,9 +74,9 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-06-02T00:54:03.4512009+02:00</LastUpdated>
+    <LastUpdated>2014-06-01T15:54:03.4512009</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>https://github.com/msysgit/msysgit/releases/download/{urlPart}</FixedDownloadUrl>
+    <FixedDownloadUrl>https://github.com/git-for-windows/git/releases/download/{urlPart}</FixedDownloadUrl>
     <Name>git.commandline</Name>
   </ApplicationJob>
 </Jobs>

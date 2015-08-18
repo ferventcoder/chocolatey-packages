@@ -27,8 +27,8 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>http://git-scm.com/download/win</Url>
-            <StartText>&lt;p&gt;You are downloading version &lt;strong&gt;</StartText>
-            <EndText>&lt;/strong&gt;</EndText>
+            <StartText>releases/download/v</StartText>
+            <EndText>.windows</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -44,7 +44,7 @@
             <VariableType>Textual</VariableType>
             <Regex>http://code.google.com/feeds/p/grepwin/downloads/basic/grepWin-\d+\.\d+.\d+\-64.msi</Regex>
             <Url>http://code.google.com/feeds/p/grepwin/downloads/basic</Url>
-            <TextualContent>""</TextualContent>
+            <TextualContent>https://github.com/git-for-windows/git/releases/download/v{version}.windows.1/Git-{version}-64-bit.exe</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -57,8 +57,8 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>(?&lt;=msysgit/releases/download/)Git-{version}-[^"]+\.exe</Regex>
-            <Url>https://github.com/msysgit/msysgit/releases/</Url>
+            <Regex>(?&lt;=releases/download/)v{version}.windows.1/Git-{version}-[^"]+\.exe</Regex>
+            <Url>https://github.com/git-for-windows/git/releases/</Url>
             <Name>urlPart</Name>
           </UrlVariable>
         </value>
@@ -76,7 +76,7 @@
     <FileHippoId />
     <LastUpdated>2014-05-30T21:50:55.7324488</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>https://github.com/msysgit/msysgit/releases/download/{urlPart}</FixedDownloadUrl>
+    <FixedDownloadUrl>https://github.com/git-for-windows/git/releases/download/{urlPart}</FixedDownloadUrl>
     <Name>git.install</Name>
   </ApplicationJob>
 </Jobs>

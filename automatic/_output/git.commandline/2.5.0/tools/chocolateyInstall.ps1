@@ -1,7 +1,7 @@
 ﻿$packageName = 'git.commandline'
 $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = '{{DownloadUrl}}'
-$url64 = '{{DownloadUrlx64}}'
+$url = 'https://github.com/git-for-windows/git/releases/download/v2.5.0.windows.1/PortableGit-2.5.0-32-bit.7z.exe'
+$url64 = 'https://github.com/git-for-windows/git/releases/download/v2.5.0.windows.1/PortableGit-2.5.0-64-bit.7z.exe'
 
 Install-ChocolateyZipPackage "$packageName" "$url" "$installDir" "$url64"
 
