@@ -19,7 +19,7 @@ $noAutoCrlf = $false # this does nothing unless true
 
 # Now parse the packageParameters using good old regular expression
 if ($packageParameters) {
-    $match_pattern = "\/(?<option>([a-zA-Z]+)):(?<value>([`"'])?([a-zA-Z0-9- _\\:\.]+)([`"'])?)|\/(?<option>([a-zA-Z]+))"  
+    $match_pattern = "\/(?<option>([a-zA-Z]+)):(?<value>([`"'])?([a-zA-Z0-9- _\\:\.]+)([`"'])?)|\/(?<option>([a-zA-Z]+))"
     #"
     $option_name = 'option'
     $value_name = 'value'
@@ -57,11 +57,9 @@ if ($packageParameters) {
 }
 
 $is64bit = (Get-ProcessorBits) -eq 64
-
-# there is only a 32-bit version, so we don't need to do any further testing on the two keys
-$installKey = "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$registryKeyName"
-if ($is64bit -eq $false) {
-  $installKey = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$registryKeyName"
+$installKey = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$registryKeyName"
+if ($is64bit -eq $true -and $env:chocolateyForceX86 -eq $true) {
+  $installKey = "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\$registryKeyName"
 }
 
 $userInstallKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\$registryKeyName"
@@ -90,15 +88,16 @@ if ($noAutoCrlf) {
 
 Install-ChocolateyPackage $packageId $fileType $fileArgs $url $url64
 
-$keyNames = Get-ItemProperty -Path $installKey
+if (Test-Path $installKey) {
+  $keyNames = Get-ItemProperty -Path $installKey
 
-if ($gitCmdOnly -eq $false -and $unixTools -eq $false) {
-  $installLocation = $keyNames.InstallLocation
-  if ($installLocation -ne '') {
-    $gitPath = Join-Path $installLocation 'cmd'
-    Install-ChocolateyPath $gitPath 'Machine'
+  if ($gitCmdOnly -eq $false -and $unixTools -eq $false) {
+    $installLocation = $keyNames.InstallLocation
+    if ($installLocation -ne '') {
+      $gitPath = Join-Path $installLocation 'cmd'
+      Install-ChocolateyPath $gitPath 'Machine'
+    }
   }
 }
 
 Write-Warning "Git installed - You may need to close and reopen your shell for PATH changes to take effect."
-
