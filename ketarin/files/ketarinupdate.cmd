@@ -7,7 +7,7 @@ For /f "tokens=1-2 delims=/:" %%a in ("%TIME%") do (set mytime=%%a%%b)
 
 echo Updating the github repo first
 pushd %DIR%
-call git add --all
+call git add --all :/
 call git commit -m "updates prior to automatic run for %mydate%_%mytime%"
 ::call git reset --hard HEAD
 call git fetch && git rebase origin/master

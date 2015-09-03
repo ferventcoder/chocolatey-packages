@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>jruby</id>
+    <title>JRuby</title>
+    <version>9.0.1.0</version>
+    <authors>Charles Oliver Nutter, Thomas Enebo, Nick Sieger, Ola Bini</authors>
+    <owners>Mike Dellanoce, Rob Reynolds</owners>
+    <summary>JRuby is a 100 % Java implementation of the Ruby programming language.</summary>
+    <description>JRuby is a 100 % Java implementation of the Ruby programming language. It is Ruby for the JVM.</description>
+    <projectUrl>http://jruby.org</projectUrl>
+    <tags>jruby ruby java jvm admin</tags>
+    <licenseUrl>https://github.com/jruby/jruby/blob/master/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/jruby.png</iconUrl>
+    <releaseNotes></releaseNotes>
+    <dependencies>
+      <dependency id="javaruntime" version="7.0.51" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: “UTF-8” -->
