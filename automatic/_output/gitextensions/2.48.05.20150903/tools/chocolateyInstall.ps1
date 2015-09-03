@@ -1,10 +1,10 @@
-﻿$packageName = '{{PackageName}}'
+﻿$packageName = 'gitextensions'
 $softwareName = 'Git Extensions*'
 $installerType = 'msi'
 $installArgs = '/quiet /norestart'
 # In case you see \{\{DownloadUrlx64\}\} (without backslashes)
 # after the commented lines, it’s intended.
-$url = '{{DownloadUrlx64}}'
+$url = 'https://github.com/gitextensions/gitextensions/releases/download/v2.48.05/GitExtensions-2.48.05-Setup.msi'
 
 $packageArgs = @{
   packageName   = $packageName
@@ -17,7 +17,7 @@ $packageArgs = @{
 
 Install-ChocolateyPackage @packageArgs
 
-#------- ADDITIONAL SETUP -------#
+#------- ADDITIONAL SETUP -------#
 $osBitness = Get-ProcessorBits
 $is64bit = $osBitness -eq 64
 
