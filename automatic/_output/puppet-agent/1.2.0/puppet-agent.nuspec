@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>puppet</id>
-    <version>{{PackageVersion}}</version>
-    <title>Puppet (Install)</title>
+    <id>puppet-agent</id>
+    <version>1.2.0</version>
+    <title>Puppet Agent (Install)</title>
     <authors>Puppet Labs</authors>
-    <owners>micahlmartin, Rob Reynolds</owners>
+    <owners>Rob Reynolds</owners>
     <projectUrl>https://puppetlabs.com/puppet/puppet-open-source/</projectUrl>
-    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/tree/master/automatic/puppet</packageSourceUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/tree/master/automatic/puppet-agent</packageSourceUrl>
     <projectSourceUrl>https://github.com/puppetlabs/puppet</projectSourceUrl>
     <docsUrl>http://docs.puppetlabs.com/windows/</docsUrl>
     <mailingListUrl>https://groups.google.com/forum/#!forum/puppet-users</mailingListUrl>
@@ -16,11 +16,12 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/puppet.svg</iconUrl>
     <description>
-Puppet Open Source is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform. As a declarative, model-based approach to IT automation, it lets you define the desired state – or the “what” – of your infrastructure using the Puppet configuration language. Once these configurations are deployed, Puppet automatically installs the necessary packages and starts the related services, and then regularly enforces the desired state. In automating the mundane, Puppet frees you to work on more challenging projects with higher business impact.
+Puppet is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform. As a declarative, model-based approach to IT automation, it lets you define the desired state – or the “what” – of your infrastructure using the Puppet configuration language. Once these configurations are deployed, Puppet automatically installs the necessary packages and starts the related services, and then regularly enforces the desired state. In automating the mundane, Puppet frees you to work on more challenging projects with higher business impact.
 
 Puppet Open Source is the underlying technology for Puppet Enterprise and runs on all major Linux distributions, major Unix platforms like Solaris, HP-UX, and AIX, and Microsoft Windows.
 
-Puppet 3.7.0 is the first version that includes an 64-bit version of Puppet. Some adjustments may need to be met to upgrade to the x64 version. If you want to continue with more compatibility, please upgrade with `choco update puppet -x86`.
+Puppet Agent is an "All-in-One" package that installs Puppet, Ruby, Facter, Hiera, MCollective (mco) and supporting code. It is all you need to start using Puppet. See http://docs.puppetlabs.com/puppet/latest/reference/install_windows.html for more information.
+
 
 ### Install Options
 
@@ -29,7 +30,7 @@ You can pass installArgs to Chocolatey for several properties. See http://docs.p
 `-installArgs '"PUPPET_MASTER_SERVER=puppet.fqdn.com"'`
 
 ### New Puppet-Agent Package
-**NOTICE**: Newer versions of Puppet (Puppet v4+) will be in the [puppet-agent package](https://chocolatey.org/packages/puppet-agent).
+**NOTICE**: This package replaces the Puppet v3 series package known as [puppet](https://chocolatey.org/packages/puppet). A new package was created in other package distributions so Chocolatey is also following suit.
 
 **Please Note**: This is an automatically updated package. If you find it is 
 out of date by more than a day or two, please contact the maintainer(s) and
@@ -38,8 +39,9 @@ let them know the package is no longer updating correctly.
     <summary>Puppet is IT automation software that helps system administrators manage infrastructure throughout its lifecycle, from provisioning and configuration to patch management and compliance</summary>
     <releaseNotes>See https://docs.puppetlabs.com/release_notes/</releaseNotes>
     <copyright>Puppet Labs</copyright>
-    <tags>puppet configuration management infrastructure automation facter hiera</tags>
+    <tags>puppet configuration management infrastructure automation facter hiera mco mcollective marionette collective</tags>
     <provides>puppet</provides>
+    <replaces>puppet</replaces>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
