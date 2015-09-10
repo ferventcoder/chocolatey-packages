@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>5469544</LastFileSize>
-    <LastFileDate>2013-07-11T21:01:36.8011616</LastFileDate>
+    <LastFileSize>10663528</LastFileSize>
+    <LastFileDate>2015-09-08T08:33:10-07:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,9 +26,9 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://nodejs.org/download/</Url>
-            <StartText>&lt;p&gt;Current version: &lt;b&gt;v</StartText>
-            <EndText>&lt;/b&gt;&lt;/p&gt;</EndText>
+            <Url>https://nodejs.org/en/</Url>
+            <StartText>Current Version: v</StartText>
+            <EndText>&lt;/p&gt;</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -59,9 +59,9 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-07-11T21:01:36.8011616</LastUpdated>
+    <LastUpdated>2015-09-10T05:59:30.3102907-07:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://nodejs.org/dist/v{version}/node.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>https://nodejs.org/dist/v{version}/win-x86/node.exe</FixedDownloadUrl>
     <Name>nodejs.commandline</Name>
   </ApplicationJob>
 </Jobs>
