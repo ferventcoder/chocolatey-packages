@@ -1,6 +1,6 @@
 ﻿$packageName = 'nodejs'
-$url = 'http://nodejs.org/dist/v{{PackageVersion}}/node.exe'
-$url64 = 'http://nodejs.org/dist/v{{PackageVersion}}/x64/node.exe'
+$url = 'https://nodejs.org/dist/v{{PackageVersion}}/win-x86/node.exe'
+$url64 = 'https://nodejs.org/dist/v{{PackageVersion}}/win-x64/node.exe'
 
 try {
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
