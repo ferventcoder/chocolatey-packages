@@ -27,7 +27,14 @@ function Get-Python-Home() {
     $file = Get-ChildItem $filename
     $result = $file.DirectoryName
   }
-
+  
+  if (($filename -eq $null) -and (Test-Path C:\tools\Python2\python.exe)) {
+    $result = "C:\tools\Python2"
+  }
+  if (($filename -eq $null) -and (Test-Path C:\Python2\python.exe)) {
+    $result = "C:\Python2"
+  }
+  
   return $result
 }
 
@@ -53,40 +60,24 @@ function Python-Exec($url, $name) {
 
   if (has_file $filename) {
     Write-Host "Running python file: '$filename'"
-    python $filename
-  }
+    # ez_setup.py writes some spam to stderr, so ignore that and rely on exit code
+    python $filename 2> $stderr    
+    if ($LastExitCode -ne 0) {
+       throw "Command failed with exit code $LastExitCode."
+    }
+  }  
 }
 
 function Install-setuptools($version) {
   Write-Host 'Installing setuptools from http://pypi.python.org/pypi/setuptools ...'
-  $pyvrs = $global:python_version.substring(0, 3) #2.7.3 >> 2.7
+  
+  Python-Exec 'https://bootstrap.pypa.io/ez_setup.py' 'ez_setup.py'
 
-  if (is64bit) {
-    Python-Exec 'http://peak.telecommunity.com/dist/ez_setup.py' 'ez_setup.py'
-  }
-  else {
-    # http://pypi.python.org/packages/2.7/s/setuptools/setuptools-0.6c11.win32-py2.7.exe
-	$url = "http://pypi.python.org/packages/$pyvrs/s/setuptools/setuptools-$version.win32-py$pyvrs.exe"
-	Install-ChocolateyPackage 'easy.install.setuptools' 'exe' '/S' $url
-  }
-}
-
-function Install-distribute() {
-  Write-Host 'Installing distribute, Distribute is a fork of the Setuptools project. works with python versions >= 3.0'
-  Write-Host 'distribute homepage: http://pypi.python.org/pypi/distribute'
-  Python-Exec 'http://python-distribute.org/distribute_setup.py' 'distribute_setup.py'
 }
 
 function Install-easy-install() {
-   $pyvrs = [int]$global:python_version.Replace('.', '').substring(0, 2) # 27
-
-	if ($pyvrs -gt 27) {
-      Install-distribute
-	}
-	else {
-	  Install-setuptools '0.6c11'
-	}
-}
+	Install-setuptools '18.4'  
+}  
 
 function has_file($filename) {
   return Test-Path $filename
@@ -99,10 +90,7 @@ function Verify-installation() {
 function setup-python() {
   $python_home = Get-Python-Home
 
-  if ($python_home -eq $null) {
-    Write-Host "Installing Python using chocolatey. Wait..."
-    cinst python
-
+  if ($python_home -eq $null) {    
     $python_home = Get-Python-Home
 
     if ($python_home -eq $null) {
@@ -115,8 +103,7 @@ function setup-python() {
   Install-ChocolateyPath $python_script 'User'
 
   Write-Host "Setting PYTHONHOME environment variable to '$python_home'"
-  Write-Host "PS: PYTHONHOME variable is not required to Python works, but it is a good practice to have it."
-  [Environment]::SetEnvironmentVariable('PYTHONHOME', $python_home, 'User')
+  [Environment]::SetEnvironmentVariable('PYTHONHOME', $python_home, 'User')  
   $Env:PYTHONHOME = $python_home
 
   return $python_home
@@ -143,8 +130,8 @@ function chocolatey-install() {
 
         $status = Verify-installation
 
-        if ($status) {
-		  Write-ChocolateySuccess 'easy.install'
+        if (! ($status)) {
+	   throw "Installation failed! easy_install.exe not found"
         }
 
 	} catch {
