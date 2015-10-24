@@ -103,7 +103,7 @@ function setup-python() {
   Install-ChocolateyPath $python_script 'Machine'
 
   Write-Host "Setting PYTHONHOME environment variable to '$python_home'"
-  Install-ChocolateyEnvironmentVariable "PYTHONHOME" $python_home [System.EnvironmentVariableTarget]::Machine
+  Install-ChocolateyEnvironmentVariable "PYTHONHOME" $python_home 'Machine'
   $Env:PYTHONHOME = $python_home
 
   return $python_home

@@ -17,11 +17,17 @@
   # $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p645-x64.exe?direct'
   # $checksum64 = '8f8f39d69a222b5472254969755ff5d36dc42585'
 
-  $rubyFolder = '21'
-  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.7.exe?direct'
-  $checksum = '57efcc7ea3e031e66e2951db85ed09fe'
-  $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.7-x64.exe?direct'
-  $checksum64 = '56751f595ecc5385008967c5c582027e'
+  # $rubyFolder = '21'
+  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.7.exe?direct'
+  # $checksum = '57efcc7ea3e031e66e2951db85ed09fe'
+  # $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.7-x64.exe?direct'
+  # $checksum64 = '56751f595ecc5385008967c5c582027e'
+
+  $rubyFolder = '22'
+  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.3.exe?direct'
+  $checksum = '2da40c04d7a3906b269e739b5627304f'
+  $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.3-x64.exe?direct'
+  $checksum64 = '9f123f08f1045ad1d49a99031f3e835e'
 
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
   $silentArgs = "/verysilent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""

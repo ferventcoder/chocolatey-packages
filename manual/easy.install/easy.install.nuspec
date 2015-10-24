@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>easy.install</id>
-    <version>18.4</version>
+    <version>18.4.0.20151024</version>
     <title>Easy Install</title>
     <authors>Phillip J. Eby</authors>
     <owners>Elliando Dias</owners>
