@@ -15,18 +15,24 @@
 # $checksum64 = 'af37b28c15449d7adf05acd0717a9804460d8738'
 
 # 2.1.x
-$url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.6-i386-mingw32.7z?direct'
-$checksum = '2b1e96081fd3010b11591a39c31f195b2f657f1d'
-$url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.6-x64-mingw32.7z?direct'
-$checksum64 = 'b6315bc57b4e5f453bb59f640e1992702bd04d51'
+# $url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.6-i386-mingw32.7z?direct'
+# $checksum = '2b1e96081fd3010b11591a39c31f195b2f657f1d'
+# $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.6-x64-mingw32.7z?direct'
+# $checksum64 = 'b6315bc57b4e5f453bb59f640e1992702bd04d51'
+
+# 2.2.3
+$url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.2.3-i386-mingw32.7z?direct'
+$checksum = '8d7d94856bd7c9498c48a9b8d155c926'
+$url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.2.3-x64-mingw32.7z?direct'
+$checksum64 = '77bfcf4b65ec8d5ba0cd84779f3eff7c'
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installDir = Join-Path $toolsDir "ruby"
 $file = Join-Path $toolsDir "$($packageName).7z"
 
 #Get-ChocolateyWebFile "$packageName" "$file" "$url" -checksum "$checksum"
-Get-ChocolateyWebFile "$packageName" "$file" "$url" "$url64"
-#Checksum type sha1 has a bug fixed in 0.9.9.6 - https://github.com/chocolatey/choco/issues/253
-#-checksum $checksum -checksumType 'sha1' -checksum64 $checksum64 -checksumType64 'sha1'
+Get-ChocolateyWebFile "$packageName" "$file" "$url" "$url64" `
+  -checksum $checksum -checksumType 'md5' `
+  -checksum64 $checksum64 -checksumType64 'md5'
 
 Get-ChocolateyUnzip "$file" "$installDir" -packageName "$packageName"
