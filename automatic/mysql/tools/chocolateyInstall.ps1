@@ -2,8 +2,8 @@
 $packageName = 'mysql'
 $packageType = 'msi'
 $silentArgs = '/passive'
-$url = 'http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-{{PackageVersion}}-win32.zip'
-$url64 = 'http://cdn.mysql.com/Downloads/MySQL-5.6/mysql-{{PackageVersion}}-winx64.zip'
+$url = 'https://cdn.mysql.com/Downloads/MySQL-5.7/mysql-{{PackageVersion}}-win32.zip'
+$url64 = 'https://cdn.mysql.com/Downloads/MySQL-5.7/mysql-{{PackageVersion}}-winx64.zip'
 
 
 $binRoot = Get-BinRoot
