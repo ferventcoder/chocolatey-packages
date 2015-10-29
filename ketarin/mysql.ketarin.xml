@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="8776d40e-3513-4c06-9ca8-eb3f49f964df">
     <WebsiteUrl />
@@ -55,13 +55,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\mysql-5.6.12-win32.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\mysql-5.7.9-win32.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
     <LastUpdated>2013-06-04T05:40:58.4619381</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://dev.mysql.com/get/Downloads/MySQL-5.6/mysql-{version}-win32.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-{version}-win32.zip</FixedDownloadUrl>
     <Name>mysql</Name>
   </ApplicationJob>
 </Jobs>
