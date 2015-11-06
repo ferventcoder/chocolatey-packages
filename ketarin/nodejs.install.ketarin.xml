@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>9162752</LastFileSize>
-    <LastFileDate>2015-09-08T08:34:49-07:00</LastFileDate>
+    <LastFileSize>9244672</LastFileSize>
+    <LastFileDate>2015-11-03T12:01:04-08:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -27,8 +27,8 @@
             <VariableType>StartEnd</VariableType>
             <Regex />
             <Url>https://nodejs.org/en/</Url>
-            <StartText>Current Version: v</StartText>
-            <EndText>&lt;/p&gt;</EndText>
+            <StartText>data-version="v</StartText>
+            <EndText>"&gt;</EndText>
             <TextualContent />
             <Name>version</Name>
           </UrlVariable>
@@ -50,16 +50,16 @@
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand />
+    <ExecutePreCommand>chocopkgup /p nodejs /v {version} /u {preupdate-url} /u64 {url64}</ExecutePreCommand>
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\node-v4.0.0-x86.msi</PreviousLocation>
+    <PreviousLocation>C:\Chocolatey\_work\node-v4.2.2-x86.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-09-10T06:02:05.7637551-07:00</LastUpdated>
+    <LastUpdated>2015-11-06T04:53:17.7790795-08:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://nodejs.org/dist/v{version}/node-v{version}-x86.msi</FixedDownloadUrl>
     <Name>nodejs.install</Name>
