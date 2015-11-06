@@ -1,11 +1,11 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
-  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="3ffef63f-4639-4de0-8281-f0bb7c41a648">
+  <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="db1b352d-6173-4317-b333-8b26b0ae762a">
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
-    <LastFileSize>9330688</LastFileSize>
-    <LastFileDate>2015-10-29T05:27:15-07:00</LastFileDate>
+    <LastFileSize>11339880</LastFileSize>
+    <LastFileDate>2015-11-06T05:13:02.3751431</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -26,7 +26,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>https://nodejs.org/en/download/stable/</Url>
+            <Url>https://nodejs.org/en/download/</Url>
             <StartText>data-version="v</StartText>
             <EndText>"&gt;</EndText>
             <TextualContent />
@@ -50,18 +50,17 @@
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup /p nodejs /v {version} /u {preupdate-url} /u64 {url64}</ExecutePreCommand>
+    <ExecutePreCommand />
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Chocolatey\_work\node-v5.0.0-x86.msi</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-11-06T05:12:32.4844675-08:00</LastUpdated>
+    <LastUpdated>2015-11-06T05:13:02.3751431</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>https://nodejs.org/dist/v{version}/node-v{version}-x86.msi</FixedDownloadUrl>
-    <Name>nodejs.install</Name>
+    <FixedDownloadUrl>https://nodejs.org/dist/v{version}/win-x86/node.exe</FixedDownloadUrl>
+    <Name>nodejs.commandline.lts</Name>
   </ApplicationJob>
 </Jobs>
