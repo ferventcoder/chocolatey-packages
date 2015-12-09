@@ -3,8 +3,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageName = 'mysql'
 $packageType = 'msi'
 $silentArgs = '/passive'
-$url = 'https://cdn.mysql.com/Downloads/MySQL-5.7/mysql-{{PackageVersion}}-win32.zip'
-$url64 = 'https://cdn.mysql.com/Downloads/MySQL-5.7/mysql-{{PackageVersion}}-winx64.zip'
+$url = 'https://cdn.mysql.com/Downloads/MySQL-5.7/mysql-5.7.10-win32.zip'
+$url64 = 'https://cdn.mysql.com/Downloads/MySQL-5.7/mysql-5.7.10-winx64.zip'
 
 $binRoot = Get-BinRoot
 $installDir = Join-Path $binRoot "$packageName"
