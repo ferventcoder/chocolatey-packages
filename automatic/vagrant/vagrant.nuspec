@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vagrant</id>
-    <title>Vagrant (Install)</title>
+    <title>Vagrant</title>
     <version>{{PackageVersion}}</version>
     <authors>Mitchell Hashimoto, John Bender, HashiCorp</authors>
     <owners>Rob Reynolds, Patrick Wyatt</owners>
