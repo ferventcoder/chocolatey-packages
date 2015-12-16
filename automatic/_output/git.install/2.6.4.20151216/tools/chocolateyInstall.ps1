@@ -107,7 +107,7 @@ If ([bool](get-process ssh-agent -ErrorAction SilentlyContinue))
 
 Write-Output "The detailed git install log will be in either $env:windir\temp or $env:temp"
 
-Install-ChocolateyPackage $packageId $fileType $fileArgs $url $url64 -ValidExitCodes (0,3010)
+Install-ChocolateyPackage $packageId $fileType $fileArgs $url $url64
 
 if (Test-Path $installKey) {
   $keyNames = Get-ItemProperty -Path $installKey
