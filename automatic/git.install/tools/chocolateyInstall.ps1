@@ -19,7 +19,7 @@ $noAutoCrlf = $false # this does nothing unless true
 
 # Now parse the packageParameters using good old regular expression
 if ($packageParameters) {
-    $match_pattern = "\/(?<option>([a-zA-Z]+)):(?<value>([`"'])?([a-zA-Z0-9- _\\:\.]+)([`"'])?)|\/(?<option>([a-zA-Z]+))"  
+    $match_pattern = "\/(?<option>([a-zA-Z]+)):(?<value>([`"'])?([a-zA-Z0-9- _\\:\.]+)([`"'])?)|\/(?<option>([a-zA-Z]+))"
     #"
     $option_name = 'option'
     $value_name = 'value'
@@ -86,6 +86,25 @@ if ($noAutoCrlf) {
   New-ItemProperty $installKey -Name "Inno Setup CodeFile: CRLF Option" -Value "CRLFCommitAsIs" -PropertyType "String" -Force | Out-Null
 }
 
+# Make our install work properly when running under SYSTEM account (Chef Cliet Service, Puppet Service, etc)
+# Add other items to this if block or use $IsRunningUnderSystemAccount to adjust existing logic that needs changing
+$IsRunningUnderSystemAccount = ([System.Security.Principal.WindowsIdentity]::GetCurrent()).IsSystem
+If ($IsRunningUnderSystemAccount)
+{
+  #strip out quicklaunch parameter as it causes a hang under SYSTEM account
+  $fileArgs = $fileArgs.replace('icons\quicklaunch,','')
+  If ($fileArgs -inotlike "*/SUPPRESSMSGBOXES*")
+  {
+    $fileArgs = $fileArgs + ' /SUPPRESSMSGBOXES'
+  }
+}
+
+If ([bool](get-process ssh-agent -ErrorAction SilentlyContinue))
+{
+  Write-Output "Killing any git ssh-agent instances for install."
+  (get-process ssh-agent | where {$_.Path -ilike "*\git\usr\bin\*"}) | stop-process
+}
+
 Install-ChocolateyPackage $packageId $fileType $fileArgs $url $url64
 
 if (Test-Path $installKey) {
@@ -101,4 +120,3 @@ if (Test-Path $installKey) {
 }
 
 Write-Warning "Git installed - You may need to close and reopen your shell for PATH changes to take effect."
-
