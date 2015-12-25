@@ -11,6 +11,8 @@
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
     <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
     <ShareApplication>false</ShareApplication>
     <ExclusiveDownload>false</ExclusiveDownload>
@@ -24,8 +26,8 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
+            <VariableType>RegularExpression</VariableType>
+            <Regex>([\d\.]+)\.msi"&gt;</Regex>
             <Url>https://www.vagrantup.com/downloads.html</Url>
             <StartText>latest version of Vagrant
 (</StartText>
@@ -56,12 +58,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
+    <PreviousLocation />
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
     <LastUpdated>2012-05-23T02:09:37.7748325</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>https://dl.bintray.com/mitchellh/vagrant/vagrant_{version}.msi</FixedDownloadUrl>
+    <FixedDownloadUrl>https://releases.hashicorp.com/vagrant/{version}/vagrant_{version}.msi</FixedDownloadUrl>
     <Name>vagrant</Name>
   </ApplicationJob>
 </Jobs>
