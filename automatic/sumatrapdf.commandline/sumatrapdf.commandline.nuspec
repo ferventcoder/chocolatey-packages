@@ -1,27 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sumatrapdf.commandline</id>
     <title>Sumatra PDF (Portable, CommandLine)</title>
     <version>{{PackageVersion}}</version>
     <authors>Krzysztof Kowalczyk</authors>
     <owners>Rob Reynolds</owners>
-	<iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/sumatrapdf.png</iconUrl>
     <summary>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.</summary>
     <description>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.
-
-Sumatra PDF is small, portable and starts up very fast.
-
-Simplicity of the user interface has a high priority</description>
-    <projectUrl>http://blog.kowalczyk.info/software/sumatrapdf/free-pdf-reader.html</projectUrl>
+	    Sumatra PDF is powerful, small, portable and starts up very fast.
+	    Simplicity of the user interface has a high priority.</description>
+    <projectUrl>http://www.sumatrapdfreader.org/free-pdf-reader.html</projectUrl>
+    <packageSourceUrl>https://github.com/aronovgj/choco-auto/tree/master/sumatrapdf</packageSourceUrl>
+    <projectSourceUrl>https://github.com/sumatrapdfreader/sumatrapdf</projectSourceUrl>
+    <docsUrl>http://www.sumatrapdfreader.org/manual.html</docsUrl>
+    <bugTrackerUrl>https://github.com/sumatrapdfreader/sumatrapdf/wiki/Submitting-bug-reports</bugTrackerUrl>
     <tags>sumatrapdf pdf reader</tags>
     <copyright></copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes></releaseNotes>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/sumatrapdf.png</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="__VERSION__" />
+      <dependency id="" />
+    </dependencies>-->
+    <releaseNotes>http://www.sumatrapdfreader.org/news.html</releaseNotes>
+    <!--<provides></provides>-->
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
   </files>
 </package>
-<!-- character encoding: “UTF-8” -->
