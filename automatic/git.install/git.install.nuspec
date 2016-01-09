@@ -25,7 +25,12 @@ The following package parameters can be set:
 These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/GitAndUnixToolsOnPath /NoAutoCrlf"'`.
     </description>
-    <projectUrl>https://msysgit.github.io/</projectUrl>
+    <projectUrl>https://git-for-windows.github.io/</projectUrl>
+    <projectSourceUrl>https://github.com/git-for-windows/git</projectSourceUrl>
+    <docsUrl>http://git-scm.com/doc</docsUrl>
+    <mailingListUrl>http://groups.google.com/group/git-for-windows</mailingListUrl>
+    <bugTrackerUrl>https://github.com/git-for-windows/git/issues</bugTrackerUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages</packageSourceUrl>
     <tags>git vcs dvcs version control msysgit admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
