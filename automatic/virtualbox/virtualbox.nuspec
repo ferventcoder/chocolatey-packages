@@ -9,7 +9,7 @@
     <summary>VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use.</summary>
     <description>VirtualBox is a general-purpose full virtualizer for x86 hardware, targeted at server, desktop and embedded use.</description>
     <projectUrl>https://www.virtualbox.org/</projectUrl>
-    <tags>virtualbox virtualization</tags>
+    <tags>virtualbox virtualization admin</tags>
     <licenseUrl>https://www.virtualbox.org/wiki/VirtualBox_PUEL</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/ea1be546ac1b75346d8e8d898c2617320d6b46e3/icons/virtualbox.png</iconUrl>

@@ -13,7 +13,7 @@ PostgreSQL is a powerful, open source object-relational database system. It has 
 It includes most SQL:2008 data types, including INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL, and TIMESTAMP. It also supports storage of binary large objects, including pictures, sounds, or video. It has native programming interfaces for C/C++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, among others, and exceptional documentation.
     </description>
     <projectUrl>http://www.postgresql.org/</projectUrl>
-    <tags>postgresql database sql chocolatey admin</tags>
+    <tags>postgresql database sql admin</tags>
     <licenseUrl>http://www.postgresql.org/about/licence</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/postgresql.svg</iconUrl>
