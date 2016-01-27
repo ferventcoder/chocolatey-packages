@@ -7,7 +7,7 @@ $url = "http://downloads.sourceforge.net/mingw-w64/$zipFile"
 $binRoot = Get-BinRoot
 Write-Debug "Bin Root is $binRoot"
 
-Install-ChocolateyZipPackage "$packageName" "$url" "$binRoot"
+Install-ChocolateyZipPackage "$packageName" "$url" "$binRoot" -checksum "$checksum" -checksumType 'sha1'
 
 $installDir = Join-Path "$binRoot" "$mingwDir"
 Write-Host "Adding `'$installDir`' to the path and the current shell path"
