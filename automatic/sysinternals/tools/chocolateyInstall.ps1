@@ -31,4 +31,7 @@ Install-ChocolateyZipPackage $packageName $url $installDir
   New-Item "$installDir\$_.exe.gui" -Type file -Force | Out-Null
 }
 
+"Accepting Eula for all applications"
+ls $installDir\*.exe | % { $k = "HKCU:/Software/Sysinternals/$($_.Name -replace '.exe$')"; mkdir $k -ea 0 -force; sp $k EulaAccepted 1 -ea 0}
+
 Write-Warning "Clean up older versions of this install, most likely at c:\sysinternals"
