@@ -1,7 +1,7 @@
 # Default values
 $packageName = 'mingw'
-$packageVersion = '4.8.5'
-$rev = 'v4-rev0'
+$packageVersion = '4.9.3'
+$rev = 'v4-rev1'
 $threads = 'posix'
 $exception = 'default' #dwarf is 32bit only, seh is 64bit only, sjlj works with 32 / 64
 
@@ -62,22 +62,22 @@ if (($forceX86) -or (Get-ProcessorBits 32)) {
 $checksums = @{
   'x86_64'=@{
     'posix'=@{
-      'sjlj'='12b38db95f053b820dedbf4b226035abcfe3fab6';
-      'seh'='715b01ca06d7fd2d813f67d0cd536d751cef0f15'
+      'sjlj'='008bd533810a2c8e64c86e671a1c0230d6f521be';
+      'seh'='cbaf53864cc4f86a27e0c84b9bdced0b7580dd7c'
     };
     'win32'=@{
-      'sjlj'='896d065baf8e487a424a1292148eaea5413a755b';
-      'seh'='c664898f4cf69b8af0c394096d41eb56c0ac76b2'
+      'sjlj'='193af7cf78d3d814ae7e6172cc44d36d59214631';
+      'seh'='754fdd027a6378680139914ba4323d99b754bd64'
     }
   };
   'i686'=@{
     'posix'=@{
-      'sjlj'='b0130c84e274c0f1702d24a2c83f900446156f63';
-      'dwarf'='7372de484727d78ff38af0042de1dacc7b657c2f'
+      'sjlj'='df6ab0f7dd12333a0492c35cd5e85ae003054171';
+      'dwarf'='210c177322dec580198cb41862b4ed60a521deb0'
     };
     'win32'=@{
-      'sjlj'='88f2ff4c827ea10a7c60b1db58810e9f00e04d9e';
-      'dwarf'='6688a67032b7582a531645b22523d92e0aad61ab'
+      'sjlj'='3efbd8eaa740da50b1212a76bcad34a59114b644';
+      'dwarf'='06b342885f82ed07f114890d4b14e836dae7362e'
     }
   }
 }

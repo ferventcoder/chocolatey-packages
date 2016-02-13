@@ -3,7 +3,7 @@
   <metadata>
     <id>mingw</id>
     <title>MinGW</title>
-    <version>4.8.5</version>
+    <version>4.9.3</version>
     <authors>cstrauss, cwilso11, earnie, keithmarshall</authors>
     <owners>Rob Reynolds, matthewphillips, Michael Smith</owners>
     <summary>MinGW ("Minimalistic GNU for Windows") is a collection of freely available and freely distributable Windows specific header files and import libraries combined with GNU toolsets that allow one to produce native Windows programs that do not rely on any 3rd-party C runtime DLLs.</summary>
