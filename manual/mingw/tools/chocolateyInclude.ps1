@@ -1,7 +1,7 @@
 # Default values
 $packageName = 'mingw'
-$packageVersion = '4.8.3'
-$rev = 'rev0'
+$packageVersion = '5.3.0'
+$rev = 'v4-rev0'
 $threads = 'posix'
 $exception = 'default' #dwarf is 32bit only, seh is 64bit only, sjlj works with 32 / 64
 
@@ -58,4 +58,29 @@ if (($forceX86) -or (Get-ProcessorBits 32)) {
   $prefix = 'x86_64'
 }
 
-$zipFile = "$prefix-$packageVersion-release-$threads-$exception-rt_v3-$rev.7z"
+# sha1 checksums
+$checksums = @{
+  'x86_64'=@{
+    'posix'=@{
+      'sjlj'='4f9c17b30ff18c2d3d7cb8cb5f3a1ac9aa84b868';
+      'seh'='7eb12dd3eddcf609722c9552f8592bd9948da1fc'
+    };
+    'win32'=@{
+      'sjlj'='414bc5cee8dbff934c49b551c3ac3a17041614c5';
+      'seh'='164df21c5131733b70a3e8ad4373485ee32731ed'
+    }
+  };
+  'i686'=@{
+    'posix'=@{
+      'sjlj'='91b10f23917b59d6e2b9e88233d26854f58b9ea2';
+      'dwarf'='d4f21d25f3454f8efdada50e5ad799a0a9e07c6a'
+    };
+    'win32'=@{
+      'sjlj'='719cd0700ed90fd534abd059f2335c80fa2b132a';
+      'dwarf'='b62298b55a9e7eef68b17cea359d3e281994082b'
+    }
+  }
+}
+$checksum = $checksums[$prefix][$threads][$exception]
+
+$zipFile = "$prefix-$packageVersion-release-$threads-$exception-rt_$rev.7z"
