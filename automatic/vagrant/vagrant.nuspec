@@ -32,6 +32,9 @@ Vagrant remains and always will be a liberally licensed open source project. Eac
     <licenseUrl>https://github.com/mitchellh/vagrant/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/768abfcbe194f56e9bb3fed32ed61849886dbcf2/icons/vagrant.png</iconUrl>
+    <dependencies>
+      <dependency id="vcredist2010" />
+    </dependencies>
     <releaseNotes>[CHANGELOG](https://github.com/mitchellh/vagrant/blob/master/CHANGELOG.md)</releaseNotes>
     <!--<provides>vagrant</provides>-->
   </metadata>
