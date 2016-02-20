@@ -9,11 +9,11 @@
     <summary>Pip is a tool for installing and managing Python packages, such as those found in the Python Package Index</summary>
     <description>pip is a tool for installing and managing Python packages, such as those found in the Python Package Index</description>
     <projectUrl>http://www.pip-installer.org/en/latest/index.html</projectUrl>
-    <tags>pip python easy_install </tags>
+    <tags>pip python easy_install</tags>
     <copyright>The pip developers</copyright>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/python.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/python.svg</iconUrl>
     <dependencies>
       <dependency id="easy.install" />
     </dependencies>

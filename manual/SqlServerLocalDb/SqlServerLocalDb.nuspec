@@ -29,7 +29,7 @@ LocalDB is easy to download, install, and manage. It installs as a small shared 
     <copyright>Microsoft</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/fd1a5932edc26194500554d026ca35e6c0274b6c/icons/microsoft-sql-server.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/microsoft-sql-server.svg</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

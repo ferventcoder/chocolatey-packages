@@ -15,7 +15,7 @@ NetBalancer is an internet traffic control and monitoring tool designed for Wind
     <copyright>SeriousBit</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/netbalancer.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/netbalancer.png</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>

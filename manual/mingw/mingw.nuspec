@@ -3,27 +3,28 @@
   <metadata>
     <id>mingw</id>
     <title>MinGW</title>
-    <version>4.8.3.20141208</version>
+    <version>4.8.3.20150601</version>
     <authors>cstrauss, cwilso11, earnie, keithmarshall</authors>
-    <owners>Rob Reynolds, matthewphillips</owners>
+    <owners>Rob Reynolds, matthewphillips, Michael Smith</owners>
     <summary>MinGW ("Minimalistic GNU for Windows") is a collection of freely available and freely distributable Windows specific header files and import libraries combined with GNU toolsets that allow one to produce native Windows programs that do not rely on any 3rd-party C runtime DLLs.</summary>
-    <description>MinGW ("Minimalistic GNU for Windows") is a collection of freely available and freely distributable Windows specific header files and import libraries combined with GNU toolsets that allow one to produce native Windows programs that do not rely on any 3rd-party C runtime DLLs.
+    <description>
+MinGW (“Minimalistic GNU for Windows”) is a collection of freely available and freely distributable Windows specific header files and import libraries combined with GNU toolsets that allow one to produce native Windows programs that do not rely on any 3rd-party C runtime DLLs.
 
-    Gambit Scheme system, compiler and interpreter.
+Gambit Scheme system, compiler and interpreter.
 
-    The default package now uses DWARF (32-bit) and SEH (64-bit) exception handling and posix threads. Other configurations can be selected using the params:
-    * exception: default (seh for 64-bit, dwarf for 32-bit), sjlj
-    * threads: posix, win32
-    For example: -params "/exception:sjlj /threads:win32"</description>
+The default package now uses SJLJ (32-bit) and SEH (64-bit) exception handling and posix threads. Other configurations can be selected using the params:
+
+* exception: sjlj, seh (64-bit only), dwarf (32-bit only)
+* threads: posix, win32
+
+For example: `-params "/exception:sjlj /threads:win32"`
+    </description>
     <projectUrl>http://www.mingw.org/wiki/MinGW</projectUrl>
     <tags>mingw gnu unix gcc</tags>
     <copyright></copyright>
     <licenseUrl>http://www.mingw.org/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/mingw.png</iconUrl>
-    <dependencies>
-      <dependency id="7zip.commandline" />
-    </dependencies>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/mingw.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

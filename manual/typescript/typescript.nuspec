@@ -3,7 +3,7 @@
   <metadata>
     <id>typescript</id>
     <title>TypeScript</title>
-    <version>0.9.5.0</version>
+    <version>1.6.0</version>
     <authors>Microsoft</authors>
     <owners>Rob Reynolds</owners>
     <summary>TypeScript is a language for application-scale JavaScript development.</summary>
@@ -14,7 +14,7 @@ Any browser. Any host. Any OS. Open Source.</description>
     <tags>typescript javascript</tags>
     <copyright></copyright>
     <licenseUrl>http://typescript.codeplex.com/license</licenseUrl>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/typescript.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/typescript.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <dependencies>
       <dependency id="nodejs.install" version="0.8.10" />

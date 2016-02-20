@@ -3,7 +3,7 @@
   <metadata>
     <id>kdiff3</id>
     <title>KDiff3</title>
-    <version>0.9.97</version>
+    <version>0.9.98</version>
     <authors>Joachim Eibl</authors>
     <owners>Chris Ortman</owners>
     <summary>KDiff3 - graphical text difference analyzer (Diff / Merge tool)</summary>
@@ -12,7 +12,7 @@
     <tags>kdiff3 diff diffing merge difference admin</tags>
     <licenseUrl>http://kdiff3.sourceforge.net/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/kdiff3.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/kdiff3.png</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

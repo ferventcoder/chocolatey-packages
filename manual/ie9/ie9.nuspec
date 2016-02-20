@@ -2,15 +2,17 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>ie9</id>
-    <title>IE9</title>
-    <version>0.0.4</version>
+    <title>Internet Explorer 9</title>
+    <version>0.0.6</version>
     <authors>Microsoft</authors>
     <owners>Rob Reynolds</owners>
-    <summary>IE9 - Explore a more beautiful web (Windows 7)</summary>
-    <description>IE9 - Explore a more beautiful web (Windows 7 only)</description>
-    <projectUrl>http://ie.microsoft.com/testdrive/</projectUrl>
-    <tags>internet explorer ie9 notSilent admin</tags>
-    <!--<iconUrl>32x32.png</iconUrl>-->
+    <summary>Windows Internet Explorer 9 lets your websites shine and perform just like native applications on your PC.</summary>
+    <description>Windows Internet Explorer 9 lets your websites shine and perform just like native applications on your PC (Windows Vista, 7 and Server 2008/R2 only).</description>
+    <projectUrl>https://www.microsoft.com/download/internet-explorer-9-details.aspx</projectUrl>
+    <licenseUrl>http://windows.microsoft.com/en-US/internet-explorer/products/ie-9/end-user-license-agreement</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>microsoft internet explorer ie 9 web browser</tags>
+    <iconUrl>https://cdn.rawgit.com/TomOne/various/bc1bbabef98fa5036195d6e2de5e0fc2400caef4/ie.svg</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

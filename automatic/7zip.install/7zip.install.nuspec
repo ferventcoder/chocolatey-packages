@@ -8,12 +8,15 @@
     <owners>Rob Reynolds</owners>
     <summary>7-Zip is a file archiver with a high compression ratio.</summary>
     <description>7-Zip is a file archiver with a high compression ratio.
+
+### NOTE: The installer for 7-Zip is known to close the explorer process.
+This means you may lose current work. If it doesn't automatically restart explorer, type `explorer` on the command shell to restart it.
     </description>
     <projectUrl>http://www.7-zip.org/</projectUrl>
     <tags>7zip zip archiver admin</tags>
     <licenseUrl>http://www.7-zip.org/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/7zip.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/7zip.svg</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

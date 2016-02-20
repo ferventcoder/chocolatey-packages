@@ -1,1 +1,0 @@
-﻿Install-ChocolateyZipPackage 'notepadplusplus.commandline' 'http://download.tuxfamily.org/notepadplus/6.3.3/npp.6.3.3.bin.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"

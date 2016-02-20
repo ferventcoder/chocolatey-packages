@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>vlc</id>
+    <title>VLC media player</title>
+    <version>2.2.1</version>
+    <authors>VideoLAN Organization</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>VLC Media Player</summary>
+    <description>
+VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.
+    </description>
+    <projectUrl>http://www.videolan.org/vlc/</projectUrl>
+    <tags>vlc multimedia media player admin</tags>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/vlc.png</iconUrl>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: “UTF-8” -->

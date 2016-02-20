@@ -17,7 +17,7 @@ Note: This will fail if you don’t have the correct version of Visual C++ 2008 
     <copyright>Microsoft</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/fd1a5932edc26194500554d026ca35e6c0274b6c/icons/microsoft-sql-server.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/microsoft-sql-server.svg</iconUrl>
     <dependencies>
       <dependency id="vcredist2008" />
     </dependencies>

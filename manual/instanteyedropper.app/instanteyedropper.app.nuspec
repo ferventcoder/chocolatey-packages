@@ -19,7 +19,7 @@ Webmasters may repeat this operation many times a day. Just imagine how much tim
     <copyright>SpiceBrains.com 2005–2012</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/fd1a5932edc26194500554d026ca35e6c0274b6c/icons/instanteyedropper.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/instanteyedropper.svg</iconUrl>
     <releaseNotes></releaseNotes>
   </metadata>
   <files>

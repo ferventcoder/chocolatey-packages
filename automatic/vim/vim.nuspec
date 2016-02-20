@@ -17,7 +17,7 @@ Vim is often called a programmer’s editor, and so useful for programming that 
     <tags>vim editor vi admin</tags>
     <licenseUrl>http://vimdoc.sourceforge.net/htmldoc/uganda.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/051355942d87497067ed02c1ecce9a293a9f0a63/icons/vim.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/vim.svg</iconUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

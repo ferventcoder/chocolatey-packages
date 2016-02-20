@@ -6,7 +6,7 @@
     <version>3.0</version>
     <authors>Krzysztof Kowalczyk</authors>
     <owners>Rob Reynolds</owners>
-	<iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/bd3902ea9e357d5d1b3ece2977f02e5ef60ca84a/icons/sumatrapdf.png</iconUrl>
+	<iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/sumatrapdf.png</iconUrl>
     <summary>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.</summary>
     <description>Sumatra PDF is a free PDF, eBook (ePub, Mobi), XPS, DjVu, CHM, Comic Book (CBZ and CBR) reader for Windows.
 

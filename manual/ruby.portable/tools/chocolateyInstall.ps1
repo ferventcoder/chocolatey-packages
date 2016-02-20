@@ -5,34 +5,34 @@
 #$checksum = '2eabeb3bb210d088083c0c04fdf94c7e'
 
 # 1.9.3
-# $url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-1.9.3-p545-i386-mingw32.7z?direct'
-# $checksum = '8e7f07256c86bfd6fc73fbcc13db4b09'
+# $url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-1.9.3-p551-i386-mingw32.7z?direct'
+# $checksum = '73ba6e292d3afec5cecc68ec64fd85bf'
 
 # 2.0.0
-# $url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.0.0-p576-i386-mingw32.7z?direct'
-# $checksum = '40a87864ca89bbd46f8083bb5cd52d89'
-# $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.0.0-p576-x64-mingw32.7z?direct'
-# $checksum64 = 'a097cb750316e8bfa25fd836dd4296fa'
+# $url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.0.0-p645-i386-mingw32.7z?direct'
+# $checksum = '57422903090e7001698c5b94ca47e1a6ee492c54'
+# $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.0.0-p645-x64-mingw32.7z?direct'
+# $checksum64 = 'af37b28c15449d7adf05acd0717a9804460d8738'
 
-# 2.1.5
-$url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.5-i386-mingw32.7z?direct'
-$checksum = 'fe6b596fc47f503b0c0c01ebed16cf65'
-$url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.5-x64-mingw32.7z?direct'
-$checksum64 = '2ebc791db99858a0bd586968cddfcf0d'
+# 2.1.x
+# $url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.6-i386-mingw32.7z?direct'
+# $checksum = '2b1e96081fd3010b11591a39c31f195b2f657f1d'
+# $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.1.6-x64-mingw32.7z?direct'
+# $checksum64 = 'b6315bc57b4e5f453bb59f640e1992702bd04d51'
 
-try {
-  $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-  $installDir = Join-Path $toolsDir "ruby"
+# 2.2.3
+$url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.2.3-i386-mingw32.7z?direct'
+$checksum = '8d7d94856bd7c9498c48a9b8d155c926'
+$url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.2.3-x64-mingw32.7z?direct'
+$checksum64 = '77bfcf4b65ec8d5ba0cd84779f3eff7c'
 
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$installDir = Join-Path $toolsDir "ruby"
+$file = Join-Path $toolsDir "$($packageName).7z"
 
-  $file = Join-Path $toolsDir "$($packageName).7z"
-  #Get-ChocolateyWebFile "$packageName" "$file" "$url" -checksum "$checksum"
-  Get-ChocolateyWebFile "$packageName" "$file" "$url" "$url64" -checksum "$checksum" -checksum64 "$checksum64"
+#Get-ChocolateyWebFile "$packageName" "$file" "$url" -checksum "$checksum"
+Get-ChocolateyWebFile "$packageName" "$file" "$url" "$url64" `
+  -checksum $checksum -checksumType 'md5' `
+  -checksum64 $checksum64 -checksumType64 'md5'
 
-  Get-ChocolateyUnzip "$file" "$installDir" -packageName "$packageName"
-
-  Write-ChocolateySuccess $packageName
-} catch {
-  Write-ChocolateyFailure $packageName $($_.Exception.Message)
-  throw
-}
+Get-ChocolateyUnzip "$file" "$installDir" -packageName "$packageName"
