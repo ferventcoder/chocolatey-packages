@@ -36,8 +36,6 @@ try {
     Remove-Item $fileFullPath
   }
 
-  Write-ChocolateySuccess $packageName
-
 } catch {
 
   Write-ChocolateyFailure $packageName $($_.Exception.Message)
