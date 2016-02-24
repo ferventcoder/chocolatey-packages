@@ -1,15 +1,12 @@
-﻿try {
-  $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-  Install-ChocolateyZipPackage 'paint.net' 'http://www.dotpdn.com/files/paint.net.4.0.9.install.zip' $toolsDir
+﻿$packageName = 'paint.net'
+$url = 'http://www.dotpdn.com/files/paint.net.4.0.9.install.zip'
+$toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
+$installerType = 'exe'
+$silentArgs = '/auto DESKTOPSHORTCUT=0'
 
-  $paintFileFullPath = get-childitem $toolsDir -recurse -include *.exe | select -First 1
-  Install-ChocolateyInstallPackage 'paint.net' 'exe' '/auto DESKTOPSHORTCUT=0' "$paintFileFullPath"
+Install-ChocolateyZipPackage $packageName $url $toolsDir
 
-  Remove-Item "$paintFileFullPath"
+$paintFileFullPath = Get-ChildItem $toolsDir -Recurse -Include *.exe | Select -First 1
+Install-ChocolateyInstallPackage $packageName $installerType $silentArgs $paintFileFullPath
 
-  Write-ChocolateySuccess 'paint.net'
-} catch {
-  Write-ChocolateyFailure 'paint.net' "$($_.Exception.Message)"
-  throw
-}
-
+Remove-Item $paintFileFullPath
