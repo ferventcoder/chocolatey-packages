@@ -3,7 +3,7 @@ $packageId = '{{PackageName}}'
 $fileType = 'exe'
 $fileArgs = $(
   '/VERYSILENT /NORESTART /NOCANCEL /SP- ' +
-  '/NOICONS /COMPONENTS="icons,icons\quicklaunch,ext,ext\reg,ext\reg\shellhere,ext\reg\guihere,assoc,assoc_sh" /LOG'
+  '/COMPONENTS="icons,icons\quicklaunch,ext,ext\reg,ext\reg\shellhere,ext\reg\guihere,assoc,assoc_sh" /LOG'
 )
 $url = '{{DownloadUrl}}'
 $url64 = '{{DownloadUrlx64}}'
