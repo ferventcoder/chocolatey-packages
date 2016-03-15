@@ -132,7 +132,7 @@ REM /disablepush</ExecutePreCommand>
     <FileHippoId />
     <LastUpdated>2013-08-07T22:22:30.1121369+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://the.earth.li/~sgtatham/putty/latest/x86/putty.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>http://the.earth.li/~sgtatham/putty/{version}/x86/putty.zip</FixedDownloadUrl>
     <Name>putty.portable</Name>
   </ApplicationJob>
 </Jobs>

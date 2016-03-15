@@ -130,7 +130,7 @@
     <FileHippoId />
     <LastUpdated>2013-08-07T22:22:28.8834069+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://the.earth.li/~sgtatham/putty/latest/x86/putty-{version}-installer.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>http://the.earth.li/~sgtatham/putty/{version}/x86/putty-{version}-installer.exe</FixedDownloadUrl>
     <Name>putty.install</Name>
   </ApplicationJob>
 </Jobs>
