@@ -1,8 +1,7 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="81f06a87-ec1d-4cae-aaf7-ea9588d4106b">
-    <SourceTemplate><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Jobs>
+    <SourceTemplate><![CDATA[<Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0fb30714-8ed0-4611-8f1b-cb8fec9dae91">
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
@@ -73,7 +72,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>1588760</LastFileSize>
-    <LastFileDate>2013-05-19T13:07:42+02:00</LastFileDate>
+    <LastFileDate>2013-09-04T15:28:53.501048</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -92,29 +91,14 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <Url />
-            <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
-  &lt;TR&gt;
-    &lt;TH class="Title" align="center" width=90&gt;7-Zip </StartText>
-            <EndText>&lt;BR&gt;</EndText>
-            <TextualContent>{realVersion:regexreplace:5\.4\.6\..+:5.4.6.{yyyy}{MM}{dd}}</TextualContent>
-            <Name>version</Name>
-          </UrlVariable>
-        </value>
-      </item>
-      <item>
-        <key>
-          <string>realVersion</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
+            <VariableType>StartEnd</VariableType>
             <Regex>(?&lt;=&lt;a href="http://static\.slysoft\.com/SetupVirtualCloneDrive\.exe"&gt;&lt;b&gt;)[\d\.]+(?=&lt;/b&gt;)</Regex>
-            <Url>http://www.slysoft.com/en/download.html</Url>
-            <Name>realVersion</Name>
+            <Url>https://www.elby.ch/en/products/vcd.html</Url>
+            <StartText>Virtual CloneDrive Revision History
+
+Virtual CloneDrive </StartText>
+            <EndText>: </EndText>
+            <Name>version</Name>
           </UrlVariable>
         </value>
       </item>
@@ -129,9 +113,9 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-09-04T22:28:53.501048+02:00</LastUpdated>
+    <LastUpdated>2013-09-04T15:28:53.501048</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://static.slysoft.com/SetupVirtualCloneDrive.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>https://www.elby.ch/download/SetupVCD.exe</FixedDownloadUrl>
     <Name>VirtualCloneDrive</Name>
   </ApplicationJob>
 </Jobs>
