@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>putty.portable</id>
-    <version>0.64</version>
+    <version>0.64.0.20160317</version>
     <title>PuTTY (Portable)</title>
     <authors>Simon Tatham</authors>
     <owners>Rob Reynolds</owners>

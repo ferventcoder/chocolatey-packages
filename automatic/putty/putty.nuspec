@@ -15,7 +15,7 @@ LEGAL WARNING: Use of PuTTY, PSCP, PSFTP and Plink is illegal in countries where
     <summary>PuTTY is a free implementation of Telnet and SSH for Windows and Unix platforms, along with an xterm terminal emulator.</summary>
     <tags>PuTTY telnet ssh</tags>
     <dependencies>
-      <dependency id="putty.portable" version="{{PackageVersion}}" />
+      <dependency id="putty.portable" version="[{{PackageVersion}}]" />
     </dependencies>
   </metadata>
   <files>

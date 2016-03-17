@@ -72,7 +72,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>1869122</LastFileSize>
-    <LastFileDate>2013-08-06T19:32:48+02:00</LastFileDate>
+    <LastFileDate>2013-08-07T15:22:28.8834069</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -92,7 +92,7 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>[\d\.]{2,}(?= \(released)</Regex>
+            <Regex>[\d\.]{2,}(?=\s*\n\(released)</Regex>
             <Url>http://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html</Url>
             <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
   &lt;TR&gt;
@@ -128,7 +128,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-08-07T22:22:28.8834069+02:00</LastUpdated>
+    <LastUpdated>2013-08-07T15:22:28.8834069</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>http://the.earth.li/~sgtatham/putty/{version}/x86/putty-{version}-installer.exe</FixedDownloadUrl>
     <Name>putty.install</Name>
