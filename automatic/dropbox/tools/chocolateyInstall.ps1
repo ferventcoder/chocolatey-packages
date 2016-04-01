@@ -4,7 +4,8 @@ Import-Module (Join-Path $PSScriptRoot 'functions.ps1')
 $packageName = 'dropbox'
 $version = '{{PackageVersion}}'
 
-$filePath = "$env:TEMP\chocolatey\$packageName"
+$TempDir = [System.IO.Path]::GetTempPath()
+$filePath = "$TempDir\chocolatey\$packageName"
 $fileFullPath = "$filePath\${packageName}Install.exe"
 $url = 'https://dl-web.dropbox.com/u/17/Dropbox {{PackageVersion}}.exe'
 
