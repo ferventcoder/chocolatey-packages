@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>miranda</id>
+    <version>0.10.49</version>
+    <title>Miranda IM</title>
+    <authors>Miranda-IM Team</authors>
+    <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
+    <projectUrl>http://www.miranda-im.org/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/miranda.svg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+Miranda IM is a multi-protocol instant messaging client for Windows. Very light on system resources and extremely fast, Miranda IM requires no installation and can be made to fit on a single floppy disk or USB drive. Featuring a powerful plugin-based framework and boasting over 350 plugins, Miranda IM is one of the most flexible and customisable messaging clients on the planet.
+    </description>
+    <summary>Miranda IM is a multi-protocol instant messaging client for Windows.</summary>
+    <releaseNotes />
+    <copyright>GNU GPL license</copyright>
+    <tags>miranda im messenger miranda icq chat im client msn aim facebook gadu-gadu iax irc jabber netsend tlen yahoo</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: “UTF-8” -->
