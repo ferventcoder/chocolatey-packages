@@ -15,6 +15,9 @@
     <copyright>Copyright © dotPDN LLC</copyright>
     <licenseUrl>http://www.getpaint.net/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+     <dependency id="dotnet4.6.1" />
+    </dependencies>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/paint.net.png</iconUrl>
     <releaseNotes>http://blog.getpaint.net/</releaseNotes>
   </metadata>
