@@ -26,7 +26,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>https://nodejs.org/en/download/stable/</Url>
+            <Url>https://nodejs.org/en/download/current/</Url>
             <StartText>data-version="v</StartText>
             <EndText>"&gt;</EndText>
             <TextualContent />
