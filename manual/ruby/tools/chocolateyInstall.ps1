@@ -23,18 +23,24 @@
   # $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.8-x64.exe?direct'
   # $checksum64 = 'e7419555f729a162719ebe9eb168456e431d33e8'
 
-  $rubyFolder = '22'
-  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.4.exe?direct'
-  $checksum = 'eb367be650482b63178845ced61892778e7d6a50'
-  $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.4-x64.exe'
-  $checksum64 = '184b18eba6be931d7b03b8d15d6bfad3c9712718'
+  #$rubyFolder = '22'
+  #$url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.4.exe?direct'
+  #$checksum = 'eb367be650482b63178845ced61892778e7d6a50'
+  #$url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.4-x64.exe'
+  #$checksum64 = '184b18eba6be931d7b03b8d15d6bfad3c9712718'
+
+  $rubyFolder = '23'
+  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.0.exe?direct'
+  $checksum = '3a2ff624ace7bee995bead28dc49b216'
+  $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.0-x64.exe?direct'
+  $checksum64 = 'd9e18b23821e998cb9bd230495092ddd'
 
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
   $silentArgs = "/verysilent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""
 
   # Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" -checksum $checksum
 
-  Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" "$url64" -checksum $checksum -checksumType 'sha1' -checksum64 $checksum64 -checksumType64 'sha1'
+  Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" "$url64" -checksum $checksum -checksumType 'md5' -checksum64 $checksum64 -checksumType64 'md5'
 
   $rubyBin = join-path $rubyPath 'bin'
   Write-Host "Adding `'$rubyBin`' to the local path"
