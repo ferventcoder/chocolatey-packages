@@ -21,10 +21,16 @@
 # $checksum64 = 'b6315bc57b4e5f453bb59f640e1992702bd04d51'
 
 # 2.2.3
-$url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.2.3-i386-mingw32.7z?direct'
-$checksum = '8d7d94856bd7c9498c48a9b8d155c926'
-$url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.2.3-x64-mingw32.7z?direct'
-$checksum64 = '77bfcf4b65ec8d5ba0cd84779f3eff7c'
+# $url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.2.3-i386-mingw32.7z?direct'
+# $checksum = '8d7d94856bd7c9498c48a9b8d155c926'
+# $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.2.3-x64-mingw32.7z?direct'
+# $checksum64 = '77bfcf4b65ec8d5ba0cd84779f3eff7c'
+
+# 2.3.0
+$url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.3.0-i386-mingw32.7z?direct'
+$checksum = '95a62cb2ba42f80d9f5a36df07d5886a'
+$url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.3.0-x64-mingw32.7z?direct'
+$checksum64 = '1d63ef1fbc06078c43b596326c4144a0'
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installDir = Join-Path $toolsDir "ruby"
