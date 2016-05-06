@@ -28,9 +28,9 @@
 
 # 2.3.0
 $url = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.3.0-i386-mingw32.7z?direct'
-$checksum = '95a62cb2ba42f80d9f5a36df07d5886a'
+$checksum = 'c8daba86954ddb59a8ff3b1bb5dbb24fb0c4c06810d9067fabac870b9316b029'
 $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/ruby-2.3.0-x64-mingw32.7z?direct'
-$checksum64 = '1d63ef1fbc06078c43b596326c4144a0'
+$checksum64 = 'e930827ecd075b7fc9cca50df2824c6b8fba26f90e92eae2e41d58edf74dbfc9'
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $installDir = Join-Path $toolsDir "ruby"
@@ -38,7 +38,7 @@ $file = Join-Path $toolsDir "$($packageName).7z"
 
 #Get-ChocolateyWebFile "$packageName" "$file" "$url" -checksum "$checksum"
 Get-ChocolateyWebFile "$packageName" "$file" "$url" "$url64" `
-  -checksum $checksum -checksumType 'md5' `
-  -checksum64 $checksum64 -checksumType64 'md5'
+  -checksum $checksum -checksumType 'sha256' `
+  -checksum64 $checksum64 -checksumType64 'sha256'
 
 Get-ChocolateyUnzip "$file" "$installDir" -packageName "$packageName"

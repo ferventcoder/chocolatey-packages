@@ -31,16 +31,16 @@
 
   $rubyFolder = '23'
   $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.0.exe?direct'
-  $checksum = '3a2ff624ace7bee995bead28dc49b216'
+  $checksum = 'f7926dd87bc2f436ea1f407073a01ace38285818578a8764e2c1ec93aaead3c6'
   $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.0-x64.exe?direct'
-  $checksum64 = 'd9e18b23821e998cb9bd230495092ddd'
+  $checksum64 = '087a7e3404fc2892f7eae6e8d0a12de419d57a8a4d78bbcf95568cb75f086a99'
 
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
   $silentArgs = "/verysilent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""
 
   # Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" -checksum $checksum
 
-  Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" "$url64" -checksum $checksum -checksumType 'md5' -checksum64 $checksum64 -checksumType64 'md5'
+  Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" "$url64" -checksum $checksum -checksumType 'sha256' -checksum64 $checksum64 -checksumType64 'sha256'
 
   $rubyBin = join-path $rubyPath 'bin'
   Write-Host "Adding `'$rubyBin`' to the local path"
