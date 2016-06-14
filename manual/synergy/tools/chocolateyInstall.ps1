@@ -1,7 +1,7 @@
 ﻿$packageName= 'synergy'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url   = "http://synergy-project.org/files/packages/synergy-v1.7.5-stable-fa85a24-Windows-x86.msi"
-$url64 = "http://synergy-project.org/files/packages/synergy-v1.7.5-stable-fa85a24-Windows-x64.msi"
+$url   = "http://symless.com/download/file?file=synergy-1.4.18-r2250-Windows-x86.msi"
+$url64 = "http://symless.com/download/file?file=synergy-1.4.18-r2250-Windows-x64.msi"
 
 $packageArgs = @{
   packageName   = $packageName
