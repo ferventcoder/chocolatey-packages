@@ -1,0 +1,6 @@
+These files were obtained from downloading and unzipping
+https://sourceforge.net/projects/msi2xml/files/msi2xml/2.2.1/msi2xml-2.2.1.957-bin.zip/download
+
+from https://sourceforge.net/projects/msi2xml/files/msi2xml/2.2.1/. 
+
+The checksums should match up with what unzipping the download produces.
