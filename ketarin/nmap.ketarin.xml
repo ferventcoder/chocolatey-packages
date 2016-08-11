@@ -94,7 +94,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
             <Regex>(?&lt;=nmap\-)[\d\.]+(?=\-setup\.exe)</Regex>
-            <Url>http://nmap.org/download.html</Url>
+            <Url>https://nmap.org/download.html</Url>
             <StartText>-setup.exe']);"&gt;nmap-</StartText>
             <EndText>&lt;BR&gt;</EndText>
             <TextualContent />
@@ -129,7 +129,7 @@
     <FileHippoId />
     <LastUpdated>2013-08-02T19:10:07.783139+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://nmap.org/dist/nmap-{version}-setup.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>https://nmap.org/dist/nmap-{version}-setup.exe</FixedDownloadUrl>
     <Name>nmap</Name>
   </ApplicationJob>
 </Jobs>

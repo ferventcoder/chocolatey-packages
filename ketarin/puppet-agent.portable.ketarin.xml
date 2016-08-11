@@ -93,7 +93,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
             <Regex>(?&lt;=href="puppet\-agent\-)[\d\.]+(?=\-x86\.msi"&gt;)</Regex>
-            <Url>http://downloads.puppetlabs.com/windows/?C=M;O=D</Url>
+            <Url>https://downloads.puppetlabs.com/windows/?C=M;O=D</Url>
             <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
   &lt;TR&gt;
     &lt;TH class="Title" align="center" width=90&gt;7-Zip </StartText>
@@ -130,7 +130,7 @@
     <FileHippoId />
     <LastUpdated>2015-09-04T08:54:30.6557004-05:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://downloads.puppetlabs.com/windows/puppet-agent-{version}-x64.msi</FixedDownloadUrl>
+    <FixedDownloadUrl>https://downloads.puppetlabs.com/windows/puppet-agent-{version}-x64.msi</FixedDownloadUrl>
     <Name>puppet-agent.portable</Name>
   </ApplicationJob>
 </Jobs>

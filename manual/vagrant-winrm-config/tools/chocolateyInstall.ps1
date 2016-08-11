@@ -35,7 +35,7 @@ try {
   &winrm "set" "winrm/config/service" "@{AllowUnencrypted=`"true`"}"
   &winrm "set" "winrm/config/service/auth" "@{Basic=`"true`"}"
 
-  # http://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx
+  # https://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx
   $osVersion = [Environment]::OSVersion.Version
   if ($osVersion -lt [Version]'6.1')
   {

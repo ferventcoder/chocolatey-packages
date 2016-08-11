@@ -26,8 +26,8 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://www.jetbrains.com/resharper/download/download_thanks.jsp?os=rs</Url>
-            <StartText>"http://download.jetbrains.com/resharper/ReSharperSetup.</StartText>
+            <Url>https://www.jetbrains.com/resharper/download/download_thanks.jsp?os=rs</Url>
+            <StartText>"https://download.jetbrains.com/resharper/ReSharperSetup.</StartText>
             <EndText>.msi"</EndText>
             <TextualContent />
             <Name>version</Name>
@@ -61,7 +61,7 @@
     <FileHippoId />
     <LastUpdated>2013-07-19T05:41:29.2850747</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://download.jetbrains.com/resharper/ReSharperSetup.{version}.msi</FixedDownloadUrl>
+    <FixedDownloadUrl>https://download.jetbrains.com/resharper/ReSharperSetup.{version}.msi</FixedDownloadUrl>
     <Name>resharper</Name>
   </ApplicationJob>
 </Jobs>

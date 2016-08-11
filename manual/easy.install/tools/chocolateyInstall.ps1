@@ -69,7 +69,7 @@ function Python-Exec($url, $name) {
 }
 
 function Install-setuptools($version) {
-  Write-Host 'Installing setuptools from http://pypi.python.org/pypi/setuptools ...'
+  Write-Host 'Installing setuptools from https://bootstrap.pypa.io/ez_setup.py ...'
 
   Python-Exec 'https://bootstrap.pypa.io/ez_setup.py' 'ez_setup.py'
 

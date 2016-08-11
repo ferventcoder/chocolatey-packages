@@ -3,8 +3,8 @@
   $packageName = 'kdiff3'
   $fileType = 'exe'
   $silentArgs = '/S'
-  $url = 'http://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.98/KDiff3-32bit-Setup_0.9.98-3.exe'
-  $url64 = 'http://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.98/KDiff3-64bit-Setup_0.9.98-2.exe'
+  $url = 'https://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.98/KDiff3-32bit-Setup_0.9.98-3.exe'
+  $url64 = 'https://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.98/KDiff3-64bit-Setup_0.9.98-2.exe'
 
   Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64 -validExitCodes @(0)
 

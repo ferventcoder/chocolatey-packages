@@ -73,7 +73,7 @@
     <FileHippoId />
     <LastUpdated>2014-04-22T12:28:51.2806152+02:00</LastUpdated>
     <TargetPath>c:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://windows.php.net/downloads/releases/php-{version}-nts-Win32-{vc}-x86.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>https://windows.php.net/downloads/releases/php-{version}-nts-Win32-{vc}-x86.zip</FixedDownloadUrl>
     <Name>php</Name>
   </ApplicationJob>
 </Jobs>

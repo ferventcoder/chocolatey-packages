@@ -2,7 +2,7 @@
   $package = 'OptiPNG'
   $installDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-  $zipUrl = 'http://sourceforge.net/projects/optipng/files/OptiPNG/optipng-{{PackageVersion}}/optipng-{{PackageVersion}}-win32.zip/download'
+  $zipUrl = 'https://sourceforge.net/projects/optipng/files/OptiPNG/optipng-{{PackageVersion}}/optipng-{{PackageVersion}}-win32.zip/download'
 
   Install-ChocolateyZipPackage $package "$zipUrl" "$installDir"
 

@@ -26,7 +26,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://www.autoitscript.com/site/autoit/downloads/</Url>
+            <Url>https://www.autoitscript.com/site/autoit/downloads/</Url>
             <StartText>'&gt;&lt;strong&gt;Latest version:&lt;/strong&gt; v</StartText>
             <EndText>&lt;/p&gt;</EndText>
             <Name>version</Name>
@@ -60,7 +60,7 @@
     <FileHippoId />
     <LastUpdated>2013-12-27T16:47:35.8819275+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.autoitscript.com/files/autoit3/autoit-v3.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>https://www.autoitscript.com/files/autoit3/autoit-v3.zip</FixedDownloadUrl>
     <Name>autoit.commandline</Name>
   </ApplicationJob>
 </Jobs>

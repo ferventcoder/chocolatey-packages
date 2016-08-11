@@ -94,7 +94,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
             <Regex>(?&lt;=href="puppet\-)[\d\.]+(?=\.msi"&gt;)</Regex>
-            <Url>http://downloads.puppetlabs.com/windows/?C=M;O=D</Url>
+            <Url>https://downloads.puppetlabs.com/windows/?C=M;O=D</Url>
             <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
   &lt;TR&gt;
     &lt;TH class="Title" align="center" width=90&gt;7-Zip </StartText>
@@ -131,7 +131,7 @@
     <FileHippoId />
     <LastUpdated>2013-08-02T19:59:24.1771881+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://downloads.puppetlabs.com/windows/puppet-{version}.msi</FixedDownloadUrl>
+    <FixedDownloadUrl>https://downloads.puppetlabs.com/windows/puppet-{version}.msi</FixedDownloadUrl>
     <Name>puppet</Name>
   </ApplicationJob>
 </Jobs>

@@ -3,8 +3,8 @@ $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $installDir = Join-Path "$toolsDir" 'puppet'
 $fileName = "$($packageName).msi"
 $file = Join-Path "$toolsDir" "$fileName"
-$url = 'http://downloads.puppetlabs.com/windows/puppet-agent-{{PackageVersion}}-x86.msi'
-$url64 = 'http://downloads.puppetlabs.com/windows/puppet-agent-{{PackageVersion}}-x64.msi'
+$url = 'https://downloads.puppetlabs.com/windows/puppet-agent-{{PackageVersion}}-x86.msi'
+$url64 = 'https://downloads.puppetlabs.com/windows/puppet-agent-{{PackageVersion}}-x64.msi'
 
 
 Get-ChocolateyWebFile "$packageName" "$file" "$url" "$url64"

@@ -1,2 +1,2 @@
-﻿Install-ChocolateyPackage 'launchy' 'exe' '/VERYSILENT /NORESTART' 'http://www.launchy.net/downloads/win/Launchy2.5.exe' -checksum 'C67962F064924F3C7B95D69F88E745C0'
+﻿Install-ChocolateyPackage 'launchy' 'exe' '/VERYSILENT /NORESTART' 'https://www.launchy.net/downloads/win/Launchy2.5.exe' -checksum 'C67962F064924F3C7B95D69F88E745C0'
 

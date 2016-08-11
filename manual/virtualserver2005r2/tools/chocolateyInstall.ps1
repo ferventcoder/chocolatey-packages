@@ -1,7 +1,7 @@
 ﻿$packageName = 'virtualserver2005r2'
 $installerType = 'msi'
-$url = 'http://download.microsoft.com/download/d/7/2/d7235926-a10d-482c-a2ff-6e0d3130f869/32-BIT/setup.exe'
-$url64 = 'http://download.microsoft.com/download/d/7/2/d7235926-a10d-482c-a2ff-6e0d3130f869/64-BIT/setup.exe'
+$url = 'https://download.microsoft.com/download/d/7/2/d7235926-a10d-482c-a2ff-6e0d3130f869/32-BIT/setup.exe'
+$url64 = 'https://download.microsoft.com/download/d/7/2/d7235926-a10d-482c-a2ff-6e0d3130f869/64-BIT/setup.exe'
 #http://my.safaribooksonline.com/book/operating-systems-and-server-administration/virtualization/9780735623811/installing-virtual-server-2005-r2-sp1/ch04lev1sec7
 $silentArgs = '/quiet /norestart NOSUMMARY=1 ADDLOCAL="VirtualServer,VMRCClient,VSWebApp,VHDMount"'
 $validExitCodes = @(0, 3010)

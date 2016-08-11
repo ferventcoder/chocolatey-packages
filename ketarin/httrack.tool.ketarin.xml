@@ -110,7 +110,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>"http://download.httrack.com/httrack_x64-noinst-{version}.zip"</TextualContent>
+            <TextualContent>"https://download.httrack.com/httrack_x64-noinst-{version}.zip"</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -128,7 +128,7 @@
     <FileHippoId />
     <LastUpdated>2013-07-14T12:37:26.5322167+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://download.httrack.com/httrack-noinst-{version}.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>https://download.httrack.com/httrack-noinst-{version}.zip</FixedDownloadUrl>
     <Name>httrack.tool</Name>
   </ApplicationJob>
 </Jobs>

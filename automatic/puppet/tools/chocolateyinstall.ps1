@@ -1,6 +1,6 @@
 ﻿$packageName = 'puppet'
-$url = 'http://downloads.puppetlabs.com/windows/puppet-{{PackageVersion}}.msi'
-$url64 = 'http://downloads.puppetlabs.com/windows/puppet-{{PackageVersion}}-x64.msi'
+$url = 'https://downloads.puppetlabs.com/windows/puppet-{{PackageVersion}}.msi'
+$url64 = 'https://downloads.puppetlabs.com/windows/puppet-{{PackageVersion}}-x64.msi'
 
 
 $packageArgs = @{

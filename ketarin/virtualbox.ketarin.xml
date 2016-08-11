@@ -79,7 +79,7 @@
     <FileHippoId />
     <LastUpdated>2013-07-05T06:10:01.4628832</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://download.virtualbox.org/virtualbox/{version3Levels}/VirtualBox-{realVersion}-Win.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>https://download.virtualbox.org/virtualbox/{version3Levels}/VirtualBox-{realVersion}-Win.exe</FixedDownloadUrl>
     <Name>virtualbox</Name>
   </ApplicationJob>
 </Jobs>
