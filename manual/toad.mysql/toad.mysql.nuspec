@@ -9,6 +9,7 @@
     <summary>Toad for MySQL - Automate MySQL Development Tasks</summary>
     <description>Toad for MySQL is a freeware development tool that enables you to rapidly create and execute queries, automate database object management, and develop SQL code more efficiently. It provides utilities to compare, extract, and search for objects; manage projects; import/export data; and administer the database. Toad for MySQL dramatically increases productivity and provides access to an active user community.</description>
     <projectUrl>http://www.quest.com/toad-for-mysql/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>toad mysql database administration dba admin</tags>
     <copyright>Quest and Oracle</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>

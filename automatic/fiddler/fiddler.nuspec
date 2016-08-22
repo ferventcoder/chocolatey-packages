@@ -11,6 +11,7 @@
 
 Fiddler is freeware and can debug traffic from virtually any application, including Internet Explorer, Mozilla Firefox, Opera, and thousands more.</description>
     <projectUrl>http://www.telerik.com/fiddler</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>fiddler fiddler2 web debugging proxy admin</tags>
     <licenseUrl>http://www.fiddler2.com/Fiddler/help/license.asp</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

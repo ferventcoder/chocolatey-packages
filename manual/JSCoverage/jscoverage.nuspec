@@ -16,6 +16,7 @@
     JSCoverage supports the complete language syntax described in the ECMAScript Language Specification (ECMA-262, 3rd edition). JSCoverage works with any modern standards-compliant web browser - including Internet Explorer (IE 6, 7, and 8), Firefox, Opera, Safari, and Google Chrome - on Microsoft Windows and GNU/Linux.
 </description>
     <projectUrl>http://siliconforks.com/jscoverage/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>javascript testing coverage</tags>
     <licenseUrl>http://siliconforks.com/jscoverage/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

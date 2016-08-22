@@ -25,6 +25,7 @@ Apps that use LocalDB simply open a file. Once a file is opened, you get SQL Ser
 LocalDB is easy to download, install, and manage. It installs as a small shared component instead of a service.
     </description>
     <projectUrl>http://www.microsoft.com/sqlserver/en/us/editions/2012-editions/express.aspx</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>SqlServer Sql Express LocalDb admin</tags>
     <copyright>Microsoft</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>

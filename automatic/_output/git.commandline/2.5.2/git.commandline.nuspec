@@ -13,6 +13,7 @@ Git (for Windows) – Git is a powerful distributed Source Code Management tool.
 Note: Git for Windows is a project run by volunteers, so if you want it to improve, volunteer!
     </description>
     <projectUrl>https://msysgit.github.io/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>git vcs dvcs version control msysgit</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

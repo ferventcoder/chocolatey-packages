@@ -26,6 +26,7 @@ These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/GitAndUnixToolsOnPath /NoAutoCrlf"'`.
     </description>
     <projectUrl>https://msysgit.github.io/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>git vcs dvcs version control msysgit admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

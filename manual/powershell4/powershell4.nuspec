@@ -18,6 +18,7 @@
   For Windows 8, there is not a package available. To get WMF 4.0, you must install the update to 8.1. For more information, please see http://blogs.msdn.com/b/powershell/archive/2013/10/25/windows-management-framework-4-0-is-now-available.aspx
     </description>
     <projectUrl>http://www.microsoft.com/en-us/download/details.aspx?id=40855</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>powershell microsoft admin</tags>
     <copyright>Microsoft</copyright>
     <licenseUrl>http://www.microsoft.com/en-us/download/details.aspx?id=40855</licenseUrl>

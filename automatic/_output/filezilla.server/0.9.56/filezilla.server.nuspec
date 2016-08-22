@@ -9,6 +9,7 @@
     <summary>FileZilla Server - The free FTP solution</summary>
     <description>FileZilla Server is a fast and reliable cross-platform FTP, FTPS and SFTP client with lots of useful features and an intuitive graphical user interface.</description>
     <projectUrl>http://filezilla-project.org</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>filezilla ftp admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

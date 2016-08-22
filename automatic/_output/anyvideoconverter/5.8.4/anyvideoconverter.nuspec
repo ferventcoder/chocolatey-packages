@@ -31,6 +31,7 @@ __Free YouTube Video Downloader__
 This free YouTube Downloader lets you download videos from YouTube and save them as MP3, MP4, WMV, MPEG, MKV, WebM, ASF, M2TS, DVD and other formats.
     </description>
     <projectUrl>http://www.any-video-converter.com/products/for_video_free/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>anyvideoconverter video conversion converter avi flv mov mp4 mpg admin</tags>
     <copyright>AnvSoft Co, Ltd. - All rights reserved</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>

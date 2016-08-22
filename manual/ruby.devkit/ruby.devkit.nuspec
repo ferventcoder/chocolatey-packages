@@ -12,6 +12,7 @@
     This no longer takes a dependency on Ruby. Please install that first.
     </description>
     <projectUrl>http://rubyinstaller.org/add-ons/devkit/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>Ruby DevKit admin</tags>
     <licenseUrl>https://raw.github.com/oneclick/rubyinstaller/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

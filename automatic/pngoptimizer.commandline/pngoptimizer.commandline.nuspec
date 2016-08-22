@@ -14,6 +14,7 @@ Convert into PNG other lossless image formats (BMP, GIF, TGA).
 Create PNG screenshots and make them easily available.
 Perform all those tasks in the simpliest and most productive way.</description>
     <projectUrl>http://psydk.org/PngOptimizer.php</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/pngoptimizer.png</iconUrl>
     <tags>pngoptimizer png optimize</tags>
     <copyright></copyright>

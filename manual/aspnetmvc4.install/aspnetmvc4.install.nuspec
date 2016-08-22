@@ -11,6 +11,7 @@
 [ The ASP.NET MVC site  site provides tutorials, quickstarts, and videos. (http://www.asp.net/mvc/)
 | ASP.NET MVC Documentation on MSDN. (http://msdn.microsoft.com/en-us/library/dd394709.aspx) ]</description>
     <projectUrl>http://www.asp.net/mvc</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>aspnetmvc asp.net mvc admin</tags>
     <licenseUrl>http://aspnet.codeplex.com/license</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

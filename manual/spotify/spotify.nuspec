@@ -13,6 +13,7 @@
     <authors>Spotify Ltd</authors>
     <copyright>Copyright (c) 2016, Spotify Ltd</copyright>
     <projectUrl>http://www.spotify.com</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>spotify music player radio admin</tags>
     <licenseUrl>https://www.spotify.com/us/legal/end-user-agreement/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -12,6 +12,7 @@
 
     During evaluation, Full Edition is activated by default but you can switch to another edition in the License Information dialog box (ReSharper | Help | License Information.)</description>
     <projectUrl>http://www.jetbrains.com/resharper</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>resharper jetbrains developer productivity tool vsix admin</tags>
     <licenseUrl>http://www.jetbrains.com/resharper/buy/index.jsp</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

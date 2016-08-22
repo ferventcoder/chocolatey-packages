@@ -10,6 +10,7 @@
     <description>Python is a programming language that lets you work more quickly and integrate your systems more effectively. You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs.
 Note: This package installs the latest stable version of Python.</description>
     <projectUrl>http://www.python.org/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>python admin</tags>
     <licenseUrl>http://docs.python.org/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -6,6 +6,7 @@
     <owners>Jon Galloway,Alan Stevens</owners>
     <licenseUrl>http://www.sublimetext.com/eula</licenseUrl>
     <projectUrl>http://www.sublimetext.com/2</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/sublimetext.png</iconUrl>
     <id>sublimetext2</id>
     <title>Sublime Text 2</title>

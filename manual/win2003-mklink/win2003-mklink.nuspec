@@ -25,6 +25,7 @@ You need Visual C++ Redistributable for VS2005 SP1 installed (which is not yet a
 
 </description>
     <projectUrl>http://schinagl.priv.at/nt/ln/ln.html#symboliclinksforwindowsxp</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>windows 2003 win2003 mklink symlink vagrant</tags>
     <licenseUrl>http://schinagl.priv.at/nt/ln/ln.html#symboliclinksforwindowsxp</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

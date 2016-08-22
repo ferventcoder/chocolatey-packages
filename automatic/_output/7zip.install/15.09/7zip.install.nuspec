@@ -13,6 +13,7 @@
 This means you may lose current work. If it doesn't automatically restart explorer, type `explorer` on the command shell to restart it.
     </description>
     <projectUrl>http://www.7-zip.org/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>7zip zip archiver admin</tags>
     <licenseUrl>http://www.7-zip.org/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

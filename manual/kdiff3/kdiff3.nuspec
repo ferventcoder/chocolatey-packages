@@ -9,6 +9,7 @@
     <summary>KDiff3 - graphical text difference analyzer (Diff / Merge tool)</summary>
     <description>KDiff3 is a graphical text difference analyzer for up to 3 input files, provides character-by-character analysis and a text merge tool with integrated editor. It can also compare and merge directories. Platform-independant.</description>
     <projectUrl>http://kdiff3.sourceforge.net/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>kdiff3 diff diffing merge difference admin</tags>
     <licenseUrl>http://kdiff3.sourceforge.net/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
