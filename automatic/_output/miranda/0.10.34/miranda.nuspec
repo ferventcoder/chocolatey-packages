@@ -7,6 +7,7 @@
     <authors>Miranda-IM Team</authors>
     <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
     <projectUrl>http://www.miranda-im.org/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/miranda.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>

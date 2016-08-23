@@ -9,6 +9,7 @@
     <summary>Windows Internet Explorer 9 lets your websites shine and perform just like native applications on your PC.</summary>
     <description>Windows Internet Explorer 9 lets your websites shine and perform just like native applications on your PC (Windows Vista, 7 and Server 2008/R2 only).</description>
     <projectUrl>https://www.microsoft.com/download/internet-explorer-9-details.aspx</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <licenseUrl>http://windows.microsoft.com/en-US/internet-explorer/products/ie-9/end-user-license-agreement</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>microsoft internet explorer ie 9 web browser</tags>

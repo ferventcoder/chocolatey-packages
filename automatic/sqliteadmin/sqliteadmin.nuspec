@@ -9,6 +9,7 @@
     <summary>SQLite Admininistrator</summary>
     <description>SQLite Administrator is a powerful tool if you easily want to create, design or administrate SQLite database files. The SQL code editor helps you to quickly write sql queries with features such as code completion and highlighting. Both major versions of SQLite database files are supported by SQLite Administrator.</description>
     <projectUrl>http://sqliteadmin.orbmu2k.de/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>sqlite sqliteadmin database</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/sqliteadmin.png</iconUrl>

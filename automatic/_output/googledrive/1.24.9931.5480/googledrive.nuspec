@@ -9,6 +9,7 @@
     <summary>Google Drive for Windows – Access files on your computer from anywhere.</summary>
     <description>Google Drive – All your files – everywhere. Put files in Google Drive and you can access them on your desktop, mobile phone or tablet, and drive.google.com. Always up to date. Make changes to a file in one place and it automatically updates everywhere.</description>
     <projectUrl>https://drive.google.com/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/gdrive.svg</iconUrl>
     <tags>googledrive google drive files admin</tags>
     <copyright>Google</copyright>

@@ -9,6 +9,7 @@
     <summary>IsCommandLineApp is a little command-line tool that can be used to determine whether a specific executable is a command-line program.</summary>
     <description>IsCommandLineApp is a little command-line tool that can be used to determine whether a specific executable is a command-line program.</description>
     <projectUrl>http://helgeklein.com/free-tools/iscommandlineapp/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>utility commandline information</tags>
     <copyright>Helge Klein</copyright>
     <licenseUrl>http://helgeklein.com/free-tools/iscommandlineapp/</licenseUrl>

@@ -15,6 +15,7 @@ This package used to install nodejs.commandline. It is recommended that you unin
 
     </description>
     <projectUrl>http://nodejs.org</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>nodejs node javascript</tags>
     <licenseUrl>https://github.com/joyent/node/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -8,6 +8,7 @@
     <owners>micahlmartin, Rob Reynolds</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
     <projectUrl>https://puppetlabs.com/puppet/puppet-open-source/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/puppet.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>

@@ -10,6 +10,7 @@
     <description>Python is a programming language that lets you work more quickly and integrate your systems more effectively. You can learn to use Python and see almost immediate gains in productivity and lower maintenance costs.
 Note: This package installs the latest stable version of Python. In addition this package is for forcing the installation of x86 Python on a x64 Operating System, which may be required by some dependent packages.</description>
     <projectUrl>http://www.python.org/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>python admin</tags>
     <licenseUrl>http://docs.python.org/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -12,6 +12,7 @@
 This does exactly what it says it does, it disables UAC. Be careful on Windows 8, as the Metro apps will no longer work.
     </description>
     <projectUrl>https://github.com/ferventcoder/nugetpackages</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>disable uac user account control configuration admin</tags>
     <releaseNotes></releaseNotes>
   </metadata>

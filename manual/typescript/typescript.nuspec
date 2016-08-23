@@ -11,6 +11,7 @@
 TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
 Any browser. Any host. Any OS. Open Source.</description>
     <projectUrl>http://www.typescriptlang.org/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>typescript javascript</tags>
     <copyright></copyright>
     <licenseUrl>http://typescript.codeplex.com/license</licenseUrl>

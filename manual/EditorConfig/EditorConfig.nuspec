@@ -11,6 +11,7 @@
 </description>
     <releaseNotes>0.2.6 - Visual Studio 2012 support</releaseNotes>
     <projectUrl>http://visualstudiogallery.msdn.microsoft.com/c8bccfe2-650c-4b42-bc5c-845e21f96328</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>editorconfig editor code style format</tags>
     <licenseUrl>http://visualstudiogallery.msdn.microsoft.com/site/c8bccfe2-650c-4b42-bc5c-845e21f96328/eula?licenseType=None</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -11,6 +11,7 @@
     <description>Easy Install is a python module (easy_install) bundled with setuptools that lets you automatically
 	download, build, install, and manage Python packages</description>
     <projectUrl>http://pypi.python.org/pypi/setuptools</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>easy_install python setuptools</tags>
     <copyright>Copyright © 1990-2011, Python Software Foundation</copyright>
     <licenseUrl>http://docs.python.org/license.html</licenseUrl>

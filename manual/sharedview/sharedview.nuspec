@@ -9,6 +9,7 @@
     <summary>Microsoft SharedView</summary>
     <description>Microsoft SharedView is a fast, easy way to share documents and screen views with small groups of friends or coworkers; anytime, anywhere. Use SharedView to put your heads together and collaborate - create, convey, and communicate…across physical boundaries, through firewalls, and down to the smallest details.   </description>
     <projectUrl>http://connect.microsoft.com/site94</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>sharedview admin</tags>
     <licenseUrl>http://connect.microsoft.com/site94/content/content.aspx?ContentID=4886</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

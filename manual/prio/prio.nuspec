@@ -10,6 +10,7 @@
     <description>Prio - Process Priority Saver. This compact program allows you to save the priority you specify for any process.
     </description>
     <projectUrl>http://www.prnwatch.com/prio.html</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>prio process priority saver taskmanager admin</tags>
     <copyright></copyright>
     <licenseUrl>http://www.prnwatch.com/prio.html</licenseUrl>

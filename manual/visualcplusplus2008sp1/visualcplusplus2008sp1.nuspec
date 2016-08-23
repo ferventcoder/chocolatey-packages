@@ -9,6 +9,7 @@
     <summary>Visual C++ 2008 Service Pack 1</summary>
     <description>The Microsoft Visual C++ 2008 SP1 Redistributable Package (x86) installs runtime components of Visual C++ Libraries required to run applications developed with Visual C++ SP1 on a computer that does not have Visual C++ 2008 SP1 installed.</description>
     <projectUrl>http://www.microsoft.com/download/en/details.aspx?id=5582</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>c++ 2008 service pack 1 admin</tags>
     <copyright>Microsoft</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>

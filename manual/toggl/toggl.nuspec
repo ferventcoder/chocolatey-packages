@@ -9,6 +9,7 @@
     <summary>Toggl – Time Tracking that works</summary>
     <description>Toggl – Time Tracking that works</description>
     <projectUrl>https://support.toggl.com/toggl-desktop-for-windows/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>toggl time tracking admin</tags>
     <licenseUrl>https://www.toggl.com/public/terms_of_service</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

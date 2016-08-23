@@ -9,6 +9,7 @@
     <summary>Pip is a tool for installing and managing Python packages, such as those found in the Python Package Index</summary>
     <description>pip is a tool for installing and managing Python packages, such as those found in the Python Package Index</description>
     <projectUrl>http://www.pip-installer.org/en/latest/index.html</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>pip python easy_install </tags>
     <copyright>The pip developers</copyright>
     <licenseUrl>http://www.opensource.org/licenses/mit-license.php</licenseUrl>

@@ -18,6 +18,7 @@ Compass is an open-source CSS Authoring Framework.
 * Download and create extensions with ease.
     </description>
     <projectUrl>http://compass-style.org/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>ruby sass scss css</tags>
     <copyright>Scott Davis, Eric Meyer, Brandon Mathis, Anthony Short</copyright>
     <licenseUrl>https://github.com/chriseppstein/compass/blob/stable/LICENSE.markdown</licenseUrl>

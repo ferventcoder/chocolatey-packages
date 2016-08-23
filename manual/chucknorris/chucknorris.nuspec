@@ -9,6 +9,7 @@
     <summary>The ChuckNorrisFramework (CNF) is a collection of developer productivity tools to make you more productive.</summary>
     <description>The ChuckNorrisFramework is a collection of developer productivity tools to make you more productive. This package will bring in the other pieces of the framework as they become available.</description>
     <projectUrl>https://github.com/chucknorris</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>chucknorrisframework uppercut roundhouse dropkick warmup</tags>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -9,6 +9,7 @@
     <summary>roundhouse.dev</summary>
     <description>roundhouse.dev - This gets the roundhouse development environment up on your machine.</description>
     <projectUrl>https://github.com/chucknorris/roundhouse/wiki</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>roundhouse.dev roundhouse notSilent</tags>
     <licenseUrl>https://github.com/chucknorris/roundhouse/blob/master/docs/legal/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

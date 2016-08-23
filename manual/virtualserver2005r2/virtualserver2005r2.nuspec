@@ -15,6 +15,7 @@ Additionally, its integration with a wide variety of existing Microsoft and thir
 NOTE: This only installs on Windows Server 2003.
     </description>
     <projectUrl>http://www.microsoft.com/windowsserversystem/virtualserver/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>microsoft virtualserver virtual server admin</tags>
     <copyright>Microsoft</copyright>
     <licenseUrl>__REPLACE__</licenseUrl>

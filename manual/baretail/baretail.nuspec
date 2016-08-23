@@ -9,6 +9,7 @@
     <summary>Baretail - A free real-time log file monitoring tool</summary>
     <description>Baretail - A free real-time log file monitoring tool</description>
     <projectUrl>http://www.baremetalsoft.com/baretail/index.php</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <licenseUrl>http://www.baremetalsoft.com/baretail/licence.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>tail baretail log</tags>
