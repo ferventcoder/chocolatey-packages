@@ -6,7 +6,7 @@ Install-ChocolateyPackage $packageName 'exe' '-s -l -msiparams REBOOT=ReallySupp
 
 $is64bit = (Get-WmiObject Win32_Processor).AddressWidth -eq 64
 $programFiles = $env:programfiles
-if ($is64bit) {$programFiles = ${env:ProgramFiles(x86)}}
+if ($is64bit) {$programFiles = ${env:ProgramFiles}}
 $fsObject = New-Object -ComObject Scripting.FileSystemObject
 $programFiles = $fsObject.GetFolder("$programFiles").ShortPath
 
