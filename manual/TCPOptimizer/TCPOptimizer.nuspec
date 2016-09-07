@@ -13,6 +13,7 @@ The program can aid both the novice and the advanced user in tweaking related TC
 
 The TCP Optimizer is targeted towards broadband internet connections, however it can be helpful with tuning any internet connection type, from dialup to Gigabit+ :) It is completely free, requires no installation, and has been downloaded over 3 Million times. </description>
     <projectUrl>http://www.speedguide.net/tcpoptimizer.php</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>TCPOptimizer speed Guide tcp opimizer network bandwidth</tags>
     <copyright>Speed Guide</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>

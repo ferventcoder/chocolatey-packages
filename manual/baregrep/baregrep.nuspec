@@ -14,6 +14,7 @@ Single small executable, no installer
  - Easy to temporarily install and then completely remove
     </description>
     <projectUrl>http://www.baremetalsoft.com/baregrep/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>baregrep grep search</tags>
     <licenseUrl>http://www.baremetalsoft.com/baregrep/licence.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

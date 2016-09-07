@@ -14,6 +14,7 @@ Sumatra PDF is small, portable and starts up very fast.
 
 Simplicity of the user interface has a high priority</description>
     <projectUrl>http://blog.kowalczyk.info/software/sumatrapdf/free-pdf-reader.html</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>sumatrapdf pdf reader admin</tags>
     <copyright></copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>

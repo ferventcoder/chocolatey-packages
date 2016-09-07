@@ -12,6 +12,7 @@
 libjpeg-turbo was originally based on libjpeg/SIMD by Miyasaka Masaru, but the TigerVNC and VirtualGL projects made numerous enhancements to the codec in 2009, including improved support for Mac OS X, 64-bit support, support for 32-bit and big-endian pixel formats (RGBX, XBGR, etc.), accelerated Huffman encoding/decoding, and various bug fixes. The goal was to produce a fully open-source codec that could replace the partially closed-source TurboJPEG/IPP codec used by VirtualGL and TurboVNC. libjpeg-turbo generally achieves 80-120% of the performance of TurboJPEG/IPP. It is faster in some areas but slower in others.
     </description>
     <projectUrl>http://libjpeg-turbo.virtualgl.org/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>libjpeg-turbo JPEG compression</tags>
     <copyright>D. R. Commander 2010-2012</copyright>
     <licenseUrl>http://opensource.org/licenses/bsd-license.php</licenseUrl>

@@ -3,13 +3,13 @@
   <metadata>
     <id>toggl</id>
     <title>Toggl Desktop</title>
-    <version>7.1.145</version>
-    <authors>Apprise LLC</authors>
+    <version>7.3.318</version>
+    <authors>Toggl OÜ</authors>
     <owners>Rob Reynolds</owners>
     <summary>Toggl – Time Tracking that works</summary>
-    <description>Toggl – Time Tracking that works
-</description>
-    <projectUrl>https://www.toggl.com/</projectUrl>
+    <description>Toggl – Time Tracking that works</description>
+    <projectUrl>https://support.toggl.com/toggl-desktop-for-windows/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>toggl time tracking admin</tags>
     <licenseUrl>https://www.toggl.com/public/terms_of_service</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

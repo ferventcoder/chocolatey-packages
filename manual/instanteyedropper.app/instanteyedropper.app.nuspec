@@ -15,6 +15,7 @@ Identifying the color code of an object on the screen is usually an involved, mu
 Webmasters may repeat this operation many times a day. Just imagine how much time can be saved by using Instant Eyedropper to do the same thing with a Single Click!
     </description>
     <projectUrl>http://instant-eyedropper.com/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>instanteyedropper html color match admin</tags>
     <copyright>SpiceBrains.com 2005–2012</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>-->

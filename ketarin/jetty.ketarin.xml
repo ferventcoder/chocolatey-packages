@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>13370417</LastFileSize>
-    <LastFileDate>2014-07-29T17:41:41+02:00</LastFileDate>
+    <LastFileSize>11774891</LastFileSize>
+    <LastFileDate>2016-02-03T18:33:53+01:00</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -38,13 +38,13 @@
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>c:\chocolatey\_work\jetty-distribution-9.2.2.v20140723.zip</PreviousLocation>
+    <PreviousLocation>c:\chocolatey\_work\jetty-distribution-9.3.7.v20160115.zip</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2014-07-30T22:19:25.589151+02:00</LastUpdated>
+    <LastUpdated>2016-02-20T15:25:26.0160822+01:00</LastUpdated>
     <TargetPath>c:\chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://mirror.netcologne.de/eclipse/jetty/stable-9/dist/jetty-distribution-{version}.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>http://download.eclipse.org/jetty/{version}/dist/jetty-distribution-{version}.zip</FixedDownloadUrl>
     <Name>jetty</Name>
   </ApplicationJob>
 </Jobs>

@@ -11,6 +11,7 @@
 
 TypeScript for Visual Studio 2012 provides a TypeScript editor and compiler for Visual Studio 2012.</description>
     <projectUrl>http://www.typescriptlang.org/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>typescript visualstudio vs2012 javascript admin</tags>
     <copyright></copyright>
     <licenseUrl>http://typescript.codeplex.com/license</licenseUrl>

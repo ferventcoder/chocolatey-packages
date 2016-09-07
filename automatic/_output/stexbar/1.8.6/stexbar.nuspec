@@ -9,6 +9,7 @@
     <summary>StExBar - The ultimate extensions for Windows Explorer or: what Microsoft forgot to implement in the explorer</summary>
     <description>StExBar - The ultimate extensions for Windows Explorer or: what Microsoft forgot to implement in the explorer. StExBar provides many useful commands for your everyday use of Windows explorer. And you can add as many custom commands on your own as you like.</description>
     <projectUrl>http://tools.tortoisesvn.net/StExBar.html</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>stexbar extensions windows explorer admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

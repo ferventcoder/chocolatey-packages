@@ -15,6 +15,7 @@ DeskSpace lets you have different desktop wallpapers and icons on each desktop. 
 
 DeskSpace runs on low-end netbooks, high-end desktops, and everything in-between. You can run DeskSpace on up to nine monitors, and it works on both 32-bit and 64-bit versions of Windows XP, Windows Vista, Windows 7, and Windows 8.</description>
     <projectUrl>http://www.otakusoftware.com/deskspace/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>deskspace cube desktop desktops admin</tags>
     <licenseUrl>http://www.otakusoftware.com/deskspace/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

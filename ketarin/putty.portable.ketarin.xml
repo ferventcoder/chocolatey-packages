@@ -1,8 +1,7 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
 <Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="81de8bf7-ae24-4131-972e-a51eb2127b2c">
-    <SourceTemplate><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Jobs>
+    <SourceTemplate><![CDATA[<Jobs>
   <ApplicationJob xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Guid="0fb30714-8ed0-4611-8f1b-cb8fec9dae91">
     <WebsiteUrl />
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
@@ -65,7 +64,7 @@
     <FileHippoId />
     <LastUpdated>2012-05-23T02:09:37.7748325</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl><placeholder name="Download Url - Optional" value="http://the.earth.li/~sgtatham/putty/latest/x86/putty.zip" /></FixedDownloadUrl>
+    <FixedDownloadUrl><placeholder name="Download Url - Optional" value="https://the.earth.li/~sgtatham/putty/latest/x86/putty.zip" /></FixedDownloadUrl>
     <Name><placeholder name="Name" value="putty.portable" /></Name>
   </ApplicationJob>
 </Jobs>]]></SourceTemplate>
@@ -73,7 +72,7 @@
     <UserAgent>Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.168 Safari/535.19</UserAgent>
     <UserNotes />
     <LastFileSize>1621853</LastFileSize>
-    <LastFileDate>2013-08-06T19:32:55+02:00</LastFileDate>
+    <LastFileDate>2013-08-07T15:22:30.1121369</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -93,7 +92,7 @@
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
-            <Regex>[\d\.]{2,}(?= \(released)</Regex>
+            <Regex>[\d\.]{2,}(?=\s*\n\(released)</Regex>
             <Url>http://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html</Url>
             <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
   &lt;TR&gt;
@@ -130,9 +129,9 @@ REM /disablepush</ExecutePreCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2013-08-07T22:22:30.1121369+02:00</LastUpdated>
+    <LastUpdated>2013-08-07T15:22:30.1121369</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://the.earth.li/~sgtatham/putty/latest/x86/putty.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>https://the.earth.li/~sgtatham/putty/{version}/x86/putty.zip</FixedDownloadUrl>
     <Name>putty.portable</Name>
   </ApplicationJob>
 </Jobs>

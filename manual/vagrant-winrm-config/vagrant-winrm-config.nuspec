@@ -14,6 +14,7 @@
     NOTE: Please run this from an adminstrative command line as this has been known to fail attempting to put it into Start-ProcessAsAdministrator.
     </description>
     <projectUrl>https://github.com/ferventcoder/nugetpackages</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>vagrant winrm configuration admin</tags>
     <releaseNotes></releaseNotes>
     <dependencies>

@@ -11,6 +11,7 @@
 
 It supports the common e-mail protocols (IMAP, SMTP and POP3) and can easily be integrated with many existing web mail systems. It has flexible score-based spam protection and can attach to your virus scanner to scan all incoming and outgoing email.</description>
     <projectUrl>http://www.hmailserver.com</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>hmail mail server smtp pop3 admin</tags>
     <licenseUrl>http://www.hmailserver.com/documentation/v5.3/index.php?page=information_copyright</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

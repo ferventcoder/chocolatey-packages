@@ -8,7 +8,7 @@
 
   $params = @{
     packageName = $package;
-    url = 'http://siliconforks.com/jscoverage/download/jscoverage-0.5.1-windows.zip';
+    url = 'https://siliconforks.com/jscoverage/download/jscoverage-0.5.1-windows.zip';
     unzipLocation = (Join-Path $binRoot $package)
     specificFolder = 'jscoverage-0.5.1';
   }

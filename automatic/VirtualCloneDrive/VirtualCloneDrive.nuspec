@@ -6,10 +6,26 @@
     <title>Virtual CloneDrive</title>
     <authors>SlySoft</authors>
     <owners>Rob Reynolds</owners>
-    <projectUrl>http://www.slysoft.com/en/virtual-clonedrive.html</projectUrl>
+    <projectUrl>https://www.elby.ch/products/vcd.html</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/virtualclonedrive.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Virtual CloneDrive – Virtual CloneDrive works and behaves just like a physical CD/DVD drive, however it exists only virtually. Image files generated with CloneDVD or CloneCD can be mounted onto a virtual drive from your hard-disk or from a network drive and used in the same manner as inserting them into a normal CD/DVD drive. Probably the best virtual drive software, Virtual CloneDrive allows you to enjoy the freedom of a virtual drive and is completely free.</description>
+    <description>Virtual CloneDrive works and behaves just like a physical CD, DVD, or Blu-ray drive, although it only exists virtually. Image files can be "inserted" into the virtual drive from your harddisk or from a network drive by just a double-click, and thus be used like a normal CD, DVD, or Blu-ray. Virtual CloneDrive supports up to 15 virtual drives at the same time - no matter if the image file contains audio, video or just simple data. Virtual CloneDrive is fully integrated in Windows Explorer context menus and on top of all it is free!
+
+### Features
+
+ * Mounts images as virtual drive
+ * Supports all common image formats such as ISO, BIN, IMG, UDF, DVD, and CCD
+ * Emulation of CD, DVD, and Blu-ray media
+ * Supports up to 15 virtual drives at the same time
+ * History of recently mounted images
+ * Automount last image
+ * Unmount image with eject button
+ * Seamless integration in Windows Explorer context menu
+ * Easy to use - just double-click an image file to mount as a drive
+ * Virtual CloneDrive is freeware, you may use it at no cost
+
+    </description>
     <summary>Virtual CloneDrive – Mount ISO Images</summary>
     <releaseNotes>Updated the signing certificate, it now expires in 2015. Also include full certificate chain (Thus the need for the P7B certificate format)</releaseNotes>
     <tags>Virtual CloneDrive ISO Drive admin</tags>

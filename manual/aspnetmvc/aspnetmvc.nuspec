@@ -8,6 +8,7 @@
     <owners>Rob Reynolds</owners>
     <licenseUrl>http://aspnet.codeplex.com/license</licenseUrl>
     <projectUrl>http://www.asp.net/mvc</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>ASP.NET MVC - This package has been deprecated in favor of aspnetmvc.install (and so there is not a naming conflict with the package on nuget.org).
 

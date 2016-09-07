@@ -5,7 +5,7 @@ try {
   $uacRegValue = "EnableLUA"
   $uacEnabled = $false
 
-  # http://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx
+  # https://msdn.microsoft.com/en-us/library/windows/desktop/ms724832(v=vs.85).aspx
   $osVersion = [Environment]::OSVersion.Version
   if ($osVersion -ge [Version]'6.0')
   {

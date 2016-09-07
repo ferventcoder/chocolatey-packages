@@ -11,6 +11,7 @@
     </description>
     <releaseNotes>https://github.com/msysgit/msysgit/releases/tag/Git-1.9.4-preview20140929</releaseNotes>
     <projectUrl>http://msysgit.github.com/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>git vcs dvcs version control msysgit</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -9,6 +9,7 @@
     <summary>dropkick.dev</summary>
     <description>dropkick.dev - This gets the dropkick development environment up on your machine.</description>
     <projectUrl>https://github.com/chucknorris/dropkick/wiki</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>dropkick.dev notSilent</tags>
     <licenseUrl>https://github.com/chucknorris/dropkick/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

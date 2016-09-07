@@ -44,7 +44,7 @@
     <FileHippoId />
     <LastUpdated>2014-01-05T01:42:47.7813959+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://download.skype.com/msi/SkypeSetup_{version}.msi</FixedDownloadUrl>
+    <FixedDownloadUrl>https://download.skype.com/msi/SkypeSetup_{version}.msi</FixedDownloadUrl>
     <Name>skype</Name>
   </ApplicationJob>
 </Jobs>

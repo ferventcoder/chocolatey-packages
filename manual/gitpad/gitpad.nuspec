@@ -9,6 +9,7 @@
     <summary>GitPad - Use Your Favorite Editor for Git</summary>
     <description>GitPad - This single executable allows you to use Notepad as your editor any time Git requires one (commits, interactive rebase, etc).</description>
     <projectUrl>https://github.com/github/gitpad</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>gitpad git</tags>
     <licenseUrl>https://github.com/github/gitpad</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

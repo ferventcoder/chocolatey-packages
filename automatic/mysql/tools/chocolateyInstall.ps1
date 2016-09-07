@@ -65,7 +65,7 @@ try {
 
   $defaultDataDir='C:\ProgramData\MySQL\data'
   if (![System.IO.Directory]::Exists($defaultDataDir)) {[System.IO.Directory]::CreateDirectory($defaultDataDir) | Out-Null}
-  Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --defaults-file=$iniFileDest --initialize"
+  Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --defaults-file=$iniFileDest --initialize-insecure"
 } catch {
   write-host "MySQL has already been initialized"
 }

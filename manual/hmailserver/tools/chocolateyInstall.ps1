@@ -1,1 +1,1 @@
-﻿Install-ChocolateyPackage 'hmailserver' 'exe' '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' 'http://www.hmailserver.com/index.php?page=background_download_file&downloadid=207'  -validExitCodes @(0)
+﻿Install-ChocolateyPackage 'hmailserver' 'exe' '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' 'https://www.hmailserver.com/index.php?page=background_download_file&downloadid=207'  -validExitCodes @(0)

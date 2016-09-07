@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>nodejs.commandline</id>
+    <title>[DEPRECATED] Node JS (Portable, CommandLine)</title>
+    <version>4.4.4</version>
+    <authors>Joyent</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Node JS - Evented I/O for v8 JavaScript.</summary>
+    <description>
+### DEPRECATION NOTICE
+This package uses an older NPM which is no longer offered as a standalone package separately from NodeJS. It is recommended that you uninstall this package and the package nodejs.commandline in favor of nodejs.install (which nodejs package now points to).
+
+Use nodejs.install instead (Node JS package (nodejs) now points to nodejs.install).
+
+### Description
+Node JS - Evented I/O for v8 JavaScript. Node's goal is to provide an easy way to build scalable network programs.
+
+This package simply copies Node.exe to a subfolder within the Chocolatey folder. This now takes a dependency on the npm package, so NPM will be installed as well.
+</description>
+    <projectUrl>http://nodejs.org</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
+    <tags>nodejs node javascript</tags>
+    <licenseUrl>https://github.com/joyent/node/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/nodejs.png</iconUrl>
+    <dependencies>
+      <dependency id="npm" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: “UTF-8” -->

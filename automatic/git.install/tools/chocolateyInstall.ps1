@@ -3,7 +3,7 @@ $packageId = '{{PackageName}}'
 $fileType = 'exe'
 $fileArgs = $(
   '/VERYSILENT /NORESTART /NOCANCEL /SP- ' +
-  '/NOICONS /COMPONENTS="icons,icons\quicklaunch,ext,ext\reg,ext\reg\shellhere,ext\reg\guihere,assoc,assoc_sh" /LOG'
+  '/COMPONENTS="icons,icons\quicklaunch,ext,ext\shellhere,ext\guihere,assoc,assoc_sh" /LOG'
 )
 $url = '{{DownloadUrl}}'
 $url64 = '{{DownloadUrlx64}}'
@@ -13,6 +13,7 @@ $arguments = @{};
 $packageParameters = $env:chocolateyPackageParameters;
 
 # Default the values
+$useWindowsTerminal = $false
 $gitCmdOnly = $false
 $unixTools = $false
 $noAutoCrlf = $false # this does nothing unless true
@@ -40,6 +41,11 @@ if ($packageParameters) {
     if ($arguments.ContainsKey("GitOnlyOnPath")) {
         Write-Host "You want Git on the command line"
         $gitCmdOnly = $true
+    }
+
+    if ($arguments.ContainsKey("WindowsTerminal")) {
+        Write-Host "You do not want to use MinTTY terminal"
+        $useWindowsTerminal = $true
     }
 
     if ($arguments.ContainsKey("GitAndUnixToolsOnPath")) {
@@ -74,6 +80,11 @@ if ( -not (Test-Path $installKey)) {
 if ($gitCmdOnly) {
   # update registry so installer picks it up automatically
   New-ItemProperty $installKey -Name "Inno Setup CodeFile: Path Option" -Value "Cmd" -PropertyType "String" -Force | Out-Null
+}
+
+if ($useWindowsTerminal) {
+  # update registry so installer picks it up automatically
+  New-ItemProperty $installKey -Name "Inno Setup CodeFile: Bash Terminal Option" -Value "ConHost" -PropertyType "String" -Force | Out-Null
 }
 
 if ($unixTools) {

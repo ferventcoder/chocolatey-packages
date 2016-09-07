@@ -12,6 +12,7 @@
 This package is an alias for the nodejs.commandline package, which simply installs Node.exe to the Chocolatey folder and takes a dependency on the NPM package.
     </description>
     <projectUrl>http://nodejs.org</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>nodejs node javascript</tags>
     <licenseUrl>https://github.com/joyent/node/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

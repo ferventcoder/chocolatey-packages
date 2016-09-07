@@ -3,7 +3,7 @@
 
   #Changing compat mode to avoid dialog stating that installer must run as a non admin user
   $env:__COMPAT_LAYER="WINXPSP3"
-  Install-ChocolateyPackage 'spotify' 'exe' '/SILENT' 'http://download.spotify.com/SpotifySetup.exe'
+  Install-ChocolateyPackage 'spotify' 'exe' '/SILENT' 'https://download.spotify.com/SpotifySetup.exe'
   $env:__COMPAT_LAYER=$null
 
   $installerFile = Join-Path $scriptDir 'install.au3'

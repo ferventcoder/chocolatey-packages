@@ -26,7 +26,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://sourceforge.net/projects/stefanstools/files/StExBar/</Url>
+            <Url>https://sourceforge.net/projects/stefanstools/files/StExBar/</Url>
             <StartText>tr title="StExBar-</StartText>
             <EndText>.msi</EndText>
             <TextualContent />
@@ -62,7 +62,7 @@
     <FileHippoId />
     <LastUpdated>2015-07-11T22:33:41.4594333</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://sourceforge.net/projects/stefanstools/files/StExBar/StExBar-{version}.msi/download</FixedDownloadUrl>
+    <FixedDownloadUrl>https://sourceforge.net/projects/stefanstools/files/StExBar/StExBar-{version}.msi/download</FixedDownloadUrl>
     <Name>stexbar</Name>
   </ApplicationJob>
 </Jobs>

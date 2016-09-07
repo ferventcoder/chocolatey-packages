@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>msi2xml</id>
+    <version>2.2.1.957</version>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages</packageSourceUrl>
+    <owners>Rob Reynolds</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>MSI2XML / XML2MSI</title>
+    <authors>Daniel Gehriger</authors>
+    <projectUrl>http://msi2xml.sourceforge.net/</projectUrl>
+    <copyright>© 2001-2007 Daniel Gehriger</copyright>
+    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://sourceforge.net/p/msi2xml/code/HEAD/tree/</projectSourceUrl>
+    <docsUrl>http://msi2xml.sourceforge.net/</docsUrl>
+    <mailingListUrl>https://sourceforge.net/p/msi2xml/mailman/</mailingListUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/msi2xml/bugs/</bugTrackerUrl>
+    <tags>msi2xml MSI extraction xml converter wix</tags>
+    <summary>A Windows Installer database to xml - bi-directional converter</summary>
+    <description>MSI2XML is a Windows Installer database to xml bi-directional converter.
+### Features of msi2xml
+
+ * Includes binary streams as MIME (base64) encoded text in the XML file.
+ * Alternatively writes binary streams as external files and includes them by references in the XML file.
+ * Ensures integrity of binary streams by including a MD5 fingerprint.
+ * Includes a default style sheet to display the XML file as a web page in Internet Explorer 5.
+ * Sorts rows according to key columns.
+ * Version control friendly: time stamps of binary files only change when the file's content changes.
+
+### Features of xml2msi
+
+ * Instead of including field data in the XML file, an external reference may be specified instead (href). Both, URLs and local paths are resolved dynamically.
+ * Accepts an MD5 checksum for all data fields, to ensure data integrity.
+ * Automatically sets the correct column types for the standard tables.
+ * Validates the data types for standard table columns.
+
+### Usage of msi2xml
+
+More detailed usage information at [Usage of msi2xml](http://msi2xml.sourceforge.net/#msi2xml).
+
+`msi2xml [-q] [-n] [-m] [-e ENCODING] [-s [STYLESHEET]] [-b [DIR]] [-c [DIR[,MEDIACABS]] [-o XMLFILE] file`
+
+`
+-q --quiet                    quiet processing
+-n --no-sort                  disable sorting of rows
+-m --merge-module             convert a merge module (.msm)
+-e --encoding=ENCODING        force XML encoding to ENCODING (default is US-ASCII)
+-s --stylesheet               disable default XSL stylesheet
+-s --stylesheet=NAME          use XSL stylesheet NAME
+-b --dump-streams=DIR         save binary streams to DIR subdirectory
+-c --extract-cabs=DIR,MEDIAS  extract content of cabinet files of MEDIAS to DIR (see notes)
+-o --output=FILE              write MSI file to FILE
+`
+
+### Usage of xml2msi
+
+More detailed usage information at [Usage of xml2msi](http://msi2xml.sourceforge.net/#xml2msi).
+
+`xml2msi [-m] [-p PREFIX] [-c [GUID]] [-d [GUID]] [-g [GUID]] [-v VERSION] [-r [VERSION]] [-u [XMLFILE]] [-s "PROPERTY=  VALUE"] [-o MSIFILE] XMLFILE`
+
+`
+-q --quiet               quiet processing
+-m --ignore-md5           treat failed MD5 checks as warnings
+-p --href-prefix=PREFIX   prepend PREFIX to external references (href)
+-c --package-code=GUID    update package code (with GUID, see notes)
+-d --product-code=GUID    update product code (with GUID, see notes)
+-g --upgrade-code=GUID    update upgrade code (with GUID, see notes)
+-v --product-version=VER  update product version with VER (see notes)
+-r --upgrade-version=VER  update 'Upgrade' table entry 'VersionMax' (uses product version if VER omited, also see notes)
+-u --update-xml=FILE      write updated XML to FILE (or update input file if FILE omited)
+-s --set="PROPERTY=VALUE" set/update PROPERTY in Property table to VALUE (repeat option for setting multiple properties)
+-o --output=FILE          write MSI file to FILE
+`
+</description>
+    <releaseNotes>
+27-September-2007    Release 2.2.0
+  - [ #1509709 ] Using MSXML 6.0 or MSXML 6.0 SP 1 (pre-installed on Windows Vista and included with .NET Framework 2.0; otherwise download from here.)
+  - Fixed bug [ #1469822 ] Invalid XML characters are base-64 encoded
+  - Coloring error / warning / notice / status messages in red / yellow / green / white
+  - Fixed bug [ Forum ] "The table contains non-unique primary keys"
+  - Compatible with Internet Explorer 7
+  - Updated to VisualC++ 2005 (VC8)
+  - Fixed resource loading    
+  - Icorporated patch [ #1406769 ] Improved save to disk in XML
+  - Fixed bug [ #1469818 ] Runtime error when missing external CAB encountered
+  - Fixed bug [ #907971 ] Continuing after MSI errors when dumping tables
+
+18-September-2005    Release 2.1.11
+  - Added -Q switch to suppress banner
+
+15-August-2005    Release 2.1.9
+  - added switch to set / update values in Property table (see new switch -s in xml2msi)
+
+16-February-2004    Release 2.1.8
+  - added merge module support (see new switch -m in msi2xml)
+11-December-2003    Release 2.1.7
+  - fixed date formatting error resulting in "Failed to convert the MSI database!" error message
+
+9-December-2003    Release 2.1.6
+  - fixed error message when empty node encountered
+
+11-November-2002    Release 2.1.5
+  - fixed decompression of zero-size files
+  - fixed decompression of cabs in the _Streams pseudo table
+
+7-November-2002    Release 2.1.4
+  - fixed compression of zero-size files
+
+6-November-2002    Release 2.1.3
+  - fixed command line parsing
+
+6-November-2002    Release 2.1.2
+  - completed -c (--extract-cabs) switch with comma-separated list of media cabs to extract
+
+4-November-2002    Release 2.1.1
+  - fixed MsiFileHash calcuation
+  - added tooltips with column information to the default stylesheet
+
+4-November-2002    Release 2.1.0
+  - added long command line options support
+  - added new options to xml2msi to update/generated GUID for product/package/upgrade codes, product version
+  - added new option to update 'Update' table with new version number
+
+3-November-2002    Release 2.0.0
+  - added cabinet file decompression / compression support
+  - new option for xml2msi writes out update XML containing new version numbers, MD5 hashes, etc.   
+
+27-October-2002    Release 1.4.3
+  - Fixed "-d" option in msi2xml.
+
+20-August-2002    Release 1.4.2
+  - Fixed mysterious md5 string bug simply by recompiling...
+  - I am distributing only the Unicode version now. Win9X support is provided through unicow.dll.
+  - Reformatted source.
+
+6-August-2002    Release 1.4.1
+  - Fixed bug [ #578884 ] msi2xml.cpp missing #include &lt;limits&gt;.
+  - Fixed bug [ #578888 ] Inappropriate HRESULTS thrown.
+
+14-April-2002    Release 1.4.0
+  - Fixed syntax error in xml-stylesheet PI    
+  - Updated to MSXML 4.0
+  - Created VC.NET project files
+  - Put #import statement in conditional clause, to allow for compilation with gcc.
+
+14-January-2002    Release 1.3.0
+  - Fixed bug [ #502029 ] msi2xml drops the code page value.
+  - Fixed bug [ #502444 ] xml2msi failed to read Japanese chars.
+  - Added "codepage" attribute to &lt;msi&gt; tag.
+  - Changed default XML encoding to US-ASCII (non-US-ASCII characters will be encoded as &amp;#xnnnn; where nnnn is the character's Unicode value.
+  - Changed to MSXML 4.0
+  - Fixed bug in table row sorting.
+  - Made all buffers dynamic.
+  - Added validation info for new Windows Installer 2.0 tables.
+
+5-January-2002    Release 1.2.1
+  - Fixed bug [ #492069 ] Invalid character in xml output.
+
+15-Nov-2001    Release 1.2.0
+  - Huge bug fix: unreferenced binary streams were not exported by previous versions. Msi2xml now exports ALL binary streams, and places unreferenced streams in the _Streams table. (Note that it does not matter if streams appear in a regular table and again in the _Streams pseudo table, as long as the name value is of the form Table.StreamId.)
+  - Added -p command line switch to xml2msi to specify a path prefix for external references.
+
+25-Sept-2001    Release 1.1.10     - Added -d command line switch to msi2xml to disable datatypes in XML file.
+
+8-June-2001      Release 1.1.9
+  - Failed missing Summary Properties in XML2MSI.
+
+28-May-2001        Release 1.1.8
+  - Fixed failed conversion when Summary Property empty in XML file.
+
+14-May-2001       Release 1.1.7
+  - Fixed crash in xml2msi when checksum verification fails.
+
+10-May-2001       Release 1.1.6
+  - Msi2xml no longer issues an "Unknown Property" error if some of the Summary Info Properties are missing.
+
+9-May-2001         Release 1.1.5
+  - Msi2xml does not change the time stamps of external binary streams if their content has not changed.
+  - Speed improvements for msi2xml (80% faster).
+  - Added cross-referencing hyperlinks to style sheet.
+
+8-May-2001         Release 1.1.4
+  - Added summary information to XSL style sheet (contributed by Dan Rolander).
+
+7-May-2001         Release 1.1.3
+  - Added sorting according to all key columns.
+
+4-May-2001         Release 1.1.2
+  - Added option to sort rows according to the first field (enabled by default).
+
+2-May-2001         Release 1.1.0
+  - Initial release of xml2msi/msi2xml 1.1
+    </releaseNotes>
+    <!-- =============================== -->
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+    </dependencies>-->
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>

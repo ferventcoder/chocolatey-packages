@@ -8,6 +8,7 @@
     <owners>Rob Reynolds</owners>
     <licenseUrl>http://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html</licenseUrl>
     <projectUrl>http://www.chiark.greenend.org.uk/~sgtatham/putty/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/putty.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>PuTTY is a free implementation of Telnet and SSH for Windows and Unix platforms, along with an xterm terminal emulator.
@@ -15,7 +16,7 @@ LEGAL WARNING: Use of PuTTY, PSCP, PSFTP and Plink is illegal in countries where
     <summary>PuTTY is a free implementation of Telnet and SSH for Windows and Unix platforms, along with an xterm terminal emulator.</summary>
     <tags>PuTTY telnet ssh</tags>
     <dependencies>
-      <dependency id="putty.portable" version="{{PackageVersion}}" />
+      <dependency id="putty.portable" version="[{{PackageVersion}}]" />
     </dependencies>
   </metadata>
   <files>

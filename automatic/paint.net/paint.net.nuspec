@@ -9,10 +9,14 @@
     <summary>Paint.NET is image and photo manipulation software designed to be used on computers that run Windows.</summary>
     <description>Paint.NET is free image and photo editing software for computers that run Windows. It features an intuitive and innovative user interface with support for layers, unlimited undo, special effects, and a wide variety of useful and powerful tools. An active and growing online community provides friendly help, tutorials, and plugins.</description>
     <projectUrl>http://www.getpaint.net/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>paint.net photo editing paint admin</tags>
     <licenseUrl>http://www.getpaint.net/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/paint.net.png</iconUrl>
+    <dependencies>
+      <dependency id="DotNet4.6" version="4.6.00081.20150925" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

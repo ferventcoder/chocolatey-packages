@@ -3,7 +3,7 @@
   <metadata>
     <id>mingw</id>
     <title>MinGW</title>
-    <version>4.8.3.20150601</version>
+    <version>5.3.0</version>
     <authors>cstrauss, cwilso11, earnie, keithmarshall</authors>
     <owners>Rob Reynolds, matthewphillips, Michael Smith</owners>
     <summary>MinGW ("Minimalistic GNU for Windows") is a collection of freely available and freely distributable Windows specific header files and import libraries combined with GNU toolsets that allow one to produce native Windows programs that do not rely on any 3rd-party C runtime DLLs.</summary>
@@ -20,6 +20,7 @@ The default package now uses SJLJ (32-bit) and SEH (64-bit) exception handling a
 For example: `-params "/exception:sjlj /threads:win32"`
     </description>
     <projectUrl>http://www.mingw.org/wiki/MinGW</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>mingw gnu unix gcc</tags>
     <copyright></copyright>
     <licenseUrl>http://www.mingw.org/license</licenseUrl>

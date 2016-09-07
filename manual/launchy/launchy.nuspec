@@ -10,6 +10,7 @@
     <description>Launchy is a free cross-platform utility designed to help you forget about your start menu, the icons on your desktop, and even your file manager.
 Launchy indexes the programs in your start menu and can launch your documents, project files, folders, and bookmarks with just a few keystrokes!</description>
     <projectUrl>http://www.launchy.net</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>launchy productivity launcher admin</tags>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/launchy.png</iconUrl>
   </metadata>

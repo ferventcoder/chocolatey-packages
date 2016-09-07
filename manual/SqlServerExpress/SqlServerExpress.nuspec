@@ -13,6 +13,7 @@ Microsoft SQL Server Express – Microsoft SQL Server is a complete set of enter
 Note: This will fail if you don’t have the correct version of Visual C++ 2008 SP1 installed.
     </description>
     <projectUrl>http://www.microsoft.com/sqlserver/en/us/editions/express.aspx</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>Sql Server Express database sqlserver admin notsilent</tags>
     <copyright>Microsoft</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>

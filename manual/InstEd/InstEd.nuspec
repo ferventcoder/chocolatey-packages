@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>InstEd</id>
-    <title>InstEd (Install Edit)</title>
-    <version>1.5.15.26</version>
-    <authors>TNE Enterprises</authors>
+    <id>insted</id>
+    <version>1.5.15.27</version>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages</packageSourceUrl>
     <owners>Rob Reynolds</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>InstEd - Install Edit (Install)</title>
+    <authors>TNE Enterprises</authors>
+    <projectUrl>http://www.instedit.com/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/InstEd.png</iconUrl>
+    <copyright>2012 TNE Enterprises</copyright>
+    <!-- If there is a license Url available, it is is required for the community feed -->
+    <!-- <licenseUrl>Software License Location __REMOVE_OR_FILL_OUT__</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>-->
+    <tags>InstEd MSI editor edit install admin</tags>
     <summary>InstEd is a free MSI editor built for professionals.</summary>
     <description>InstEd is a free MSI editor built for professionals. InstEd makes working with files fast and easy.
 
@@ -19,15 +30,6 @@ If you use Orca, you will love InstEd. If you use some of the more expensive too
 * Change highlighting. All changes to an mst are highlighted. Msi files can be compared to highlight the differences. And by comparing an msi to itself while the msi is being edited, change tracking can be performed on an msi.
 * Easy validation. Validation profiles allow full flexibility to apply ICEs from more than one CUB to many files at once, allowing for easy Quality Assurance of many files at once.
 * Transform Chaining. See at a glance all the changes that a sequence of transforms make.</description>
-    <projectUrl>http://www.instedit.com/</projectUrl>
-    <tags>InstEd MSI editor edit install admin</tags>
-    <copyright>TNE Enterprises</copyright>
-    <!--<licenseUrl>__REPLACE__</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>-->
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/InstEd.png</iconUrl>
-    <!--<dependencies>
-      <dependency id="" version="" />
-    </dependencies>-->
     <releaseNotes>
 ==1.5.15.26==
 * Bug Fix: Changing tables when the focused field has an index larger than the new table's field count no longer crashes InstEd. Introduced with the only briefly available 1.5.14.25.
@@ -49,9 +51,10 @@ If you use Orca, you will love InstEd. If you use some of the more expensive too
 * Correctness: Files with no language will have a null Language value instead of 0 when updating the file details.
 * Bug Fix: File->Save As allows editing of the saved file without having to close and open it.
 * Bug Fix: Successfully opens msi's on Windows 8 Consumer Preview.</releaseNotes>
+    <!-- =============================== -->      
+
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
   </files>
 </package>
-<!-- character encoding: “UTF-8” -->

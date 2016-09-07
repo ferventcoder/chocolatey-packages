@@ -9,6 +9,7 @@
     <summary>Crank is a load testing tool for SignalR.</summary>
     <description>Crank is a load testing tool for SignalR.</description>
     <projectUrl>https://github.com/SignalR/crank</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>crank load testing</tags>
     <licenseUrl>https://github.com/SignalR/crank</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

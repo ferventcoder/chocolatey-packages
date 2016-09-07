@@ -161,7 +161,7 @@
     <FileHippoId />
     <LastUpdated>2013-12-25T17:16:46.4011409+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://download.sysinternals.com/files/SysinternalsSuite.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>https://download.sysinternals.com/files/SysinternalsSuite.zip</FixedDownloadUrl>
     <Name>sysinternals</Name>
   </ApplicationJob>
 </Jobs>

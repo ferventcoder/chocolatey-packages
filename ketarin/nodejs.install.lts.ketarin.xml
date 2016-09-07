@@ -50,7 +50,7 @@
       </item>
     </Variables>
     <ExecuteCommand />
-    <ExecutePreCommand>chocopkgup /p nodejs /v {version} /u {preupdate-url} /u64 {url64}</ExecutePreCommand>
+    <ExecutePreCommand>chocopkgup /p nodejs /v {version} /u "{preupdate-url}" /u64 "{url64}"</ExecutePreCommand>
     <ExecuteCommandType>Batch</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category />

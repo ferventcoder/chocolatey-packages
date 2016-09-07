@@ -9,6 +9,7 @@
     <summary>chocolatey.dev</summary>
     <description>chocolatey.dev  - This gets the chocolatey development source to your machine.</description>
     <projectUrl>https://github.com/chocolatey/chocolatey/wiki</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>git chocolatey.dev dev notSilent</tags>

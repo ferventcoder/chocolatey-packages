@@ -1,1 +1,1 @@
-﻿Install-ChocolateyZipPackage 'pstools' 'http://download.sysinternals.com/files/PSTools.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+﻿Install-ChocolateyZipPackage 'pstools' 'https://download.sysinternals.com/files/PSTools.zip' "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"

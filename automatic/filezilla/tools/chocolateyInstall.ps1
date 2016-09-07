@@ -2,8 +2,8 @@
 $version = '{{PackageVersion}}'
 $fileType = 'exe'
 $silentArgs = '/S'
-$url = "http://sourceforge.net/projects/filezilla/files/FileZilla_Client/${version}/FileZilla_${version}_win32-setup.exe/download"
-$url64bit = "http://sourceforge.net/projects/filezilla/files/FileZilla_Client/${version}/FileZilla_${version}_win64-setup.exe/download"
+$url = "https://sourceforge.net/projects/filezilla/files/FileZilla_Client/${version}/FileZilla_${version}_win32-setup.exe/download"
+$url64bit = "https://sourceforge.net/projects/filezilla/files/FileZilla_Client/${version}/FileZilla_${version}_win64-setup.exe/download"
 
 # Even though the installer exits with error code 1223, FileZilla gets installed properly
 $validExitCodes = @(0, 1223)

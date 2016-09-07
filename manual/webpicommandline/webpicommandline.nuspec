@@ -12,6 +12,7 @@
 Note: This package has been deprecated for simply webpicmd, which this package depends on.
 </description>
     <projectUrl>http://www.iis.net/learn/install/web-platform-installer/web-platform-installer-v4-command-line-webpicmdexe-rtw-release</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>webpi web pi platform installer microsoft tool</tags>
     <licenseUrl>http://www.microsoft.com/web/webpi/eula/webpi_45_en.htm</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

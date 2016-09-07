@@ -9,6 +9,7 @@
     <summary>Puppet Enterprise - IT automation software</summary>
     <description>Puppet Enterprise is IT automation software that gives system administrators the power to easily automate repetitive tasks, quickly deploy critical applications, and proactively manage infrastructure, on-premise or in the cloud.</description>
     <projectUrl>https://puppetlabs.com/puppet/puppet-enterprise/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>puppet enterprise discovery configuration config management automation provisioning cloud patch build release compliance admin</tags>
     <copyright>PuppetLabs</copyright>
     <licenseUrl>http://puppetlabs.com/licensing/</licenseUrl>

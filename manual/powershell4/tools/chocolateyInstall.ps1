@@ -1,9 +1,9 @@
 ﻿$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $packageName = 'Powershell4'
 $installerType = 'msu'
-$url   = 'http://download.microsoft.com/download/3/D/6/3D61D262-8549-4769-A660-230B67E15B25/Windows6.1-KB2819745-x86-MultiPkg.msu'
-$url64 = 'http://download.microsoft.com/download/3/D/6/3D61D262-8549-4769-A660-230B67E15B25/Windows6.1-KB2819745-x64-MultiPkg.msu'
-$urlWin2012 = 'http://download.microsoft.com/download/3/D/6/3D61D262-8549-4769-A660-230B67E15B25/Windows8-RT-KB2799888-x64.msu'
+$url   = 'https://download.microsoft.com/download/3/D/6/3D61D262-8549-4769-A660-230B67E15B25/Windows6.1-KB2819745-x86-MultiPkg.msu'
+$url64 = 'https://download.microsoft.com/download/3/D/6/3D61D262-8549-4769-A660-230B67E15B25/Windows6.1-KB2819745-x64-MultiPkg.msu'
+$urlWin2012 = 'https://download.microsoft.com/download/3/D/6/3D61D262-8549-4769-A660-230B67E15B25/Windows8-RT-KB2799888-x64.msu'
 $silentArgs = "/quiet /norestart /log:`"$toolsDir\PowerShell.v4.Install.log`""
 $validExitCodes = @(0, 3010) # 2359302 occurs if the package is already installed.
 
