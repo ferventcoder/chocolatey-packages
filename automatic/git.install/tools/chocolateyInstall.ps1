@@ -17,6 +17,7 @@ $useWindowsTerminal = $false
 $gitCmdOnly = $false
 $unixTools = $false
 $noAutoCrlf = $false # this does nothing unless true
+$disableShellIntegration = $false
 
 # Now parse the packageParameters using good old regular expression
 if ($packageParameters) {
@@ -58,6 +59,11 @@ if ($packageParameters) {
         Write-Host " This setting will not adjust an already existing .gitconfig setting."
         $noAutoCrlf = $true
     }
+    
+    if ($arguments.ContainsKey("NoShellIntegration")) {
+        Write-Host "You chose to disable Git shell integration"
+        $disableShellIntegration = $true
+    }
 } else {
     Write-Debug "No Package Parameters Passed in";
 }
@@ -97,18 +103,27 @@ if ($noAutoCrlf) {
   New-ItemProperty $installKey -Name "Inno Setup CodeFile: CRLF Option" -Value "CRLFCommitAsIs" -PropertyType "String" -Force | Out-Null
 }
 
-# Make our install work properly when running under SYSTEM account (Chef Cliet Service, Puppet Service, etc)
+if ($disableShellIntegration) {
+  $fileArgs = $fileArgs.replace('ext\shellhere', '')
+  $fileArgs = $fileArgs.replace('ext\guihere', '')
+  $fileArgs = $fileArgs.replace('ext', '')
+}
+
+# Make our install work properly when running under SYSTEM account (Chef Client Service, Puppet Service, etc)
 # Add other items to this if block or use $IsRunningUnderSystemAccount to adjust existing logic that needs changing
 $IsRunningUnderSystemAccount = ([System.Security.Principal.WindowsIdentity]::GetCurrent()).IsSystem
 If ($IsRunningUnderSystemAccount)
 {
   #strip out quicklaunch parameter as it causes a hang under SYSTEM account
-  $fileArgs = $fileArgs.replace('icons\quicklaunch,','')
+  $fileArgs = $fileArgs.replace('icons\quicklaunch', '')
   If ($fileArgs -inotlike "*/SUPPRESSMSGBOXES*")
   {
     $fileArgs = $fileArgs + ' /SUPPRESSMSGBOXES'
   }
 }
+
+$fileArgs = $fileArgs.replace(',+$|^,+', '')
+$fileArgs = $fileArgs.replace(',{2,}', ',')
 
 If ([bool](get-process ssh-agent -ErrorAction SilentlyContinue))
 {
