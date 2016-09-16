@@ -30,9 +30,9 @@
   #$checksum64 = '184b18eba6be931d7b03b8d15d6bfad3c9712718'
 
   $rubyFolder = '23'
-  $url = 'https://bintray.com/oneclick/rubyinstaller/download_file?file_path=rubyinstaller-2.3.1.exe'
+  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe?direct'
   $checksum = '5883233e5477c8097e68ec4bb47932011664d8d3a46595a9440bfd47c9dc78cb'
-  $url64 = 'https://bintray.com/oneclick/rubyinstaller/download_file?file_path=rubyinstaller-2.3.1-x64.exe'
+  $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1-x64.exe?direct'
   $checksum64 = 'a883e24b9a2b383170e17c372cec32bdeb2804ebc1ca5997d68d97cdddae883c'
 
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
