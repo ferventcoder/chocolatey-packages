@@ -59,7 +59,7 @@ if ($packageParameters) {
         Write-Host " This setting will not adjust an already existing .gitconfig setting."
         $noAutoCrlf = $true
     }
-    
+
     if ($arguments.ContainsKey("NoShellIntegration")) {
         Write-Host "You chose to disable Git shell integration"
         $disableShellIntegration = $true
@@ -122,8 +122,10 @@ If ($IsRunningUnderSystemAccount)
   }
 }
 
-$fileArgs = $fileArgs.replace(',+$|^,+', '')
-$fileArgs = $fileArgs.replace(',{2,}', ',')
+# Since we potentially removed some elements of the components list, let's clean up the comma situation
+$fileArgs = $fileArgs.replace('(?<=/COMPONENTS=")(?:,+)([^"]*)(?=")',  '$1') # replace leading commas in components list
+$fileArgs = $fileArgs.replace('(?<=/COMPONENTS=")([^"]*)(?:,+)(?=")',  '$1') # replace trailing commas in components list
+$fileArgs = $fileArgs.replace('(?<=/COMPONENTS="[^"]*),{2,}(?=[^"]*")', ',') # replace multiple commas in a row with one comma
 
 If ([bool](get-process ssh-agent -ErrorAction SilentlyContinue))
 {
