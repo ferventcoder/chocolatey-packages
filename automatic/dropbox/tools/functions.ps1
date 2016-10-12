@@ -1,5 +1,6 @@
 ﻿Function getDropboxRegProps() {
-  $uninstallRegistryPath = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\Dropbox'
+  $uninstallRegistryPath = 'HKLM:\Software' + $bitness + '\Microsoft\Windows\CurrentVersion\Uninstall\Dropbox'
+  $bitness = @{$true = "\WOW6432Node"; $false = ""}[ (Get-ProcessorBits) -eq 64 ]
 
   if (Test-Path $uninstallRegistryPath) {
     $props = @{
