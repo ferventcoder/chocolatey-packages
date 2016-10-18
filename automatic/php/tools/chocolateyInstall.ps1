@@ -36,4 +36,14 @@ $validExitCodes = @(0)
 $targetFolder = Join-Path $(Get-BinRoot) $packageName
 Install-ChocolateyZipPackage "$packageName" "$url" "$targetFolder" "$url64"
 Install-ChocolateyPath $targetFolder
+
+$phpIniPath = $targetFolder + '/php.ini'
+if (!(Test-Path $phpIniPath)) {
+  write-host 'Creating default php.ini'
+  Copy-Item $targetFolder/php.ini-production $phpIniPath
+
+  write-host 'Configuring PHP extensions directory'
+  (Get-Content $phpIniPath) -replace '; extension_dir = "ext"', 'extension_dir = "ext"' | Set-Content $phpIniPath
+}
+
 echo ("PHP installed in " + $targetFolder)
