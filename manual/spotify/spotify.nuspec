@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>spotify</id>
-    <title>Spotify</title>
-    <version>0.9.8.296</version>
-    <authors>Spotify, Ltd</authors>
+    <version>1.0.33.106</version>
     <owners>Rob Reynolds</owners>
-    <summary>Spotify is a new way to listen to music</summary>
-    <description>Spotify – Millions of tracks, any time you like. Just search for it in Spotify, then play it. Just help yourself to whatever you want, whenever you want it.</description>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>Spotify (Install)</title>
+    <authors>Spotify Ltd</authors>
+    <copyright>Copyright (c) 2016, Spotify Ltd</copyright>
     <projectUrl>http://www.spotify.com</projectUrl>
-    <tags>spotify music player radio</tags>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
+    <tags>spotify music player radio admin</tags>
     <licenseUrl>https://www.spotify.com/us/legal/end-user-agreement/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/922a763c73805cd98d2c0bb76215720bd77728e6/icons/spotify.png</iconUrl>
+    <summary>Spotify is a new way to listen to music</summary>
+    <description>Spotify – Millions of tracks, any time you like. Just search for it in Spotify, then play it. Just help yourself to whatever you want, whenever you want it.</description>
+    <!-- =============================== -->  
+
     <dependencies>
       <dependency id="autoit.commandline" />
     </dependencies>
@@ -21,4 +30,3 @@
     <file src="tools\**" target="tools" />
   </files>
 </package>
-<!-- character encoding: “UTF-8” -->

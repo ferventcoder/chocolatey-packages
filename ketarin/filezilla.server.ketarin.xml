@@ -56,7 +56,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>http://sourceforge.net/projects/filezilla/files/FileZilla%20Server/{version}/FileZilla_Server-{versionUnderscore}.exe/download</TextualContent>
+            <TextualContent>https://sourceforge.net/projects/filezilla/files/FileZilla%20Server/{version}/FileZilla_Server-{versionUnderscore}.exe/download</TextualContent>
             <Name>properUrl</Name>
           </UrlVariable>
         </value>

@@ -112,7 +112,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>http://jruby.org.s3.amazonaws.com/downloads/{version}/jruby_windows_x64_{versionUnderscore}.exe</TextualContent>
+            <TextualContent>https://jruby.org.s3.amazonaws.com/downloads/{version}/jruby_windows_x64_{versionUnderscore}.exe</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -144,7 +144,7 @@
     <FileHippoId />
     <LastUpdated>2014-09-27T19:00:20.1416707+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://jruby.org.s3.amazonaws.com/downloads/{version}/jruby_windows_{versionUnderscore}.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>https://jruby.org.s3.amazonaws.com/downloads/{version}/jruby_windows_{versionUnderscore}.exe</FixedDownloadUrl>
     <Name>jruby</Name>
   </ApplicationJob>
 </Jobs>

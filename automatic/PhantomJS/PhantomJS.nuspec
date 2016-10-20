@@ -13,6 +13,7 @@ PhantomJS is a headless WebKit with JavaScript API. It has fast and native suppo
 PhantomJS is created by Ariya Hidayat.
     </description>
     <projectUrl>http://phantomjs.org/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>PhantomJS javascript webkit web browser testing</tags>
     <licenseUrl>https://github.com/ariya/phantomjs/blob/master/LICENSE.BSD</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

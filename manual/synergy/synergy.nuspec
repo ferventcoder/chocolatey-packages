@@ -4,7 +4,7 @@
   <metadata>
     <id>synergy</id>
     <title>synergy (Install)</title>
-    <version>1.7.5</version>
+    <version>1.7.6</version>
     <authors>Chris Schoeneman, Nick Bolton</authors>
     <owners>Rob Reynolds</owners>
     <summary>Synergy - The Virtual KVM</summary>

@@ -9,6 +9,7 @@
     <summary>Console2 is a Windows console window enhancement.</summary>
     <description>Console2 is a Windows console window enhancement. Console features include: multiple tabs, text editor-like text selection, different background types, alpha and color-key transparency, configurable font, different window styles</description>
     <projectUrl>http://sourceforge.net/projects/console/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>Console2 console cmd command</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

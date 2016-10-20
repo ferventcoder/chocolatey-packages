@@ -33,6 +33,7 @@ __Pik Commands__
 
 For help on a particular command, use 'pik help COMMAND'.</description>
     <projectUrl>https://github.com/vertiginous/pik</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>pik ruby admin</tags>
     <licenseUrl>https://github.com/vertiginous/pik/blob/master/README.rdoc</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

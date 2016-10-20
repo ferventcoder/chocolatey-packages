@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>adobereader</id>
+    <version>2015.017.20050</version>
+    <title>Adobe Reader DC</title>
+    <authors>Adobe</authors>
+    <owners>Rob Reynolds, doc</owners>
+    <licenseUrl>http://www.adobe.com/products/eulas/pdfs/Reader10_combined-20100625_1419.pdf</licenseUrl>
+    <projectUrl>http://www.adobe.com/products/reader.html</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/d96bb0be3b9f5727e6cedb3bd4924fb916bac52c/icons/adobereader.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Adobe Reader is the global standard for reliably viewing, printing, and commenting on PDF documents. It's the only PDF file viewer that can open and interact with all types of PDF content, including forms and multimedia.
+
+Should install your language based on your machine's LCID. If instead installs English (and that's not what you wanted), the installer either doesn't support your language or you may need to uninstall an older version first, and then try installing. If that doesn't work, try a reboot after uninstall and before installing. If that doesn't work, turn to search. But it is now left to the native installer to choose the proper language.</description>
+    <summary>Adobe Reader - View and interact with PDF files</summary>
+    <tags>adobereader pdf reader admin</tags>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

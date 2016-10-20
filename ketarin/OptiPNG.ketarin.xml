@@ -93,7 +93,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://optipng.sourceforge.net/</Url>
+            <Url>https://optipng.sourceforge.net/</Url>
             <StartText>&lt;font size="+0"&gt;&lt;b&gt;OptiPNG&amp;nbsp;</StartText>
             <EndText>&lt;/b&gt;&lt;/font&gt;</EndText>
             <TextualContent />
@@ -124,7 +124,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://sourceforge.net/projects/optipng/files/OptiPNG/optipng-{version}/optipng-{version}-win32.zip/download</Url>
+            <Url>https://sourceforge.net/projects/optipng/files/OptiPNG/optipng-{version}/optipng-{version}-win32.zip/download</Url>
             <StartText>;use_mirror=</StartText>
             <EndText>"&gt;</EndText>
             <Name>mirror</Name>
@@ -144,7 +144,7 @@
     <FileHippoId />
     <LastUpdated>2014-08-09T16:21:20.7838961+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://{mirror}.dl.sourceforge.net/project/optipng/OptiPNG/optipng-{version}/optipng-{version}-win32.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>https://{mirror}.dl.sourceforge.net/project/optipng/OptiPNG/optipng-{version}/optipng-{version}-win32.zip</FixedDownloadUrl>
     <Name>OptiPNG</Name>
   </ApplicationJob>
 </Jobs>

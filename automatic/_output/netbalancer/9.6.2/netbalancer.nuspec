@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>netbalancer</id>
+    <title>NetBalancer</title>
+    <version>9.6.2</version>
+    <authors>SeriousBit</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>NetBalancer is an internet traffic control and monitoring tool designed for Windows XP/2003/Vista/Win7, both x86 and native x64.</summary>
+    <description>
+NetBalancer is an internet traffic control and monitoring tool designed for Windows XP/2003/Vista/Win7, both x86 and native x64.
+    </description>
+    <projectUrl>http://www.seriousbit.com/netbalancer/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
+    <tags>netbalancer bandwidth shaper limiter admin</tags>
+    <copyright>SeriousBit</copyright>
+    <!--<licenseUrl>__REPLACE__</licenseUrl>-->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/netbalancer.png</iconUrl>
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: “UTF-8” -->

@@ -15,6 +15,7 @@ S3 Explorer provides a user interface to Amazon S3 accounts, files and buckets a
 Freeware Amazon S3 client by CloudBerry Lab comes with a full support for CloudFront (Amazon Content Delivery Network (CDN)). It includes a set of tools to manage CloudFront HTTP and Streaming Distributions, Public and Private content and more.
     </description>
     <projectUrl>http://www.cloudberrylab.com/free-amazon-s3-explorer-cloudfront-IAM.aspx</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>Amazon S3 AWS Cloud CloudBerry admin</tags>
     <copyright>CloudBerry Lab</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>

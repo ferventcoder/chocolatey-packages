@@ -9,6 +9,7 @@
     <summary>Install-WindowsImage PowerShell Script</summary>
     <description>The Install-WindowsImage PowerShell script uses the wimgapi.dll in Windows 7 or Windows Server 2008 R2 to apply a Windows image in a .wim file to a specified location. The script can be used to apply a Windows 7 or Windows Server 2008 R2 .wim image to a Virtual Hard Disk (VHD) used for native VHD boot or to boot in a Hyper-V virtual machine.</description>
     <projectUrl>http://code.msdn.microsoft.com/InstallWindowsImage</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>installwindowsimage powershell</tags>
     <licenseUrl>http://code.msdn.microsoft.com/InstallWindowsImage/Project/License.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

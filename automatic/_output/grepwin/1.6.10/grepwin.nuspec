@@ -9,6 +9,7 @@
     <summary>grepwin</summary>
     <description>grepWin is a simple search and replace tool which can use regular expressions to do its job. This allows to do much more powerful searches and replaces.</description>
     <projectUrl>http://stefanstools.sourceforge.net/grepWin.html</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>grepwin grep search admin</tags>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

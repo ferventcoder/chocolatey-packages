@@ -1,6 +1,6 @@
 ﻿$packageName = 'StExBar'
-$url = 'http://sourceforge.net/projects/stefanstools/files/StExBar/StExBar-{{PackageVersion}}.msi/download'
-$url64 = 'http://sourceforge.net/projects/stefanstools/files/StExBar/StExBar64-{{PackageVersion}}.msi/download'
+$url = 'https://sourceforge.net/projects/stefanstools/files/StExBar/StExBar-{{PackageVersion}}.msi/download'
+$url64 = 'https://sourceforge.net/projects/stefanstools/files/StExBar/StExBar64-{{PackageVersion}}.msi/download'
 
 $packageArgs = @{
   packageName   = $packageName

@@ -113,7 +113,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>http://www.sliksvn.com/pub/Slik-Subversion-{realVersion}-x64.msi</TextualContent>
+            <TextualContent>https://www.sliksvn.com/pub/Slik-Subversion-{realVersion}-x64.msi</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -127,8 +127,8 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://www.sliksvn.com/en/download/</Url>
-            <StartText>http://www.sliksvn.com/pub/Slik-Subversion-</StartText>
+            <Url>https://www.sliksvn.com/en/download/</Url>
+            <StartText>https://www.sliksvn.com/pub/Slik-Subversion-</StartText>
             <EndText>-win32.msi</EndText>
             <Name>realVersion</Name>
           </UrlVariable>
@@ -147,7 +147,7 @@
     <FileHippoId />
     <LastUpdated>2014-02-27T22:43:31.5395532+01:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.sliksvn.com/pub/Slik-Subversion-{realVersion}-win32.msi</FixedDownloadUrl>
+    <FixedDownloadUrl>https://www.sliksvn.com/pub/Slik-Subversion-{realVersion}-win32.msi</FixedDownloadUrl>
     <Name>sliksvn</Name>
   </ApplicationJob>
 </Jobs>

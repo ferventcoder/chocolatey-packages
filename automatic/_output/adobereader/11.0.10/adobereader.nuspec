@@ -11,6 +11,7 @@
 
 Now includes support for installing English, Spanish, German, French or Japanese based on the LCID.</description>
     <projectUrl>http://www.adobe.com/products/reader.html</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>adobereader pdf reader admin</tags>
     <licenseUrl>http://www.adobe.com/products/eulas/pdfs/Reader10_combined-20100625_1419.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

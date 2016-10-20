@@ -94,7 +94,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://psydk.org/PngOptimizer.php</Url>
+            <Url>https://psydk.org/PngOptimizer.php</Url>
             <StartText>/download/PngOptimizer-</StartText>
             <EndText>-x64.zip</EndText>
             <TextualContent />
@@ -111,7 +111,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>Textual</VariableType>
             <Regex />
-            <TextualContent>http://psydk.org/download/PngOptimizer-{version}-x64.zip</TextualContent>
+            <TextualContent>https://psydk.org/download/PngOptimizer-{version}-x64.zip</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -129,7 +129,7 @@
     <FileHippoId />
     <LastUpdated>2013-09-26T11:58:15.4724156+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://psydk.org/download/PngOptimizer-{version}-x86.zip</FixedDownloadUrl>
+    <FixedDownloadUrl>https://psydk.org/download/PngOptimizer-{version}-x86.zip</FixedDownloadUrl>
     <Name>pngoptimizer</Name>
   </ApplicationJob>
 </Jobs>

@@ -26,7 +26,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://www.enterprisedb.com/products-services-training/pgdownload</Url>
+            <Url>https://www.enterprisedb.com/products-services-training/pgdownload</Url>
             <StartText>version &lt;b&gt;Version 9</StartText>
             <EndText>&lt;/b&gt;</EndText>
             <Name>versionpart</Name>
@@ -74,7 +74,7 @@
     <FileHippoId />
     <LastUpdated>2013-04-05T05:42:09.2745467</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://get.enterprisedb.com/postgresql/postgresql-{version}-1-windows.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>https://get.enterprisedb.com/postgresql/postgresql-{version}-1-windows.exe</FixedDownloadUrl>
     <Name>postgresql.v9</Name>
   </ApplicationJob>
 </Jobs>

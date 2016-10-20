@@ -12,30 +12,35 @@
   # $checksum = '25de5ff94b76d7d308cb75ba8179a6c0'
 
   # $rubyFolder = '200'
-  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p645.exe?direct'
-  # $checksum = 'cb25a38508e22a869b48df7974840eb78c77635c'
-  # $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p645-x64.exe?direct'
-  # $checksum64 = '8f8f39d69a222b5472254969755ff5d36dc42585'
+  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p648.exe'
+  # $checksum = '5d72154bb9bb8b0cefc161fa73b4de157c593b02'
+  # $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.0.0-p648-x64.exe'
+  # $checksum64 = '8c60f9d71c45f21e95e2385508e7a010c0704467'
 
   # $rubyFolder = '21'
-  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.7.exe?direct'
-  # $checksum = '57efcc7ea3e031e66e2951db85ed09fe'
-  # $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.7-x64.exe?direct'
-  # $checksum64 = '56751f595ecc5385008967c5c582027e'
+  # $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.8.exe?direct'
+  # $checksum = '7f5e6956b971b44acfae09c51447f3d0132cd4fd'
+  # $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.8-x64.exe?direct'
+  # $checksum64 = 'e7419555f729a162719ebe9eb168456e431d33e8'
 
-  $rubyFolder = '22'
-  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.3.exe?direct'
-  $checksum = '2da40c04d7a3906b269e739b5627304f'
-  $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.3-x64.exe?direct'
-  $checksum64 = '9f123f08f1045ad1d49a99031f3e835e'
+  #$rubyFolder = '22'
+  #$url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.4.exe?direct'
+  #$checksum = 'eb367be650482b63178845ced61892778e7d6a50'
+  #$url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.4-x64.exe'
+  #$checksum64 = '184b18eba6be931d7b03b8d15d6bfad3c9712718'
+
+  $rubyFolder = '23'
+  $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe?direct'
+  $checksum = '5883233e5477c8097e68ec4bb47932011664d8d3a46595a9440bfd47c9dc78cb'
+  $url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1-x64.exe?direct'
+  $checksum64 = 'a883e24b9a2b383170e17c372cec32bdeb2804ebc1ca5997d68d97cdddae883c'
 
   $rubyPath = join-path $binRoot $('ruby' + "$rubyFolder")
   $silentArgs = "/verysilent /dir=`"$rubyPath`" /tasks=`"assocfiles,modpath`""
 
   # Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" -checksum $checksum
-  Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" "$url64"
-  #Checksum type sha1 has a bug fixed in 0.9.9.6 - https://github.com/chocolatey/choco/issues/253
-  #-checksum $checksum -checksumType 'md5' -checksum64 $checksum64 -checksumType64 'md5'
+
+  Install-ChocolateyPackage "$packageId" 'exe' "$silentArgs" "$url" "$url64" -checksum $checksum -checksumType 'sha256' -checksum64 $checksum64 -checksumType64 'sha256'
 
   $rubyBin = join-path $rubyPath 'bin'
   Write-Host "Adding `'$rubyBin`' to the local path"

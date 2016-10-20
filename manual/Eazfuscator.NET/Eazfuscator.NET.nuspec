@@ -9,6 +9,7 @@
     <summary>Eazfuscator.NET is a free obfuscator for .NET platform. The main purpose of obfuscator is to protect intellectual property of the software.</summary>
     <description>Eazfuscator.NET is a free obfuscator for .NET platform. The main purpose of obfuscator is to protect intellectual property of the software.</description>
     <projectUrl>http://www.foss.kharkov.ua/g1/projects/eazfuscator/dotnet/Default.aspx</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>obfuscator Eazfuscator.NET</tags>
     <!--<licenseUrl></licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

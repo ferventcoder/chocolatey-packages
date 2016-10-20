@@ -44,7 +44,7 @@
             <VariableType>Textual</VariableType>
             <Regex>http://code.google.com/feeds/p/grepwin/downloads/basic/grepWin-\d+\.\d+.\d+\-64.msi</Regex>
             <Url>http://code.google.com/feeds/p/grepwin/downloads/basic</Url>
-            <TextualContent>http://sourceforge.net/projects/grepWin/files/{version}/grepWin-{version}-64.msi/download</TextualContent>
+            <TextualContent>https://sourceforge.net/projects/grepWin/files/{version}/grepWin-{version}-64.msi/download</TextualContent>
             <Name>url64</Name>
           </UrlVariable>
         </value>
@@ -58,7 +58,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://sourceforge.net/projects/grepwin/files/{version}/grepWin-{version}.msi/download</Url>
+            <Url>https://sourceforge.net/projects/grepwin/files/{version}/grepWin-{version}.msi/download</Url>
             <StartText>;use_mirror=</StartText>
             <EndText>"&gt;</EndText>
             <Name>mirror</Name>
@@ -78,7 +78,7 @@
     <FileHippoId />
     <LastUpdated>2015-04-27T09:33:34.5139743-05:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://sourceforge.net/projects/grepwin/files/{version}/grepWin-{version}.msi/download</FixedDownloadUrl>
+    <FixedDownloadUrl>https://sourceforge.net/projects/grepwin/files/{version}/grepWin-{version}.msi/download</FixedDownloadUrl>
     <Name>grepwin</Name>
   </ApplicationJob>
 </Jobs>

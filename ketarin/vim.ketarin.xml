@@ -126,7 +126,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
             <Regex>(?&lt;=ResponseUri: )[^\r\n]+</Regex>
-            <Url>http://sourceforge.net/projects/cream/files/Vim/{version}/gvim-{versionDash}.exe/download</Url>
+            <Url>https://sourceforge.net/projects/cream/files/Vim/{version}/gvim-{versionDash}.exe/download</Url>
             <Name>url</Name>
           </UrlVariable>
         </value>

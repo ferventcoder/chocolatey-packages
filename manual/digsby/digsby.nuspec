@@ -9,6 +9,7 @@
     <summary>Digsby - IM, Email, and Social Networks in one easy to use application!</summary>
     <description>digsby is a multiprotocol IM client that lets you chat with all your friends on AIM, MSN, Yahoo, ICQ, Google Talk, and Jabber with one simple to manage buddy list. digsby is an email notification tool that alerts you of new email and lets you perform actions such as 'Delete' or 'Report Spam' with just one click. digsby is a social networking tool that alerts you of events like new messages and gives you a live Newsfeed of what your friends are up to.</description>
     <projectUrl>http://www.digsby.com/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>digsby im admin</tags>
     <!--<licenseUrl></licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>-->

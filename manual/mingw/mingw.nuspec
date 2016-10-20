@@ -20,6 +20,7 @@ The default package now uses SJLJ (32-bit) and SEH (64-bit) exception handling a
 For example: `-params "/exception:sjlj /threads:win32"`
     </description>
     <projectUrl>http://www.mingw.org/wiki/MinGW</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>mingw gnu unix gcc</tags>
     <copyright></copyright>
     <licenseUrl>http://www.mingw.org/license</licenseUrl>

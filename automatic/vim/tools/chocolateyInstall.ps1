@@ -5,7 +5,7 @@
   $version = '{{PackageVersion}}'
   $versionDash = $version -replace '\.', '-'
 
-  $url = "http://sourceforge.net/projects/cream/files/Vim/${version}/gvim-${versionDash}.exe/download"
+  $url = "https://sourceforge.net/projects/cream/files/Vim/${version}/gvim-${versionDash}.exe/download"
 
   Install-ChocolateyPackage $packageName $fileType $args $url
 

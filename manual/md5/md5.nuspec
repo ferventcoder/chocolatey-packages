@@ -33,6 +33,7 @@ FILES
 If no infile or -d option is specified or infile is a single "-", md5 reads from standard input. A single "-" on the command line causes all subsequent arguments to be treated as file names even if they begin with "-". If no -o option is specified or the fname is a single "-", output is sent to standard output. Input and output are processed strictly serially; consequently md5 may be used in pipelines.
 </description>
     <projectUrl>http://www.fourmilab.ch/md5/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>md5 checksum</tags>
     <copyright></copyright>
     <licenseUrl>http://www.fourmilab.ch/md5/</licenseUrl>

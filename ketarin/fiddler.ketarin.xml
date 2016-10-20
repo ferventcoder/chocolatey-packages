@@ -26,7 +26,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url>http://www.telerik.com/download/fiddler</Url>
+            <Url>https://www.telerik.com/download/fiddler</Url>
             <StartText>Download Fiddler2&lt;/a&gt; &lt;p class="Label u-mt1 u-tac"&gt;Version &lt;strong&gt;</StartText>
             <EndText>&lt;/strong&gt;</EndText>
             <TextualContent />
@@ -61,7 +61,7 @@
     <FileHippoId />
     <LastUpdated>2014-01-26T19:49:00.7066147-06:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.telerik.com/docs/default-source/fiddler/fiddler2setup.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>https://www.telerik.com/docs/default-source/fiddler/fiddler2setup.exe</FixedDownloadUrl>
     <Name>fiddler</Name>
   </ApplicationJob>
 </Jobs>

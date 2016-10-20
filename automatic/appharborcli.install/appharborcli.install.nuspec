@@ -9,6 +9,7 @@
     <summary>AppHarbor CLI</summary>
     <description>The AppHarbor CLI is used to manage AppHarbor applications from the command line.</description>
     <projectUrl>https://github.com/appharbor/appharbor-cli</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>appharborcli.install admin</tags>
     <copyright>AppHarbor</copyright>
     <licenseUrl>https://raw.github.com/appharbor/appharbor-cli/master/License.txt</licenseUrl>

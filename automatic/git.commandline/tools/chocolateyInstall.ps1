@@ -13,7 +13,7 @@ $deprecatedInstallDir = Join-Path $env:systemdrive 'git'
 $files = get-childitem $installDir -include *.exe -recurse
 
 foreach ($file in $files) {
-  if (!($file.Name.Contains("git.exe")) -and !($file.Name.Contains("ssh"))) {
+  if (!($file.FullName -match '\\cmd\\git.exe$|\\git-bash.exe$|ssh[^\\]$')) {
     #generate an ignore file
     New-Item "$file.ignore" -type file -force | Out-Null
   }

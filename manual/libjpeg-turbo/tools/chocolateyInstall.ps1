@@ -17,8 +17,8 @@
 
   #uses NSIS installer
   Install-ChocolateyPackage 'libjpeg-turbo' 'exe' '/S' `
-    'http://sourceforge.net/projects/libjpeg-turbo/files/1.2.1/libjpeg-turbo-1.2.1-vc.exe/download' `
-    'http://sourceforge.net/projects/libjpeg-turbo/files/1.2.1/libjpeg-turbo-1.2.1-vc64.exe/download'
+    'https://sourceforge.net/projects/libjpeg-turbo/files/1.2.1/libjpeg-turbo-1.2.1-vc.exe/download' `
+    'https://sourceforge.net/projects/libjpeg-turbo/files/1.2.1/libjpeg-turbo-1.2.1-vc64.exe/download'
 
   $systemDrive = [Environment]::GetEnvironmentVariable('SystemDrive')
   $installPath = @('libjpeg-turbo64', 'libjpeg-turbo') |

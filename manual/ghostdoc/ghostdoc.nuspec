@@ -11,6 +11,7 @@
 
 When generating documentation for class derived from a base class or for interface implementation (e.g. .NET Framework or your custom framework), GhostDoc will use the documentation that Microsoft or the framework vendor has already written for the base class or interface.</description>
     <projectUrl>http://submain.com/products/ghostdoc.aspx</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>ghostdoc xml documentation visual studio admin</tags>
     <licenseUrl>http://submain.com/ghostdoc/EULA.aspx</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -1,7 +1,7 @@
 ﻿#try { #error handling is only necessary if you need to do anything in addition to/instead of the main helpers
   # main helpers - these have error handling tucked into them so they become the only line of your script if that is all you need.
   # installer, will assert administrative rights
-  Install-ChocolateyPackage 'oovoo' 'exe' '/S' 'http://www.oovoo.com/Next.aspx?os=downloadwin&gwoid=0' # -validExitCodes @(0)
+  Install-ChocolateyPackage 'oovoo' 'exe' '/S' 'https://www.oovoo.com/Next.aspx?os=downloadwin&gwoid=0' # -validExitCodes @(0)
   # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
   # download and unpack a zip file
 

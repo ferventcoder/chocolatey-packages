@@ -10,6 +10,7 @@
     <description>7-Zip is a file archiver with a high compression ratio.
     </description>
     <projectUrl>http://www.7-zip.org/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>7zip zip archiver admin</tags>
     <licenseUrl>http://www.7-zip.org/license.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

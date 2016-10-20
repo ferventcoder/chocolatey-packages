@@ -32,6 +32,7 @@ Example:
 After running those commands, you will see a node_modules folder containing all of the project dependencies specified in the package.json.
     </description>
     <projectUrl>https://github.com/npm/npm</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>npm node nodejs</tags>
     <copyright>npm, Inc</copyright>
     <licenseUrl>https://raw.githubusercontent.com/npm/npm/master/LICENSE</licenseUrl>

@@ -21,6 +21,7 @@ To prevent this problem, this package uses an AutoHotkey-script (thus the [autoh
 The confusing dialog box with the content *“Dropbox will not work correctly if installed using the ‘Run as Administrator’ command. …”* can be ignored. Always select “Yes” if this dialog box appears. Regardless of this message, Dropbox will work correctly.
     </description>
     <projectUrl>https://www.dropbox.com/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>dropbox virtual files file admin</tags>
     <licenseUrl>http://www.dropbox.com/terms</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

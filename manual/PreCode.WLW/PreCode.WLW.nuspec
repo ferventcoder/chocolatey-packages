@@ -14,6 +14,7 @@ Updated Windows Live Writer plugin supports Syntaxhighlighter 2.0 and will add t
 
 Now includes a standalone Windows desktop application so that you can paste formatted code snippets into other applications as well. Ideal for http://stackoverflow.com since the indentation options can be used to create a 4 space indent (CTRL-A to select all - and then >> to indent).</description>
     <projectUrl>http://precode.codeplex.com</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>PreCode code syntax highlighter SyntaxHighlighter WLW WindowsLiveWriter admin</tags>
     <copyright></copyright>
     <licenseUrl>http://precode.codeplex.com/license</licenseUrl>

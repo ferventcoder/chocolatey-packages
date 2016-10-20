@@ -11,6 +11,7 @@
 
 The application has a simple interface that will easily guide you through the whole process.</description>
     <projectUrl>http://www.softpedia.com/get/System/Launchers-Shutdown-Tools/Universal-Silent-Switch-Finder.shtml</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>ussf silent switch finder</tags>
     <copyright>WPIW.net</copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>

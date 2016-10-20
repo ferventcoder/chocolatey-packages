@@ -21,6 +21,7 @@
 * PhantomJS Unit Testing
     </description>
     <projectUrl>http://yeoman.io/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>nodejs node javascript web compass build coffeescript</tags>
     <copyright>Addy Osmani, Paul Irish, Sindre Sorhus, Mickael Daniel, Eric Bidelman, and the Yeoman Community 2012</copyright>
     <licenseUrl>http://opensource.org/licenses/bsd-license.php</licenseUrl>

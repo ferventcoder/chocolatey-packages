@@ -13,6 +13,7 @@
 
     This is not a silent installer.</description>
     <projectUrl>http://research.microsoft.com/en-us/people/mbarnett/ILMerge.aspx</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>ilmerge merge assemblies notSilent admin</tags>
   </metadata>
   <files>

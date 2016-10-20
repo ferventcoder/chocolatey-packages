@@ -19,6 +19,7 @@ create web pages – as a web authoring editor, PSPad contains many unique tools
 want to use a good IDE for their compiler – PSPad catches and parses compiler output, integrates external help files, compares versions and much more …
     </description>
     <projectUrl>http://www.pspad.com/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>pspad editor text notepad admin</tags>
     <copyright></copyright>
     <!--<licenseUrl>__REPLACE__</licenseUrl>
