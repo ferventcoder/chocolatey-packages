@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>sharebylink</id>
+    <version>0.4.1</version>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages</packageSourceUrl>
+    <owners>Rob Reynolds</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>ShareByLink (Install)</title>
+    <authors>Simon Lightstone, IQ Storage Inc</authors>
+    <projectUrl>https://www.sharebylink.com/</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/ferventcoder/chocolatey-packages/master/icons/sharebylink.png</iconUrl>
+    <copyright>IQ Storage Inc DBA ShareByLink</copyright>
+    <licenseUrl>https://www.sharebylink.com/terms-of-service-and-eula.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.sharebylink.com/command-line-tool.html</docsUrl>
+    <bugTrackerUrl>https://www.sharebylink.com/contact.html</bugTrackerUrl>
+    <tags>sharebylink admin file share</tags>
+    <summary>ShareByLink - Share Big Files Instantly.​</summary>
+    <description>ShareByLink streams files from your computer and provides a sharing link instantly.
+    
+### Share Big Files Instantly
+
+ShareByLink streams the chosen files from your computer and provides a sharing link instantly. This lets you share big files without having to wait until they're uploaded.​
+﻿
+### Works with Bad Wifi
+
+Share By Link's desktop app can usually get around wifi that intermittently cuts out, preventing you from needing to restart your upload. This makes it a great tool to have when you're travelling.
+
+### 2 GB File Size Limit
+
+Share By Link offers a file size limit of 2 GB to help accommodate large transfers. All files are kept for 30 days. There are no limits on the number of files you can store.
+
+### No More Waiting for Files to Transfer Before Leaving Work
+
+If your job involves working with large files, you've definitely experienced it: You're uploading the file to your customer, and you can't leave until it's done. With Share By Link, you get the sharing link instantly, so you can leave when the job is done-- not the file transfer.</description>
+    <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
+    <!-- =============================== -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
