@@ -4,7 +4,7 @@
     <id>nodejs</id>
     <title>Node JS</title>
     <version>{{PackageVersion}}</version>
-    <authors>Joyent</authors>
+    <authors>Node.js Foundation</authors>
     <owners>Rob Reynolds</owners>
     <summary>Node JS - Evented I/O for v8 JavaScript.</summary>
     <description>Node JS - Evented I/O for v8 JavaScript. Node's goal is to provide an easy way to build scalable network programs.
@@ -17,7 +17,7 @@ This package used to install nodejs.commandline. It is recommended that you unin
     <projectUrl>http://nodejs.org</projectUrl>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>nodejs node javascript</tags>
-    <licenseUrl>https://github.com/joyent/node/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://raw.github.com/nodejs/node/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/nodejs.png</iconUrl>
     <dependencies>
