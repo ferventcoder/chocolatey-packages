@@ -5,6 +5,7 @@
     <title>Jetty</title>
     <authors>The Eclipse Foundation</authors>
     <version>{{PackageVersion}}</version>
+    <projectUrl>http://www.eclipse.org/jetty/</projectUrl>
     <summary>Jetty servlet engine and HTTP server</summary>
     <description>Jetty servlet engine and HTTP server. Jetty provides an Web server and javax.servlet container, plus support for SPDY, Web Sockets, OSGi, JMX, JNDI, JASPI, AJP and many other integrations.</description>
     <owners>The Eclipse Foundation</owners>
