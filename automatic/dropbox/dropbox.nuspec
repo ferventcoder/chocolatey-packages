@@ -26,13 +26,5 @@ The confusing dialog box with the content *“Dropbox will not work correctly if
     <licenseUrl>http://www.dropbox.com/terms</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/dropbox.svg</iconUrl>
-    <dependencies>
-        <dependency id="autohotkey.portable" />
-    </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
-  </files>
 </package>
-<!-- character encoding: “UTF-8” -->

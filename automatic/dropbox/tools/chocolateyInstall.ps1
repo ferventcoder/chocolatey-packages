@@ -1,44 +1,11 @@
-﻿$PSScriptRoot = Split-Path -Parent $MyInvocation.MyCommand.Definition
-Import-Module (Join-Path $PSScriptRoot 'functions.ps1')
+Import-Module (Join-Path $PSScriptRoot 'Helpers.psm1')
 
-$packageName = 'dropbox'
-$version = '{{PackageVersion}}'
+$packagePath = Join-Path -Resolve $(Split-Path -parent $MyInvocation.MyCommand.Definition) ..
+$packageName = 'Dropbox'
+$version = '14.4.19'
+$url = 'https://clientupdates.dropboxstatic.com/client/Dropbox%2014.4.19%20Offline%20Installer.exe'
+$checksum = 'A0827474448EF4EC4E65D61E00757F7812DF9E9004B6D944FDEDEDE6D88DEFE7';
 
-$filePath = "$env:TEMP\chocolatey\$packageName"
-$fileFullPath = "$filePath\${packageName}Install.exe"
-$url = 'https://dl-web.dropbox.com/u/17/Dropbox {{PackageVersion}}.exe'
+Install $packageName $url $checksum
 
-$fileType = 'exe'
-$silentArgs = '/S'
-
-# Variables for the AutoHotkey-script
-$scriptPath = Split-Path -parent $MyInvocation.MyCommand.Definition
-$ahkFile = "$scriptPath\dropbox.ahk"
-
-try {
-
-  $installedVersion = (getDropboxRegProps).DisplayVersion
-
-  if ($installedVersion -eq $version) {
-    Write-Host "Dropbox $version is already installed."
-  } else {
-
-    # Download and install Dropbox
-
-    if (-not (Test-Path $filePath)) {
-      New-Item $filePath -type directory
-    }
-
-    Get-ChocolateyWebFile $packageName $fileFullPath $url
-    Start-Process 'AutoHotkey' $ahkFile
-    Start-Process $fileFullPath $silentArgs
-    Wait-Process -Name "dropboxInstall"
-    Remove-Item $fileFullPath
-  }
-
-} catch {
-
-  Write-ChocolateyFailure $packageName $($_.Exception.Message)
-  throw
-}
-
+Start-Process "$packagePath\Dropbox.exe"
