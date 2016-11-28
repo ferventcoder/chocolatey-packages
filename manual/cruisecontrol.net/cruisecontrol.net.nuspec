@@ -8,7 +8,7 @@
     <owners>Rob Reynolds</owners>
     <summary>CruiseControl.NET - Continuous Integration Server</summary>
     <description>CruiseControl.NET is an Automated Continuous Integration server, implemented using the Microsoft .NET Framework.</description>
-    <projectUrl>http://confluence.public.thoughtworks.org/display/CCNET</projectUrl>
+    <projectUrl>http://www.cruisecontrolnet.org/</projectUrl>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>cruisecontrol.net ci continuous integration admin</tags>
     <licenseUrl>http://confluence.public.thoughtworks.org/display/CCNET/License</licenseUrl>
