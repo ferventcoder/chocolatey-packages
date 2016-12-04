@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>boyan-choco.extension</id>
+    <version>1.0.0</version>
+    <title>Install Helpers</title>
+    <authors>Boyan Kostadinov</authors>
+    <projectUrl>https://github.com/Boyan-Kostadinov/Packages</projectUrl>
+    <owners>Boyan Kostadinov</owners>
+    <packageSourceUrl>https://github.com/Boyan-Kostadinov/Packages</packageSourceUrl>
+    <summary>Common Install Functionality</summary>
+    <description>
+    Chocolatey installation extensions
+    </description>
+  </metadata>
+</package>
