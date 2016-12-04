@@ -1,7 +1,7 @@
 $script           = $MyInvocation.MyCommand.Definition
 $packageName      = 'Dropbox'
 $installer        = Join-Path (GetParentDirectory $script) 'Dropbox 15.4.22 Offline Installer.exe'
-$url              = 'https://www.dropbox.com/downloading?full=1&os=win'
+$url              = 'https://clientupdates.dropboxstatic.com/client/Dropbox%2015.4.22%20Offline%20Installer.exe'
 $packageArgs      = @{
   packageName     = $packageName
   unzipLocation   = (GetCurrentDirectory $script)
