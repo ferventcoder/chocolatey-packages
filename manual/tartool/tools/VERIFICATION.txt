@@ -1,0 +1,9 @@
+﻿VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+ 
+Downloaded from https://tartool.codeplex.com/releases/view/31505
+
+Download v1.0 from https://tartool.codeplex.com/downloads/get/79064
+
+Verify the sha256 checksum matches '5ED0D78CB4D83DD0E124015A30EA69F8E5101C62C8C29A9F448F208147B59C04'.
