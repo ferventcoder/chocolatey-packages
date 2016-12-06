@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>spotify</id>
-    <version>1.0.33.106</version>
+    <version>1.0.43.123</version>
     <owners>Rob Reynolds</owners>
-    <!-- ============================== -->
-
-    <!-- == SOFTWARE SPECIFIC SECTION == -->
-    <!-- This section is about the software itself -->
     <title>Spotify (Install)</title>
     <authors>Spotify Ltd</authors>
     <copyright>Copyright (c) 2016, Spotify Ltd</copyright>
@@ -20,11 +15,7 @@
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/922a763c73805cd98d2c0bb76215720bd77728e6/icons/spotify.png</iconUrl>
     <summary>Spotify is a new way to listen to music</summary>
     <description>Spotify – Millions of tracks, any time you like. Just search for it in Spotify, then play it. Just help yourself to whatever you want, whenever you want it.</description>
-    <!-- =============================== -->  
-
-    <dependencies>
-      <dependency id="autoit.commandline" />
-    </dependencies>
+    <version>1.0.43.123</version>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
