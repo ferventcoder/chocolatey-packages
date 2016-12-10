@@ -4,17 +4,17 @@
     <id>puppet-agent.portable</id>
     <version>{{PackageVersion}}</version>
     <title>Puppet Agent (Portable)</title>
-    <authors>Puppet Labs</authors>
+    <authors>Puppet</authors>
     <owners>Rob Reynolds</owners>
-    <projectUrl>https://puppetlabs.com/puppet/puppet-open-source/</projectUrl>
+    <projectUrl>https://puppet.com/puppet/puppet-open-source/</projectUrl>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/tree/master/automatic/puppet-agent</packageSourceUrl>
     <projectSourceUrl>https://github.com/puppetlabs/puppet</projectSourceUrl>
-    <docsUrl>http://docs.puppetlabs.com/windows/</docsUrl>
+    <docsUrl>https://docs.puppet.com/windows/</docsUrl>
     <mailingListUrl>https://groups.google.com/forum/#!forum/puppet-users</mailingListUrl>
-    <bugTrackerUrl>https://tickets.puppetlabs.com/browse/PUP</bugTrackerUrl>
+    <bugTrackerUrl>https://tickets.puppet.com/browse/PUP</bugTrackerUrl>
     <licenseUrl>https://github.com/puppetlabs/puppet/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/puppet.svg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/master/icons/puppet.png</iconUrl>
     <description>
 Puppet is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform. As a declarative, model-based approach to IT automation, it lets you define the desired state – or the “what” – of your infrastructure using the Puppet configuration language. Once these configurations are deployed, Puppet automatically installs the necessary packages and starts the related services, and then regularly enforces the desired state. In automating the mundane, Puppet frees you to work on more challenging projects with higher business impact.
 
@@ -26,13 +26,13 @@ Puppet Agent is an "All-in-One" package that installs Puppet, Ruby, Facter, Hier
 
 This is an experimental package. It will overwrite any settings you have in hiera.yaml or environment.conf.
 
-**Please Note**: This is an automatically updated package. If you find it is 
+**Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
     </description>
     <summary>Puppet is IT automation software that helps system administrators manage infrastructure throughout its lifecycle, from provisioning and configuration to patch management and compliance</summary>
-    <releaseNotes>See https://docs.puppetlabs.com/release_notes/</releaseNotes>
-    <copyright>Puppet Labs</copyright>
+    <releaseNotes>See https://docs.puppet.com/release_notes/</releaseNotes>
+    <copyright>Puppet, Inc</copyright>
     <tags>puppet configuration management infrastructure automation facter hiera mco mcollective marionette collective</tags>
     <provides>puppet</provides>
     <replaces>puppet</replaces>
