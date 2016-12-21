@@ -82,7 +82,7 @@
   }
 
   # 4. Review your config.yml file to ensure it contains the root directories of all the installed Rubies you want enhanced to use the DevKit.
-  Write-Host "You may want to configure your config.yml after this installation and rerun 'cinst ruby.devkit' if the defaults do not meet your needs"
+  Write-Host "You may want to configure your config.yml after this installation and rerun 'cinst ruby2.devkit' if the defaults do not meet your needs"
   Start-Sleep 1
   # 5. From a Command Prompt, cd into the <DEVKIT_INSTALL_DIR> directory and run ruby dk.rb install --force. This will cause all your installed Rubies listed in config.yml to use the updated SFX DevKit when building native gems and update the DevKit’s helper scripts (devkit.rb and operating_system.rb) with any new functionality. For safety, the original helper scripts are timestamp archived beside the new helper scripts. It’s always a good idea to review the two versions (and potentially make modifications) to ensure configuration specific to your system still works as expected.
   Write-Host "Initializing and installing DevKit into Ruby."
