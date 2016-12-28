@@ -106,7 +106,9 @@ if ($noAutoCrlf) {
 if ($noExplorerIntegration) {
   # remove all components that start with 'ext'
   # components are documented at https://github.com/msysgit/msysgit/blob/master/share/WinGit/install.iss#L64
-  $fileArgs = $fileArgs -replace '(?<=/COMPONENTS="[^"]*)ext[^,"]*,?','' -replace ',"',''
+  $fileArgs = $fileArgs -replace '(?<=/COMPONENTS="[^"]*)ext[^,"]*,?',''
+  # remove trailing comma
+  $fileArgs = $fileArgs -replace '(?<=/COMPONENTS="[^"]*),(?=")',''
 }
 
 # Make our install work properly when running under SYSTEM account (Chef Cliet Service, Puppet Service, etc)
