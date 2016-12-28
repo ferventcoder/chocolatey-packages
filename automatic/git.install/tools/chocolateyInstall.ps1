@@ -17,6 +17,7 @@ $useWindowsTerminal = $false
 $gitCmdOnly = $false
 $unixTools = $false
 $noAutoCrlf = $false # this does nothing unless true
+$noExplorerIntegration = $false
 
 # Now parse the packageParameters using good old regular expression
 if ($packageParameters) {
@@ -27,7 +28,7 @@ if ($packageParameters) {
 
     if ($packageParameters -match $match_pattern ){
         $results = $packageParameters | Select-String $match_pattern -AllMatches
-        $results.matches | % {
+        $results.matches | Foreach-Object {
           $arguments.Add(
               $_.Groups[$option_name].Value.Trim(),
               $_.Groups[$value_name].Value.Trim())
@@ -57,6 +58,11 @@ if ($packageParameters) {
         Write-Host "Ensuring core.autocrlf is false on first time install only"
         Write-Host " This setting will not adjust an already existing .gitconfig setting."
         $noAutoCrlf = $true
+    }
+
+    if ($arguments.ContainsKey("NoExplorerIntegration")) {
+        Write-Host "You don't want Git to integrate into the Windows Explorer context menu"
+        $noExplorerIntegration = $false
     }
 } else {
     Write-Debug "No Package Parameters Passed in";
@@ -97,6 +103,12 @@ if ($noAutoCrlf) {
   New-ItemProperty $installKey -Name "Inno Setup CodeFile: CRLF Option" -Value "CRLFCommitAsIs" -PropertyType "String" -Force | Out-Null
 }
 
+if ($noExplorerIntegration) {
+  # remove all components that start with 'ext'
+  # components are documented at https://github.com/msysgit/msysgit/blob/master/share/WinGit/install.iss#L64
+  $fileArgs = $fileArgs -replace '(?<=/COMPONENTS="[^"]*)ext[^,"]*,?','' -replace ',"',''
+}
+
 # Make our install work properly when running under SYSTEM account (Chef Cliet Service, Puppet Service, etc)
 # Add other items to this if block or use $IsRunningUnderSystemAccount to adjust existing logic that needs changing
 $IsRunningUnderSystemAccount = ([System.Security.Principal.WindowsIdentity]::GetCurrent()).IsSystem
@@ -113,7 +125,7 @@ If ($IsRunningUnderSystemAccount)
 If ([bool](get-process ssh-agent -ErrorAction SilentlyContinue))
 {
   Write-Output "Killing any git ssh-agent instances for install."
-  (get-process ssh-agent | where {$_.Path -ilike "*\git\usr\bin\*"}) | stop-process
+  (get-process ssh-agent | where-object {$_.Path -ilike "*\git\usr\bin\*"}) | stop-process
 }
 
 Install-ChocolateyPackage $packageId $fileType $fileArgs $url $url64
