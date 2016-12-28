@@ -20,7 +20,9 @@ The following package parameters can be set:
 
  * `/GitOnlyOnPath` - this puts gitinstall\cmd on path. This is also done by default if no package parameters are set.
  * `/GitAndUnixToolsOnPath` - this puts gitinstall\bin on path. This setting will override `/GitOnlyOnPath`.
- * `/NoAutoCrlf` - this setting only affects new installs, it will not override an existing `.gitconfig`. This will ensure 'Checkout as is, commit as is'
+ * `/NoAutoCrlf` - this setting only affects new installs, it will not override an existing `.gitconfig`. This will ensure 'Checkout as is, commit as is'.
+ * `/WindowsTerminal` - this makes vim use the regular Windows terminal instead of MinTTY terminal.
+ * `/NoExplorerIntegration` - this skips the installation of Windows Explorer context menu entries.
 
 These parameters can be passed to the installer with the use of `-params`.
 For example: `-params '"/GitAndUnixToolsOnPath /NoAutoCrlf"'`.
