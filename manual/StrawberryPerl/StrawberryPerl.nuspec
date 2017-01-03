@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>StrawberryPerl</id>
+        <version>5.22.0.1</version>
+        <title>StrawberryPerl</title>
+        <authors>Vanilla Perl Project</authors>
+        <owners>un1versal</owners>
+        <licenseUrl>http://www.opensource.org/licenses/artistic-license-2.0</licenseUrl>
+        <projectUrl>http://strawberryperl.com</projectUrl>
+        <!-- <iconUrl>http://win32.perl.org/wiki/images/b/b5/Strawberry_135x135.jpg</iconUrl>-->
+        <iconUrl>https://github.com/ferventcoder/nugetpackages/raw/master/StrawberryPerl/strawberry.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+        Strawberry Perl is a binary distribution of Perl for the Windows operating system. It includes a bundled compiler and pre-installed modules that offer the ability to install XS CPAN modules directly from CPAN.
+        </description>
+        <summary>Strawberry Perl is a binary distribution of Perl for the Windows operating system.</summary>
+        <releaseNotes>
+        Strawberry Perl - Jun 2015
+        - New perl core 5.22.0 - see what's new
+        - New gcc-4.9.2 toolchain + mingw-w64 v4.0.2 runtime
+        - Updated external libraries
+        - There is a special portable version with extra math related libraries and pre-installed PDL - strawberry-perl-5.22.0.1-32bit-PDL.zip
+
+        Bundled database clients:
+
+        - MySQL: DBD::mysql - works out of box
+        - PostgreSQL: DBD::Pg - works out of box
+        - Oracle: DBD::Oracle - install 32bit Oracle Instant Client 12.x and make sure you have OCI.DLL in your PATH
+        - MS SQL: DBD::ODBC - install SQL Server ODBC client
+        </releaseNotes>
+        <tags>strawberry vanilla perl</tags>
+  </metadata>
+</package>
