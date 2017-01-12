@@ -10,8 +10,8 @@ Write-Warning "This installer is known to close the explorer process. This means
 
 $versionMinusDots = "{{PackageVersion}}".Replace(".","")
 $packageId = '7zip.install'
-$url = "http://www.7-zip.org/a/7z$($versionMinusDots).exe"
-$url64 = "http://www.7-zip.org/a/7z$($versionMinusDots)-x64.exe"
+$url = "https://sourceforge.net/projects/sevenzip/files/7-Zip/{{PackageVersion}}/7z${versionMinusDots}.exe/download"
+$url64 = "https://sourceforge.net/projects/sevenzip/files/7-Zip/{{PackageVersion}}/7z${versionMinusDots}-x64.exe/download"
 
 Install-ChocolateyPackage $packageId 'exe' '/S' $url $url64
 

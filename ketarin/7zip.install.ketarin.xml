@@ -83,7 +83,7 @@ chocopkgup /p 7zip.commandline /v {version} /u {preupdate-url} /u64 {url64}</Exe
     <FileHippoId />
     <LastUpdated>2015-07-12T00:05:08.5170668-07:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.7-zip.org/a/7z{VersionNoDots}.exe</FixedDownloadUrl>
+    <FixedDownloadUrl>https://sourceforge.net/projects/sevenzip/files/7-Zip/{version}/7z{VersionNoDots}.exe/download</FixedDownloadUrl>
     <Name>7zip.install</Name>
   </ApplicationJob>
 </Jobs>
