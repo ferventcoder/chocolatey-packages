@@ -1,68 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>curl</id>
-    <title>cURL</title>
-    <version>7.28.1</version>
-    <authors>cURL Contributors, Guenter Knauf</authors>
-    <owners>Rob Reynolds</owners>
-    <summary>cURL groks those URLs</summary>
-    <description>cUrl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks. </description>
-    <projectUrl>http://curl.haxx.se/</projectUrl>
+    <version>7.52.1</version>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
-    <tags>curl URL ssh ssl download</tags>
-    <licenseUrl>http://curl.haxx.se/docs/copyright.html</licenseUrl>
+    <owners>Rob Reynolds</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>cURL (Portable)</title>
+    <authors>Daniel Stenberg, cURL Contributors</authors>
+    <projectUrl>https://curl.haxx.se/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/curl.svg</iconUrl>
+    <copyright>1996 - 2017, Daniel Stenberg, and many contributors</copyright>
+    <licenseUrl>https://curl.haxx.se/docs/copyright.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/curl.png</iconUrl>
-    <releaseNotes>
-This release includes the following changes:
+    <projectSourceUrl>https://github.com/curl/curl</projectSourceUrl>
+    <docsUrl>https://curl.haxx.se/docs/</docsUrl>
+    <tags>curl URL ssh ssl download</tags>
+    <summary>cUrL is a command line tool and library for transferring data with URLs</summary>
+    <description>cUrl is a command line tool for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP. curl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP form based upload, proxies, cookies, user+password authentication (Basic, Digest, NTLM, Negotiate, kerberos...), file transfer resume, proxy tunneling and a busload of other useful tricks. </description>
+    <releaseNotes>https://curl.haxx.se/changes.html</releaseNotes>
+    <!-- =============================== -->  
 
- * metalink/md5: Use CommonCrypto on Apple operating systems
- * href_extractor: new example code extracting href elements
- * NSS can be used for metalink hashing [13]
-
-This release includes the following bugfixes:
-
- * Fix broken libmetalink-aware OpenSSL build
- * gnutls: fix the error is fatal logic [1]
- * darwinssl: un-broke iOS build, fix error on server disconnect
- * asyn-ares: restore functionality with c-ares less than 1.6.1 [2]
- * tlsauthtype: deal with the string case insensitively [3]
- * Fixed MSVC libssh2 static build
- * evhiperfifo: fix the pointer passed to WRITEDATA [6]
- * BUGS: fix the bug tracker URL [4]
- * winbuild: Use machine type of development environment
- * FTP: prevent the multi interface from blocking [5]
- * uniformly use AM_CPPFLAGS, avoid deprecated INCLUDES
- * httpcustomheader.c: free the headers after use
- * fix >2000 bytes POST over NTLM-using proxy [7]
- * redirects to URLs with fragments [8]
- * don't send '#' fragments when using proxy [9]
- * OpenSSL: show full issuer string [10]
- * fix HTTP auth regression [11]
- * CURLOPT_SSL_VERIFYHOST: stop supporting the 1 value [12]
- * ftp: EPSV-disable fix over SOCKS [14]
- * Digest: Add microseconds into nounce calculation [15]
- * SCP/SFTP: improve error code used for send failures
- * SSL: Several SSL-backend related fixes
- * removed the notorious "additional stuff not fine" debug output
- * OpenSSL: Disable SSL/TLS compression - avoid the "CRIME" attack
- * FILE: Make upload-writes unbuffered
- * custom memory callbacks failure with HTTP proxy (and more) [16]
- * TFTP: handle resends
- * autoconf: don't force-disable compiler debug option
- * winbuild: Fix PDB file output [17]
- * test2032: spurious failure caused by premature termination [18]
- * memory leak: CURLOPT_RESOLVE with multi interface [19]
-
-This release includes the following known bugs:
-
- * see docs/KNOWN_BUGS (http://curl.haxx.se/docs/knownbugs.html)
-    </releaseNotes>
+    <provides>curl</provides>
   </metadata>
-    <files>
+  <files>
     <file src="tools\**" target="tools" />
-    <!--<file src="content\**" target="content" />-->
   </files>
 </package>
-<!-- character encoding: “UTF-8” -->
