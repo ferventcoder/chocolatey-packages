@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>visualstudiocode.portable</id>
+    <version>1.8.1</version>
+    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
+    <owners>Rob Reynolds, Chocolatey Core Community Maintainers</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>Visual Studio Code (Portable)</title>
+    <authors>Microsoft</authors>
+    <projectUrl>http://code.visualstudio.com/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/db78e656a60aca25d4faddbe60721094609b846f/icons/visualstudiocode.png</iconUrl>
+    <copyright>Microsoft</copyright>
+    <licenseUrl>https://code.visualstudio.com/License</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>Softwarehttps://github.com/Microsoft/vscode</projectSourceUrl>
+    <docsUrl>https://code.visualstudio.com/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/microsoft/vscode/issues</bugTrackerUrl>
+    <tags>visualstudio code visualstudiocode microsoft</tags>
+    <summary>Code editing. Redefined. Free. Open source. Runs everywhere.</summary>
+    <description>Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, Mac and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Python, PHP, Go) and runtimes.
+
+## Features
+
+* **Meet IntelliSense:** Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.
+* **Print statement debugging is a thing of the past:** Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.
+* **Git commands built-in:** Working with Git has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted Git service.
+* **Extensible and customizable:** Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor.
+    </description>
+    <releaseNotes>See https://code.visualstudio.com/updates</releaseNotes>
+    <!-- =============================== -->  
+
+    <dependencies>
+      <dependency id="DotNet4.5.2" />
+    </dependencies>
+    <provides>visualstudiocode</provides>
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
