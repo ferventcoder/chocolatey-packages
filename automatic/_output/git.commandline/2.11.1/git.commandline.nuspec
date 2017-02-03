@@ -3,7 +3,7 @@
   <metadata>
     <id>git.commandline</id>
     <title>[Deprecated] Git (Portable, CommandLine)</title>
-    <version>2.11.0</version>
+    <version>2.11.0.20170203</version>
     <authors>Johannes Schindelin, msysgit Committers</authors>
     <owners>Rob Reynolds</owners>
     <summary>Git (for Windows) – Fast Version Control</summary>
