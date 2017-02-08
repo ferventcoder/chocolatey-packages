@@ -19,8 +19,8 @@ try {
 
   $installedVersion = (getDropboxRegProps).DisplayVersion
 
-  if ($installedVersion -eq $version) {
-    Write-Host "Dropbox $version is already installed."
+  if ($installedVersion -ge $version) {
+    Write-Host "Dropbox $installedVersion is already installed."
   } else {
 
     # Download and install Dropbox
