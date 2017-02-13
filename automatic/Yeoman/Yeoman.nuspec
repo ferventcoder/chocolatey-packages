@@ -2,44 +2,39 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Yeoman</id>
-    <title>Yeoman</title>
-    <version>{{PackageVersion}}</version>
+    <title>[Deprecated] Yeoman</title>
+    <version>1.1.2.20170217</version>
     <authors>Addy Osmani, Paul Irish, Sindre Sorhus, Mickael Daniel, Eric Bidelman, and the Yeoman Community.</authors>
     <owners>Ethan Brown, Rob Reynolds</owners>
     <summary>Yeoman is a robust and opinionated set of tools, libraries, and a workflow that can help developers quickly build beautiful, compelling web apps.</summary>
-    <description>Yeoman is a robust and opinionated set of tools, libraries, and a workflow that can help developers quickly build beautiful, compelling web apps.
-
-* Lightning-fast scaffolding
-* Automatically compile CoffeeScript &amp; Compass
-* Automatically lint your scripts
-* Built-in preview server
-* Awesome Image Optimization
-* AppCache manifest generation
-* Killer build process
-* Integrated Package Management
-* Support for ES6 Module Syntax
-* PhantomJS Unit Testing
+    <description>
+#### New package name: **[yo](https://chocolatey.org/packages/yo)**
++
++---
++
++`Yeoman` has been deprecated because of [Chocolatey naming conventions](https://github.com/chocolatey/choco/wiki/ChocolateyFAQs#what-is-the-difference-between-packages-named-install-ie-autohotkeyinstall-portable-ie-autohotkeyportable-and--ie-autohotkey).
++
++It exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.
     </description>
     <projectUrl>http://yeoman.io/</projectUrl>
-    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
-    <tags>nodejs node javascript web compass build coffeescript</tags>
+    <tags>deprecated</tags>
     <copyright>Addy Osmani, Paul Irish, Sindre Sorhus, Mickael Daniel, Eric Bidelman, and the Yeoman Community 2012</copyright>
     <licenseUrl>http://opensource.org/licenses/bsd-license.php</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/Yeoman.png</iconUrl>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+#### New users
+* Do not install this package. Install **yo** instead.
+
+#### Existing users - Updating
+* Updating this package will automatically install the most recent version of the **yo** chocolatey package.
+* Please update any links, dependencies, or scripts that reference this package to the new package name **yo**
+
+#### Existing users - Post-update Cleanup (optional)
+`choco uninstall Yeoman --whatif`
+    </releaseNotes>
     <dependencies>
-        <dependency id="Compass" version="0.12.2" />
-        <dependency id="git" />
-        <dependency id="nodejs.install" version="0.8.1" />
-        <dependency id="libjpeg-turbo" version="1.2.1" />
-        <dependency id="OptiPNG" version="0.7.1" />
-        <dependency id="PhantomJS" version="1.6.1" />
-        <dependency id="python" />
+        <dependency id="yo" />
     </dependencies>
   </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
 </package>
 <!-- character encoding: “UTF-8” -->
