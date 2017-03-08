@@ -115,7 +115,7 @@
     <FileHippoId />
     <LastUpdated>2013-09-05T02:50:21.7173969+02:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>http://www.ultrapico.com/ExpressoSetup3.msi</FixedDownloadUrl>
+    <FixedDownloadUrl>http://www.ultrapico.com/ExpressoSetup-3.1.msi</FixedDownloadUrl>
     <Name>expresso</Name>
   </ApplicationJob>
 </Jobs>
