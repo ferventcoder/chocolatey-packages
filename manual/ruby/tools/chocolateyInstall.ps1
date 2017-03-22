@@ -29,12 +29,6 @@
   #$url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.4-x64.exe'
   #$checksum64 = '184b18eba6be931d7b03b8d15d6bfad3c9712718'
 
-  #$rubyFolder = '23'
-  #$url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1.exe?direct'
-  #$checksum = '5883233e5477c8097e68ec4bb47932011664d8d3a46595a9440bfd47c9dc78cb'
-  #$url64 = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.1-x64.exe?direct'
-  #$checksum64 = 'a883e24b9a2b383170e17c372cec32bdeb2804ebc1ca5997d68d97cdddae883c'
-
   $rubyFolder = '23'
   $url = 'http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.3.3.exe?direct'
   $checksum = '43110f9bcd8a067d69409507cad6a43f1fcf05e8bd64d096dd9df47475de50f3'
