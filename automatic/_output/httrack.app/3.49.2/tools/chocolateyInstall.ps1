@@ -1,0 +1,1 @@
+﻿Install-ChocolateyPackage 'httrack' 'exe' ' /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-' 'https://download.httrack.com/httrack-3.49.2.exe' 'https://download.httrack.com/httrack_x64-3.49.2.exe'  -validExitCodes @(0)
