@@ -8,7 +8,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  fileType      = '[[InstallerType]]' #only one of these: exe, msi, msu
+  fileType      = 'MSI'
   url           = '[[Url]]' # download url, HTTPS preferred
   url64bit      = '[[Url64]]' # 64bit URL here (HTTPS preferred) or remove - if installer contains both (very rare), use $url
   #file         = $fileLocation
@@ -25,8 +25,8 @@ $packageArgs = @{
 }
 
 #https://chocolatey.org/docs/helpers-install-chocolatey-package
-Install-ChocolateyPackage @packageArgs 
-## If you are making your own internal packages (organizations), you can embed the installer or 
+Install-ChocolateyPackage @packageArgs
+## If you are making your own internal packages (organizations), you can embed the installer or
 ## put on internal file share and use the following instead (you'll need to add $file to the above)
 # https://chocolatey.org/docs/helpers-install-chocolatey-install-package
-#Install-ChocolateyInstallPackage @packageArgs 
+#Install-ChocolateyInstallPackage @packageArgs

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>msi.template</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages</packageSourceUrl>
     <owners>Rob Reynolds, Chocolatey</owners>
     <title>Chocolatey MSI Template</title>
@@ -18,8 +18,17 @@
     <summary>MSI Chocolatey template</summary>
     <description>### Chocolatey MSI Template
 This adds a template for MSI packages.
-    
+
     </description>
+    <releaseNotes>
+### 1.0.1
+
+Ensure `fileType` is MSI
+
+### 1.0.0
+
+Initial
+    </releaseNotes>
   </metadata>
   <files>
     <file src="templates\**" target="templates" />
