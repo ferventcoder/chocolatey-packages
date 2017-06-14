@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>keybase</id>
+    <version>1.0.23.789</version>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages</packageSourceUrl>
+    <owners>chocolatey, Rob Reynolds</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>Keybase (Install)</title>
+    <authors>Keybase Inc.</authors>
+    <projectUrl>https://keybase.io/</projectUrl>
+    <iconUrl>https://keybase.io/images/icons/icon-keybase-logo-48.png</iconUrl>
+    <copyright>Copyright (c) Keybase, Inc. All rights reserved.</copyright>
+    <licenseUrl>https://keybase.io/docs/terms</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/keybase/client</projectSourceUrl>
+    <docsUrl>https://keybase.io/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/keybase/client/issues</bugTrackerUrl>
+    <tags>keybase gpg pgp crypto security foss admin</tags>
+    <summary>Keybase is a free, open source security app.</summary>
+    <description>Keybase is a free, open source security app. It's also a public directory of people.
+    
+The Keybase app helps you perform cryptographically-secure operations with people you know on the Internet: chatting, file sharing, even publishing public documents. It's all easier and safer with Keybase.
+    </description>
+    <releaseNotes>https://github.com/keybase/client/blob/master/go/CHANGELOG.md</releaseNotes>
+    <!-- =============================== -->  
+    
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.2" />
+      <dependency id="vcredist2015" version="14.0.24212.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>
