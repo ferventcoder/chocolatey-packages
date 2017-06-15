@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>puppet-agent</id>
+    <version>1.10.3</version>
+    <title>Puppet Agent (Install)</title>
+    <authors>Puppet</authors>
+    <owners>Rob Reynolds</owners>
+    <projectUrl>https://puppet.com/puppet/puppet-open-source/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/tree/master/automatic/puppet-agent</packageSourceUrl>
+    <projectSourceUrl>https://github.com/puppetlabs/puppet</projectSourceUrl>
+    <docsUrl>https://docs.puppet.com/windows/</docsUrl>
+    <mailingListUrl>https://groups.google.com/forum/#!forum/puppet-users</mailingListUrl>
+    <bugTrackerUrl>https://tickets.puppet.com/browse/PUP</bugTrackerUrl>
+    <licenseUrl>https://github.com/puppetlabs/puppet/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/master/icons/puppet.png</iconUrl>
+    <description>
+Puppet is a flexible, customizable framework available under the Apache 2.0 license designed to help system administrators automate the many repetitive tasks they regularly perform. As a declarative, model-based approach to IT automation, it lets you define the desired state – or the “what” – of your infrastructure using the Puppet configuration language. Once these configurations are deployed, Puppet automatically installs the necessary packages and starts the related services, and then regularly enforces the desired state. In automating the mundane, Puppet frees you to work on more challenging projects with higher business impact.
+
+Puppet Open Source is the underlying technology for Puppet Enterprise and runs on all major Linux distributions, major Unix platforms like Solaris, HP-UX, and AIX, and Microsoft Windows.
+
+Puppet Agent is an "All-in-One" package that installs Puppet, Ruby, Facter, Hiera, MCollective (mco) and supporting code. It is all you need to start using Puppet. See http://docs.puppetlabs.com/puppet/latest/reference/install_windows.html for more information.
+
+
+### Install Options
+
+You can pass installArgs to Chocolatey for several properties. See http://docs.puppetlabs.com/puppet/latest/reference/install_windows.html#msi-properties for the exact properties. You would pass through the arguments to the installer using 'installArgs'. Here is an example of changing the location of the Puppet Master:
+
+`-installArgs '"PUPPET_MASTER_SERVER=puppet.fqdn.com"'`
+
+### New Puppet-Agent Package
+**NOTICE**: This package replaces the Puppet v3 series package known as [puppet](https://chocolatey.org/packages/puppet). A new package was created in other package distributions so Chocolatey is also following suit.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+    </description>
+    <summary>Puppet is IT automation software that helps system administrators manage infrastructure throughout its lifecycle, from provisioning and configuration to patch management and compliance</summary>
+    <releaseNotes>See https://docs.puppet.com/release_notes/</releaseNotes>
+    <copyright>Puppet, Inc</copyright>
+    <tags>puppet configuration management infrastructure automation facter hiera mco mcollective marionette collective</tags>
+    <provides>puppet</provides>
+    <replaces>puppet</replaces>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: “UTF-8” -->
