@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <id>picoscope-automotive</id>
+    <version>6.12.7.0</version>
+    <owners>Pico Technology</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <title>PicoScope 6 Automotive (Install)</title>
+    <authors>Pico Technology</authors>
+    <copyright>Copyright © 1995-2017, Pico Technology Ltd</copyright>
+    <tags>picoscope-6-automotive admin</tags>
+    <description>__REPLACE__MarkDown_Okay </description>
+    <releaseNotes></releaseNotes>
+    <!-- =============================== -->  
+  </metadata>
+  <files>
+    <!-- this section controls what actually gets packaged into the Chocolatey package -->
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
