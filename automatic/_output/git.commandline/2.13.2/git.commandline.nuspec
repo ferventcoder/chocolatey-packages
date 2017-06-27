@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>git.commandline</id>
+    <title>[Deprecated] Git (Portable, CommandLine)</title>
+    <version>2.11.0</version>
+    <authors>Johannes Schindelin, msysgit Committers</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Git (for Windows) – Fast Version Control</summary>
+    <description>
+#### New package name: **[git.portable](https://chocolatey.org/packages/git.portable)**
+
+---
+
+`git.commandline` has been deprecated because of [Chocolatey naming conventions](https://github.com/chocolatey/choco/wiki/ChocolateyFAQs#what-is-the-difference-between-packages-named-install-ie-autohotkeyinstall-portable-ie-autohotkeyportable-and--ie-autohotkey).
+
+It exists only for backward compatibility to provide a transitional dummy package for existing users and scripts which may still use this package ID.
+    </description>
+    <releaseNotes>#### New users
+* Do not install this package. Install **git.portable** instead.
+
+#### Existing users - Updating
+* Updating this package will automatically install the most recent version of the **git.portable** chocolatey package.
+* Please update any links, dependencies, or scripts that reference this package to the new package name **git.portable**
+
+#### Existing users - Post-update Cleanup (optional)
+`choco uninstall git.commandline --whatif`
+    </releaseNotes>
+    <projectUrl>https://git-for-windows.github.io/</projectUrl>
+    <tags>deprecated</tags>
+    <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="git.portable" />
+    </dependencies>
+  </metadata>
+</package>
+<!-- character encoding: “UTF-8” -->
