@@ -1,13 +1,8 @@
-﻿$packageName = 'puppet'
-$url = 'https://downloads.puppetlabs.com/windows/puppet-agent-{{PackageVersion}}-x86.msi'
-$url64 = 'https://downloads.puppetlabs.com/windows/puppet-agent-{{PackageVersion}}-x64.msi'
-
-
-$packageArgs = @{
-  packageName   = $packageName
+﻿$packageArgs = @{
+  packageName   = 'puppet-agent'
   fileType      = 'MSI'
-  url           = $url
-  url64bit      = $url64
+  url           = 'https://downloads.puppetlabs.com/windows/puppet5/puppet-agent-{{PackageVersion}}-x86.msi'
+  url64bit      = 'https://downloads.puppetlabs.com/windows/puppet5/puppet-agent-{{PackageVersion}}-x64.msi'
   silentArgs    = "/qn /norestart"
   validExitCodes= @(0, 3010, 1641)
 }

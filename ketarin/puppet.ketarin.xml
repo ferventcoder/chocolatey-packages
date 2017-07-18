@@ -65,7 +65,7 @@
     <FileHippoId />
     <LastUpdated>2012-05-23T02:09:37.7748325</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl><placeholder name="Download Url - Optional" value="http://downloads.puppetlabs.com/windows/puppet-{version}.msi" /></FixedDownloadUrl>
+    <FixedDownloadUrl><placeholder name="Download Url - Optional" value="https://downloads.puppetlabs.com/windows/puppet-{version}.msi" /></FixedDownloadUrl>
     <Name><placeholder name="Name" value="puppet" /></Name>
   </ApplicationJob>
 </Jobs>]]></SourceTemplate>

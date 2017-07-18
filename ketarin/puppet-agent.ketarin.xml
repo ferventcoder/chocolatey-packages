@@ -28,7 +28,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>StartEnd</VariableType>
             <Regex />
-            <Url><placeholder name="Url with version information" value="http://downloads.puppetlabs.com/windows/?C=M;O=D" /></Url>
+            <Url><placeholder name="Url with version information" value="https://downloads.puppetlabs.com/windows/puppet5/?C=M;O=D" /></Url>
             <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
   &lt;TR&gt;
     &lt;TH class="Title" align="center" width=90&gt;7-Zip </StartText>
@@ -64,7 +64,7 @@
     <FileHippoId />
     <LastUpdated>2012-05-23T02:09:37.7748325</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl><placeholder name="Download Url - Optional" value="http://downloads.puppetlabs.com/windows/puppet-{version}.msi" /></FixedDownloadUrl>
+    <FixedDownloadUrl><placeholder name="Download Url - Optional" value="https://downloads.puppetlabs.com/windows/puppet-{version}.msi" /></FixedDownloadUrl>
     <Name><placeholder name="Name" value="puppet" /></Name>
   </ApplicationJob>
 </Jobs>]]></SourceTemplate>
@@ -93,7 +93,7 @@
             <RegexRightToLeft>false</RegexRightToLeft>
             <VariableType>RegularExpression</VariableType>
             <Regex>(?&lt;=href="puppet\-agent\-)[\d\.]+(?=\-x86\.msi"&gt;)</Regex>
-            <Url>https://downloads.puppetlabs.com/windows/?C=M;O=D</Url>
+            <Url>https://downloads.puppetlabs.com/windows/puppet5/?C=M;O=D</Url>
             <StartText>&lt;TABLE cellspacing ="1" cellpadding ="6" border = "0"&gt;
   &lt;TR&gt;
     &lt;TH class="Title" align="center" width=90&gt;7-Zip </StartText>
@@ -130,7 +130,7 @@
     <FileHippoId />
     <LastUpdated>2015-09-04T07:37:29.4183973-05:00</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
-    <FixedDownloadUrl>https://downloads.puppetlabs.com/windows/puppet-agent-{version}-x86.msi</FixedDownloadUrl>
+    <FixedDownloadUrl>https://downloads.puppetlabs.com/windows/puppet5/puppet-agent-{version}-x86.msi</FixedDownloadUrl>
     <Name>puppet-agent</Name>
   </ApplicationJob>
 </Jobs>
