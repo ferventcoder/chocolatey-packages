@@ -5,12 +5,14 @@
     <UserAgent>chocolatey command line</UserAgent>
     <UserNotes />
     <LastFileSize>9331309</LastFileSize>
-    <LastFileDate>2015-05-29T15:30:31-05:00</LastFileDate>
+    <LastFileDate>2015-09-03T08:42:01.3707288</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
     <CheckForUpdatesOnly>false</CheckForUpdatesOnly>
     <VariableChangeIndicator />
+    <HashVariable />
+    <HashType>None</HashType>
     <CanBeShared>true</CanBeShared>
     <ShareApplication>false</ShareApplication>
     <ExclusiveDownload>false</ExclusiveDownload>
@@ -24,11 +26,11 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
-            <Regex />
+            <VariableType>RegularExpression</VariableType>
+            <Regex>Version\s(\S+)\s</Regex>
             <Url>https://github.com/gitextensions/gitextensions/releases/latest</Url>
             <StartText>Version </StartText>
-            <EndText> </EndText>
+            <EndText />
             <TextualContent>asfd</TextualContent>
             <Name>version</Name>
           </UrlVariable>
@@ -59,7 +61,7 @@
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2015-09-03T07:42:01.3707288-05:00</LastUpdated>
+    <LastUpdated>2015-09-03T08:42:01.3707288</LastUpdated>
     <TargetPath>C:\Chocolatey\_work\</TargetPath>
     <FixedDownloadUrl>https://github.com/gitextensions/gitextensions/releases/download/v{version}/GitExtensions-{version}-Setup.msi</FixedDownloadUrl>
     <Name>gitextensions</Name>
