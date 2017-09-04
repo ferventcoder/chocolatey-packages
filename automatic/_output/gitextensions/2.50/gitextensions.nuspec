@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>gitextensions</id>
+    <title>Git Extensions (Install)</title>
+    <version>2.50</version>
+    <authors>Henk Westhuis</authors>
+    <owners>Rob Reynolds</owners>
+    <summary>Git Extensions is the only graphical user interface for Git that allows you control Git without using the commandline.</summary>
+    <description>Git Extensions is the only graphical user interface for Git that allows you control Git without using the commandline. It comes with a manual and video tutorials to get you started quickly.</description>
+    <projectUrl>http://gitextensions.github.io/</projectUrl>
+    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/tree/master/automatic/gitextensions</packageSourceUrl>
+    <projectSourceUrl>https://github.com/gitextensions/gitextensions</projectSourceUrl>
+    <docsUrl>https://git-extensions-documentation.readthedocs.org/en/latest/</docsUrl>
+    <mailingListUrl>http://groups.google.com/group/gitextensions</mailingListUrl>
+    <bugTrackerUrl>http://github.com/gitextensions/gitextensions/issues</bugTrackerUrl>
+    <tags>gitextensions git gui admin</tags>
+    <licenseUrl>https://github.com/gitextensions/gitextensions/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/gitextensions.svg</iconUrl>
+    <dependencies>
+      <dependency id="git" />
+    </dependencies>
+    <releaseNotes>https://github.com/gitextensions/gitextensions/blob/master/GitUI/Resources/ChangeLog.md</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
+<!-- character encoding: “UTF-8” -->
