@@ -16,6 +16,7 @@
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/mysql.svg</iconUrl>
     <dependencies>
       <dependency id="7zip.commandline" />
+      <dependency id="vcredist2013" version="12.0.30501.20150616" />
     </dependencies>
   </metadata>
   <files>
