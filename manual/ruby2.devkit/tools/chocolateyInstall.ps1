@@ -3,8 +3,9 @@
   if ($binRoot -eq $null) {
     $binRoot = "$env:systemdrive\"
   }
-  
-  $devKitInstallDir = join-path $binRoot 'DevKit2'
+
+  $pp = Get-PackageParameters
+  $devKitInstallDir = if ($pp.InstallDir) { $pp.InstallDir } else { join-path $binRoot 'DevKit2' }
 
   write-host "Chocolatey is installing DevKit to $devKitInstallDir"
   write-host "Please wait..."
