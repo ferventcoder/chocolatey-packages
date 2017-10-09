@@ -1,10 +1,13 @@
-﻿$packageName = 'kdiff3'
-$fileType = 'exe'
-$silentArgs = '/S'
-$url = 'https://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.98/KDiff3-32bit-Setup_0.9.98-3.exe'
-$url64 = 'https://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.98/KDiff3-64bit-Setup_0.9.98-2.exe'
+﻿$arguments = @{
+  PackageName = 'kdiff3'
+  FileType = 'exe'
+  SilentArgs = '/S'
+  Url = 'https://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.98/KDiff3-32bit-Setup_0.9.98-3.exe'
+  Url64 = 'https://downloads.sourceforge.net/project/kdiff3/kdiff3/0.9.98/KDiff3-64bit-Setup_0.9.98-2.exe'
+  ValidExitCodes = @(0)
+}
 
-Install-ChocolateyPackage $packageName $fileType $silentArgs $url $url64 -validExitCodes @(0)
+Install-ChocolateyPackage @arguments
 
 #------additional setup ----------------
 #add it to the path
