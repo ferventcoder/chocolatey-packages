@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>foobar2000</id>
     <title>foobar2000</title>
@@ -8,15 +9,16 @@
     <owners>Rob Reynolds</owners>
     <summary>foobar2000</summary>
     <description>foobar2000 is an advanced freeware audio player for the Windows platform. Some of the basic features include full unicode support, ReplayGain support and native support for several popular audio formats.</description>
-    <projectUrl>http://www.foobar2000.org</projectUrl>
+    <projectUrl>https://www.foobar2000.org</projectUrl>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>foobar2000 media player admin</tags>
+    <docsUrl>http://wiki.hydrogenaud.io/index.php?title=Foobar2000:Foobar2000#Using_foobar2000</docsUrl>
     <licenseUrl>http://www.foobar2000.org/?page=License</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/foobar2000.png</iconUrl>
+    <releaseNotes>https://foobar2000.org/changelog</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
   </files>
 </package>
-<!-- character encoding: “UTF-8” -->
