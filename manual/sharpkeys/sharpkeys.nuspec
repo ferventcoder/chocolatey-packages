@@ -3,7 +3,7 @@
   <metadata>
     <id>sharpkeys</id>
     <title>SharpKeys</title>
-    <version>3.5.0.20180307</version>
+    <version>3.6.0</version>
     <authors>Randy</authors>
     <owners>chrisortman, ferventcoder</owners>
     <summary>SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key.</summary>
