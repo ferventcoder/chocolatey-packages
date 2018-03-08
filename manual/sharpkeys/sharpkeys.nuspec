@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>sharpkeys</id>
     <title>SharpKeys</title>
-    <version>3.5.0</version>
+    <version>3.5.0.20180307</version>
     <authors>Randy</authors>
     <owners>chrisortman, ferventcoder</owners>
     <summary>SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key.</summary>
     <description>SharpKeys is a utility that manages a Registry key that allows Windows to remap one key to any other key. Included in the application is a list of common keyboard keys and a Type Key feature to automatically recognize most keyboard keys. It was originally developed in C# using .NET v2 but has been updated to support .NET 4.0 Client Profile</description>
-    <projectUrl>http://sharpkeys.codeplex.com/</projectUrl>
+    <projectUrl>https://github.com/randyrants/sharpkeys</projectUrl>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages/</packageSourceUrl>
     <tags>sharpkeys keyboard admin</tags>
-    <licenseUrl>http://sharpkeys.codeplex.com/license</licenseUrl>
+    <licenseUrl>https://github.com/randyrants/sharpkeys/blob/master/license.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
   </files>
 </package>
-<!-- character encoding: “UTF-8” -->

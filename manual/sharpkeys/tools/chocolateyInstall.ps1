@@ -1,7 +1,13 @@
 ﻿$packageName = 'sharpkeys'
-$packageType = 'msi'
-$silentArgs = '/qn'
-$url = 'https://download-codeplex.sec.s-msft.com/Download/Release?ProjectName=sharpkeys&DownloadId=319724&FileTime=129737577110830000&Build=20911'
+$url         = 'https://github.com/randyrants/sharpkeys/releases/download/v3.5/sharpkeys35.msi'
 
-Install-ChocolateyPackage "$packageName" "$packageType" "$silentArgs" "$url"
+$packageArgs = @{
+    packageName    = 'sharpkeys'
+    fileType       = 'msi'
+    url            = $url
+    silentArgs     = '/qn'
+    validExitCodes = @(0)
+    softwareName   = 'SharpKeys'
+}
 
+Install-ChocolateyPackage @packageArgs
