@@ -1,5 +1,8 @@
-﻿$packageArgs = @{
+﻿$ErrorActionPreference = 'Stop';
+
+$packageArgs = @{
   packageName            = "$env:chocolateyPackageName"
+  softwareName           = 'Keybase*'
   FileType               = 'exe'
   SilentArgs             = '/quiet'
   url                    = 'https://prerelease.keybase.io/keybase_setup_386.exe'
