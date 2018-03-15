@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>keybase</id>
-    <version>1.0.23.789</version>
+    <version>1.0.45.1</version>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages</packageSourceUrl>
     <owners>chocolatey, Rob Reynolds</owners>
     <!-- ============================== -->
