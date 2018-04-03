@@ -23,12 +23,12 @@
     <tags>keybase gpg pgp crypto security foss admin</tags>
     <summary>Keybase is a free, open source security app.</summary>
     <description>Keybase is a free, open source security app. It's also a public directory of people.
-    
+
 The Keybase app helps you perform cryptographically-secure operations with people you know on the Internet: chatting, file sharing, even publishing public documents. It's all easier and safer with Keybase.
     </description>
     <releaseNotes>https://github.com/keybase/client/blob/master/go/CHANGELOG.md</releaseNotes>
-    <!-- =============================== -->  
-    
+    <!-- =============================== -->
+
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.2" />
       <dependency id="vcredist2015" version="14.0.24212.0" />
