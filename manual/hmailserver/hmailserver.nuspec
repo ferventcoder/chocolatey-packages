@@ -15,6 +15,9 @@ It supports the common e-mail protocols (IMAP, SMTP and POP3) and can easily be 
     <tags>hmail mail server smtp pop3 admin</tags>
     <licenseUrl>http://www.hmailserver.com/documentation/v5.6/index.php?page=information_copyright</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="dotnet3.5" version="3.5.20160716" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
