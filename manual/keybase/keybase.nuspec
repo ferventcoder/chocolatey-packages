@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>keybase</id>
-    <version>1.0.47.20180404</version>
+    <version>4.0.0.20190507</version>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages</packageSourceUrl>
     <owners>chocolatey, Rob Reynolds</owners>
     <!-- ============================== -->
@@ -26,7 +26,7 @@
 
 The Keybase app helps you perform cryptographically-secure operations with people you know on the Internet: chatting, file sharing, even publishing public documents. It's all easier and safer with Keybase.
     </description>
-    <releaseNotes>https://github.com/keybase/client/blob/master/go/CHANGELOG.md</releaseNotes>
+    <releaseNotes>https://github.com/keybase/client/releases</releaseNotes>
     <!-- =============================== -->
 
     <dependencies>
