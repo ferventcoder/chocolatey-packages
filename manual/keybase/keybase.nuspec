@@ -4,7 +4,7 @@
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>keybase</id>
-    <version>4.0.0.20190507</version>
+    <version>4.2.0</version>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages</packageSourceUrl>
     <owners>chocolatey, Rob Reynolds</owners>
     <!-- ============================== -->
@@ -32,6 +32,7 @@ The Keybase app helps you perform cryptographically-secure operations with peopl
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.2" />
       <dependency id="vcredist2015" version="14.0.24212.0" />
+      <dependency id="dotnet4.7" version="4.7.2053.20190226" />
     </dependencies>
   </metadata>
   <files>
