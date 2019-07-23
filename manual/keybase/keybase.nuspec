@@ -6,7 +6,7 @@
     <id>keybase</id>
     <version>4.2.0</version>
     <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages</packageSourceUrl>
-    <owners>chocolatey, Rob Reynolds</owners>
+    <owners>chocolatey, Rob Reynolds, Fabio A. Correa Duran</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
