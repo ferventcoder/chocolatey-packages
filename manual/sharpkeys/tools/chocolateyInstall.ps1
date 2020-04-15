@@ -11,3 +11,6 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
+
+$installLocation = Get-AppInstallLocation SharpKeys
+Install-BinFile -Name SharpKeys -Path (Join-Path $installLocation 'SharpKeys.exe')
