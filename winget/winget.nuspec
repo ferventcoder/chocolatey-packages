@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>winget</id>
+    <version>0.1.41331</version>
+    <title>winget (Install)</title>
+    <owners>steviecoaster</owners>
+    <authors>Microsoft</authors>
+    <projectUrl>https://github.com/microsoft/winget-cli</projectUrl>
+    <copyright>2020 Microsoft Corporation</copyright>
+    <licenseUrl>https://github.com/microsoft/winget-cli/blob/master/LICENSE</licenseUrl>
+    <packageSourceUrl>https://github.com/steviecoaster/chocolatey-packages/tree/master/winget</projectSourceUrl>
+    <docsUrl>https://github.com/microsoft/winget-cli/tree/master/doc</docsUrl>
+    <tags>winget packaging windows</tags>
+    <summary>Installs the winget package manager</summary>
+    <description>## Overview of the  Windows Package Manager
+The **Windows Package Manager** is a tool designed to help you quickly and easily discover and install those tools that make your PC environment special.  By using the **Windows Package Manager**, from one command, you can install your favorite tool: 
+```winget install tool```
+
+For Preview, the goal is to get something usable in your hands as soon as possible. At preview you can **search**, **show**, and **install** packages.  Soon we will have **uninstall**, **list** and **update**.  These items are available on our [backlog](https://github.com/microsoft/winget-cli/issues), so feel free to upvote the features you want.
+    </description>  
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <!--Building from Linux? You may need this instead: <file src="tools/**" target="tools" />-->
+  </files>
+</package>

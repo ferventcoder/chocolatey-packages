@@ -1,0 +1,1 @@
+﻿Get-AppXPackage Microsoft.DesktopAppInstaller | Remove-AppXPackage
