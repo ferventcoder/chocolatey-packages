@@ -15,9 +15,9 @@
   $tempDir = "$env:TEMP\chocolatey\ruby.devkit"
   if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
   $file = Join-Path $tempDir "ruby.devkitInstall.exe"
-  $url = 'https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe'
+  $url = 'https://github.com/oneclick/rubyinstaller/releases/download/devkit-4.7.2/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe'
   $checksum = '9383f12958aafc425923e322460a84de'
-  $url64 = 'https://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe'
+  $url64 = 'https://github.com/oneclick/rubyinstaller/releases/download/devkit-4.7.2/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe'
   $checksum64 = 'ce99d873c1acc8bffc639bd4e764b849'
   $checksumType = 'md5'
   Get-ChocolateyWebFile 'ruby2.devkit' "$file" -url "$url" -url64bit "$url64" -checksum "$checksum" -checksum64 "$checksum64" -checksumType "$checksumType"
