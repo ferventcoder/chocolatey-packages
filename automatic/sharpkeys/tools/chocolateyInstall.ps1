@@ -1,10 +1,9 @@
-﻿$packageName = 'sharpkeys'
-$url         = 'https://github.com/randyrants/sharpkeys/releases/download/v3.5/sharpkeys35.msi'
-
-$packageArgs = @{
+﻿$packageArgs = @{
     packageName    = 'sharpkeys'
     fileType       = 'msi'
-    url            = $url
+    url            = ''
+    checksum       = ''
+    checksumType   = ''
     silentArgs     = '/qn'
     validExitCodes = @(0)
     softwareName   = 'SharpKeys'
