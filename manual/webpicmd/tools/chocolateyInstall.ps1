@@ -2,8 +2,8 @@
 $packageName = 'webpicmd'
 $installerType = 'msi'
 # http://forums.iis.net/t/1178551.aspx?PLEASE+READ+WebPI+direct+download+links
-$url   = 'https://download.microsoft.com/download/C/F/F/CFF3A0B8-99D4-41A2-AE1A-496C08BEB904/WebPlatformInstaller_x86_en-US.msi'
-$url64 = 'https://download.microsoft.com/download/C/F/F/CFF3A0B8-99D4-41A2-AE1A-496C08BEB904/WebPlatformInstaller_amd64_en-US.msi'
+$url   = 'https://download.microsoft.com/download/8/4/9/849DBCF2-DFD9-49F5-9A19-9AEE5B29341A/WebPlatformInstaller_x86_en-US.msi'
+$url64 = 'https://download.microsoft.com/download/8/4/9/849DBCF2-DFD9-49F5-9A19-9AEE5B29341A/WebPlatformInstaller_x64_en-US.msi'
 $silentArgs = "/qn /norestart"
 
 $installDir = Join-Path "$toolsDir" 'webpi'
